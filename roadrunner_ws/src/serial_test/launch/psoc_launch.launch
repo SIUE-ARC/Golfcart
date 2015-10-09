@@ -1,0 +1,7 @@
+<launch>
+  <node name="psoc_node" pkg="serial_test" type="psoc_node.py" output="screen" respawn="true"/>
+  <!--node name="psoc_node2" pkg="serial_test" type="psoc_node.py" output="screen" respawn="true"/>-->
+  <!--<node name="psoc_node2" pkg="serial_test" type="psoc_node.py" output="screen" respawn="true"/> -->
+  <!--node name="listener" pkg="serial_test" type="listener.py" output="screen" launch-prefix="xterm -e"/>-->
+  <node name="talker" pkg="serial_test" type="talker.py" output="screen" launch-prefix="xterm -e"/>
+</launch>

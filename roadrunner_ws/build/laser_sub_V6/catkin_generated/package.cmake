@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "laser_sub")
+set(laser_sub_MAINTAINER "Brian Stroub <stroubb@yahoo.com>")
+set(laser_sub_DEPRECATED "")
+set(laser_sub_VERSION "0.0.0")
+set(laser_sub_BUILD_DEPENDS "printLaser" "roscpp" "sensor_msgs" "message_generation")
+set(laser_sub_RUN_DEPENDS "printLaser" "roscpp" "sensor_msgs" "message_runtime")
+set(laser_sub_BUILDTOOL_DEPENDS "catkin")

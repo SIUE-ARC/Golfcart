@@ -1,0 +1,8 @@
+prefix=/home/roadrunner/roadrunner_ws/install
+
+Name: laser_sub
+Description: Description of laser_sub
+Version: 0.0.0
+Cflags: -I/home/roadrunner/roadrunner_ws/install/include
+Libs: -L/home/roadrunner/roadrunner_ws/install/lib 
+Requires: message_runtime

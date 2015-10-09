@@ -1,0 +1,1149 @@
+Script started on Sun 07 Jun 2015 02:51:36 PM CDT
+]0;roadrunner@zareason-verix545: ~/roadrunner_ws/srcroadrunner@zareason-verix545:~/roadrunner_ws/src$ ./bash.sh
+4800
+... logging to /home/roadrunner/.ros/log/9f743736-0d4e-11e5-94e9-448a5b44953f/roslaunch-zareason-verix545-28358.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;road-runner.launch
+[1mstarted roslaunch server http://zareason-verix545:34279/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /lms1xx/host
+ * /rosdistro
+ * /rosversion
+
+NODES
+  /
+    gps_common (gps_common/utm_odometry_node)
+    gpsd_client (gpsd_client/gpsd)
+    laser_sub (laser_sub/printLaser)
+    lms1xx (lms1xx/LMS1xx_node)
+    psoc_node (serial_test/psoc_node.py)
+    psoc_node_2 (serial_test/psoc_node_2.py)
+    soundplay_node (sound_play/soundplay_node.py)
+
+auto-starting new master
+[1mprocess[master]: started with pid [28372][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;road-runner.launch http://localhost:11311
+[1msetting /run_id to 9f743736-0d4e-11e5-94e9-448a5b44953f[0m
+[1mprocess[rosout-1]: started with pid [28385][0m
+started core service [/rosout]
+[1mprocess[psoc_node-2]: started with pid [28397][0m
+[1mprocess[psoc_node_2-3]: started with pid [28398][0m
+[1mprocess[soundplay_node-4]: started with pid [28401][0m
+FOUND DRIVE
+[1mprocess[gpsd_client-5]: started with pid [28407][0m
+FOUND steer
+[0m[ INFO] [1433706704.310853356]: GPSd opened[0m
+[1mprocess[gps_common-6]: started with pid [28428][0m
+Setting Up Points for: Tent Course 
+[1mprocess[lms1xx-7]: started with pid [28444][0m
+[0m[ INFO] [1433706704.400585346]: connecting to laser at : 169.254.24.210[0m
+[0m[ INFO] [1433706704.400970955]: Connected to laser.[0m
+Old Count is: 0
+New Count is: -4063
+
+Velocity is: -406.3
+Velocity in mph: -835.310689843
+[1mprocess[laser_sub-8]: started with pid [28467][0m
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+[0m[ INFO] [1433706705.441480320]: Distance from robot: 0.143000 [0m
+[0m[ INFO] [1433706705.441707370]: Distance from robot: 0.115000 [0m
+[0m[ INFO] [1433706705.441825027]: Distance from robot: 0.134000 [0m
+[0m[ INFO] [1433706705.441918453]: Distance from robot: 0.131000 [0m
+[0m[ INFO] [1433706705.441994684]: Distance from robot: 0.138000 [0m
+[0m[ INFO] [1433706705.442074398]: Distance from robot: 0.140000 [0m
+[0m[ INFO] [1433706705.442163824]: Distance from robot: 0.136000 [0m
+[0m[ INFO] [1433706705.442234533]: Distance from robot: 0.123000 [0m
+[0m[ INFO] [1433706705.442304279]: Distance from robot: 0.116000 [0m
+[0m[ INFO] [1433706705.442375774]: Distance from robot: 0.121000 [0m
+[0m[ INFO] [1433706705.442442388]: Distance from robot: 0.122000 [0m
+[0m[ INFO] [1433706705.442507463]: Distance from robot: 0.130000 [0m
+[0m[ INFO] [1433706705.442571486]: Distance from robot: 0.132000 [0m
+[0m[ INFO] [1433706705.442638291]: Distance from robot: 0.126000 [0m
+[0m[ INFO] [1433706705.442703652]: Distance from robot: 0.119000 [0m
+[0m[ INFO] [1433706705.442768817]: Distance from robot: 0.126000 [0m
+[0m[ INFO] [1433706705.442833401]: Distance from robot: 0.110000 [0m
+[0m[ INFO] [1433706705.442902311]: Distance from robot: 0.120000 [0m
+[0m[ INFO] [1433706705.442970613]: Distance from robot: 0.135000 [0m
+[0m[ INFO] [1433706705.443035849]: Distance from robot: 0.142000 [0m
+[0m[ INFO] [1433706705.443103856]: Distance from robot: 0.122000 [0m
+[0m[ INFO] [1433706705.443168786]: Distance from robot: 0.120000 [0m
+[0m[ INFO] [1433706705.443233937]: Distance from robot: 0.118000 [0m
+[0m[ INFO] [1433706705.443306409]: Distance from robot: 0.108000 [0m
+[0m[ INFO] [1433706705.443378521]: Distance from robot: 0.109000 [0m
+[0m[ INFO] [1433706705.443474092]: Distance from robot: 0.097000 [0m
+[0m[ INFO] [1433706705.443591313]: Distance from robot: 0.095000 [0m
+[0m[ INFO] [1433706705.443670496]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.443781302]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.443855373]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.443923771]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.443991788]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444060186]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444133600]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444203667]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444273499]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444341160]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444421726]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444506903]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444580393]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444649522]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444717740]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444788594]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444858044]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444925981]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.444994314]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445062266]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445129822]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445198050]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445265591]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445336374]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445404567]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445472759]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445539995]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445607285]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445675343]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445746903]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445815090]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445888184]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.445952824]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446019217]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446083661]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446147528]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446214198]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446278496]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446351204]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446416861]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446482387]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446546600]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446612653]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446677879]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446742077]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446807127]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446873416]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.446939223]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447006197]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447070852]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447136954]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447200837]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447266564]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447334015]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447398414]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447465719]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447530028]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447596501]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447661085]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447770771]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447803149]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447823337]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447841972]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447858671]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447875508]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447892386]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447908988]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447923479]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447940190]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447956868]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447973735]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.447990439]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448007121]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448023864]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448040577]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448057356]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448074271]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448091212]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448109667]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448126968]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448143014]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448158886]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448173709]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448188434]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448203165]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448218721]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448233800]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448248369]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448263252]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448277983]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448292760]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448307965]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448325355]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448345864]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448363775]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448380256]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448396500]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448412747]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448428867]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448446454]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448462748]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448479044]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448502117]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448518959]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448535632]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448552180]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448568667]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448585016]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448601226]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448618931]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448635254]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448651482]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448667838]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448685665]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448702044]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448718200]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448735104]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448753298]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448771399]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448788126]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448806179]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448822784]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448842019]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448858408]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448874405]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448892340]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448908822]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448926569]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448942893]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448960976]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448978098]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.448996041]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449012322]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449030741]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449047554]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449063776]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449080293]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449097552]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449113851]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449130186]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449147072]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449165959]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449182311]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449200662]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449217119]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449233471]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449250776]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449267004]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449285017]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449302255]: Distance from robot: 4.305000 [0m
+[0m[ INFO] [1433706705.449320206]: Distance from robot: 4.242000 [0m
+[0m[ INFO] [1433706705.449339008]: Distance from robot: 4.202000 [0m
+[0m[ INFO] [1433706705.449355331]: Distance from robot: 4.191000 [0m
+[0m[ INFO] [1433706705.449374322]: Distance from robot: 4.164000 [0m
+[0m[ INFO] [1433706705.449391589]: Distance from robot: 4.145000 [0m
+[0m[ INFO] [1433706705.449407988]: Distance from robot: 4.187000 [0m
+[0m[ INFO] [1433706705.449425897]: Distance from robot: 4.206000 [0m
+[0m[ INFO] [1433706705.449443209]: Distance from robot: 4.247000 [0m
+[0m[ INFO] [1433706705.449460175]: Distance from robot: 4.281000 [0m
+[0m[ INFO] [1433706705.449476699]: Distance from robot: 4.318000 [0m
+[0m[ INFO] [1433706705.449493854]: Distance from robot: 4.298000 [0m
+[0m[ INFO] [1433706705.449512318]: Distance from robot: 4.294000 [0m
+[0m[ INFO] [1433706705.449528769]: Distance from robot: 4.322000 [0m
+[0m[ INFO] [1433706705.449547343]: Distance from robot: 4.329000 [0m
+[0m[ INFO] [1433706705.449564479]: Distance from robot: 4.355000 [0m
+[0m[ INFO] [1433706705.449581982]: Distance from robot: 4.485000 [0m
+[0m[ INFO] [1433706705.449599880]: Distance from robot: 4.795000 [0m
+[0m[ INFO] [1433706705.449616077]: Distance from robot: 5.717000 [0m
+[0m[ INFO] [1433706705.449632854]: Distance from robot: 5.712000 [0m
+[0m[ INFO] [1433706705.449651252]: Distance from robot: 5.693000 [0m
+[0m[ INFO] [1433706705.449669878]: Distance from robot: 5.634000 [0m
+[0m[ INFO] [1433706705.449687461]: Distance from robot: 5.583001 [0m
+[0m[ INFO] [1433706705.449703642]: Distance from robot: 5.554000 [0m
+[0m[ INFO] [1433706705.449722260]: Distance from robot: 5.559000 [0m
+[0m[ INFO] [1433706705.449738491]: Distance from robot: 5.568000 [0m
+[0m[ INFO] [1433706705.449754801]: Distance from robot: 5.569000 [0m
+[0m[ INFO] [1433706705.449773155]: Distance from robot: 5.593999 [0m
+[0m[ INFO] [1433706705.449789533]: Distance from robot: 5.614000 [0m
+[0m[ INFO] [1433706705.449807937]: Distance from robot: 5.668000 [0m
+[0m[ INFO] [1433706705.449824902]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449842211]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449859731]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449876090]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449895182]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449913721]: Distance from robot: 4.066000 [0m
+[0m[ INFO] [1433706705.449930535]: Distance from robot: 4.028000 [0m
+[0m[ INFO] [1433706705.449947365]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449964223]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449981064]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.449997789]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450014856]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450031803]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450048589]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450065400]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450082070]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450098785]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450115675]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450132388]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450149092]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450166048]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450182862]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450199605]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450216419]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450233182]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450249999]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450266903]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450283777]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450300408]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450317162]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450334010]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450350847]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450368308]: Distance from robot: 6.132000 [0m
+[0m[ INFO] [1433706705.450385694]: Distance from robot: 6.068000 [0m
+[0m[ INFO] [1433706705.450402246]: Distance from robot: 6.008999 [0m
+[0m[ INFO] [1433706705.450418868]: Distance from robot: 5.963000 [0m
+[0m[ INFO] [1433706705.450435305]: Distance from robot: 5.947000 [0m
+[0m[ INFO] [1433706705.450451867]: Distance from robot: 5.937000 [0m
+[0m[ INFO] [1433706705.450469547]: Distance from robot: 5.999000 [0m
+[0m[ INFO] [1433706705.450485720]: Distance from robot: 6.011000 [0m
+[0m[ INFO] [1433706705.450504561]: Distance from robot: 6.025000 [0m
+[0m[ INFO] [1433706705.450520890]: Distance from robot: 6.039000 [0m
+[0m[ INFO] [1433706705.450537561]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450555484]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450572546]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450589821]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450605908]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450622559]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450640870]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450657374]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450675926]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450694662]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450712513]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450729128]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450747509]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450763963]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450781935]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450798930]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450815559]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450832539]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450849607]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450866601]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450883591]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450900368]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450917294]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450934161]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450950821]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450967555]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.450984241]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451000927]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451017753]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451034600]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451051366]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451068068]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451084784]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451101769]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451118609]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451135411]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451152125]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451168905]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451185743]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451202613]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451219544]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451236476]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451253398]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451270096]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451286958]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451303666]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451320525]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451337369]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451354223]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451370862]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451387585]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451404360]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451421030]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451437928]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451454859]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451471558]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451488416]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451505237]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451522061]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451538860]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451555559]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451572490]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451589437]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451606168]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451622997]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451639956]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451656653]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451673355]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451690148]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451706905]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451727888]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451745054]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451762008]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451779740]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451794485]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451811245]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451827806]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451844927]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451861723]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451877080]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451891298]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451906433]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451922556]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451939851]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451956424]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451973816]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.451989424]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452005253]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452020152]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452035502]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452050572]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452065450]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452080623]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452096127]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452113704]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452129286]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452147446]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452162993]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452180105]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452197306]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452213972]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452230558]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452247328]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452263906]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452280588]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452297153]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452313761]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452330402]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452347003]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452363604]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452380343]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452396946]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452413721]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452430415]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452447049]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452463511]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452478957]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452495304]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452512266]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452528989]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452545671]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452562222]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452578844]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452595384]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452612020]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452628700]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452645407]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452662339]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452679064]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452695770]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452713277]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452731445]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452748167]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452765378]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452782666]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452799525]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452816403]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452833391]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452850348]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452867385]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452884584]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452901281]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452918428]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452935409]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452952649]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452969609]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.452986321]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453004070]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453019123]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453034293]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453049350]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453064724]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453081699]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453098978]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453116188]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453133157]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453149958]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453167405]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453184762]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453201718]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453218664]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453236195]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453253083]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453270003]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453286960]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453304040]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453320721]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453337850]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453354587]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453371486]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453388438]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453405346]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453422307]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453439288]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453455989]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453472853]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453490199]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453507052]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453523860]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453541028]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453557927]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453574882]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453591713]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453608697]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453625578]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453642677]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453659604]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453681252]: Distance from robot: 10.658000 [0m
+[0m[ INFO] [1433706705.453699643]: Distance from robot: 10.575000 [0m
+[0m[ INFO] [1433706705.453719943]: Distance from robot: 10.537999 [0m
+[0m[ INFO] [1433706705.453737132]: Distance from robot: 10.544000 [0m
+[0m[ INFO] [1433706705.453754152]: Distance from robot: 10.563000 [0m
+[0m[ INFO] [1433706705.453771210]: Distance from robot: 10.604001 [0m
+[0m[ INFO] [1433706705.453788313]: Distance from robot: 10.697999 [0m
+[0m[ INFO] [1433706705.453804755]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453821277]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453837851]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453854402]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453870970]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453887869]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453904390]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453920706]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453937461]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453954011]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453970553]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.453986975]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454003475]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454019866]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454036205]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454053131]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454069620]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454086119]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454102563]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454119196]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454135656]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454152339]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454168828]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454185407]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454202063]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454218528]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454235031]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454251511]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454267960]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454284520]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454300926]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454317577]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454334158]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454350749]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454367365]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454383966]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454400504]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454416999]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454433680]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454450381]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454466897]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454484335]: Distance from robot: 19.872999 [0m
+[0m[ INFO] [1433706705.454501655]: Distance from robot: 19.891003 [0m
+[0m[ INFO] [1433706705.454518776]: Distance from robot: 19.979000 [0m
+[0m[ INFO] [1433706705.454535415]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454552096]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454568558]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454585069]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454601736]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454618956]: Distance from robot: 19.664999 [0m
+[0m[ INFO] [1433706705.454635514]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454652185]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454668675]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454685280]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454701930]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454718503]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454734943]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454751497]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454767935]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454784401]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454800973]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454817594]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454834116]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454850626]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454867112]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454883842]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454900342]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454916907]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454933597]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454950015]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454966530]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454983047]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.454999509]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.455015855]: Distance from robot: 0.000000 [0m
+[0m[ INFO] [1433706705.455032671]: Distance from robot: 0.178000 [0m
+[0m[ INFO] [1433706705.455048220]: Distance from robot: 0.187000 [0m
+[0m[ INFO] [1433706705.455064679]: Distance from robot: 0.186000 [0m
+[0m[ INFO] [1433706705.455081122]: Distance from robot: 0.175000 [0m
+[0m[ INFO] [1433706705.455097715]: Distance from robot: 0.164000 [0m
+[0m[ INFO] [1433706705.455114344]: Distance from robot: 0.147000 [0m
+[0m[ INFO] [1433706705.455130918]: Distance from robot: 0.150000 [0m
+[0m[ INFO] [1433706705.455147520]: Distance from robot: 0.145000 [0m
+[0m[ INFO] [1433706705.455171757]: Distance from robot: 0.134000 [0m
+[0m[ INFO] [1433706705.455190000]: Distance from robot: 0.140000 [0m
+[0m[ INFO] [1433706705.455208376]: Distance from robot: 0.123000 [0m
+[0m[ INFO] [1433706705.455226216]: Distance from robot: 0.122000 [0m
+[0m[ INFO] [1433706705.455243458]: Distance from robot: 0.121000 [0m
+[0m[ INFO] [1433706705.455260801]: Distance from robot: 0.126000 [0m
+[0m[ INFO] [1433706705.455277881]: Distance from robot: 0.125000 [0m
+[0m[ INFO] [1433706705.455294957]: Distance from robot: 0.127000 [0m
+[0m[ INFO] [1433706705.455312036]: Distance from robot: 0.146000 [0m
+[0m[ INFO] [1433706705.455329267]: Distance from robot: 0.125000 [0m
+[0m[ INFO] [1433706705.455346246]: Distance from robot: 0.115000 [0m
+[0m[ INFO] [1433706705.455363370]: Distance from robot: 0.126000 [0m
+[0m[ INFO] [1433706705.455380426]: Distance from robot: 0.121000 [0m
+[0m[ INFO] [1433706705.455397453]: Distance from robot: 0.120000 [0m
+[0m[ INFO] [1433706705.455414514]: Distance from robot: 0.129000 [0m
+[0m[ INFO] [1433706705.455431374]: Distance from robot: 0.136000 [0m
+[0m[ INFO] [1433706705.455448917]: Distance from robot: 0.143000 [0m
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Old Count is: -4063
+
+New Count is: -4063
+
+Velocity is: 0.0
+Velocity in mph: 0.0
+Point0_x: 8 Point0_y: 8
+Point1_x: 0 Point1_y: 0
+Old Count is: -4063
+
+New Count is: oving forward >100<
+[1m[psoc_node-2] process has finished cleanly
+log file: /home/roadrunner/.ros/log/9f743736-0d4e-11e5-94e9-448a5b44953f/psoc_node-2*.log[0m
+[31m[laser_sub-8] process has died [pid 28467, exit code -11, cmd /home/roadrunner/roadrunner_ws/devel/lib/laser_sub/printLaser __name:=laser_sub __log:=/home/roadrunner/.ros/log/9f743736-0d4e-11e5-94e9-448a5b44953f/laser_sub-8.log].
+log file: /home/roadrunner/.ros/log/9f743736-0d4e-11e5-94e9-448a5b44953f/laser_sub-8*.log[0m
+Turn Angle Is: -45
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+Turn Angle Is: -45
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+AT ( 0, 0) Going (8, 8) Was At (0, 0) 
+AT ( -1, 0) Going (8, 8) Was At (0, 0) 
+AT ( -1, 0) Going (8, 8) Was At (0, 0) 
+AT ( -1, -1) Going (8, 8) Was At (0, 0) 
+Turn Angle Is: -45
+AT ( -1, -1) Going (8, 8) Was At (-1, -1) 
+AT ( -2, -1) Going (8, 8) Was At (-1, -1) 
+AT ( -2, -2) Going (8, 8) Was At (-1, -1) 
+AT ( -2, -2) Going (8, 8) Was At (-1, -1) 
+AT ( -2, -2) Going (8, 8) Was At (-1, -1) 
+Turn Angle Is: -45
+AT ( -2, -2) Going (8, 8) Was At (-2, -2) 
+AT ( -2, -2) Going (8, 8) Was At (-2, -2) 
+AT ( -2, -2) Going (8, 8) Was At (-2, -2) 
+AT ( -2, -2) Going (8, 8) Was At (-2, -2) 
+AT ( -2, -2) Going (8, 8) Was At (-2, -2) 
+^C[lms1xx-7] killing on exit
+[gps_common-6] killing on exit
+[gpsd_client-5] killing on exit
+[soundplay_node-4] killing on exit
+[psoc_node_2-3] killing on exit
+*** glibc detected *** /home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node: free(): invalid next size (fast): 0x00000000009599b0 ***
+======= Backtrace: =========
+/lib/x86_64-linux-gnu/libc.so.6(+0x7de16)[0x7fa15eefee16]
+/home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node(_ZN9__gnu_cxx13new_allocatorI7GPSListE10deallocateEPS1_m+0x20)[0x43686e]
+/home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node(_ZNSt12_Vector_baseI7GPSListSaIS0_EE13_M_deallocateEPS0_m+0x32)[0x4351b6]
+/home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node(_ZNSt12_Vector_baseI7GPSListSaIS0_EED1Ev+0x45)[0x4332c3]
+/home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node(_ZNSt6vectorI7GPSListSaIS0_EED1Ev+0x42)[0x43c68c]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3b5b1)[0x7fa15eebc5b1]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3b635)[0x7fa15eebc635]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf4)[0x7fa15eea2774]
+/home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node[0x42ae79]
+======= Memory map: ========
+00400000-0044e000 r-xp 00000000 08:01 25560204                           /home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node
+0064e000-0064f000 r--p 0004e000 08:01 25560204                           /home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node
+0064f000-00650000 rw-p 0004f000 08:01 25560204                           /home/roadrunner/roadrunner_ws/devel/lib/gps_common/utm_odometry_node
+0094e000-0096f000 rw-p 00000000 00:00 0                                  [heap]
+7fa140000000-7fa140021000 rw-p 00000000 00:00 0 
+7fa140021000-7fa144000000 ---p 00000000 00:00 0 
+7fa144000000-7fa144021000 rw-p 00000000 00:00 0 
+7fa144021000-7fa148000000 ---p 00000000 00:00 0 
+7fa14b7ff000-7fa14b800000 ---p 00000000 00:00 0 
+7fa14b800000-7fa14c000000 rw-p 00000000 00:00 0                          [stack:28522]
+7fa14c000000-7fa14c021000 rw-p 00000000 00:00 0 
+7fa14c021000-7fa150000000 ---p 00000000 00:00 0 
+7fa150000000-7fa150021000 rw-p 00000000 00:00 0 
+7fa150021000-7fa154000000 ---p 00000000 00:00 0 
+7fa154000000-7fa154021000 rw-p 00000000 00:00 0 
+7fa154021000-7fa158000000 ---p 00000000 00:00 0 
+7fa1582a7000-7fa1582a8000 ---p 00000000 00:00 0 
+7fa1582a8000-7fa158aa8000 rw-p 00000000 00:00 0 
+7fa158aa8000-7fa158aa9000 ---p 00000000 00:00 0 
+7fa158aa9000-7fa1592a9000 rw-p 00000000 00:00 0                          [stack:28432]
+7fa1592a9000-7fa1592aa000 ---p 00000000 00:00 0 
+7fa1592aa000-7fa159aaa000 rw-p 00000000 00:00 0 
+7fa159aaa000-7fa159aab000 ---p 00000000 00:00 0 
+7fa159aab000-7fa15a2ab000 rw-p 00000000 00:00 0 
+7fa15a2ab000-7fa15a2b7000 r-xp 00000000 08:01 41812226                   /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7fa15a2b7000-7fa15a4b6000 ---p 0000c000 08:01 41812226                   /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7fa15a4b6000-7fa15a4b7000 r--p 0000b000 08:01 41812226                   /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7fa15a4b7000-7fa15a4b8000 rw-p 0000c000 08:01 41812226                   /lib/x86_64-linux-gnu/libnss_files-2.15.so
+7fa15a4b8000-7fa15ab9c000 r--p 00000000 08:01 19274008                   /usr/lib/locale/locale-archive
+7fa15ab9c000-7fa15bd0b000 r-xp 00000000 08:01 19269988                   /usr/lib/libicudata.so.48.1.1
+7fa15bd0b000-7fa15bf0a000 ---p 0116f000 08:01 19269988                   /usr/lib/libicudata.so.48.1.1
+7fa15bf0a000-7fa15bf0b000 r--p 0116e000 08:01 19269988                   /usr/lib/libicudata.so.48.1.1
+7fa15bf0b000-7fa15bf0c000 rw-p 0116f000 08:01 19269988                   /usr/lib/libicudata.so.48.1.1
+7fa15bf0c000-7fa15bf0e000 r-xp 00000000 08:01 41812234                   /lib/x86_64-linux-gnu/libdl-2.15.so
+7fa15bf0e000-7fa15c10e000 ---p 00002000 08:01 41812234                   /lib/x86_64-linux-gnu/libdl-2.15.so
+7fa15c10e000-7fa15c10f000 r--p 00002000 08:01 41812234                   /lib/x86_64-linux-gnu/libdl-2.15.so
+7fa15c10f000-7fa15c110000 rw-p 00003000 08:01 41812234                   /lib/x86_64-linux-gnu/libdl-2.15.so
+7fa15c110000-7fa15c114000 r-xp 00000000 08:01 41815857                   /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fa15c114000-7fa15c313000 ---p 00004000 08:01 41815857                   /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fa15c313000-7fa15c314000 r--p 00003000 08:01 41815857                   /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fa15c314000-7fa15c315000 rw-p 00004000 08:01 41815857                   /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7fa15c315000-7fa15c33c000 r-xp 00000000 08:01 41815894                   /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7fa15c33c000-7fa15c53c000 ---p 00027000 08:01 41815894                   /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7fa15c53c000-7fa15c53e000 r--p 00027000 08:01 41815894                   /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7fa15c53e000-7fa15c53f000 rw-p 00029000 08:01 41815894                   /lib/x86_64-linux-gnu/libexpat.so.1.5.2
+7fa15c53f000-7fa15c548000 r-xp 00000000 08:01 41812231                   /lib/x86_64-linux-gnu/libcrypt-2.15.so
+7fa15c548000-7fa15c748000 ---p 00009000 08:01 41812231                   /lib/x86_64-linux-gnu/libcrypt-2.15.so
+7fa15c748000-7fa15c749000 r--p 00009000 08:01 41812231                   /lib/x86_64-linux-gnu/libcrypt-2.15.so
+7fa15c749000-7fa15c74a000 rw-p 0000a000 08:01 41812231                   /lib/x86_64-linux-gnu/libcrypt-2.15.so
+7fa15c74a000-7fa15c778000 rw-p 00000000 00:00 0 
+7fa15c778000-7fa15c932000 r-xp 00000000 08:01 19269992                   /usr/lib/libicui18n.so.48.1.1
+7fa15c932000-7fa15cb31000 ---p 001ba000 08:01 19269992                   /usr/lib/libicui18n.so.48.1.1
+7fa15cb31000-7fa15cb3d000 r--p 001b9000 08:01 19269992                   /usr/lib/libicui18n.so.48.1.1
+7fa15cb3d000-7fa15cb3f000 rw-p 001c5000 08:01 19269992                   /usr/lib/libicui18n.so.48.1.1
+7fa15cb3f000-7fa15cc94000 r-xp 00000000 08:01 19269984                   /usr/lib/libicuuc.so.48.1.1
+7fa15cc94000-7fa15ce94000 ---p 00155000 08:01 19269984                   /usr/lib/libicuuc.so.48.1.1
+7fa15ce94000-7fa15cea4000 r--p 00155000 08:01 19269984                   /usr/lib/libicuuc.so.48.1.1
+7fa15cea4000-7fa15cea5000 rw-p 00165000 08:01 19269984                   /usr/lib/libicuuc.so.48.1.1
+7fa15cea5000-7fa15cea9000 rw-p 00000000 00:00 0 
+7fa15cea9000-7fa15cee1000 r-xp 00000000 08:01 19275366                   /usr/lib/libapr-1.so.0.4.6
+7fa15cee1000-7fa15d0e0000 ---p 00038000 08:01 19275366                   /usr/lib/libapr-1.so.0.4.6
+7fa15d0e0000-7fa15d0e1000 r--p 00037000 08:01 19275366                   /usr/lib/libapr-1.so.0.4.6
+7fa15d0e1000-7fa15d0e2000 rw-p 00038000 08:01 19275366                   /usr/lib/libapr-1.so.0.4.6
+7fa15d0e2000-7fa15d103000 r-xp 00000000 08:01 19275466                   /usr/lib/libaprutil-1.so.0.3.12
+7fa15d103000-7fa15d303000 ---p 00021000 08:01 19275466                   /usr/lib/libaprutil-1.so.0.3.12
+7fa15d303000-7fa15d304000 r--p 00021000 08:01 19275466                   /usr/lib/libaprutil-1.so.0.3.12
+7fa15d304000-7fa15d305000 rw-p 00022000 08:01 19275466                   /usr/lib/libaprutil-1.so.0.3.12
+7fa15d305000-7fa15d30d000 r-xp 00000000 08:01 24641659                   /opt/ros/hydro/lib/libconsole_bridge.so
+7fa15d30d000-7fa15d50d000 ---p 00008000 08:01 24641659                   /opt/ros/hydro/lib/libconsole_bridge.so
+7fa15d50d000-7fa15d50e000 r--p 00008000 08:01 24641659                   /opt/ros/hydro/lib/libconsole_bridge.so
+7fa15d50e000-7fa15d50f000 rw-p 00009000 08:01 24641659                   /opt/ros/hydro/lib/libconsole_bridge.so
+7fa15d50f000-7fa15d516000 r-xp 00000000 08:01 41812217                   /lib/x86_64-linux-gnu/librt-2.15.so
+7fa15d516000-7fa15d715000 ---p 00007000 08:01 41812217                   /lib/x86_64-linux-gnu/librt-2.15.so
+7fa15d715000-7fa15d716000 r--p 00006000 08:01 41812217                   /lib/x86_64-linux-gnu/librt-2.15.so
+7fa15d716000-7fa15d717000 rw-p 00007000 08:01 41812217                   /lib/x86_64-linux-gnu/librt-2.15.so
+7fa15d717000-7fa15d812000 r-xp 00000000 08:01 19277186                   /usr/lib/libboost_regex.so.1.46.1
+7fa15d812000-7fa15da11000 ---p 000fb000 08:01 19277186                   /usr/lib/libboost_regex.so.1.46.1
+7fa15da11000-7fa15da16000 r--p 000fa000 08:01 19277186                   /usr/lib/libboost_regex.so.1.46.1
+7fa15da16000-7fa15da18000 rw-p 000ff000 08:01 19277186                   /usr/lib/libboost_regex.so.1.46.1
+7fa15da18000-7fa15da19000 rw-p 00000000 00:00 0 
+7fa15da19000-7fa15dbcc000 r-xp 00000000 08:01 19277873                   /usr/lib/liblog4cxx.so.10.0.0
+7fa15dbcc000-7fa15ddcb000 ---p 001b3000 08:01 19277873                   /usr/lib/liblog4cxx.so.10.0.0
+7fa15ddcb000-7fa15ddf5000 r--p 001b2000 08:01 19277873                   /usr/lib/liblog4cxx.so.10.0.0
+7fa15ddf5000-7fa15ddf6000 rw-p 001dc000 08:01 19277873                   /usr/lib/liblog4cxx.so.10.0.0
+7fa15ddf6000-7fa15ddf8000 rw-p 00000000 00:00 0 
+7fa15ddf8000-7fa15ddf9000 r-xp 00000000 08:01 24641923                   /opt/ros/hydro/lib/librosconsole_backend_interface.so
+7fa15ddf9000-7fa15dff8000 ---p 00001000 08:01 24641923                   /opt/ros/hydro/lib/librosconsole_backend_interface.so
+7fa15dff8000-7fa15dff9000 r--p 00000000 08:01 24641923                   /opt/ros/hydro/lib/librosconsole_backend_interface.so
+7fa15dff9000-7fa15dffa000 rw-p 00001000 08:01 24641923                   /opt/ros/hydro/lib/librosconsole_backend_interface.so
+7fa15dffa000-7fa15e009000 r-xp 00000000 08:01 24641922                   /opt/ros/hydro/lib/librosconsole_log4cxx.so
+7fa15e009000-7fa15e209000 ---p 0000f000 08:01 24641922                   /opt/ros/hydro/lib/librosconsole_log4cxx.so
+7fa15e209000-7fa15e20b000 r--p 0000f000 08:01 24641922                   /opt/ros/hydro/lib/librosconsole_log4cxx.so
+7fa15e20b000-7fa15e20c000 rw-p 00011000 08:01 24641922                   /opt/ros/hydro/lib/librosconsole_log4cxx.so
+7fa15e20c000-7fa15e229000 r-xp 00000000 08:01 19273409                   /usr/lib/libboost_filesystem.so.1.46.1
+7fa15e229000-7fa15e428000 ---p 0001d000 08:01 19273409                   /usr/lib/libboost_filesystem.so.1.46.1
+7fa15e428000-7fa15e429000 r--p 0001c000 08:01 19273409                   /usr/lib/libboost_filesystem.so.1.46.1
+7fa15e429000-7fa15e42a000 rw-p 0001d000 08:01 19273409                   /usr/lib/libboost_filesystem.so.1.46.1
+7fa15e42a000-7fa15e43d000 r-xp 00000000 08:01 19277426                   /usr/lib/libboost_signals.so.1.46.1
+7fa15e43d000-7fa15e63c000 ---p 00013000 08:01 19277426                   /usr/lib/libboost_signals.so.1.46.1
+7fa15e63c000-7fa15e63d000 r--p 00012000 08:01 19277426                   /usr/lib/libboost_signals.so.1.46.1
+7fa15e63d000-7fa15e63e000 rw-p 00013000 08:01 19277426                   /usr/lib/libboost_signals.so.1.46.1
+7fa15e63e000-7fa15e645000 r-xp 00000000 08:01 24641666                   /opt/ros/hydro/lib/libcpp_common.so
+7fa15e645000-7fa15e844000 ---p 00007000 08:01 24641666                   /opt/ros/hydro/lib/libcpp_common.so
+7fa15e844000-7fa15e845000 r--p 00006000 08:01 24641666                   /opt/ros/hydro/lib/libcpp_common.so
+7fa15e845000-7fa15e846000 rw-p 00007000 08:01 24641666                   /opt/ros/hydro/lib/libcpp_common.so
+7fa15e846000-7fa15e862000 r-xp 00000000 08:01 24641960                   /opt/ros/hydro/lib/libxmlrpcpp.so
+7fa15e862000-7fa15ea62000 ---p 0001c000 08:01 24641960                   /opt/ros/hydro/lib/libxmlrpcpp.so
+7fa15ea62000-7fa15ea63000 r--p 0001c000 08:01 24641960                   /opt/ros/hydro/lib/libxmlrpcpp.so
+7fa15ea63000-7fa15ea64000 rw-p 0001d000 08:01 24641960                   /opt/ros/hydro/lib/libxmlrpcpp.so
+7fa15ea64000-7fa15ea7b000 r-xp 00000000 08:01 19273199                   /usr/lib/libboost_thread.so.1.46.1
+7fa15ea7b000-7fa15ec7a000 ---p 00017000 08:01 19273199                   /usr/lib/libboost_thread.so.1.46.1
+7fa15ec7a000-7fa15ec7c000 r--p 00016000 08:01 19273199                   /usr/lib/libboost_thread.so.1.46.1
+7fa15ec7c000-7fa15ec7d000 rw-p 00018000 08:01 19273199                   /usr/lib/libboost_thread.so.1.46.1
+7fa15ec7d000-7fa15ec80000 r-xp 00000000 08:01 19273408                   /usr/lib/libboost_system.so.1.46.1
+7fa15ec80000-7fa15ee7f000 ---p 00003000 08:01 19273408                   /usr/lib/libboost_system.so.1.46.1
+7fa15ee7f000-7fa15ee80000 r--p 00002000 08:01 19273408                   /usr/lib/libboost_system.so.1.46.1
+7fa15ee80000-7fa15ee81000 rw-p 00003000 08:01 19273408                   /usr/lib/libboost_system.so.1.46.1
+7fa15ee81000-7fa15f035000 r-xp 00000000 08:01 41812223                   /lib/x86_64-linux-gnu/libc-2.15.so
+7fa15f035000-7fa15f235000 ---p 001b4000 08:01 41812223                   /lib/x86_64-linux-gnu/libc-2.15.so
+7fa15f235000-7fa15f239000 r--p 001b4000 08:01 41812223                   /lib/x86_64-linux-gnu/libc-2.15.so
+7fa15f239000-7fa15f23b000 rw-p 001b8000 08:01 41812223                   /lib/x86_64-linux-gnu/libc-2.15.so
+7fa15f23b000-7fa15f240000 rw-p 00000000 00:00 0 
+7fa15f240000-7fa15f255000 r-xp 00000000 08:01 41815897                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa15f255000-7fa15f454000 ---p 00015000 08:01 41815897                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa15f454000-7fa15f455000 r--p 00014000 08:01 41815897                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa15f455000-7fa15f456000 rw-p 00015000 08:01 41815897                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7fa15f456000-7fa15f551000 r-xp 00000000 08:01 41812233                   /lib/x86_64-linux-gnu/libm-2.15.so
+7fa15f551000-7fa15f750000 ---p 000fb000 08:01 41812233                   /lib/x86_64-linux-gnu/libm-2.15.so
+7fa15f750000-7fa15f751000 r--p 000fa000 08:01 41812233                   /lib/x86_64-linux-gnu/libm-2.15.so
+7fa15f751000-7fa15f752000 rw-p 000fb000 08:01 41812233                   /lib/x86_64-linux-gnu/libm-2.15.so
+7fa15f752000-7fa15f834000 r-xp 00000000 08:01 19275203                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7fa15f834000-7fa15fa33000 ---p 000e2000 08:01 19275203                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7fa15fa33000-7fa15fa3b000 r--p 000e1000 08:01 19275203                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7fa15fa3b000-7fa15fa3d000 rw-p 000e9000 08:01 19275203                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.16
+7fa15fa3d000-7fa15fa52000 rw-p 00000000 00:00 0 
+7fa15fa52000-7fa15fa6a000 r-xp 00000000 08:01 41812224                   /lib/x86_64-linux-gnu/libpthread-2.15.so
+7fa15fa6a000-7fa15fc69000 ---p 00018000 08:01 41812224                   /lib/x86_64-linux-gnu/libpthread-2.15.so
+7fa15fc69000-7fa15fc6a000 r--p 00017000 08:01 41812224                   /lib/x86_64-linux-gnu/libpthread-2.15.so
+7fa15fc6a000-7fa15fc6b000 rw-p 00018000 08:01 41812224                   /lib/x86_64-linux-gnu/libpthread-2.15.so
+7fa15fc6b000-7fa15fc6f000 rw-p 00000000 00:00 0 
+7fa15fc6f000-7fa15fc93000 r-xp 00000000 08:01 24641680                   /opt/ros/hydro/lib/librostime.so
+7fa15fc93000-7fa15fe93000 ---p 00024000 08:01 24641680                   /opt/ros/hydro/lib/librostime.so
+7fa15fe93000-7fa15fe95000 r--p 00024000 08:01 24641680                   /opt/ros/hydro/lib/librostime.so
+7fa15fe95000-7fa15fe96000 rw-p 00026000 08:01 24641680                   /opt/ros/hydro/lib/librostime.so
+7fa15fe96000-7fa15fe98000 r-xp 00000000 08:01 24641704                   /opt/ros/hydro/lib/libroscpp_serialization.so
+7fa15fe98000-7fa160097000 ---p 00002000 08:01 24641704                   /opt/ros/hydro/lib/libroscpp_serialization.so
+7fa160097000-7fa160098000 r--p 00001000 08:01 24641704                   /opt/ros/hydro/lib/libroscpp_serialization.so
+7fa160098000-7fa160099000 rw-p 00002000 08:01 24641704                   /opt/ros/hydro/lib/libroscpp_serialization.so
+7fa160099000-7fa1600bd000 r-xp 00000000 08:01 24641924                   /opt/ros/hydro/lib/librosconsole.so
+7fa1600bd000-7fa1602bc000 ---p 00024000 08:01 24641924                   /opt/ros/hydro/lib/librosconsole.so
+7fa1602bc000-7fa1602be000 r--p 00023000 08:01 24641924                   /opt/ros/hydro/lib/librosconsole.so
+7fa1602be000-7fa1602bf000 rw-p 00025000 08:01 24641924                   /opt/ros/hydro/lib/librosconsole.so
+7fa1602bf000-7fa1603f1000 r-xp 00000000 08:01 24641977                   /opt/ros/hydro/lib/libroscpp.so
+7fa1603f1000-7fa1605f1000 ---p 00132000 08:01 24641977                   /opt/ros/hydro/lib/libroscpp.so
+7fa1605f1000-7fa1605f7000 r--p 00132000 08:01 24641977                   /opt/ros/hydro/lib/libroscpp.so
+7fa1605f7000-7fa1605fb000 rw-p 00138000 08:01 24641977                   /opt/ros/hydro/lib/libroscpp.so
+7fa1605fb000-7fa16061d000 r-xp 00000000 08:01 41812232                   /lib/x86_64-linux-gnu/ld-2.15.so
+7fa1607e3000-7fa1607f8000 rw-p 00000000 00:00 0 
+7fa160801000-7fa16080d000 rw-p 00000000 00:00 0 
+7fa16080d000-7fa160814000 r--s 00000000 08:01 19536921                   /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fa160814000-7fa16081d000 rw-p 00000000 00:00 0 
+7fa16081d000-7fa16081e000 r--p 00022000 08:01 41812232                   /lib/x86_64-linux-gnu/ld-2.15.so
+7fa16081e000-7fa160820000 rw-p 00023000 08:01 41812232                   /lib/x86_64-linux-gnu/ld-2.15.so
+7fff47ff7000-7fff48018000 rw-p 00000000 00:00 0                          [stack]
+7fff480ef000-7fff480f1000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+[31m[lms1xx-7] escalating to SIGTERM[0m
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
+]0;roadrunner@zareason-verix545: ~/roadrunner_ws/srcroadrunner@zareason-verix545:~/roadrunner_ws/src$ exit
+
+Script done on Sun 07 Jun 2015 02:52:17 PM CDT

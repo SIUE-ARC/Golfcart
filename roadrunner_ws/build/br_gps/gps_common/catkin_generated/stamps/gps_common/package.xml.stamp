@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<package>
+  <name>gps_common</name>
+  <version>0.1.7</version>
+  <description>GPS messages and common routines for use in GPS drivers</description>
+
+  <maintainer email="timo.roehling@fkie.fraunhofer.de">Timo Roehling</maintainer>
+  <license>BSD</license>
+  <url type="website">http://ros.org/wiki/gps_common</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>message_filters</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>sound_play</build_depend>
+  <build_depend>roslib</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <build_depend>audio_common_msgs</build_depend>
+  <build_depend>diagnostic_msgs</build_depend>
+  <build_depend>libgstreamer0.10-dev</build_depend>
+  <build_depend>libgstreamer-plugins-base0.10-dev</build_depend>
+  <build_depend>utm_odometry_node</build_depend>
+  <build_depend>libpq-dev</build_depend>
+  <build_depend>yaml-cpp</build_depend>
+  <build_depend>pkg-config</build_depend>
+<build_depend>TurningForGPS</build_depend>
+<build_depend>printLaser</build_depend>
+
+ <run_depend>printLaser</run_depend>
+<run_depend>TurningForGPS</run_depend>
+  <run_depend>libpq-dev</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>yaml-cpp</run_depend>
+  <run_depend>utm_odometry_node</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>sound_play</run_depend>
+  <run_depend>roslib</run_depend>
+  <run_depend>actionlib_msgs</run_depend>
+  <run_depend>audio_common_msgs</run_depend>
+  <run_depend>diagnostic_msgs</run_depend>
+  <run_depend>libgstreamer0.10-0</run_depend>
+  <run_depend>libgstreamer-plugins-base0.10-0</run_depend>
+  <run_depend>gstreamer0.10-plugins-ugly</run_depend>
+  <run_depend>gstreamer0.10-plugins-good</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>festival</run_depend>
+  <run_depend>python-gst</run_depend>
+
+  <export>
+      <cpp cflags="-I${prefix}/include -I${prefix}/msg/cpp" />
+   </export>
+</package>

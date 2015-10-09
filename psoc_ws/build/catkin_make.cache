@@ -1,0 +1,2 @@
+serial_test
+-DCATKIN_DEVEL_PREFIX=/home/roadrunner/psoc_ws/devel -DCMAKE_INSTALL_PREFIX=/home/roadrunner/psoc_ws/install

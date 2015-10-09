@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "gps_common")
+set(gps_common_MAINTAINER "Timo Roehling <timo.roehling@fkie.fraunhofer.de>")
+set(gps_common_DEPRECATED "")
+set(gps_common_VERSION "0.1.7")
+set(gps_common_BUILD_DEPENDS "message_generation" "message_filters" "roscpp" "std_msgs" "nav_msgs" "sensor_msgs" "sound_play" "roslib" "actionlib_msgs" "audio_common_msgs" "diagnostic_msgs" "libgstreamer0.10-dev" "libgstreamer-plugins-base0.10-dev" "utm_odometry_node" "libpq-dev" "yaml-cpp" "pkg-config" "TurningForGPS" "printLaser")
+set(gps_common_RUN_DEPENDS "printLaser" "TurningForGPS" "libpq-dev" "roscpp" "yaml-cpp" "utm_odometry_node" "message_runtime" "sound_play" "roslib" "actionlib_msgs" "audio_common_msgs" "diagnostic_msgs" "libgstreamer0.10-0" "libgstreamer-plugins-base0.10-0" "gstreamer0.10-plugins-ugly" "gstreamer0.10-plugins-good" "rospy" "festival" "python-gst")
+set(gps_common_BUILDTOOL_DEPENDS "catkin")

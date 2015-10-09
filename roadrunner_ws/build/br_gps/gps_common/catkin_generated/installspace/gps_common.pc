@@ -1,0 +1,8 @@
+prefix=/home/roadrunner/roadrunner_ws/install
+
+Name: gps_common
+Description: Description of gps_common
+Version: 0.1.7
+Cflags: -I/home/roadrunner/roadrunner_ws/install/include
+Libs: -L/home/roadrunner/roadrunner_ws/install/lib 
+Requires: message_runtime

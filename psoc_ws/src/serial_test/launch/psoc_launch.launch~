@@ -1,0 +1,6 @@
+<launch>
+  <node name="talker" pkg="serial_test" type="talker.py" output="screen" launch-prefix="xterm -e"/>
+  <node name="psoc_rx" pkg="serial_test" type="psoc_rx.py" output="screen" />
+  <node name="psoc_tx" pkg="serial_test" type="psoc_tx.py" output="screen" />
+  <node name="listener" pkg="serial_test" type="listener.py" output="screen" launch-prefix="xterm -e"/>
+</launch>

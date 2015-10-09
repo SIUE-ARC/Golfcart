@@ -1,0 +1,8 @@
+prefix=/home/roadrunner/roadrunner_ws/devel
+
+Name: lms1xx
+Description: Description of lms1xx
+Version: 0.1.1
+Cflags: 
+Libs: -L/home/roadrunner/roadrunner_ws/devel/lib 
+Requires: 
