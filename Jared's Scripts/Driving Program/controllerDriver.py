@@ -8,6 +8,8 @@ import sys
 drive_port = serialCommunication.BaseSerial("/dev/ttyUSB0", 19200, 0)
 steer_port = serialCommunication.BaseSerial("/dev/ttyUSB1", 19200, 0)
 
+
+
 current_speed = 80
 stop_speed = 85
 current_direction = "f "
@@ -26,8 +28,8 @@ def left_thumb_x(xValue):
 
 
 def left_trigger(value):
-    nonlocal current_direction
-    nonlocal current_speed
+    global current_direction
+    global current_speed
     value *= 254
     value = max(stop_speed, value)
     print("Left Trigger:" + str(value))
@@ -37,8 +39,8 @@ def left_trigger(value):
 
 
 def right_trigger(value):
-    nonlocal current_direction
-    nonlocal current_speed
+    global current_direction
+    global current_speed
     value *= 254
     value = max(stop_speed, value)
     print("Right Trigger: " + str(value))
@@ -48,13 +50,13 @@ def right_trigger(value):
 
 
 def b_button(value):
-    nonlocal end_prog
+    global end_prog
     print("B button pressed: ENDING")
     end_prog = True
 
 
 def y_button(value):
-    nonlocal e_brake_flag
+    global e_brake_flag
     print("Flipping E-Brake")
     steer_port.send_command('u ', '\r')
     if e_brake_flag:
@@ -64,7 +66,7 @@ def y_button(value):
 
 
 def a_button(value):
-    nonlocal brake_flag
+    global brake_flag
     if brake_flag:
         steer_port.send_command('h ', 'off', '\r')
         brake_flag = False
@@ -76,8 +78,8 @@ def a_button(value):
 
 
 def x_button(value):
-    nonlocal current_direction
-    nonlocal current_speed
+    global current_direction
+    global current_speed
     print("Halting")
     steer_port.send_command('f ', '0', '\r')
     steer_port.send_command('l ', '\r')
