@@ -12,6 +12,7 @@ current_speed = 80
 stop_speed = 0
 current_direction = "f "
 min_move_speed = 85
+counts_per_degree = 77.64232488822653
 
 e_brake_flag = False
 autonomous_flag = False
@@ -22,9 +23,9 @@ end_prog = False
 
 def left_thumb_x(xValue):
     xValue *= 180
-    xValue = xValue // 1
+    count = convert_angle(xValue)
     print("LX" + str(xValue))
-    steer_port.send_command('t ', xValue, '\r')
+    steer_port.send_command('t ', count, '\r')
 
 
 def left_trigger(value):
@@ -96,6 +97,13 @@ def halt():
     steer_port.send_command('t ', '0', '\r')
     drive_port.close_connection()
     steer_port.close_connection()
+
+
+def convert_angle(angle):
+    global counts_per_degree
+    new_count = round(counts_per_degree * angle)
+    return str(new_count)
+
 
 if __name__ == '__main__':
     # for packet serial baud rate
