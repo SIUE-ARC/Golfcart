@@ -1,0 +1,43 @@
+# Node based drive commands
+# Node based steer commands
+# 5/29/15
+
+
+import serial
+import time
+from time import sleep # "sleep(seconds)"
+
+driveport = serial.Serial("/dev/ttyUSB0", 19200, timeout = 0)
+steerport = serial.Serial("/dev/ttyUSB1", 19200, timeout = 0)
+serial.EIGHTBITS
+serial.PARITY_NONE
+serial.STOPBITS_ONE
+
+
+steerport.write('i\r') #for packet serial baud rate
+driveport.write('i\r') #
+
+steerport.write('r\r') #reset
+
+wait = 4
+
+
+driveport.write('f 95\r') #forward
+sleep(3)
+driveport.flushInput()
+driveport.write('d\r') #get encoder count
+start = driveport.read(100) #
+
+sleep(wait)
+
+driveport.flushInput()
+driveport.write('d\r') # get encoder count again
+stop = driveport.read(1000) #
+
+strstart = str(speed)
+strstop = str(stop)
+
+print("Start is: " + strstart + "\n")
+print("Stop is: " + strstop + "\n")
+print("Time between: " + wait + "\n")
+
