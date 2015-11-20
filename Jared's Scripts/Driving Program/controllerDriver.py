@@ -8,8 +8,6 @@ import sys
 drive_port = serialCommunication.BaseSerial("/dev/ttyUSB0", 19200, 0)
 steer_port = serialCommunication.BaseSerial("/dev/ttyUSB1", 19200, 0)
 
-
-
 current_speed = 80
 stop_speed = 85
 current_direction = "f "
@@ -23,6 +21,7 @@ end_prog = False
 
 def left_thumb_x(xValue):
     xValue *= 180
+    xValue = xValue // 1
     print("LX" + str(xValue))
     steer_port.send_command('t ', xValue, '\r')
 
@@ -31,7 +30,7 @@ def left_trigger(value):
     global current_direction
     global current_speed
     value *= 254
-    value = max(stop_speed, value)
+    value = max(stop_speed, value) // 1
     print("Left Trigger:" + str(value))
     drive_port.send_command('b ', value, '\r')
     current_direction = 'b '
@@ -42,7 +41,7 @@ def right_trigger(value):
     global current_direction
     global current_speed
     value *= 254
-    value = max(stop_speed, value)
+    value = max(stop_speed, value) // 1
     print("Right Trigger: " + str(value))
     drive_port.send_command('f ', value, '\r')
     current_direction = 'f '
@@ -54,6 +53,8 @@ def b_button(value):
     print("B button pressed: ENDING")
     end_prog = True
 
+
+# Sending a 'u' enables the brake to be on when E-Stop is physically pressed
 
 def y_button(value):
     global e_brake_flag
@@ -81,11 +82,17 @@ def x_button(value):
     global current_direction
     global current_speed
     print("Halting")
-    steer_port.send_command('f ', '0', '\r')
+    drive_port.send_command('f ', '0', '\r')
     steer_port.send_command('l ', '\r')
     current_speed = stop_speed
     current_direction = 'f '
 
+
+def halt():
+    drive_port.send_command('f ', '0', '\r')
+    steer_port.send_command('t ', '0', '\r')
+    drive_port.close_connection()
+    steer_port.close_connection()
 
 if __name__ == '__main__':
     # for packet serial baud rate
@@ -104,6 +111,7 @@ if __name__ == '__main__':
     # controller.setup_control_call_back(controller.controller_mapping.R_THUMB_X, right_thumb_x)
     # controller.setup_control_call_back(controller.controller_mapping.R_THUMB_Y, right_thumb_y)
     controller.setup_control_call_back(controller.controller_mapping.B_BUTTON, b_button)
+    controller.setup_control_call_back(controller.controller_mapping.A_BUTTON, a_button)
 
     try:
         controller.start()
@@ -120,3 +128,4 @@ if __name__ == '__main__':
 
     finally:
         controller.stop()
+        halt()
