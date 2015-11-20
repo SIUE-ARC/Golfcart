@@ -9,8 +9,9 @@ drive_port = serialCommunication.BaseSerial("/dev/ttyUSB0", 19200, 0)
 steer_port = serialCommunication.BaseSerial("/dev/ttyUSB1", 19200, 0)
 
 current_speed = 80
-stop_speed = 85
+stop_speed = 0
 current_direction = "f "
+min_move_speed = 85
 
 e_brake_flag = False
 autonomous_flag = False
@@ -29,8 +30,9 @@ def left_thumb_x(xValue):
 def left_trigger(value):
     global current_direction
     global current_speed
+    global min_move_speed
     value *= 254
-    value = max(stop_speed, value) // 1
+    value = max(min_move_speed, value) // 1
     print("Left Trigger:" + str(value))
     drive_port.send_command('b ', value, '\r')
     current_direction = 'b '
@@ -40,8 +42,9 @@ def left_trigger(value):
 def right_trigger(value):
     global current_direction
     global current_speed
+    global min_move_speed
     value *= 254
-    value = max(stop_speed, value) // 1
+    value = max(min_move_speed, value) // 1
     print("Right Trigger: " + str(value))
     drive_port.send_command('f ', value, '\r')
     current_direction = 'f '
