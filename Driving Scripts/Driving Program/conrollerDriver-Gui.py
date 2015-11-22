@@ -186,8 +186,8 @@ class ResponseWindow(Gtk.Window):
         self.__buttonBox.pack_start(self.__steer_port_button, True, True, 0)
 
         self.__box.pack_start(self.__scrolled_window, True, True, 0)
-        self.__box.pack_start(self.__buttonBox, True, True, 0)
-        self.__box.pack_start(self.__entry, True, True, 0)
+        self.__box.pack_start(self.__buttonBox, False, False, 0)
+        self.__box.pack_start(self.__entry, False, False, 20)
 
         self.add(self.__box)
         self.show_all()
