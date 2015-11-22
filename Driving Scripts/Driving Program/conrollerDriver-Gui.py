@@ -1,6 +1,14 @@
 __author__ = 'Ryan Owens'
 import gi
-gi.require_version('Gtk', '3.0')
+try:
+    gi.require_version("Gtk", "3.0")
+except ValueError:
+    print("Requires gtk3 development files to be installed.")
+    exit(1)
+except AttributeError:
+    print("pygobject version too old.")
+    exit(2)
+
 from gi.repository import Gtk
 
 import controllerClass
