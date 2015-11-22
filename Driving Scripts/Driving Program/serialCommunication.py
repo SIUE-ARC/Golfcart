@@ -69,7 +69,7 @@ class BaseSerial:
 
     def get_response(self):
         while self.__connection.inWaiting() == 0 and self.__expecting_response:
-            print("Waiting for response")
+            pass
         response = self.__connection.read(self.__connection.inWaiting())
         self.__response_list.append(response)
         self.__expecting_response = False

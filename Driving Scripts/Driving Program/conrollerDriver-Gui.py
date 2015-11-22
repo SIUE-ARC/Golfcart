@@ -25,6 +25,7 @@ def left_thumb_x(x_value):
     count = convert_angle(x_value)
     win.add_to("Angle: " + str(x_value), "Controller")
     steer_port.send_command('t ', count, '\r')
+    win.add_to(steer_port.get_response(), "Steer Port")
     time.sleep(0.1)
 
 
@@ -36,6 +37,7 @@ def left_trigger(value):
     value = max(min_move_speed, value) // 1
     win.add_to("Forward Speed: " + str(value), "Controller")
     drive_port.send_command('b ', value, '\r')
+    win.add_to(drive_port.get_response(), "Drive Port")
     current_direction = 'b '
     current_speed = value
 
@@ -48,12 +50,13 @@ def right_trigger(value):
     value = max(min_move_speed, value) // 1
     win.add_to("Backward Speed: " + str(value), "Controller")
     drive_port.send_command('f ', value, '\r')
+    win.add_to(drive_port.get_response(), "Drive Port")
     current_direction = 'f '
     current_speed = value
 
 
 def b_button(value):
-    win.add_to("B button pressed. Ending Program" , "Controller")
+    win.add_to("B button pressed. Ending Program", "Controller")
     halt()
     Gtk.main_quit()
 
@@ -64,6 +67,7 @@ def y_button(value):
     global e_brake_flag
     win.add_to("Y Button Pressed: Turning on E-Brake", "Controller")
     steer_port.send_command('u ', '\r')
+    win.add_to(steer_port.get_response(), "Steer Port")
     if e_brake_flag:
         e_brake_flag = False
     else:
@@ -80,6 +84,7 @@ def a_button(value):
         brake_flag = True
         steer_port.send_command('h ', 'on', '\r')
         win.add_to("A Button Pressed: Brake is on", "Controller")
+    win.add_to(steer_port.get_response(), "Steer Port")
 
 
 def x_button(value):
@@ -87,14 +92,18 @@ def x_button(value):
     global current_speed
     win.add_to("X Button Pressed: Halting", "Controller")
     drive_port.send_command('f ', '0', '\r')
+    win.add_to(drive_port.get_response(), "Drive Port")
     steer_port.send_command('l ', '\r')
+    win.add_to(steer_port.get_response(), "Steer Port")
     current_speed = stop_speed
     current_direction = 'f '
 
 
 def halt():
     drive_port.send_command('f ', '0', '\r')
+    win.add_to(drive_port.get_response(), "Drive Port")
     steer_port.send_command('t ', '0', '\r')
+    win.add_to(steer_port.get_response(), "Steer Port")
     drive_port.close_connection()
     steer_port.close_connection()
 
@@ -111,12 +120,19 @@ def reset_steering(value):
         win.add_to("Sending Steer Reset", "Controller")
     else:
         win.add_to("Sending Steer Reset", "Program Startup")
+    win.add_to(steer_port.get_response(), "Steer Port")
+
+
+def on_controller_disconnect():
+    win.add_to("Controller has been disconnected: Waiting for Reconnect", "Controller Error")
+    drive_port.send_command('f ', '0', '\r')
+    win.add_to(drive_port.get_response(), "Drive Port")
+    steer_port.send_command('t ', '0', '\r')
+    win.add_to(steer_port.get_response(), "Steer Port")
 
 
 class ResponseWindow(Gtk.Window):
-
     def __init__(self):
-
         Gtk.Window.__init__(self, title='I was bored')
         self.set_default_size(600, 300)
         self.connect('delete-event', Gtk.main_quit)
@@ -179,7 +195,7 @@ if __name__ == '__main__':
     drive_port.send_command(current_direction, stop_speed, '\r')
 
     controller = controllerClass.Controller(controller_call_back=None, dead_zone=0.1, scale=1, invert_Y_axis=True,
-                                            controller_is_xbox=True)
+                                            controller_is_xbox=True, controller_disconnect=on_controller_disconnect)
     xboxControls = controllerClass.XboxControls
     controller.setup_control_call_back(controller.controller_mapping.L_THUMB_X, left_thumb_x)
     # controller.setup_control_call_back(controller.controller_mapping.L_THUMB_Y, left_thumb_y)

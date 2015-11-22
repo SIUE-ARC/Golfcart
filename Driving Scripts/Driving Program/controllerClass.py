@@ -2,6 +2,7 @@ __author__ = 'Ryan Owens'
 # requires Python3 (python3), Pygame built with Python3 (No package available for Ubuntu 12. 04, build from source)
 import os
 import threading
+import time
 
 import pygame
 
@@ -337,10 +338,11 @@ class PyGameButtons:
 
 class Controller(threading.Thread):
     def __init__(self, controller_call_back=None, dead_zone=0.1, scale=1,
-                 invert_Y_axis=False, controller_is_xbox=True):
+                 invert_Y_axis=False, controller_is_xbox=True, controller_disconnect=None):
         threading.Thread.__init__(self)
         self.__running = False
         self.__controller_call_back = controller_call_back
+        self.__controller_disconnect = controller_disconnect
         self.__lower_dead_zone = dead_zone * -1
         self.__upper_dead_zone = dead_zone
         self.__scale = scale
@@ -470,7 +472,7 @@ class Controller(threading.Thread):
 
     @property
     def home_button_value(self):
-        return self.__controller_values[self.__controller_mapping.HOME_BUTTON]
+        return self.__controller_values[self.__controller_mapping.XBOX_BUTTON]
 
     @property
     def left_thumb_value(self):
@@ -494,7 +496,6 @@ class Controller(threading.Thread):
         pygame.joystick.init()
         # create a 1x1 pixel screen, its not used so it doesnt matter
         screen = pygame.display.set_mode((1, 1))
-        # Get count of joysticks
 
         # For each joystick:
         for i in range(pygame.joystick.get_count()):
@@ -507,7 +508,14 @@ class Controller(threading.Thread):
     # start the controller
     def _start(self):
         self.__running = True
-        # run until the controller is stopped
+
+        # run until the controller is reconnected
+        while pygame.joystick.get_count() is 0:
+            # Perform the disconnect Action
+            self.__controller_disconnect()
+            # We will wait 10 seconds before trying again
+            time.sleep(10)
+
         while self.__running:
             # react to the pygame events that come from the xbox controller
             for event in pygame.event.get():
@@ -594,3 +602,8 @@ class Controller(threading.Thread):
         # if the button is down its 1, if the button is up its 0
         value = 1 if event_type == pygame.JOYBUTTONDOWN else 0
         return value
+
+    # Get the joystick's name
+    @staticmethod
+    def get_joystick_name(self):
+        return pygame.joystick.Joystick(0).get_name()
