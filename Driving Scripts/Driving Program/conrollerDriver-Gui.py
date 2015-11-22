@@ -158,7 +158,7 @@ class ResponseWindow(Gtk.Window):
         self.__tree_view.append_column(self.__column_1)
 
         self.__renderer_2 = Gtk.CellRendererText(xalign=1)
-        self.__column_2 = Gtk.TreeViewColumn('To/From', self.__renderer_2, text=1)
+        self.__column_2 = Gtk.TreeViewColumn('From', self.__renderer_2, text=1)
         self.__tree_view.append_column(self.__column_2)
         self.__scrolled_window = Gtk.ScrolledWindow()
         self.__scrolled_window.set_policy(
@@ -183,7 +183,7 @@ class ResponseWindow(Gtk.Window):
 
     def enter_callback(self, widget, entry):
         __entry_text = entry.get_text()
-        self.add_to(__entry_text, "Me")
+        self.add_to(__entry_text, "Keyboard")
         entry.set_text("")
 
     def tree_view_changed(self, widget, event, data=None):
