@@ -1,6 +1,8 @@
 __author__ = 'Ryan Owens'
-
+import gi
+gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
+
 import controllerClass
 import serialCommunication
 import time
