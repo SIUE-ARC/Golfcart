@@ -142,7 +142,9 @@ def on_controller_disconnect():
 
 
 class ResponseWindow(Gtk.Window):
+
     def __init__(self):
+
         Gtk.Window.__init__(self, title='I was bored')
         self.set_default_size(600, 300)
         self.connect('delete-event', Gtk.main_quit)
@@ -158,7 +160,7 @@ class ResponseWindow(Gtk.Window):
         self.__tree_view.append_column(self.__column_1)
 
         self.__renderer_2 = Gtk.CellRendererText(xalign=1)
-        self.__column_2 = Gtk.TreeViewColumn('From', self.__renderer_2, text=1)
+        self.__column_2 = Gtk.TreeViewColumn('To/From', self.__renderer_2, text=1)
         self.__tree_view.append_column(self.__column_2)
         self.__scrolled_window = Gtk.ScrolledWindow()
         self.__scrolled_window.set_policy(
@@ -172,7 +174,19 @@ class ResponseWindow(Gtk.Window):
         self.__entry = Gtk.Entry()
         self.__entry.connect("activate", self.enter_callback, self.__entry)
 
+        self.__drive_port_button = Gtk.ToggleButton("Drive Port")
+        self.__drive_port_button.set_active(True)
+        self.__drive_port_button.connect("toggled", self.on_drive_button_toggled, "1")
+
+        self.__steer_port_button = Gtk.ToggleButton("Steer Port")
+        self.__steer_port_button.connect("toggled", self.on_steer_button_toggled, "2")
+
+        self.__buttonBox = Gtk.Box(spacing=10)
+        self.__buttonBox.pack_start(self.__drive_port_button, True, True, 0)
+        self.__buttonBox.pack_start(self.__steer_port_button, True, True, 0)
+
         self.__box.pack_start(self.__scrolled_window, True, True, 0)
+        self.__box.pack_start(self.__buttonBox, True, True, 0)
         self.__box.pack_start(self.__entry, True, True, 0)
 
         self.add(self.__box)
@@ -182,13 +196,28 @@ class ResponseWindow(Gtk.Window):
         self.__store.append([str(value1), str(value2)])
 
     def enter_callback(self, widget, entry):
-        __entry_text = entry.get_text()
-        self.add_to(__entry_text, "Keyboard")
+        entry_text = entry.get_text()
+        if self.__drive_port_button.get_active():
+            self.add_to(entry_text, "Keyboard->Drive Port")
+            drive_port.send_command(entry_text)
+            win.add_to(drive_port.get_response(), "Drive Port")
+        else:
+            self.add_to(entry_text, "Keyboard->Steer Port")
+            steer_port.send_command(entry_text)
+            win.add_to(steer_port.get_response(), "Steer Port")
         entry.set_text("")
 
     def tree_view_changed(self, widget, event, data=None):
         v_adjustment = self.__scrolled_window.get_vadjustment()
         v_adjustment.set_value(v_adjustment.get_upper() - v_adjustment.get_page_size())
+
+    def on_drive_button_toggled(self, button, name):
+        toggle_val = self.__drive_port_button.get_active()
+        self.__steer_port_button.set_active(not toggle_val)
+
+    def on_steer_button_toggled(self, button, name):
+        toggle_val = self.__steer_port_button.get_active()
+        self.__drive_port_button.set_active(not toggle_val)
 
 
 if __name__ == '__main__':
