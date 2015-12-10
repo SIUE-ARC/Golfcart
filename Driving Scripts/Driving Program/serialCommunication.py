@@ -15,14 +15,15 @@ import serial
 class BaseSerial:
     constant_communication = False
 
-    def __init__(self, port, baud_rate):
+    def __init__(self, port, baud_rate, time_out):
         self.__port = port
         self.__baud_rate = baud_rate
         self.__expecting_response = False
         self.__expecting_acknowledge = False
+        self.__time_out = time_out
 
         try:
-            self.__connection = serial.Serial(port, baud_rate, timeout=1)
+            self.__connection = serial.Serial(port=self.__port, baudrate=self.__baud_rate, timeout=self.__time_out)
         except serial.SerialException as e:
             print(e)
             exit(1)
@@ -68,7 +69,7 @@ class BaseSerial:
 
     def get_response(self):
         while self.__connection.inWaiting() == 0 and self.__expecting_response:
-            print("Waiting for response")
+            pass
         response = self.__connection.read(self.__connection.inWaiting())
         self.__response_list.append(response)
         self.__expecting_response = False
