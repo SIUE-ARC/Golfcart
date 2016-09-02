@@ -1,0 +1,8 @@
+prefix=/home/bryan/Golfcart/roadrunner_ws/devel
+
+Name: psoc
+Description: Description of psoc
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bryan/Golfcart/roadrunner_ws/devel/lib 
+Requires: 

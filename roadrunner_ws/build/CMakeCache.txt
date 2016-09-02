@@ -292,6 +292,12 @@ lms1xx_SOURCE_DIR:STATIC=/home/bryan/Golfcart/roadrunner_ws/src/lms1xx_V3
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/kinetic/share/message_runtime/cmake
 
+//Value Computed by CMake
+psoc_BINARY_DIR:STATIC=/home/bryan/Golfcart/roadrunner_ws/build/psoc
+
+//Value Computed by CMake
+psoc_SOURCE_DIR:STATIC=/home/bryan/Golfcart/roadrunner_ws/src/psoc
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/kinetic/share/rosconsole/cmake
 
@@ -315,12 +321,6 @@ rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
-
-//Value Computed by CMake
-serial_test_BINARY_DIR:STATIC=/home/bryan/Golfcart/roadrunner_ws/build/serial_test
-
-//Value Computed by CMake
-serial_test_SOURCE_DIR:STATIC=/home/bryan/Golfcart/roadrunner_ws/src/serial_test
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake

@@ -118,7 +118,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/bryan/Golfcart/roadrunner_ws/build/gtest/cmake_install.cmake")
   include("/home/bryan/Golfcart/roadrunner_ws/build/lms1xx_V3/cmake_install.cmake")
-  include("/home/bryan/Golfcart/roadrunner_ws/build/serial_test/cmake_install.cmake")
+  include("/home/bryan/Golfcart/roadrunner_ws/build/psoc/cmake_install.cmake")
 
 endif()
 

@@ -52,10 +52,10 @@
 /home/bryan/Golfcart/roadrunner_ws/build/lms1xx_V3/CMakeFiles/list_install_components.dir
 /home/bryan/Golfcart/roadrunner_ws/build/lms1xx_V3/CMakeFiles/sensor_msgs_generate_messages_eus.dir
 /home/bryan/Golfcart/roadrunner_ws/build/lms1xx_V3/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/list_install_components.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/install.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/rebuild_cache.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/install/strip.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/install/local.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/test.dir
-/home/bryan/Golfcart/roadrunner_ws/build/serial_test/CMakeFiles/edit_cache.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/list_install_components.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/install.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/rebuild_cache.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/install/strip.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/install/local.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/test.dir
+/home/bryan/Golfcart/roadrunner_ws/build/psoc/CMakeFiles/edit_cache.dir

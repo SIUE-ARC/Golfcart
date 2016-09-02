@@ -17,13 +17,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/order_packages.cmake"
   "lms1xx_V3/catkin_generated/ordered_paths.cmake"
   "lms1xx_V3/catkin_generated/package.cmake"
-  "serial_test/catkin_generated/ordered_paths.cmake"
-  "serial_test/catkin_generated/package.cmake"
+  "psoc/catkin_generated/ordered_paths.cmake"
+  "psoc/catkin_generated/package.cmake"
   "/home/bryan/Golfcart/roadrunner_ws/src/CMakeLists.txt"
   "/home/bryan/Golfcart/roadrunner_ws/src/lms1xx_V3/CMakeLists.txt"
   "/home/bryan/Golfcart/roadrunner_ws/src/lms1xx_V3/package.xml"
-  "/home/bryan/Golfcart/roadrunner_ws/src/serial_test/CMakeLists.txt"
-  "/home/bryan/Golfcart/roadrunner_ws/src/serial_test/package.xml"
+  "/home/bryan/Golfcart/roadrunner_ws/src/psoc/CMakeLists.txt"
+  "/home/bryan/Golfcart/roadrunner_ws/src/psoc/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/all.cmake"
   "/opt/ros/kinetic/share/catkin/cmake/assert.cmake"
@@ -231,7 +231,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lms1xx_V3/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "serial_test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "psoc/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

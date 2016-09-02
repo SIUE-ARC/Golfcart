@@ -1183,22 +1183,22 @@ clean: lms1xx_V3/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory serial_test
+# Directory level rules for directory psoc
 
 # Convenience name for "all" pass in the directory.
-serial_test/all:
+psoc/all:
 
-.PHONY : serial_test/all
+.PHONY : psoc/all
 
 # Convenience name for "clean" pass in the directory.
-serial_test/clean:
+psoc/clean:
 
-.PHONY : serial_test/clean
+.PHONY : psoc/clean
 
 # Convenience name for "preinstall" pass in the directory.
-serial_test/preinstall:
+psoc/preinstall:
 
-.PHONY : serial_test/preinstall
+.PHONY : psoc/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.
