@@ -1,8 +1,8 @@
-prefix=/home/roadrunner/roadrunner_ws/devel
+prefix=/home/bryan/Golfcart/roadrunner_ws/devel
 
 Name: serial_test
 Description: Description of serial_test
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/roadrunner/roadrunner_ws/devel/lib 
+Libs: -L/home/bryan/Golfcart/roadrunner_ws/devel/lib 
 Requires: 

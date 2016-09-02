@@ -1,2 +1,2 @@
-audio_common/audio_capture:audio_common/audio_common:audio_common/audio_common_msgs:audio_common/audio_play:audio_common/sound_play:br_gps/gps_common:br_gps/gps_umd:br_gps/gpsd_client:cc_usb_cam:laser_sub_V6:lms1xx_V3:serial_test
--DCATKIN_DEVEL_PREFIX=/home/roadrunner/roadrunner_ws/devel -DCMAKE_INSTALL_PREFIX=/home/roadrunner/roadrunner_ws/install
+lms1xx_V3:serial_test
+-DCATKIN_DEVEL_PREFIX=/home/bryan/Golfcart/roadrunner_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bryan/Golfcart/roadrunner_ws/install -G Unix Makefiles

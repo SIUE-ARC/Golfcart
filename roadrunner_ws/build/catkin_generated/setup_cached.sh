@@ -7,4 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/roadrunner/roadrunner_ws/build"
+export CMAKE_PREFIX_PATH="/home/bryan/Golfcart/roadrunner_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD="/home/bryan/Golfcart/roadrunner_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/bryan/Golfcart/roadrunner_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/bryan/Golfcart/roadrunner_ws/src:$ROS_PACKAGE_PATH"

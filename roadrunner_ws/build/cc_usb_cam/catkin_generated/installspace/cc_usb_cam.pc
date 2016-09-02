@@ -1,8 +1,0 @@
-prefix=/home/roadrunner/roadrunner_ws/install
-
-Name: cc_usb_cam
-Description: Description of cc_usb_cam
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/roadrunner/roadrunner_ws/install/lib 
-Requires: 

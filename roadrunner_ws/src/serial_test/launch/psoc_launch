@@ -1,6 +1,0 @@
-<launch>
-  <node name="talker" pkg="serial_test" type="talker" />
-  <node name="psoc_rx" pkg="serial_test" type="psoc_rx" />
-  <node name="psoc_tx" pkg="serial_test" type="psoc_tx" />
-  <node name="listener" pkg="serial_test" type="listener" />
-</launch>

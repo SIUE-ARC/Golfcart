@@ -1,8 +1,0 @@
-prefix=/home/roadrunner/roadrunner_ws/install
-
-Name: sound_play
-Description: Description of sound_play
-Version: 0.2.7
-Cflags: -I/home/roadrunner/roadrunner_ws/install/include
-Libs: -L/home/roadrunner/roadrunner_ws/install/lib 
-Requires: message_runtime actionlib_msgs

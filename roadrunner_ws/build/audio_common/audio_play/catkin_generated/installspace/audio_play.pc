@@ -1,8 +1,0 @@
-prefix=/home/roadrunner/roadrunner_ws/install
-
-Name: audio_play
-Description: Description of audio_play
-Version: 0.2.7
-Cflags: 
-Libs: -L/home/roadrunner/roadrunner_ws/install/lib 
-Requires: 

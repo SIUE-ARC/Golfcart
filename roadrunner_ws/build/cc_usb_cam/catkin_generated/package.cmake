@@ -1,7 +1,0 @@
-set(_CATKIN_CURRENT_PACKAGE "cc_usb_cam")
-set(cc_usb_cam_MAINTAINER "cathy <catherinecasey513@yahoo.com>")
-set(cc_usb_cam_DEPRECATED "")
-set(cc_usb_cam_VERSION "0.0.0")
-set(cc_usb_cam_BUILD_DEPENDS "cv_bridge" "image_transport" "image_view" "roscpp" "rospy" "std_msgs" "sensor_msgs" "opencv2")
-set(cc_usb_cam_RUN_DEPENDS "cv_bridge" "image_transport" "image_view" "roscpp" "rospy" "std_msgs" "sensor_msgs" "opencv2")
-set(cc_usb_cam_BUILDTOOL_DEPENDS "catkin")

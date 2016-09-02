@@ -1,8 +1,0 @@
-prefix=/home/roadrunner/roadrunner_ws/install
-
-Name: audio_capture
-Description: Description of audio_capture
-Version: 0.2.7
-Cflags: 
-Libs: -L/home/roadrunner/roadrunner_ws/install/lib 
-Requires: 
