@@ -50,6 +50,7 @@ void main(void)
 {
 	char* data;
 	int reqCount = 0;
+	int lastCount = 0;
 	char baudChar = 0xAA;
 	//unsigned int potValue = 0;
 	val = 0;
@@ -92,10 +93,18 @@ void main(void)
 			UART_CPutString("RESUME");
 			UART_PutCRLF();
 		}
-		if ((reqCount == glblCount) && turning) 
+		LCD_Position(0,0);
+		LCD_PrHexInt(glblCount);
+		LCD_Position(1,0);
+		LCD_PrHexInt(getSteerPotPosition());
+		
+		// If we passed the target point since last time
+		if ((lastCount < reqCount && glblCount >= reqCount || lastCount > reqCount && glblCount <= reqCount) && turning) 
 		{
 			sendSTOP();
 		}
+		lastCount = glblCount;
+		
 		//In the future try to get protection for every method of turning with pot values
 		/*if (turning || manTurn)
 		{
