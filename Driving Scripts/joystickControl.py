@@ -28,7 +28,7 @@ def setThrottle(speed):
 	print "Setting throttle to " + str(control)
 	if control > 10:
 		driveport.write('f '+abs(control) + '\r') #forward
-	else if control < -10:
+	elif control < -10:
 		driveport.write('b '+abs(control) + '\r') #backwards
 	else:
 		driveport.write('f 0\r')
