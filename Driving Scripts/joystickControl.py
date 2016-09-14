@@ -1,5 +1,6 @@
 import pygame
 import serial
+import time
 
 driveport = serial.Serial("/dev/ttyUSB0", 19200, timeout = 0)
 #steerport = serial.Serial("/dev/ttyUSB1", 19200, timeout = 0)
@@ -8,7 +9,7 @@ serial.PARITY_NONE
 serial.STOPBITS_ONE
 
 #steerport.write('i\r') #for packet serial baud rate
-sleep(2)
+time.sleep(2)
 #steerport.write('r\r') #reset
 driveport.write('a\r')
 
