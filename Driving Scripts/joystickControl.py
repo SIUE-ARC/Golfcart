@@ -24,15 +24,25 @@ joystick.init()
 
 clock = pygame.time.Clock()
 
+coasting = False;
+
 
 def setThrottle(speed):	
 	control = int(round(speed * 80))
 	print "Setting throttle to " + str(80 + control)
-	if control > 10:
+	if control > 80:
+		if coasting:
+			driveport.write('a\r')
+			coasting = False
 		driveport.write('f '+str(80 + abs(control)) + '\r') #forward
-	elif control < -10:
+	elif control < -80:
+		if coasting:
+			driveport.write('a\r')
+			coasting = False
 		driveport.write('b '+str(80 + abs(control)) + '\r') #backwards
 	else:
+		coasting = True
+		driveport.write('a\r')
 		driveport.write('f 0\r')
 
 
