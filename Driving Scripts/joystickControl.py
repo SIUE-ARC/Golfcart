@@ -2,15 +2,16 @@ import pygame
 import serial
 import time
 
-driveport = serial.Serial("/dev/ttyUSB0", 19200, timeout = 0)
-#steerport = serial.Serial("/dev/ttyUSB1", 19200, timeout = 0)
+driveport = serial.Serial("/dev/ttyUSB1", 19200, timeout = 0)
+steerport = serial.Serial("/dev/ttyUSB0", 19200, timeout = 0)
 serial.EIGHTBITS
 serial.PARITY_NONE
 serial.STOPBITS_ONE
 
-#steerport.write('i\r') #for packet serial baud rate
+steerport.write('i\r') #for packet serial baud rate
 time.sleep(2)
-#steerport.write('r\r') #reset
+steerport.write('r\r') #for packet serial baud rate
+
 driveport.write('a\r')
 
 
@@ -25,12 +26,12 @@ clock = pygame.time.Clock()
 
 
 def setThrottle(speed):	
-	control = int(round(speed * 255))
-	print "Setting throttle to " + str(control)
+	control = int(round(speed * 80))
+	print "Setting throttle to " + str(80 + control)
 	if control > 10:
-		driveport.write('f '+str(abs(control)) + '\r') #forward
+		driveport.write('f '+str(80 + abs(control)) + '\r') #forward
 	elif control < -10:
-		driveport.write('b '+str(abs(control)) + '\r') #backwards
+		driveport.write('b '+str(80 + abs(control)) + '\r') #backwards
 	else:
 		driveport.write('f 0\r')
 
@@ -40,8 +41,19 @@ def setThrottle(speed):
 def turnTo(target):
 	control = int(round(target * 600));
 	print "Setting turn to " + str(control)
+	if control > 10:
+		steerport.write('t '+str(control) + '\r') #forward
+	elif control < -10:
+		steerport.write('t '+str(control) + '\r') #backwards
+	else:
+		steerport.write('T 0\r')
 
 	# Set turn target over serial
+
+def setBrake(brake):
+	control = int(round(brake * 800))
+	print "Setting brake to: " + str(control);
+	steerport.write('h ' + str(control) + '\r');
 
 while 1:
 	for event in pygame.event.get():
@@ -49,11 +61,13 @@ while 1:
 
 	throttle = -joystick.get_axis(1);
 	wheel = joystick.get_axis(0);
+	brake = (-joystick.get_axis(2) + 1.0) / 2.0;
 	
 	setThrottle(throttle);
-	#turnTo(wheel);
+	setBrake(brake);
+	turnTo(wheel);
 
-	clock.tick(40)
+	clock.tick(10)
 
 pygame.quit ()
 
