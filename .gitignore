@@ -1,0 +1,3 @@
+# Ingore outputs from catkin_make
+roadrunner_ws/build
+roadrunner_ws/devel

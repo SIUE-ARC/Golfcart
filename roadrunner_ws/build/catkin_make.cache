@@ -1,2 +1,0 @@
-lms1xx_V3:psoc
--DCATKIN_DEVEL_PREFIX=/home/bryan/Golfcart/roadrunner_ws/devel -DCMAKE_INSTALL_PREFIX=/home/bryan/Golfcart/roadrunner_ws/install -G Unix Makefiles
