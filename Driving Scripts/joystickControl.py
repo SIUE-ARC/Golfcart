@@ -28,6 +28,7 @@ coasting = False;
 
 
 def setThrottle(speed):	
+	global coasting
 	control = int(round(speed * 80))
 	print "Setting throttle to " + str(80 + control)
 	if control > 80:
@@ -41,12 +42,10 @@ def setThrottle(speed):
 			coasting = False
 		driveport.write('b '+str(80 + abs(control)) + '\r') #backwards
 	else:
-		coasting = True
-		driveport.write('a\r')
+		if not coasting:
+			coasting = True
+			driveport.write('a\r')
 		driveport.write('f 0\r')
-
-
-	# Set drive psoc speed over serial
 
 def turnTo(target):
 	control = int(round(target * 600));
@@ -58,12 +57,13 @@ def turnTo(target):
 	else:
 		steerport.write('T 0\r')
 
-	# Set turn target over serial
+
 
 def setBrake(brake):
 	control = int(round(brake * 800))
 	print "Setting brake to: " + str(control);
 	steerport.write('h ' + str(control) + '\r');
+
 
 while 1:
 	for event in pygame.event.get():
