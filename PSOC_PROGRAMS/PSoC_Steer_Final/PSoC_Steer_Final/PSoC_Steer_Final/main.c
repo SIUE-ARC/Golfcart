@@ -33,12 +33,14 @@ BYTE* cancelComm;
 char on[] = "on";
 char off[] = "off";
 int heartbeat = 0;
+BYTE brakeDir = 0;
+BYTE brakeVal = 100;
 //char* data;
 
 int command_lookup(BYTE cmd);
 void countEncoder(void );
 int turnToCount(int count);
-void sendSTOP(void );
+void sendSTOP(BYTE address );
 void applyBrake(int pVal );
 void releaseBrake(void );
 void turn(BYTE direction);
@@ -94,7 +96,7 @@ void main(void)
 			UART_CPutString("ESTOP");
 			UART_PutCRLF();
 			if (useBrake)applyBrake(900);
-			sendSTOP();
+			sendSTOP(128);
 			while (!(PRT1DR & ESTOP_MASK));
 			if(useBrake)releaseBrake();
 			UART_CPutString("RESUME");
@@ -108,9 +110,15 @@ void main(void)
 		// If we passed the target point since last time
 		if ((lastCount < reqCount && glblCount >= reqCount || lastCount > reqCount && glblCount <= reqCount) && turning) 
 		{
-			sendSTOP();
+			sendSTOP(128);
 		}
 		lastCount = glblCount;
+		
+		
+		if ((brakeDir && (getActuatorPosition() < brakeVal)) || (!brakeDir && (getActuatorPosition() > brakeVal)))
+		{
+			sendSTOP(130);	
+		}
 		
 		//In the future try to get protection for every method of turning with pot values
 		/*if (turning || manTurn)
@@ -194,7 +202,7 @@ int command_lookup(BYTE cmd)
 		case 'L':
 		case 'l':
 			UART_CPutString("Sending a manual STOP\r\n");
-			sendSTOP();
+			sendSTOP(128);
 			UART_CmdReset();
 			break;
 		//toggles the useBrake flag for estop purposes
@@ -228,7 +236,7 @@ int command_lookup(BYTE cmd)
 				//brake on
 				//if (strcmp(data,on)==0){
 				//	UART_CPutString("Brake ON\r\n");
-				sendSTOP();
+				sendSTOP(130);
 				applyBrake(count);
 				UART_CmdReset();
 				//brake off
@@ -242,7 +250,7 @@ int command_lookup(BYTE cmd)
 			break;
 		case 'J':
 		case 'j':
-			sendSTOP();
+			sendSTOP(128);
 			releaseBrake();
 			break;
 		case 'P':
@@ -330,9 +338,9 @@ int turnToCount(int count)
 	return count;
 }
 
-void sendSTOP(void ){
+void sendSTOP(BYTE address){
 	BYTE* TX;
-	BYTE addr = 128;
+	BYTE addr = address;
 	BYTE dir = 0;
 	BYTE val = 0;
 	BYTE checksum = 0;
@@ -367,6 +375,9 @@ void applyBrake(int pVal)
 	
 	dir = (pVal >= brakePotvalue) ? 1:0;
 	
+	brakeDir = dir;
+	brakeVal = pVal;
+	
 	UART_CmdReset();
 	checksum = addr + dir + val;
 	checksum = checksum & 0x7F;
@@ -377,12 +388,6 @@ void applyBrake(int pVal)
 	TX8_Write(TX,4);
 	
 	UART_CPutString("Braking!!\r\n");
-	while ((dir && (getActuatorPosition() < pVal)) || (!dir && (getActuatorPosition() > pVal)));
-	TX[2] = 0;
-	checksum = addr + dir;
-	checksum = checksum & 0x7F;
-	TX[3] = checksum;
-	TX8_Write(TX,4);
 	 // 96
 }
 
@@ -450,7 +455,7 @@ void turn(BYTE direction)
 	//val = *data;
 	if(manTurn){
 		//for (i = 0; i < 56000; i++);
-		sendSTOP();
+		sendSTOP(128);
 		for (i = 0; i < 10000; i++);
 	}
 	manTurn = 1;
@@ -516,7 +521,7 @@ void resetPotShaft(void)
 //			}
 //		}
 	}
-	sendSTOP();
+	sendSTOP(128);
 	glblCount = 0;
 }
 	

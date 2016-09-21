@@ -1,6 +1,6 @@
 Project:      output/PSoC_Steer_Final
 Build Number: 0
-Date:         Fri Sep 16 14:51:47 2016
+Date:         Wed Sep 21 13:38:13 2016
 Compiler:     ICCM8C
 Version:      7.05.00
 
@@ -217,29 +217,29 @@ Area                               Addr   Size   Decimal Bytes (Attributes)
 
 Area                               Addr   Size   Decimal Bytes (Attributes)
 --------------------------------   ----   ----   ------- ----- ------------
-                            text   0DB2   0E91 =   3729. bytes (rel,con,rom,code)
+                            text   0DB2   0E9E =   3742. bytes (rel,con,rom,code)
 
        Addr  Global Symbol
       -----  --------------------------------
        0DB2  _main
        0DB2  __text_start
-       0FAF  _command_lookup
-       12D0  _PSoC_GPIO_ISR_C
-       1316  _turnToCount
-       13E3  _sendSTOP
-       1461  _applyBrake
-       1591  _releaseBrake
-       1663  _getActuatorPosition
-       1699  _getSteerPotPosition
-       16D2  _turn
-       1773  _resetPotShaft
-       18E7  _atoi
-       1A28  _itoa
-       1C01  _isdigit
-       1C22  _isspace
-       1C43  __text_end
-       1C43  __xidata_start
-       1C56  __xidata_end
+       0FFB  _command_lookup
+       132B  _PSoC_GPIO_ISR_C
+       1371  _turnToCount
+       143E  _sendSTOP
+       14BD  _applyBrake
+       1594  _releaseBrake
+       1666  _getActuatorPosition
+       169C  _getSteerPotPosition
+       16D5  _turn
+       177B  _resetPotShaft
+       18F4  _atoi
+       1A35  _itoa
+       1C0E  _isdigit
+       1C2F  _isspace
+       1C50  __text_end
+       1C50  __xidata_start
+       1C69  __xidata_end
 
 Area                               Start  End    Decimal Bytes (Attributes)
 --------------------------------   ----   ----   ------- ----- ------------
@@ -306,7 +306,7 @@ Area                               Addr   Size   Decimal Bytes (Attributes)
 
 Area                               Addr   Size   Decimal Bytes (Attributes)
 --------------------------------   ----   ----   ------- ----- ------------
-                            data   0000   001B =     27. bytes (rel,con,ram)
+                            data   0000   001D =     29. bytes (rel,con,ram)
 
        Addr  Global Symbol
       -----  --------------------------------
@@ -317,15 +317,17 @@ Area                               Addr   Size   Decimal Bytes (Attributes)
        003F  _steerPotvalue
        0041  _brakePotvalue
        0043  _cancelComm
-       0045  _val
-       0047  _reqCount
-       0049  _glblCount
-       004B  _turning
-       004C  _encoderFlag
-       004E  _curPrt
-       004F  _prevPrt
-       0050  _manTurn
-       0051  _useBrake
+       0045  _reqCount
+       0047  _glblCount
+       0049  _val
+       004B  _manTurn
+       004C  _turning
+       004D  _encoderFlag
+       004E  _brakeDir
+       004F  _brakeVal
+       0051  _curPrt
+       0052  _prevPrt
+       0053  _useBrake
 
 Files Linked      [ module(s) ]
 
