@@ -12,7 +12,7 @@
 //#define OFF "off"
 
 #pragma interrupt_handler PSoC_GPIO_ISR_C
-#define STEER_POT_CENTER 0x1E1
+#define STEER_POT_CENTER 0x204
 #define ENCODER_LEFT_BOUND -2300
 #define ENCODER_RIGHT_BOUND 2300
 #define POT_LEFT_BOUND 0x00FF
@@ -21,7 +21,9 @@
 int val;
 BOOL encoderFlag = FALSE;
 int glblCount = 0;
+int reqCount = 0;
 unsigned int steerPotvalue = 0;
+unsigned int brakePotvalue = 0;
 BYTE prevPrt;
 BYTE curPrt;
 BYTE turning = 0;
@@ -30,15 +32,14 @@ BYTE useBrake = 0;
 BYTE* cancelComm;
 char on[] = "on";
 char off[] = "off";
+int heartbeat = 0;
 //char* data;
 
-
-int convert(char* c);
 int command_lookup(BYTE cmd);
 void countEncoder(void );
 int turnToCount(int count);
 void sendSTOP(void );
-void applyBrake(void );
+void applyBrake(int pVal );
 void releaseBrake(void );
 void turn(BYTE direction);
 unsigned int getActuatorPosition(void );
@@ -49,7 +50,6 @@ void resetPotShaft(void );
 void main(void)
 {
 	char* data;
-	int reqCount = 0;
 	int lastCount = 0;
 	char baudChar = 0xAA;
 	//unsigned int potValue = 0;
@@ -83,10 +83,17 @@ void main(void)
 	while (TRUE)
 	{
 		prevPrt = (PRT1DR & (OpEncA_MASK | OpEncB_MASK)); 
+		if(heartbeat%100 == 0)
+		{
+			UART_PutCRLF();
+			UART_CPutString("ping");
+			UART_PutCRLF();
+		}
+		heartbeat++;
 		if (!(PRT1DR & ESTOP_MASK)){
 			UART_CPutString("ESTOP");
 			UART_PutCRLF();
-			if (useBrake)applyBrake();
+			if (useBrake)applyBrake(900);
 			sendSTOP();
 			while (!(PRT1DR & ESTOP_MASK));
 			if(useBrake)releaseBrake();
@@ -116,38 +123,11 @@ void main(void)
 			if(data = UART_szGetParam()) 
 			{
 				//UART_PutString(data);
-				reqCount = command_lookup(*data);
+				command_lookup(*data);
 			}   
 		UART_CmdReset();  // Reset command buffer     
 		}
 	}
-}
-
-int convert(char* c)
-{
-	int result = 0;
-	int i = 0;
-	char check;
-	while(check = c[i])
-	{
-		if(i == 0)
-			result += (((int)c[i]) - 48)*1000;
-		else if(i == 1)
-			result += (((int)c[i]) - 48)*100;
-		else if(i == 2)
-			result += (((int)c[i]) - 48)*10;
-		else
-			result += (((int)c[i]) - 48);
-			
-		i++;
-	}
-	if (i == 1)
-		result = result/1000;
-	else if (i == 2)
-		result = result/100;
-	else if (i == 3)
-		result = result/10;
-	return result;
 }
 
 //Parses the command buffer when new command received
@@ -179,7 +159,7 @@ int command_lookup(BYTE cmd)
 				{
 					UART_CPutString("Turning to >");
 					UART_PutString(data);
-					UART_CPutString(" degrees<\r\n");
+					UART_CPutString(" encoder ticks<\r\n");
 					return turnToCount(count);
 				}
 			}
@@ -244,20 +224,33 @@ int command_lookup(BYTE cmd)
 		case 'H':
 			if (data = UART_szGetParam())
 			{
+				count = atoi(data);
 				//brake on
-				if (strcmp(data,on)==0){
-					UART_CPutString("Brake ON\r\n");
-					sendSTOP();
-					applyBrake();
-					UART_CmdReset();
+				//if (strcmp(data,on)==0){
+				//	UART_CPutString("Brake ON\r\n");
+				sendSTOP();
+				applyBrake(count);
+				UART_CmdReset();
 				//brake off
-				} else if (strcmp(data,off)==0){
-					UART_CPutString("Brake OFF\r\n");
-					sendSTOP();
-					releaseBrake();
-					UART_CmdReset();
-				}else UART_CPutString("Invalid halt command!!!\r\n");
+				//} else if (strcmp(data,off)==0){
+				//	UART_CPutString("Brake OFF\r\n");
+				//	sendSTOP();
+				//	releaseBrake();
+				//	UART_CmdReset();
 			}
+			else UART_CPutString("No brake value given!!!\r\n");
+			break;
+		case 'J':
+		case 'j':
+			sendSTOP();
+			releaseBrake();
+			break;
+		case 'P':
+		case 'p':
+			steerPotvalue = getSteerPotPosition();
+			UART_CPutString("Steer pot is at >");
+			UART_PutSHexInt(steerPotvalue);
+			UART_CPutString(" counts<\r\n");
 			break;
 		//Invalid command
 		default:
@@ -270,10 +263,10 @@ int command_lookup(BYTE cmd)
 	return 0;
 }
 
+//A ___|-----|_____|-----|____
+//B   ____|-----|_____|-----|____
 void PSoC_GPIO_ISR_C(void)
 {
-	//encoderFlag = TRUE;
-	//countEncoder();
 	curPrt = (PRT1DR & (OpEncA_MASK | OpEncB_MASK));		// Setting prevPort to only bits 1[4] and 1[5]
 																// of PRT1DR
 		
@@ -294,38 +287,6 @@ void PSoC_GPIO_ISR_C(void)
 	}
 }
 
-
-//A ___|-----|_____|-----|____
-//B   ____|-----|_____|-----|____
-void countEncoder(void )
-{
-	//char * TX;
-	//encoderFlag = FALSE;
-	curPrt = (PRT1DR &= (OpEncA_MASK | OpEncB_MASK));		// Setting prevPort to only bits 1[4] and 1[5]
-																// of PRT1DR
-		
-	if ((prevPrt == 0x00) && (curPrt == 0x10))	// If prevPort is 0x00 and then after the interrupt curPrt is
-												// 0x10 then A is high and B is low which means you wanted to
-												// increment by turning clockwise and hitting a rising edge on A
-	{
-		// Increasing the count when clockwise turn interrupt occurred
-		glblCount++;
-	}
-	else if ((prevPrt == 0x00) && (curPrt == 0x20))	// If prevPort is 0x00 and then after the interrupt curPrt is
-													// 0x20 then B is high and A is low which means you wanted to
-													// decrement by turning counterclockwise and hitting 
-													// a rising edge on B
-	{
-		// Decreasing the count when the counterclockwise interrupt occurred
-		glblCount--;
-	}
-	//LCD_Position(1,7);
-	//LCD_PrHexInt(glblCount);
-	//UART_PutString(itoa(TX,glblCount,10));
-	//UART_PutCRLF();
-	//PRT1DR ^= 0x01;
-}
-
 int turnToCount(int count)
 {
 	BYTE* TX;
@@ -335,12 +296,14 @@ int turnToCount(int count)
 	BYTE checksum = 0;
 	int i = 0;
 	
+	reqCount = count;
+	
 	UART_CmdReset();
-	if(turning){
-		//for (i = 0; i < 56000; i++);
-		sendSTOP();
-		for (i = 0; i < 10000; i++);
-	}
+//	if(turning){
+//		//for (i = 0; i < 56000; i++);
+//		sendSTOP();
+//		for (i = 0; i < 10000; i++);
+//	}
 	//UART_CPutString("turning left to>");
 	//UART_PutSHexInt(count);
 	//UART_CPutString("<\r\n");
@@ -350,7 +313,7 @@ int turnToCount(int count)
 	//LCD_PrCString("Going Left!!");
 	//dir = 0;
 	turning = 1;
-	if (count > glblCount)dir = 1;
+	if (count >= glblCount)dir = 1;
 	
 	//else if (((count == 0)&&(glblCount > 0))||(count < glblCount))dir = 0;
 	else if (count < glblCount)dir = 0;
@@ -364,32 +327,6 @@ int turnToCount(int count)
 	TX[3] = checksum;
 	TX8_Write(TX,4);
 
-	//Increasing count for testing without encoder
-	/*while (glblCount != count)
-	{
-		prevPrt = (PRT1DR &= (OpEncA_MASK | OpEncB_MASK));  
-		//if(encoderFlag)
-		//{
-			//countEncoder();	
-		//}
-	
-	
-		if(UART_bCmdCheck()) // command in receive buffer
-		{ 
-			//if(data = UART_szGetParam())
-			//{
-	            // Wait for command    		
-				//sendSTOP();
-			UART_CPutString("Got breakout command!!!\r\n");
-			if (cancelComm = UART_szGetParam())
-			{
-				UART_CPutString("Received a command breaking out!!!\r\n");
-				break;
-			}
-			//}
-		}
-	}*/
-	//sendSTOP();
 	return count;
 }
 
@@ -415,13 +352,20 @@ void sendSTOP(void ){
 	UART_CPutString("Stopping!!\r\n");
 }
 
-void applyBrake(void )
+void applyBrake(int pVal)
 {
 	BYTE* TX;
 	BYTE addr = 130;
 	BYTE dir = 1;
 	BYTE val = 120;
 	BYTE checksum = 0;
+	if (pVal < 100 || pVal > 900)
+	{
+		UART_CPutString("Only enter a brake value between 100-900!!!\r\n");
+		return ;
+	}
+	
+	dir = (pVal >= brakePotvalue) ? 1:0;
 	
 	UART_CmdReset();
 	checksum = addr + dir + val;
@@ -433,7 +377,7 @@ void applyBrake(void )
 	TX8_Write(TX,4);
 	
 	UART_CPutString("Braking!!\r\n");
-	while (getActuatorPosition() < 900);
+	while ((dir && (getActuatorPosition() < pVal)) || (!dir && (getActuatorPosition() > pVal)));
 	TX[2] = 0;
 	checksum = addr + dir;
 	checksum = checksum & 0x7F;
@@ -472,14 +416,13 @@ void releaseBrake(void )
 
 unsigned int getActuatorPosition(void )
 {
-	unsigned int result = 0;
 	DUALADC_GetSamples(2);
 	// Wait for data to be ready
 	while(DUALADC_fIsDataAvailable ()==0);
 		
 	// Get Data and clear flag
-	result=DUALADC_iGetData2ClearFlag();
-	return result;
+	brakePotvalue = DUALADC_iGetData2ClearFlag();
+	return brakePotvalue;
 }
 
 unsigned int getSteerPotPosition(void )
@@ -530,6 +473,8 @@ void resetPotShaft(void)
 	BYTE val = 80;
 	BYTE checksum = 0;
 	int i = 0;
+	int avg = 0;
+	int tol = 16;
 	
 	UART_CmdReset();
 	//UART_CPutString("turning left to>");
@@ -558,6 +503,18 @@ void resetPotShaft(void)
 	while (steerPotvalue != STEER_POT_CENTER)
 	{
 		steerPotvalue = getSteerPotPosition();
+//		avg += steerPotvalue;
+//		i++;
+//		if (i == 5)
+//		{
+//			i = 0;
+//			avg = avg/5;
+//			if (avg >= (steerPotvalue + tol) || avg <= (steerPotvalue - tol))
+//			{
+//				sendSTOP();
+//				break;	
+//			}
+//		}
 	}
 	sendSTOP();
 	glblCount = 0;

@@ -1,0 +1,7 @@
+flash 1C43 SRAM   36:
+ <size at next line>  6F 66 66  0 6F 6E
+  [size:] 6 bytes
+flash 1C4C SRAM   3C:
+ 00 17 bytes
+flash 1C50 SRAM   4E:
+ 00 4 bytes
