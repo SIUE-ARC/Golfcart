@@ -39,10 +39,6 @@ LMM info: area 'UART_RAM' item of 32 bytes allocated in SRAM page 0
 
 LMM info: area 'virtual_registers' uses 9 bytes in SRAM page 0
 
-LMM info: area 'data' item of 4 bytes allocated in SRAM page 0
-
-LMM info: area 'data' item of 3 bytes allocated in SRAM page 0
-
 LMM info: area 'data' item of 2 bytes allocated in SRAM page 0
 
 LMM info: area 'data' item of 2 bytes allocated in SRAM page 0
@@ -56,6 +52,8 @@ LMM info: area 'data' item of 2 bytes allocated in SRAM page 0
 LMM info: area 'data' item of 2 bytes allocated in SRAM page 0
 
 LMM info: area 'data' item of 2 bytes allocated in SRAM page 0
+
+LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
 
 LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
 
@@ -63,22 +61,14 @@ LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
 
 LMM info: area 'UART_RAM' item of 1 bytes allocated in SRAM page 0
 
-LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
-
-LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
-
-LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
-
-LMM info: area 'data' item of 1 bytes allocated in SRAM page 0
-
 idata dump at output/PSoC_Steer_Final.idata
 
-  ROM 21% full. 6819 out of 32768 bytes used (does not include absolute areas).
+  ROM 16% full. 5237 out of 32768 bytes used (does not include absolute areas).
 
-  RAM 5% full. 82 bytes used (does not include stack usage).
+  RAM 5% full. 72 bytes used (does not include stack usage).
 
 Built with ICCM8C STD V7.05.00
 
  
-PSoC_Steer_Final - 0 error(s) 0 warning(s) 14:51:47
+PSoC_Steer_Final - 0 error(s) 0 warning(s) 19:38:14
 
