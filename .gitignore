@@ -1,0 +1,6 @@
+# Ignore PSoC build files
+*.lis
+*.a
+*.o
+*.hex
+
