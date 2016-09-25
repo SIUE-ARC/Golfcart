@@ -87,6 +87,9 @@ int max(int a, int b) { return a > b ? a : b; }
 // Are currently cached analog reads valid, or should they be reaquired
 BYTE cacheValid;
 
+// Have the motor controllers been initilized
+BYTE baudSent;
+
 // The current count of the quadrature encoder connected to the steering column
 int steerCount;
 
@@ -204,7 +207,8 @@ void command_lookup(BYTE argc, char** argv)
         case 'I':
         case 'i':
             UART_PutChar('S');
-            TX8_PutChar((CHAR)BAUD_BYTE);       
+            TX8_PutChar((CHAR)BAUD_BYTE);
+			baudSent = 1;
             break;
             
         // Reset the position of the wheels to '0'
@@ -310,7 +314,7 @@ void setControllerSpeed(BYTE addr, BYTE speed, BYTE dir) {
     
     // Only send the serial packet if it changes the state of the motor controller of interest
     // speed is only a 7 bit value
-    if (lastValue[addr == BRAKE_CTL ? 1 : 0] != (dir << 7 | speed)) {
+    if (baudSent && (lastValue[addr == BRAKE_CTL ? 1 : 0] != (dir << 7 | speed))) {
         
         // Packet format, 4 bytes
         // Address [128, 255], direction [0, 1], speed [0, 127], checksum
@@ -380,6 +384,8 @@ unsigned int getBrakePosition(void)
             
         // Get Data and clear flag
         brakePot = DUALADC_iGetData2ClearFlag();
+		
+		cacheValid = TRUE;
     }
     
     return brakePot;
@@ -397,6 +403,8 @@ unsigned int getSteerPotPosition(void)
             
         // Get Data and clear flag
         steerPot = DUALADC_iGetData1ClearFlag();
+		
+		cacheValid = TRUE;
     }
     
     return steerPot;
@@ -438,6 +446,7 @@ void calibrateSteering(void)
     
     // Spin until the pot lines up
     while (abs(getSteerPotPosition() - STEER_POT_CENTER) > 30)
+		UART_PutSHexInt(getSteerPotPosition() - STEER_POT_CENTER);
         // We are spinning here, so we need to invalidate the cache ourself
         cacheValid = FALSE;
     
