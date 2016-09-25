@@ -73,7 +73,7 @@ void updateTurnCtl(void);
 void calibrateSteering(void);
 
 // Handle the supplied command. Reads from the serial buffer to get the command parameters
-void command_lookup(char cmd);
+void command_lookup(BYTE argc, char **argv);
 
 // Return the larger, or smaller, of two integers
 int min(int, int);
@@ -183,9 +183,15 @@ void main(void)
         // Handle the first serial command in the buffer
         if(UART_bCmdCheck()) 
         {
-            char* data;
-            if(data = UART_szGetParam()) 
-                command_lookup(*data);
+            // Read all parameters
+            BYTE argc = 0;
+            char **argv[2];
+
+            while(argv[argc] = UART_szGetParam())
+                argc++;
+
+            // Execute the command
+            command_lookup(argc, argv);
 
             // Reset the serial buffer
             UART_CmdReset();
@@ -196,9 +202,9 @@ void main(void)
 
 /******** FUNCTIONS ********/
 
-void command_lookup(char cmd)
+void command_lookup(BYTE argc, char** argv)
 {
-    switch (cmd)
+    switch (*argv[0])
     {
         // Send the baud character to the motor controllers and the
         // psoc identifer to the computer
@@ -228,9 +234,8 @@ void command_lookup(char cmd)
         // Turn to a specific count
         case 'T':
         case 't':
-            char* param;
-            if (data = UART_szGetParam())
-                turn(atoi(param));
+            if (argc == 2)
+                turn(atoi(argv[1]));
             
             #ifdef VERBOSE
                 else UART_CPutString("No value given!\r\n");
@@ -240,9 +245,8 @@ void command_lookup(char cmd)
         // Apply the brake to the specified value [100, 900]
         case 'h':
         case 'H':
-            char* param;
-            if (data = UART_szGetParam())
-                brake(atoi(param));
+            if(argc == 2)
+                brake(atoi(argv[1]));
             
             #ifdef VERBOSE
                 else UART_CPutString("No brake value given!!!\r\n");
