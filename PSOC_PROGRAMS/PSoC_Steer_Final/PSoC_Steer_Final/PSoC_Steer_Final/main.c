@@ -476,6 +476,12 @@ void PSoC_GPIO_ISR_C(void)
             || then == 1 && now == 0)   // Falling edge on A while B is low
         steerCount++;
 
+    #ifdef VERBOSE
+        else
+            UART_CPutString("Unhandled encoder interrupt\r\n");
+    #endif 
+
     // Update the saved encoder state
     then = now;
 }
+
