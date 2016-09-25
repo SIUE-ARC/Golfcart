@@ -10,6 +10,8 @@
 
 #pragma interrupt_handler PSoC_GPIO_ISR_C
 
+/******** CONSTANTS ********/
+
 #define POT_LEFT_BOUND 0x00FF
 #define STEER_POT_CENTER 0x204
 #define POT_RIGHT_BOUND 0x02EF
@@ -33,6 +35,13 @@
 #define BRAKE_SPEED 120
 #define RELEASE 0
 #define APPLY 1
+
+
+/******** CODE SECTIONS ********/
+
+#define EXTENDED_COMMANDS
+#define VERBOSE
+#define LCD
 
 
 /******** PROTOTYPES ********/
@@ -63,8 +72,10 @@ void updateTurnCtl(void);
 // Realign the steer encoder so that 0 counts occurs when the pot is centered
 void calibrateSteering(void);
 
-int command_lookup(BYTE cmd);
+// Handle the supplied command. Reads from the serial buffer to get the command parameters
+void command_lookup(char cmd);
 
+// Return the larger, or smaller, of two integers
 int min(int, int);
 int max(int, int);
 int min(int a, int b) { return a < b ? a : b; }
@@ -92,90 +103,134 @@ int steerSetpoint;
 
 void main(void)
 {
-	char* data;
-	
-	unsigned int heartbeat = 0;
-	
+    // Enable GPIO Interrupts (see m8c.h)
 	M8C_EnableGInt ; 
-	M8C_EnableIntMask(INT_MSK0,INT_MSK0_GPIO); 	// Enable GPIO Interrupts (see m8c.h)
-	
+	M8C_EnableIntMask(INT_MSK0,INT_MSK0_GPIO);	
+
+    // Initilize computer-psoc serial command stuff
 	UART_CmdReset();
 	UART_IntCntl(UART_ENABLE_RX_INT);
 	UART_Start(UART_PARITY_NONE);
 	
+    // Initilize psoc-sabertooth serial command stuff
 	TX8_Start(TX8_PARITY_NONE);
 	TX8_EnableInt();
+
+    // Initilize analog input for brake and steer pots
 	Actuator_Pot_Start(Actuator_Pot_HIGHPOWER);
 	Steer_Pot_Start(Steer_Pot_HIGHPOWER);
 	DUALADC_Start(DUALADC_HIGHPOWER);
 	
-	LCD_Start();
-	LCD_Position(0,0);
-	LCD_PrCString("Steering PSoC");
+    #ifdef LCD
+        // Initilize the debug LCD screen
+        LCD_Start();
+        LCD_Position(0,0);
+        LCD_PrCString("Steering PSoC");
+    #endif
 	
 	UART_CPutString("Steer Program Start\r\n");
-	//TX8_PutChar(baudChar);
-	//DAC8_1_Start(DAC8_1_HIGHPOWER);
-	//DAC8_1_WriteBlind(val);
 		
+    #ifdef HEARTBEAT
+        unsigned int heartbeat = 0;
+    #endif
+	
 	while (TRUE)
 	{
+        // Invalidate the cached analog values
 		cacheValid = FALSE;
 		
+        // Log the current encoder state in case we interrupt
 		prevPrt = (PRT1DR & (OpEncA_MASK | OpEncB_MASK)); 
 		
-		if(heartbeat % 500 == 0)
-		{
-			UART_PutCRLF();
-			UART_CPutString("ping");
-			UART_PutCRLF();
-		}
-		heartbeat++;
+        #ifdef HEARTBEAT
+            // Send a heartbeat to let computer know we aren't dead
+            if(heartbeat % 500 == 0)
+            {
+                UART_CPutString("ping");
+                UART_PutCRLF();
+            }
+            heartbeat++;
+        #endif
 		
-		// If the e-stop line is low
+		// If the e-stop line is low, kill everything
 		if (!(PRT1DR & ESTOP_MASK)){
+			stop();
+
 			UART_CPutString("ESTOP");
 			UART_PutCRLF();
 			
-			stop();
-			LCD_Position(0,0);
-			LCD_PrCString("E-STOP");
+            #ifdef LCD
+                LCD_Position(0,0);
+                LCD_PrCString("E-STOP");
+            #endif
 			
+            // Spin until the e-stop is disengaged
 			while (!(PRT1DR & ESTOP_MASK));
+
+            #ifdef LCD
+                LCD_Position(0,0);
+                LCD_PrCString("Steering PSoC");
+            #endif
+
 			UART_CPutString("RESUME");
 			UART_PutCRLF();
 		}
 		
+        // Run the PID calculations for both motors
 		updateBrakeCtl();
 		updateTurnCtl();
 
+        // Handle the first serial command in the buffer
 		if(UART_bCmdCheck()) 
 		{
-			// Wait for command    
+	        char* data;
 			if(data = UART_szGetParam()) 
-			{
-				//UART_PutString(data);
 				command_lookup(*data);
-			}   
-			UART_CmdReset();  // Reset command buffer     
+
+            // Reset the serial buffer
+			UART_CmdReset();
 		}
 	}
 }
 
-//Parses the command buffer when new command received
-int command_lookup(BYTE cmd)
+
+/******** FUNCTIONS ********/
+
+void command_lookup(char cmd)
 {
-	BYTE* data;
-	BYTE* TX;
-	BYTE baud = 0xAA;
-	int count = 0;
 	switch (cmd)
 	{
+		// Send the baud character to the motor controllers and the
+        // psoc identifer to the computer
+		case 'I':
+		case 'i':
+			UART_PutChar('S');
+			TX8_PutChar((CHAR)BAUD_BYTE);		
+			break;
+			
+		// Reset the position of the wheels to '0'
+		case 'R':
+		case 'r':
+			calibrateSteering();
+			UART_CPutString("Shaft Reset\r\n");
+			break;
+			
+		// Request the steer encoder count
+		case 'S':
+		case 's':
+            #ifdef VERBOSE
+                UART_CPutString("Steer encoder: ");
+            #endif
+			UART_PutSHexInt(steerCount);
+			UART_PutCRLF();
+			break;
+
 		// Turn to a specific count
 		case 'T':
 		case 't':
+	        char* param;
 			if (data = UART_szGetParam())
-				turn(atoi(data));
+				turn(atoi(param));
 			
 			#ifdef VERBOSE
 				else UART_CPutString("No value given!\r\n");
@@ -185,99 +240,102 @@ int command_lookup(BYTE cmd)
 		// Apply the brake to the specified value [100, 900]
 		case 'h':
 		case 'H':
+	        char* param;
 			if (data = UART_szGetParam())
-				brake(atoi(data));
+				brake(atoi(param));
 			
 			#ifdef VERBOSE
 				else UART_CPutString("No brake value given!!!\r\n");
 			#endif
 			break;
 			
-		// Request the steer encoder count
-		case 'S':
-		case 's':
-			UART_PutSHexInt(steerCount);
-			UART_PutCRLF();
-			break;
-			
-		// Manual turning right
-		case 'E':
-		case 'e':
-			#ifdef VERBOSE
-				UART_CPutString("Turning Right\r\n");
-			#endif
-			
-			setControllerSpeed(STEER_CTL, STEER_SPEED, RIGHT);
-			break;
-			
-		// Manual turning left
-		case 'Q':
-		case 'q':
-			#ifdef VERBOSE
-				UART_CPutString("Turning Left\r\n");
-			#endif
-			
-			setControllerSpeed(STEER_CTL, STEER_SPEED, LEFT);
-			break;
-			
-		//manual stopping
-		case 'L':
-		case 'l':
-			stop();
-			break;
-			
-		//sending the baud character
-		case 'I':
-		case 'i':
-			UART_PutChar('S');
-			TX8_PutChar((CHAR)BAUD_BYTE);		
-			break;
-			
-		//reset the position of the wheels to '0'
-		case 'R':
-		case 'r':
-			calibrateSteering();
-			UART_CPutString("Shaft Reset\r\n");
-			break;
+        #ifdef EXTENDED_COMMANDS
+            // Manual turning right
+            case 'E':
+            case 'e':
+                #ifdef VERBOSE
+                    UART_CPutString("Turning Right\r\n");
+                #endif
+                
+                setControllerSpeed(STEER_CTL, STEER_SPEED, RIGHT);
+                break;
+                
+            // Manual turning left
+            case 'Q':
+            case 'q':
+                #ifdef VERBOSE
+                    UART_CPutString("Turning Left\r\n");
+                #endif
+                
+                setControllerSpeed(STEER_CTL, STEER_SPEED, LEFT);
+                break;
+                
+            //manual stopping
+            case 'L':
+            case 'l':
+                #ifdef VERBOSE
+                    UART_CPutString("Stopping\r\n");
+                #endif
 
+                stop();
+                break;
+                
+            // Fully release the brake
+            case 'J':
+            case 'j':
+                brake(100);
+                break;
+                
+            // Request the value of the steer pot
+            case 'P':
+            case 'p':
+                #ifdef VERBOSE
+                    UART_CPutString("Steer pot: ");
+                #endif
+                UART_PutSHexInt(getSteerPotPosition());
+                UART_PutCRLF();
+                break;
+        #endif
 			
-		// Fully release the brake
-		case 'J':
-		case 'j':
-			brake(100);
-			break;
-			
-		// Request the value of the steer pot
-		case 'P':
-		case 'p':
-			UART_CPutString("Steer pot is at >");
-			UART_PutSHexInt(getSteerPotPosition());
-			UART_CPutString(" counts<\r\n");
-			break;
-			
-		//Invalid command
+		// Invalid command
 		default:
-			UART_CPutString("Invalid Command: >");
-			UART_PutChar(cmd);
-			UART_CPutString("<\n\r");
+            #ifdef VERBOSE
+                UART_CPutString("Invalid Command: >");
+                UART_PutChar(cmd);
+                UART_CPutString("<\n\r");
+            #endif
 			break;
 	}
-	UART_CmdReset();
-	return 0;
 }
 
 void setControllerSpeed(BYTE addr, BYTE speed, BYTE dir) {
 	static BYTE lastValue[2];
 	
-	if (lastValue[addr == BRAKE_CTL ? 1 : 0] != dir << 7 | speed) {
+    // Only send the serial packet if it changes the state of the motor controller of interest
+    // speed is only a 7 bit value
+	if (lastValue[addr == BRAKE_CTL ? 1 : 0] != (dir << 7 | speed)) {
+        
+        // Packet format, 4 bytes
+        // Address [128, 255], direction [0, 1], speed [0, 127], checksum
 		BYTE TX[4];
 		TX[0] = addr;
 		TX[1] = dir;
 		TX[2] = speed;
 		TX[3] = (addr + dir + speed) & 0x7F;
-		TX8_Write(TX,4);
+		TX8_Write(TX, 4);
 		
-		lastValue[addr == BRAKE_CTL ? 1 : 0] = dir << 7 | speed;
+		lastValue[addr == BRAKE_CTL ? 1 : 0] = (dir << 7 | speed);
+
+        #ifdef VERBOSE
+            UART_CPutString(addr == BRAKE_CTL ? "Brake" : "Turn");
+            if(speed != 0) {
+                UART_CPutString(" controller turning ");
+                UART_CPutString(dir == LEFT ? "left" : "right");
+            } else {
+                UART_CPutString(" controller stopping");
+            }
+            UART_PutCRLF();
+        #endif
 	}
 }
 
@@ -292,10 +350,7 @@ void stop(void) {
 }
 
 void updateBrakeCtl(void) {
-	unsigned int brakePosition = getBrakePosition();
-	static int error;
-	
-	error = brakeSetpoint - brakePosition;
+    int error = brakeSetpoint - getBrakePosition();
 	
 	if (error < -20)
 		setControllerSpeed(BRAKE_CTL, BRAKE_SPEED, APPLY);
@@ -380,23 +435,21 @@ void brake(int pVal)
 
 void calibrateSteering(void)
 {
-	BYTE dir = 0;
-	
-	unsigned int steerPotvalue = getSteerPotPosition();
-	
-	if (steerPotvalue < STEER_POT_CENTER) dir = RIGHT;
-	else if (steerPotvalue > STEER_POT_CENTER) dir = LEFT;
-	
+    // Send the control off in the right direction
+	BYTE dir = getSteerPotPosition() < STEER_POT_CENTER ? RIGHT : LEFT;
 	setControllerSpeed(STEER_CTL, STEER_SPEED, dir);
 	
-	while (abs(steerPotvalue - STEER_POT_CENTER) > 30)
-	{
-		steerPotvalue = getSteerPotPosition();
-	}
+    // Spin until the pot lines up
+	while (abs(getSteerPotPosition() - STEER_POT_CENTER) > 30)
+        // We are spinning here, so we need to invalidate the cache ourself
+        cacheValid = FALSE;
 	
+    // Reset everything at center
 	setControllerSpeed(STEER_CTL, STOP, STOP);
 	steerCount = 0;
+    steerSetpoint = 0;
 }
+
 
 /******** INTERRUPTS ********/
 
@@ -412,7 +465,7 @@ void PSoC_GPIO_ISR_C(void)
 												// increment by turning clockwise and hitting a rising edge on A
 	{
 		// Increasing the count when clockwise turn interrupt occurred
-		steerCount++;
+		steerCount--;
 	}
 	else if ((prevPrt == 0x00) && (curPrt == 0x20))	// If prevPort is 0x00 and then after the interrupt curPrt is
 													// 0x20 then B is high and A is low which means you wanted to
@@ -420,6 +473,6 @@ void PSoC_GPIO_ISR_C(void)
 													// a rising edge on B
 	{
 		// Decreasing the count when the counterclockwise interrupt occurred
-		steerCount--;
+		steerCount++;
 	}
 }
