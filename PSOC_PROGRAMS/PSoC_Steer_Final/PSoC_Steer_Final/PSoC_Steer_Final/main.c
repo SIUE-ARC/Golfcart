@@ -178,7 +178,7 @@ void main(void)
         {
             // Read all parameters
             BYTE argc = 0;
-            char **argv[2];
+            char *argv[2];
 
             while(argv[argc] = UART_szGetParam())
                 argc++;
@@ -298,7 +298,7 @@ void command_lookup(BYTE argc, char** argv)
         default:
             #ifdef VERBOSE
                 UART_CPutString("Invalid Command: >");
-                UART_PutChar(cmd);
+                UART_PutChar(*argv[0]);
                 UART_CPutString("<\n\r");
             #endif
             break;
