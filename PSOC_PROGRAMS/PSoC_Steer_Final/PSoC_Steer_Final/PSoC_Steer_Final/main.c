@@ -84,10 +84,6 @@ int max(int a, int b) { return a > b ? a : b; }
 
 /******** GLOBALS ********/
 
-// Encoder state variables
-BYTE prevPrt;
-BYTE curPrt;
-
 // Are currently cached analog reads valid, or should they be reaquired
 BYTE cacheValid;
 
@@ -138,9 +134,6 @@ void main(void)
     {
         // Invalidate the cached analog values
         cacheValid = FALSE;
-        
-        // Log the current encoder state in case we interrupt
-        prevPrt = (PRT1DR & (OpEncA_MASK | OpEncB_MASK)); 
         
         #ifdef HEARTBEAT
             // Send a heartbeat to let computer know we aren't dead
@@ -457,26 +450,32 @@ void calibrateSteering(void)
 
 /******** INTERRUPTS ********/
 
+//  <--- Ticks++     Ticks-- --->
+//I    |  |  |  |  |  |  |  |
 //A ___|-----|_____|-----|____
 //B   ____|-----|_____|-----|____
 void PSoC_GPIO_ISR_C(void)
 {
-    curPrt = (PRT1DR & (OpEncA_MASK | OpEncB_MASK));        // Setting prevPort to only bits 1[4] and 1[5]
-                                                                // of PRT1DR
-        
-    if ((prevPrt == 0x00) && (curPrt == 0x10))  // If prevPort is 0x00 and then after the interrupt curPrt is
-                                                // 0x10 then A is high and B is low which means you wanted to
-                                                // increment by turning clockwise and hitting a rising edge on A
-    {
-        // Increasing the count when clockwise turn interrupt occurred
+    static BYTE then;
+
+    // Get the state of both encoder pins
+    BYTE now = (PRT1DR & (OpEncA_MASK | OpEncB_MASK)) >> 4;
+
+    // If we are turning left
+    if (       then == 0 && now == 1    // Rising edge on A while B is low
+            || then == 1 && now == 3    // Rising edge on B while A is high
+            || then == 3 && now == 2    // Falling edge on A while B is high
+            || then == 2 && now == 0)   // Falling edge on B while A is low
         steerCount--;
-    }
-    else if ((prevPrt == 0x00) && (curPrt == 0x20)) // If prevPort is 0x00 and then after the interrupt curPrt is
-                                                    // 0x20 then B is high and A is low which means you wanted to
-                                                    // decrement by turning counterclockwise and hitting 
-                                                    // a rising edge on B
-    {
-        // Decreasing the count when the counterclockwise interrupt occurred
+
+
+    // If we are turning right
+    else if (  then == 0 && now == 2    // Rising edge on B while A is low
+            || then == 2 && now == 3    // Rising edge on A while B is high
+            || then == 3 && now == 1    // Falling edge on B while A is high
+            || then == 1 && now == 0)   // Falling edge on A while B is low
         steerCount++;
-    }
+
+    // Update the saved encoder state
+    then = now;
 }
