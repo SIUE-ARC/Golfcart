@@ -16,8 +16,8 @@
 #define STEER_POT_CENTER 0x204
 #define POT_RIGHT_BOUND 0x02EF
 
-#define ENCODER_LEFT_BOUND -2300
-#define ENCODER_RIGHT_BOUND 2300
+#define ENCODER_LEFT_BOUND -8000
+#define ENCODER_RIGHT_BOUND 8000
 
 #define BRAKE_MAX_POS 900
 #define BRAKE_MIN_POS 100
@@ -33,8 +33,8 @@
 
 #define BRAKE_CTL 130
 #define BRAKE_SPEED 120
-#define RELEASE 0
-#define APPLY 1
+#define RELEASE 1
+#define APPLY 0
 
 
 /******** CODE SECTIONS ********/
@@ -315,10 +315,14 @@ void setControllerSpeed(BYTE addr, BYTE speed, BYTE dir) {
     // Only send the serial packet if it changes the state of the motor controller of interest
     // speed is only a 7 bit value
     if (baudSent && (lastValue[addr == BRAKE_CTL ? 1 : 0] != (dir << 7 | speed))) {
-        
         // Packet format, 4 bytes
         // Address [128, 255], direction [0, 1], speed [0, 127], checksum
-        BYTE TX[4];
+		BYTE TX[4];
+
+		// This line has to be after line 320
+		if((lastValue[addr == BRAKE_CTL ? 1 : 0] >> 7) != dir)
+			speed = STOP;
+		
         TX[0] = addr;
         TX[1] = dir;
         TX[2] = speed;
@@ -364,9 +368,9 @@ void updateBrakeCtl(void) {
 void updateTurnCtl(void) {
     int error = steerSetpoint - steerCount;
     
-    if (error < -20)
+    if (error < -50)
         setControllerSpeed(STEER_CTL, STEER_SPEED, RIGHT);
-    else if (error > 20)
+    else if (error > 50)
         setControllerSpeed(STEER_CTL, STEER_SPEED, LEFT);
     else
         setControllerSpeed(STEER_CTL, STOP, STOP);
