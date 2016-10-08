@@ -1,0 +1,2849 @@
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 2216
+  27              	cy_meta_configecc:
+  28 0000 01       		.byte	1
+  29 0001 45       		.byte	69
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 05       		.byte	5
+  33 0005 52       		.byte	82
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 01       		.byte	1
+  37 0009 5A       		.byte	90
+  38 000a 00       		.byte	0
+  39 000b 40       		.byte	64
+  40 000c 01       		.byte	1
+  41 000d 5B       		.byte	91
+  42 000e 00       		.byte	0
+  43 000f 40       		.byte	64
+  44 0010 02       		.byte	2
+  45 0011 64       		.byte	100
+  46 0012 00       		.byte	0
+  47 0013 40       		.byte	64
+  48 0014 03       		.byte	3
+  49 0015 65       		.byte	101
+  50 0016 00       		.byte	0
+  51 0017 40       		.byte	64
+  52 0018 4C       		.byte	76
+  53 0019 00       		.byte	0
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 35       		.byte	53
+  57 001d 01       		.byte	1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 4A       		.byte	74
+  61 0021 02       		.byte	2
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 46       		.byte	70
+  65 0025 03       		.byte	3
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 66       		.byte	102
+  69 0029 04       		.byte	4
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 47       		.byte	71
+  73 002d 05       		.byte	5
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 6B       		.byte	107
+  77 0031 06       		.byte	6
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 3F       		.byte	63
+  81 0035 07       		.byte	7
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 01       		.byte	1
+  85 0039 0B       		.byte	11
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 01       		.byte	1
+  89 003d 0D       		.byte	13
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 51       		.byte	81
+  93 0041 14       		.byte	20
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 41       		.byte	65
+  97 0045 15       		.byte	21
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 54       		.byte	84
+ 101 0049 16       		.byte	22
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 45       		.byte	69
+ 105 004d 17       		.byte	23
+ 106 004e 01       		.byte	1
+ 107 004f 40       		.byte	64
+ 108 0050 02       		.byte	2
+ 109 0051 19       		.byte	25
+ 110 0052 01       		.byte	1
+ 111 0053 40       		.byte	64
+ 112 0054 01       		.byte	1
+ 113 0055 1B       		.byte	27
+ 114 0056 01       		.byte	1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 3
+
+
+ 115 0057 40       		.byte	64
+ 116 0058 0C       		.byte	12
+ 117 0059 40       		.byte	64
+ 118 005a 01       		.byte	1
+ 119 005b 40       		.byte	64
+ 120 005c 0B       		.byte	11
+ 121 005d 41       		.byte	65
+ 122 005e 01       		.byte	1
+ 123 005f 40       		.byte	64
+ 124 0060 08       		.byte	8
+ 125 0061 42       		.byte	66
+ 126 0062 01       		.byte	1
+ 127 0063 40       		.byte	64
+ 128 0064 02       		.byte	2
+ 129 0065 43       		.byte	67
+ 130 0066 01       		.byte	1
+ 131 0067 40       		.byte	64
+ 132 0068 01       		.byte	1
+ 133 0069 45       		.byte	69
+ 134 006a 01       		.byte	1
+ 135 006b 40       		.byte	64
+ 136 006c 06       		.byte	6
+ 137 006d 46       		.byte	70
+ 138 006e 01       		.byte	1
+ 139 006f 40       		.byte	64
+ 140 0070 05       		.byte	5
+ 141 0071 47       		.byte	71
+ 142 0072 01       		.byte	1
+ 143 0073 40       		.byte	64
+ 144 0074 0D       		.byte	13
+ 145 0075 48       		.byte	72
+ 146 0076 01       		.byte	1
+ 147 0077 40       		.byte	64
+ 148 0078 09       		.byte	9
+ 149 0079 49       		.byte	73
+ 150 007a 01       		.byte	1
+ 151 007b 40       		.byte	64
+ 152 007c 03       		.byte	3
+ 153 007d 4C       		.byte	76
+ 154 007e 01       		.byte	1
+ 155 007f 40       		.byte	64
+ 156 0080 02       		.byte	2
+ 157 0081 4D       		.byte	77
+ 158 0082 01       		.byte	1
+ 159 0083 40       		.byte	64
+ 160 0084 07       		.byte	7
+ 161 0085 50       		.byte	80
+ 162 0086 01       		.byte	1
+ 163 0087 40       		.byte	64
+ 164 0088 02       		.byte	2
+ 165 0089 51       		.byte	81
+ 166 008a 01       		.byte	1
+ 167 008b 40       		.byte	64
+ 168 008c 7E       		.byte	126
+ 169 008d 02       		.byte	2
+ 170 008e 00       		.byte	0
+ 171 008f 11       		.byte	17
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 4
+
+
+ 172 0090 01       		.byte	1
+ 173 0091 01       		.byte	1
+ 174 0092 0C       		.byte	12
+ 175 0093 04       		.byte	4
+ 176 0094 60       		.byte	96
+ 177 0095 01       		.byte	1
+ 178 0096 7C       		.byte	124
+ 179 0097 40       		.byte	64
+ 180 0098 97       		.byte	-105
+ 181 0099 01       		.byte	1
+ 182 009a 27       		.byte	39
+ 183 009b 84       		.byte	-124
+ 184 009c 81       		.byte	-127
+ 185 009d 0F       		.byte	15
+ 186 009e 82       		.byte	-126
+ 187 009f 6F       		.byte	111
+ 188 00a0 84       		.byte	-124
+ 189 00a1 0F       		.byte	15
+ 190 00a2 85       		.byte	-123
+ 191 00a3 0F       		.byte	15
+ 192 00a4 87       		.byte	-121
+ 193 00a5 6F       		.byte	111
+ 194 00a6 01       		.byte	1
+ 195 00a7 10       		.byte	16
+ 196 00a8 03       		.byte	3
+ 197 00a9 20       		.byte	32
+ 198 00aa 05       		.byte	5
+ 199 00ab 10       		.byte	16
+ 200 00ac 07       		.byte	7
+ 201 00ad A0       		.byte	-96
+ 202 00ae 08       		.byte	8
+ 203 00af FD       		.byte	-3
+ 204 00b0 09       		.byte	9
+ 205 00b1 01       		.byte	1
+ 206 00b2 0A       		.byte	10
+ 207 00b3 02       		.byte	2
+ 208 00b4 0B       		.byte	11
+ 209 00b5 02       		.byte	2
+ 210 00b6 0C       		.byte	12
+ 211 00b7 30       		.byte	48
+ 212 00b8 0E       		.byte	14
+ 213 00b9 C9       		.byte	-55
+ 214 00ba 0F       		.byte	15
+ 215 00bb 04       		.byte	4
+ 216 00bc 10       		.byte	16
+ 217 00bd CF       		.byte	-49
+ 218 00be 12       		.byte	18
+ 219 00bf 30       		.byte	48
+ 220 00c0 14       		.byte	20
+ 221 00c1 94       		.byte	-108
+ 222 00c2 16       		.byte	22
+ 223 00c3 60       		.byte	96
+ 224 00c4 17       		.byte	23
+ 225 00c5 07       		.byte	7
+ 226 00c6 19       		.byte	25
+ 227 00c7 21       		.byte	33
+ 228 00c8 1B       		.byte	27
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 5
+
+
+ 229 00c9 12       		.byte	18
+ 230 00ca 1D       		.byte	29
+ 231 00cb 10       		.byte	16
+ 232 00cc 1F       		.byte	31
+ 233 00cd 60       		.byte	96
+ 234 00ce 20       		.byte	32
+ 235 00cf 73       		.byte	115
+ 236 00d0 21       		.byte	33
+ 237 00d1 07       		.byte	7
+ 238 00d2 24       		.byte	36
+ 239 00d3 9E       		.byte	-98
+ 240 00d4 25       		.byte	37
+ 241 00d5 07       		.byte	7
+ 242 00d6 26       		.byte	38
+ 243 00d7 60       		.byte	96
+ 244 00d8 2A       		.byte	42
+ 245 00d9 0F       		.byte	15
+ 246 00da 2B       		.byte	43
+ 247 00db 08       		.byte	8
+ 248 00dc 2D       		.byte	45
+ 249 00dd 04       		.byte	4
+ 250 00de 31       		.byte	49
+ 251 00df 40       		.byte	64
+ 252 00e0 33       		.byte	51
+ 253 00e1 0F       		.byte	15
+ 254 00e2 34       		.byte	52
+ 255 00e3 FF       		.byte	-1
+ 256 00e4 35       		.byte	53
+ 257 00e5 30       		.byte	48
+ 258 00e6 37       		.byte	55
+ 259 00e7 80       		.byte	-128
+ 260 00e8 3A       		.byte	58
+ 261 00e9 02       		.byte	2
+ 262 00ea 3B       		.byte	59
+ 263 00eb 20       		.byte	32
+ 264 00ec 3E       		.byte	62
+ 265 00ed 10       		.byte	16
+ 266 00ee 58       		.byte	88
+ 267 00ef 04       		.byte	4
+ 268 00f0 59       		.byte	89
+ 269 00f1 04       		.byte	4
+ 270 00f2 5C       		.byte	92
+ 271 00f3 98       		.byte	-104
+ 272 00f4 5F       		.byte	95
+ 273 00f5 11       		.byte	17
+ 274 00f6 80       		.byte	-128
+ 275 00f7 04       		.byte	4
+ 276 00f8 81       		.byte	-127
+ 277 00f9 1C       		.byte	28
+ 278 00fa 85       		.byte	-123
+ 279 00fb 01       		.byte	1
+ 280 00fc 87       		.byte	-121
+ 281 00fd 02       		.byte	2
+ 282 00fe 89       		.byte	-119
+ 283 00ff 01       		.byte	1
+ 284 0100 8B       		.byte	-117
+ 285 0101 02       		.byte	2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 6
+
+
+ 286 0102 8D       		.byte	-115
+ 287 0103 30       		.byte	48
+ 288 0104 8F       		.byte	-113
+ 289 0105 04       		.byte	4
+ 290 0106 91       		.byte	-111
+ 291 0107 02       		.byte	2
+ 292 0108 93       		.byte	-109
+ 293 0109 3D       		.byte	61
+ 294 010a 95       		.byte	-107
+ 295 010b 2C       		.byte	44
+ 296 010c 96       		.byte	-106
+ 297 010d 02       		.byte	2
+ 298 010e 97       		.byte	-105
+ 299 010f 10       		.byte	16
+ 300 0110 99       		.byte	-103
+ 301 0111 20       		.byte	32
+ 302 0112 9B       		.byte	-101
+ 303 0113 04       		.byte	4
+ 304 0114 9C       		.byte	-100
+ 305 0115 04       		.byte	4
+ 306 0116 A7       		.byte	-89
+ 307 0117 40       		.byte	64
+ 308 0118 A9       		.byte	-87
+ 309 0119 01       		.byte	1
+ 310 011a AA       		.byte	-86
+ 311 011b 01       		.byte	1
+ 312 011c AB       		.byte	-85
+ 313 011d 02       		.byte	2
+ 314 011e AD       		.byte	-83
+ 315 011f 30       		.byte	48
+ 316 0120 AF       		.byte	-81
+ 317 0121 08       		.byte	8
+ 318 0122 B0       		.byte	-80
+ 319 0123 04       		.byte	4
+ 320 0124 B1       		.byte	-79
+ 321 0125 03       		.byte	3
+ 322 0126 B2       		.byte	-78
+ 323 0127 01       		.byte	1
+ 324 0128 B3       		.byte	-77
+ 325 0129 3C       		.byte	60
+ 326 012a B4       		.byte	-76
+ 327 012b 02       		.byte	2
+ 328 012c B5       		.byte	-75
+ 329 012d 40       		.byte	64
+ 330 012e BB       		.byte	-69
+ 331 012f 02       		.byte	2
+ 332 0130 D4       		.byte	-44
+ 333 0131 0F       		.byte	15
+ 334 0132 D8       		.byte	-40
+ 335 0133 04       		.byte	4
+ 336 0134 D9       		.byte	-39
+ 337 0135 04       		.byte	4
+ 338 0136 DB       		.byte	-37
+ 339 0137 04       		.byte	4
+ 340 0138 DC       		.byte	-36
+ 341 0139 99       		.byte	-103
+ 342 013a DD       		.byte	-35
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 7
+
+
+ 343 013b 90       		.byte	-112
+ 344 013c DF       		.byte	-33
+ 345 013d 01       		.byte	1
+ 346 013e 01       		.byte	1
+ 347 013f 80       		.byte	-128
+ 348 0140 02       		.byte	2
+ 349 0141 06       		.byte	6
+ 350 0142 03       		.byte	3
+ 351 0143 04       		.byte	4
+ 352 0144 04       		.byte	4
+ 353 0145 02       		.byte	2
+ 354 0146 0A       		.byte	10
+ 355 0147 20       		.byte	32
+ 356 0148 0B       		.byte	11
+ 357 0149 C0       		.byte	-64
+ 358 014a 0E       		.byte	14
+ 359 014b 10       		.byte	16
+ 360 014c 0F       		.byte	15
+ 361 014d 02       		.byte	2
+ 362 014e 10       		.byte	16
+ 363 014f 40       		.byte	64
+ 364 0150 11       		.byte	17
+ 365 0151 0A       		.byte	10
+ 366 0152 12       		.byte	18
+ 367 0153 88       		.byte	-120
+ 368 0154 16       		.byte	22
+ 369 0155 08       		.byte	8
+ 370 0156 19       		.byte	25
+ 371 0157 20       		.byte	32
+ 372 0158 1B       		.byte	27
+ 373 0159 01       		.byte	1
+ 374 015a 1E       		.byte	30
+ 375 015b 04       		.byte	4
+ 376 015c 1F       		.byte	31
+ 377 015d 0A       		.byte	10
+ 378 015e 20       		.byte	32
+ 379 015f 10       		.byte	16
+ 380 0160 21       		.byte	33
+ 381 0161 01       		.byte	1
+ 382 0162 22       		.byte	34
+ 383 0163 78       		.byte	120
+ 384 0164 24       		.byte	36
+ 385 0165 24       		.byte	36
+ 386 0166 25       		.byte	37
+ 387 0167 04       		.byte	4
+ 388 0168 26       		.byte	38
+ 389 0169 02       		.byte	2
+ 390 016a 27       		.byte	39
+ 391 016b 10       		.byte	16
+ 392 016c 28       		.byte	40
+ 393 016d 40       		.byte	64
+ 394 016e 29       		.byte	41
+ 395 016f A0       		.byte	-96
+ 396 0170 2A       		.byte	42
+ 397 0171 04       		.byte	4
+ 398 0172 2C       		.byte	44
+ 399 0173 02       		.byte	2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 8
+
+
+ 400 0174 2F       		.byte	47
+ 401 0175 28       		.byte	40
+ 402 0176 32       		.byte	50
+ 403 0177 58       		.byte	88
+ 404 0178 36       		.byte	54
+ 405 0179 22       		.byte	34
+ 406 017a 37       		.byte	55
+ 407 017b 04       		.byte	4
+ 408 017c 38       		.byte	56
+ 409 017d 24       		.byte	36
+ 410 017e 39       		.byte	57
+ 411 017f 02       		.byte	2
+ 412 0180 3B       		.byte	59
+ 413 0181 80       		.byte	-128
+ 414 0182 3C       		.byte	60
+ 415 0183 08       		.byte	8
+ 416 0184 3D       		.byte	61
+ 417 0185 22       		.byte	34
+ 418 0186 3E       		.byte	62
+ 419 0187 08       		.byte	8
+ 420 0188 3F       		.byte	63
+ 421 0189 40       		.byte	64
+ 422 018a 5C       		.byte	92
+ 423 018b 01       		.byte	1
+ 424 018c 5E       		.byte	94
+ 425 018d A8       		.byte	-88
+ 426 018e 78       		.byte	120
+ 427 018f 20       		.byte	32
+ 428 0190 80       		.byte	-128
+ 429 0191 01       		.byte	1
+ 430 0192 82       		.byte	-126
+ 431 0193 84       		.byte	-124
+ 432 0194 83       		.byte	-125
+ 433 0195 04       		.byte	4
+ 434 0196 87       		.byte	-121
+ 435 0197 02       		.byte	2
+ 436 0198 C0       		.byte	-64
+ 437 0199 13       		.byte	19
+ 438 019a C2       		.byte	-62
+ 439 019b AC       		.byte	-84
+ 440 019c C4       		.byte	-60
+ 441 019d 4E       		.byte	78
+ 442 019e CA       		.byte	-54
+ 443 019f 7F       		.byte	127
+ 444 01a0 CC       		.byte	-52
+ 445 01a1 EE       		.byte	-18
+ 446 01a2 CE       		.byte	-50
+ 447 01a3 FF       		.byte	-1
+ 448 01a4 D6       		.byte	-42
+ 449 01a5 F0       		.byte	-16
+ 450 01a6 DE       		.byte	-34
+ 451 01a7 04       		.byte	4
+ 452 01a8 00       		.byte	0
+ 453 01a9 07       		.byte	7
+ 454 01aa 03       		.byte	3
+ 455 01ab 21       		.byte	33
+ 456 01ac 05       		.byte	5
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 9
+
+
+ 457 01ad 14       		.byte	20
+ 458 01ae 06       		.byte	6
+ 459 01af 20       		.byte	32
+ 460 01b0 07       		.byte	7
+ 461 01b1 0A       		.byte	10
+ 462 01b2 08       		.byte	8
+ 463 01b3 20       		.byte	32
+ 464 01b4 09       		.byte	9
+ 465 01b5 06       		.byte	6
+ 466 01b6 0B       		.byte	11
+ 467 01b7 18       		.byte	24
+ 468 01b8 0D       		.byte	13
+ 469 01b9 0A       		.byte	10
+ 470 01ba 0F       		.byte	15
+ 471 01bb 14       		.byte	20
+ 472 01bc 12       		.byte	18
+ 473 01bd 10       		.byte	16
+ 474 01be 13       		.byte	19
+ 475 01bf 20       		.byte	32
+ 476 01c0 14       		.byte	20
+ 477 01c1 40       		.byte	64
+ 478 01c2 15       		.byte	21
+ 479 01c3 1E       		.byte	30
+ 480 01c4 16       		.byte	22
+ 481 01c5 0F       		.byte	15
+ 482 01c6 18       		.byte	24
+ 483 01c7 30       		.byte	48
+ 484 01c8 1E       		.byte	30
+ 485 01c9 80       		.byte	-128
+ 486 01ca 20       		.byte	32
+ 487 01cb 4C       		.byte	76
+ 488 01cc 21       		.byte	33
+ 489 01cd 18       		.byte	24
+ 490 01ce 22       		.byte	34
+ 491 01cf 02       		.byte	2
+ 492 01d0 23       		.byte	35
+ 493 01d1 06       		.byte	6
+ 494 01d2 24       		.byte	36
+ 495 01d3 4B       		.byte	75
+ 496 01d4 26       		.byte	38
+ 497 01d5 04       		.byte	4
+ 498 01d6 28       		.byte	40
+ 499 01d7 4C       		.byte	76
+ 500 01d8 2A       		.byte	42
+ 501 01d9 01       		.byte	1
+ 502 01da 2C       		.byte	44
+ 503 01db 08       		.byte	8
+ 504 01dc 2D       		.byte	45
+ 505 01dd 0E       		.byte	14
+ 506 01de 2E       		.byte	46
+ 507 01df 41       		.byte	65
+ 508 01e0 30       		.byte	48
+ 509 01e1 10       		.byte	16
+ 510 01e2 32       		.byte	50
+ 511 01e3 20       		.byte	32
+ 512 01e4 33       		.byte	51
+ 513 01e5 20       		.byte	32
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 10
+
+
+ 514 01e6 34       		.byte	52
+ 515 01e7 C0       		.byte	-64
+ 516 01e8 35       		.byte	53
+ 517 01e9 1E       		.byte	30
+ 518 01ea 36       		.byte	54
+ 519 01eb 0F       		.byte	15
+ 520 01ec 37       		.byte	55
+ 521 01ed 01       		.byte	1
+ 522 01ee 3E       		.byte	62
+ 523 01ef 05       		.byte	5
+ 524 01f0 54       		.byte	84
+ 525 01f1 0F       		.byte	15
+ 526 01f2 58       		.byte	88
+ 527 01f3 04       		.byte	4
+ 528 01f4 59       		.byte	89
+ 529 01f5 04       		.byte	4
+ 530 01f6 5B       		.byte	91
+ 531 01f7 04       		.byte	4
+ 532 01f8 5C       		.byte	92
+ 533 01f9 99       		.byte	-103
+ 534 01fa 5D       		.byte	93
+ 535 01fb 90       		.byte	-112
+ 536 01fc 5F       		.byte	95
+ 537 01fd 05       		.byte	5
+ 538 01fe 80       		.byte	-128
+ 539 01ff 7F       		.byte	127
+ 540 0200 86       		.byte	-122
+ 541 0201 01       		.byte	1
+ 542 0202 87       		.byte	-121
+ 543 0203 0F       		.byte	15
+ 544 0204 88       		.byte	-120
+ 545 0205 FE       		.byte	-2
+ 546 0206 89       		.byte	-119
+ 547 0207 94       		.byte	-108
+ 548 0208 8A       		.byte	-118
+ 549 0209 01       		.byte	1
+ 550 020a 8B       		.byte	-117
+ 551 020b 60       		.byte	96
+ 552 020c 8C       		.byte	-116
+ 553 020d 96       		.byte	-106
+ 554 020e 8D       		.byte	-115
+ 555 020f CF       		.byte	-49
+ 556 0210 8E       		.byte	-114
+ 557 0211 68       		.byte	104
+ 558 0212 8F       		.byte	-113
+ 559 0213 30       		.byte	48
+ 560 0214 90       		.byte	-112
+ 561 0215 A3       		.byte	-93
+ 562 0216 92       		.byte	-110
+ 563 0217 5C       		.byte	92
+ 564 0218 94       		.byte	-108
+ 565 0219 0E       		.byte	14
+ 566 021a 96       		.byte	-106
+ 567 021b F0       		.byte	-16
+ 568 021c 9D       		.byte	-99
+ 569 021d 73       		.byte	115
+ 570 021e A1       		.byte	-95
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 11
+
+
+ 571 021f FD       		.byte	-3
+ 572 0220 A3       		.byte	-93
+ 573 0221 02       		.byte	2
+ 574 0222 A4       		.byte	-92
+ 575 0223 C5       		.byte	-59
+ 576 0224 A5       		.byte	-91
+ 577 0225 9E       		.byte	-98
+ 578 0226 A6       		.byte	-90
+ 579 0227 3A       		.byte	58
+ 580 0228 A7       		.byte	-89
+ 581 0229 60       		.byte	96
+ 582 022a AD       		.byte	-83
+ 583 022b 30       		.byte	48
+ 584 022c AF       		.byte	-81
+ 585 022d C9       		.byte	-55
+ 586 022e B1       		.byte	-79
+ 587 022f FF       		.byte	-1
+ 588 0230 B6       		.byte	-74
+ 589 0231 FF       		.byte	-1
+ 590 0232 BE       		.byte	-66
+ 591 0233 40       		.byte	64
+ 592 0234 BF       		.byte	-65
+ 593 0235 01       		.byte	1
+ 594 0236 D8       		.byte	-40
+ 595 0237 04       		.byte	4
+ 596 0238 D9       		.byte	-39
+ 597 0239 04       		.byte	4
+ 598 023a DF       		.byte	-33
+ 599 023b 01       		.byte	1
+ 600 023c 00       		.byte	0
+ 601 023d 04       		.byte	4
+ 602 023e 01       		.byte	1
+ 603 023f 40       		.byte	64
+ 604 0240 02       		.byte	2
+ 605 0241 82       		.byte	-126
+ 606 0242 03       		.byte	3
+ 607 0243 44       		.byte	68
+ 608 0244 04       		.byte	4
+ 609 0245 10       		.byte	16
+ 610 0246 05       		.byte	5
+ 611 0247 04       		.byte	4
+ 612 0248 07       		.byte	7
+ 613 0249 40       		.byte	64
+ 614 024a 08       		.byte	8
+ 615 024b 02       		.byte	2
+ 616 024c 0A       		.byte	10
+ 617 024d 20       		.byte	32
+ 618 024e 0B       		.byte	11
+ 619 024f 90       		.byte	-112
+ 620 0250 0C       		.byte	12
+ 621 0251 02       		.byte	2
+ 622 0252 0D       		.byte	13
+ 623 0253 20       		.byte	32
+ 624 0254 0E       		.byte	14
+ 625 0255 01       		.byte	1
+ 626 0256 0F       		.byte	15
+ 627 0257 10       		.byte	16
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 12
+
+
+ 628 0258 11       		.byte	17
+ 629 0259 08       		.byte	8
+ 630 025a 12       		.byte	18
+ 631 025b 10       		.byte	16
+ 632 025c 15       		.byte	21
+ 633 025d 41       		.byte	65
+ 634 025e 17       		.byte	23
+ 635 025f 14       		.byte	20
+ 636 0260 1A       		.byte	26
+ 637 0261 01       		.byte	1
+ 638 0262 1C       		.byte	28
+ 639 0263 04       		.byte	4
+ 640 0264 1E       		.byte	30
+ 641 0265 60       		.byte	96
+ 642 0266 1F       		.byte	31
+ 643 0267 40       		.byte	64
+ 644 0268 22       		.byte	34
+ 645 0269 01       		.byte	1
+ 646 026a 24       		.byte	36
+ 647 026b 02       		.byte	2
+ 648 026c 25       		.byte	37
+ 649 026d 08       		.byte	8
+ 650 026e 27       		.byte	39
+ 651 026f 05       		.byte	5
+ 652 0270 29       		.byte	41
+ 653 0271 0A       		.byte	10
+ 654 0272 2B       		.byte	43
+ 655 0273 02       		.byte	2
+ 656 0274 2C       		.byte	44
+ 657 0275 01       		.byte	1
+ 658 0276 2D       		.byte	45
+ 659 0277 01       		.byte	1
+ 660 0278 2F       		.byte	47
+ 661 0279 40       		.byte	64
+ 662 027a 32       		.byte	50
+ 663 027b 40       		.byte	64
+ 664 027c 37       		.byte	55
+ 665 027d 05       		.byte	5
+ 666 027e 38       		.byte	56
+ 667 027f A8       		.byte	-88
+ 668 0280 3D       		.byte	61
+ 669 0281 48       		.byte	72
+ 670 0282 3F       		.byte	63
+ 671 0283 12       		.byte	18
+ 672 0284 5D       		.byte	93
+ 673 0285 10       		.byte	16
+ 674 0286 5E       		.byte	94
+ 675 0287 4A       		.byte	74
+ 676 0288 66       		.byte	102
+ 677 0289 08       		.byte	8
+ 678 028a 67       		.byte	103
+ 679 028b 04       		.byte	4
+ 680 028c 7E       		.byte	126
+ 681 028d 80       		.byte	-128
+ 682 028e 80       		.byte	-128
+ 683 028f 20       		.byte	32
+ 684 0290 89       		.byte	-119
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 13
+
+
+ 685 0291 08       		.byte	8
+ 686 0292 90       		.byte	-112
+ 687 0293 10       		.byte	16
+ 688 0294 92       		.byte	-110
+ 689 0295 24       		.byte	36
+ 690 0296 94       		.byte	-108
+ 691 0297 02       		.byte	2
+ 692 0298 96       		.byte	-106
+ 693 0299 10       		.byte	16
+ 694 029a 97       		.byte	-105
+ 695 029b 80       		.byte	-128
+ 696 029c 9B       		.byte	-101
+ 697 029d 10       		.byte	16
+ 698 029e 9C       		.byte	-100
+ 699 029f 20       		.byte	32
+ 700 02a0 9F       		.byte	-97
+ 701 02a1 04       		.byte	4
+ 702 02a2 A1       		.byte	-95
+ 703 02a3 04       		.byte	4
+ 704 02a4 A2       		.byte	-94
+ 705 02a5 0A       		.byte	10
+ 706 02a6 A3       		.byte	-93
+ 707 02a7 01       		.byte	1
+ 708 02a8 A4       		.byte	-92
+ 709 02a9 04       		.byte	4
+ 710 02aa A5       		.byte	-91
+ 711 02ab 10       		.byte	16
+ 712 02ac A6       		.byte	-90
+ 713 02ad D0       		.byte	-48
+ 714 02ae A7       		.byte	-89
+ 715 02af 20       		.byte	32
+ 716 02b0 A8       		.byte	-88
+ 717 02b1 02       		.byte	2
+ 718 02b2 A9       		.byte	-87
+ 719 02b3 04       		.byte	4
+ 720 02b4 C0       		.byte	-64
+ 721 02b5 7F       		.byte	127
+ 722 02b6 C2       		.byte	-62
+ 723 02b7 FC       		.byte	-4
+ 724 02b8 C4       		.byte	-60
+ 725 02b9 F4       		.byte	-12
+ 726 02ba CA       		.byte	-54
+ 727 02bb 9B       		.byte	-101
+ 728 02bc CC       		.byte	-52
+ 729 02bd C8       		.byte	-56
+ 730 02be CE       		.byte	-50
+ 731 02bf FE       		.byte	-2
+ 732 02c0 D6       		.byte	-42
+ 733 02c1 F0       		.byte	-16
+ 734 02c2 D8       		.byte	-40
+ 735 02c3 60       		.byte	96
+ 736 02c4 DE       		.byte	-34
+ 737 02c5 80       		.byte	-128
+ 738 02c6 E6       		.byte	-26
+ 739 02c7 24       		.byte	36
+ 740 02c8 03       		.byte	3
+ 741 02c9 10       		.byte	16
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 14
+
+
+ 742 02ca 04       		.byte	4
+ 743 02cb A1       		.byte	-95
+ 744 02cc 06       		.byte	6
+ 745 02cd 52       		.byte	82
+ 746 02ce 07       		.byte	7
+ 747 02cf 11       		.byte	17
+ 748 02d0 09       		.byte	9
+ 749 02d1 0C       		.byte	12
+ 750 02d2 0A       		.byte	10
+ 751 02d3 07       		.byte	7
+ 752 02d4 0C       		.byte	12
+ 753 02d5 54       		.byte	84
+ 754 02d6 0E       		.byte	14
+ 755 02d7 A0       		.byte	-96
+ 756 02d8 10       		.byte	16
+ 757 02d9 F7       		.byte	-9
+ 758 02da 15       		.byte	21
+ 759 02db 0A       		.byte	10
+ 760 02dc 19       		.byte	25
+ 761 02dd 10       		.byte	16
+ 762 02de 1D       		.byte	29
+ 763 02df 06       		.byte	6
+ 764 02e0 1E       		.byte	30
+ 765 02e1 08       		.byte	8
+ 766 02e2 20       		.byte	32
+ 767 02e3 77       		.byte	119
+ 768 02e4 24       		.byte	36
+ 769 02e5 31       		.byte	49
+ 770 02e6 26       		.byte	38
+ 771 02e7 C2       		.byte	-62
+ 772 02e8 2C       		.byte	44
+ 773 02e9 C0       		.byte	-64
+ 774 02ea 2D       		.byte	45
+ 775 02eb 0C       		.byte	12
+ 776 02ec 2E       		.byte	46
+ 777 02ed 34       		.byte	52
+ 778 02ee 30       		.byte	48
+ 779 02ef F0       		.byte	-16
+ 780 02f0 33       		.byte	51
+ 781 02f1 10       		.byte	16
+ 782 02f2 34       		.byte	52
+ 783 02f3 0F       		.byte	15
+ 784 02f4 35       		.byte	53
+ 785 02f5 01       		.byte	1
+ 786 02f6 37       		.byte	55
+ 787 02f7 0E       		.byte	14
+ 788 02f8 39       		.byte	57
+ 789 02f9 80       		.byte	-128
+ 790 02fa 3F       		.byte	63
+ 791 02fb 04       		.byte	4
+ 792 02fc 40       		.byte	64
+ 793 02fd 34       		.byte	52
+ 794 02fe 41       		.byte	65
+ 795 02ff 06       		.byte	6
+ 796 0300 49       		.byte	73
+ 797 0301 FF       		.byte	-1
+ 798 0302 4A       		.byte	74
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 15
+
+
+ 799 0303 FF       		.byte	-1
+ 800 0304 4B       		.byte	75
+ 801 0305 FF       		.byte	-1
+ 802 0306 4D       		.byte	77
+ 803 0307 A0       		.byte	-96
+ 804 0308 4F       		.byte	79
+ 805 0309 01       		.byte	1
+ 806 030a 50       		.byte	80
+ 807 030b 18       		.byte	24
+ 808 030c 52       		.byte	82
+ 809 030d 80       		.byte	-128
+ 810 030e 58       		.byte	88
+ 811 030f 04       		.byte	4
+ 812 0310 59       		.byte	89
+ 813 0311 04       		.byte	4
+ 814 0312 5A       		.byte	90
+ 815 0313 04       		.byte	4
+ 816 0314 5B       		.byte	91
+ 817 0315 04       		.byte	4
+ 818 0316 5C       		.byte	92
+ 819 0317 99       		.byte	-103
+ 820 0318 5D       		.byte	93
+ 821 0319 99       		.byte	-103
+ 822 031a 5F       		.byte	95
+ 823 031b 01       		.byte	1
+ 824 031c 60       		.byte	96
+ 825 031d 40       		.byte	64
+ 826 031e 62       		.byte	98
+ 827 031f 80       		.byte	-128
+ 828 0320 64       		.byte	100
+ 829 0321 40       		.byte	64
+ 830 0322 65       		.byte	101
+ 831 0323 40       		.byte	64
+ 832 0324 66       		.byte	102
+ 833 0325 80       		.byte	-128
+ 834 0326 68       		.byte	104
+ 835 0327 40       		.byte	64
+ 836 0328 6A       		.byte	106
+ 837 0329 80       		.byte	-128
+ 838 032a 6C       		.byte	108
+ 839 032b 40       		.byte	64
+ 840 032c 6D       		.byte	109
+ 841 032d 20       		.byte	32
+ 842 032e 6E       		.byte	110
+ 843 032f 80       		.byte	-128
+ 844 0330 81       		.byte	-127
+ 845 0331 04       		.byte	4
+ 846 0332 84       		.byte	-124
+ 847 0333 03       		.byte	3
+ 848 0334 86       		.byte	-122
+ 849 0335 04       		.byte	4
+ 850 0336 87       		.byte	-121
+ 851 0337 02       		.byte	2
+ 852 0338 92       		.byte	-110
+ 853 0339 08       		.byte	8
+ 854 033a 97       		.byte	-105
+ 855 033b 01       		.byte	1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 16
+
+
+ 856 033c 9B       		.byte	-101
+ 857 033d 01       		.byte	1
+ 858 033e 9C       		.byte	-100
+ 859 033f 03       		.byte	3
+ 860 0340 A5       		.byte	-91
+ 861 0341 01       		.byte	1
+ 862 0342 AB       		.byte	-85
+ 863 0343 04       		.byte	4
+ 864 0344 AC       		.byte	-84
+ 865 0345 01       		.byte	1
+ 866 0346 B0       		.byte	-80
+ 867 0347 01       		.byte	1
+ 868 0348 B1       		.byte	-79
+ 869 0349 02       		.byte	2
+ 870 034a B2       		.byte	-78
+ 871 034b 02       		.byte	2
+ 872 034c B3       		.byte	-77
+ 873 034d 04       		.byte	4
+ 874 034e B4       		.byte	-76
+ 875 034f 08       		.byte	8
+ 876 0350 B6       		.byte	-74
+ 877 0351 04       		.byte	4
+ 878 0352 B7       		.byte	-73
+ 879 0353 01       		.byte	1
+ 880 0354 B8       		.byte	-72
+ 881 0355 0A       		.byte	10
+ 882 0356 BE       		.byte	-66
+ 883 0357 01       		.byte	1
+ 884 0358 BF       		.byte	-65
+ 885 0359 44       		.byte	68
+ 886 035a C0       		.byte	-64
+ 887 035b 34       		.byte	52
+ 888 035c C1       		.byte	-63
+ 889 035d 06       		.byte	6
+ 890 035e C5       		.byte	-59
+ 891 035f 2C       		.byte	44
+ 892 0360 C6       		.byte	-58
+ 893 0361 30       		.byte	48
+ 894 0362 C7       		.byte	-57
+ 895 0363 4E       		.byte	78
+ 896 0364 C8       		.byte	-56
+ 897 0365 3B       		.byte	59
+ 898 0366 C9       		.byte	-55
+ 899 0367 FF       		.byte	-1
+ 900 0368 CA       		.byte	-54
+ 901 0369 FF       		.byte	-1
+ 902 036a CB       		.byte	-53
+ 903 036b FF       		.byte	-1
+ 904 036c CD       		.byte	-51
+ 905 036d AF       		.byte	-81
+ 906 036e CE       		.byte	-50
+ 907 036f 07       		.byte	7
+ 908 0370 CF       		.byte	-49
+ 909 0371 01       		.byte	1
+ 910 0372 D0       		.byte	-48
+ 911 0373 18       		.byte	24
+ 912 0374 D8       		.byte	-40
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 17
+
+
+ 913 0375 04       		.byte	4
+ 914 0376 D9       		.byte	-39
+ 915 0377 04       		.byte	4
+ 916 0378 DA       		.byte	-38
+ 917 0379 04       		.byte	4
+ 918 037a DC       		.byte	-36
+ 919 037b 99       		.byte	-103
+ 920 037c DD       		.byte	-35
+ 921 037d 09       		.byte	9
+ 922 037e DF       		.byte	-33
+ 923 037f 01       		.byte	1
+ 924 0380 E0       		.byte	-32
+ 925 0381 40       		.byte	64
+ 926 0382 E2       		.byte	-30
+ 927 0383 80       		.byte	-128
+ 928 0384 E4       		.byte	-28
+ 929 0385 40       		.byte	64
+ 930 0386 E5       		.byte	-27
+ 931 0387 40       		.byte	64
+ 932 0388 E6       		.byte	-26
+ 933 0389 80       		.byte	-128
+ 934 038a E8       		.byte	-24
+ 935 038b 40       		.byte	64
+ 936 038c EA       		.byte	-22
+ 937 038d 80       		.byte	-128
+ 938 038e EC       		.byte	-20
+ 939 038f 40       		.byte	64
+ 940 0390 ED       		.byte	-19
+ 941 0391 20       		.byte	32
+ 942 0392 EE       		.byte	-18
+ 943 0393 80       		.byte	-128
+ 944 0394 01       		.byte	1
+ 945 0395 28       		.byte	40
+ 946 0396 03       		.byte	3
+ 947 0397 02       		.byte	2
+ 948 0398 04       		.byte	4
+ 949 0399 80       		.byte	-128
+ 950 039a 06       		.byte	6
+ 951 039b 21       		.byte	33
+ 952 039c 0A       		.byte	10
+ 953 039d 42       		.byte	66
+ 954 039e 0C       		.byte	12
+ 955 039f 02       		.byte	2
+ 956 03a0 0F       		.byte	15
+ 957 03a1 02       		.byte	2
+ 958 03a2 10       		.byte	16
+ 959 03a3 40       		.byte	64
+ 960 03a4 11       		.byte	17
+ 961 03a5 08       		.byte	8
+ 962 03a6 12       		.byte	18
+ 963 03a7 01       		.byte	1
+ 964 03a8 14       		.byte	20
+ 965 03a9 01       		.byte	1
+ 966 03aa 15       		.byte	21
+ 967 03ab 80       		.byte	-128
+ 968 03ac 18       		.byte	24
+ 969 03ad 08       		.byte	8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 18
+
+
+ 970 03ae 19       		.byte	25
+ 971 03af 22       		.byte	34
+ 972 03b0 1A       		.byte	26
+ 973 03b1 40       		.byte	64
+ 974 03b2 1C       		.byte	28
+ 975 03b3 02       		.byte	2
+ 976 03b4 1D       		.byte	29
+ 977 03b5 26       		.byte	38
+ 978 03b6 1E       		.byte	30
+ 979 03b7 20       		.byte	32
+ 980 03b8 1F       		.byte	31
+ 981 03b9 20       		.byte	32
+ 982 03ba 21       		.byte	33
+ 983 03bb 48       		.byte	72
+ 984 03bc 22       		.byte	34
+ 985 03bd 90       		.byte	-112
+ 986 03be 26       		.byte	38
+ 987 03bf 44       		.byte	68
+ 988 03c0 27       		.byte	39
+ 989 03c1 40       		.byte	64
+ 990 03c2 28       		.byte	40
+ 991 03c3 02       		.byte	2
+ 992 03c4 2E       		.byte	46
+ 993 03c5 20       		.byte	32
+ 994 03c6 2F       		.byte	47
+ 995 03c7 20       		.byte	32
+ 996 03c8 32       		.byte	50
+ 997 03c9 90       		.byte	-112
+ 998 03ca 33       		.byte	51
+ 999 03cb 04       		.byte	4
+ 1000 03cc 36       		.byte	54
+ 1001 03cd 18       		.byte	24
+ 1002 03ce 38       		.byte	56
+ 1003 03cf 06       		.byte	6
+ 1004 03d0 3A       		.byte	58
+ 1005 03d1 10       		.byte	16
+ 1006 03d2 3C       		.byte	60
+ 1007 03d3 02       		.byte	2
+ 1008 03d4 3E       		.byte	62
+ 1009 03d5 04       		.byte	4
+ 1010 03d6 41       		.byte	65
+ 1011 03d7 0A       		.byte	10
+ 1012 03d8 45       		.byte	69
+ 1013 03d9 0A       		.byte	10
+ 1014 03da 4A       		.byte	74
+ 1015 03db 08       		.byte	8
+ 1016 03dc 4C       		.byte	76
+ 1017 03dd 80       		.byte	-128
+ 1018 03de 4E       		.byte	78
+ 1019 03df 08       		.byte	8
+ 1020 03e0 4F       		.byte	79
+ 1021 03e1 06       		.byte	6
+ 1022 03e2 54       		.byte	84
+ 1023 03e3 02       		.byte	2
+ 1024 03e4 56       		.byte	86
+ 1025 03e5 28       		.byte	40
+ 1026 03e6 70       		.byte	112
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 19
+
+
+ 1027 03e7 01       		.byte	1
+ 1028 03e8 85       		.byte	-123
+ 1029 03e9 10       		.byte	16
+ 1030 03ea 87       		.byte	-121
+ 1031 03eb 01       		.byte	1
+ 1032 03ec 90       		.byte	-112
+ 1033 03ed 04       		.byte	4
+ 1034 03ee 92       		.byte	-110
+ 1035 03ef 06       		.byte	6
+ 1036 03f0 94       		.byte	-108
+ 1037 03f1 A8       		.byte	-88
+ 1038 03f2 95       		.byte	-107
+ 1039 03f3 10       		.byte	16
+ 1040 03f4 96       		.byte	-106
+ 1041 03f5 90       		.byte	-112
+ 1042 03f6 97       		.byte	-105
+ 1043 03f7 04       		.byte	4
+ 1044 03f8 98       		.byte	-104
+ 1045 03f9 02       		.byte	2
+ 1046 03fa 9A       		.byte	-102
+ 1047 03fb 10       		.byte	16
+ 1048 03fc 9B       		.byte	-101
+ 1049 03fd 04       		.byte	4
+ 1050 03fe 9C       		.byte	-100
+ 1051 03ff 01       		.byte	1
+ 1052 0400 9D       		.byte	-99
+ 1053 0401 0E       		.byte	14
+ 1054 0402 9E       		.byte	-98
+ 1055 0403 08       		.byte	8
+ 1056 0404 A2       		.byte	-94
+ 1057 0405 08       		.byte	8
+ 1058 0406 A4       		.byte	-92
+ 1059 0407 06       		.byte	6
+ 1060 0408 A5       		.byte	-91
+ 1061 0409 30       		.byte	48
+ 1062 040a A6       		.byte	-90
+ 1063 040b C5       		.byte	-59
+ 1064 040c A7       		.byte	-89
+ 1065 040d 02       		.byte	2
+ 1066 040e AF       		.byte	-81
+ 1067 040f 20       		.byte	32
+ 1068 0410 C0       		.byte	-64
+ 1069 0411 27       		.byte	39
+ 1070 0412 C2       		.byte	-62
+ 1071 0413 99       		.byte	-103
+ 1072 0414 C4       		.byte	-60
+ 1073 0415 8D       		.byte	-115
+ 1074 0416 CA       		.byte	-54
+ 1075 0417 68       		.byte	104
+ 1076 0418 CC       		.byte	-52
+ 1077 0419 6E       		.byte	110
+ 1078 041a CE       		.byte	-50
+ 1079 041b C7       		.byte	-57
+ 1080 041c D0       		.byte	-48
+ 1081 041d C3       		.byte	-61
+ 1082 041e D2       		.byte	-46
+ 1083 041f 24       		.byte	36
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 20
+
+
+ 1084 0420 E0       		.byte	-32
+ 1085 0421 02       		.byte	2
+ 1086 0422 00       		.byte	0
+ 1087 0423 01       		.byte	1
+ 1088 0424 02       		.byte	2
+ 1089 0425 02       		.byte	2
+ 1090 0426 0A       		.byte	10
+ 1091 0427 10       		.byte	16
+ 1092 0428 0C       		.byte	12
+ 1093 0429 02       		.byte	2
+ 1094 042a 0E       		.byte	14
+ 1095 042b 01       		.byte	1
+ 1096 042c 14       		.byte	20
+ 1097 042d 01       		.byte	1
+ 1098 042e 16       		.byte	22
+ 1099 042f 02       		.byte	2
+ 1100 0430 18       		.byte	24
+ 1101 0431 01       		.byte	1
+ 1102 0432 1A       		.byte	26
+ 1103 0433 02       		.byte	2
+ 1104 0434 1D       		.byte	29
+ 1105 0435 01       		.byte	1
+ 1106 0436 1E       		.byte	30
+ 1107 0437 08       		.byte	8
+ 1108 0438 23       		.byte	35
+ 1109 0439 04       		.byte	4
+ 1110 043a 24       		.byte	36
+ 1111 043b 08       		.byte	8
+ 1112 043c 27       		.byte	39
+ 1113 043d 03       		.byte	3
+ 1114 043e 2A       		.byte	42
+ 1115 043f 04       		.byte	4
+ 1116 0440 2F       		.byte	47
+ 1117 0441 01       		.byte	1
+ 1118 0442 30       		.byte	48
+ 1119 0443 03       		.byte	3
+ 1120 0444 32       		.byte	50
+ 1121 0445 04       		.byte	4
+ 1122 0446 33       		.byte	51
+ 1123 0447 01       		.byte	1
+ 1124 0448 34       		.byte	52
+ 1125 0449 10       		.byte	16
+ 1126 044a 35       		.byte	53
+ 1127 044b 04       		.byte	4
+ 1128 044c 36       		.byte	54
+ 1129 044d 08       		.byte	8
+ 1130 044e 37       		.byte	55
+ 1131 044f 02       		.byte	2
+ 1132 0450 3A       		.byte	58
+ 1133 0451 02       		.byte	2
+ 1134 0452 3E       		.byte	62
+ 1135 0453 40       		.byte	64
+ 1136 0454 3F       		.byte	63
+ 1137 0455 04       		.byte	4
+ 1138 0456 40       		.byte	64
+ 1139 0457 21       		.byte	33
+ 1140 0458 41       		.byte	65
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 21
+
+
+ 1141 0459 06       		.byte	6
+ 1142 045a 49       		.byte	73
+ 1143 045b FF       		.byte	-1
+ 1144 045c 4A       		.byte	74
+ 1145 045d FF       		.byte	-1
+ 1146 045e 4B       		.byte	75
+ 1147 045f FF       		.byte	-1
+ 1148 0460 4D       		.byte	77
+ 1149 0461 A0       		.byte	-96
+ 1150 0462 4F       		.byte	79
+ 1151 0463 01       		.byte	1
+ 1152 0464 50       		.byte	80
+ 1153 0465 18       		.byte	24
+ 1154 0466 52       		.byte	82
+ 1155 0467 80       		.byte	-128
+ 1156 0468 58       		.byte	88
+ 1157 0469 04       		.byte	4
+ 1158 046a 59       		.byte	89
+ 1159 046b 04       		.byte	4
+ 1160 046c 5A       		.byte	90
+ 1161 046d 04       		.byte	4
+ 1162 046e 5B       		.byte	91
+ 1163 046f 04       		.byte	4
+ 1164 0470 5C       		.byte	92
+ 1165 0471 99       		.byte	-103
+ 1166 0472 5D       		.byte	93
+ 1167 0473 99       		.byte	-103
+ 1168 0474 5F       		.byte	95
+ 1169 0475 01       		.byte	1
+ 1170 0476 60       		.byte	96
+ 1171 0477 40       		.byte	64
+ 1172 0478 62       		.byte	98
+ 1173 0479 80       		.byte	-128
+ 1174 047a 64       		.byte	100
+ 1175 047b 40       		.byte	64
+ 1176 047c 65       		.byte	101
+ 1177 047d 40       		.byte	64
+ 1178 047e 66       		.byte	102
+ 1179 047f 80       		.byte	-128
+ 1180 0480 68       		.byte	104
+ 1181 0481 40       		.byte	64
+ 1182 0482 6A       		.byte	106
+ 1183 0483 80       		.byte	-128
+ 1184 0484 6C       		.byte	108
+ 1185 0485 40       		.byte	64
+ 1186 0486 6D       		.byte	109
+ 1187 0487 20       		.byte	32
+ 1188 0488 6E       		.byte	110
+ 1189 0489 80       		.byte	-128
+ 1190 048a 80       		.byte	-128
+ 1191 048b 5D       		.byte	93
+ 1192 048c 81       		.byte	-127
+ 1193 048d 03       		.byte	3
+ 1194 048e 82       		.byte	-126
+ 1195 048f 20       		.byte	32
+ 1196 0490 84       		.byte	-124
+ 1197 0491 66       		.byte	102
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 22
+
+
+ 1198 0492 85       		.byte	-123
+ 1199 0493 03       		.byte	3
+ 1200 0494 86       		.byte	-122
+ 1201 0495 10       		.byte	16
+ 1202 0496 87       		.byte	-121
+ 1203 0497 0C       		.byte	12
+ 1204 0498 8E       		.byte	-114
+ 1205 0499 78       		.byte	120
+ 1206 049a 90       		.byte	-112
+ 1207 049b 3B       		.byte	59
+ 1208 049c 91       		.byte	-111
+ 1209 049d 08       		.byte	8
+ 1210 049e 96       		.byte	-106
+ 1211 049f 80       		.byte	-128
+ 1212 04a0 9D       		.byte	-99
+ 1213 04a1 01       		.byte	1
+ 1214 04a2 A0       		.byte	-96
+ 1215 04a3 66       		.byte	102
+ 1216 04a4 A2       		.byte	-94
+ 1217 04a5 08       		.byte	8
+ 1218 04a6 A4       		.byte	-92
+ 1219 04a7 40       		.byte	64
+ 1220 04a8 A6       		.byte	-90
+ 1221 04a9 08       		.byte	8
+ 1222 04aa B0       		.byte	-80
+ 1223 04ab 07       		.byte	7
+ 1224 04ac B1       		.byte	-79
+ 1225 04ad 04       		.byte	4
+ 1226 04ae B2       		.byte	-78
+ 1227 04af 78       		.byte	120
+ 1228 04b0 B3       		.byte	-77
+ 1229 04b1 08       		.byte	8
+ 1230 04b2 B4       		.byte	-76
+ 1231 04b3 C0       		.byte	-64
+ 1232 04b4 B5       		.byte	-75
+ 1233 04b5 02       		.byte	2
+ 1234 04b6 B7       		.byte	-73
+ 1235 04b7 01       		.byte	1
+ 1236 04b8 B8       		.byte	-72
+ 1237 04b9 02       		.byte	2
+ 1238 04ba B9       		.byte	-71
+ 1239 04bb A0       		.byte	-96
+ 1240 04bc BF       		.byte	-65
+ 1241 04bd 44       		.byte	68
+ 1242 04be C0       		.byte	-64
+ 1243 04bf 21       		.byte	33
+ 1244 04c0 C1       		.byte	-63
+ 1245 04c1 06       		.byte	6
+ 1246 04c2 C5       		.byte	-59
+ 1247 04c3 4E       		.byte	78
+ 1248 04c4 C6       		.byte	-58
+ 1249 04c5 C0       		.byte	-64
+ 1250 04c6 C7       		.byte	-57
+ 1251 04c7 23       		.byte	35
+ 1252 04c8 C8       		.byte	-56
+ 1253 04c9 3B       		.byte	59
+ 1254 04ca C9       		.byte	-55
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 23
+
+
+ 1255 04cb FF       		.byte	-1
+ 1256 04cc CA       		.byte	-54
+ 1257 04cd FF       		.byte	-1
+ 1258 04ce CB       		.byte	-53
+ 1259 04cf FF       		.byte	-1
+ 1260 04d0 CD       		.byte	-51
+ 1261 04d1 AF       		.byte	-81
+ 1262 04d2 CE       		.byte	-50
+ 1263 04d3 07       		.byte	7
+ 1264 04d4 CF       		.byte	-49
+ 1265 04d5 01       		.byte	1
+ 1266 04d6 D0       		.byte	-48
+ 1267 04d7 18       		.byte	24
+ 1268 04d8 D8       		.byte	-40
+ 1269 04d9 04       		.byte	4
+ 1270 04da D9       		.byte	-39
+ 1271 04db 04       		.byte	4
+ 1272 04dc DA       		.byte	-38
+ 1273 04dd 04       		.byte	4
+ 1274 04de DC       		.byte	-36
+ 1275 04df 99       		.byte	-103
+ 1276 04e0 DD       		.byte	-35
+ 1277 04e1 09       		.byte	9
+ 1278 04e2 DF       		.byte	-33
+ 1279 04e3 01       		.byte	1
+ 1280 04e4 E0       		.byte	-32
+ 1281 04e5 40       		.byte	64
+ 1282 04e6 E2       		.byte	-30
+ 1283 04e7 80       		.byte	-128
+ 1284 04e8 E4       		.byte	-28
+ 1285 04e9 40       		.byte	64
+ 1286 04ea E5       		.byte	-27
+ 1287 04eb 40       		.byte	64
+ 1288 04ec E6       		.byte	-26
+ 1289 04ed 80       		.byte	-128
+ 1290 04ee E8       		.byte	-24
+ 1291 04ef 40       		.byte	64
+ 1292 04f0 EA       		.byte	-22
+ 1293 04f1 80       		.byte	-128
+ 1294 04f2 EC       		.byte	-20
+ 1295 04f3 40       		.byte	64
+ 1296 04f4 ED       		.byte	-19
+ 1297 04f5 20       		.byte	32
+ 1298 04f6 EE       		.byte	-18
+ 1299 04f7 80       		.byte	-128
+ 1300 04f8 00       		.byte	0
+ 1301 04f9 40       		.byte	64
+ 1302 04fa 01       		.byte	1
+ 1303 04fb 0B       		.byte	11
+ 1304 04fc 04       		.byte	4
+ 1305 04fd 40       		.byte	64
+ 1306 04fe 07       		.byte	7
+ 1307 04ff 44       		.byte	68
+ 1308 0500 0A       		.byte	10
+ 1309 0501 80       		.byte	-128
+ 1310 0502 0B       		.byte	11
+ 1311 0503 20       		.byte	32
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 24
+
+
+ 1312 0504 0C       		.byte	12
+ 1313 0505 80       		.byte	-128
+ 1314 0506 0E       		.byte	14
+ 1315 0507 14       		.byte	20
+ 1316 0508 11       		.byte	17
+ 1317 0509 0A       		.byte	10
+ 1318 050a 14       		.byte	20
+ 1319 050b 04       		.byte	4
+ 1320 050c 17       		.byte	23
+ 1321 050d 08       		.byte	8
+ 1322 050e 19       		.byte	25
+ 1323 050f 08       		.byte	8
+ 1324 0510 1A       		.byte	26
+ 1325 0511 80       		.byte	-128
+ 1326 0512 1B       		.byte	27
+ 1327 0513 31       		.byte	49
+ 1328 0514 1C       		.byte	28
+ 1329 0515 48       		.byte	72
+ 1330 0516 1D       		.byte	29
+ 1331 0517 01       		.byte	1
+ 1332 0518 1E       		.byte	30
+ 1333 0519 12       		.byte	18
+ 1334 051a 1F       		.byte	31
+ 1335 051b 02       		.byte	2
+ 1336 051c 21       		.byte	33
+ 1337 051d 80       		.byte	-128
+ 1338 051e 22       		.byte	34
+ 1339 051f 05       		.byte	5
+ 1340 0520 23       		.byte	35
+ 1341 0521 04       		.byte	4
+ 1342 0522 26       		.byte	38
+ 1343 0523 80       		.byte	-128
+ 1344 0524 27       		.byte	39
+ 1345 0525 38       		.byte	56
+ 1346 0526 2C       		.byte	44
+ 1347 0527 80       		.byte	-128
+ 1348 0528 2E       		.byte	46
+ 1349 0529 80       		.byte	-128
+ 1350 052a 2F       		.byte	47
+ 1351 052b 20       		.byte	32
+ 1352 052c 30       		.byte	48
+ 1353 052d 40       		.byte	64
+ 1354 052e 32       		.byte	50
+ 1355 052f 41       		.byte	65
+ 1356 0530 36       		.byte	54
+ 1357 0531 80       		.byte	-128
+ 1358 0532 38       		.byte	56
+ 1359 0533 02       		.byte	2
+ 1360 0534 39       		.byte	57
+ 1361 0535 08       		.byte	8
+ 1362 0536 41       		.byte	65
+ 1363 0537 80       		.byte	-128
+ 1364 0538 43       		.byte	67
+ 1365 0539 10       		.byte	16
+ 1366 053a 45       		.byte	69
+ 1367 053b 80       		.byte	-128
+ 1368 053c 47       		.byte	71
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 25
+
+
+ 1369 053d 20       		.byte	32
+ 1370 053e 49       		.byte	73
+ 1371 053f 24       		.byte	36
+ 1372 0540 4B       		.byte	75
+ 1373 0541 02       		.byte	2
+ 1374 0542 4D       		.byte	77
+ 1375 0543 20       		.byte	32
+ 1376 0544 50       		.byte	80
+ 1377 0545 01       		.byte	1
+ 1378 0546 51       		.byte	81
+ 1379 0547 04       		.byte	4
+ 1380 0548 52       		.byte	82
+ 1381 0549 12       		.byte	18
+ 1382 054a 76       		.byte	118
+ 1383 054b 80       		.byte	-128
+ 1384 054c 80       		.byte	-128
+ 1385 054d 21       		.byte	33
+ 1386 054e 92       		.byte	-110
+ 1387 054f 44       		.byte	68
+ 1388 0550 94       		.byte	-108
+ 1389 0551 A0       		.byte	-96
+ 1390 0552 96       		.byte	-106
+ 1391 0553 90       		.byte	-112
+ 1392 0554 99       		.byte	-103
+ 1393 0555 22       		.byte	34
+ 1394 0556 9B       		.byte	-101
+ 1395 0557 40       		.byte	64
+ 1396 0558 9C       		.byte	-100
+ 1397 0559 40       		.byte	64
+ 1398 055a 9D       		.byte	-99
+ 1399 055b 08       		.byte	8
+ 1400 055c A0       		.byte	-96
+ 1401 055d 80       		.byte	-128
+ 1402 055e A4       		.byte	-92
+ 1403 055f 04       		.byte	4
+ 1404 0560 A5       		.byte	-91
+ 1405 0561 14       		.byte	20
+ 1406 0562 A6       		.byte	-90
+ 1407 0563 01       		.byte	1
+ 1408 0564 A7       		.byte	-89
+ 1409 0565 02       		.byte	2
+ 1410 0566 C0       		.byte	-64
+ 1411 0567 DD       		.byte	-35
+ 1412 0568 C2       		.byte	-62
+ 1413 0569 EC       		.byte	-20
+ 1414 056a C4       		.byte	-60
+ 1415 056b 6C       		.byte	108
+ 1416 056c CA       		.byte	-54
+ 1417 056d D0       		.byte	-48
+ 1418 056e CC       		.byte	-52
+ 1419 056f 19       		.byte	25
+ 1420 0570 CE       		.byte	-50
+ 1421 0571 03       		.byte	3
+ 1422 0572 D0       		.byte	-48
+ 1423 0573 3C       		.byte	60
+ 1424 0574 D2       		.byte	-46
+ 1425 0575 24       		.byte	36
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 26
+
+
+ 1426 0576 E0       		.byte	-32
+ 1427 0577 02       		.byte	2
+ 1428 0578 E6       		.byte	-26
+ 1429 0579 04       		.byte	4
+ 1430 057a 00       		.byte	0
+ 1431 057b 80       		.byte	-128
+ 1432 057c 04       		.byte	4
+ 1433 057d 13       		.byte	19
+ 1434 057e 06       		.byte	6
+ 1435 057f 2C       		.byte	44
+ 1436 0580 09       		.byte	9
+ 1437 0581 20       		.byte	32
+ 1438 0582 0B       		.byte	11
+ 1439 0583 43       		.byte	67
+ 1440 0584 0E       		.byte	14
+ 1441 0585 48       		.byte	72
+ 1442 0586 0F       		.byte	15
+ 1443 0587 0C       		.byte	12
+ 1444 0588 10       		.byte	16
+ 1445 0589 13       		.byte	19
+ 1446 058a 12       		.byte	18
+ 1447 058b 64       		.byte	100
+ 1448 058c 14       		.byte	20
+ 1449 058d 4A       		.byte	74
+ 1450 058e 15       		.byte	21
+ 1451 058f 8C       		.byte	-116
+ 1452 0590 16       		.byte	22
+ 1453 0591 34       		.byte	52
+ 1454 0592 17       		.byte	23
+ 1455 0593 13       		.byte	19
+ 1456 0594 19       		.byte	25
+ 1457 0595 D1       		.byte	-47
+ 1458 0596 1B       		.byte	27
+ 1459 0597 06       		.byte	6
+ 1460 0598 1F       		.byte	31
+ 1461 0599 08       		.byte	8
+ 1462 059a 22       		.byte	34
+ 1463 059b 40       		.byte	64
+ 1464 059c 26       		.byte	38
+ 1465 059d 35       		.byte	53
+ 1466 059e 28       		.byte	40
+ 1467 059f 03       		.byte	3
+ 1468 05a0 2A       		.byte	42
+ 1469 05a1 14       		.byte	20
+ 1470 05a2 2D       		.byte	45
+ 1471 05a3 D1       		.byte	-47
+ 1472 05a4 2F       		.byte	47
+ 1473 05a5 0E       		.byte	14
+ 1474 05a6 30       		.byte	48
+ 1475 05a7 68       		.byte	104
+ 1476 05a8 31       		.byte	49
+ 1477 05a9 30       		.byte	48
+ 1478 05aa 32       		.byte	50
+ 1479 05ab 80       		.byte	-128
+ 1480 05ac 33       		.byte	51
+ 1481 05ad 0F       		.byte	15
+ 1482 05ae 34       		.byte	52
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 27
+
+
+ 1483 05af 0F       		.byte	15
+ 1484 05b0 35       		.byte	53
+ 1485 05b1 C0       		.byte	-64
+ 1486 05b2 36       		.byte	54
+ 1487 05b3 10       		.byte	16
+ 1488 05b4 39       		.byte	57
+ 1489 05b5 22       		.byte	34
+ 1490 05b6 3A       		.byte	58
+ 1491 05b7 22       		.byte	34
+ 1492 05b8 3B       		.byte	59
+ 1493 05b9 08       		.byte	8
+ 1494 05ba 3E       		.byte	62
+ 1495 05bb 44       		.byte	68
+ 1496 05bc 3F       		.byte	63
+ 1497 05bd 10       		.byte	16
+ 1498 05be 40       		.byte	64
+ 1499 05bf 06       		.byte	6
+ 1500 05c0 46       		.byte	70
+ 1501 05c1 04       		.byte	4
+ 1502 05c2 49       		.byte	73
+ 1503 05c3 FF       		.byte	-1
+ 1504 05c4 4A       		.byte	74
+ 1505 05c5 07       		.byte	7
+ 1506 05c6 4B       		.byte	75
+ 1507 05c7 FF       		.byte	-1
+ 1508 05c8 4C       		.byte	76
+ 1509 05c9 40       		.byte	64
+ 1510 05ca 4D       		.byte	77
+ 1511 05cb 20       		.byte	32
+ 1512 05cc 4E       		.byte	78
+ 1513 05cd F0       		.byte	-16
+ 1514 05ce 4F       		.byte	79
+ 1515 05cf 05       		.byte	5
+ 1516 05d0 50       		.byte	80
+ 1517 05d1 08       		.byte	8
+ 1518 05d2 54       		.byte	84
+ 1519 05d3 01       		.byte	1
+ 1520 05d4 58       		.byte	88
+ 1521 05d5 04       		.byte	4
+ 1522 05d6 59       		.byte	89
+ 1523 05d7 04       		.byte	4
+ 1524 05d8 5A       		.byte	90
+ 1525 05d9 04       		.byte	4
+ 1526 05da 5B       		.byte	91
+ 1527 05db 04       		.byte	4
+ 1528 05dc 5C       		.byte	92
+ 1529 05dd 11       		.byte	17
+ 1530 05de 5D       		.byte	93
+ 1531 05df 11       		.byte	17
+ 1532 05e0 5F       		.byte	95
+ 1533 05e1 01       		.byte	1
+ 1534 05e2 60       		.byte	96
+ 1535 05e3 40       		.byte	64
+ 1536 05e4 61       		.byte	97
+ 1537 05e5 A8       		.byte	-88
+ 1538 05e6 62       		.byte	98
+ 1539 05e7 40       		.byte	64
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 28
+
+
+ 1540 05e8 63       		.byte	99
+ 1541 05e9 20       		.byte	32
+ 1542 05ea 86       		.byte	-122
+ 1543 05eb 02       		.byte	2
+ 1544 05ec 87       		.byte	-121
+ 1545 05ed 01       		.byte	1
+ 1546 05ee 88       		.byte	-120
+ 1547 05ef 01       		.byte	1
+ 1548 05f0 89       		.byte	-119
+ 1549 05f1 01       		.byte	1
+ 1550 05f2 93       		.byte	-109
+ 1551 05f3 0A       		.byte	10
+ 1552 05f4 94       		.byte	-108
+ 1553 05f5 01       		.byte	1
+ 1554 05f6 95       		.byte	-107
+ 1555 05f7 02       		.byte	2
+ 1556 05f8 9A       		.byte	-102
+ 1557 05f9 01       		.byte	1
+ 1558 05fa 9B       		.byte	-101
+ 1559 05fb 01       		.byte	1
+ 1560 05fc A7       		.byte	-89
+ 1561 05fd 04       		.byte	4
+ 1562 05fe B1       		.byte	-79
+ 1563 05ff 04       		.byte	4
+ 1564 0600 B2       		.byte	-78
+ 1565 0601 01       		.byte	1
+ 1566 0602 B3       		.byte	-77
+ 1567 0603 08       		.byte	8
+ 1568 0604 B4       		.byte	-76
+ 1569 0605 02       		.byte	2
+ 1570 0606 B5       		.byte	-75
+ 1571 0607 01       		.byte	1
+ 1572 0608 B7       		.byte	-73
+ 1573 0609 02       		.byte	2
+ 1574 060a BE       		.byte	-66
+ 1575 060b 04       		.byte	4
+ 1576 060c BF       		.byte	-65
+ 1577 060d 50       		.byte	80
+ 1578 060e D4       		.byte	-44
+ 1579 060f 0F       		.byte	15
+ 1580 0610 D8       		.byte	-40
+ 1581 0611 04       		.byte	4
+ 1582 0612 D9       		.byte	-39
+ 1583 0613 04       		.byte	4
+ 1584 0614 DB       		.byte	-37
+ 1585 0615 04       		.byte	4
+ 1586 0616 DC       		.byte	-36
+ 1587 0617 99       		.byte	-103
+ 1588 0618 DD       		.byte	-35
+ 1589 0619 90       		.byte	-112
+ 1590 061a DF       		.byte	-33
+ 1591 061b 01       		.byte	1
+ 1592 061c 00       		.byte	0
+ 1593 061d 80       		.byte	-128
+ 1594 061e 01       		.byte	1
+ 1595 061f 02       		.byte	2
+ 1596 0620 02       		.byte	2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 29
+
+
+ 1597 0621 80       		.byte	-128
+ 1598 0622 03       		.byte	3
+ 1599 0623 20       		.byte	32
+ 1600 0624 05       		.byte	5
+ 1601 0625 20       		.byte	32
+ 1602 0626 07       		.byte	7
+ 1603 0627 10       		.byte	16
+ 1604 0628 08       		.byte	8
+ 1605 0629 02       		.byte	2
+ 1606 062a 09       		.byte	9
+ 1607 062b 08       		.byte	8
+ 1608 062c 0F       		.byte	15
+ 1609 062d 14       		.byte	20
+ 1610 062e 10       		.byte	16
+ 1611 062f A8       		.byte	-88
+ 1612 0630 19       		.byte	25
+ 1613 0631 54       		.byte	84
+ 1614 0632 1B       		.byte	27
+ 1615 0633 21       		.byte	33
+ 1616 0634 1E       		.byte	30
+ 1617 0635 24       		.byte	36
+ 1618 0636 20       		.byte	32
+ 1619 0637 C8       		.byte	-56
+ 1620 0638 21       		.byte	33
+ 1621 0639 08       		.byte	8
+ 1622 063a 24       		.byte	36
+ 1623 063b 08       		.byte	8
+ 1624 063c 26       		.byte	38
+ 1625 063d 08       		.byte	8
+ 1626 063e 27       		.byte	39
+ 1627 063f 41       		.byte	65
+ 1628 0640 28       		.byte	40
+ 1629 0641 02       		.byte	2
+ 1630 0642 2B       		.byte	43
+ 1631 0643 01       		.byte	1
+ 1632 0644 2C       		.byte	44
+ 1633 0645 08       		.byte	8
+ 1634 0646 2E       		.byte	46
+ 1635 0647 14       		.byte	20
+ 1636 0648 30       		.byte	48
+ 1637 0649 80       		.byte	-128
+ 1638 064a 31       		.byte	49
+ 1639 064b 18       		.byte	24
+ 1640 064c 35       		.byte	53
+ 1641 064d 20       		.byte	32
+ 1642 064e 36       		.byte	54
+ 1643 064f 0A       		.byte	10
+ 1644 0650 38       		.byte	56
+ 1645 0651 60       		.byte	96
+ 1646 0652 3F       		.byte	63
+ 1647 0653 14       		.byte	20
+ 1648 0654 48       		.byte	72
+ 1649 0655 04       		.byte	4
+ 1650 0656 50       		.byte	80
+ 1651 0657 B0       		.byte	-80
+ 1652 0658 51       		.byte	81
+ 1653 0659 10       		.byte	16
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 30
+
+
+ 1654 065a 59       		.byte	89
+ 1655 065b 46       		.byte	70
+ 1656 065c 5A       		.byte	90
+ 1657 065d 10       		.byte	16
+ 1658 065e 5C       		.byte	92
+ 1659 065f 88       		.byte	-120
+ 1660 0660 5D       		.byte	93
+ 1661 0661 01       		.byte	1
+ 1662 0662 5E       		.byte	94
+ 1663 0663 20       		.byte	32
+ 1664 0664 80       		.byte	-128
+ 1665 0665 84       		.byte	-124
+ 1666 0666 8F       		.byte	-113
+ 1667 0667 10       		.byte	16
+ 1668 0668 91       		.byte	-111
+ 1669 0669 01       		.byte	1
+ 1670 066a 93       		.byte	-109
+ 1671 066b 14       		.byte	20
+ 1672 066c 95       		.byte	-107
+ 1673 066d 20       		.byte	32
+ 1674 066e 96       		.byte	-106
+ 1675 066f 04       		.byte	4
+ 1676 0670 98       		.byte	-104
+ 1677 0671 08       		.byte	8
+ 1678 0672 99       		.byte	-103
+ 1679 0673 20       		.byte	32
+ 1680 0674 9C       		.byte	-100
+ 1681 0675 02       		.byte	2
+ 1682 0676 9D       		.byte	-99
+ 1683 0677 10       		.byte	16
+ 1684 0678 9F       		.byte	-97
+ 1685 0679 41       		.byte	65
+ 1686 067a A0       		.byte	-96
+ 1687 067b 08       		.byte	8
+ 1688 067c A2       		.byte	-94
+ 1689 067d 82       		.byte	-126
+ 1690 067e A4       		.byte	-92
+ 1691 067f C0       		.byte	-64
+ 1692 0680 A5       		.byte	-91
+ 1693 0681 08       		.byte	8
+ 1694 0682 A7       		.byte	-89
+ 1695 0683 20       		.byte	32
+ 1696 0684 B0       		.byte	-80
+ 1697 0685 04       		.byte	4
+ 1698 0686 B3       		.byte	-77
+ 1699 0687 08       		.byte	8
+ 1700 0688 C0       		.byte	-64
+ 1701 0689 6D       		.byte	109
+ 1702 068a C2       		.byte	-62
+ 1703 068b 6C       		.byte	108
+ 1704 068c C4       		.byte	-60
+ 1705 068d 0E       		.byte	14
+ 1706 068e CA       		.byte	-54
+ 1707 068f 48       		.byte	72
+ 1708 0690 CC       		.byte	-52
+ 1709 0691 EE       		.byte	-18
+ 1710 0692 CE       		.byte	-50
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 31
+
+
+ 1711 0693 6C       		.byte	108
+ 1712 0694 D2       		.byte	-46
+ 1713 0695 04       		.byte	4
+ 1714 0696 D6       		.byte	-42
+ 1715 0697 FF       		.byte	-1
+ 1716 0698 E4       		.byte	-28
+ 1717 0699 40       		.byte	64
+ 1718 069a E8       		.byte	-24
+ 1719 069b 30       		.byte	48
+ 1720 069c EC       		.byte	-20
+ 1721 069d 80       		.byte	-128
+ 1722 069e 00       		.byte	0
+ 1723 069f 96       		.byte	-106
+ 1724 06a0 01       		.byte	1
+ 1725 06a1 18       		.byte	24
+ 1726 06a2 02       		.byte	2
+ 1727 06a3 68       		.byte	104
+ 1728 06a4 03       		.byte	3
+ 1729 06a5 04       		.byte	4
+ 1730 06a6 04       		.byte	4
+ 1731 06a7 C5       		.byte	-59
+ 1732 06a8 05       		.byte	5
+ 1733 06a9 40       		.byte	64
+ 1734 06aa 06       		.byte	6
+ 1735 06ab 3A       		.byte	58
+ 1736 06ac 07       		.byte	7
+ 1737 06ad 3E       		.byte	62
+ 1738 06ae 08       		.byte	8
+ 1739 06af 0E       		.byte	14
+ 1740 06b0 0A       		.byte	10
+ 1741 06b1 F0       		.byte	-16
+ 1742 06b2 0C       		.byte	12
+ 1743 06b3 A3       		.byte	-93
+ 1744 06b4 0D       		.byte	13
+ 1745 06b5 16       		.byte	22
+ 1746 06b6 0E       		.byte	14
+ 1747 06b7 5C       		.byte	92
+ 1748 06b8 0F       		.byte	15
+ 1749 06b9 08       		.byte	8
+ 1750 06ba 10       		.byte	16
+ 1751 06bb FE       		.byte	-2
+ 1752 06bc 11       		.byte	17
+ 1753 06bd 10       		.byte	16
+ 1754 06be 12       		.byte	18
+ 1755 06bf 01       		.byte	1
+ 1756 06c0 13       		.byte	19
+ 1757 06c1 02       		.byte	2
+ 1758 06c2 15       		.byte	21
+ 1759 06c3 18       		.byte	24
+ 1760 06c4 16       		.byte	22
+ 1761 06c5 01       		.byte	1
+ 1762 06c6 17       		.byte	23
+ 1763 06c7 02       		.byte	2
+ 1764 06c8 19       		.byte	25
+ 1765 06c9 20       		.byte	32
+ 1766 06ca 1B       		.byte	27
+ 1767 06cb 40       		.byte	64
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 32
+
+
+ 1768 06cc 1C       		.byte	28
+ 1769 06cd 7F       		.byte	127
+ 1770 06ce 1D       		.byte	29
+ 1771 06cf 20       		.byte	32
+ 1772 06d0 1F       		.byte	31
+ 1773 06d1 40       		.byte	64
+ 1774 06d2 21       		.byte	33
+ 1775 06d3 0E       		.byte	14
+ 1776 06d4 25       		.byte	37
+ 1777 06d5 20       		.byte	32
+ 1778 06d6 27       		.byte	39
+ 1779 06d7 40       		.byte	64
+ 1780 06d8 2B       		.byte	43
+ 1781 06d9 01       		.byte	1
+ 1782 06da 31       		.byte	49
+ 1783 06db 1E       		.byte	30
+ 1784 06dc 33       		.byte	51
+ 1785 06dd 60       		.byte	96
+ 1786 06de 34       		.byte	52
+ 1787 06df FF       		.byte	-1
+ 1788 06e0 35       		.byte	53
+ 1789 06e1 01       		.byte	1
+ 1790 06e2 3B       		.byte	59
+ 1791 06e3 08       		.byte	8
+ 1792 06e4 3E       		.byte	62
+ 1793 06e5 10       		.byte	16
+ 1794 06e6 58       		.byte	88
+ 1795 06e7 04       		.byte	4
+ 1796 06e8 59       		.byte	89
+ 1797 06e9 04       		.byte	4
+ 1798 06ea 5C       		.byte	92
+ 1799 06eb 90       		.byte	-112
+ 1800 06ec 5F       		.byte	95
+ 1801 06ed 01       		.byte	1
+ 1802 06ee 83       		.byte	-125
+ 1803 06ef 03       		.byte	3
+ 1804 06f0 84       		.byte	-124
+ 1805 06f1 10       		.byte	16
+ 1806 06f2 86       		.byte	-122
+ 1807 06f3 0C       		.byte	12
+ 1808 06f4 88       		.byte	-120
+ 1809 06f5 20       		.byte	32
+ 1810 06f6 89       		.byte	-119
+ 1811 06f7 02       		.byte	2
+ 1812 06f8 8A       		.byte	-118
+ 1813 06f9 03       		.byte	3
+ 1814 06fa 8C       		.byte	-116
+ 1815 06fb 09       		.byte	9
+ 1816 06fc 8E       		.byte	-114
+ 1817 06fd 10       		.byte	16
+ 1818 06fe 90       		.byte	-112
+ 1819 06ff 0C       		.byte	12
+ 1820 0700 92       		.byte	-110
+ 1821 0701 11       		.byte	17
+ 1822 0702 94       		.byte	-108
+ 1823 0703 1C       		.byte	28
+ 1824 0704 96       		.byte	-106
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 33
+
+
+ 1825 0705 02       		.byte	2
+ 1826 0706 9F       		.byte	-97
+ 1827 0707 04       		.byte	4
+ 1828 0708 A0       		.byte	-96
+ 1829 0709 10       		.byte	16
+ 1830 070a A4       		.byte	-92
+ 1831 070b 14       		.byte	20
+ 1832 070c B2       		.byte	-78
+ 1833 070d 1F       		.byte	31
+ 1834 070e B3       		.byte	-77
+ 1835 070f 01       		.byte	1
+ 1836 0710 B5       		.byte	-75
+ 1837 0711 04       		.byte	4
+ 1838 0712 B6       		.byte	-74
+ 1839 0713 20       		.byte	32
+ 1840 0714 B7       		.byte	-73
+ 1841 0715 02       		.byte	2
+ 1842 0716 BE       		.byte	-66
+ 1843 0717 40       		.byte	64
+ 1844 0718 BF       		.byte	-65
+ 1845 0719 40       		.byte	64
+ 1846 071a C0       		.byte	-64
+ 1847 071b 62       		.byte	98
+ 1848 071c C1       		.byte	-63
+ 1849 071d 01       		.byte	1
+ 1850 071e C5       		.byte	-59
+ 1851 071f EB       		.byte	-21
+ 1852 0720 C7       		.byte	-57
+ 1853 0721 0C       		.byte	12
+ 1854 0722 C8       		.byte	-56
+ 1855 0723 13       		.byte	19
+ 1856 0724 C9       		.byte	-55
+ 1857 0725 FF       		.byte	-1
+ 1858 0726 CA       		.byte	-54
+ 1859 0727 FF       		.byte	-1
+ 1860 0728 CB       		.byte	-53
+ 1861 0729 FF       		.byte	-1
+ 1862 072a CE       		.byte	-50
+ 1863 072b F0       		.byte	-16
+ 1864 072c CF       		.byte	-49
+ 1865 072d 44       		.byte	68
+ 1866 072e D0       		.byte	-48
+ 1867 072f 0C       		.byte	12
+ 1868 0730 D4       		.byte	-44
+ 1869 0731 0F       		.byte	15
+ 1870 0732 D8       		.byte	-40
+ 1871 0733 04       		.byte	4
+ 1872 0734 D9       		.byte	-39
+ 1873 0735 04       		.byte	4
+ 1874 0736 DA       		.byte	-38
+ 1875 0737 04       		.byte	4
+ 1876 0738 DB       		.byte	-37
+ 1877 0739 04       		.byte	4
+ 1878 073a DC       		.byte	-36
+ 1879 073b 91       		.byte	-111
+ 1880 073c DD       		.byte	-35
+ 1881 073d 91       		.byte	-111
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 34
+
+
+ 1882 073e DF       		.byte	-33
+ 1883 073f 05       		.byte	5
+ 1884 0740 E6       		.byte	-26
+ 1885 0741 C0       		.byte	-64
+ 1886 0742 EA       		.byte	-22
+ 1887 0743 40       		.byte	64
+ 1888 0744 EB       		.byte	-21
+ 1889 0745 02       		.byte	2
+ 1890 0746 00       		.byte	0
+ 1891 0747 90       		.byte	-112
+ 1892 0748 03       		.byte	3
+ 1893 0749 20       		.byte	32
+ 1894 074a 04       		.byte	4
+ 1895 074b A0       		.byte	-96
+ 1896 074c 05       		.byte	5
+ 1897 074d 09       		.byte	9
+ 1898 074e 08       		.byte	8
+ 1899 074f 02       		.byte	2
+ 1900 0750 09       		.byte	9
+ 1901 0751 08       		.byte	8
+ 1902 0752 0C       		.byte	12
+ 1903 0753 40       		.byte	64
+ 1904 0754 0E       		.byte	14
+ 1905 0755 40       		.byte	64
+ 1906 0756 0F       		.byte	15
+ 1907 0757 22       		.byte	34
+ 1908 0758 10       		.byte	16
+ 1909 0759 A0       		.byte	-96
+ 1910 075a 18       		.byte	24
+ 1911 075b 10       		.byte	16
+ 1912 075c 1A       		.byte	26
+ 1913 075d 02       		.byte	2
+ 1914 075e 1F       		.byte	31
+ 1915 075f 10       		.byte	16
+ 1916 0760 22       		.byte	34
+ 1917 0761 60       		.byte	96
+ 1918 0762 23       		.byte	35
+ 1919 0763 10       		.byte	16
+ 1920 0764 24       		.byte	36
+ 1921 0765 A0       		.byte	-96
+ 1922 0766 25       		.byte	37
+ 1923 0767 15       		.byte	21
+ 1924 0768 27       		.byte	39
+ 1925 0769 04       		.byte	4
+ 1926 076a 2C       		.byte	44
+ 1927 076b 40       		.byte	64
+ 1928 076c 2E       		.byte	46
+ 1929 076d 04       		.byte	4
+ 1930 076e 2F       		.byte	47
+ 1931 076f 08       		.byte	8
+ 1932 0770 33       		.byte	51
+ 1933 0771 40       		.byte	64
+ 1934 0772 35       		.byte	53
+ 1935 0773 09       		.byte	9
+ 1936 0774 36       		.byte	54
+ 1937 0775 20       		.byte	32
+ 1938 0776 37       		.byte	55
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 35
+
+
+ 1939 0777 40       		.byte	64
+ 1940 0778 3B       		.byte	59
+ 1941 0779 12       		.byte	18
+ 1942 077a 3D       		.byte	61
+ 1943 077b 0A       		.byte	10
+ 1944 077c 3E       		.byte	62
+ 1945 077d 40       		.byte	64
+ 1946 077e 40       		.byte	64
+ 1947 077f 02       		.byte	2
+ 1948 0780 41       		.byte	65
+ 1949 0781 10       		.byte	16
+ 1950 0782 48       		.byte	72
+ 1951 0783 20       		.byte	32
+ 1952 0784 49       		.byte	73
+ 1953 0785 10       		.byte	16
+ 1954 0786 4A       		.byte	74
+ 1955 0787 80       		.byte	-128
+ 1956 0788 50       		.byte	80
+ 1957 0789 08       		.byte	8
+ 1958 078a 58       		.byte	88
+ 1959 078b 20       		.byte	32
+ 1960 078c 5A       		.byte	90
+ 1961 078d 88       		.byte	-120
+ 1962 078e 5B       		.byte	91
+ 1963 078f 01       		.byte	1
+ 1964 0790 61       		.byte	97
+ 1965 0791 04       		.byte	4
+ 1966 0792 62       		.byte	98
+ 1967 0793 10       		.byte	16
+ 1968 0794 7B       		.byte	123
+ 1969 0795 01       		.byte	1
+ 1970 0796 84       		.byte	-124
+ 1971 0797 08       		.byte	8
+ 1972 0798 86       		.byte	-122
+ 1973 0799 01       		.byte	1
+ 1974 079a 87       		.byte	-121
+ 1975 079b 01       		.byte	1
+ 1976 079c 91       		.byte	-111
+ 1977 079d 01       		.byte	1
+ 1978 079e 92       		.byte	-110
+ 1979 079f 48       		.byte	72
+ 1980 07a0 93       		.byte	-109
+ 1981 07a1 06       		.byte	6
+ 1982 07a2 94       		.byte	-108
+ 1983 07a3 A0       		.byte	-96
+ 1984 07a4 97       		.byte	-105
+ 1985 07a5 20       		.byte	32
+ 1986 07a6 98       		.byte	-104
+ 1987 07a7 20       		.byte	32
+ 1988 07a8 99       		.byte	-103
+ 1989 07a9 2D       		.byte	45
+ 1990 07aa 9A       		.byte	-102
+ 1991 07ab 10       		.byte	16
+ 1992 07ac 9C       		.byte	-100
+ 1993 07ad 04       		.byte	4
+ 1994 07ae 9F       		.byte	-97
+ 1995 07af 04       		.byte	4
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 36
+
+
+ 1996 07b0 A2       		.byte	-94
+ 1997 07b1 02       		.byte	2
+ 1998 07b2 A3       		.byte	-93
+ 1999 07b3 11       		.byte	17
+ 2000 07b4 A5       		.byte	-91
+ 2001 07b5 15       		.byte	21
+ 2002 07b6 C0       		.byte	-64
+ 2003 07b7 F7       		.byte	-9
+ 2004 07b8 C2       		.byte	-62
+ 2005 07b9 BC       		.byte	-68
+ 2006 07ba C4       		.byte	-60
+ 2007 07bb 0C       		.byte	12
+ 2008 07bc CA       		.byte	-54
+ 2009 07bd E0       		.byte	-32
+ 2010 07be CC       		.byte	-52
+ 2011 07bf F8       		.byte	-8
+ 2012 07c0 CE       		.byte	-50
+ 2013 07c1 D5       		.byte	-43
+ 2014 07c2 D0       		.byte	-48
+ 2015 07c3 0C       		.byte	12
+ 2016 07c4 D2       		.byte	-46
+ 2017 07c5 04       		.byte	4
+ 2018 07c6 D6       		.byte	-42
+ 2019 07c7 0F       		.byte	15
+ 2020 07c8 D8       		.byte	-40
+ 2021 07c9 06       		.byte	6
+ 2022 07ca DE       		.byte	-34
+ 2023 07cb 08       		.byte	8
+ 2024 07cc EA       		.byte	-22
+ 2025 07cd 02       		.byte	2
+ 2026 07ce EE       		.byte	-18
+ 2027 07cf 02       		.byte	2
+ 2028 07d0 EA       		.byte	-22
+ 2029 07d1 02       		.byte	2
+ 2030 07d2 EE       		.byte	-18
+ 2031 07d3 02       		.byte	2
+ 2032 07d4 E8       		.byte	-24
+ 2033 07d5 10       		.byte	16
+ 2034 07d6 32       		.byte	50
+ 2035 07d7 80       		.byte	-128
+ 2036 07d8 33       		.byte	51
+ 2037 07d9 01       		.byte	1
+ 2038 07da 36       		.byte	54
+ 2039 07db 40       		.byte	64
+ 2040 07dc 3C       		.byte	60
+ 2041 07dd 01       		.byte	1
+ 2042 07de 43       		.byte	67
+ 2043 07df 10       		.byte	16
+ 2044 07e0 60       		.byte	96
+ 2045 07e1 01       		.byte	1
+ 2046 07e2 62       		.byte	98
+ 2047 07e3 80       		.byte	-128
+ 2048 07e4 84       		.byte	-124
+ 2049 07e5 02       		.byte	2
+ 2050 07e6 CC       		.byte	-52
+ 2051 07e7 70       		.byte	112
+ 2052 07e8 CE       		.byte	-50
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 37
+
+
+ 2053 07e9 80       		.byte	-128
+ 2054 07ea D0       		.byte	-48
+ 2055 07eb 10       		.byte	16
+ 2056 07ec E2       		.byte	-30
+ 2057 07ed 10       		.byte	16
+ 2058 07ee 06       		.byte	6
+ 2059 07ef 02       		.byte	2
+ 2060 07f0 54       		.byte	84
+ 2061 07f1 02       		.byte	2
+ 2062 07f2 66       		.byte	102
+ 2063 07f3 80       		.byte	-128
+ 2064 07f4 82       		.byte	-126
+ 2065 07f5 80       		.byte	-128
+ 2066 07f6 8A       		.byte	-118
+ 2067 07f7 80       		.byte	-128
+ 2068 07f8 9F       		.byte	-97
+ 2069 07f9 11       		.byte	17
+ 2070 07fa A0       		.byte	-96
+ 2071 07fb 02       		.byte	2
+ 2072 07fc A6       		.byte	-90
+ 2073 07fd C0       		.byte	-64
+ 2074 07fe C0       		.byte	-64
+ 2075 07ff 80       		.byte	-128
+ 2076 0800 D6       		.byte	-42
+ 2077 0801 A0       		.byte	-96
+ 2078 0802 E6       		.byte	-26
+ 2079 0803 20       		.byte	32
+ 2080 0804 51       		.byte	81
+ 2081 0805 02       		.byte	2
+ 2082 0806 5B       		.byte	91
+ 2083 0807 10       		.byte	16
+ 2084 0808 85       		.byte	-123
+ 2085 0809 02       		.byte	2
+ 2086 080a 9F       		.byte	-97
+ 2087 080b 11       		.byte	17
+ 2088 080c A6       		.byte	-90
+ 2089 080d 40       		.byte	64
+ 2090 080e AE       		.byte	-82
+ 2091 080f 02       		.byte	2
+ 2092 0810 E0       		.byte	-32
+ 2093 0811 40       		.byte	64
+ 2094 0812 EC       		.byte	-20
+ 2095 0813 10       		.byte	16
+ 2096 0814 9F       		.byte	-97
+ 2097 0815 11       		.byte	17
+ 2098 0816 A6       		.byte	-90
+ 2099 0817 40       		.byte	64
+ 2100 0818 81       		.byte	-127
+ 2101 0819 08       		.byte	8
+ 2102 081a 19       		.byte	25
+ 2103 081b 08       		.byte	8
+ 2104 081c 30       		.byte	48
+ 2105 081d 20       		.byte	32
+ 2106 081e 84       		.byte	-124
+ 2107 081f 20       		.byte	32
+ 2108 0820 9D       		.byte	-99
+ 2109 0821 08       		.byte	8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 38
+
+
+ 2110 0822 C6       		.byte	-58
+ 2111 0823 08       		.byte	8
+ 2112 0824 CC       		.byte	-52
+ 2113 0825 08       		.byte	8
+ 2114 0826 0B       		.byte	11
+ 2115 0827 40       		.byte	64
+ 2116 0828 0D       		.byte	13
+ 2117 0829 08       		.byte	8
+ 2118 082a 44       		.byte	68
+ 2119 082b 02       		.byte	2
+ 2120 082c C2       		.byte	-62
+ 2121 082d 0C       		.byte	12
+ 2122 082e D0       		.byte	-48
+ 2123 082f 04       		.byte	4
+ 2124 0830 00       		.byte	0
+ 2125 0831 20       		.byte	32
+ 2126 0832 05       		.byte	5
+ 2127 0833 20       		.byte	32
+ 2128 0834 24       		.byte	36
+ 2129 0835 08       		.byte	8
+ 2130 0836 27       		.byte	39
+ 2131 0837 10       		.byte	16
+ 2132 0838 84       		.byte	-124
+ 2133 0839 04       		.byte	4
+ 2134 083a 9F       		.byte	-97
+ 2135 083b 10       		.byte	16
+ 2136 083c AE       		.byte	-82
+ 2137 083d 40       		.byte	64
+ 2138 083e AF       		.byte	-81
+ 2139 083f 01       		.byte	1
+ 2140 0840 C0       		.byte	-64
+ 2141 0841 C0       		.byte	-64
+ 2142 0842 C8       		.byte	-56
+ 2143 0843 A0       		.byte	-96
+ 2144 0844 E6       		.byte	-26
+ 2145 0845 40       		.byte	64
+ 2146 0846 EA       		.byte	-22
+ 2147 0847 40       		.byte	64
+ 2148 0848 EE       		.byte	-18
+ 2149 0849 40       		.byte	64
+ 2150 084a 04       		.byte	4
+ 2151 084b 20       		.byte	32
+ 2152 084c 74       		.byte	116
+ 2153 084d 04       		.byte	4
+ 2154 084e 8C       		.byte	-116
+ 2155 084f 10       		.byte	16
+ 2156 0850 A0       		.byte	-96
+ 2157 0851 04       		.byte	4
+ 2158 0852 B0       		.byte	-80
+ 2159 0853 10       		.byte	16
+ 2160 0854 B1       		.byte	-79
+ 2161 0855 20       		.byte	32
+ 2162 0856 B4       		.byte	-76
+ 2163 0857 04       		.byte	4
+ 2164 0858 C0       		.byte	-64
+ 2165 0859 80       		.byte	-128
+ 2166 085a DE       		.byte	-34
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 39
+
+
+ 2167 085b 20       		.byte	32
+ 2168 085c 9C       		.byte	-100
+ 2169 085d 02       		.byte	2
+ 2170 085e AD       		.byte	-83
+ 2171 085f 08       		.byte	8
+ 2172 0860 AF       		.byte	-81
+ 2173 0861 40       		.byte	64
+ 2174 0862 B4       		.byte	-76
+ 2175 0863 02       		.byte	2
+ 2176 0864 E8       		.byte	-24
+ 2177 0865 08       		.byte	8
+ 2178 0866 01       		.byte	1
+ 2179 0867 01       		.byte	1
+ 2180 0868 09       		.byte	9
+ 2181 0869 01       		.byte	1
+ 2182 086a 0B       		.byte	11
+ 2183 086b 01       		.byte	1
+ 2184 086c 10       		.byte	16
+ 2185 086d 02       		.byte	2
+ 2186 086e 11       		.byte	17
+ 2187 086f 01       		.byte	1
+ 2188 0870 1A       		.byte	26
+ 2189 0871 02       		.byte	2
+ 2190 0872 1B       		.byte	27
+ 2191 0873 01       		.byte	1
+ 2192 0874 00       		.byte	0
+ 2193 0875 2B       		.byte	43
+ 2194 0876 10       		.byte	16
+ 2195 0877 A0       		.byte	-96
+ 2196 0878 08       		.byte	8
+ 2197 0879 00       		.byte	0
+ 2198 087a 00       		.byte	0
+ 2199 087b 00       		.byte	0
+ 2200 087c 00       		.byte	0
+ 2201 087d 11       		.byte	17
+ 2202 087e 13       		.byte	19
+ 2203 087f 00       		.byte	0
+ 2204 0880 01       		.byte	1
+ 2205 0881 00       		.byte	0
+ 2206 0882 00       		.byte	0
+ 2207 0883 01       		.byte	1
+ 2208 0884 01       		.byte	1
+ 2209 0885 00       		.byte	0
+ 2210 0886 01       		.byte	1
+ 2211 0887 00       		.byte	0
+ 2212 0888 00       		.byte	0
+ 2213 0889 00       		.byte	0
+ 2214 088a 00       		.byte	0
+ 2215 088b 00       		.byte	0
+ 2216 088c 40       		.byte	64
+ 2217 088d 00       		.byte	0
+ 2218 088e 0C       		.byte	12
+ 2219 088f 00       		.byte	0
+ 2220 0890 00       		.byte	0
+ 2221 0891 00       		.byte	0
+ 2222 0892 00       		.byte	0
+ 2223 0893 00       		.byte	0
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 40
+
+
+ 2224 0894 C0       		.byte	-64
+ 2225 0895 00       		.byte	0
+ 2226 0896 00       		.byte	0
+ 2227 0897 00       		.byte	0
+ 2228 0898 14       		.byte	20
+ 2229 0899 60       		.byte	96
+ 2230 089a 60       		.byte	96
+ 2231 089b 00       		.byte	0
+ 2232 089c 00       		.byte	0
+ 2233 089d 00       		.byte	0
+ 2234 089e 00       		.byte	0
+ 2235 089f 00       		.byte	0
+ 2236 08a0 08       		.byte	8
+ 2237 08a1 00       		.byte	0
+ 2238 08a2 00       		.byte	0
+ 2239 08a3 00       		.byte	0
+ 2240 08a4 00       		.byte	0
+ 2241 08a5 00       		.byte	0
+ 2242 08a6 00       		.byte	0
+ 2243 08a7 00       		.byte	0
+ 2244              		.section	.cywolatch,"a",%progbits
+ 2245              		.align	2
+ 2246              		.type	cy_meta_wonvl, %object
+ 2247              		.size	cy_meta_wonvl, 4
+ 2248              	cy_meta_wonvl:
+ 2249 0000 BC       		.byte	-68
+ 2250 0001 90       		.byte	-112
+ 2251 0002 AC       		.byte	-84
+ 2252 0003 AF       		.byte	-81
+ 2253              		.section	.cycustnvl,"a",%progbits
+ 2254              		.align	2
+ 2255              		.type	cy_meta_custnvl, %object
+ 2256              		.size	cy_meta_custnvl, 4
+ 2257              	cy_meta_custnvl:
+ 2258 0000 00       		.byte	0
+ 2259 0001 00       		.byte	0
+ 2260 0002 40       		.byte	64
+ 2261 0003 05       		.byte	5
+ 2262              		.section	.cymeta,"a",%progbits
+ 2263              		.align	2
+ 2264              		.type	cy_metadata, %object
+ 2265              		.size	cy_metadata, 12
+ 2266              	cy_metadata:
+ 2267 0000 00       		.byte	0
+ 2268 0001 01       		.byte	1
+ 2269 0002 2E       		.byte	46
+ 2270 0003 16       		.byte	22
+ 2271 0004 10       		.byte	16
+ 2272 0005 69       		.byte	105
+ 2273 0006 00       		.byte	0
+ 2274 0007 01       		.byte	1
+ 2275 0008 00       		.byte	0
+ 2276 0009 00       		.byte	0
+ 2277 000a 00       		.byte	0
+ 2278 000b 00       		.byte	0
+ 2279              		.section	.cyflashprotect,"a",%progbits
+ 2280              		.align	2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 41
+
+
+ 2281              		.type	cy_meta_flashprotect, %object
+ 2282              		.size	cy_meta_flashprotect, 256
+ 2283              	cy_meta_flashprotect:
+ 2284 0000 00000000 		.space	256
+ 2284      00000000 
+ 2284      00000000 
+ 2284      00000000 
+ 2284      00000000 
+ 2285              		.text
+ 2286              	.Letext0:
+ 2287              		.file 1 ".\\Generated_Source\\PSoC5\\cymetadata.c"
+ 2288              		.file 2 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 2289              		.section	.debug_info,"",%progbits
+ 2290              	.Ldebug_info0:
+ 2291 0000 3B010000 		.4byte	0x13b
+ 2292 0004 0400     		.2byte	0x4
+ 2293 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 2294 000a 04       		.byte	0x4
+ 2295 000b 01       		.uleb128 0x1
+ 2296 000c F9000000 		.4byte	.LASF18
+ 2297 0010 01       		.byte	0x1
+ 2298 0011 65000000 		.4byte	.LASF19
+ 2299 0015 00000000 		.4byte	.LASF20
+ 2300 0019 00000000 		.4byte	.Ldebug_line0
+ 2301 001d 02       		.uleb128 0x2
+ 2302 001e 01       		.byte	0x1
+ 2303 001f 06       		.byte	0x6
+ 2304 0020 03020000 		.4byte	.LASF0
+ 2305 0024 02       		.uleb128 0x2
+ 2306 0025 01       		.byte	0x1
+ 2307 0026 08       		.byte	0x8
+ 2308 0027 9D000000 		.4byte	.LASF1
+ 2309 002b 02       		.uleb128 0x2
+ 2310 002c 02       		.byte	0x2
+ 2311 002d 05       		.byte	0x5
+ 2312 002e EA010000 		.4byte	.LASF2
+ 2313 0032 02       		.uleb128 0x2
+ 2314 0033 02       		.byte	0x2
+ 2315 0034 07       		.byte	0x7
+ 2316 0035 BD000000 		.4byte	.LASF3
+ 2317 0039 02       		.uleb128 0x2
+ 2318 003a 04       		.byte	0x4
+ 2319 003b 05       		.byte	0x5
+ 2320 003c FA010000 		.4byte	.LASF4
+ 2321 0040 02       		.uleb128 0x2
+ 2322 0041 04       		.byte	0x4
+ 2323 0042 07       		.byte	0x7
+ 2324 0043 AB000000 		.4byte	.LASF5
+ 2325 0047 02       		.uleb128 0x2
+ 2326 0048 08       		.byte	0x8
+ 2327 0049 05       		.byte	0x5
+ 2328 004a D7010000 		.4byte	.LASF6
+ 2329 004e 02       		.uleb128 0x2
+ 2330 004f 08       		.byte	0x8
+ 2331 0050 07       		.byte	0x7
+ 2332 0051 94010000 		.4byte	.LASF7
+ 2333 0055 03       		.uleb128 0x3
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 42
+
+
+ 2334 0056 04       		.byte	0x4
+ 2335 0057 05       		.byte	0x5
+ 2336 0058 696E7400 		.ascii	"int\000"
+ 2337 005c 02       		.uleb128 0x2
+ 2338 005d 04       		.byte	0x4
+ 2339 005e 07       		.byte	0x7
+ 2340 005f 87010000 		.4byte	.LASF8
+ 2341 0063 04       		.uleb128 0x4
+ 2342 0064 F4010000 		.4byte	.LASF21
+ 2343 0068 02       		.byte	0x2
+ 2344 0069 9201     		.2byte	0x192
+ 2345 006b 24000000 		.4byte	0x24
+ 2346 006f 02       		.uleb128 0x2
+ 2347 0070 04       		.byte	0x4
+ 2348 0071 04       		.byte	0x4
+ 2349 0072 97000000 		.4byte	.LASF9
+ 2350 0076 02       		.uleb128 0x2
+ 2351 0077 08       		.byte	0x8
+ 2352 0078 04       		.byte	0x4
+ 2353 0079 D0000000 		.4byte	.LASF10
+ 2354 007d 02       		.uleb128 0x2
+ 2355 007e 01       		.byte	0x1
+ 2356 007f 08       		.byte	0x8
+ 2357 0080 E5010000 		.4byte	.LASF11
+ 2358 0084 05       		.uleb128 0x5
+ 2359 0085 63000000 		.4byte	0x63
+ 2360 0089 95000000 		.4byte	0x95
+ 2361 008d 06       		.uleb128 0x6
+ 2362 008e 95000000 		.4byte	0x95
+ 2363 0092 A708     		.2byte	0x8a7
+ 2364 0094 00       		.byte	0
+ 2365 0095 02       		.uleb128 0x2
+ 2366 0096 04       		.byte	0x4
+ 2367 0097 07       		.byte	0x7
+ 2368 0098 CE010000 		.4byte	.LASF12
+ 2369 009c 07       		.uleb128 0x7
+ 2370 009d E7000000 		.4byte	.LASF13
+ 2371 00a1 01       		.byte	0x1
+ 2372 00a2 1F       		.byte	0x1f
+ 2373 00a3 AD000000 		.4byte	0xad
+ 2374 00a7 05       		.uleb128 0x5
+ 2375 00a8 03       		.byte	0x3
+ 2376 00a9 00000000 		.4byte	cy_meta_configecc
+ 2377 00ad 08       		.uleb128 0x8
+ 2378 00ae 84000000 		.4byte	0x84
+ 2379 00b2 05       		.uleb128 0x5
+ 2380 00b3 63000000 		.4byte	0x63
+ 2381 00b7 C2000000 		.4byte	0xc2
+ 2382 00bb 09       		.uleb128 0x9
+ 2383 00bc 95000000 		.4byte	0x95
+ 2384 00c0 03       		.byte	0x3
+ 2385 00c1 00       		.byte	0
+ 2386 00c2 0A       		.uleb128 0xa
+ 2387 00c3 D7000000 		.4byte	.LASF14
+ 2388 00c7 01       		.byte	0x1
+ 2389 00c8 4101     		.2byte	0x141
+ 2390 00ca D4000000 		.4byte	0xd4
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 43
+
+
+ 2391 00ce 05       		.uleb128 0x5
+ 2392 00cf 03       		.byte	0x3
+ 2393 00d0 00000000 		.4byte	cy_meta_custnvl
+ 2394 00d4 08       		.uleb128 0x8
+ 2395 00d5 B2000000 		.4byte	0xb2
+ 2396 00d9 0A       		.uleb128 0xa
+ 2397 00da C0010000 		.4byte	.LASF15
+ 2398 00de 01       		.byte	0x1
+ 2399 00df 4F01     		.2byte	0x14f
+ 2400 00e1 EB000000 		.4byte	0xeb
+ 2401 00e5 05       		.uleb128 0x5
+ 2402 00e6 03       		.byte	0x3
+ 2403 00e7 00000000 		.4byte	cy_meta_wonvl
+ 2404 00eb 08       		.uleb128 0x8
+ 2405 00ec B2000000 		.4byte	0xb2
+ 2406 00f0 05       		.uleb128 0x5
+ 2407 00f1 63000000 		.4byte	0x63
+ 2408 00f5 00010000 		.4byte	0x100
+ 2409 00f9 09       		.uleb128 0x9
+ 2410 00fa 95000000 		.4byte	0x95
+ 2411 00fe FF       		.byte	0xff
+ 2412 00ff 00       		.byte	0
+ 2413 0100 0A       		.uleb128 0xa
+ 2414 0101 AB010000 		.4byte	.LASF16
+ 2415 0105 01       		.byte	0x1
+ 2416 0106 5D01     		.2byte	0x15d
+ 2417 0108 12010000 		.4byte	0x112
+ 2418 010c 05       		.uleb128 0x5
+ 2419 010d 03       		.byte	0x3
+ 2420 010e 00000000 		.4byte	cy_meta_flashprotect
+ 2421 0112 08       		.uleb128 0x8
+ 2422 0113 F0000000 		.4byte	0xf0
+ 2423 0117 05       		.uleb128 0x5
+ 2424 0118 63000000 		.4byte	0x63
+ 2425 011c 27010000 		.4byte	0x127
+ 2426 0120 09       		.uleb128 0x9
+ 2427 0121 95000000 		.4byte	0x95
+ 2428 0125 0B       		.byte	0xb
+ 2429 0126 00       		.byte	0
+ 2430 0127 0A       		.uleb128 0xa
+ 2431 0128 8B000000 		.4byte	.LASF17
+ 2432 012c 01       		.byte	0x1
+ 2433 012d 8A01     		.2byte	0x18a
+ 2434 012f 39010000 		.4byte	0x139
+ 2435 0133 05       		.uleb128 0x5
+ 2436 0134 03       		.byte	0x3
+ 2437 0135 00000000 		.4byte	cy_metadata
+ 2438 0139 08       		.uleb128 0x8
+ 2439 013a 17010000 		.4byte	0x117
+ 2440 013e 00       		.byte	0
+ 2441              		.section	.debug_abbrev,"",%progbits
+ 2442              	.Ldebug_abbrev0:
+ 2443 0000 01       		.uleb128 0x1
+ 2444 0001 11       		.uleb128 0x11
+ 2445 0002 01       		.byte	0x1
+ 2446 0003 25       		.uleb128 0x25
+ 2447 0004 0E       		.uleb128 0xe
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 44
+
+
+ 2448 0005 13       		.uleb128 0x13
+ 2449 0006 0B       		.uleb128 0xb
+ 2450 0007 03       		.uleb128 0x3
+ 2451 0008 0E       		.uleb128 0xe
+ 2452 0009 1B       		.uleb128 0x1b
+ 2453 000a 0E       		.uleb128 0xe
+ 2454 000b 10       		.uleb128 0x10
+ 2455 000c 17       		.uleb128 0x17
+ 2456 000d 00       		.byte	0
+ 2457 000e 00       		.byte	0
+ 2458 000f 02       		.uleb128 0x2
+ 2459 0010 24       		.uleb128 0x24
+ 2460 0011 00       		.byte	0
+ 2461 0012 0B       		.uleb128 0xb
+ 2462 0013 0B       		.uleb128 0xb
+ 2463 0014 3E       		.uleb128 0x3e
+ 2464 0015 0B       		.uleb128 0xb
+ 2465 0016 03       		.uleb128 0x3
+ 2466 0017 0E       		.uleb128 0xe
+ 2467 0018 00       		.byte	0
+ 2468 0019 00       		.byte	0
+ 2469 001a 03       		.uleb128 0x3
+ 2470 001b 24       		.uleb128 0x24
+ 2471 001c 00       		.byte	0
+ 2472 001d 0B       		.uleb128 0xb
+ 2473 001e 0B       		.uleb128 0xb
+ 2474 001f 3E       		.uleb128 0x3e
+ 2475 0020 0B       		.uleb128 0xb
+ 2476 0021 03       		.uleb128 0x3
+ 2477 0022 08       		.uleb128 0x8
+ 2478 0023 00       		.byte	0
+ 2479 0024 00       		.byte	0
+ 2480 0025 04       		.uleb128 0x4
+ 2481 0026 16       		.uleb128 0x16
+ 2482 0027 00       		.byte	0
+ 2483 0028 03       		.uleb128 0x3
+ 2484 0029 0E       		.uleb128 0xe
+ 2485 002a 3A       		.uleb128 0x3a
+ 2486 002b 0B       		.uleb128 0xb
+ 2487 002c 3B       		.uleb128 0x3b
+ 2488 002d 05       		.uleb128 0x5
+ 2489 002e 49       		.uleb128 0x49
+ 2490 002f 13       		.uleb128 0x13
+ 2491 0030 00       		.byte	0
+ 2492 0031 00       		.byte	0
+ 2493 0032 05       		.uleb128 0x5
+ 2494 0033 01       		.uleb128 0x1
+ 2495 0034 01       		.byte	0x1
+ 2496 0035 49       		.uleb128 0x49
+ 2497 0036 13       		.uleb128 0x13
+ 2498 0037 01       		.uleb128 0x1
+ 2499 0038 13       		.uleb128 0x13
+ 2500 0039 00       		.byte	0
+ 2501 003a 00       		.byte	0
+ 2502 003b 06       		.uleb128 0x6
+ 2503 003c 21       		.uleb128 0x21
+ 2504 003d 00       		.byte	0
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 45
+
+
+ 2505 003e 49       		.uleb128 0x49
+ 2506 003f 13       		.uleb128 0x13
+ 2507 0040 2F       		.uleb128 0x2f
+ 2508 0041 05       		.uleb128 0x5
+ 2509 0042 00       		.byte	0
+ 2510 0043 00       		.byte	0
+ 2511 0044 07       		.uleb128 0x7
+ 2512 0045 34       		.uleb128 0x34
+ 2513 0046 00       		.byte	0
+ 2514 0047 03       		.uleb128 0x3
+ 2515 0048 0E       		.uleb128 0xe
+ 2516 0049 3A       		.uleb128 0x3a
+ 2517 004a 0B       		.uleb128 0xb
+ 2518 004b 3B       		.uleb128 0x3b
+ 2519 004c 0B       		.uleb128 0xb
+ 2520 004d 49       		.uleb128 0x49
+ 2521 004e 13       		.uleb128 0x13
+ 2522 004f 3F       		.uleb128 0x3f
+ 2523 0050 19       		.uleb128 0x19
+ 2524 0051 02       		.uleb128 0x2
+ 2525 0052 18       		.uleb128 0x18
+ 2526 0053 00       		.byte	0
+ 2527 0054 00       		.byte	0
+ 2528 0055 08       		.uleb128 0x8
+ 2529 0056 26       		.uleb128 0x26
+ 2530 0057 00       		.byte	0
+ 2531 0058 49       		.uleb128 0x49
+ 2532 0059 13       		.uleb128 0x13
+ 2533 005a 00       		.byte	0
+ 2534 005b 00       		.byte	0
+ 2535 005c 09       		.uleb128 0x9
+ 2536 005d 21       		.uleb128 0x21
+ 2537 005e 00       		.byte	0
+ 2538 005f 49       		.uleb128 0x49
+ 2539 0060 13       		.uleb128 0x13
+ 2540 0061 2F       		.uleb128 0x2f
+ 2541 0062 0B       		.uleb128 0xb
+ 2542 0063 00       		.byte	0
+ 2543 0064 00       		.byte	0
+ 2544 0065 0A       		.uleb128 0xa
+ 2545 0066 34       		.uleb128 0x34
+ 2546 0067 00       		.byte	0
+ 2547 0068 03       		.uleb128 0x3
+ 2548 0069 0E       		.uleb128 0xe
+ 2549 006a 3A       		.uleb128 0x3a
+ 2550 006b 0B       		.uleb128 0xb
+ 2551 006c 3B       		.uleb128 0x3b
+ 2552 006d 05       		.uleb128 0x5
+ 2553 006e 49       		.uleb128 0x49
+ 2554 006f 13       		.uleb128 0x13
+ 2555 0070 3F       		.uleb128 0x3f
+ 2556 0071 19       		.uleb128 0x19
+ 2557 0072 02       		.uleb128 0x2
+ 2558 0073 18       		.uleb128 0x18
+ 2559 0074 00       		.byte	0
+ 2560 0075 00       		.byte	0
+ 2561 0076 00       		.byte	0
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 46
+
+
+ 2562              		.section	.debug_aranges,"",%progbits
+ 2563 0000 14000000 		.4byte	0x14
+ 2564 0004 0200     		.2byte	0x2
+ 2565 0006 00000000 		.4byte	.Ldebug_info0
+ 2566 000a 04       		.byte	0x4
+ 2567 000b 00       		.byte	0
+ 2568 000c 0000     		.2byte	0
+ 2569 000e 0000     		.2byte	0
+ 2570 0010 00000000 		.4byte	0
+ 2571 0014 00000000 		.4byte	0
+ 2572              		.section	.debug_line,"",%progbits
+ 2573              	.Ldebug_line0:
+ 2574 0000 4F000000 		.section	.debug_str,"MS",%progbits,1
+ 2574      02004900 
+ 2574      00000201 
+ 2574      FB0E0D00 
+ 2574      01010101 
+ 2575              	.LASF20:
+ 2576 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
+ 2576      73657273 
+ 2576      5C427279 
+ 2576      616E204F 
+ 2576      72616275 
+ 2577 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
+ 2577      534F435F 
+ 2577      50524F47 
+ 2577      52414D53 
+ 2577      5C50536F 
+ 2578 005e 2E637964 		.ascii	".cydsn\000"
+ 2578      736E00
+ 2579              	.LASF19:
+ 2580 0065 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\cymetadata.c\000"
+ 2580      6E657261 
+ 2580      7465645F 
+ 2580      536F7572 
+ 2580      63655C50 
+ 2581              	.LASF17:
+ 2582 008b 63795F6D 		.ascii	"cy_metadata\000"
+ 2582      65746164 
+ 2582      61746100 
+ 2583              	.LASF9:
+ 2584 0097 666C6F61 		.ascii	"float\000"
+ 2584      7400
+ 2585              	.LASF1:
+ 2586 009d 756E7369 		.ascii	"unsigned char\000"
+ 2586      676E6564 
+ 2586      20636861 
+ 2586      7200
+ 2587              	.LASF5:
+ 2588 00ab 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2588      20756E73 
+ 2588      69676E65 
+ 2588      6420696E 
+ 2588      7400
+ 2589              	.LASF3:
+ 2590 00bd 73686F72 		.ascii	"short unsigned int\000"
+ 2590      7420756E 
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 47
+
+
+ 2590      7369676E 
+ 2590      65642069 
+ 2590      6E7400
+ 2591              	.LASF10:
+ 2592 00d0 646F7562 		.ascii	"double\000"
+ 2592      6C6500
+ 2593              	.LASF14:
+ 2594 00d7 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 2594      6574615F 
+ 2594      63757374 
+ 2594      6E766C00 
+ 2595              	.LASF13:
+ 2596 00e7 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 2596      6574615F 
+ 2596      636F6E66 
+ 2596      69676563 
+ 2596      6300
+ 2597              	.LASF18:
+ 2598 00f9 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2598      4320342E 
+ 2598      392E3320 
+ 2598      32303135 
+ 2598      30333033 
+ 2599 012c 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 2599      20726576 
+ 2599      6973696F 
+ 2599      6E203232 
+ 2599      31323230 
+ 2600 015f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2600      66756E63 
+ 2600      74696F6E 
+ 2600      2D736563 
+ 2600      74696F6E 
+ 2601              	.LASF8:
+ 2602 0187 756E7369 		.ascii	"unsigned int\000"
+ 2602      676E6564 
+ 2602      20696E74 
+ 2602      00
+ 2603              	.LASF7:
+ 2604 0194 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2604      206C6F6E 
+ 2604      6720756E 
+ 2604      7369676E 
+ 2604      65642069 
+ 2605              	.LASF16:
+ 2606 01ab 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 2606      6574615F 
+ 2606      666C6173 
+ 2606      6870726F 
+ 2606      74656374 
+ 2607              	.LASF15:
+ 2608 01c0 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 2608      6574615F 
+ 2608      776F6E76 
+ 2608      6C00
+ 2609              	.LASF12:
+ 2610 01ce 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccg0PqTX.s 			page 48
+
+
+ 2610      74797065 
+ 2610      00
+ 2611              	.LASF6:
+ 2612 01d7 6C6F6E67 		.ascii	"long long int\000"
+ 2612      206C6F6E 
+ 2612      6720696E 
+ 2612      7400
+ 2613              	.LASF11:
+ 2614 01e5 63686172 		.ascii	"char\000"
+ 2614      00
+ 2615              	.LASF2:
+ 2616 01ea 73686F72 		.ascii	"short int\000"
+ 2616      7420696E 
+ 2616      7400
+ 2617              	.LASF21:
+ 2618 01f4 75696E74 		.ascii	"uint8\000"
+ 2618      3800
+ 2619              	.LASF4:
+ 2620 01fa 6C6F6E67 		.ascii	"long int\000"
+ 2620      20696E74 
+ 2620      00
+ 2621              	.LASF0:
+ 2622 0203 7369676E 		.ascii	"signed char\000"
+ 2622      65642063 
+ 2622      68617200 
+ 2623              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

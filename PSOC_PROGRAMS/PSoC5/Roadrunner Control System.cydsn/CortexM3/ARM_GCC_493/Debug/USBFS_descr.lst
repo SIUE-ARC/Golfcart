@@ -1,0 +1,1117 @@
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"USBFS_descr.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.comm	USBFS_idSerialNumberStringDescriptor,34,4
+  19              		.global	USBFS_MSOS_CONFIGURATION_DESCR
+  20              		.global	USBFS_MSOS_DESCRIPTOR
+  21              		.global	USBFS_TABLE
+  22              		.global	USBFS_DEVICE0_TABLE
+  23              		.global	USBFS_DEVICE0_CONFIGURATION0_TABLE
+  24              		.global	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+  25              		.global	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+  26              		.global	USBFS_SN_STRING_DESCRIPTOR
+  27              		.global	USBFS_STRING_DESCRIPTORS
+  28              		.global	USBFS_DEVICE0_CONFIGURATION0_DESCR
+  29              		.global	USBFS_DEVICE0_DESCR
+  30              		.section	.rodata
+  31              		.align	2
+  32              		.type	USBFS_MSOS_CONFIGURATION_DESCR, %object
+  33              		.size	USBFS_MSOS_CONFIGURATION_DESCR, 40
+  34              	USBFS_MSOS_CONFIGURATION_DESCR:
+  35 0000 28       		.byte	40
+  36 0001 00       		.byte	0
+  37 0002 00       		.byte	0
+  38 0003 00       		.byte	0
+  39 0004 00       		.byte	0
+  40 0005 01       		.byte	1
+  41 0006 04       		.byte	4
+  42 0007 00       		.byte	0
+  43 0008 01       		.byte	1
+  44 0009 00       		.byte	0
+  45 000a 00       		.byte	0
+  46 000b 00       		.byte	0
+  47 000c 00       		.byte	0
+  48 000d 00       		.byte	0
+  49 000e 00       		.byte	0
+  50 000f 00       		.byte	0
+  51 0010 00       		.byte	0
+  52 0011 01       		.byte	1
+  53 0012 43       		.byte	67
+  54 0013 59       		.byte	89
+  55 0014 55       		.byte	85
+  56 0015 53       		.byte	83
+  57 0016 42       		.byte	66
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 2
+
+
+  58 0017 00       		.byte	0
+  59 0018 00       		.byte	0
+  60 0019 00       		.byte	0
+  61 001a 30       		.byte	48
+  62 001b 30       		.byte	48
+  63 001c 30       		.byte	48
+  64 001d 30       		.byte	48
+  65 001e 31       		.byte	49
+  66 001f 00       		.byte	0
+  67 0020 00       		.byte	0
+  68 0021 00       		.byte	0
+  69 0022 00       		.byte	0
+  70 0023 00       		.byte	0
+  71 0024 00       		.byte	0
+  72 0025 00       		.byte	0
+  73 0026 00       		.byte	0
+  74 0027 00       		.byte	0
+  75              		.type	USBFS_MSOS_DESCRIPTOR, %object
+  76              		.size	USBFS_MSOS_DESCRIPTOR, 18
+  77              	USBFS_MSOS_DESCRIPTOR:
+  78 0028 12       		.byte	18
+  79 0029 03       		.byte	3
+  80 002a 4D       		.byte	77
+  81 002b 00       		.byte	0
+  82 002c 53       		.byte	83
+  83 002d 00       		.byte	0
+  84 002e 46       		.byte	70
+  85 002f 00       		.byte	0
+  86 0030 54       		.byte	84
+  87 0031 00       		.byte	0
+  88 0032 31       		.byte	49
+  89 0033 00       		.byte	0
+  90 0034 30       		.byte	48
+  91 0035 00       		.byte	0
+  92 0036 30       		.byte	48
+  93 0037 00       		.byte	0
+  94 0038 01       		.byte	1
+  95 0039 00       		.byte	0
+  96 003a 0000     		.space	2
+  97              		.type	USBFS_TABLE, %object
+  98              		.size	USBFS_TABLE, 8
+  99              	USBFS_TABLE:
+ 100 003c 01       		.byte	1
+ 101 003d 000000   		.space	3
+ 102 0040 00000000 		.word	USBFS_DEVICE0_TABLE
+ 103              		.type	USBFS_DEVICE0_TABLE, %object
+ 104              		.size	USBFS_DEVICE0_TABLE, 24
+ 105              	USBFS_DEVICE0_TABLE:
+ 106 0044 01       		.byte	1
+ 107 0045 000000   		.space	3
+ 108 0048 00000000 		.word	USBFS_DEVICE0_DESCR
+ 109 004c 00       		.byte	0
+ 110 004d 000000   		.space	3
+ 111 0050 00000000 		.word	0
+ 112 0054 01       		.byte	1
+ 113 0055 000000   		.space	3
+ 114 0058 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_TABLE
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 3
+
+
+ 115              		.type	USBFS_DEVICE0_CONFIGURATION0_TABLE, %object
+ 116              		.size	USBFS_DEVICE0_CONFIGURATION0_TABLE, 32
+ 117              	USBFS_DEVICE0_CONFIGURATION0_TABLE:
+ 118 005c 01       		.byte	1
+ 119 005d 000000   		.space	3
+ 120 0060 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_DESCR
+ 121 0064 02       		.byte	2
+ 122 0065 000000   		.space	3
+ 123 0068 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 124 006c 00       		.byte	0
+ 125 006d 000000   		.space	3
+ 126 0070 00000000 		.word	0
+ 127 0074 00       		.byte	0
+ 128 0075 000000   		.space	3
+ 129 0078 00000000 		.word	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 130              		.type	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, %object
+ 131              		.size	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS, 1
+ 132              	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS:
+ 133 007c 00       		.space	1
+ 134 007d 000000   		.space	3
+ 135              		.type	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, %object
+ 136              		.size	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE, 16
+ 137              	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE:
+ 138 0080 00       		.byte	0
+ 139 0081 00       		.byte	0
+ 140 0082 81       		.byte	-127
+ 141 0083 02       		.byte	2
+ 142 0084 4000     		.short	64
+ 143 0086 00       		.byte	0
+ 144 0087 00       		.space	1
+ 145 0088 00       		.byte	0
+ 146 0089 00       		.byte	0
+ 147 008a 02       		.byte	2
+ 148 008b 02       		.byte	2
+ 149 008c 4000     		.short	64
+ 150 008e 00       		.byte	0
+ 151 008f 00       		.space	1
+ 152              		.type	USBFS_SN_STRING_DESCRIPTOR, %object
+ 153              		.size	USBFS_SN_STRING_DESCRIPTOR, 2
+ 154              	USBFS_SN_STRING_DESCRIPTOR:
+ 155 0090 02       		.byte	2
+ 156 0091 03       		.byte	3
+ 157 0092 0000     		.space	2
+ 158              		.type	USBFS_STRING_DESCRIPTORS, %object
+ 159              		.size	USBFS_STRING_DESCRIPTORS, 103
+ 160              	USBFS_STRING_DESCRIPTORS:
+ 161 0094 04       		.byte	4
+ 162 0095 03       		.byte	3
+ 163 0096 09       		.byte	9
+ 164 0097 04       		.byte	4
+ 165 0098 2C       		.byte	44
+ 166 0099 03       		.byte	3
+ 167 009a 52       		.byte	82
+ 168 009b 00       		.byte	0
+ 169 009c 6F       		.byte	111
+ 170 009d 00       		.byte	0
+ 171 009e 61       		.byte	97
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 4
+
+
+ 172 009f 00       		.byte	0
+ 173 00a0 64       		.byte	100
+ 174 00a1 00       		.byte	0
+ 175 00a2 72       		.byte	114
+ 176 00a3 00       		.byte	0
+ 177 00a4 75       		.byte	117
+ 178 00a5 00       		.byte	0
+ 179 00a6 6E       		.byte	110
+ 180 00a7 00       		.byte	0
+ 181 00a8 6E       		.byte	110
+ 182 00a9 00       		.byte	0
+ 183 00aa 65       		.byte	101
+ 184 00ab 00       		.byte	0
+ 185 00ac 72       		.byte	114
+ 186 00ad 00       		.byte	0
+ 187 00ae 20       		.byte	32
+ 188 00af 00       		.byte	0
+ 189 00b0 43       		.byte	67
+ 190 00b1 00       		.byte	0
+ 191 00b2 6F       		.byte	111
+ 192 00b3 00       		.byte	0
+ 193 00b4 6E       		.byte	110
+ 194 00b5 00       		.byte	0
+ 195 00b6 74       		.byte	116
+ 196 00b7 00       		.byte	0
+ 197 00b8 72       		.byte	114
+ 198 00b9 00       		.byte	0
+ 199 00ba 6F       		.byte	111
+ 200 00bb 00       		.byte	0
+ 201 00bc 6C       		.byte	108
+ 202 00bd 00       		.byte	0
+ 203 00be 6C       		.byte	108
+ 204 00bf 00       		.byte	0
+ 205 00c0 65       		.byte	101
+ 206 00c1 00       		.byte	0
+ 207 00c2 72       		.byte	114
+ 208 00c3 00       		.byte	0
+ 209 00c4 36       		.byte	54
+ 210 00c5 03       		.byte	3
+ 211 00c6 47       		.byte	71
+ 212 00c7 00       		.byte	0
+ 213 00c8 65       		.byte	101
+ 214 00c9 00       		.byte	0
+ 215 00ca 6E       		.byte	110
+ 216 00cb 00       		.byte	0
+ 217 00cc 65       		.byte	101
+ 218 00cd 00       		.byte	0
+ 219 00ce 72       		.byte	114
+ 220 00cf 00       		.byte	0
+ 221 00d0 69       		.byte	105
+ 222 00d1 00       		.byte	0
+ 223 00d2 63       		.byte	99
+ 224 00d3 00       		.byte	0
+ 225 00d4 20       		.byte	32
+ 226 00d5 00       		.byte	0
+ 227 00d6 55       		.byte	85
+ 228 00d7 00       		.byte	0
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 5
+
+
+ 229 00d8 53       		.byte	83
+ 230 00d9 00       		.byte	0
+ 231 00da 42       		.byte	66
+ 232 00db 00       		.byte	0
+ 233 00dc 20       		.byte	32
+ 234 00dd 00       		.byte	0
+ 235 00de 42       		.byte	66
+ 236 00df 00       		.byte	0
+ 237 00e0 75       		.byte	117
+ 238 00e1 00       		.byte	0
+ 239 00e2 6C       		.byte	108
+ 240 00e3 00       		.byte	0
+ 241 00e4 6B       		.byte	107
+ 242 00e5 00       		.byte	0
+ 243 00e6 20       		.byte	32
+ 244 00e7 00       		.byte	0
+ 245 00e8 49       		.byte	73
+ 246 00e9 00       		.byte	0
+ 247 00ea 6E       		.byte	110
+ 248 00eb 00       		.byte	0
+ 249 00ec 74       		.byte	116
+ 250 00ed 00       		.byte	0
+ 251 00ee 65       		.byte	101
+ 252 00ef 00       		.byte	0
+ 253 00f0 72       		.byte	114
+ 254 00f1 00       		.byte	0
+ 255 00f2 66       		.byte	102
+ 256 00f3 00       		.byte	0
+ 257 00f4 61       		.byte	97
+ 258 00f5 00       		.byte	0
+ 259 00f6 63       		.byte	99
+ 260 00f7 00       		.byte	0
+ 261 00f8 65       		.byte	101
+ 262 00f9 00       		.byte	0
+ 263 00fa 00       		.byte	0
+ 264 00fb 00       		.space	1
+ 265              		.type	USBFS_DEVICE0_CONFIGURATION0_DESCR, %object
+ 266              		.size	USBFS_DEVICE0_CONFIGURATION0_DESCR, 32
+ 267              	USBFS_DEVICE0_CONFIGURATION0_DESCR:
+ 268 00fc 09       		.byte	9
+ 269 00fd 02       		.byte	2
+ 270 00fe 20       		.byte	32
+ 271 00ff 00       		.byte	0
+ 272 0100 01       		.byte	1
+ 273 0101 01       		.byte	1
+ 274 0102 00       		.byte	0
+ 275 0103 80       		.byte	-128
+ 276 0104 32       		.byte	50
+ 277 0105 09       		.byte	9
+ 278 0106 04       		.byte	4
+ 279 0107 00       		.byte	0
+ 280 0108 00       		.byte	0
+ 281 0109 02       		.byte	2
+ 282 010a 00       		.byte	0
+ 283 010b 00       		.byte	0
+ 284 010c 00       		.byte	0
+ 285 010d 00       		.byte	0
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 6
+
+
+ 286 010e 07       		.byte	7
+ 287 010f 05       		.byte	5
+ 288 0110 81       		.byte	-127
+ 289 0111 02       		.byte	2
+ 290 0112 40       		.byte	64
+ 291 0113 00       		.byte	0
+ 292 0114 00       		.byte	0
+ 293 0115 07       		.byte	7
+ 294 0116 05       		.byte	5
+ 295 0117 02       		.byte	2
+ 296 0118 02       		.byte	2
+ 297 0119 40       		.byte	64
+ 298 011a 00       		.byte	0
+ 299 011b 00       		.byte	0
+ 300              		.type	USBFS_DEVICE0_DESCR, %object
+ 301              		.size	USBFS_DEVICE0_DESCR, 18
+ 302              	USBFS_DEVICE0_DESCR:
+ 303 011c 12       		.byte	18
+ 304 011d 01       		.byte	1
+ 305 011e 00       		.byte	0
+ 306 011f 02       		.byte	2
+ 307 0120 00       		.byte	0
+ 308 0121 00       		.byte	0
+ 309 0122 00       		.byte	0
+ 310 0123 08       		.byte	8
+ 311 0124 B4       		.byte	-76
+ 312 0125 04       		.byte	4
+ 313 0126 51       		.byte	81
+ 314 0127 80       		.byte	-128
+ 315 0128 00       		.byte	0
+ 316 0129 00       		.byte	0
+ 317 012a 01       		.byte	1
+ 318 012b 02       		.byte	2
+ 319 012c 80       		.byte	-128
+ 320 012d 01       		.byte	1
+ 321 012e 0000     		.text
+ 322              	.Letext0:
+ 323              		.file 1 ".\\Generated_Source\\PSoC5\\cytypes.h"
+ 324              		.file 2 ".\\Generated_Source\\PSoC5\\USBFS.h"
+ 325              		.file 3 ".\\Generated_Source\\PSoC5\\USBFS_descr.c"
+ 326              		.section	.debug_info,"",%progbits
+ 327              	.Ldebug_info0:
+ 328 0000 D4020000 		.4byte	0x2d4
+ 329 0004 0400     		.2byte	0x4
+ 330 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 331 000a 04       		.byte	0x4
+ 332 000b 01       		.uleb128 0x1
+ 333 000c 1F020000 		.4byte	.LASF36
+ 334 0010 01       		.byte	0x1
+ 335 0011 CC020000 		.4byte	.LASF37
+ 336 0015 00000000 		.4byte	.LASF38
+ 337 0019 00000000 		.4byte	.Ldebug_line0
+ 338 001d 02       		.uleb128 0x2
+ 339 001e 01       		.byte	0x1
+ 340 001f 06       		.byte	0x6
+ 341 0020 7B030000 		.4byte	.LASF0
+ 342 0024 02       		.uleb128 0x2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 7
+
+
+ 343 0025 01       		.byte	0x1
+ 344 0026 08       		.byte	0x8
+ 345 0027 3D010000 		.4byte	.LASF1
+ 346 002b 02       		.uleb128 0x2
+ 347 002c 02       		.byte	0x2
+ 348 002d 05       		.byte	0x5
+ 349 002e 14030000 		.4byte	.LASF2
+ 350 0032 02       		.uleb128 0x2
+ 351 0033 02       		.byte	0x2
+ 352 0034 07       		.byte	0x7
+ 353 0035 9E000000 		.4byte	.LASF3
+ 354 0039 02       		.uleb128 0x2
+ 355 003a 04       		.byte	0x4
+ 356 003b 05       		.byte	0x5
+ 357 003c 72030000 		.4byte	.LASF4
+ 358 0040 02       		.uleb128 0x2
+ 359 0041 04       		.byte	0x4
+ 360 0042 07       		.byte	0x7
+ 361 0043 AB010000 		.4byte	.LASF5
+ 362 0047 02       		.uleb128 0x2
+ 363 0048 08       		.byte	0x8
+ 364 0049 05       		.byte	0x5
+ 365 004a AD020000 		.4byte	.LASF6
+ 366 004e 02       		.uleb128 0x2
+ 367 004f 08       		.byte	0x8
+ 368 0050 07       		.byte	0x7
+ 369 0051 CA010000 		.4byte	.LASF7
+ 370 0055 03       		.uleb128 0x3
+ 371 0056 04       		.byte	0x4
+ 372 0057 05       		.byte	0x5
+ 373 0058 696E7400 		.ascii	"int\000"
+ 374 005c 02       		.uleb128 0x2
+ 375 005d 04       		.byte	0x4
+ 376 005e 07       		.byte	0x7
+ 377 005f BD010000 		.4byte	.LASF8
+ 378 0063 04       		.uleb128 0x4
+ 379 0064 3D030000 		.4byte	.LASF9
+ 380 0068 01       		.byte	0x1
+ 381 0069 9201     		.2byte	0x192
+ 382 006b 24000000 		.4byte	0x24
+ 383 006f 04       		.uleb128 0x4
+ 384 0070 52010000 		.4byte	.LASF10
+ 385 0074 01       		.byte	0x1
+ 386 0075 9301     		.2byte	0x193
+ 387 0077 32000000 		.4byte	0x32
+ 388 007b 02       		.uleb128 0x2
+ 389 007c 04       		.byte	0x4
+ 390 007d 04       		.byte	0x4
+ 391 007e CC000000 		.4byte	.LASF11
+ 392 0082 02       		.uleb128 0x2
+ 393 0083 08       		.byte	0x8
+ 394 0084 04       		.byte	0x4
+ 395 0085 4B010000 		.4byte	.LASF12
+ 396 0089 02       		.uleb128 0x2
+ 397 008a 01       		.byte	0x1
+ 398 008b 08       		.byte	0x8
+ 399 008c C7020000 		.4byte	.LASF13
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 8
+
+
+ 400 0090 02       		.uleb128 0x2
+ 401 0091 04       		.byte	0x4
+ 402 0092 07       		.byte	0x7
+ 403 0093 16020000 		.4byte	.LASF14
+ 404 0097 05       		.uleb128 0x5
+ 405 0098 08       		.byte	0x8
+ 406 0099 02       		.byte	0x2
+ 407 009a 9A       		.byte	0x9a
+ 408 009b E8000000 		.4byte	0xe8
+ 409 009f 06       		.uleb128 0x6
+ 410 00a0 43030000 		.4byte	.LASF15
+ 411 00a4 02       		.byte	0x2
+ 412 00a5 9C       		.byte	0x9c
+ 413 00a6 63000000 		.4byte	0x63
+ 414 00aa 00       		.byte	0
+ 415 00ab 06       		.uleb128 0x6
+ 416 00ac D2000000 		.4byte	.LASF16
+ 417 00b0 02       		.byte	0x2
+ 418 00b1 9D       		.byte	0x9d
+ 419 00b2 63000000 		.4byte	0x63
+ 420 00b6 01       		.byte	0x1
+ 421 00b7 06       		.uleb128 0x6
+ 422 00b8 24010000 		.4byte	.LASF17
+ 423 00bc 02       		.byte	0x2
+ 424 00bd 9E       		.byte	0x9e
+ 425 00be 63000000 		.4byte	0x63
+ 426 00c2 02       		.byte	0x2
+ 427 00c3 06       		.uleb128 0x6
+ 428 00c4 F6000000 		.4byte	.LASF18
+ 429 00c8 02       		.byte	0x2
+ 430 00c9 9F       		.byte	0x9f
+ 431 00ca 63000000 		.4byte	0x63
+ 432 00ce 03       		.byte	0x3
+ 433 00cf 06       		.uleb128 0x6
+ 434 00d0 09030000 		.4byte	.LASF19
+ 435 00d4 02       		.byte	0x2
+ 436 00d5 A0       		.byte	0xa0
+ 437 00d6 6F000000 		.4byte	0x6f
+ 438 00da 04       		.byte	0x4
+ 439 00db 06       		.uleb128 0x6
+ 440 00dc 87030000 		.4byte	.LASF20
+ 441 00e0 02       		.byte	0x2
+ 442 00e1 A1       		.byte	0xa1
+ 443 00e2 63000000 		.4byte	0x63
+ 444 00e6 06       		.byte	0x6
+ 445 00e7 00       		.byte	0
+ 446 00e8 07       		.uleb128 0x7
+ 447 00e9 E8010000 		.4byte	.LASF21
+ 448 00ed 02       		.byte	0x2
+ 449 00ee A2       		.byte	0xa2
+ 450 00ef 97000000 		.4byte	0x97
+ 451 00f3 05       		.uleb128 0x5
+ 452 00f4 08       		.byte	0x8
+ 453 00f5 02       		.byte	0x2
+ 454 00f6 B1       		.byte	0xb1
+ 455 00f7 12010000 		.4byte	0x112
+ 456 00fb 08       		.uleb128 0x8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 9
+
+
+ 457 00fc 6300     		.ascii	"c\000"
+ 458 00fe 02       		.byte	0x2
+ 459 00ff B3       		.byte	0xb3
+ 460 0100 63000000 		.4byte	0x63
+ 461 0104 00       		.byte	0
+ 462 0105 06       		.uleb128 0x6
+ 463 0106 E1010000 		.4byte	.LASF22
+ 464 010a 02       		.byte	0x2
+ 465 010b B4       		.byte	0xb4
+ 466 010c 12010000 		.4byte	0x112
+ 467 0110 04       		.byte	0x4
+ 468 0111 00       		.byte	0
+ 469 0112 09       		.uleb128 0x9
+ 470 0113 04       		.byte	0x4
+ 471 0114 18010000 		.4byte	0x118
+ 472 0118 0A       		.uleb128 0xa
+ 473 0119 07       		.uleb128 0x7
+ 474 011a BB020000 		.4byte	.LASF23
+ 475 011e 02       		.byte	0x2
+ 476 011f B5       		.byte	0xb5
+ 477 0120 F3000000 		.4byte	0xf3
+ 478 0124 0B       		.uleb128 0xb
+ 479 0125 63000000 		.4byte	0x63
+ 480 0129 34010000 		.4byte	0x134
+ 481 012d 0C       		.uleb128 0xc
+ 482 012e 90000000 		.4byte	0x90
+ 483 0132 11       		.byte	0x11
+ 484 0133 00       		.byte	0
+ 485 0134 0D       		.uleb128 0xd
+ 486 0135 02020000 		.4byte	.LASF24
+ 487 0139 03       		.byte	0x3
+ 488 013a 24       		.byte	0x24
+ 489 013b 45010000 		.4byte	0x145
+ 490 013f 05       		.uleb128 0x5
+ 491 0140 03       		.byte	0x3
+ 492 0141 00000000 		.4byte	USBFS_DEVICE0_DESCR
+ 493 0145 0E       		.uleb128 0xe
+ 494 0146 24010000 		.4byte	0x124
+ 495 014a 0B       		.uleb128 0xb
+ 496 014b 63000000 		.4byte	0x63
+ 497 014f 5A010000 		.4byte	0x15a
+ 498 0153 0C       		.uleb128 0xc
+ 499 0154 90000000 		.4byte	0x90
+ 500 0158 1F       		.byte	0x1f
+ 501 0159 00       		.byte	0
+ 502 015a 0D       		.uleb128 0xd
+ 503 015b 88010000 		.4byte	.LASF25
+ 504 015f 03       		.byte	0x3
+ 505 0160 37       		.byte	0x37
+ 506 0161 6B010000 		.4byte	0x16b
+ 507 0165 05       		.uleb128 0x5
+ 508 0166 03       		.byte	0x3
+ 509 0167 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_DESCR
+ 510 016b 0E       		.uleb128 0xe
+ 511 016c 4A010000 		.4byte	0x14a
+ 512 0170 0B       		.uleb128 0xb
+ 513 0171 E8000000 		.4byte	0xe8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 10
+
+
+ 514 0175 80010000 		.4byte	0x180
+ 515 0179 0C       		.uleb128 0xc
+ 516 017a 90000000 		.4byte	0x90
+ 517 017e 01       		.byte	0x1
+ 518 017f 00       		.byte	0
+ 519 0180 0D       		.uleb128 0xd
+ 520 0181 59010000 		.4byte	.LASF26
+ 521 0185 03       		.byte	0x3
+ 522 0186 95       		.byte	0x95
+ 523 0187 91010000 		.4byte	0x191
+ 524 018b 05       		.uleb128 0x5
+ 525 018c 03       		.byte	0x3
+ 526 018d 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+ 527 0191 0E       		.uleb128 0xe
+ 528 0192 70010000 		.4byte	0x170
+ 529 0196 0B       		.uleb128 0xb
+ 530 0197 63000000 		.4byte	0x63
+ 531 019b A6010000 		.4byte	0x1a6
+ 532 019f 0C       		.uleb128 0xc
+ 533 01a0 90000000 		.4byte	0x90
+ 534 01a4 00       		.byte	0
+ 535 01a5 00       		.byte	0
+ 536 01a6 0D       		.uleb128 0xd
+ 537 01a7 65000000 		.4byte	.LASF27
+ 538 01ab 03       		.byte	0x3
+ 539 01ac 9A       		.byte	0x9a
+ 540 01ad B7010000 		.4byte	0x1b7
+ 541 01b1 05       		.uleb128 0x5
+ 542 01b2 03       		.byte	0x3
+ 543 01b3 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+ 544 01b7 0E       		.uleb128 0xe
+ 545 01b8 96010000 		.4byte	0x196
+ 546 01bc 0B       		.uleb128 0xb
+ 547 01bd 19010000 		.4byte	0x119
+ 548 01c1 CC010000 		.4byte	0x1cc
+ 549 01c5 0C       		.uleb128 0xc
+ 550 01c6 90000000 		.4byte	0x90
+ 551 01ca 03       		.byte	0x3
+ 552 01cb 00       		.byte	0
+ 553 01cc 0D       		.uleb128 0xd
+ 554 01cd 01010000 		.4byte	.LASF28
+ 555 01d1 03       		.byte	0x3
+ 556 01d2 A2       		.byte	0xa2
+ 557 01d3 DD010000 		.4byte	0x1dd
+ 558 01d7 05       		.uleb128 0x5
+ 559 01d8 03       		.byte	0x3
+ 560 01d9 00000000 		.4byte	USBFS_DEVICE0_CONFIGURATION0_TABLE
+ 561 01dd 0E       		.uleb128 0xe
+ 562 01de BC010000 		.4byte	0x1bc
+ 563 01e2 0B       		.uleb128 0xb
+ 564 01e3 19010000 		.4byte	0x119
+ 565 01e7 F2010000 		.4byte	0x1f2
+ 566 01eb 0C       		.uleb128 0xc
+ 567 01ec 90000000 		.4byte	0x90
+ 568 01f0 02       		.byte	0x2
+ 569 01f1 00       		.byte	0
+ 570 01f2 0D       		.uleb128 0xd
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 11
+
+
+ 571 01f3 29010000 		.4byte	.LASF29
+ 572 01f7 03       		.byte	0x3
+ 573 01f8 AC       		.byte	0xac
+ 574 01f9 03020000 		.4byte	0x203
+ 575 01fd 05       		.uleb128 0x5
+ 576 01fe 03       		.byte	0x3
+ 577 01ff 00000000 		.4byte	USBFS_DEVICE0_TABLE
+ 578 0203 0E       		.uleb128 0xe
+ 579 0204 E2010000 		.4byte	0x1e2
+ 580 0208 0B       		.uleb128 0xb
+ 581 0209 19010000 		.4byte	0x119
+ 582 020d 18020000 		.4byte	0x218
+ 583 0211 0C       		.uleb128 0xc
+ 584 0212 90000000 		.4byte	0x90
+ 585 0216 00       		.byte	0
+ 586 0217 00       		.byte	0
+ 587 0218 0D       		.uleb128 0xd
+ 588 0219 92000000 		.4byte	.LASF30
+ 589 021d 03       		.byte	0x3
+ 590 021e B4       		.byte	0xb4
+ 591 021f 29020000 		.4byte	0x229
+ 592 0223 05       		.uleb128 0x5
+ 593 0224 03       		.byte	0x3
+ 594 0225 00000000 		.4byte	USBFS_TABLE
+ 595 0229 0E       		.uleb128 0xe
+ 596 022a 08020000 		.4byte	0x208
+ 597 022e 0B       		.uleb128 0xb
+ 598 022f 63000000 		.4byte	0x63
+ 599 0233 3E020000 		.4byte	0x23e
+ 600 0237 0C       		.uleb128 0xc
+ 601 0238 90000000 		.4byte	0x90
+ 602 023c 01       		.byte	0x1
+ 603 023d 00       		.byte	0
+ 604 023e 0D       		.uleb128 0xd
+ 605 023f B1000000 		.4byte	.LASF31
+ 606 0243 03       		.byte	0x3
+ 607 0244 86       		.byte	0x86
+ 608 0245 4F020000 		.4byte	0x24f
+ 609 0249 05       		.uleb128 0x5
+ 610 024a 03       		.byte	0x3
+ 611 024b 00000000 		.4byte	USBFS_SN_STRING_DESCRIPTOR
+ 612 024f 0E       		.uleb128 0xe
+ 613 0250 2E020000 		.4byte	0x22e
+ 614 0254 0B       		.uleb128 0xb
+ 615 0255 63000000 		.4byte	0x63
+ 616 0259 64020000 		.4byte	0x264
+ 617 025d 0C       		.uleb128 0xc
+ 618 025e 90000000 		.4byte	0x90
+ 619 0262 66       		.byte	0x66
+ 620 0263 00       		.byte	0
+ 621 0264 0D       		.uleb128 0xd
+ 622 0265 DD000000 		.4byte	.LASF32
+ 623 0269 03       		.byte	0x3
+ 624 026a 63       		.byte	0x63
+ 625 026b 75020000 		.4byte	0x275
+ 626 026f 05       		.uleb128 0x5
+ 627 0270 03       		.byte	0x3
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 12
+
+
+ 628 0271 00000000 		.4byte	USBFS_STRING_DESCRIPTORS
+ 629 0275 0E       		.uleb128 0xe
+ 630 0276 54020000 		.4byte	0x254
+ 631 027a 0D       		.uleb128 0xd
+ 632 027b F3020000 		.4byte	.LASF33
+ 633 027f 03       		.byte	0x3
+ 634 0280 C4       		.byte	0xc4
+ 635 0281 8B020000 		.4byte	0x28b
+ 636 0285 05       		.uleb128 0x5
+ 637 0286 03       		.byte	0x3
+ 638 0287 00000000 		.4byte	USBFS_MSOS_DESCRIPTOR
+ 639 028b 0E       		.uleb128 0xe
+ 640 028c 24010000 		.4byte	0x124
+ 641 0290 0B       		.uleb128 0xb
+ 642 0291 63000000 		.4byte	0x63
+ 643 0295 A0020000 		.4byte	0x2a0
+ 644 0299 0C       		.uleb128 0xc
+ 645 029a 90000000 		.4byte	0x90
+ 646 029e 27       		.byte	0x27
+ 647 029f 00       		.byte	0
+ 648 02a0 0D       		.uleb128 0xd
+ 649 02a1 1E030000 		.4byte	.LASF34
+ 650 02a5 03       		.byte	0x3
+ 651 02a6 CF       		.byte	0xcf
+ 652 02a7 B1020000 		.4byte	0x2b1
+ 653 02ab 05       		.uleb128 0x5
+ 654 02ac 03       		.byte	0x3
+ 655 02ad 00000000 		.4byte	USBFS_MSOS_CONFIGURATION_DESCR
+ 656 02b1 0E       		.uleb128 0xe
+ 657 02b2 90020000 		.4byte	0x290
+ 658 02b6 0B       		.uleb128 0xb
+ 659 02b7 63000000 		.4byte	0x63
+ 660 02bb C6020000 		.4byte	0x2c6
+ 661 02bf 0C       		.uleb128 0xc
+ 662 02c0 90000000 		.4byte	0x90
+ 663 02c4 21       		.byte	0x21
+ 664 02c5 00       		.byte	0
+ 665 02c6 0D       		.uleb128 0xd
+ 666 02c7 4D030000 		.4byte	.LASF35
+ 667 02cb 03       		.byte	0x3
+ 668 02cc E2       		.byte	0xe2
+ 669 02cd B6020000 		.4byte	0x2b6
+ 670 02d1 05       		.uleb128 0x5
+ 671 02d2 03       		.byte	0x3
+ 672 02d3 00000000 		.4byte	USBFS_idSerialNumberStringDescriptor
+ 673 02d7 00       		.byte	0
+ 674              		.section	.debug_abbrev,"",%progbits
+ 675              	.Ldebug_abbrev0:
+ 676 0000 01       		.uleb128 0x1
+ 677 0001 11       		.uleb128 0x11
+ 678 0002 01       		.byte	0x1
+ 679 0003 25       		.uleb128 0x25
+ 680 0004 0E       		.uleb128 0xe
+ 681 0005 13       		.uleb128 0x13
+ 682 0006 0B       		.uleb128 0xb
+ 683 0007 03       		.uleb128 0x3
+ 684 0008 0E       		.uleb128 0xe
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 13
+
+
+ 685 0009 1B       		.uleb128 0x1b
+ 686 000a 0E       		.uleb128 0xe
+ 687 000b 10       		.uleb128 0x10
+ 688 000c 17       		.uleb128 0x17
+ 689 000d 00       		.byte	0
+ 690 000e 00       		.byte	0
+ 691 000f 02       		.uleb128 0x2
+ 692 0010 24       		.uleb128 0x24
+ 693 0011 00       		.byte	0
+ 694 0012 0B       		.uleb128 0xb
+ 695 0013 0B       		.uleb128 0xb
+ 696 0014 3E       		.uleb128 0x3e
+ 697 0015 0B       		.uleb128 0xb
+ 698 0016 03       		.uleb128 0x3
+ 699 0017 0E       		.uleb128 0xe
+ 700 0018 00       		.byte	0
+ 701 0019 00       		.byte	0
+ 702 001a 03       		.uleb128 0x3
+ 703 001b 24       		.uleb128 0x24
+ 704 001c 00       		.byte	0
+ 705 001d 0B       		.uleb128 0xb
+ 706 001e 0B       		.uleb128 0xb
+ 707 001f 3E       		.uleb128 0x3e
+ 708 0020 0B       		.uleb128 0xb
+ 709 0021 03       		.uleb128 0x3
+ 710 0022 08       		.uleb128 0x8
+ 711 0023 00       		.byte	0
+ 712 0024 00       		.byte	0
+ 713 0025 04       		.uleb128 0x4
+ 714 0026 16       		.uleb128 0x16
+ 715 0027 00       		.byte	0
+ 716 0028 03       		.uleb128 0x3
+ 717 0029 0E       		.uleb128 0xe
+ 718 002a 3A       		.uleb128 0x3a
+ 719 002b 0B       		.uleb128 0xb
+ 720 002c 3B       		.uleb128 0x3b
+ 721 002d 05       		.uleb128 0x5
+ 722 002e 49       		.uleb128 0x49
+ 723 002f 13       		.uleb128 0x13
+ 724 0030 00       		.byte	0
+ 725 0031 00       		.byte	0
+ 726 0032 05       		.uleb128 0x5
+ 727 0033 13       		.uleb128 0x13
+ 728 0034 01       		.byte	0x1
+ 729 0035 0B       		.uleb128 0xb
+ 730 0036 0B       		.uleb128 0xb
+ 731 0037 3A       		.uleb128 0x3a
+ 732 0038 0B       		.uleb128 0xb
+ 733 0039 3B       		.uleb128 0x3b
+ 734 003a 0B       		.uleb128 0xb
+ 735 003b 01       		.uleb128 0x1
+ 736 003c 13       		.uleb128 0x13
+ 737 003d 00       		.byte	0
+ 738 003e 00       		.byte	0
+ 739 003f 06       		.uleb128 0x6
+ 740 0040 0D       		.uleb128 0xd
+ 741 0041 00       		.byte	0
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 14
+
+
+ 742 0042 03       		.uleb128 0x3
+ 743 0043 0E       		.uleb128 0xe
+ 744 0044 3A       		.uleb128 0x3a
+ 745 0045 0B       		.uleb128 0xb
+ 746 0046 3B       		.uleb128 0x3b
+ 747 0047 0B       		.uleb128 0xb
+ 748 0048 49       		.uleb128 0x49
+ 749 0049 13       		.uleb128 0x13
+ 750 004a 38       		.uleb128 0x38
+ 751 004b 0B       		.uleb128 0xb
+ 752 004c 00       		.byte	0
+ 753 004d 00       		.byte	0
+ 754 004e 07       		.uleb128 0x7
+ 755 004f 16       		.uleb128 0x16
+ 756 0050 00       		.byte	0
+ 757 0051 03       		.uleb128 0x3
+ 758 0052 0E       		.uleb128 0xe
+ 759 0053 3A       		.uleb128 0x3a
+ 760 0054 0B       		.uleb128 0xb
+ 761 0055 3B       		.uleb128 0x3b
+ 762 0056 0B       		.uleb128 0xb
+ 763 0057 49       		.uleb128 0x49
+ 764 0058 13       		.uleb128 0x13
+ 765 0059 00       		.byte	0
+ 766 005a 00       		.byte	0
+ 767 005b 08       		.uleb128 0x8
+ 768 005c 0D       		.uleb128 0xd
+ 769 005d 00       		.byte	0
+ 770 005e 03       		.uleb128 0x3
+ 771 005f 08       		.uleb128 0x8
+ 772 0060 3A       		.uleb128 0x3a
+ 773 0061 0B       		.uleb128 0xb
+ 774 0062 3B       		.uleb128 0x3b
+ 775 0063 0B       		.uleb128 0xb
+ 776 0064 49       		.uleb128 0x49
+ 777 0065 13       		.uleb128 0x13
+ 778 0066 38       		.uleb128 0x38
+ 779 0067 0B       		.uleb128 0xb
+ 780 0068 00       		.byte	0
+ 781 0069 00       		.byte	0
+ 782 006a 09       		.uleb128 0x9
+ 783 006b 0F       		.uleb128 0xf
+ 784 006c 00       		.byte	0
+ 785 006d 0B       		.uleb128 0xb
+ 786 006e 0B       		.uleb128 0xb
+ 787 006f 49       		.uleb128 0x49
+ 788 0070 13       		.uleb128 0x13
+ 789 0071 00       		.byte	0
+ 790 0072 00       		.byte	0
+ 791 0073 0A       		.uleb128 0xa
+ 792 0074 26       		.uleb128 0x26
+ 793 0075 00       		.byte	0
+ 794 0076 00       		.byte	0
+ 795 0077 00       		.byte	0
+ 796 0078 0B       		.uleb128 0xb
+ 797 0079 01       		.uleb128 0x1
+ 798 007a 01       		.byte	0x1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 15
+
+
+ 799 007b 49       		.uleb128 0x49
+ 800 007c 13       		.uleb128 0x13
+ 801 007d 01       		.uleb128 0x1
+ 802 007e 13       		.uleb128 0x13
+ 803 007f 00       		.byte	0
+ 804 0080 00       		.byte	0
+ 805 0081 0C       		.uleb128 0xc
+ 806 0082 21       		.uleb128 0x21
+ 807 0083 00       		.byte	0
+ 808 0084 49       		.uleb128 0x49
+ 809 0085 13       		.uleb128 0x13
+ 810 0086 2F       		.uleb128 0x2f
+ 811 0087 0B       		.uleb128 0xb
+ 812 0088 00       		.byte	0
+ 813 0089 00       		.byte	0
+ 814 008a 0D       		.uleb128 0xd
+ 815 008b 34       		.uleb128 0x34
+ 816 008c 00       		.byte	0
+ 817 008d 03       		.uleb128 0x3
+ 818 008e 0E       		.uleb128 0xe
+ 819 008f 3A       		.uleb128 0x3a
+ 820 0090 0B       		.uleb128 0xb
+ 821 0091 3B       		.uleb128 0x3b
+ 822 0092 0B       		.uleb128 0xb
+ 823 0093 49       		.uleb128 0x49
+ 824 0094 13       		.uleb128 0x13
+ 825 0095 3F       		.uleb128 0x3f
+ 826 0096 19       		.uleb128 0x19
+ 827 0097 02       		.uleb128 0x2
+ 828 0098 18       		.uleb128 0x18
+ 829 0099 00       		.byte	0
+ 830 009a 00       		.byte	0
+ 831 009b 0E       		.uleb128 0xe
+ 832 009c 26       		.uleb128 0x26
+ 833 009d 00       		.byte	0
+ 834 009e 49       		.uleb128 0x49
+ 835 009f 13       		.uleb128 0x13
+ 836 00a0 00       		.byte	0
+ 837 00a1 00       		.byte	0
+ 838 00a2 00       		.byte	0
+ 839              		.section	.debug_aranges,"",%progbits
+ 840 0000 14000000 		.4byte	0x14
+ 841 0004 0200     		.2byte	0x2
+ 842 0006 00000000 		.4byte	.Ldebug_info0
+ 843 000a 04       		.byte	0x4
+ 844 000b 00       		.byte	0
+ 845 000c 0000     		.2byte	0
+ 846 000e 0000     		.2byte	0
+ 847 0010 00000000 		.4byte	0
+ 848 0014 00000000 		.4byte	0
+ 849              		.section	.debug_line,"",%progbits
+ 850              	.Ldebug_line0:
+ 851 0000 5B000000 		.section	.debug_str,"MS",%progbits,1
+ 851      02005500 
+ 851      00000201 
+ 851      FB0E0D00 
+ 851      01010101 
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 16
+
+
+ 852              	.LASF38:
+ 853 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
+ 853      73657273 
+ 853      5C427279 
+ 853      616E204F 
+ 853      72616275 
+ 854 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
+ 854      534F435F 
+ 854      50524F47 
+ 854      52414D53 
+ 854      5C50536F 
+ 855 005e 2E637964 		.ascii	".cydsn\000"
+ 855      736E00
+ 856              	.LASF27:
+ 857 0065 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS\000"
+ 857      535F4445 
+ 857      56494345 
+ 857      305F434F 
+ 857      4E464947 
+ 858              	.LASF30:
+ 859 0092 55534246 		.ascii	"USBFS_TABLE\000"
+ 859      535F5441 
+ 859      424C4500 
+ 860              	.LASF3:
+ 861 009e 73686F72 		.ascii	"short unsigned int\000"
+ 861      7420756E 
+ 861      7369676E 
+ 861      65642069 
+ 861      6E7400
+ 862              	.LASF31:
+ 863 00b1 55534246 		.ascii	"USBFS_SN_STRING_DESCRIPTOR\000"
+ 863      535F534E 
+ 863      5F535452 
+ 863      494E475F 
+ 863      44455343 
+ 864              	.LASF11:
+ 865 00cc 666C6F61 		.ascii	"float\000"
+ 865      7400
+ 866              	.LASF16:
+ 867 00d2 616C7453 		.ascii	"altSetting\000"
+ 867      65747469 
+ 867      6E6700
+ 868              	.LASF32:
+ 869 00dd 55534246 		.ascii	"USBFS_STRING_DESCRIPTORS\000"
+ 869      535F5354 
+ 869      52494E47 
+ 869      5F444553 
+ 869      43524950 
+ 870              	.LASF18:
+ 871 00f6 61747472 		.ascii	"attributes\000"
+ 871      69627574 
+ 871      657300
+ 872              	.LASF28:
+ 873 0101 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_TABLE\000"
+ 873      535F4445 
+ 873      56494345 
+ 873      305F434F 
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 17
+
+
+ 873      4E464947 
+ 874              	.LASF17:
+ 875 0124 61646472 		.ascii	"addr\000"
+ 875      00
+ 876              	.LASF29:
+ 877 0129 55534246 		.ascii	"USBFS_DEVICE0_TABLE\000"
+ 877      535F4445 
+ 877      56494345 
+ 877      305F5441 
+ 877      424C4500 
+ 878              	.LASF1:
+ 879 013d 756E7369 		.ascii	"unsigned char\000"
+ 879      676E6564 
+ 879      20636861 
+ 879      7200
+ 880              	.LASF12:
+ 881 014b 646F7562 		.ascii	"double\000"
+ 881      6C6500
+ 882              	.LASF10:
+ 883 0152 75696E74 		.ascii	"uint16\000"
+ 883      313600
+ 884              	.LASF26:
+ 885 0159 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE\000"
+ 885      535F4445 
+ 885      56494345 
+ 885      305F434F 
+ 885      4E464947 
+ 886              	.LASF25:
+ 887 0188 55534246 		.ascii	"USBFS_DEVICE0_CONFIGURATION0_DESCR\000"
+ 887      535F4445 
+ 887      56494345 
+ 887      305F434F 
+ 887      4E464947 
+ 888              	.LASF5:
+ 889 01ab 6C6F6E67 		.ascii	"long unsigned int\000"
+ 889      20756E73 
+ 889      69676E65 
+ 889      6420696E 
+ 889      7400
+ 890              	.LASF8:
+ 891 01bd 756E7369 		.ascii	"unsigned int\000"
+ 891      676E6564 
+ 891      20696E74 
+ 891      00
+ 892              	.LASF7:
+ 893 01ca 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 893      206C6F6E 
+ 893      6720756E 
+ 893      7369676E 
+ 893      65642069 
+ 894              	.LASF22:
+ 895 01e1 705F6C69 		.ascii	"p_list\000"
+ 895      737400
+ 896              	.LASF21:
+ 897 01e8 545F5553 		.ascii	"T_USBFS_EP_SETTINGS_BLOCK\000"
+ 897      4246535F 
+ 897      45505F53 
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 18
+
+
+ 897      45545449 
+ 897      4E47535F 
+ 898              	.LASF24:
+ 899 0202 55534246 		.ascii	"USBFS_DEVICE0_DESCR\000"
+ 899      535F4445 
+ 899      56494345 
+ 899      305F4445 
+ 899      53435200 
+ 900              	.LASF14:
+ 901 0216 73697A65 		.ascii	"sizetype\000"
+ 901      74797065 
+ 901      00
+ 902              	.LASF36:
+ 903 021f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 903      4320342E 
+ 903      392E3320 
+ 903      32303135 
+ 903      30333033 
+ 904 0252 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 904      20726576 
+ 904      6973696F 
+ 904      6E203232 
+ 904      31323230 
+ 905 0285 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 905      66756E63 
+ 905      74696F6E 
+ 905      2D736563 
+ 905      74696F6E 
+ 906              	.LASF6:
+ 907 02ad 6C6F6E67 		.ascii	"long long int\000"
+ 907      206C6F6E 
+ 907      6720696E 
+ 907      7400
+ 908              	.LASF23:
+ 909 02bb 545F5553 		.ascii	"T_USBFS_LUT\000"
+ 909      4246535F 
+ 909      4C555400 
+ 910              	.LASF13:
+ 911 02c7 63686172 		.ascii	"char\000"
+ 911      00
+ 912              	.LASF37:
+ 913 02cc 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_descr.c\000"
+ 913      6E657261 
+ 913      7465645F 
+ 913      536F7572 
+ 913      63655C50 
+ 914              	.LASF33:
+ 915 02f3 55534246 		.ascii	"USBFS_MSOS_DESCRIPTOR\000"
+ 915      535F4D53 
+ 915      4F535F44 
+ 915      45534352 
+ 915      4950544F 
+ 916              	.LASF19:
+ 917 0309 62756666 		.ascii	"bufferSize\000"
+ 917      65725369 
+ 917      7A6500
+ 918              	.LASF2:
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdB1djQ.s 			page 19
+
+
+ 919 0314 73686F72 		.ascii	"short int\000"
+ 919      7420696E 
+ 919      7400
+ 920              	.LASF34:
+ 921 031e 55534246 		.ascii	"USBFS_MSOS_CONFIGURATION_DESCR\000"
+ 921      535F4D53 
+ 921      4F535F43 
+ 921      4F4E4649 
+ 921      47555241 
+ 922              	.LASF9:
+ 923 033d 75696E74 		.ascii	"uint8\000"
+ 923      3800
+ 924              	.LASF15:
+ 925 0343 696E7465 		.ascii	"interface\000"
+ 925      72666163 
+ 925      6500
+ 926              	.LASF35:
+ 927 034d 55534246 		.ascii	"USBFS_idSerialNumberStringDescriptor\000"
+ 927      535F6964 
+ 927      53657269 
+ 927      616C4E75 
+ 927      6D626572 
+ 928              	.LASF4:
+ 929 0372 6C6F6E67 		.ascii	"long int\000"
+ 929      20696E74 
+ 929      00
+ 930              	.LASF0:
+ 931 037b 7369676E 		.ascii	"signed char\000"
+ 931      65642063 
+ 931      68617200 
+ 932              	.LASF20:
+ 933 0387 624D6973 		.ascii	"bMisc\000"
+ 933      6300
+ 934              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
