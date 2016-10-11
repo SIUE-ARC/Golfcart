@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
   29:.\Generated_Source\PSoC5/STEERPOT.c **** * \brief Writes the value to the physical port (data output register), masking
   30:.\Generated_Source\PSoC5/STEERPOT.c **** *  and shifting the bits appropriately. 
   31:.\Generated_Source\PSoC5/STEERPOT.c **** *
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/STEERPOT.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
   52              		.align	2
   53              		.global	STEERPOT_SetDriveMode
   54              		.thumb
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 3
 
 
   55              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
   77 0014 00500040 		.word	1073762304
   78              		.cfi_endproc
   79              	.LFE1:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 4
 
 
   80              		.size	STEERPOT_SetDriveMode, .-STEERPOT_SetDriveMode
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  110              		.thumb
  111              		.thumb_func
  112              		.type	STEERPOT_ReadDataReg, %function
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 5
 
 
  113              	STEERPOT_ReadDataReg:
@@ -298,49 +298,49 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  139 0004 0400     		.2byte	0x4
  140 0006 00000000 		.4byte	.Ldebug_abbrev0
  141 000a 04       		.byte	0x4
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 6
 
 
  142 000b 01       		.uleb128 0x1
- 143 000c DF000000 		.4byte	.LASF20
+ 143 000c D6000000 		.4byte	.LASF20
  144 0010 01       		.byte	0x1
- 145 0011 76000000 		.4byte	.LASF21
- 146 0015 00000000 		.4byte	.LASF22
+ 145 0011 6D000000 		.4byte	.LASF21
+ 146 0015 06000000 		.4byte	.LASF22
  147 0019 00000000 		.4byte	.Ldebug_ranges0+0
  148 001d 00000000 		.4byte	0
  149 0021 00000000 		.4byte	.Ldebug_line0
  150 0025 02       		.uleb128 0x2
  151 0026 01       		.byte	0x1
  152 0027 06       		.byte	0x6
- 153 0028 F4010000 		.4byte	.LASF0
+ 153 0028 EB010000 		.4byte	.LASF0
  154 002c 02       		.uleb128 0x2
  155 002d 01       		.byte	0x1
  156 002e 08       		.byte	0x8
- 157 002f A0000000 		.4byte	.LASF1
+ 157 002f 97000000 		.4byte	.LASF1
  158 0033 02       		.uleb128 0x2
  159 0034 02       		.byte	0x2
  160 0035 05       		.byte	0x5
- 161 0036 B8010000 		.4byte	.LASF2
+ 161 0036 AF010000 		.4byte	.LASF2
  162 003a 02       		.uleb128 0x2
  163 003b 02       		.byte	0x2
  164 003c 07       		.byte	0x7
- 165 003d C5000000 		.4byte	.LASF3
+ 165 003d BC000000 		.4byte	.LASF3
  166 0041 02       		.uleb128 0x2
  167 0042 04       		.byte	0x4
  168 0043 05       		.byte	0x5
- 169 0044 C8010000 		.4byte	.LASF4
+ 169 0044 BF010000 		.4byte	.LASF4
  170 0048 02       		.uleb128 0x2
  171 0049 04       		.byte	0x4
  172 004a 07       		.byte	0x7
- 173 004b B3000000 		.4byte	.LASF5
+ 173 004b AA000000 		.4byte	.LASF5
  174 004f 02       		.uleb128 0x2
  175 0050 08       		.byte	0x8
  176 0051 05       		.byte	0x5
- 177 0052 A5010000 		.4byte	.LASF6
+ 177 0052 9C010000 		.4byte	.LASF6
  178 0056 02       		.uleb128 0x2
  179 0057 08       		.byte	0x8
  180 0058 07       		.byte	0x7
- 181 0059 89010000 		.4byte	.LASF7
+ 181 0059 80010000 		.4byte	.LASF7
  182 005d 03       		.uleb128 0x3
  183 005e 04       		.byte	0x4
  184 005f 05       		.byte	0x5
@@ -348,36 +348,36 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  186 0064 02       		.uleb128 0x2
  187 0065 04       		.byte	0x4
  188 0066 07       		.byte	0x7
- 189 0067 6D010000 		.4byte	.LASF8
+ 189 0067 64010000 		.4byte	.LASF8
  190 006b 04       		.uleb128 0x4
- 191 006c C2010000 		.4byte	.LASF12
+ 191 006c B9010000 		.4byte	.LASF12
  192 0070 02       		.byte	0x2
  193 0071 9201     		.2byte	0x192
  194 0073 2C000000 		.4byte	0x2c
  195 0077 02       		.uleb128 0x2
  196 0078 04       		.byte	0x4
  197 0079 04       		.byte	0x4
- 198 007a 9A000000 		.4byte	.LASF9
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 7
+ 198 007a 91000000 		.4byte	.LASF9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 7
 
 
  199 007e 02       		.uleb128 0x2
  200 007f 08       		.byte	0x8
  201 0080 04       		.byte	0x4
- 202 0081 D8000000 		.4byte	.LASF10
+ 202 0081 CF000000 		.4byte	.LASF10
  203 0085 02       		.uleb128 0x2
  204 0086 01       		.byte	0x1
  205 0087 08       		.byte	0x8
- 206 0088 B3010000 		.4byte	.LASF11
+ 206 0088 AA010000 		.4byte	.LASF11
  207 008c 04       		.uleb128 0x4
- 208 008d AE000000 		.4byte	.LASF13
+ 208 008d A5000000 		.4byte	.LASF13
  209 0091 02       		.byte	0x2
  210 0092 3C02     		.2byte	0x23c
  211 0094 98000000 		.4byte	0x98
  212 0098 05       		.uleb128 0x5
  213 0099 6B000000 		.4byte	0x6b
  214 009d 06       		.uleb128 0x6
- 215 009e 7A010000 		.4byte	.LASF14
+ 215 009e 71010000 		.4byte	.LASF14
  216 00a2 01       		.byte	0x1
  217 00a3 39       		.byte	0x39
  218 00a4 00000000 		.4byte	.LFB0
@@ -386,13 +386,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  221 00ad 9C       		.byte	0x9c
  222 00ae CF000000 		.4byte	0xcf
  223 00b2 07       		.uleb128 0x7
- 224 00b3 65000000 		.4byte	.LASF16
+ 224 00b3 00000000 		.4byte	.LASF16
  225 00b7 01       		.byte	0x1
  226 00b8 39       		.byte	0x39
  227 00b9 6B000000 		.4byte	0x6b
  228 00bd 00000000 		.4byte	.LLST0
  229 00c1 08       		.uleb128 0x8
- 230 00c2 6B000000 		.4byte	.LASF23
+ 230 00c2 62000000 		.4byte	.LASF23
  231 00c6 01       		.byte	0x1
  232 00c7 3B       		.byte	0x3b
  233 00c8 6B000000 		.4byte	0x6b
@@ -400,7 +400,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  235 00cd 53       		.byte	0x53
  236 00ce 00       		.byte	0
  237 00cf 06       		.uleb128 0x6
- 238 00d0 00020000 		.4byte	.LASF15
+ 238 00d0 F7010000 		.4byte	.LASF15
  239 00d4 01       		.byte	0x1
  240 00d5 5A       		.byte	0x5a
  241 00d6 00000000 		.4byte	.LFB1
@@ -409,16 +409,16 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  244 00df 9C       		.byte	0x9c
  245 00e0 F4000000 		.4byte	0xf4
  246 00e4 07       		.uleb128 0x7
- 247 00e5 A0010000 		.4byte	.LASF17
+ 247 00e5 97010000 		.4byte	.LASF17
  248 00e9 01       		.byte	0x1
  249 00ea 5A       		.byte	0x5a
  250 00eb 6B000000 		.4byte	0x6b
  251 00ef 21000000 		.4byte	.LLST1
  252 00f3 00       		.byte	0
  253 00f4 09       		.uleb128 0x9
- 254 00f5 D1010000 		.4byte	.LASF18
+ 254 00f5 C8010000 		.4byte	.LASF18
  255 00f9 01       		.byte	0x1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 8
 
 
  256 00fa 71       		.byte	0x71
@@ -428,7 +428,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  260 0107 01       		.uleb128 0x1
  261 0108 9C       		.byte	0x9c
  262 0109 09       		.uleb128 0x9
- 263 010a DF010000 		.4byte	.LASF19
+ 263 010a D6010000 		.4byte	.LASF19
  264 010e 01       		.byte	0x1
  265 010f 8D       		.byte	0x8d
  266 0110 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  310 0024 0B       		.uleb128 0xb
  311 0025 03       		.uleb128 0x3
  312 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 9
 
 
  313 0027 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  367 005e 3B       		.uleb128 0x3b
  368 005f 0B       		.uleb128 0xb
  369 0060 49       		.uleb128 0x49
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 10
 
 
  370 0061 13       		.uleb128 0x13
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  424 000f 18000000 		.4byte	.LFE0
  425 0013 0400     		.2byte	0x4
  426 0015 F3       		.byte	0xf3
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 11
 
 
  427 0016 01       		.uleb128 0x1
@@ -657,140 +657,138 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 1
  478      00000201 
  478      FB0E0D00 
  478      01010101 
- 479              	.LASF22:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 12
+ 479              	.LASF16:
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 12
 
 
- 480 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 480      73657273 
- 480      5C427279 
- 480      616E204F 
- 480      72616275 
- 481 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 481      534F435F 
- 481      50524F47 
- 481      52414D53 
- 481      5C50536F 
- 482 005e 2E637964 		.ascii	".cydsn\000"
- 482      736E00
- 483              	.LASF16:
- 484 0065 76616C75 		.ascii	"value\000"
- 484      6500
- 485              	.LASF23:
- 486 006b 73746174 		.ascii	"staticBits\000"
- 486      69634269 
- 486      747300
- 487              	.LASF21:
- 488 0076 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\STEERPOT.c\000"
- 488      6E657261 
- 488      7465645F 
- 488      536F7572 
- 488      63655C50 
- 489              	.LASF9:
- 490 009a 666C6F61 		.ascii	"float\000"
- 490      7400
- 491              	.LASF1:
- 492 00a0 756E7369 		.ascii	"unsigned char\000"
- 492      676E6564 
- 492      20636861 
- 492      7200
- 493              	.LASF13:
- 494 00ae 72656738 		.ascii	"reg8\000"
- 494      00
- 495              	.LASF5:
- 496 00b3 6C6F6E67 		.ascii	"long unsigned int\000"
- 496      20756E73 
- 496      69676E65 
- 496      6420696E 
- 496      7400
- 497              	.LASF3:
- 498 00c5 73686F72 		.ascii	"short unsigned int\000"
- 498      7420756E 
- 498      7369676E 
- 498      65642069 
- 498      6E7400
- 499              	.LASF10:
- 500 00d8 646F7562 		.ascii	"double\000"
- 500      6C6500
- 501              	.LASF20:
- 502 00df 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 502      4320342E 
- 502      392E3320 
- 502      32303135 
- 502      30333033 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 13
+ 480 0000 76616C75 		.ascii	"value\000"
+ 480      6500
+ 481              	.LASF22:
+ 482 0006 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 482      73657273 
+ 482      5C4C4149 
+ 482      525C446F 
+ 482      63756D65 
+ 483 0033 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 483      52414D53 
+ 483      5C50536F 
+ 483      43355C52 
+ 483      6F616472 
+ 484              	.LASF23:
+ 485 0062 73746174 		.ascii	"staticBits\000"
+ 485      69634269 
+ 485      747300
+ 486              	.LASF21:
+ 487 006d 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\STEERPOT.c\000"
+ 487      6E657261 
+ 487      7465645F 
+ 487      536F7572 
+ 487      63655C50 
+ 488              	.LASF9:
+ 489 0091 666C6F61 		.ascii	"float\000"
+ 489      7400
+ 490              	.LASF1:
+ 491 0097 756E7369 		.ascii	"unsigned char\000"
+ 491      676E6564 
+ 491      20636861 
+ 491      7200
+ 492              	.LASF13:
+ 493 00a5 72656738 		.ascii	"reg8\000"
+ 493      00
+ 494              	.LASF5:
+ 495 00aa 6C6F6E67 		.ascii	"long unsigned int\000"
+ 495      20756E73 
+ 495      69676E65 
+ 495      6420696E 
+ 495      7400
+ 496              	.LASF3:
+ 497 00bc 73686F72 		.ascii	"short unsigned int\000"
+ 497      7420756E 
+ 497      7369676E 
+ 497      65642069 
+ 497      6E7400
+ 498              	.LASF10:
+ 499 00cf 646F7562 		.ascii	"double\000"
+ 499      6C6500
+ 500              	.LASF20:
+ 501 00d6 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 501      4320342E 
+ 501      392E3320 
+ 501      32303135 
+ 501      30333033 
+ 502 0109 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 502      20726576 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 13
 
 
- 503 0112 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 503      20726576 
- 503      6973696F 
- 503      6E203232 
- 503      31323230 
- 504 0145 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 504      66756E63 
- 504      74696F6E 
- 504      2D736563 
- 504      74696F6E 
- 505              	.LASF8:
- 506 016d 756E7369 		.ascii	"unsigned int\000"
- 506      676E6564 
- 506      20696E74 
- 506      00
- 507              	.LASF14:
- 508 017a 53544545 		.ascii	"STEERPOT_Write\000"
- 508      52504F54 
- 508      5F577269 
- 508      746500
- 509              	.LASF7:
- 510 0189 6C6F6E67 		.ascii	"long long unsigned int\000"
- 510      206C6F6E 
- 510      6720756E 
- 510      7369676E 
- 510      65642069 
- 511              	.LASF17:
- 512 01a0 6D6F6465 		.ascii	"mode\000"
- 512      00
- 513              	.LASF6:
- 514 01a5 6C6F6E67 		.ascii	"long long int\000"
- 514      206C6F6E 
- 514      6720696E 
- 514      7400
- 515              	.LASF11:
- 516 01b3 63686172 		.ascii	"char\000"
- 516      00
- 517              	.LASF2:
- 518 01b8 73686F72 		.ascii	"short int\000"
- 518      7420696E 
- 518      7400
- 519              	.LASF12:
- 520 01c2 75696E74 		.ascii	"uint8\000"
- 520      3800
- 521              	.LASF4:
- 522 01c8 6C6F6E67 		.ascii	"long int\000"
- 522      20696E74 
- 522      00
- 523              	.LASF18:
- 524 01d1 53544545 		.ascii	"STEERPOT_Read\000"
- 524      52504F54 
- 524      5F526561 
- 524      6400
- 525              	.LASF19:
- 526 01df 53544545 		.ascii	"STEERPOT_ReadDataReg\000"
- 526      52504F54 
- 526      5F526561 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccpRA0Wj.s 			page 14
+ 502      6973696F 
+ 502      6E203232 
+ 502      31323230 
+ 503 013c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 503      66756E63 
+ 503      74696F6E 
+ 503      2D736563 
+ 503      74696F6E 
+ 504              	.LASF8:
+ 505 0164 756E7369 		.ascii	"unsigned int\000"
+ 505      676E6564 
+ 505      20696E74 
+ 505      00
+ 506              	.LASF14:
+ 507 0171 53544545 		.ascii	"STEERPOT_Write\000"
+ 507      52504F54 
+ 507      5F577269 
+ 507      746500
+ 508              	.LASF7:
+ 509 0180 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 509      206C6F6E 
+ 509      6720756E 
+ 509      7369676E 
+ 509      65642069 
+ 510              	.LASF17:
+ 511 0197 6D6F6465 		.ascii	"mode\000"
+ 511      00
+ 512              	.LASF6:
+ 513 019c 6C6F6E67 		.ascii	"long long int\000"
+ 513      206C6F6E 
+ 513      6720696E 
+ 513      7400
+ 514              	.LASF11:
+ 515 01aa 63686172 		.ascii	"char\000"
+ 515      00
+ 516              	.LASF2:
+ 517 01af 73686F72 		.ascii	"short int\000"
+ 517      7420696E 
+ 517      7400
+ 518              	.LASF12:
+ 519 01b9 75696E74 		.ascii	"uint8\000"
+ 519      3800
+ 520              	.LASF4:
+ 521 01bf 6C6F6E67 		.ascii	"long int\000"
+ 521      20696E74 
+ 521      00
+ 522              	.LASF18:
+ 523 01c8 53544545 		.ascii	"STEERPOT_Read\000"
+ 523      52504F54 
+ 523      5F526561 
+ 523      6400
+ 524              	.LASF19:
+ 525 01d6 53544545 		.ascii	"STEERPOT_ReadDataReg\000"
+ 525      52504F54 
+ 525      5F526561 
+ 525      64446174 
+ 525      61526567 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccekQkv4.s 			page 14
 
 
- 526      64446174 
- 526      61526567 
- 527              	.LASF0:
- 528 01f4 7369676E 		.ascii	"signed char\000"
- 528      65642063 
- 528      68617200 
- 529              	.LASF15:
- 530 0200 53544545 		.ascii	"STEERPOT_SetDriveMode\000"
- 530      52504F54 
- 530      5F536574 
- 530      44726976 
- 530      654D6F64 
- 531              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 526              	.LASF0:
+ 527 01eb 7369676E 		.ascii	"signed char\000"
+ 527      65642063 
+ 527      68617200 
+ 528              	.LASF15:
+ 529 01f7 53544545 		.ascii	"STEERPOT_SetDriveMode\000"
+ 529      52504F54 
+ 529      5F536574 
+ 529      44726976 
+ 529      654D6F64 
+ 530              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

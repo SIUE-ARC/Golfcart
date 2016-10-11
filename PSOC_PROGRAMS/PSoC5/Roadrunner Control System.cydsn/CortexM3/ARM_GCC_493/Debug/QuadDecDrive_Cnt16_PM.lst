@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
   29:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *
   30:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** * Parameters:  
   31:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *  void
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
   53:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** }
   54:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** 
   55:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 3
 
 
   56:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** /*******************************************************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
   88              		.thumb
   89              		.thumb_func
   90              		.type	QuadDecDrive_Cnt16_Sleep, %function
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 4
 
 
   91              	QuadDecDrive_Cnt16_Sleep:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  115:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c ****         {
  116:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c ****             /* Counter is disabled */
  117:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c ****             QuadDecDrive_Cnt16_backup.CounterEnableState = 0u;
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 5
 
 
  112              		.loc 1 117 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  144:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *
  145:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** * Global variables:
  146:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *  QuadDecDrive_Cnt16_backup.enableState:  Is used to restore the enable state of 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 6
 
 
  147:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *  block on wakeup from sleep mode.
@@ -358,49 +358,49 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  182 0004 0400     		.2byte	0x4
  183 0006 00000000 		.4byte	.Ldebug_abbrev0
  184 000a 04       		.byte	0x4
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 7
 
 
  185 000b 01       		.uleb128 0x1
- 186 000c 55010000 		.4byte	.LASF30
+ 186 000c 4C010000 		.4byte	.LASF30
  187 0010 01       		.byte	0x1
- 188 0011 CD000000 		.4byte	.LASF31
- 189 0015 00000000 		.4byte	.LASF32
+ 188 0011 C4000000 		.4byte	.LASF31
+ 189 0015 1A000000 		.4byte	.LASF32
  190 0019 00000000 		.4byte	.Ldebug_ranges0+0
  191 001d 00000000 		.4byte	0
  192 0021 00000000 		.4byte	.Ldebug_line0
  193 0025 02       		.uleb128 0x2
  194 0026 01       		.byte	0x1
  195 0027 06       		.byte	0x6
- 196 0028 23030000 		.4byte	.LASF0
+ 196 0028 1A030000 		.4byte	.LASF0
  197 002c 02       		.uleb128 0x2
  198 002d 01       		.byte	0x1
  199 002e 08       		.byte	0x8
- 200 002f 04010000 		.4byte	.LASF1
+ 200 002f FB000000 		.4byte	.LASF1
  201 0033 02       		.uleb128 0x2
  202 0034 02       		.byte	0x2
  203 0035 05       		.byte	0x5
- 204 0036 B0020000 		.4byte	.LASF2
+ 204 0036 A7020000 		.4byte	.LASF2
  205 003a 02       		.uleb128 0x2
  206 003b 02       		.byte	0x2
  207 003c 07       		.byte	0x7
- 208 003d 7F000000 		.4byte	.LASF3
+ 208 003d 76000000 		.4byte	.LASF3
  209 0041 02       		.uleb128 0x2
  210 0042 04       		.byte	0x4
  211 0043 05       		.byte	0x5
- 212 0044 1A030000 		.4byte	.LASF4
+ 212 0044 11030000 		.4byte	.LASF4
  213 0048 02       		.uleb128 0x2
  214 0049 04       		.byte	0x4
  215 004a 07       		.byte	0x7
- 216 004b 17010000 		.4byte	.LASF5
+ 216 004b 0E010000 		.4byte	.LASF5
  217 004f 02       		.uleb128 0x2
  218 0050 08       		.byte	0x8
  219 0051 05       		.byte	0x5
- 220 0052 7E020000 		.4byte	.LASF6
+ 220 0052 75020000 		.4byte	.LASF6
  221 0056 02       		.uleb128 0x2
  222 0057 08       		.byte	0x8
  223 0058 07       		.byte	0x7
- 224 0059 10020000 		.4byte	.LASF7
+ 224 0059 07020000 		.4byte	.LASF7
  225 005d 03       		.uleb128 0x3
  226 005e 04       		.byte	0x4
  227 005f 05       		.byte	0x5
@@ -408,34 +408,34 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  229 0064 02       		.uleb128 0x2
  230 0065 04       		.byte	0x4
  231 0066 07       		.byte	0x7
- 232 0067 E3010000 		.4byte	.LASF8
+ 232 0067 DA010000 		.4byte	.LASF8
  233 006b 04       		.uleb128 0x4
- 234 006c 29010000 		.4byte	.LASF9
+ 234 006c 20010000 		.4byte	.LASF9
  235 0070 02       		.byte	0x2
  236 0071 9201     		.2byte	0x192
  237 0073 2C000000 		.4byte	0x2c
  238 0077 04       		.uleb128 0x4
- 239 0078 4E010000 		.4byte	.LASF10
+ 239 0078 45010000 		.4byte	.LASF10
  240 007c 02       		.byte	0x2
  241 007d 9301     		.2byte	0x193
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 8
 
 
  242 007f 3A000000 		.4byte	0x3a
  243 0083 02       		.uleb128 0x2
  244 0084 04       		.byte	0x4
  245 0085 04       		.byte	0x4
- 246 0086 FE000000 		.4byte	.LASF11
+ 246 0086 F5000000 		.4byte	.LASF11
  247 008a 02       		.uleb128 0x2
  248 008b 08       		.byte	0x8
  249 008c 04       		.byte	0x4
- 250 008d 47010000 		.4byte	.LASF12
+ 250 008d 3E010000 		.4byte	.LASF12
  251 0091 02       		.uleb128 0x2
  252 0092 01       		.byte	0x1
  253 0093 08       		.byte	0x8
- 254 0094 8C020000 		.4byte	.LASF13
+ 254 0094 83020000 		.4byte	.LASF13
  255 0098 04       		.uleb128 0x4
- 256 0099 12010000 		.4byte	.LASF14
+ 256 0099 09010000 		.4byte	.LASF14
  257 009d 02       		.byte	0x2
  258 009e 3C02     		.2byte	0x23c
  259 00a0 A4000000 		.4byte	0xa4
@@ -444,41 +444,41 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  262 00a9 02       		.uleb128 0x2
  263 00aa 04       		.byte	0x4
  264 00ab 07       		.byte	0x7
- 265 00ac 48020000 		.4byte	.LASF15
+ 265 00ac 3F020000 		.4byte	.LASF15
  266 00b0 06       		.uleb128 0x6
  267 00b1 06       		.byte	0x6
  268 00b2 03       		.byte	0x3
  269 00b3 40       		.byte	0x40
  270 00b4 DD000000 		.4byte	0xdd
  271 00b8 07       		.uleb128 0x7
- 272 00b9 6B020000 		.4byte	.LASF16
+ 272 00b9 62020000 		.4byte	.LASF16
  273 00bd 03       		.byte	0x3
  274 00be 42       		.byte	0x42
  275 00bf 6B000000 		.4byte	0x6b
  276 00c3 00       		.byte	0
  277 00c4 07       		.uleb128 0x7
- 278 00c5 92000000 		.4byte	.LASF17
+ 278 00c5 89000000 		.4byte	.LASF17
  279 00c9 03       		.byte	0x3
  280 00ca 43       		.byte	0x43
  281 00cb 77000000 		.4byte	0x77
  282 00cf 02       		.byte	0x2
  283 00d0 07       		.uleb128 0x7
- 284 00d1 9D000000 		.4byte	.LASF18
+ 284 00d1 94000000 		.4byte	.LASF18
  285 00d5 03       		.byte	0x3
  286 00d6 46       		.byte	0x46
  287 00d7 6B000000 		.4byte	0x6b
  288 00db 04       		.byte	0x4
  289 00dc 00       		.byte	0
  290 00dd 08       		.uleb128 0x8
- 291 00de 56030000 		.4byte	.LASF19
+ 291 00de 4D030000 		.4byte	.LASF19
  292 00e2 03       		.byte	0x3
  293 00e3 49       		.byte	0x49
  294 00e4 B0000000 		.4byte	0xb0
  295 00e8 09       		.uleb128 0x9
- 296 00e9 BA020000 		.4byte	.LASF20
+ 296 00e9 B1020000 		.4byte	.LASF20
  297 00ed 01       		.byte	0x1
  298 00ee 2A       		.byte	0x2a
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 9
 
 
  299 00ef 00000000 		.4byte	.LFB0
@@ -494,7 +494,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  309 010b A4010000 		.4byte	0x1a4
  310 010f 00       		.byte	0
  311 0110 09       		.uleb128 0x9
- 312 0111 27020000 		.4byte	.LASF21
+ 312 0111 1E020000 		.4byte	.LASF21
  313 0115 01       		.byte	0x1
  314 0116 4A       		.byte	0x4a
  315 0117 00000000 		.4byte	.LFB1
@@ -510,7 +510,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  325 0133 C0010000 		.4byte	0x1c0
  326 0137 00       		.byte	0
  327 0138 09       		.uleb128 0x9
- 328 0139 B4000000 		.4byte	.LASF22
+ 328 0139 AB000000 		.4byte	.LASF22
  329 013d 01       		.byte	0x1
  330 013e 69       		.byte	0x69
  331 013f 00000000 		.4byte	.LFB2
@@ -526,7 +526,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  341 015b E8000000 		.4byte	0xe8
  342 015f 00       		.byte	0
  343 0160 09       		.uleb128 0x9
- 344 0161 65000000 		.4byte	.LASF23
+ 344 0161 00000000 		.4byte	.LASF23
  345 0165 01       		.byte	0x1
  346 0166 96       		.byte	0x96
  347 0167 00000000 		.4byte	.LFB3
@@ -538,14 +538,14 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  353 0176 06000000 		.4byte	.LVL6
  354 017a 10010000 		.4byte	0x110
  355 017e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 10
 
 
  356 017f 12000000 		.4byte	.LVL7
  357 0183 D8010000 		.4byte	0x1d8
  358 0187 00       		.byte	0
  359 0188 0B       		.uleb128 0xb
- 360 0189 00030000 		.4byte	.LASF33
+ 360 0189 F7020000 		.4byte	.LASF33
  361 018d 01       		.byte	0x1
  362 018e 15       		.byte	0x15
  363 018f DD000000 		.4byte	0xdd
@@ -553,17 +553,17 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  365 0194 03       		.byte	0x3
  366 0195 00000000 		.4byte	QuadDecDrive_Cnt16_backup
  367 0199 0C       		.uleb128 0xc
- 368 019a 91020000 		.4byte	.LASF24
+ 368 019a 88020000 		.4byte	.LASF24
  369 019e 03       		.byte	0x3
  370 019f 5D       		.byte	0x5d
  371 01a0 77000000 		.4byte	0x77
  372 01a4 0C       		.uleb128 0xc
- 373 01a5 2F030000 		.4byte	.LASF25
+ 373 01a5 26030000 		.4byte	.LASF25
  374 01a9 03       		.byte	0x3
  375 01aa 55       		.byte	0x55
  376 01ab 6B000000 		.4byte	0x6b
  377 01af 0D       		.uleb128 0xd
- 378 01b0 F0010000 		.4byte	.LASF26
+ 378 01b0 E7010000 		.4byte	.LASF26
  379 01b4 03       		.byte	0x3
  380 01b5 5A       		.byte	0x5a
  381 01b6 C0010000 		.4byte	0x1c0
@@ -571,7 +571,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  383 01bb 77000000 		.4byte	0x77
  384 01bf 00       		.byte	0
  385 01c0 0D       		.uleb128 0xd
- 386 01c1 D8020000 		.4byte	.LASF27
+ 386 01c1 CF020000 		.4byte	.LASF27
  387 01c5 03       		.byte	0x3
  388 01c6 56       		.byte	0x56
  389 01c7 D1010000 		.4byte	0x1d1
@@ -579,11 +579,11 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  391 01cc 6B000000 		.4byte	0x6b
  392 01d0 00       		.byte	0
  393 01d1 0F       		.uleb128 0xf
- 394 01d2 2F010000 		.4byte	.LASF28
+ 394 01d2 26010000 		.4byte	.LASF28
  395 01d6 03       		.byte	0x3
  396 01d7 50       		.byte	0x50
  397 01d8 0F       		.uleb128 0xf
- 398 01d9 51020000 		.4byte	.LASF29
+ 398 01d9 48020000 		.4byte	.LASF29
  399 01dd 03       		.byte	0x3
  400 01de 71       		.byte	0x71
  401 01df 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  410 0006 0B       		.uleb128 0xb
  411 0007 03       		.uleb128 0x3
  412 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 11
 
 
  413 0009 1B       		.uleb128 0x1b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  467 003f 01       		.byte	0x1
  468 0040 0B       		.uleb128 0xb
  469 0041 0B       		.uleb128 0xb
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 12
 
 
  470 0042 3A       		.uleb128 0x3a
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  524 0078 18       		.uleb128 0x18
  525 0079 9742     		.uleb128 0x2117
  526 007b 19       		.uleb128 0x19
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 13
 
 
  527 007c 01       		.uleb128 0x1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  581 00b4 3A       		.uleb128 0x3a
  582 00b5 0B       		.uleb128 0xb
  583 00b6 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 14
 
 
  584 00b7 0B       		.uleb128 0xb
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  638 0000 00000000 		.4byte	.LFB0
  639 0004 18000000 		.4byte	.LFE0
  640 0008 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 15
 
 
  641 000c 18000000 		.4byte	.LFE1
@@ -855,204 +855,202 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 1
  650      00000201 
  650      FB0E0D00 
  650      01010101 
- 651              	.LASF32:
- 652 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 652      73657273 
- 652      5C427279 
- 652      616E204F 
- 652      72616275 
- 653 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 653      534F435F 
- 653      50524F47 
- 653      52414D53 
- 653      5C50536F 
- 654 005e 2E637964 		.ascii	".cydsn\000"
- 654      736E00
- 655              	.LASF23:
- 656 0065 51756164 		.ascii	"QuadDecDrive_Cnt16_Wakeup\000"
- 656      44656344 
- 656      72697665 
- 656      5F436E74 
- 656      31365F57 
- 657              	.LASF3:
- 658 007f 73686F72 		.ascii	"short unsigned int\000"
- 658      7420756E 
- 658      7369676E 
- 658      65642069 
- 658      6E7400
- 659              	.LASF17:
- 660 0092 436F756E 		.ascii	"CounterUdb\000"
- 660      74657255 
- 660      646200
- 661              	.LASF18:
- 662 009d 436F756E 		.ascii	"CounterControlRegister\000"
- 662      74657243 
- 662      6F6E7472 
- 662      6F6C5265 
- 662      67697374 
- 663              	.LASF22:
- 664 00b4 51756164 		.ascii	"QuadDecDrive_Cnt16_Sleep\000"
- 664      44656344 
- 664      72697665 
- 664      5F436E74 
- 664      31365F53 
- 665              	.LASF31:
- 666 00cd 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\QuadDecDrive_Cnt16_PM.c"
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 16
+ 651              	.LASF23:
+ 652 0000 51756164 		.ascii	"QuadDecDrive_Cnt16_Wakeup\000"
+ 652      44656344 
+ 652      72697665 
+ 652      5F436E74 
+ 652      31365F57 
+ 653              	.LASF32:
+ 654 001a 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 654      73657273 
+ 654      5C4C4149 
+ 654      525C446F 
+ 654      63756D65 
+ 655 0047 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 655      52414D53 
+ 655      5C50536F 
+ 655      43355C52 
+ 655      6F616472 
+ 656              	.LASF3:
+ 657 0076 73686F72 		.ascii	"short unsigned int\000"
+ 657      7420756E 
+ 657      7369676E 
+ 657      65642069 
+ 657      6E7400
+ 658              	.LASF17:
+ 659 0089 436F756E 		.ascii	"CounterUdb\000"
+ 659      74657255 
+ 659      646200
+ 660              	.LASF18:
+ 661 0094 436F756E 		.ascii	"CounterControlRegister\000"
+ 661      74657243 
+ 661      6F6E7472 
+ 661      6F6C5265 
+ 661      67697374 
+ 662              	.LASF22:
+ 663 00ab 51756164 		.ascii	"QuadDecDrive_Cnt16_Sleep\000"
+ 663      44656344 
+ 663      72697665 
+ 663      5F436E74 
+ 663      31365F53 
+ 664              	.LASF31:
+ 665 00c4 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\QuadDecDrive_Cnt16_PM.c"
+ 665      6E657261 
+ 665      7465645F 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 16
 
 
- 666      6E657261 
- 666      7465645F 
- 666      536F7572 
- 666      63655C50 
- 667 00fd 00       		.ascii	"\000"
- 668              	.LASF11:
- 669 00fe 666C6F61 		.ascii	"float\000"
- 669      7400
- 670              	.LASF1:
- 671 0104 756E7369 		.ascii	"unsigned char\000"
- 671      676E6564 
- 671      20636861 
- 671      7200
- 672              	.LASF14:
- 673 0112 72656738 		.ascii	"reg8\000"
- 673      00
- 674              	.LASF5:
- 675 0117 6C6F6E67 		.ascii	"long unsigned int\000"
- 675      20756E73 
- 675      69676E65 
- 675      6420696E 
- 675      7400
- 676              	.LASF9:
- 677 0129 75696E74 		.ascii	"uint8\000"
- 677      3800
- 678              	.LASF28:
- 679 012f 51756164 		.ascii	"QuadDecDrive_Cnt16_Stop\000"
- 679      44656344 
- 679      72697665 
- 679      5F436E74 
- 679      31365F53 
- 680              	.LASF12:
- 681 0147 646F7562 		.ascii	"double\000"
- 681      6C6500
- 682              	.LASF10:
- 683 014e 75696E74 		.ascii	"uint16\000"
- 683      313600
- 684              	.LASF30:
- 685 0155 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 685      4320342E 
- 685      392E3320 
- 685      32303135 
- 685      30333033 
- 686 0188 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 686      20726576 
- 686      6973696F 
- 686      6E203232 
- 686      31323230 
- 687 01bb 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 687      66756E63 
- 687      74696F6E 
- 687      2D736563 
- 687      74696F6E 
- 688              	.LASF8:
- 689 01e3 756E7369 		.ascii	"unsigned int\000"
- 689      676E6564 
- 689      20696E74 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 17
+ 665      536F7572 
+ 665      63655C50 
+ 666 00f4 00       		.ascii	"\000"
+ 667              	.LASF11:
+ 668 00f5 666C6F61 		.ascii	"float\000"
+ 668      7400
+ 669              	.LASF1:
+ 670 00fb 756E7369 		.ascii	"unsigned char\000"
+ 670      676E6564 
+ 670      20636861 
+ 670      7200
+ 671              	.LASF14:
+ 672 0109 72656738 		.ascii	"reg8\000"
+ 672      00
+ 673              	.LASF5:
+ 674 010e 6C6F6E67 		.ascii	"long unsigned int\000"
+ 674      20756E73 
+ 674      69676E65 
+ 674      6420696E 
+ 674      7400
+ 675              	.LASF9:
+ 676 0120 75696E74 		.ascii	"uint8\000"
+ 676      3800
+ 677              	.LASF28:
+ 678 0126 51756164 		.ascii	"QuadDecDrive_Cnt16_Stop\000"
+ 678      44656344 
+ 678      72697665 
+ 678      5F436E74 
+ 678      31365F53 
+ 679              	.LASF12:
+ 680 013e 646F7562 		.ascii	"double\000"
+ 680      6C6500
+ 681              	.LASF10:
+ 682 0145 75696E74 		.ascii	"uint16\000"
+ 682      313600
+ 683              	.LASF30:
+ 684 014c 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 684      4320342E 
+ 684      392E3320 
+ 684      32303135 
+ 684      30333033 
+ 685 017f 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 685      20726576 
+ 685      6973696F 
+ 685      6E203232 
+ 685      31323230 
+ 686 01b2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 686      66756E63 
+ 686      74696F6E 
+ 686      2D736563 
+ 686      74696F6E 
+ 687              	.LASF8:
+ 688 01da 756E7369 		.ascii	"unsigned int\000"
+ 688      676E6564 
+ 688      20696E74 
+ 688      00
+ 689              	.LASF26:
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 17
 
 
- 689      00
- 690              	.LASF26:
- 691 01f0 51756164 		.ascii	"QuadDecDrive_Cnt16_WriteCounter\000"
- 691      44656344 
- 691      72697665 
- 691      5F436E74 
- 691      31365F57 
- 692              	.LASF7:
- 693 0210 6C6F6E67 		.ascii	"long long unsigned int\000"
- 693      206C6F6E 
- 693      6720756E 
- 693      7369676E 
- 693      65642069 
- 694              	.LASF21:
- 695 0227 51756164 		.ascii	"QuadDecDrive_Cnt16_RestoreConfig\000"
- 695      44656344 
- 695      72697665 
- 695      5F436E74 
- 695      31365F52 
- 696              	.LASF15:
- 697 0248 73697A65 		.ascii	"sizetype\000"
- 697      74797065 
- 697      00
- 698              	.LASF29:
- 699 0251 51756164 		.ascii	"QuadDecDrive_Cnt16_Enable\000"
- 699      44656344 
- 699      72697665 
- 699      5F436E74 
- 699      31365F45 
- 700              	.LASF16:
- 701 026b 436F756E 		.ascii	"CounterEnableState\000"
- 701      74657245 
- 701      6E61626C 
- 701      65537461 
- 701      746500
- 702              	.LASF6:
- 703 027e 6C6F6E67 		.ascii	"long long int\000"
- 703      206C6F6E 
- 703      6720696E 
- 703      7400
- 704              	.LASF13:
- 705 028c 63686172 		.ascii	"char\000"
- 705      00
- 706              	.LASF24:
- 707 0291 51756164 		.ascii	"QuadDecDrive_Cnt16_ReadCounter\000"
- 707      44656344 
- 707      72697665 
- 707      5F436E74 
- 707      31365F52 
- 708              	.LASF2:
- 709 02b0 73686F72 		.ascii	"short int\000"
- 709      7420696E 
- 709      7400
- 710              	.LASF20:
- 711 02ba 51756164 		.ascii	"QuadDecDrive_Cnt16_SaveConfig\000"
- 711      44656344 
- 711      72697665 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccPdKU8P.s 			page 18
+ 690 01e7 51756164 		.ascii	"QuadDecDrive_Cnt16_WriteCounter\000"
+ 690      44656344 
+ 690      72697665 
+ 690      5F436E74 
+ 690      31365F57 
+ 691              	.LASF7:
+ 692 0207 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 692      206C6F6E 
+ 692      6720756E 
+ 692      7369676E 
+ 692      65642069 
+ 693              	.LASF21:
+ 694 021e 51756164 		.ascii	"QuadDecDrive_Cnt16_RestoreConfig\000"
+ 694      44656344 
+ 694      72697665 
+ 694      5F436E74 
+ 694      31365F52 
+ 695              	.LASF15:
+ 696 023f 73697A65 		.ascii	"sizetype\000"
+ 696      74797065 
+ 696      00
+ 697              	.LASF29:
+ 698 0248 51756164 		.ascii	"QuadDecDrive_Cnt16_Enable\000"
+ 698      44656344 
+ 698      72697665 
+ 698      5F436E74 
+ 698      31365F45 
+ 699              	.LASF16:
+ 700 0262 436F756E 		.ascii	"CounterEnableState\000"
+ 700      74657245 
+ 700      6E61626C 
+ 700      65537461 
+ 700      746500
+ 701              	.LASF6:
+ 702 0275 6C6F6E67 		.ascii	"long long int\000"
+ 702      206C6F6E 
+ 702      6720696E 
+ 702      7400
+ 703              	.LASF13:
+ 704 0283 63686172 		.ascii	"char\000"
+ 704      00
+ 705              	.LASF24:
+ 706 0288 51756164 		.ascii	"QuadDecDrive_Cnt16_ReadCounter\000"
+ 706      44656344 
+ 706      72697665 
+ 706      5F436E74 
+ 706      31365F52 
+ 707              	.LASF2:
+ 708 02a7 73686F72 		.ascii	"short int\000"
+ 708      7420696E 
+ 708      7400
+ 709              	.LASF20:
+ 710 02b1 51756164 		.ascii	"QuadDecDrive_Cnt16_SaveConfig\000"
+ 710      44656344 
+ 710      72697665 
+ 710      5F436E74 
+ 710      31365F53 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccvcdsNO.s 			page 18
 
 
- 711      5F436E74 
- 711      31365F53 
- 712              	.LASF27:
- 713 02d8 51756164 		.ascii	"QuadDecDrive_Cnt16_WriteControlRegister\000"
- 713      44656344 
- 713      72697665 
- 713      5F436E74 
- 713      31365F57 
- 714              	.LASF33:
- 715 0300 51756164 		.ascii	"QuadDecDrive_Cnt16_backup\000"
- 715      44656344 
- 715      72697665 
- 715      5F436E74 
- 715      31365F62 
- 716              	.LASF4:
- 717 031a 6C6F6E67 		.ascii	"long int\000"
- 717      20696E74 
- 717      00
- 718              	.LASF0:
- 719 0323 7369676E 		.ascii	"signed char\000"
- 719      65642063 
- 719      68617200 
- 720              	.LASF25:
- 721 032f 51756164 		.ascii	"QuadDecDrive_Cnt16_ReadControlRegister\000"
- 721      44656344 
- 721      72697665 
- 721      5F436E74 
- 721      31365F52 
- 722              	.LASF19:
- 723 0356 51756164 		.ascii	"QuadDecDrive_Cnt16_backupStruct\000"
- 723      44656344 
- 723      72697665 
- 723      5F436E74 
- 723      31365F62 
- 724              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 711              	.LASF27:
+ 712 02cf 51756164 		.ascii	"QuadDecDrive_Cnt16_WriteControlRegister\000"
+ 712      44656344 
+ 712      72697665 
+ 712      5F436E74 
+ 712      31365F57 
+ 713              	.LASF33:
+ 714 02f7 51756164 		.ascii	"QuadDecDrive_Cnt16_backup\000"
+ 714      44656344 
+ 714      72697665 
+ 714      5F436E74 
+ 714      31365F62 
+ 715              	.LASF4:
+ 716 0311 6C6F6E67 		.ascii	"long int\000"
+ 716      20696E74 
+ 716      00
+ 717              	.LASF0:
+ 718 031a 7369676E 		.ascii	"signed char\000"
+ 718      65642063 
+ 718      68617200 
+ 719              	.LASF25:
+ 720 0326 51756164 		.ascii	"QuadDecDrive_Cnt16_ReadControlRegister\000"
+ 720      44656344 
+ 720      72697665 
+ 720      5F436E74 
+ 720      31365F52 
+ 721              	.LASF19:
+ 722 034d 51756164 		.ascii	"QuadDecDrive_Cnt16_backupStruct\000"
+ 722      44656344 
+ 722      72697665 
+ 722      5F436E74 
+ 722      31365F62 
+ 723              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

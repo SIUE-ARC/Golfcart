@@ -37,7 +37,7 @@ const uint8 CYCODE USBFS_DEVICE0_DESCR[18u] = {
 /* Descriptor Length                       */ 0x12u,
 /* DescriptorType: DEVICE                  */ 0x01u,
 /* bcdUSB (ver 2.0)                        */ 0x00u, 0x02u,
-/* bDeviceClass                            */ 0x00u,
+/* bDeviceClass                            */ 0xFFu,
 /* bDeviceSubClass                         */ 0x00u,
 /* bDeviceProtocol                         */ 0x00u,
 /* bMaxPacketSize0                         */ 0x08u,
@@ -60,7 +60,7 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[32u] = {
 /*  bConfigurationValue                    */ 0x01u,
 /*  iConfiguration                         */ 0x00u,
 /*  bmAttributes                           */ 0x80u,
-/*  bMaxPower                              */ 0x32u,
+/*  bMaxPower                              */ 0x64u,
 /*********************************************************************
 * Interface Descriptor
 *********************************************************************/
@@ -69,7 +69,7 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[32u] = {
 /*  bInterfaceNumber                       */ 0x00u,
 /*  bAlternateSetting                      */ 0x00u,
 /*  bNumEndpoints                          */ 0x02u,
-/*  bInterfaceClass                        */ 0x00u,
+/*  bInterfaceClass                        */ 0xFFu,
 /*  bInterfaceSubClass                     */ 0x00u,
 /*  bInterfaceProtocol                     */ 0x00u,
 /*  iInterface                             */ 0x00u,
@@ -96,13 +96,23 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[32u] = {
 /*********************************************************************
 * String Descriptor Table
 *********************************************************************/
-const uint8 CYCODE USBFS_STRING_DESCRIPTORS[103u] = {
+const uint8 CYCODE USBFS_STRING_DESCRIPTORS[93u] = {
 /*********************************************************************
 * Language ID Descriptor
 *********************************************************************/
 /* Descriptor Length                       */ 0x04u,
 /* DescriptorType: STRING                  */ 0x03u,
 /* Language Id                             */ 0x09u, 0x04u,
+/*********************************************************************
+* String Descriptor: "Cypress Semiconductor"
+*********************************************************************/
+/* Descriptor Length                       */ 0x2Cu,
+/* DescriptorType: STRING                  */ 0x03u,
+ (uint8)'C', 0u,(uint8)'y', 0u,(uint8)'p', 0u,(uint8)'r', 0u,(uint8)'e', 0u,
+ (uint8)'s', 0u,(uint8)'s', 0u,(uint8)' ', 0u,(uint8)'S', 0u,(uint8)'e', 0u,
+ (uint8)'m', 0u,(uint8)'i', 0u,(uint8)'c', 0u,(uint8)'o', 0u,(uint8)'n', 0u,
+ (uint8)'d', 0u,(uint8)'u', 0u,(uint8)'c', 0u,(uint8)'t', 0u,(uint8)'o', 0u,
+ (uint8)'r', 0u,
 /*********************************************************************
 * String Descriptor: "Roadrunner Controller"
 *********************************************************************/
@@ -113,17 +123,6 @@ const uint8 CYCODE USBFS_STRING_DESCRIPTORS[103u] = {
  (uint8)' ', 0u,(uint8)'C', 0u,(uint8)'o', 0u,(uint8)'n', 0u,(uint8)'t', 0u,
  (uint8)'r', 0u,(uint8)'o', 0u,(uint8)'l', 0u,(uint8)'l', 0u,(uint8)'e', 0u,
  (uint8)'r', 0u,
-/*********************************************************************
-* String Descriptor: "Generic USB Bulk Interface"
-*********************************************************************/
-/* Descriptor Length                       */ 0x36u,
-/* DescriptorType: STRING                  */ 0x03u,
- (uint8)'G', 0u,(uint8)'e', 0u,(uint8)'n', 0u,(uint8)'e', 0u,(uint8)'r', 0u,
- (uint8)'i', 0u,(uint8)'c', 0u,(uint8)' ', 0u,(uint8)'U', 0u,(uint8)'S', 0u,
- (uint8)'B', 0u,(uint8)' ', 0u,(uint8)'B', 0u,(uint8)'u', 0u,(uint8)'l', 0u,
- (uint8)'k', 0u,(uint8)' ', 0u,(uint8)'I', 0u,(uint8)'n', 0u,(uint8)'t', 0u,
- (uint8)'e', 0u,(uint8)'r', 0u,(uint8)'f', 0u,(uint8)'a', 0u,(uint8)'c', 0u,
- (uint8)'e', 0u,
 /*********************************************************************/
 /* Marks the end of the list.              */ 0x00u};
 /*********************************************************************/
@@ -148,11 +147,11 @@ const uint8 CYCODE USBFS_SN_STRING_DESCRIPTOR[2] = {
 *********************************************************************/
 const T_USBFS_EP_SETTINGS_BLOCK CYCODE USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE[2u] = {
 /* IFC  ALT    EPAddr bmAttr MaxPktSize Class ********************/
-{0x00u, 0x00u, 0x81u, 0x02u, 0x0040u,   0x00u},
-{0x00u, 0x00u, 0x02u, 0x02u, 0x0040u,   0x00u}
+{0x00u, 0x00u, 0x81u, 0x02u, 0x0040u,   0xFFu},
+{0x00u, 0x00u, 0x02u, 0x02u, 0x0040u,   0xFFu}
 };
 const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS[1u] = {
-0x00u
+0xFFu
 };
 /*********************************************************************
 * Config Dispatch Table -- Points to the Config Descriptor and each of

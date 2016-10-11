@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
   29:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** *
   30:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** * Parameters:
   31:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** *  None.
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
   63:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** void QuadDecSteer_RestoreConfig(void) 
   64:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** {
   50              		.loc 1 64 0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 3
 
 
   51              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
   97:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** {
   73              		.loc 1 97 0
   74              		.cfi_startproc
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 4
 
 
   75              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  118              	QuadDecSteer_Wakeup:
  119              	.LFB3:
  109:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** }
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 5
 
 
  110:.\Generated_Source\PSoC5/QuadDecSteer_PM.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  138              		.loc 1 145 0
  139 0010 FFF7FEFF 		bl	QuadDecSteer_Enable
  140              	.LVL6:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 6
 
 
  141              	.L11:
@@ -329,10 +329,10 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  166 0006 00000000 		.4byte	.Ldebug_abbrev0
  167 000a 04       		.byte	0x4
  168 000b 01       		.uleb128 0x1
- 169 000c 24010000 		.4byte	.LASF25
+ 169 000c 80010000 		.4byte	.LASF25
  170 0010 01       		.byte	0x1
- 171 0011 66000000 		.4byte	.LASF26
- 172 0015 1D020000 		.4byte	.LASF27
+ 171 0011 C2000000 		.4byte	.LASF26
+ 172 0015 3F000000 		.4byte	.LASF27
  173 0019 00000000 		.4byte	.Ldebug_ranges0+0
  174 001d 00000000 		.4byte	0
  175 0021 00000000 		.4byte	.Ldebug_line0
@@ -343,65 +343,65 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  180 002c 03       		.uleb128 0x3
  181 002d 04       		.byte	0x4
  182 002e 07       		.byte	0x7
- 183 002f CA010000 		.4byte	.LASF0
+ 183 002f 26020000 		.4byte	.LASF0
  184 0033 03       		.uleb128 0x3
  185 0034 01       		.byte	0x1
  186 0035 06       		.byte	0x6
- 187 0036 D0020000 		.4byte	.LASF1
+ 187 0036 C7020000 		.4byte	.LASF1
  188 003a 03       		.uleb128 0x3
  189 003b 01       		.byte	0x1
  190 003c 08       		.byte	0x8
- 191 003d C3000000 		.4byte	.LASF2
+ 191 003d 1F010000 		.4byte	.LASF2
  192 0041 03       		.uleb128 0x3
  193 0042 02       		.byte	0x2
  194 0043 05       		.byte	0x5
- 195 0044 9E020000 		.4byte	.LASF3
+ 195 0044 95020000 		.4byte	.LASF3
  196 0048 03       		.uleb128 0x3
  197 0049 02       		.byte	0x2
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 7
 
 
  198 004a 07       		.byte	0x7
- 199 004b 53000000 		.4byte	.LASF4
+ 199 004b AF000000 		.4byte	.LASF4
  200 004f 03       		.uleb128 0x3
  201 0050 04       		.byte	0x4
  202 0051 05       		.byte	0x5
- 203 0052 BB020000 		.4byte	.LASF5
+ 203 0052 B2020000 		.4byte	.LASF5
  204 0056 03       		.uleb128 0x3
  205 0057 04       		.byte	0x4
  206 0058 07       		.byte	0x7
- 207 0059 D6000000 		.4byte	.LASF6
+ 207 0059 32010000 		.4byte	.LASF6
  208 005d 03       		.uleb128 0x3
  209 005e 08       		.byte	0x8
  210 005f 05       		.byte	0x5
- 211 0060 8B020000 		.4byte	.LASF7
+ 211 0060 82020000 		.4byte	.LASF7
  212 0064 03       		.uleb128 0x3
  213 0065 08       		.byte	0x8
  214 0066 07       		.byte	0x7
- 215 0067 EB010000 		.4byte	.LASF8
+ 215 0067 47020000 		.4byte	.LASF8
  216 006b 03       		.uleb128 0x3
  217 006c 04       		.byte	0x4
  218 006d 07       		.byte	0x7
- 219 006e 82020000 		.4byte	.LASF9
+ 219 006e 79020000 		.4byte	.LASF9
  220 0072 03       		.uleb128 0x3
  221 0073 01       		.byte	0x1
  222 0074 08       		.byte	0x8
- 223 0075 99020000 		.4byte	.LASF10
+ 223 0075 90020000 		.4byte	.LASF10
  224 0079 04       		.uleb128 0x4
- 225 007a E8000000 		.4byte	.LASF13
+ 225 007a 44010000 		.4byte	.LASF13
  226 007e 02       		.byte	0x2
  227 007f 9201     		.2byte	0x192
  228 0081 3A000000 		.4byte	0x3a
  229 0085 03       		.uleb128 0x3
  230 0086 04       		.byte	0x4
  231 0087 04       		.byte	0x4
- 232 0088 91000000 		.4byte	.LASF11
+ 232 0088 ED000000 		.4byte	.LASF11
  233 008c 03       		.uleb128 0x3
  234 008d 08       		.byte	0x8
  235 008e 04       		.byte	0x4
- 236 008f EE000000 		.4byte	.LASF12
+ 236 008f 4A010000 		.4byte	.LASF12
  237 0093 04       		.uleb128 0x4
- 238 0094 D1000000 		.4byte	.LASF14
+ 238 0094 2D010000 		.4byte	.LASF14
  239 0098 02       		.byte	0x2
  240 0099 3C02     		.2byte	0x23c
  241 009b 9F000000 		.4byte	0x9f
@@ -413,22 +413,22 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  247 00a7 3D       		.byte	0x3d
  248 00a8 B9000000 		.4byte	0xb9
  249 00ac 07       		.uleb128 0x7
- 250 00ad C4020000 		.4byte	.LASF28
+ 250 00ad BB020000 		.4byte	.LASF28
  251 00b1 03       		.byte	0x3
  252 00b2 3F       		.byte	0x3f
  253 00b3 79000000 		.4byte	0x79
  254 00b7 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 8
 
 
  255 00b8 00       		.byte	0
  256 00b9 08       		.uleb128 0x8
- 257 00ba F5000000 		.4byte	.LASF15
+ 257 00ba 51010000 		.4byte	.LASF15
  258 00be 03       		.byte	0x3
  259 00bf 40       		.byte	0x40
  260 00c0 A4000000 		.4byte	0xa4
  261 00c4 09       		.uleb128 0x9
- 262 00c5 B2010000 		.4byte	.LASF16
+ 262 00c5 0E020000 		.4byte	.LASF16
  263 00c9 01       		.byte	0x1
  264 00ca 25       		.byte	0x25
  265 00cb 00000000 		.4byte	.LFB0
@@ -441,7 +441,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  272 00de 6C010000 		.4byte	0x16c
  273 00e2 00       		.byte	0
  274 00e3 09       		.uleb128 0x9
- 275 00e4 02020000 		.4byte	.LASF17
+ 275 00e4 5E020000 		.4byte	.LASF17
  276 00e8 01       		.byte	0x1
  277 00e9 3F       		.byte	0x3f
  278 00ea 00000000 		.4byte	.LFB1
@@ -454,7 +454,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  285 00fd 73010000 		.4byte	0x173
  286 0101 00       		.byte	0
  287 0102 09       		.uleb128 0x9
- 288 0103 A8020000 		.4byte	.LASF18
+ 288 0103 9F020000 		.4byte	.LASF18
  289 0107 01       		.byte	0x1
  290 0108 60       		.byte	0x60
  291 0109 00000000 		.4byte	.LFB2
@@ -470,7 +470,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  301 0125 C4000000 		.4byte	0xc4
  302 0129 00       		.byte	0
  303 012a 09       		.uleb128 0x9
- 304 012b D7010000 		.4byte	.LASF19
+ 304 012b 33020000 		.4byte	.LASF19
  305 012f 01       		.byte	0x1
  306 0130 81       		.byte	0x81
  307 0131 00000000 		.4byte	.LFB3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  309 0139 01       		.uleb128 0x1
  310 013a 9C       		.byte	0x9c
  311 013b 5B010000 		.4byte	0x15b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 9
 
 
  312 013f 0A       		.uleb128 0xa
@@ -492,7 +492,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  320 0156 88010000 		.4byte	0x188
  321 015a 00       		.byte	0
  322 015b 0B       		.uleb128 0xb
- 323 015c 10010000 		.4byte	.LASF29
+ 323 015c 6C010000 		.4byte	.LASF29
  324 0160 01       		.byte	0x1
  325 0161 15       		.byte	0x15
  326 0162 B9000000 		.4byte	0xb9
@@ -508,15 +508,15 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  336 0178 04       		.byte	0x4
  337 0179 73       		.byte	0x73
  338 017a 0C       		.uleb128 0xc
- 339 017b 97000000 		.4byte	.LASF22
+ 339 017b F3000000 		.4byte	.LASF22
  340 017f 03       		.byte	0x3
  341 0180 49       		.byte	0x49
  342 0181 0C       		.uleb128 0xc
- 343 0182 A9000000 		.4byte	.LASF23
+ 343 0182 05010000 		.4byte	.LASF23
  344 0186 04       		.byte	0x4
  345 0187 71       		.byte	0x71
  346 0188 0C       		.uleb128 0xc
- 347 0189 3F000000 		.4byte	.LASF24
+ 347 0189 9B000000 		.4byte	.LASF24
  348 018d 03       		.byte	0x3
  349 018e 4A       		.byte	0x4a
  350 018f 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  366 000d 11       		.uleb128 0x11
  367 000e 01       		.uleb128 0x1
  368 000f 10       		.uleb128 0x10
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 10
 
 
  369 0010 17       		.uleb128 0x17
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  423 0046 01       		.uleb128 0x1
  424 0047 13       		.uleb128 0x13
  425 0048 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 11
 
 
  426 0049 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  480 0080 0A       		.uleb128 0xa
  481 0081 898201   		.uleb128 0x4109
  482 0084 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 12
 
 
  483 0085 11       		.uleb128 0x11
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  537 002c 1C000000 		.4byte	.LFE3-.LFB3
  538 0030 00000000 		.4byte	0
  539 0034 00000000 		.4byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 13
 
 
  540              		.section	.debug_ranges,"",%progbits
@@ -752,170 +752,168 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 1
  558      74656572 
  558      5F436E74 
  558      31365F53 
- 559              	.LASF24:
- 560 003f 51756164 		.ascii	"QuadDecSteer_Enable\000"
- 560      44656353 
- 560      74656572 
- 560      5F456E61 
- 560      626C6500 
- 561              	.LASF4:
- 562 0053 73686F72 		.ascii	"short unsigned int\000"
- 562      7420756E 
- 562      7369676E 
- 562      65642069 
- 562      6E7400
- 563              	.LASF26:
- 564 0066 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\QuadDecSteer_PM.c\000"
- 564      6E657261 
- 564      7465645F 
- 564      536F7572 
- 564      63655C50 
- 565              	.LASF11:
- 566 0091 666C6F61 		.ascii	"float\000"
- 566      7400
- 567              	.LASF22:
- 568 0097 51756164 		.ascii	"QuadDecSteer_Stop\000"
- 568      44656353 
- 568      74656572 
- 568      5F53746F 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 14
+ 559              	.LASF27:
+ 560 003f 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 560      73657273 
+ 560      5C4C4149 
+ 560      525C446F 
+ 560      63756D65 
+ 561 006c 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 561      52414D53 
+ 561      5C50536F 
+ 561      43355C52 
+ 561      6F616472 
+ 562              	.LASF24:
+ 563 009b 51756164 		.ascii	"QuadDecSteer_Enable\000"
+ 563      44656353 
+ 563      74656572 
+ 563      5F456E61 
+ 563      626C6500 
+ 564              	.LASF4:
+ 565 00af 73686F72 		.ascii	"short unsigned int\000"
+ 565      7420756E 
+ 565      7369676E 
+ 565      65642069 
+ 565      6E7400
+ 566              	.LASF26:
+ 567 00c2 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\QuadDecSteer_PM.c\000"
+ 567      6E657261 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 14
 
 
- 568      7000
- 569              	.LASF23:
- 570 00a9 51756164 		.ascii	"QuadDecSteer_Cnt16_Enable\000"
- 570      44656353 
- 570      74656572 
- 570      5F436E74 
- 570      31365F45 
- 571              	.LASF2:
- 572 00c3 756E7369 		.ascii	"unsigned char\000"
- 572      676E6564 
- 572      20636861 
- 572      7200
- 573              	.LASF14:
- 574 00d1 72656738 		.ascii	"reg8\000"
- 574      00
- 575              	.LASF6:
- 576 00d6 6C6F6E67 		.ascii	"long unsigned int\000"
- 576      20756E73 
- 576      69676E65 
- 576      6420696E 
- 576      7400
- 577              	.LASF13:
- 578 00e8 75696E74 		.ascii	"uint8\000"
- 578      3800
- 579              	.LASF12:
- 580 00ee 646F7562 		.ascii	"double\000"
- 580      6C6500
- 581              	.LASF15:
- 582 00f5 51756164 		.ascii	"QuadDecSteer_BACKUP_STRUCT\000"
- 582      44656353 
- 582      74656572 
- 582      5F424143 
- 582      4B55505F 
- 583              	.LASF29:
- 584 0110 51756164 		.ascii	"QuadDecSteer_backup\000"
- 584      44656353 
- 584      74656572 
- 584      5F626163 
- 584      6B757000 
- 585              	.LASF25:
- 586 0124 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 586      4320342E 
- 586      392E3320 
- 586      32303135 
- 586      30333033 
- 587 0157 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 587      20726576 
- 587      6973696F 
- 587      6E203232 
- 587      31323230 
- 588 018a 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 588      66756E63 
- 588      74696F6E 
- 588      2D736563 
- 588      74696F6E 
- 589              	.LASF16:
- 590 01b2 51756164 		.ascii	"QuadDecSteer_SaveConfig\000"
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 15
+ 567      7465645F 
+ 567      536F7572 
+ 567      63655C50 
+ 568              	.LASF11:
+ 569 00ed 666C6F61 		.ascii	"float\000"
+ 569      7400
+ 570              	.LASF22:
+ 571 00f3 51756164 		.ascii	"QuadDecSteer_Stop\000"
+ 571      44656353 
+ 571      74656572 
+ 571      5F53746F 
+ 571      7000
+ 572              	.LASF23:
+ 573 0105 51756164 		.ascii	"QuadDecSteer_Cnt16_Enable\000"
+ 573      44656353 
+ 573      74656572 
+ 573      5F436E74 
+ 573      31365F45 
+ 574              	.LASF2:
+ 575 011f 756E7369 		.ascii	"unsigned char\000"
+ 575      676E6564 
+ 575      20636861 
+ 575      7200
+ 576              	.LASF14:
+ 577 012d 72656738 		.ascii	"reg8\000"
+ 577      00
+ 578              	.LASF6:
+ 579 0132 6C6F6E67 		.ascii	"long unsigned int\000"
+ 579      20756E73 
+ 579      69676E65 
+ 579      6420696E 
+ 579      7400
+ 580              	.LASF13:
+ 581 0144 75696E74 		.ascii	"uint8\000"
+ 581      3800
+ 582              	.LASF12:
+ 583 014a 646F7562 		.ascii	"double\000"
+ 583      6C6500
+ 584              	.LASF15:
+ 585 0151 51756164 		.ascii	"QuadDecSteer_BACKUP_STRUCT\000"
+ 585      44656353 
+ 585      74656572 
+ 585      5F424143 
+ 585      4B55505F 
+ 586              	.LASF29:
+ 587 016c 51756164 		.ascii	"QuadDecSteer_backup\000"
+ 587      44656353 
+ 587      74656572 
+ 587      5F626163 
+ 587      6B757000 
+ 588              	.LASF25:
+ 589 0180 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 589      4320342E 
+ 589      392E3320 
+ 589      32303135 
+ 589      30333033 
+ 590 01b3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 15
 
 
- 590      44656353 
- 590      74656572 
- 590      5F536176 
- 590      65436F6E 
- 591              	.LASF0:
- 592 01ca 756E7369 		.ascii	"unsigned int\000"
- 592      676E6564 
- 592      20696E74 
- 592      00
- 593              	.LASF19:
- 594 01d7 51756164 		.ascii	"QuadDecSteer_Wakeup\000"
- 594      44656353 
- 594      74656572 
- 594      5F57616B 
- 594      65757000 
- 595              	.LASF8:
- 596 01eb 6C6F6E67 		.ascii	"long long unsigned int\000"
- 596      206C6F6E 
- 596      6720756E 
- 596      7369676E 
- 596      65642069 
- 597              	.LASF17:
- 598 0202 51756164 		.ascii	"QuadDecSteer_RestoreConfig\000"
- 598      44656353 
- 598      74656572 
- 598      5F526573 
- 598      746F7265 
- 599              	.LASF27:
- 600 021d 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 600      73657273 
- 600      5C427279 
- 600      616E204F 
- 600      72616275 
- 601 024b 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 601      534F435F 
- 601      50524F47 
- 601      52414D53 
- 601      5C50536F 
- 602 027b 2E637964 		.ascii	".cydsn\000"
- 602      736E00
- 603              	.LASF9:
- 604 0282 73697A65 		.ascii	"sizetype\000"
- 604      74797065 
- 604      00
- 605              	.LASF7:
- 606 028b 6C6F6E67 		.ascii	"long long int\000"
- 606      206C6F6E 
- 606      6720696E 
- 606      7400
- 607              	.LASF10:
- 608 0299 63686172 		.ascii	"char\000"
- 608      00
- 609              	.LASF3:
- 610 029e 73686F72 		.ascii	"short int\000"
- 610      7420696E 
- 610      7400
- 611              	.LASF18:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccdgqirj.s 			page 16
+ 590      20726576 
+ 590      6973696F 
+ 590      6E203232 
+ 590      31323230 
+ 591 01e6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 591      66756E63 
+ 591      74696F6E 
+ 591      2D736563 
+ 591      74696F6E 
+ 592              	.LASF16:
+ 593 020e 51756164 		.ascii	"QuadDecSteer_SaveConfig\000"
+ 593      44656353 
+ 593      74656572 
+ 593      5F536176 
+ 593      65436F6E 
+ 594              	.LASF0:
+ 595 0226 756E7369 		.ascii	"unsigned int\000"
+ 595      676E6564 
+ 595      20696E74 
+ 595      00
+ 596              	.LASF19:
+ 597 0233 51756164 		.ascii	"QuadDecSteer_Wakeup\000"
+ 597      44656353 
+ 597      74656572 
+ 597      5F57616B 
+ 597      65757000 
+ 598              	.LASF8:
+ 599 0247 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 599      206C6F6E 
+ 599      6720756E 
+ 599      7369676E 
+ 599      65642069 
+ 600              	.LASF17:
+ 601 025e 51756164 		.ascii	"QuadDecSteer_RestoreConfig\000"
+ 601      44656353 
+ 601      74656572 
+ 601      5F526573 
+ 601      746F7265 
+ 602              	.LASF9:
+ 603 0279 73697A65 		.ascii	"sizetype\000"
+ 603      74797065 
+ 603      00
+ 604              	.LASF7:
+ 605 0282 6C6F6E67 		.ascii	"long long int\000"
+ 605      206C6F6E 
+ 605      6720696E 
+ 605      7400
+ 606              	.LASF10:
+ 607 0290 63686172 		.ascii	"char\000"
+ 607      00
+ 608              	.LASF3:
+ 609 0295 73686F72 		.ascii	"short int\000"
+ 609      7420696E 
+ 609      7400
+ 610              	.LASF18:
+ 611 029f 51756164 		.ascii	"QuadDecSteer_Sleep\000"
+ 611      44656353 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccj4qT2B.s 			page 16
 
 
- 612 02a8 51756164 		.ascii	"QuadDecSteer_Sleep\000"
- 612      44656353 
- 612      74656572 
- 612      5F536C65 
- 612      657000
- 613              	.LASF5:
- 614 02bb 6C6F6E67 		.ascii	"long int\000"
- 614      20696E74 
- 614      00
- 615              	.LASF28:
- 616 02c4 656E6162 		.ascii	"enableState\000"
- 616      6C655374 
- 616      61746500 
- 617              	.LASF1:
- 618 02d0 7369676E 		.ascii	"signed char\000"
- 618      65642063 
- 618      68617200 
- 619              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 611      74656572 
+ 611      5F536C65 
+ 611      657000
+ 612              	.LASF5:
+ 613 02b2 6C6F6E67 		.ascii	"long int\000"
+ 613      20696E74 
+ 613      00
+ 614              	.LASF28:
+ 615 02bb 656E6162 		.ascii	"enableState\000"
+ 615      6C655374 
+ 615      61746500 
+ 616              	.LASF1:
+ 617 02c7 7369676E 		.ascii	"signed char\000"
+ 617      65642063 
+ 617      68617200 
+ 618              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

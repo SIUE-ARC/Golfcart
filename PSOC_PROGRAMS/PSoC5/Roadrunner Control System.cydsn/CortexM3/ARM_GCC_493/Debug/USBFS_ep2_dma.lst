@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
   29:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** * 
   30:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** * 
   31:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** * 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** * USBFS_ep2__DRQ_CTL_REG
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
   86:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** *       
   87:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** *       
   88:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** *   UpperDestAddress.
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** *       
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  109:.\Generated_Source\PSoC5/USBFS_ep2_dma.c ****                                   (uint8)USBFS_ep2__TERMIN_SEL);
  110:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** 
  111:.\Generated_Source\PSoC5/USBFS_ep2_dma.c ****     /* Set the extended address for the transfers */
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 4
 
 
  112:.\Generated_Source\PSoC5/USBFS_ep2_dma.c ****     (void)CyDmaChSetExtendedAddress(USBFS_ep2_DmaHandle, UpperSrcAddress, UpperDestAddress);
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  134:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** *
  135:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** *******************************************************************/
  136:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** void USBFS_ep2_DmaRelease(void) 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 5
 
 
  137:.\Generated_Source\PSoC5/USBFS_ep2_dma.c **** {
@@ -283,10 +283,10 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  129 0006 00000000 		.4byte	.Ldebug_abbrev0
  130 000a 04       		.byte	0x4
  131 000b 01       		.uleb128 0x1
- 132 000c 5F010000 		.4byte	.LASF23
+ 132 000c 56010000 		.4byte	.LASF23
  133 0010 01       		.byte	0x1
  134 0011 BC000000 		.4byte	.LASF24
- 135 0015 00000000 		.4byte	.LASF25
+ 135 0015 29000000 		.4byte	.LASF25
  136 0019 00000000 		.4byte	.Ldebug_ranges0+0
  137 001d 00000000 		.4byte	0
  138 0021 00000000 		.4byte	.Ldebug_line0
@@ -297,14 +297,14 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  143 002c 03       		.uleb128 0x3
  144 002d 04       		.byte	0x4
  145 002e 07       		.byte	0x7
- 146 002f ED010000 		.4byte	.LASF0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 6
+ 146 002f E4010000 		.4byte	.LASF0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 6
 
 
  147 0033 03       		.uleb128 0x3
  148 0034 01       		.byte	0x1
  149 0035 06       		.byte	0x6
- 150 0036 6B020000 		.4byte	.LASF1
+ 150 0036 62020000 		.4byte	.LASF1
  151 003a 03       		.uleb128 0x3
  152 003b 01       		.byte	0x1
  153 003c 08       		.byte	0x8
@@ -312,7 +312,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  155 0041 03       		.uleb128 0x3
  156 0042 02       		.byte	0x2
  157 0043 05       		.byte	0x5
- 158 0044 58020000 		.4byte	.LASF3
+ 158 0044 4F020000 		.4byte	.LASF3
  159 0048 03       		.uleb128 0x3
  160 0049 02       		.byte	0x2
  161 004a 07       		.byte	0x7
@@ -320,7 +320,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  163 004f 03       		.uleb128 0x3
  164 0050 04       		.byte	0x4
  165 0051 05       		.byte	0x5
- 166 0052 62020000 		.4byte	.LASF5
+ 166 0052 59020000 		.4byte	.LASF5
  167 0056 03       		.uleb128 0x3
  168 0057 04       		.byte	0x4
  169 0058 07       		.byte	0x7
@@ -328,19 +328,19 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  171 005d 03       		.uleb128 0x3
  172 005e 08       		.byte	0x8
  173 005f 05       		.byte	0x5
- 174 0060 2B020000 		.4byte	.LASF7
+ 174 0060 22020000 		.4byte	.LASF7
  175 0064 03       		.uleb128 0x3
  176 0065 08       		.byte	0x8
  177 0066 07       		.byte	0x7
- 178 0067 FA010000 		.4byte	.LASF8
+ 178 0067 F1010000 		.4byte	.LASF8
  179 006b 03       		.uleb128 0x3
  180 006c 04       		.byte	0x4
  181 006d 07       		.byte	0x7
- 182 006e 22020000 		.4byte	.LASF9
+ 182 006e 19020000 		.4byte	.LASF9
  183 0072 03       		.uleb128 0x3
  184 0073 01       		.byte	0x1
  185 0074 08       		.byte	0x8
- 186 0075 53020000 		.4byte	.LASF10
+ 186 0075 4A020000 		.4byte	.LASF10
  187 0079 04       		.uleb128 0x4
  188 007a 2E010000 		.4byte	.LASF11
  189 007e 02       		.byte	0x2
@@ -358,12 +358,12 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  201 0098 03       		.uleb128 0x3
  202 0099 08       		.byte	0x8
  203 009a 04       		.byte	0x4
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 7
 
 
  204 009b 48010000 		.4byte	.LASF14
  205 009f 04       		.uleb128 0x4
- 206 00a0 56010000 		.4byte	.LASF15
+ 206 00a0 00000000 		.4byte	.LASF15
  207 00a4 02       		.byte	0x2
  208 00a5 3402     		.2byte	0x234
  209 00a7 56000000 		.4byte	0x56
@@ -390,13 +390,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  230 00da 79000000 		.4byte	0x79
  231 00de 21000000 		.4byte	.LLST1
  232 00e2 06       		.uleb128 0x6
- 233 00e3 65000000 		.4byte	.LASF18
+ 233 00e3 09000000 		.4byte	.LASF18
  234 00e7 01       		.byte	0x1
  235 00e8 61       		.byte	0x61
  236 00e9 85000000 		.4byte	0x85
  237 00ed 42000000 		.4byte	.LLST2
  238 00f1 06       		.uleb128 0x6
- 239 00f2 11020000 		.4byte	.LASF19
+ 239 00f2 08020000 		.4byte	.LASF19
  240 00f6 01       		.byte	0x1
  241 00f7 61       		.byte	0x61
  242 00f8 85000000 		.4byte	0x85
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  258 0117 00       		.sleb128 0
  259 0118 08       		.uleb128 0x8
  260 0119 01       		.uleb128 0x1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 8
 
 
  261 011a 50       		.byte	0x50
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  315 016e EB010000 		.4byte	0x1eb
  316 0172 00       		.byte	0
  317 0173 0C       		.uleb128 0xc
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 9
 
 
  318 0174 34010000 		.4byte	.LASF28
@@ -489,7 +489,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  323 017f 03       		.byte	0x3
  324 0180 00000000 		.4byte	USBFS_ep2_DmaHandle
  325 0184 0D       		.uleb128 0xd
- 326 0185 86020000 		.4byte	.LASF20
+ 326 0185 7D020000 		.4byte	.LASF20
  327 0189 03       		.byte	0x3
  328 018a 33       		.byte	0x33
  329 018b 9F000000 		.4byte	0x9f
@@ -508,7 +508,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  342 01ad 79000000 		.4byte	0x79
  343 01b1 00       		.byte	0
  344 01b2 0D       		.uleb128 0xd
- 345 01b3 39020000 		.4byte	.LASF21
+ 345 01b3 30020000 		.4byte	.LASF21
  346 01b7 03       		.byte	0x3
  347 01b8 2D       		.byte	0x2d
  348 01b9 9F000000 		.4byte	0x9f
@@ -521,7 +521,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  355 01cc 85000000 		.4byte	0x85
  356 01d0 00       		.byte	0
  357 01d1 0D       		.uleb128 0xd
- 358 01d2 75000000 		.4byte	.LASF22
+ 358 01d2 19000000 		.4byte	.LASF22
  359 01d6 03       		.byte	0x3
  360 01d7 2C       		.byte	0x2c
  361 01d8 9F000000 		.4byte	0x9f
@@ -532,13 +532,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  366 01e6 79000000 		.4byte	0x79
  367 01ea 00       		.byte	0
  368 01eb 0F       		.uleb128 0xf
- 369 01ec 77020000 		.4byte	.LASF29
+ 369 01ec 6E020000 		.4byte	.LASF29
  370 01f0 03       		.byte	0x3
  371 01f1 2A       		.byte	0x2a
  372 01f2 9F000000 		.4byte	0x9f
  373 01f6 0E       		.uleb128 0xe
  374 01f7 79000000 		.4byte	0x79
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 10
 
 
  375 01fb 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  429 0032 49       		.uleb128 0x49
  430 0033 13       		.uleb128 0x13
  431 0034 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 11
 
 
  432 0035 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  486 006e 08       		.uleb128 0x8
  487 006f 8A8201   		.uleb128 0x410a
  488 0072 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 12
 
 
  489 0073 02       		.uleb128 0x2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  543 00af 3A       		.uleb128 0x3a
  544 00b0 0B       		.uleb128 0xb
  545 00b1 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 13
 
 
  546 00b2 0B       		.uleb128 0xb
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  600 00e8 00       		.byte	0
  601 00e9 00       		.byte	0
  602 00ea 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 14
 
 
  603              		.section	.debug_loc,"",%progbits
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  657 007a 53       		.byte	0x53
  658 007b 9F       		.byte	0x9f
  659 007c 00000000 		.4byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 15
 
 
  660 0080 00000000 		.4byte	0
@@ -871,176 +871,174 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 1
  685      00000201 
  685      FB0E0D00 
  685      01010101 
- 686              	.LASF25:
- 687 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 687      73657273 
- 687      5C427279 
- 687      616E204F 
- 687      72616275 
- 688 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 688      534F435F 
- 688      50524F47 
- 688      52414D53 
- 688      5C50536F 
- 689 005e 2E637964 		.ascii	".cydsn\000"
- 689      736E00
- 690              	.LASF18:
- 691 0065 55707065 		.ascii	"UpperSrcAddress\000"
- 691      72537263 
- 691      41646472 
- 691      65737300 
- 692              	.LASF22:
- 693 0075 4379446D 		.ascii	"CyDmaChPriority\000"
- 693      61436850 
- 693      72696F72 
- 693      69747900 
- 694              	.LASF17:
- 695 0085 52657165 		.ascii	"ReqestPerBurst\000"
- 695      73745065 
- 695      72427572 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 16
+ 686              	.LASF15:
+ 687 0000 63797374 		.ascii	"cystatus\000"
+ 687      61747573 
+ 687      00
+ 688              	.LASF18:
+ 689 0009 55707065 		.ascii	"UpperSrcAddress\000"
+ 689      72537263 
+ 689      41646472 
+ 689      65737300 
+ 690              	.LASF22:
+ 691 0019 4379446D 		.ascii	"CyDmaChPriority\000"
+ 691      61436850 
+ 691      72696F72 
+ 691      69747900 
+ 692              	.LASF25:
+ 693 0029 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 693      73657273 
+ 693      5C4C4149 
+ 693      525C446F 
+ 693      63756D65 
+ 694 0056 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 694      52414D53 
+ 694      5C50536F 
+ 694      43355C52 
+ 694      6F616472 
+ 695              	.LASF17:
+ 696 0085 52657165 		.ascii	"ReqestPerBurst\000"
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 16
 
 
- 695      737400
- 696              	.LASF27:
- 697 0094 55534246 		.ascii	"USBFS_ep2_DmaRelease\000"
- 697      535F6570 
- 697      325F446D 
- 697      6152656C 
- 697      65617365 
- 698              	.LASF4:
- 699 00a9 73686F72 		.ascii	"short unsigned int\000"
- 699      7420756E 
- 699      7369676E 
- 699      65642069 
- 699      6E7400
- 700              	.LASF24:
- 701 00bc 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_ep2_dma.c\000"
- 701      6E657261 
- 701      7465645F 
- 701      536F7572 
- 701      63655C50 
- 702              	.LASF26:
- 703 00e5 55534246 		.ascii	"USBFS_ep2_DmaInitialize\000"
- 703      535F6570 
- 703      325F446D 
- 703      61496E69 
- 703      7469616C 
- 704              	.LASF13:
- 705 00fd 666C6F61 		.ascii	"float\000"
- 705      7400
- 706              	.LASF2:
- 707 0103 756E7369 		.ascii	"unsigned char\000"
- 707      676E6564 
- 707      20636861 
- 707      7200
- 708              	.LASF16:
- 709 0111 42757273 		.ascii	"BurstCount\000"
- 709      74436F75 
- 709      6E7400
- 710              	.LASF6:
- 711 011c 6C6F6E67 		.ascii	"long unsigned int\000"
- 711      20756E73 
- 711      69676E65 
- 711      6420696E 
- 711      7400
- 712              	.LASF11:
- 713 012e 75696E74 		.ascii	"uint8\000"
- 713      3800
- 714              	.LASF28:
- 715 0134 55534246 		.ascii	"USBFS_ep2_DmaHandle\000"
- 715      535F6570 
- 715      325F446D 
- 715      6148616E 
- 715      646C6500 
- 716              	.LASF14:
- 717 0148 646F7562 		.ascii	"double\000"
- 717      6C6500
- 718              	.LASF12:
- 719 014f 75696E74 		.ascii	"uint16\000"
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 17
+ 696      73745065 
+ 696      72427572 
+ 696      737400
+ 697              	.LASF27:
+ 698 0094 55534246 		.ascii	"USBFS_ep2_DmaRelease\000"
+ 698      535F6570 
+ 698      325F446D 
+ 698      6152656C 
+ 698      65617365 
+ 699              	.LASF4:
+ 700 00a9 73686F72 		.ascii	"short unsigned int\000"
+ 700      7420756E 
+ 700      7369676E 
+ 700      65642069 
+ 700      6E7400
+ 701              	.LASF24:
+ 702 00bc 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_ep2_dma.c\000"
+ 702      6E657261 
+ 702      7465645F 
+ 702      536F7572 
+ 702      63655C50 
+ 703              	.LASF26:
+ 704 00e5 55534246 		.ascii	"USBFS_ep2_DmaInitialize\000"
+ 704      535F6570 
+ 704      325F446D 
+ 704      61496E69 
+ 704      7469616C 
+ 705              	.LASF13:
+ 706 00fd 666C6F61 		.ascii	"float\000"
+ 706      7400
+ 707              	.LASF2:
+ 708 0103 756E7369 		.ascii	"unsigned char\000"
+ 708      676E6564 
+ 708      20636861 
+ 708      7200
+ 709              	.LASF16:
+ 710 0111 42757273 		.ascii	"BurstCount\000"
+ 710      74436F75 
+ 710      6E7400
+ 711              	.LASF6:
+ 712 011c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 712      20756E73 
+ 712      69676E65 
+ 712      6420696E 
+ 712      7400
+ 713              	.LASF11:
+ 714 012e 75696E74 		.ascii	"uint8\000"
+ 714      3800
+ 715              	.LASF28:
+ 716 0134 55534246 		.ascii	"USBFS_ep2_DmaHandle\000"
+ 716      535F6570 
+ 716      325F446D 
+ 716      6148616E 
+ 716      646C6500 
+ 717              	.LASF14:
+ 718 0148 646F7562 		.ascii	"double\000"
+ 718      6C6500
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 17
 
 
- 719      313600
- 720              	.LASF15:
- 721 0156 63797374 		.ascii	"cystatus\000"
- 721      61747573 
- 721      00
- 722              	.LASF23:
- 723 015f 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 723      4320342E 
- 723      392E3320 
- 723      32303135 
- 723      30333033 
- 724 0192 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 724      20726576 
- 724      6973696F 
- 724      6E203232 
- 724      31323230 
- 725 01c5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 725      66756E63 
- 725      74696F6E 
- 725      2D736563 
- 725      74696F6E 
- 726              	.LASF0:
- 727 01ed 756E7369 		.ascii	"unsigned int\000"
- 727      676E6564 
- 727      20696E74 
- 727      00
- 728              	.LASF8:
- 729 01fa 6C6F6E67 		.ascii	"long long unsigned int\000"
- 729      206C6F6E 
- 729      6720756E 
- 729      7369676E 
- 729      65642069 
- 730              	.LASF19:
- 731 0211 55707065 		.ascii	"UpperDestAddress\000"
- 731      72446573 
- 731      74416464 
- 731      72657373 
- 731      00
- 732              	.LASF9:
- 733 0222 73697A65 		.ascii	"sizetype\000"
- 733      74797065 
- 733      00
- 734              	.LASF7:
- 735 022b 6C6F6E67 		.ascii	"long long int\000"
- 735      206C6F6E 
- 735      6720696E 
- 735      7400
- 736              	.LASF21:
- 737 0239 4379446D 		.ascii	"CyDmaChSetExtendedAddress\000"
- 737      61436853 
- 737      65744578 
- 737      74656E64 
- 737      65644164 
- 738              	.LASF10:
- 739 0253 63686172 		.ascii	"char\000"
- 739      00
- 740              	.LASF3:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccrTWgm4.s 			page 18
+ 719              	.LASF12:
+ 720 014f 75696E74 		.ascii	"uint16\000"
+ 720      313600
+ 721              	.LASF23:
+ 722 0156 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 722      4320342E 
+ 722      392E3320 
+ 722      32303135 
+ 722      30333033 
+ 723 0189 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 723      20726576 
+ 723      6973696F 
+ 723      6E203232 
+ 723      31323230 
+ 724 01bc 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 724      66756E63 
+ 724      74696F6E 
+ 724      2D736563 
+ 724      74696F6E 
+ 725              	.LASF0:
+ 726 01e4 756E7369 		.ascii	"unsigned int\000"
+ 726      676E6564 
+ 726      20696E74 
+ 726      00
+ 727              	.LASF8:
+ 728 01f1 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 728      206C6F6E 
+ 728      6720756E 
+ 728      7369676E 
+ 728      65642069 
+ 729              	.LASF19:
+ 730 0208 55707065 		.ascii	"UpperDestAddress\000"
+ 730      72446573 
+ 730      74416464 
+ 730      72657373 
+ 730      00
+ 731              	.LASF9:
+ 732 0219 73697A65 		.ascii	"sizetype\000"
+ 732      74797065 
+ 732      00
+ 733              	.LASF7:
+ 734 0222 6C6F6E67 		.ascii	"long long int\000"
+ 734      206C6F6E 
+ 734      6720696E 
+ 734      7400
+ 735              	.LASF21:
+ 736 0230 4379446D 		.ascii	"CyDmaChSetExtendedAddress\000"
+ 736      61436853 
+ 736      65744578 
+ 736      74656E64 
+ 736      65644164 
+ 737              	.LASF10:
+ 738 024a 63686172 		.ascii	"char\000"
+ 738      00
+ 739              	.LASF3:
+ 740 024f 73686F72 		.ascii	"short int\000"
+ 740      7420696E 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc7tLUgX.s 			page 18
 
 
- 741 0258 73686F72 		.ascii	"short int\000"
- 741      7420696E 
- 741      7400
- 742              	.LASF5:
- 743 0262 6C6F6E67 		.ascii	"long int\000"
- 743      20696E74 
- 743      00
- 744              	.LASF1:
- 745 026b 7369676E 		.ascii	"signed char\000"
- 745      65642063 
- 745      68617200 
- 746              	.LASF29:
- 747 0277 4379446D 		.ascii	"CyDmaChDisable\000"
- 747      61436844 
- 747      69736162 
- 747      6C6500
- 748              	.LASF20:
- 749 0286 4379446D 		.ascii	"CyDmaChSetConfiguration\000"
- 749      61436853 
- 749      6574436F 
- 749      6E666967 
- 749      75726174 
- 750              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 740      7400
+ 741              	.LASF5:
+ 742 0259 6C6F6E67 		.ascii	"long int\000"
+ 742      20696E74 
+ 742      00
+ 743              	.LASF1:
+ 744 0262 7369676E 		.ascii	"signed char\000"
+ 744      65642063 
+ 744      68617200 
+ 745              	.LASF29:
+ 746 026e 4379446D 		.ascii	"CyDmaChDisable\000"
+ 746      61436844 
+ 746      69736162 
+ 746      6C6500
+ 747              	.LASF20:
+ 748 027d 4379446D 		.ascii	"CyDmaChSetConfiguration\000"
+ 748      61436853 
+ 748      6574436F 
+ 748      6E666967 
+ 748      75726174 
+ 749              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
