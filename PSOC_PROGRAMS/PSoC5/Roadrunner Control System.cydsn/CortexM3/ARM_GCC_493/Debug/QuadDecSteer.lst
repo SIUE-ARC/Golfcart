@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
   29:.\Generated_Source\PSoC5/QuadDecSteer.c **** * Function Name: QuadDecSteer_Init
   30:.\Generated_Source\PSoC5/QuadDecSteer.c **** ********************************************************************************
   31:.\Generated_Source\PSoC5/QuadDecSteer.c **** *
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/QuadDecSteer.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
   69:.\Generated_Source\PSoC5/QuadDecSteer.c **** *******************************************************************************/
   70:.\Generated_Source\PSoC5/QuadDecSteer.c **** void QuadDecSteer_Enable(void) 
   71:.\Generated_Source\PSoC5/QuadDecSteer.c **** {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 3
 
 
   72:.\Generated_Source\PSoC5/QuadDecSteer.c ****     uint8 enableInterrupts;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  126:.\Generated_Source\PSoC5/QuadDecSteer.c ****         QuadDecSteer_Cnt16_WriteCounter(QuadDecSteer_COUNTER_INIT_VALUE);
  127:.\Generated_Source\PSoC5/QuadDecSteer.c ****     #endif /* QuadDecSteer_COUNTER_SIZE == QuadDecSteer_COUNTER_SIZE_8_BIT */
  128:.\Generated_Source\PSoC5/QuadDecSteer.c ****     
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 4
 
 
  129:.\Generated_Source\PSoC5/QuadDecSteer.c ****     #if (QuadDecSteer_COUNTER_SIZE == QuadDecSteer_COUNTER_SIZE_32_BIT)        
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
   56              		.loc 1 170 0
   57 0006 FFF7FEFF 		bl	CyEnterCriticalSection
   58              	.LVL1:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 5
 
 
  171:.\Generated_Source\PSoC5/QuadDecSteer.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  201:.\Generated_Source\PSoC5/QuadDecSteer.c **** *******************************************************************************/
  202:.\Generated_Source\PSoC5/QuadDecSteer.c **** int16 QuadDecSteer_GetCounter(void) 
  203:.\Generated_Source\PSoC5/QuadDecSteer.c **** {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 6
 
 
   83              		.loc 1 203 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  107              		.thumb_func
  108              		.type	QuadDecSteer_SetCounter, %function
  109              	QuadDecSteer_SetCounter:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 7
 
 
  110              	.LFB5:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  267:.\Generated_Source\PSoC5/QuadDecSteer.c ****         }
  268:.\Generated_Source\PSoC5/QuadDecSteer.c ****         else
  269:.\Generated_Source\PSoC5/QuadDecSteer.c ****         {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 8
 
 
  270:.\Generated_Source\PSoC5/QuadDecSteer.c ****             count = QuadDecSteer_COUNTER_INIT_VALUE - (uint16)(-value);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  304:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     0        Counter overflow.
  305:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     1        Counter underflow.
  306:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     2        Counter reset due to index, if index input is used.
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 9
 
 
  307:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     3        Invalid A, B inputs state transition.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  178              		.cfi_startproc
  179              		@ args = 0, pretend = 0, frame = 0
  180              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 10
 
 
  181              		@ link register save eliminated.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  223 0014 43F01003 		orr	r3, r3, #16
  224 0018 1370     		strb	r3, [r2]
   84:.\Generated_Source\PSoC5/QuadDecSteer.c **** 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 11
 
 
  225              		.loc 1 84 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  273              		.align	2
  274              	.L25:
  275 0020 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 12
 
 
  276              		.cfi_endproc
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  307              		.set	.LANCHOR0,. + 0
  308              		.type	QuadDecSteer_initVar, %object
  309              		.size	QuadDecSteer_initVar, 1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 13
 
 
  310              	QuadDecSteer_initVar:
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  364 005e 08       		.byte	0x8
  365 005f 05       		.byte	0x5
  366 0060 F3020000 		.4byte	.LASF7
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 14
 
 
  367 0064 03       		.uleb128 0x3
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  421 00d8 9C       		.byte	0x9c
  422 00d9 07       		.uleb128 0x7
  423 00da A5000000 		.4byte	.LASF21
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 15
 
 
  424 00de 01       		.byte	0x1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  478 0160 00000000 		.4byte	.LFB5
  479 0164 1A000000 		.4byte	.LFE5-.LFB5
  480 0168 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 16
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 16
 
 
  481 0169 9C       		.byte	0x9c
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  535 01e9 5D010000 		.4byte	.LASF18
  536 01ed 01       		.byte	0x1
  537 01ee 48       		.byte	0x48
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 17
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 17
 
 
  538 01ef 79000000 		.4byte	0x79
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  592 026f 00000000 		.4byte	.LFB8
  593 0273 10000000 		.4byte	.LFE8-.LFB8
  594 0277 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 18
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 18
 
 
  595 0278 9C       		.byte	0x9c
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  649 0008 0E       		.uleb128 0xe
  650 0009 1B       		.uleb128 0x1b
  651 000a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 19
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 19
 
 
  652 000b 55       		.uleb128 0x55
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  706 0041 19       		.uleb128 0x19
  707 0042 03       		.uleb128 0x3
  708 0043 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 20
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 20
 
 
  709 0044 3A       		.uleb128 0x3a
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  763 007c 00       		.byte	0
  764 007d 00       		.byte	0
  765 007e 09       		.uleb128 0x9
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 21
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 21
 
 
  766 007f 898201   		.uleb128 0x4109
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  820 00b8 19       		.uleb128 0x19
  821 00b9 03       		.uleb128 0x3
  822 00ba 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 22
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 22
 
 
  823 00bb 3A       		.uleb128 0x3a
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  877 00f2 0E       		.uleb128 0xe
  878 00f3 3A       		.uleb128 0x3a
  879 00f4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 23
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 23
 
 
  880 00f5 3B       		.uleb128 0x3b
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  934 0131 03       		.uleb128 0x3
  935 0132 0E       		.uleb128 0xe
  936 0133 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 24
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 24
 
 
  937 0134 0B       		.uleb128 0xb
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  991 016a 3A       		.uleb128 0x3a
  992 016b 0B       		.uleb128 0xb
  993 016c 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 25
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 25
 
 
  994 016d 0B       		.uleb128 0xb
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  1048 005a 0100     		.2byte	0x1
  1049 005c 50       		.byte	0x50
  1050 005d 00000000 		.4byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 26
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 26
 
 
  1051 0061 00000000 		.4byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  1105 0040 00000000 		.4byte	.LFB8
  1106 0044 10000000 		.4byte	.LFE8
  1107 0048 00000000 		.4byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 27
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 27
 
 
  1108 004c 00000000 		.4byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  1131 00a5 51756164 		.ascii	"QuadDecSteer_Stop\000"
  1131      44656353 
  1131      74656572 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 28
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 28
 
 
  1131      5F53746F 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  1153      00
  1154              	.LASF28:
  1155 016e 51756164 		.ascii	"QuadDecSteer_GetEvents\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 29
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 29
 
 
  1155      44656353 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  1173      496E7465 
  1174              	.LASF38:
  1175 028e 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 30
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 30
 
 
  1175      73657273 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 1
  1198      74656572 
  1198      5F496E69 
  1198      7400
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccfNPYzf.s 			page 31
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 31
 
 
  1199              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

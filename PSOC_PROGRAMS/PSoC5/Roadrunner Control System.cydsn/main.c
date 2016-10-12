@@ -25,7 +25,8 @@ typedef uint8   byte;
 typedef uint16  hword;
 typedef uint32  word;
 
-byte buffer[BUFFER_SIZE];
+byte obuffer[BUFFER_SIZE];
+byte ibuffer[BUFFER_SIZE];
 
 unsigned int adc_samp[2]   =    {0, 0};
 void init();
@@ -34,6 +35,7 @@ int main()
 {
     /* Variable declarations for USBFS */
     hword length = 4;
+    byte i = 0;
     
     CyGlobalIntEnable; /* Enable global interrupts. */
     init();
@@ -42,11 +44,48 @@ int main()
     USBFS_EnableOutEP(OUT_EP_NUM);
     for(;;)
     {
-        buffer[0] = LO8(adc_samp[0]);
-        buffer[1] = HI8(adc_samp[0]);
-        buffer[2] = LO8(adc_samp[1]);
-        buffer[3] = HI8(adc_samp[1]);
         
+        ibuffer[i] = LO8(adc_samp[0]);
+        ibuffer[i+1] = HI8(adc_samp[0]);
+        ibuffer[i+2] = LO8(adc_samp[1]);
+        ibuffer[i+3] = HI8(adc_samp[1]);
+        i = (i >= BUFFER_SIZE) ? 0:(i+4);
+        
+        /* Check if configuration is changed. */
+        if (0u != USBFS_IsConfigurationChanged())
+        {
+            /* Re-enable endpoint when device is configured. */
+            if (0u != USBFS_GetConfiguration())
+            {
+                /* Enable OUT endpoint to receive data from host. */
+                USBFS_EnableOutEP(OUT_EP_NUM);
+            }
+        }
+
+        /* Check if data was received. */
+        if (USBFS_OUT_BUFFER_FULL == USBFS_GetEPState(OUT_EP_NUM))
+        {
+            /* Read number of received data bytes. */
+            length = USBFS_GetEPCount(OUT_EP_NUM);
+        }
+        
+        /* Trigger DMA to copy data from OUT endpoint buffer. */
+        #if (USBFS_16BITS_EP_ACCESS_ENABLE)
+            USBFS_ReadOutEP16(OUT_EP_NUM, buffer, length);
+        #else
+            USBFS_ReadOutEP(OUT_EP_NUM, ibuffer, length);
+        #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
+
+        /* Wait until DMA completes copying data from OUT endpoint buffer. */
+        while (USBFS_OUT_BUFFER_FULL == USBFS_GetEPState(OUT_EP_NUM))
+        {
+        }
+        
+        /* Enable OUT endpoint to receive data from host. */
+        USBFS_EnableOutEP(OUT_EP_NUM);
+            
+        length = BUFFER_SIZE;
+            
         //Wait for IN buffer to become empty (host has read data)
         while(USBFS_IN_BUFFER_EMPTY != USBFS_GetEPAckState(IN_EP_NUM));
         
@@ -58,7 +97,7 @@ int main()
         #if (USBFS_16BITS_EP_ACCESS_ENABLE)
             USBFS_LoadInEP16(IN_EP_NUM, buffer, length);
         #else
-            USBFS_LoadInEP(IN_EP_NUM, buffer, length);
+            USBFS_LoadInEP(IN_EP_NUM, obuffer, length);
         #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
     }
 }

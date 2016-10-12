@@ -2,7 +2,7 @@
 --	Conversion of Roadrunner Control System.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Oct 12 11:34:03 2016
+--	Wed Oct 12 12:19:02 2016
 --
 
 USE cypress.cypress.all;
