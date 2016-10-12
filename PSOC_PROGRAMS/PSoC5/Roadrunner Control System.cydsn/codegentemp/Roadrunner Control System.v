@@ -1,6 +1,6 @@
 // ======================================================================
 // Roadrunner Control System.v generated from TopDesign.cysch
-// 10/12/2016 at 12:19
+// 10/12/2016 at 15:37
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -2656,8 +2656,6 @@ module top ;
     assign Net_2618 = cy_tff_1;
     // -- TFF End --
 
-    assign Net_2620 = 1'h0;
-
 
 	cy_clock_v1_0
 		#(.id("1854a656-47f1-49dd-81cf-e12d65e6167f"),
@@ -2773,6 +2771,8 @@ module top ;
     defparam GND_4.comp_name = "Gnd_v1_0";
     defparam GND_4.port_names = "T1";
     defparam GND_4.width = 1;
+
+    assign Net_2620 = 1'h1;
 
 
 

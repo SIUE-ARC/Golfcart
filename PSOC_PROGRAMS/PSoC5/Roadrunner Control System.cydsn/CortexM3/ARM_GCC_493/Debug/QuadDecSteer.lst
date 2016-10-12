@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
   29:.\Generated_Source\PSoC5/QuadDecSteer.c **** * Function Name: QuadDecSteer_Init
   30:.\Generated_Source\PSoC5/QuadDecSteer.c **** ********************************************************************************
   31:.\Generated_Source\PSoC5/QuadDecSteer.c **** *
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/QuadDecSteer.c **** * Summary:
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
   69:.\Generated_Source\PSoC5/QuadDecSteer.c **** *******************************************************************************/
   70:.\Generated_Source\PSoC5/QuadDecSteer.c **** void QuadDecSteer_Enable(void) 
   71:.\Generated_Source\PSoC5/QuadDecSteer.c **** {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 3
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 3
 
 
   72:.\Generated_Source\PSoC5/QuadDecSteer.c ****     uint8 enableInterrupts;
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  126:.\Generated_Source\PSoC5/QuadDecSteer.c ****         QuadDecSteer_Cnt16_WriteCounter(QuadDecSteer_COUNTER_INIT_VALUE);
  127:.\Generated_Source\PSoC5/QuadDecSteer.c ****     #endif /* QuadDecSteer_COUNTER_SIZE == QuadDecSteer_COUNTER_SIZE_8_BIT */
  128:.\Generated_Source\PSoC5/QuadDecSteer.c ****     
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 4
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 4
 
 
  129:.\Generated_Source\PSoC5/QuadDecSteer.c ****     #if (QuadDecSteer_COUNTER_SIZE == QuadDecSteer_COUNTER_SIZE_32_BIT)        
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
   56              		.loc 1 170 0
   57 0006 FFF7FEFF 		bl	CyEnterCriticalSection
   58              	.LVL1:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 5
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 5
 
 
  171:.\Generated_Source\PSoC5/QuadDecSteer.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  201:.\Generated_Source\PSoC5/QuadDecSteer.c **** *******************************************************************************/
  202:.\Generated_Source\PSoC5/QuadDecSteer.c **** int16 QuadDecSteer_GetCounter(void) 
  203:.\Generated_Source\PSoC5/QuadDecSteer.c **** {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 6
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 6
 
 
   83              		.loc 1 203 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  107              		.thumb_func
  108              		.type	QuadDecSteer_SetCounter, %function
  109              	QuadDecSteer_SetCounter:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 7
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 7
 
 
  110              	.LFB5:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  267:.\Generated_Source\PSoC5/QuadDecSteer.c ****         }
  268:.\Generated_Source\PSoC5/QuadDecSteer.c ****         else
  269:.\Generated_Source\PSoC5/QuadDecSteer.c ****         {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 8
 
 
  270:.\Generated_Source\PSoC5/QuadDecSteer.c ****             count = QuadDecSteer_COUNTER_INIT_VALUE - (uint16)(-value);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  304:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     0        Counter overflow.
  305:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     1        Counter underflow.
  306:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     2        Counter reset due to index, if index input is used.
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 9
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 9
 
 
  307:.\Generated_Source\PSoC5/QuadDecSteer.c **** *     3        Invalid A, B inputs state transition.
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  178              		.cfi_startproc
  179              		@ args = 0, pretend = 0, frame = 0
  180              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 10
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 10
 
 
  181              		@ link register save eliminated.
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  223 0014 43F01003 		orr	r3, r3, #16
  224 0018 1370     		strb	r3, [r2]
   84:.\Generated_Source\PSoC5/QuadDecSteer.c **** 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 11
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 11
 
 
  225              		.loc 1 84 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  273              		.align	2
  274              	.L25:
  275 0020 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 12
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 12
 
 
  276              		.cfi_endproc
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  307              		.set	.LANCHOR0,. + 0
  308              		.type	QuadDecSteer_initVar, %object
  309              		.size	QuadDecSteer_initVar, 1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 13
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 13
 
 
  310              	QuadDecSteer_initVar:
@@ -753,7 +753,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  339 0033 03       		.uleb128 0x3
  340 0034 01       		.byte	0x1
  341 0035 06       		.byte	0x6
- 342 0036 5A030000 		.4byte	.LASF1
+ 342 0036 63030000 		.4byte	.LASF1
  343 003a 03       		.uleb128 0x3
  344 003b 01       		.byte	0x1
  345 003c 08       		.byte	0x8
@@ -761,7 +761,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  347 0041 03       		.uleb128 0x3
  348 0042 02       		.byte	0x2
  349 0043 05       		.byte	0x5
- 350 0044 1E030000 		.4byte	.LASF3
+ 350 0044 27030000 		.4byte	.LASF3
  351 0048 03       		.uleb128 0x3
  352 0049 02       		.byte	0x2
  353 004a 07       		.byte	0x7
@@ -769,7 +769,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  355 004f 03       		.uleb128 0x3
  356 0050 04       		.byte	0x4
  357 0051 05       		.byte	0x5
- 358 0052 4C030000 		.4byte	.LASF5
+ 358 0052 55030000 		.4byte	.LASF5
  359 0056 03       		.uleb128 0x3
  360 0057 04       		.byte	0x4
  361 0058 07       		.byte	0x7
@@ -777,8 +777,8 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  363 005d 03       		.uleb128 0x3
  364 005e 08       		.byte	0x8
  365 005f 05       		.byte	0x5
- 366 0060 F3020000 		.4byte	.LASF7
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 14
+ 366 0060 FC020000 		.4byte	.LASF7
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 14
 
 
  367 0064 03       		.uleb128 0x3
@@ -788,13 +788,13 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  371 006b 03       		.uleb128 0x3
  372 006c 04       		.byte	0x4
  373 006d 07       		.byte	0x7
- 374 006e EA020000 		.4byte	.LASF9
+ 374 006e F3020000 		.4byte	.LASF9
  375 0072 03       		.uleb128 0x3
  376 0073 01       		.byte	0x1
  377 0074 08       		.byte	0x8
- 378 0075 55030000 		.4byte	.LASF10
+ 378 0075 5E030000 		.4byte	.LASF10
  379 0079 04       		.uleb128 0x4
- 380 007a 28030000 		.4byte	.LASF11
+ 380 007a 31030000 		.4byte	.LASF11
  381 007e 02       		.byte	0x2
  382 007f 9201     		.2byte	0x192
  383 0081 3A000000 		.4byte	0x3a
@@ -829,7 +829,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  412 00c3 05       		.uleb128 0x5
  413 00c4 79000000 		.4byte	0x79
  414 00c8 06       		.uleb128 0x6
- 415 00c9 66030000 		.4byte	.LASF39
+ 415 00c9 6F030000 		.4byte	.LASF39
  416 00cd 01       		.byte	0x1
  417 00ce 2A       		.byte	0x2a
  418 00cf 00000000 		.4byte	.LFB0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  421 00d8 9C       		.byte	0x9c
  422 00d9 07       		.uleb128 0x7
  423 00da A5000000 		.4byte	.LASF21
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 15
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 15
 
 
  424 00de 01       		.byte	0x1
@@ -892,13 +892,13 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  472 0153 AD020000 		.4byte	0x2ad
  473 0157 00       		.byte	0
  474 0158 0C       		.uleb128 0xc
- 475 0159 01030000 		.4byte	.LASF22
+ 475 0159 0A030000 		.4byte	.LASF22
  476 015d 01       		.byte	0x1
  477 015e 0201     		.2byte	0x102
  478 0160 00000000 		.4byte	.LFB5
  479 0164 1A000000 		.4byte	.LFE5-.LFB5
  480 0168 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 16
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 16
 
 
  481 0169 9C       		.byte	0x9c
@@ -938,7 +938,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  515 01bf 9C       		.byte	0x9c
  516 01c0 D3010000 		.4byte	0x1d3
  517 01c4 10       		.uleb128 0x10
- 518 01c5 19030000 		.4byte	.LASF25
+ 518 01c5 22030000 		.4byte	.LASF25
  519 01c9 01       		.byte	0x1
  520 01ca 4C01     		.2byte	0x14c
  521 01cc 79000000 		.4byte	0x79
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  535 01e9 5D010000 		.4byte	.LASF18
  536 01ed 01       		.byte	0x1
  537 01ee 48       		.byte	0x48
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 17
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 17
 
 
  538 01ef 79000000 		.4byte	0x79
@@ -1011,14 +1011,14 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  585 025e D3010000 		.4byte	0x1d3
  586 0262 00       		.byte	0
  587 0263 0F       		.uleb128 0xf
- 588 0264 2E030000 		.4byte	.LASF29
+ 588 0264 37030000 		.4byte	.LASF29
  589 0268 01       		.byte	0x1
  590 0269 6801     		.2byte	0x168
  591 026b 79000000 		.4byte	0x79
  592 026f 00000000 		.4byte	.LFB8
  593 0273 10000000 		.4byte	.LFE8-.LFB8
  594 0277 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 18
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 18
 
 
  595 0278 9C       		.byte	0x9c
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  649 0008 0E       		.uleb128 0xe
  650 0009 1B       		.uleb128 0x1b
  651 000a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 19
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 19
 
 
  652 000b 55       		.uleb128 0x55
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  706 0041 19       		.uleb128 0x19
  707 0042 03       		.uleb128 0x3
  708 0043 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 20
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 20
 
 
  709 0044 3A       		.uleb128 0x3a
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  763 007c 00       		.byte	0
  764 007d 00       		.byte	0
  765 007e 09       		.uleb128 0x9
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 21
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 21
 
 
  766 007f 898201   		.uleb128 0x4109
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  820 00b8 19       		.uleb128 0x19
  821 00b9 03       		.uleb128 0x3
  822 00ba 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 22
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 22
 
 
  823 00bb 3A       		.uleb128 0x3a
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  877 00f2 0E       		.uleb128 0xe
  878 00f3 3A       		.uleb128 0x3a
  879 00f4 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 23
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 23
 
 
  880 00f5 3B       		.uleb128 0x3b
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  934 0131 03       		.uleb128 0x3
  935 0132 0E       		.uleb128 0xe
  936 0133 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 24
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 24
 
 
  937 0134 0B       		.uleb128 0xb
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  991 016a 3A       		.uleb128 0x3a
  992 016b 0B       		.uleb128 0xb
  993 016c 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 25
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 25
 
 
  994 016d 0B       		.uleb128 0xb
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  1048 005a 0100     		.2byte	0x1
  1049 005c 50       		.byte	0x50
  1050 005d 00000000 		.4byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 26
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 26
 
 
  1051 0061 00000000 		.4byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  1105 0040 00000000 		.4byte	.LFB8
  1106 0044 10000000 		.4byte	.LFE8
  1107 0048 00000000 		.4byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 27
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 27
 
 
  1108 004c 00000000 		.4byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  1131 00a5 51756164 		.ascii	"QuadDecSteer_Stop\000"
  1131      44656353 
  1131      74656572 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 28
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 28
 
 
  1131      5F53746F 
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  1153      00
  1154              	.LASF28:
  1155 016e 51756164 		.ascii	"QuadDecSteer_GetEvents\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 29
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 29
 
 
  1155      44656353 
@@ -1737,68 +1737,70 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 1
  1173      5F536574 
  1173      496E7465 
  1174              	.LASF38:
- 1175 028e 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 30
+ 1175 028e 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 30
 
 
  1175      73657273 
- 1175      5C4C4149 
- 1175      525C446F 
- 1175      63756D65 
- 1176 02bb 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 1175      5C427279 
+ 1175      616E204F 
+ 1175      72616275 
+ 1176 02bc 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
+ 1176      534F435F 
+ 1176      50524F47 
  1176      52414D53 
  1176      5C50536F 
- 1176      43355C52 
- 1176      6F616472 
- 1177              	.LASF9:
- 1178 02ea 73697A65 		.ascii	"sizetype\000"
- 1178      74797065 
- 1178      00
- 1179              	.LASF7:
- 1180 02f3 6C6F6E67 		.ascii	"long long int\000"
- 1180      206C6F6E 
- 1180      6720696E 
- 1180      7400
- 1181              	.LASF22:
- 1182 0301 51756164 		.ascii	"QuadDecSteer_SetCounter\000"
- 1182      44656353 
- 1182      74656572 
- 1182      5F536574 
- 1182      436F756E 
- 1183              	.LASF25:
- 1184 0319 6D61736B 		.ascii	"mask\000"
- 1184      00
- 1185              	.LASF3:
- 1186 031e 73686F72 		.ascii	"short int\000"
- 1186      7420696E 
- 1186      7400
- 1187              	.LASF11:
- 1188 0328 75696E74 		.ascii	"uint8\000"
- 1188      3800
- 1189              	.LASF29:
- 1190 032e 51756164 		.ascii	"QuadDecSteer_GetInterruptMask\000"
- 1190      44656353 
- 1190      74656572 
- 1190      5F476574 
- 1190      496E7465 
- 1191              	.LASF5:
- 1192 034c 6C6F6E67 		.ascii	"long int\000"
- 1192      20696E74 
- 1192      00
- 1193              	.LASF10:
- 1194 0355 63686172 		.ascii	"char\000"
- 1194      00
- 1195              	.LASF1:
- 1196 035a 7369676E 		.ascii	"signed char\000"
- 1196      65642063 
- 1196      68617200 
- 1197              	.LASF39:
- 1198 0366 51756164 		.ascii	"QuadDecSteer_Init\000"
- 1198      44656353 
- 1198      74656572 
- 1198      5F496E69 
- 1198      7400
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc1c2KFx.s 			page 31
+ 1177 02ec 2E637964 		.ascii	".cydsn\000"
+ 1177      736E00
+ 1178              	.LASF9:
+ 1179 02f3 73697A65 		.ascii	"sizetype\000"
+ 1179      74797065 
+ 1179      00
+ 1180              	.LASF7:
+ 1181 02fc 6C6F6E67 		.ascii	"long long int\000"
+ 1181      206C6F6E 
+ 1181      6720696E 
+ 1181      7400
+ 1182              	.LASF22:
+ 1183 030a 51756164 		.ascii	"QuadDecSteer_SetCounter\000"
+ 1183      44656353 
+ 1183      74656572 
+ 1183      5F536574 
+ 1183      436F756E 
+ 1184              	.LASF25:
+ 1185 0322 6D61736B 		.ascii	"mask\000"
+ 1185      00
+ 1186              	.LASF3:
+ 1187 0327 73686F72 		.ascii	"short int\000"
+ 1187      7420696E 
+ 1187      7400
+ 1188              	.LASF11:
+ 1189 0331 75696E74 		.ascii	"uint8\000"
+ 1189      3800
+ 1190              	.LASF29:
+ 1191 0337 51756164 		.ascii	"QuadDecSteer_GetInterruptMask\000"
+ 1191      44656353 
+ 1191      74656572 
+ 1191      5F476574 
+ 1191      496E7465 
+ 1192              	.LASF5:
+ 1193 0355 6C6F6E67 		.ascii	"long int\000"
+ 1193      20696E74 
+ 1193      00
+ 1194              	.LASF10:
+ 1195 035e 63686172 		.ascii	"char\000"
+ 1195      00
+ 1196              	.LASF1:
+ 1197 0363 7369676E 		.ascii	"signed char\000"
+ 1197      65642063 
+ 1197      68617200 
+ 1198              	.LASF39:
+ 1199 036f 51756164 		.ascii	"QuadDecSteer_Init\000"
+ 1199      44656353 
+ 1199      74656572 
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cc36xDX8.s 			page 31
 
 
- 1199              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1199      5F496E69 
+ 1199      7400
+ 1200              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

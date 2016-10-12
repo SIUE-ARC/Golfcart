@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
   29:.\Generated_Source\PSoC5/SENCA.c **** * \brief Writes the value to the physical port (data output register), masking
   30:.\Generated_Source\PSoC5/SENCA.c **** *  and shifting the bits appropriately. 
   31:.\Generated_Source\PSoC5/SENCA.c **** *
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/SENCA.c **** * The data output register controls the signal applied to the physical pin in 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
   52              		.align	2
   53              		.global	SENCA_SetDriveMode
   54              		.thumb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 3
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 3
 
 
   55              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
   77 0014 18500040 		.word	1073762328
   78              		.cfi_endproc
   79              	.LFE1:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 4
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 4
 
 
   80              		.size	SENCA_SetDriveMode, .-SENCA_SetDriveMode
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  110              		.thumb
  111              		.thumb_func
  112              		.type	SENCA_ReadDataReg, %function
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 5
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 5
 
 
  113              	SENCA_ReadDataReg:
@@ -298,49 +298,49 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  139 0004 0400     		.2byte	0x4
  140 0006 00000000 		.4byte	.Ldebug_abbrev0
  141 000a 04       		.byte	0x4
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 6
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 6
 
 
  142 000b 01       		.uleb128 0x1
- 143 000c F0000000 		.4byte	.LASF20
+ 143 000c F9000000 		.4byte	.LASF20
  144 0010 01       		.byte	0x1
- 145 0011 CF000000 		.4byte	.LASF21
- 146 0015 11000000 		.4byte	.LASF22
+ 145 0011 D8000000 		.4byte	.LASF21
+ 146 0015 00000000 		.4byte	.LASF22
  147 0019 00000000 		.4byte	.Ldebug_ranges0+0
  148 001d 00000000 		.4byte	0
  149 0021 00000000 		.4byte	.Ldebug_line0
  150 0025 02       		.uleb128 0x2
  151 0026 01       		.byte	0x1
  152 0027 06       		.byte	0x6
- 153 0028 F2010000 		.4byte	.LASF0
+ 153 0028 FB010000 		.4byte	.LASF0
  154 002c 02       		.uleb128 0x2
  155 002d 01       		.byte	0x1
  156 002e 08       		.byte	0x8
- 157 002f 90000000 		.4byte	.LASF1
+ 157 002f 99000000 		.4byte	.LASF1
  158 0033 02       		.uleb128 0x2
  159 0034 02       		.byte	0x2
  160 0035 05       		.byte	0x5
- 161 0036 BA010000 		.4byte	.LASF2
+ 161 0036 C3010000 		.4byte	.LASF2
  162 003a 02       		.uleb128 0x2
  163 003b 02       		.byte	0x2
  164 003c 07       		.byte	0x7
- 165 003d B5000000 		.4byte	.LASF3
+ 165 003d BE000000 		.4byte	.LASF3
  166 0041 02       		.uleb128 0x2
  167 0042 04       		.byte	0x4
  168 0043 05       		.byte	0x5
- 169 0044 D6010000 		.4byte	.LASF4
+ 169 0044 DF010000 		.4byte	.LASF4
  170 0048 02       		.uleb128 0x2
  171 0049 04       		.byte	0x4
  172 004a 07       		.byte	0x7
- 173 004b A3000000 		.4byte	.LASF5
+ 173 004b AC000000 		.4byte	.LASF5
  174 004f 02       		.uleb128 0x2
  175 0050 08       		.byte	0x8
  176 0051 05       		.byte	0x5
- 177 0052 A7010000 		.4byte	.LASF6
+ 177 0052 B0010000 		.4byte	.LASF6
  178 0056 02       		.uleb128 0x2
  179 0057 08       		.byte	0x8
  180 0058 07       		.byte	0x7
- 181 0059 8B010000 		.4byte	.LASF7
+ 181 0059 94010000 		.4byte	.LASF7
  182 005d 03       		.uleb128 0x3
  183 005e 04       		.byte	0x4
  184 005f 05       		.byte	0x5
@@ -348,36 +348,36 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  186 0064 02       		.uleb128 0x2
  187 0065 04       		.byte	0x4
  188 0066 07       		.byte	0x7
- 189 0067 7E010000 		.4byte	.LASF8
+ 189 0067 87010000 		.4byte	.LASF8
  190 006b 04       		.uleb128 0x4
- 191 006c D0010000 		.4byte	.LASF12
+ 191 006c D9010000 		.4byte	.LASF12
  192 0070 02       		.byte	0x2
  193 0071 9201     		.2byte	0x192
  194 0073 2C000000 		.4byte	0x2c
  195 0077 02       		.uleb128 0x2
  196 0078 04       		.byte	0x4
  197 0079 04       		.byte	0x4
- 198 007a 8A000000 		.4byte	.LASF9
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 7
+ 198 007a 93000000 		.4byte	.LASF9
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 7
 
 
  199 007e 02       		.uleb128 0x2
  200 007f 08       		.byte	0x8
  201 0080 04       		.byte	0x4
- 202 0081 C8000000 		.4byte	.LASF10
+ 202 0081 D1000000 		.4byte	.LASF10
  203 0085 02       		.uleb128 0x2
  204 0086 01       		.byte	0x1
  205 0087 08       		.byte	0x8
- 206 0088 B5010000 		.4byte	.LASF11
+ 206 0088 BE010000 		.4byte	.LASF11
  207 008c 04       		.uleb128 0x4
- 208 008d 9E000000 		.4byte	.LASF13
+ 208 008d A7000000 		.4byte	.LASF13
  209 0091 02       		.byte	0x2
  210 0092 3C02     		.2byte	0x23c
  211 0094 98000000 		.4byte	0x98
  212 0098 05       		.uleb128 0x5
  213 0099 6B000000 		.4byte	0x6b
  214 009d 06       		.uleb128 0x6
- 215 009e C4010000 		.4byte	.LASF14
+ 215 009e CD010000 		.4byte	.LASF14
  216 00a2 01       		.byte	0x1
  217 00a3 39       		.byte	0x39
  218 00a4 00000000 		.4byte	.LFB0
@@ -386,13 +386,13 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  221 00ad 9C       		.byte	0x9c
  222 00ae CF000000 		.4byte	0xcf
  223 00b2 07       		.uleb128 0x7
- 224 00b3 0B000000 		.4byte	.LASF16
+ 224 00b3 70000000 		.4byte	.LASF16
  225 00b7 01       		.byte	0x1
  226 00b8 39       		.byte	0x39
  227 00b9 6B000000 		.4byte	0x6b
  228 00bd 00000000 		.4byte	.LLST0
  229 00c1 08       		.uleb128 0x8
- 230 00c2 6D000000 		.4byte	.LASF23
+ 230 00c2 76000000 		.4byte	.LASF23
  231 00c6 01       		.byte	0x1
  232 00c7 3B       		.byte	0x3b
  233 00c8 6B000000 		.4byte	0x6b
@@ -400,7 +400,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  235 00cd 53       		.byte	0x53
  236 00ce 00       		.byte	0
  237 00cf 06       		.uleb128 0x6
- 238 00d0 DF010000 		.4byte	.LASF15
+ 238 00d0 E8010000 		.4byte	.LASF15
  239 00d4 01       		.byte	0x1
  240 00d5 5A       		.byte	0x5a
  241 00d6 00000000 		.4byte	.LFB1
@@ -409,16 +409,16 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  244 00df 9C       		.byte	0x9c
  245 00e0 F4000000 		.4byte	0xf4
  246 00e4 07       		.uleb128 0x7
- 247 00e5 A2010000 		.4byte	.LASF17
+ 247 00e5 AB010000 		.4byte	.LASF17
  248 00e9 01       		.byte	0x1
  249 00ea 5A       		.byte	0x5a
  250 00eb 6B000000 		.4byte	0x6b
  251 00ef 21000000 		.4byte	.LLST1
  252 00f3 00       		.byte	0
  253 00f4 09       		.uleb128 0x9
- 254 00f5 00000000 		.4byte	.LASF18
+ 254 00f5 65000000 		.4byte	.LASF18
  255 00f9 01       		.byte	0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 8
 
 
  256 00fa 71       		.byte	0x71
@@ -428,7 +428,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  260 0107 01       		.uleb128 0x1
  261 0108 9C       		.byte	0x9c
  262 0109 09       		.uleb128 0x9
- 263 010a 78000000 		.4byte	.LASF19
+ 263 010a 81000000 		.4byte	.LASF19
  264 010e 01       		.byte	0x1
  265 010f 8D       		.byte	0x8d
  266 0110 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  310 0024 0B       		.uleb128 0xb
  311 0025 03       		.uleb128 0x3
  312 0026 08       		.uleb128 0x8
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 9
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 9
 
 
  313 0027 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  367 005e 3B       		.uleb128 0x3b
  368 005f 0B       		.uleb128 0xb
  369 0060 49       		.uleb128 0x49
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 10
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 10
 
 
  370 0061 13       		.uleb128 0x13
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  424 000f 18000000 		.4byte	.LFE0
  425 0013 0400     		.2byte	0x4
  426 0015 F3       		.byte	0xf3
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 11
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 11
 
 
  427 0016 01       		.uleb128 0x1
@@ -657,136 +657,138 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 1
  478      00000201 
  478      FB0E0D00 
  478      01010101 
- 479              	.LASF18:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 12
+ 479              	.LASF22:
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 12
 
 
- 480 0000 53454E43 		.ascii	"SENCA_Read\000"
- 480      415F5265 
- 480      616400
- 481              	.LASF16:
- 482 000b 76616C75 		.ascii	"value\000"
- 482      6500
- 483              	.LASF22:
- 484 0011 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
- 484      73657273 
- 484      5C4C4149 
- 484      525C446F 
- 484      63756D65 
- 485 003e 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
- 485      52414D53 
- 485      5C50536F 
- 485      43355C52 
- 485      6F616472 
- 486              	.LASF23:
- 487 006d 73746174 		.ascii	"staticBits\000"
- 487      69634269 
- 487      747300
- 488              	.LASF19:
- 489 0078 53454E43 		.ascii	"SENCA_ReadDataReg\000"
- 489      415F5265 
- 489      61644461 
- 489      74615265 
- 489      6700
- 490              	.LASF9:
- 491 008a 666C6F61 		.ascii	"float\000"
- 491      7400
- 492              	.LASF1:
- 493 0090 756E7369 		.ascii	"unsigned char\000"
- 493      676E6564 
- 493      20636861 
- 493      7200
- 494              	.LASF13:
- 495 009e 72656738 		.ascii	"reg8\000"
- 495      00
- 496              	.LASF5:
- 497 00a3 6C6F6E67 		.ascii	"long unsigned int\000"
- 497      20756E73 
- 497      69676E65 
- 497      6420696E 
- 497      7400
- 498              	.LASF3:
- 499 00b5 73686F72 		.ascii	"short unsigned int\000"
- 499      7420756E 
- 499      7369676E 
- 499      65642069 
- 499      6E7400
- 500              	.LASF10:
- 501 00c8 646F7562 		.ascii	"double\000"
- 501      6C6500
- 502              	.LASF21:
- 503 00cf 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\SENCA.c\000"
- 503      6E657261 
- 503      7465645F 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 13
+ 480 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
+ 480      73657273 
+ 480      5C427279 
+ 480      616E204F 
+ 480      72616275 
+ 481 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
+ 481      534F435F 
+ 481      50524F47 
+ 481      52414D53 
+ 481      5C50536F 
+ 482 005e 2E637964 		.ascii	".cydsn\000"
+ 482      736E00
+ 483              	.LASF18:
+ 484 0065 53454E43 		.ascii	"SENCA_Read\000"
+ 484      415F5265 
+ 484      616400
+ 485              	.LASF16:
+ 486 0070 76616C75 		.ascii	"value\000"
+ 486      6500
+ 487              	.LASF23:
+ 488 0076 73746174 		.ascii	"staticBits\000"
+ 488      69634269 
+ 488      747300
+ 489              	.LASF19:
+ 490 0081 53454E43 		.ascii	"SENCA_ReadDataReg\000"
+ 490      415F5265 
+ 490      61644461 
+ 490      74615265 
+ 490      6700
+ 491              	.LASF9:
+ 492 0093 666C6F61 		.ascii	"float\000"
+ 492      7400
+ 493              	.LASF1:
+ 494 0099 756E7369 		.ascii	"unsigned char\000"
+ 494      676E6564 
+ 494      20636861 
+ 494      7200
+ 495              	.LASF13:
+ 496 00a7 72656738 		.ascii	"reg8\000"
+ 496      00
+ 497              	.LASF5:
+ 498 00ac 6C6F6E67 		.ascii	"long unsigned int\000"
+ 498      20756E73 
+ 498      69676E65 
+ 498      6420696E 
+ 498      7400
+ 499              	.LASF3:
+ 500 00be 73686F72 		.ascii	"short unsigned int\000"
+ 500      7420756E 
+ 500      7369676E 
+ 500      65642069 
+ 500      6E7400
+ 501              	.LASF10:
+ 502 00d1 646F7562 		.ascii	"double\000"
+ 502      6C6500
+ 503              	.LASF21:
+ 504 00d8 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\SENCA.c\000"
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 13
 
 
- 503      536F7572 
- 503      63655C50 
- 504              	.LASF20:
- 505 00f0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 505      4320342E 
- 505      392E3320 
- 505      32303135 
- 505      30333033 
- 506 0123 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 506      20726576 
- 506      6973696F 
- 506      6E203232 
- 506      31323230 
- 507 0156 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 507      66756E63 
- 507      74696F6E 
- 507      2D736563 
- 507      74696F6E 
- 508              	.LASF8:
- 509 017e 756E7369 		.ascii	"unsigned int\000"
- 509      676E6564 
- 509      20696E74 
- 509      00
- 510              	.LASF7:
- 511 018b 6C6F6E67 		.ascii	"long long unsigned int\000"
- 511      206C6F6E 
- 511      6720756E 
- 511      7369676E 
- 511      65642069 
- 512              	.LASF17:
- 513 01a2 6D6F6465 		.ascii	"mode\000"
- 513      00
- 514              	.LASF6:
- 515 01a7 6C6F6E67 		.ascii	"long long int\000"
- 515      206C6F6E 
- 515      6720696E 
- 515      7400
- 516              	.LASF11:
- 517 01b5 63686172 		.ascii	"char\000"
- 517      00
- 518              	.LASF2:
- 519 01ba 73686F72 		.ascii	"short int\000"
- 519      7420696E 
- 519      7400
- 520              	.LASF14:
- 521 01c4 53454E43 		.ascii	"SENCA_Write\000"
- 521      415F5772 
- 521      69746500 
- 522              	.LASF12:
- 523 01d0 75696E74 		.ascii	"uint8\000"
- 523      3800
- 524              	.LASF4:
- 525 01d6 6C6F6E67 		.ascii	"long int\000"
- 525      20696E74 
- 525      00
- 526              	.LASF15:
- 527 01df 53454E43 		.ascii	"SENCA_SetDriveMode\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccdrABo1.s 			page 14
+ 504      6E657261 
+ 504      7465645F 
+ 504      536F7572 
+ 504      63655C50 
+ 505              	.LASF20:
+ 506 00f9 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 506      4320342E 
+ 506      392E3320 
+ 506      32303135 
+ 506      30333033 
+ 507 012c 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 507      20726576 
+ 507      6973696F 
+ 507      6E203232 
+ 507      31323230 
+ 508 015f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 508      66756E63 
+ 508      74696F6E 
+ 508      2D736563 
+ 508      74696F6E 
+ 509              	.LASF8:
+ 510 0187 756E7369 		.ascii	"unsigned int\000"
+ 510      676E6564 
+ 510      20696E74 
+ 510      00
+ 511              	.LASF7:
+ 512 0194 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 512      206C6F6E 
+ 512      6720756E 
+ 512      7369676E 
+ 512      65642069 
+ 513              	.LASF17:
+ 514 01ab 6D6F6465 		.ascii	"mode\000"
+ 514      00
+ 515              	.LASF6:
+ 516 01b0 6C6F6E67 		.ascii	"long long int\000"
+ 516      206C6F6E 
+ 516      6720696E 
+ 516      7400
+ 517              	.LASF11:
+ 518 01be 63686172 		.ascii	"char\000"
+ 518      00
+ 519              	.LASF2:
+ 520 01c3 73686F72 		.ascii	"short int\000"
+ 520      7420696E 
+ 520      7400
+ 521              	.LASF14:
+ 522 01cd 53454E43 		.ascii	"SENCA_Write\000"
+ 522      415F5772 
+ 522      69746500 
+ 523              	.LASF12:
+ 524 01d9 75696E74 		.ascii	"uint8\000"
+ 524      3800
+ 525              	.LASF4:
+ 526 01df 6C6F6E67 		.ascii	"long int\000"
+ 526      20696E74 
+ 526      00
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccm4u3VQ.s 			page 14
 
 
- 527      415F5365 
- 527      74447269 
- 527      76654D6F 
- 527      646500
- 528              	.LASF0:
- 529 01f2 7369676E 		.ascii	"signed char\000"
- 529      65642063 
- 529      68617200 
- 530              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 527              	.LASF15:
+ 528 01e8 53454E43 		.ascii	"SENCA_SetDriveMode\000"
+ 528      415F5365 
+ 528      74447269 
+ 528      76654D6F 
+ 528      646500
+ 529              	.LASF0:
+ 530 01fb 7369676E 		.ascii	"signed char\000"
+ 530      65642063 
+ 530      68617200 
+ 531              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

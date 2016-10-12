@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
   29:.\Generated_Source\PSoC5/USBFS_msc.c **** 
   30:.\Generated_Source\PSoC5/USBFS_msc.c **** static uint8 USBFS_lunCount = USBFS_MSC_LUN_NUMBER;
   31:.\Generated_Source\PSoC5/USBFS_msc.c **** 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 2
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBFS_msc.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
   62:.\Generated_Source\PSoC5/USBFS_msc.c ****         
   63:.\Generated_Source\PSoC5/USBFS_msc.c ****         if (USBFS_MSC_GET_MAX_LUN == USBFS_bRequestReg)
   51              		.loc 1 63 0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 3
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 3
 
 
   52 001c 134B     		ldr	r3, .L11
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
   85 0048 71B9     		cbnz	r1, .L9
   85:.\Generated_Source\PSoC5/USBFS_msc.c ****                 (dataLength == USBFS_MSC_RESET_WLENGTH))
   86:.\Generated_Source\PSoC5/USBFS_msc.c ****             {
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 4
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 4
 
 
   87:.\Generated_Source\PSoC5/USBFS_msc.c ****                 /* Handle to Bulk-Only Reset request: no data control transfer. */
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  125              		.align	2
  126              		.global	USBFS_MSC_SetLunCount
  127              		.thumb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 5
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 5
 
 
  128              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  124:.\Generated_Source\PSoC5/USBFS_msc.c **** 
  125:.\Generated_Source\PSoC5/USBFS_msc.c **** 
  126:.\Generated_Source\PSoC5/USBFS_msc.c **** /*******************************************************************************
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 6
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 6
 
 
  127:.\Generated_Source\PSoC5/USBFS_msc.c **** * Function Name: USBFS_MSC_GetLunCount
@@ -357,48 +357,48 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  193 0006 00000000 		.4byte	.Ldebug_abbrev0
  194 000a 04       		.byte	0x4
  195 000b 01       		.uleb128 0x1
- 196 000c 3B010000 		.4byte	.LASF30
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 7
+ 196 000c A0010000 		.4byte	.LASF30
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 7
 
 
  197 0010 01       		.byte	0x1
- 198 0011 A6000000 		.4byte	.LASF31
- 199 0015 01020000 		.4byte	.LASF32
+ 198 0011 0B010000 		.4byte	.LASF31
+ 199 0015 00000000 		.4byte	.LASF32
  200 0019 00000000 		.4byte	.Ldebug_ranges0+0
  201 001d 00000000 		.4byte	0
  202 0021 00000000 		.4byte	.Ldebug_line0
  203 0025 02       		.uleb128 0x2
  204 0026 01       		.byte	0x1
  205 0027 06       		.byte	0x6
- 206 0028 D6020000 		.4byte	.LASF0
+ 206 0028 DF020000 		.4byte	.LASF0
  207 002c 02       		.uleb128 0x2
  208 002d 01       		.byte	0x1
  209 002e 08       		.byte	0x8
- 210 002f 6C000000 		.4byte	.LASF1
+ 210 002f D1000000 		.4byte	.LASF1
  211 0033 02       		.uleb128 0x2
  212 0034 02       		.byte	0x2
  213 0035 05       		.byte	0x5
- 214 0036 93020000 		.4byte	.LASF2
+ 214 0036 9C020000 		.4byte	.LASF2
  215 003a 02       		.uleb128 0x2
  216 003b 02       		.byte	0x2
  217 003c 07       		.byte	0x7
- 218 003d 19000000 		.4byte	.LASF3
+ 218 003d 7E000000 		.4byte	.LASF3
  219 0041 02       		.uleb128 0x2
  220 0042 04       		.byte	0x4
  221 0043 05       		.byte	0x5
- 222 0044 B2020000 		.4byte	.LASF4
+ 222 0044 BB020000 		.4byte	.LASF4
  223 0048 02       		.uleb128 0x2
  224 0049 04       		.byte	0x4
  225 004a 07       		.byte	0x7
- 226 004b 94000000 		.4byte	.LASF5
+ 226 004b F9000000 		.4byte	.LASF5
  227 004f 02       		.uleb128 0x2
  228 0050 08       		.byte	0x8
  229 0051 05       		.byte	0x5
- 230 0052 76020000 		.4byte	.LASF6
+ 230 0052 7F020000 		.4byte	.LASF6
  231 0056 02       		.uleb128 0x2
  232 0057 08       		.byte	0x8
  233 0058 07       		.byte	0x7
- 234 0059 D6010000 		.4byte	.LASF7
+ 234 0059 3B020000 		.4byte	.LASF7
  235 005d 03       		.uleb128 0x3
  236 005e 04       		.byte	0x4
  237 005f 05       		.byte	0x5
@@ -406,58 +406,58 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  239 0064 02       		.uleb128 0x2
  240 0065 04       		.byte	0x4
  241 0066 07       		.byte	0x7
- 242 0067 C9010000 		.4byte	.LASF8
+ 242 0067 2E020000 		.4byte	.LASF8
  243 006b 04       		.uleb128 0x4
- 244 006c 9D020000 		.4byte	.LASF9
+ 244 006c A6020000 		.4byte	.LASF9
  245 0070 02       		.byte	0x2
  246 0071 9201     		.2byte	0x192
  247 0073 2C000000 		.4byte	0x2c
  248 0077 04       		.uleb128 0x4
- 249 0078 34010000 		.4byte	.LASF10
+ 249 0078 99010000 		.4byte	.LASF10
  250 007c 02       		.byte	0x2
  251 007d 9301     		.2byte	0x193
  252 007f 3A000000 		.4byte	0x3a
  253 0083 02       		.uleb128 0x2
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 8
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 8
 
 
  254 0084 04       		.byte	0x4
  255 0085 04       		.byte	0x4
- 256 0086 66000000 		.4byte	.LASF11
+ 256 0086 CB000000 		.4byte	.LASF11
  257 008a 02       		.uleb128 0x2
  258 008b 08       		.byte	0x8
  259 008c 04       		.byte	0x4
- 260 008d 01010000 		.4byte	.LASF12
+ 260 008d 66010000 		.4byte	.LASF12
  261 0091 02       		.uleb128 0x2
  262 0092 01       		.byte	0x1
  263 0093 08       		.byte	0x8
- 264 0094 BB020000 		.4byte	.LASF13
+ 264 0094 C4020000 		.4byte	.LASF13
  265 0098 05       		.uleb128 0x5
  266 0099 6B000000 		.4byte	0x6b
  267 009d 02       		.uleb128 0x2
  268 009e 04       		.byte	0x4
  269 009f 07       		.byte	0x7
- 270 00a0 6D020000 		.4byte	.LASF14
+ 270 00a0 76020000 		.4byte	.LASF14
  271 00a4 06       		.uleb128 0x6
  272 00a5 04       		.byte	0x4
  273 00a6 03       		.byte	0x3
  274 00a7 A4       		.byte	0xa4
  275 00a8 C5000000 		.4byte	0xc5
  276 00ac 07       		.uleb128 0x7
- 277 00ad 2C000000 		.4byte	.LASF15
+ 277 00ad 91000000 		.4byte	.LASF15
  278 00b1 03       		.byte	0x3
  279 00b2 A6       		.byte	0xa6
  280 00b3 6B000000 		.4byte	0x6b
  281 00b7 00       		.byte	0
  282 00b8 07       		.uleb128 0x7
- 283 00b9 E2020000 		.4byte	.LASF16
+ 283 00b9 EB020000 		.4byte	.LASF16
  284 00bd 03       		.byte	0x3
  285 00be A7       		.byte	0xa7
  286 00bf 77000000 		.4byte	0x77
  287 00c3 02       		.byte	0x2
  288 00c4 00       		.byte	0
  289 00c5 08       		.uleb128 0x8
- 290 00c6 7A000000 		.4byte	.LASF17
+ 290 00c6 DF000000 		.4byte	.LASF17
  291 00ca 03       		.byte	0x3
  292 00cb A8       		.byte	0xa8
  293 00cc A4000000 		.4byte	0xa4
@@ -467,22 +467,22 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  297 00d3 AA       		.byte	0xaa
  298 00d4 FD000000 		.4byte	0xfd
  299 00d8 07       		.uleb128 0x7
- 300 00d9 13000000 		.4byte	.LASF18
+ 300 00d9 78000000 		.4byte	.LASF18
  301 00dd 03       		.byte	0x3
  302 00de AC       		.byte	0xac
  303 00df 77000000 		.4byte	0x77
  304 00e3 00       		.byte	0
  305 00e4 07       		.uleb128 0x7
- 306 00e5 4E000000 		.4byte	.LASF19
+ 306 00e5 B3000000 		.4byte	.LASF19
  307 00e9 03       		.byte	0x3
  308 00ea AD       		.byte	0xad
  309 00eb FD000000 		.4byte	0xfd
  310 00ef 04       		.byte	0x4
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 9
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 9
 
 
  311 00f0 07       		.uleb128 0x7
- 312 00f1 00000000 		.4byte	.LASF20
+ 312 00f1 65000000 		.4byte	.LASF20
  313 00f5 03       		.byte	0x3
  314 00f6 AE       		.byte	0xae
  315 00f7 03010000 		.4byte	0x103
@@ -495,7 +495,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  322 0104 04       		.byte	0x4
  323 0105 C5000000 		.4byte	0xc5
  324 0109 08       		.uleb128 0x8
- 325 010a 5B000000 		.4byte	.LASF21
+ 325 010a C0000000 		.4byte	.LASF21
  326 010e 03       		.byte	0x3
  327 010f AF       		.byte	0xaf
  328 0110 D0000000 		.4byte	0xd0
@@ -505,7 +505,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  332 0117 C5       		.byte	0xc5
  333 0118 29010000 		.4byte	0x129
  334 011c 07       		.uleb128 0x7
- 335 011d 54000000 		.4byte	.LASF22
+ 335 011d B9000000 		.4byte	.LASF22
  336 0121 03       		.byte	0x3
  337 0122 C7       		.byte	0xc7
  338 0123 29010000 		.4byte	0x129
@@ -519,12 +519,12 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  346 0137 07       		.byte	0x7
  347 0138 00       		.byte	0
  348 0139 08       		.uleb128 0x8
- 349 013a EB000000 		.4byte	.LASF23
+ 349 013a 50010000 		.4byte	.LASF23
  350 013e 03       		.byte	0x3
  351 013f C8       		.byte	0xc8
  352 0140 14010000 		.4byte	0x114
  353 0144 0C       		.uleb128 0xc
- 354 0145 33000000 		.4byte	.LASF33
+ 354 0145 98000000 		.4byte	.LASF33
  355 0149 01       		.byte	0x1
  356 014a 32       		.byte	0x32
  357 014b 6B000000 		.4byte	0x6b
@@ -534,22 +534,22 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  361 0158 9C       		.byte	0x9c
  362 0159 9D010000 		.4byte	0x19d
  363 015d 0D       		.uleb128 0xd
- 364 015e A3020000 		.4byte	.LASF24
+ 364 015e AC020000 		.4byte	.LASF24
  365 0162 01       		.byte	0x1
  366 0163 34       		.byte	0x34
  367 0164 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 10
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 10
 
 
  368 0168 00000000 		.4byte	.LLST0
  369 016c 0D       		.uleb128 0xd
- 370 016d 0D000000 		.4byte	.LASF25
+ 370 016d 72000000 		.4byte	.LASF25
  371 0171 01       		.byte	0x1
  372 0172 37       		.byte	0x37
  373 0173 77000000 		.4byte	0x77
  374 0177 4D000000 		.4byte	.LLST1
  375 017b 0D       		.uleb128 0xd
- 376 017c F6010000 		.4byte	.LASF26
+ 376 017c 5B020000 		.4byte	.LASF26
  377 0180 01       		.byte	0x1
  378 0181 38       		.byte	0x38
  379 0182 77000000 		.4byte	0x77
@@ -562,7 +562,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  386 0198 03020000 		.4byte	0x203
  387 019c 00       		.byte	0
  388 019d 0F       		.uleb128 0xf
- 389 019e C0020000 		.4byte	.LASF34
+ 389 019e C9020000 		.4byte	.LASF34
  390 01a2 01       		.byte	0x1
  391 01a3 78       		.byte	0x78
  392 01a4 00000000 		.4byte	.LFB1
@@ -571,14 +571,14 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  395 01ad 9C       		.byte	0x9c
  396 01ae C2010000 		.4byte	0x1c2
  397 01b2 10       		.uleb128 0x10
- 398 01b3 ED010000 		.4byte	.LASF35
+ 398 01b3 52020000 		.4byte	.LASF35
  399 01b7 01       		.byte	0x1
  400 01b8 78       		.byte	0x78
  401 01b9 6B000000 		.4byte	0x6b
  402 01bd 9F000000 		.4byte	.LLST3
  403 01c1 00       		.byte	0
  404 01c2 11       		.uleb128 0x11
- 405 01c3 1E010000 		.4byte	.LASF36
+ 405 01c3 83010000 		.4byte	.LASF36
  406 01c7 01       		.byte	0x1
  407 01c8 8E       		.byte	0x8e
  408 01c9 6B000000 		.4byte	0x6b
@@ -587,7 +587,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  411 01d5 01       		.uleb128 0x1
  412 01d6 9C       		.byte	0x9c
  413 01d7 12       		.uleb128 0x12
- 414 01d8 84020000 		.4byte	.LASF27
+ 414 01d8 8D020000 		.4byte	.LASF27
  415 01dc 01       		.byte	0x1
  416 01dd 1E       		.byte	0x1e
  417 01de 6B000000 		.4byte	0x6b
@@ -595,22 +595,22 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  419 01e3 03       		.byte	0x3
  420 01e4 00000000 		.4byte	USBFS_lunCount
  421 01e8 13       		.uleb128 0x13
- 422 01e9 5D020000 		.4byte	.LASF37
+ 422 01e9 66020000 		.4byte	.LASF37
  423 01ed 04       		.byte	0x4
  424 01ee 7A       		.byte	0x7a
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 11
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 11
 
 
  425 01ef F3010000 		.4byte	0x1f3
  426 01f3 05       		.uleb128 0x5
  427 01f4 09010000 		.4byte	0x109
  428 01f8 14       		.uleb128 0x14
- 429 01f9 08010000 		.4byte	.LASF28
+ 429 01f9 6D010000 		.4byte	.LASF28
  430 01fd 04       		.byte	0x4
  431 01fe A9       		.byte	0xa9
  432 01ff 6B000000 		.4byte	0x6b
  433 0203 14       		.uleb128 0x14
- 434 0204 CB000000 		.4byte	.LASF29
+ 434 0204 30010000 		.4byte	.LASF29
  435 0208 04       		.byte	0x4
  436 0209 B3       		.byte	0xb3
  437 020a 6B000000 		.4byte	0x6b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  479 0026 08       		.uleb128 0x8
  480 0027 00       		.byte	0
  481 0028 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 12
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 12
 
 
  482 0029 04       		.uleb128 0x4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  536 005f 0B       		.uleb128 0xb
  537 0060 3B       		.uleb128 0x3b
  538 0061 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 13
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 13
 
 
  539 0062 49       		.uleb128 0x49
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  593 0099 01       		.uleb128 0x1
  594 009a 13       		.uleb128 0x13
  595 009b 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 14
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 14
 
 
  596 009c 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  650 00d5 0E       		.uleb128 0xe
  651 00d6 3A       		.uleb128 0x3a
  652 00d7 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 15
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 15
 
 
  653 00d8 3B       		.uleb128 0x3b
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  707 010f 0B       		.uleb128 0xb
  708 0110 3B       		.uleb128 0x3b
  709 0111 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 16
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 16
 
 
  710 0112 49       		.uleb128 0x49
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  764 003a 6A000000 		.4byte	.LVL8
  765 003e 78000000 		.4byte	.LFE0
  766 0042 0100     		.2byte	0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 17
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 17
 
 
  767 0044 50       		.byte	0x50
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  821 000e 0000     		.2byte	0
  822 0010 00000000 		.4byte	.LFB0
  823 0014 78000000 		.4byte	.LFE0-.LFB0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 18
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 18
 
 
  824 0018 00000000 		.4byte	.LFB1
@@ -1044,202 +1044,204 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 1
  842      00000201 
  842      FB0E0D00 
  842      01010101 
- 843              	.LASF20:
- 844 0000 70537461 		.ascii	"pStatusBlock\000"
- 844      74757342 
- 844      6C6F636B 
- 844      00
- 845              	.LASF25:
- 846 000d 76616C75 		.ascii	"value\000"
- 846      6500
- 847              	.LASF18:
- 848 0013 636F756E 		.ascii	"count\000"
- 848      7400
- 849              	.LASF3:
- 850 0019 73686F72 		.ascii	"short unsigned int\000"
- 850      7420756E 
- 850      7369676E 
- 850      65642069 
- 850      6E7400
- 851              	.LASF15:
- 852 002c 73746174 		.ascii	"status\000"
- 852      757300
- 853              	.LASF33:
- 854 0033 55534246 		.ascii	"USBFS_DispatchMSCClassRqst\000"
- 854      535F4469 
- 854      73706174 
- 854      63684D53 
- 854      43436C61 
- 855              	.LASF19:
- 856 004e 70446174 		.ascii	"pData\000"
- 856      6100
- 857              	.LASF22:
- 858 0054 65704461 		.ascii	"epData\000"
- 858      746100
- 859              	.LASF21:
- 860 005b 545F5553 		.ascii	"T_USBFS_TD\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 19
+ 843              	.LASF32:
+ 844 0000 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
+ 844      73657273 
+ 844      5C427279 
+ 844      616E204F 
+ 844      72616275 
+ 845 002e 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
+ 845      534F435F 
+ 845      50524F47 
+ 845      52414D53 
+ 845      5C50536F 
+ 846 005e 2E637964 		.ascii	".cydsn\000"
+ 846      736E00
+ 847              	.LASF20:
+ 848 0065 70537461 		.ascii	"pStatusBlock\000"
+ 848      74757342 
+ 848      6C6F636B 
+ 848      00
+ 849              	.LASF25:
+ 850 0072 76616C75 		.ascii	"value\000"
+ 850      6500
+ 851              	.LASF18:
+ 852 0078 636F756E 		.ascii	"count\000"
+ 852      7400
+ 853              	.LASF3:
+ 854 007e 73686F72 		.ascii	"short unsigned int\000"
+ 854      7420756E 
+ 854      7369676E 
+ 854      65642069 
+ 854      6E7400
+ 855              	.LASF15:
+ 856 0091 73746174 		.ascii	"status\000"
+ 856      757300
+ 857              	.LASF33:
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 19
 
 
- 860      4246535F 
- 860      544400
- 861              	.LASF11:
- 862 0066 666C6F61 		.ascii	"float\000"
- 862      7400
- 863              	.LASF1:
- 864 006c 756E7369 		.ascii	"unsigned char\000"
- 864      676E6564 
- 864      20636861 
- 864      7200
- 865              	.LASF17:
- 866 007a 545F5553 		.ascii	"T_USBFS_XFER_STATUS_BLOCK\000"
- 866      4246535F 
- 866      58464552 
- 866      5F535441 
- 866      5455535F 
- 867              	.LASF5:
- 868 0094 6C6F6E67 		.ascii	"long unsigned int\000"
- 868      20756E73 
- 868      69676E65 
- 868      6420696E 
- 868      7400
- 869              	.LASF31:
- 870 00a6 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_msc.c\000"
- 870      6E657261 
- 870      7465645F 
- 870      536F7572 
- 870      63655C50 
- 871              	.LASF29:
- 872 00cb 55534246 		.ascii	"USBFS_InitNoDataControlTransfer\000"
- 872      535F496E 
- 872      69744E6F 
- 872      44617461 
- 872      436F6E74 
- 873              	.LASF23:
- 874 00eb 55534246 		.ascii	"USBFS_ep0_data_struct\000"
- 874      535F6570 
- 874      305F6461 
- 874      74615F73 
- 874      74727563 
- 875              	.LASF12:
- 876 0101 646F7562 		.ascii	"double\000"
- 876      6C6500
- 877              	.LASF28:
- 878 0108 55534246 		.ascii	"USBFS_InitControlRead\000"
- 878      535F496E 
- 878      6974436F 
- 878      6E74726F 
- 878      6C526561 
- 879              	.LASF36:
- 880 011e 55534246 		.ascii	"USBFS_MSC_GetLunCount\000"
- 880      535F4D53 
- 880      435F4765 
- 880      744C756E 
- 880      436F756E 
- 881              	.LASF10:
- 882 0134 75696E74 		.ascii	"uint16\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 20
+ 858 0098 55534246 		.ascii	"USBFS_DispatchMSCClassRqst\000"
+ 858      535F4469 
+ 858      73706174 
+ 858      63684D53 
+ 858      43436C61 
+ 859              	.LASF19:
+ 860 00b3 70446174 		.ascii	"pData\000"
+ 860      6100
+ 861              	.LASF22:
+ 862 00b9 65704461 		.ascii	"epData\000"
+ 862      746100
+ 863              	.LASF21:
+ 864 00c0 545F5553 		.ascii	"T_USBFS_TD\000"
+ 864      4246535F 
+ 864      544400
+ 865              	.LASF11:
+ 866 00cb 666C6F61 		.ascii	"float\000"
+ 866      7400
+ 867              	.LASF1:
+ 868 00d1 756E7369 		.ascii	"unsigned char\000"
+ 868      676E6564 
+ 868      20636861 
+ 868      7200
+ 869              	.LASF17:
+ 870 00df 545F5553 		.ascii	"T_USBFS_XFER_STATUS_BLOCK\000"
+ 870      4246535F 
+ 870      58464552 
+ 870      5F535441 
+ 870      5455535F 
+ 871              	.LASF5:
+ 872 00f9 6C6F6E67 		.ascii	"long unsigned int\000"
+ 872      20756E73 
+ 872      69676E65 
+ 872      6420696E 
+ 872      7400
+ 873              	.LASF31:
+ 874 010b 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_msc.c\000"
+ 874      6E657261 
+ 874      7465645F 
+ 874      536F7572 
+ 874      63655C50 
+ 875              	.LASF29:
+ 876 0130 55534246 		.ascii	"USBFS_InitNoDataControlTransfer\000"
+ 876      535F496E 
+ 876      69744E6F 
+ 876      44617461 
+ 876      436F6E74 
+ 877              	.LASF23:
+ 878 0150 55534246 		.ascii	"USBFS_ep0_data_struct\000"
+ 878      535F6570 
+ 878      305F6461 
+ 878      74615F73 
+ 878      74727563 
+ 879              	.LASF12:
+ 880 0166 646F7562 		.ascii	"double\000"
+ 880      6C6500
+ 881              	.LASF28:
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 20
 
 
- 882      313600
- 883              	.LASF30:
- 884 013b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 884      4320342E 
- 884      392E3320 
- 884      32303135 
- 884      30333033 
- 885 016e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 885      20726576 
- 885      6973696F 
- 885      6E203232 
- 885      31323230 
- 886 01a1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 886      66756E63 
- 886      74696F6E 
- 886      2D736563 
- 886      74696F6E 
- 887              	.LASF8:
- 888 01c9 756E7369 		.ascii	"unsigned int\000"
- 888      676E6564 
- 888      20696E74 
- 888      00
- 889              	.LASF7:
- 890 01d6 6C6F6E67 		.ascii	"long long unsigned int\000"
- 890      206C6F6E 
- 890      6720756E 
- 890      7369676E 
- 890      65642069 
- 891              	.LASF35:
- 892 01ed 6C756E43 		.ascii	"lunCount\000"
- 892      6F756E74 
+ 882 016d 55534246 		.ascii	"USBFS_InitControlRead\000"
+ 882      535F496E 
+ 882      6974436F 
+ 882      6E74726F 
+ 882      6C526561 
+ 883              	.LASF36:
+ 884 0183 55534246 		.ascii	"USBFS_MSC_GetLunCount\000"
+ 884      535F4D53 
+ 884      435F4765 
+ 884      744C756E 
+ 884      436F756E 
+ 885              	.LASF10:
+ 886 0199 75696E74 		.ascii	"uint16\000"
+ 886      313600
+ 887              	.LASF30:
+ 888 01a0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 888      4320342E 
+ 888      392E3320 
+ 888      32303135 
+ 888      30333033 
+ 889 01d3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 889      20726576 
+ 889      6973696F 
+ 889      6E203232 
+ 889      31323230 
+ 890 0206 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 890      66756E63 
+ 890      74696F6E 
+ 890      2D736563 
+ 890      74696F6E 
+ 891              	.LASF8:
+ 892 022e 756E7369 		.ascii	"unsigned int\000"
+ 892      676E6564 
+ 892      20696E74 
  892      00
- 893              	.LASF26:
- 894 01f6 64617461 		.ascii	"dataLength\000"
- 894      4C656E67 
- 894      746800
- 895              	.LASF32:
- 896 0201 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
- 896      73657273 
- 896      5C4C4149 
- 896      525C446F 
- 896      63756D65 
- 897 022e 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
- 897      52414D53 
- 897      5C50536F 
- 897      43355C52 
- 897      6F616472 
- 898              	.LASF37:
- 899 025d 55534246 		.ascii	"USBFS_currentTD\000"
- 899      535F6375 
- 899      7272656E 
- 899      74544400 
- 900              	.LASF14:
- 901 026d 73697A65 		.ascii	"sizetype\000"
- 901      74797065 
- 901      00
- 902              	.LASF6:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccXBgYn1.s 			page 21
+ 893              	.LASF7:
+ 894 023b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 894      206C6F6E 
+ 894      6720756E 
+ 894      7369676E 
+ 894      65642069 
+ 895              	.LASF35:
+ 896 0252 6C756E43 		.ascii	"lunCount\000"
+ 896      6F756E74 
+ 896      00
+ 897              	.LASF26:
+ 898 025b 64617461 		.ascii	"dataLength\000"
+ 898      4C656E67 
+ 898      746800
+ 899              	.LASF37:
+ 900 0266 55534246 		.ascii	"USBFS_currentTD\000"
+ 900      535F6375 
+ 900      7272656E 
+ 900      74544400 
+ 901              	.LASF14:
+ 902 0276 73697A65 		.ascii	"sizetype\000"
+ 902      74797065 
+ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccaK11Lr.s 			page 21
 
 
- 903 0276 6C6F6E67 		.ascii	"long long int\000"
- 903      206C6F6E 
- 903      6720696E 
- 903      7400
- 904              	.LASF27:
- 905 0284 55534246 		.ascii	"USBFS_lunCount\000"
- 905      535F6C75 
- 905      6E436F75 
- 905      6E7400
- 906              	.LASF2:
- 907 0293 73686F72 		.ascii	"short int\000"
- 907      7420696E 
- 907      7400
- 908              	.LASF9:
- 909 029d 75696E74 		.ascii	"uint8\000"
- 909      3800
- 910              	.LASF24:
- 911 02a3 72657175 		.ascii	"requestHandled\000"
- 911      65737448 
- 911      616E646C 
- 911      656400
- 912              	.LASF4:
- 913 02b2 6C6F6E67 		.ascii	"long int\000"
- 913      20696E74 
- 913      00
- 914              	.LASF13:
- 915 02bb 63686172 		.ascii	"char\000"
- 915      00
- 916              	.LASF34:
- 917 02c0 55534246 		.ascii	"USBFS_MSC_SetLunCount\000"
- 917      535F4D53 
- 917      435F5365 
- 917      744C756E 
- 917      436F756E 
- 918              	.LASF0:
- 919 02d6 7369676E 		.ascii	"signed char\000"
- 919      65642063 
- 919      68617200 
- 920              	.LASF16:
- 921 02e2 6C656E67 		.ascii	"length\000"
- 921      746800
- 922              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 902      00
+ 903              	.LASF6:
+ 904 027f 6C6F6E67 		.ascii	"long long int\000"
+ 904      206C6F6E 
+ 904      6720696E 
+ 904      7400
+ 905              	.LASF27:
+ 906 028d 55534246 		.ascii	"USBFS_lunCount\000"
+ 906      535F6C75 
+ 906      6E436F75 
+ 906      6E7400
+ 907              	.LASF2:
+ 908 029c 73686F72 		.ascii	"short int\000"
+ 908      7420696E 
+ 908      7400
+ 909              	.LASF9:
+ 910 02a6 75696E74 		.ascii	"uint8\000"
+ 910      3800
+ 911              	.LASF24:
+ 912 02ac 72657175 		.ascii	"requestHandled\000"
+ 912      65737448 
+ 912      616E646C 
+ 912      656400
+ 913              	.LASF4:
+ 914 02bb 6C6F6E67 		.ascii	"long int\000"
+ 914      20696E74 
+ 914      00
+ 915              	.LASF13:
+ 916 02c4 63686172 		.ascii	"char\000"
+ 916      00
+ 917              	.LASF34:
+ 918 02c9 55534246 		.ascii	"USBFS_MSC_SetLunCount\000"
+ 918      535F4D53 
+ 918      435F5365 
+ 918      744C756E 
+ 918      436F756E 
+ 919              	.LASF0:
+ 920 02df 7369676E 		.ascii	"signed char\000"
+ 920      65642063 
+ 920      68617200 
+ 921              	.LASF16:
+ 922 02eb 6C656E67 		.ascii	"length\000"
+ 922      746800
+ 923              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
