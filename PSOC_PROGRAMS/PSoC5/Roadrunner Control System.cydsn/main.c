@@ -35,9 +35,8 @@ int main()
     /* Variable declarations for USBFS */
     hword length = 4;
     
-    init();
     CyGlobalIntEnable; /* Enable global interrupts. */
-
+    init();
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     USBFS_EnableOutEP(OUT_EP_NUM);

@@ -2,7 +2,7 @@
 --	Conversion of Roadrunner Control System.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Oct 11 09:54:30 2016
+--	Wed Oct 12 11:34:03 2016
 --
 
 USE cypress.cypress.all;
@@ -773,6 +773,13 @@ SIGNAL POTMUX_Decoder_one_hot_1 : bit;
 SIGNAL Net_2629 : bit;
 SIGNAL cy_tff_1 : bit;
 SIGNAL Net_2620 : bit;
+SIGNAL tmpOE__PWR_net_0 : bit;
+SIGNAL tmpFB_0__PWR_net_0 : bit;
+SIGNAL tmpIO_0__PWR_net_0 : bit;
+TERMINAL tmpSIOVREF__PWR_net_0 : bit;
+TERMINAL Net_2677 : bit;
+SIGNAL tmpINTERRUPT_0__PWR_net_0 : bit;
+TERMINAL Net_2678 : bit;
 SIGNAL \MODULE_1:g1:a0:newa_0\ : bit;
 SIGNAL \MODULE_1:g1:a0:newb_0\ : bit;
 SIGNAL MODIN1_0 : bit;
@@ -2962,6 +2969,86 @@ vRef_1:cy_vref_v1_0
 		autoenable=>'1',
 		ignoresleep=>'0')
 	PORT MAP(vout=>Net_2626);
+PWR:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"8c681d3c-6891-4909-927e-3366ad4d5e0f",
+		drive_mode=>"110",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"1",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"O",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"10",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"1",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>(tmpFB_0__PWR_net_0),
+		analog=>(open),
+		io=>(tmpIO_0__PWR_net_0),
+		siovref=>(tmpSIOVREF__PWR_net_0),
+		annotation=>Net_2677,
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__PWR_net_0);
+D_1:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"LED_v1_0",
+		port_names=>"A, K",
+		width=>2)
+	PORT MAP(connect=>(Net_2677, Net_2678));
+GND_4:cy_annotation_universal_v1_0
+	GENERIC MAP(comp_name=>"Gnd_v1_0",
+		port_names=>"T1",
+		width=>1)
+	PORT MAP(connect=>Net_2678);
 \QuadDecSteer:Net_1251\:cy_dff
 	PORT MAP(d=>\QuadDecSteer:Net_1251\\D\,
 		clk=>\QuadDecSteer:bQuadDec:sync_clock\,

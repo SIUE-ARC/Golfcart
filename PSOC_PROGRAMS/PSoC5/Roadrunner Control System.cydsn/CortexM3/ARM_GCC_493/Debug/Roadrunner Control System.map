@@ -579,7 +579,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 0x00000000                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00000000     0x1bd2
+.text           0x00000000     0x1be2
  CREATE_OBJECT_SYMBOLS
                 0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -617,206 +617,206 @@ END GROUP
  .text.ClockSetup
                 0x0000022c       0xd4 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
  .text.AnalogSetDefault
-                0x00000300       0x90 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
+                0x00000300       0xa0 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
  .text.CYCONFIGCPY
-                0x00000390        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
+                0x000003a0        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
  .text.cyfitter_cfg
-                0x00000398      0x144 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
-                0x00000398                cyfitter_cfg
+                0x000003a8      0x144 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
+                0x000003a8                cyfitter_cfg
  .text.USBFS_Init
-                0x000004dc      0x140 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x000004dc                USBFS_Init
+                0x000004ec      0x140 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x000004ec                USBFS_Init
  .text.USBFS_InitComponent
-                0x0000061c       0xc8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x0000061c                USBFS_InitComponent
+                0x0000062c       0xc8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x0000062c                USBFS_InitComponent
  .text.USBFS_Start
-                0x000006e4       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x000006e4                USBFS_Start
+                0x000006f4       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x000006f4                USBFS_Start
  .text.USBFS_ReInitComponent
-                0x00000708       0x4c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x00000708                USBFS_ReInitComponent
+                0x00000718       0x4c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x00000718                USBFS_ReInitComponent
  .text.USBFS_GetConfiguration
-                0x00000754        0xc .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x00000754                USBFS_GetConfiguration
+                0x00000764        0xc .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x00000764                USBFS_GetConfiguration
  .text.USBFS_InitEP_DMA
-                0x00000760       0x68 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x00000760                USBFS_InitEP_DMA
+                0x00000770       0x68 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x00000770                USBFS_InitEP_DMA
  .text.USBFS_LoadInEP
-                0x000007c8       0xfc .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x000007c8                USBFS_LoadInEP
+                0x000007d8       0xfc .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x000007d8                USBFS_LoadInEP
  .text.USBFS_EnableOutEP
-                0x000008c4       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x000008c4                USBFS_EnableOutEP
+                0x000008d4       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x000008d4                USBFS_EnableOutEP
  .text.USBFS_GetEPAckState
-                0x000008f0       0x20 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
-                0x000008f0                USBFS_GetEPAckState
+                0x00000900       0x20 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+                0x00000900                USBFS_GetEPAckState
  .text.USBFS_LoadEP0
-                0x00000910       0x94 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000910                USBFS_LoadEP0
+                0x00000920       0x94 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000920                USBFS_LoadEP0
  .text.USBFS_InitZeroLengthControlTransfer
-                0x000009a4       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x000009a4                USBFS_InitZeroLengthControlTransfer
+                0x000009b4       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x000009b4                USBFS_InitZeroLengthControlTransfer
  .text.USBFS_ControlReadDataStage
-                0x000009d8        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x000009d8                USBFS_ControlReadDataStage
+                0x000009e8        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x000009e8                USBFS_ControlReadDataStage
  .text.USBFS_ControlWriteDataStage
-                0x000009e0       0x80 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x000009e0                USBFS_ControlWriteDataStage
+                0x000009f0       0x80 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x000009f0                USBFS_ControlWriteDataStage
  .text.USBFS_InitNoDataControlTransfer
-                0x00000a60       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000a60                USBFS_InitNoDataControlTransfer
+                0x00000a70       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000a70                USBFS_InitNoDataControlTransfer
  .text.USBFS_UpdateStatusBlock
-                0x00000a8c       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000a8c                USBFS_UpdateStatusBlock
+                0x00000a9c       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000a9c                USBFS_UpdateStatusBlock
  .text.USBFS_HandleSetup
-                0x00000ab0       0x5c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000ab0                USBFS_HandleSetup
+                0x00000ac0       0x5c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000ac0                USBFS_HandleSetup
  .text.USBFS_ControlReadStatusStage
-                0x00000b0c       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000b0c                USBFS_ControlReadStatusStage
+                0x00000b1c       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000b1c                USBFS_ControlReadStatusStage
  .text.USBFS_HandleOUT
-                0x00000b40       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000b40                USBFS_HandleOUT
+                0x00000b50       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000b50                USBFS_HandleOUT
  .text.USBFS_ControlWriteStatusStage
-                0x00000b78       0x20 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000b78                USBFS_ControlWriteStatusStage
+                0x00000b88       0x20 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000b88                USBFS_ControlWriteStatusStage
  .text.USBFS_NoDataControlStatusStage
-                0x00000b98       0x40 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000b98                USBFS_NoDataControlStatusStage
+                0x00000ba8       0x40 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000ba8                USBFS_NoDataControlStatusStage
  .text.USBFS_HandleIN
-                0x00000bd8       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000bd8                USBFS_HandleIN
+                0x00000be8       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000be8                USBFS_HandleIN
  .text.USBFS_EP_0_ISR
-                0x00000c04       0xb8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000c04                USBFS_EP_0_ISR
+                0x00000c14       0xb8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000c14                USBFS_EP_0_ISR
  .text.USBFS_InitializeStatusBlock
-                0x00000cbc       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000cbc                USBFS_InitializeStatusBlock
+                0x00000ccc       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000ccc                USBFS_InitializeStatusBlock
  .text.USBFS_InitControlRead
-                0x00000ce0       0x50 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
-                0x00000ce0                USBFS_InitControlRead
+                0x00000cf0       0x50 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+                0x00000cf0                USBFS_InitControlRead
  .text.USBFS_EP_1_ISR
-                0x00000d30       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
-                0x00000d30                USBFS_EP_1_ISR
+                0x00000d40       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
+                0x00000d40                USBFS_EP_1_ISR
  .text.USBFS_EP_2_ISR
-                0x00000d68       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
-                0x00000d68                USBFS_EP_2_ISR
+                0x00000d78       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
+                0x00000d78                USBFS_EP_2_ISR
  .text.USBFS_BUS_RESET_ISR
-                0x00000da4        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
-                0x00000da4                USBFS_BUS_RESET_ISR
+                0x00000db4        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
+                0x00000db4                USBFS_BUS_RESET_ISR
  .text.USBFS_ARB_ISR
-                0x00000dac       0xa4 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
-                0x00000dac                USBFS_ARB_ISR
+                0x00000dbc       0xa4 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
+                0x00000dbc                USBFS_ARB_ISR
  .text.USBFS_DP_ISR
-                0x00000e50        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_pm.o)
-                0x00000e50                USBFS_DP_ISR
+                0x00000e60        0x8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_pm.o)
+                0x00000e60                USBFS_DP_ISR
  .text.USBFS_ReadDieID
-                0x00000e58       0x6c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x00000e58                USBFS_ReadDieID
+                0x00000e68       0x6c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x00000e68                USBFS_ReadDieID
  .text.USBFS_ConfigReg
-                0x00000ec4       0xa8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x00000ec4                USBFS_ConfigReg
+                0x00000ed4       0xa8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x00000ed4                USBFS_ConfigReg
  .text.USBFS_GetConfigTablePtr
-                0x00000f6c       0x28 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x00000f6c                USBFS_GetConfigTablePtr
+                0x00000f7c       0x28 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x00000f7c                USBFS_GetConfigTablePtr
  .text.USBFS_ConfigAltChanged
-                0x00000f94      0x11c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x00000f94                USBFS_ConfigAltChanged
+                0x00000fa4      0x11c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x00000fa4                USBFS_ConfigAltChanged
  .text.USBFS_GetDeviceTablePtr
-                0x000010b0       0x18 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x000010b0                USBFS_GetDeviceTablePtr
+                0x000010c0       0x18 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x000010c0                USBFS_GetDeviceTablePtr
  .text.USBFS_GetInterfaceClassTablePtr
-                0x000010c8       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x000010c8                USBFS_GetInterfaceClassTablePtr
+                0x000010d8       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x000010d8                USBFS_GetInterfaceClassTablePtr
  .text.USBFS_Config
-                0x000010ec      0x1c0 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x000010ec                USBFS_Config
+                0x000010fc      0x1c0 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x000010fc                USBFS_Config
  .text.USBFS_SetEndpointHalt
-                0x000012ac       0x64 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x000012ac                USBFS_SetEndpointHalt
+                0x000012bc       0x64 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x000012bc                USBFS_SetEndpointHalt
  .text.USBFS_ClearEndpointHalt
-                0x00001310       0xa8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x00001310                USBFS_ClearEndpointHalt
+                0x00001320       0xa8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x00001320                USBFS_ClearEndpointHalt
  .text.USBFS_ValidateAlternateSetting
-                0x000013b8       0x4c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x000013b8                USBFS_ValidateAlternateSetting
+                0x000013c8       0x4c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x000013c8                USBFS_ValidateAlternateSetting
  .text.USBFS_HandleStandardRqst
-                0x00001404      0x35c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
-                0x00001404                USBFS_HandleStandardRqst
+                0x00001414      0x35c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+                0x00001414                USBFS_HandleStandardRqst
  .text.USBFS_HandleVendorRqst
-                0x00001760       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_vnd.o)
-                0x00001760                USBFS_HandleVendorRqst
+                0x00001770       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_vnd.o)
+                0x00001770                USBFS_HandleVendorRqst
  .text.RAMBUF_DmaInitialize
-                0x0000179c       0x40 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(RAMBUF_dma.o)
-                0x0000179c                RAMBUF_DmaInitialize
+                0x000017ac       0x40 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(RAMBUF_dma.o)
+                0x000017ac                RAMBUF_DmaInitialize
  .text.USBFS_ep2_DmaInitialize
-                0x000017dc       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep2_dma.o)
-                0x000017dc                USBFS_ep2_DmaInitialize
+                0x000017ec       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep2_dma.o)
+                0x000017ec                USBFS_ep2_DmaInitialize
  .text.USBFS_ep1_DmaInitialize
-                0x00001818       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep1_dma.o)
-                0x00001818                USBFS_ep1_DmaInitialize
+                0x00001828       0x3c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep1_dma.o)
+                0x00001828                USBFS_ep1_DmaInitialize
  .text.USBFS_Dp_ClearInterrupt
-                0x00001854       0x10 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_Dp.o)
-                0x00001854                USBFS_Dp_ClearInterrupt
- *fill*         0x00001864        0x4 
- .text          0x00001868       0x20 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyBootAsmGnu.o)
-                0x00001868                CyDelayCycles
-                0x00001878                CyEnterCriticalSection
-                0x00001880                CyExitCriticalSection
+                0x00001864       0x10 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_Dp.o)
+                0x00001864                USBFS_Dp_ClearInterrupt
+ *fill*         0x00001874        0x4 
+ .text          0x00001878       0x20 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyBootAsmGnu.o)
+                0x00001878                CyDelayCycles
+                0x00001888                CyEnterCriticalSection
+                0x00001890                CyExitCriticalSection
  .text.CyDmacConfigure
-                0x00001888       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x00001888                CyDmacConfigure
+                0x00001898       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001898                CyDmacConfigure
  .text.CyDmaChEnable
-                0x000018bc       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x000018bc                CyDmaChEnable
+                0x000018cc       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x000018cc                CyDmaChEnable
  .text.CyDmaChDisable
-                0x000018f4       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x000018f4                CyDmaChDisable
+                0x00001904       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001904                CyDmaChDisable
  .text.CyDmaChPriority
-                0x00001918       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x00001918                CyDmaChPriority
+                0x00001928       0x24 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001928                CyDmaChPriority
  .text.CyDmaChSetExtendedAddress
-                0x0000193c       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x0000193c                CyDmaChSetExtendedAddress
+                0x0000194c       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x0000194c                CyDmaChSetExtendedAddress
  .text.CyDmaChSetInitialTd
-                0x00001970       0x18 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x00001970                CyDmaChSetInitialTd
+                0x00001980       0x18 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001980                CyDmaChSetInitialTd
  .text.CyDmaChSetConfiguration
-                0x00001988       0x48 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x00001988                CyDmaChSetConfiguration
+                0x00001998       0x48 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001998                CyDmaChSetConfiguration
  .text.CyDmaTdAllocate
-                0x000019d0       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x000019d0                CyDmaTdAllocate
+                0x000019e0       0x34 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x000019e0                CyDmaTdAllocate
  .text.CyDmaTdSetConfiguration
-                0x00001a04       0x28 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x00001a04                CyDmaTdSetConfiguration
+                0x00001a14       0x28 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001a14                CyDmaTdSetConfiguration
  .text.CyDmaTdSetAddress
-                0x00001a2c       0x1c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
-                0x00001a2c                CyDmaTdSetAddress
- .text.CyHalt   0x00001a48        0x4 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
-                0x00001a48                CyHalt
+                0x00001a3c       0x1c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+                0x00001a3c                CyDmaTdSetAddress
+ .text.CyHalt   0x00001a58        0x4 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
+                0x00001a58                CyHalt
  .text.CyDelayUs
-                0x00001a4c       0x14 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
-                0x00001a4c                CyDelayUs
+                0x00001a5c       0x14 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
+                0x00001a5c                CyDelayUs
  .text.CyIntSetVector
-                0x00001a60       0x28 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
-                0x00001a60                CyIntSetVector
+                0x00001a70       0x28 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
+                0x00001a70                CyIntSetVector
  .text.CyIntSetPriority
-                0x00001a88       0x30 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
-                0x00001a88                CyIntSetPriority
+                0x00001a98       0x30 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
+                0x00001a98                CyIntSetPriority
  .text.CyGetUniqueId
-                0x00001ab8       0x70 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
-                0x00001ab8                CyGetUniqueId
+                0x00001ac8       0x70 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
+                0x00001ac8                CyGetUniqueId
  .text.USBFS_DispatchClassRqst
-                0x00001b28       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_cls.o)
-                0x00001b28                USBFS_DispatchClassRqst
+                0x00001b38       0x38 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_cls.o)
+                0x00001b38                USBFS_DispatchClassRqst
  .text.__libc_init_array
-                0x00001b60       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x00001b60                __libc_init_array
- .text.memcpy   0x00001bac       0x16 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
-                0x00001bac                memcpy
- .text.memset   0x00001bc2       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x00001bc2                memset
+                0x00001b70       0x4c c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00001b70                __libc_init_array
+ .text.memcpy   0x00001bbc       0x16 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy.o)
+                0x00001bbc                memcpy
+ .text.memset   0x00001bd2       0x10 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x00001bd2                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -829,92 +829,92 @@ END GROUP
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x00001bd4        0x0
+.v4_bx          0x00001be4        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00001bd4        0x0
+.iplt           0x00001be4        0x0
  .iplt          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00001bd4        0x4
+.eh_frame       0x00001be4        0x4
  *(.eh_frame)
- .eh_frame      0x00001bd4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
- .eh_frame      0x00001bd4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
-                0x00001bd8                PROVIDE (__exidx_start, .)
+ .eh_frame      0x00001be4        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .eh_frame      0x00001be4        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtend.o
+                0x00001be8                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001bd8                __exidx_end = .
+                0x00001be8                __exidx_end = .
 
-.rodata         0x00001bd8      0x1a0
+.rodata         0x00001be8      0x1a0
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x00001bd8       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
+ .rodata        0x00001be8       0x2c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
  .rodata.str1.4
-                0x00001c04       0x14 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
- .rodata        0x00001c18      0x128 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_descr.o)
-                0x00001c18                USBFS_MSOS_CONFIGURATION_DESCR
-                0x00001c40                USBFS_MSOS_DESCRIPTOR
-                0x00001c54                USBFS_TABLE
-                0x00001c5c                USBFS_DEVICE0_TABLE
-                0x00001c74                USBFS_DEVICE0_CONFIGURATION0_TABLE
-                0x00001c94                USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
-                0x00001c98                USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
-                0x00001ca8                USBFS_SN_STRING_DESCRIPTOR
-                0x00001cac                USBFS_STRING_DESCRIPTORS
-                0x00001d0c                USBFS_DEVICE0_CONFIGURATION0_DESCR
-                0x00001d2c                USBFS_DEVICE0_DESCR
-                0x00001d40                . = ALIGN (0x4)
+                0x00001c14       0x14 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+ .rodata        0x00001c28      0x128 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_descr.o)
+                0x00001c28                USBFS_MSOS_CONFIGURATION_DESCR
+                0x00001c50                USBFS_MSOS_DESCRIPTOR
+                0x00001c64                USBFS_TABLE
+                0x00001c6c                USBFS_DEVICE0_TABLE
+                0x00001c84                USBFS_DEVICE0_CONFIGURATION0_TABLE
+                0x00001ca4                USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS
+                0x00001ca8                USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE
+                0x00001cb8                USBFS_SN_STRING_DESCRIPTOR
+                0x00001cbc                USBFS_STRING_DESCRIPTORS
+                0x00001d1c                USBFS_DEVICE0_CONFIGURATION0_DESCR
+                0x00001d3c                USBFS_DEVICE0_DESCR
+                0x00001d50                . = ALIGN (0x4)
  *(.init)
- .init          0x00001d40        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
-                0x00001d40                _init
- .init          0x00001d44        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
-                0x00001d4c                . = ALIGN (0x4)
-                0x00001d4c                __preinit_array_start = .
+ .init          0x00001d50        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x00001d50                _init
+ .init          0x00001d54        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00001d5c                . = ALIGN (0x4)
+                0x00001d5c                __preinit_array_start = .
  *(.preinit_array)
-                0x00001d4c                __preinit_array_end = .
-                0x00001d4c                . = ALIGN (0x4)
-                0x00001d4c                __init_array_start = .
+                0x00001d5c                __preinit_array_end = .
+                0x00001d5c                . = ALIGN (0x4)
+                0x00001d5c                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00001d4c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
- .init_array    0x00001d50        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
-                0x00001d54                __init_array_end = .
-                0x00001d54                . = ALIGN (0x4)
- *(.fini)
- .fini          0x00001d54        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
-                0x00001d54                _fini
- .fini          0x00001d58        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
-                0x00001d60                . = ALIGN (0x4)
-                0x00001d60                __fini_array_start = .
- *(.fini_array)
- .fini_array    0x00001d60        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
- *(SORT(.fini_array.*))
-                0x00001d64                __fini_array_end = .
+ .init_array    0x00001d5c        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ .init_array    0x00001d60        0x4 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
+                0x00001d64                __init_array_end = .
                 0x00001d64                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00001d64        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crti.o
+                0x00001d64                _fini
+ .fini          0x00001d68        0x8 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtn.o
+                0x00001d70                . = ALIGN (0x4)
+                0x00001d70                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00001d70        0x4 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00001d74                __fini_array_end = .
+                0x00001d74                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00001d64                . = ALIGN (0x4)
+                0x00001d74                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00001d64                . = ALIGN (0x4)
-                0x00001d64                __cy_regions = .
-                0x00001d64        0x4 LONG 0x1d78 __cy_region_init_ram
-                0x00001d68        0x4 LONG 0x1fff8108 __cy_region_start_data
-                0x00001d6c        0x4 LONG 0x20 __cy_region_init_size_ram
-                0x00001d70        0x4 LONG 0x140 __cy_region_zero_size_ram
-                0x00001d74                __cy_regions_end = .
-                0x00001d78                . = ALIGN (0x8)
- *fill*         0x00001d74        0x4 
-                0x00001d78                _etext = .
+                0x00001d74                . = ALIGN (0x4)
+                0x00001d74                __cy_regions = .
+                0x00001d74        0x4 LONG 0x1d88 __cy_region_init_ram
+                0x00001d78        0x4 LONG 0x1fff8108 __cy_region_start_data
+                0x00001d7c        0x4 LONG 0x20 __cy_region_init_size_ram
+                0x00001d80        0x4 LONG 0x140 __cy_region_zero_size_ram
+                0x00001d84                __cy_regions_end = .
+                0x00001d88                . = ALIGN (0x8)
+ *fill*         0x00001d84        0x4 
+                0x00001d88                _etext = .
 
 .cy_checksum_exclude
-                0x00001d78        0x0
+                0x00001d88        0x0
  *(.cy_checksum_exclude)
 
 .ramvectors     0x1fff8000      0x100
@@ -929,7 +929,7 @@ END GROUP
  .noinit        0x1fff8104        0x1 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
                 0x1fff8104                CyResetStatus
 
-.data           0x1fff8108       0x20 load address 0x00001d78
+.data           0x1fff8108       0x20 load address 0x00001d88
                 0x1fff8108                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff8108        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
@@ -955,10 +955,10 @@ END GROUP
  *(.ram)
                 0x1fff8128                _edata = .
 
-.igot.plt       0x1fff8128        0x0 load address 0x00001d98
+.igot.plt       0x1fff8128        0x0 load address 0x00001da8
  .igot.plt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
 
-.bss            0x1fff8128      0x140 load address 0x00001d98
+.bss            0x1fff8128      0x140 load address 0x00001da8
                 0x1fff8128                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -1004,11 +1004,11 @@ END GROUP
                 0x1fff8268                __end = .
                 0x1fff8268                PROVIDE (end, .)
                 0x1fff8268                PROVIDE (__bss_end__, .)
-                0x00001d78                __cy_region_init_ram = LOADADDR (.data)
+                0x00001d88                __cy_region_init_ram = LOADADDR (.data)
                 0x00000020                __cy_region_init_size_ram = (_edata - ADDR (.data))
                 0x00000140                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fff8268       0x80 load address 0x00001d98
+.heap           0x1fff8268       0x80 load address 0x00001da8
                 0x1fff8268                . = _end
                 0x1fff82e8                . = (. + 0x80)
  *fill*         0x1fff8268       0x80 
@@ -1028,9 +1028,9 @@ END GROUP
 .cyloadablemeta
  *(.cyloadablemeta)
 
-.cyconfigecc    0x80000000      0x8a8
+.cyconfigecc    0x80000000      0x8e0
  *(.cyconfigecc)
- .cyconfigecc   0x80000000      0x8a8 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
+ .cyconfigecc   0x80000000      0x8e0 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
                 0x80000000                cy_meta_configecc
 
 .cycustnvl      0x90000000        0x4
@@ -1059,7 +1059,7 @@ END GROUP
  .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
                 0x90500000                cy_metadata
 
-.rel.dyn        0x00001d98        0x0 load address 0x9050000c
+.rel.dyn        0x00001da8        0x0 load address 0x9050000c
  .rel.iplt      0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/3.3/psoc creator/import/gnu/arm/4.9.3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-m/crtbegin.o
 
 .stab
@@ -1180,30 +1180,30 @@ END GROUP
  .debug_abbrev  0x00001a7c      0x1ed .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyFlash.o)
  .debug_abbrev  0x00001c69      0x1c1 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CySpc.o)
 
-.debug_line     0x00000000     0x286f
+.debug_line     0x00000000     0x2870
  *(.debug_line)
  .debug_line    0x00000000      0x1b6 .\CortexM3\ARM_GCC_493\Debug\main.o
  .debug_line    0x000001b6       0x53 .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
  .debug_line    0x00000209      0x254 .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
- .debug_line    0x0000045d      0x1f8 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
- .debug_line    0x00000655      0x356 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
- .debug_line    0x000009ab      0x21d .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
- .debug_line    0x00000bc8       0xea .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
- .debug_line    0x00000cb2      0x109 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_pm.o)
- .debug_line    0x00000dbb      0x3d3 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
- .debug_line    0x0000118e       0x87 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_vnd.o)
- .debug_line    0x00001215       0x9c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(RAMBUF_dma.o)
- .debug_line    0x000012b1       0x9f .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep2_dma.o)
- .debug_line    0x00001350       0x9f .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep1_dma.o)
- .debug_line    0x000013ef       0xbb .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_Dp.o)
- .debug_line    0x000014aa       0x68 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyBootAsmGnu.o)
- .debug_line    0x00001512      0x2e5 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
- .debug_line    0x000017f7      0x806 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
- .debug_line    0x00001ffd      0x366 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyPm.o)
- .debug_line    0x00002363       0x83 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_cls.o)
- .debug_line    0x000023e6       0x5f .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_descr.o)
- .debug_line    0x00002445      0x1ec .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyFlash.o)
- .debug_line    0x00002631      0x23e .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CySpc.o)
+ .debug_line    0x0000045d      0x1f9 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyfitter_cfg.o)
+ .debug_line    0x00000656      0x356 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS.o)
+ .debug_line    0x000009ac      0x21d .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_drv.o)
+ .debug_line    0x00000bc9       0xea .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_episr.o)
+ .debug_line    0x00000cb3      0x109 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_pm.o)
+ .debug_line    0x00000dbc      0x3d3 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_std.o)
+ .debug_line    0x0000118f       0x87 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_vnd.o)
+ .debug_line    0x00001216       0x9c .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(RAMBUF_dma.o)
+ .debug_line    0x000012b2       0x9f .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep2_dma.o)
+ .debug_line    0x00001351       0x9f .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_ep1_dma.o)
+ .debug_line    0x000013f0       0xbb .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_Dp.o)
+ .debug_line    0x000014ab       0x68 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyBootAsmGnu.o)
+ .debug_line    0x00001513      0x2e5 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyDmac.o)
+ .debug_line    0x000017f8      0x806 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyLib.o)
+ .debug_line    0x00001ffe      0x366 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(cyPm.o)
+ .debug_line    0x00002364       0x83 .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_cls.o)
+ .debug_line    0x000023e7       0x5f .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(USBFS_descr.o)
+ .debug_line    0x00002446      0x1ec .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CyFlash.o)
+ .debug_line    0x00002632      0x23e .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a(CySpc.o)
 
 .debug_frame    0x00000000     0x1898
  *(.debug_frame)

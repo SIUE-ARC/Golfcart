@@ -53,6 +53,8 @@
 #include "ESTOP.h"
 #include "POTADC.h"
 #include "RAMBUF_dma.h"
+#include "PWR_aliases.h"
+#include "PWR.h"
 #include "QuadDecSteer_Cnt16.h"
 #include "QuadDecDrive_Cnt16.h"
 #include "USBFS_ep2_dma.h"

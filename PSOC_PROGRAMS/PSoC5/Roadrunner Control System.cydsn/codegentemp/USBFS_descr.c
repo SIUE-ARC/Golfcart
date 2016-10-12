@@ -37,7 +37,7 @@ const uint8 CYCODE USBFS_DEVICE0_DESCR[18u] = {
 /* Descriptor Length                       */ 0x12u,
 /* DescriptorType: DEVICE                  */ 0x01u,
 /* bcdUSB (ver 2.0)                        */ 0x00u, 0x02u,
-/* bDeviceClass                            */ 0xFFu,
+/* bDeviceClass                            */ 0x00u,
 /* bDeviceSubClass                         */ 0x00u,
 /* bDeviceProtocol                         */ 0x00u,
 /* bMaxPacketSize0                         */ 0x08u,
@@ -60,7 +60,7 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[32u] = {
 /*  bConfigurationValue                    */ 0x01u,
 /*  iConfiguration                         */ 0x00u,
 /*  bmAttributes                           */ 0x80u,
-/*  bMaxPower                              */ 0x64u,
+/*  bMaxPower                              */ 0xFAu,
 /*********************************************************************
 * Interface Descriptor
 *********************************************************************/
@@ -69,7 +69,7 @@ const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_DESCR[32u] = {
 /*  bInterfaceNumber                       */ 0x00u,
 /*  bAlternateSetting                      */ 0x00u,
 /*  bNumEndpoints                          */ 0x02u,
-/*  bInterfaceClass                        */ 0xFFu,
+/*  bInterfaceClass                        */ 0x00u,
 /*  bInterfaceSubClass                     */ 0x00u,
 /*  bInterfaceProtocol                     */ 0x00u,
 /*  iInterface                             */ 0x00u,
@@ -147,11 +147,11 @@ const uint8 CYCODE USBFS_SN_STRING_DESCRIPTOR[2] = {
 *********************************************************************/
 const T_USBFS_EP_SETTINGS_BLOCK CYCODE USBFS_DEVICE0_CONFIGURATION0_EP_SETTINGS_TABLE[2u] = {
 /* IFC  ALT    EPAddr bmAttr MaxPktSize Class ********************/
-{0x00u, 0x00u, 0x81u, 0x02u, 0x0040u,   0xFFu},
-{0x00u, 0x00u, 0x02u, 0x02u, 0x0040u,   0xFFu}
+{0x00u, 0x00u, 0x81u, 0x02u, 0x0040u,   0x00u},
+{0x00u, 0x00u, 0x02u, 0x02u, 0x0040u,   0x00u}
 };
 const uint8 CYCODE USBFS_DEVICE0_CONFIGURATION0_INTERFACE_CLASS[1u] = {
-0xFFu
+0x00u
 };
 /*********************************************************************
 * Config Dispatch Table -- Points to the Config Descriptor and each of

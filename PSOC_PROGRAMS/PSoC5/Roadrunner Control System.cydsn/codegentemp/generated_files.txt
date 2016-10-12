@@ -93,6 +93,9 @@
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_PM.c" value="ARM_C_FILE;POTADC" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF_dma.c" value="ARM_C_FILE;RAMBUF" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF_dma.h" value="NONE;RAMBUF" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\PWR_aliases.h" value="NONE;PWR" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\PWR.c" value="ARM_C_FILE;PWR" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\PWR.h" value="NONE;PWR" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\QuadDecSteer_Cnt16.c" value="ARM_C_FILE;QuadDecSteer_Cnt16" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\QuadDecSteer_Cnt16.h" value="NONE;QuadDecSteer_Cnt16" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\QuadDecSteer_Cnt16_PM.c" value="ARM_C_FILE;QuadDecSteer_Cnt16" />

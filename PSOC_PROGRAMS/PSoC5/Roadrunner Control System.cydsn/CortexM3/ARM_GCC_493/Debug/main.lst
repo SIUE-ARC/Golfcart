@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
   29:.\main.c      **** 
   30:.\main.c      **** unsigned int adc_samp[2]   =    {0, 0};
   31:.\main.c      **** void init();
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 2
 
 
   32:.\main.c      **** 
@@ -67,38 +67,37 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
   35:.\main.c      ****     /* Variable declarations for USBFS */
   36:.\main.c      ****     hword length = 4;
   37:.\main.c      ****     
-  38:.\main.c      ****     init();
-  39:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
-  40:.\main.c      **** 
-  41:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-  42:.\main.c      **** 
-  43:.\main.c      ****     USBFS_EnableOutEP(OUT_EP_NUM);
-  44:.\main.c      ****     for(;;)
-  45:.\main.c      ****     {
-  46:.\main.c      ****         buffer[0] = LO8(adc_samp[0]);
-  47:.\main.c      ****         buffer[1] = HI8(adc_samp[0]);
-  48:.\main.c      ****         buffer[2] = LO8(adc_samp[1]);
-  49:.\main.c      ****         buffer[3] = HI8(adc_samp[1]);
-  50:.\main.c      ****         
-  51:.\main.c      ****         //Wait for IN buffer to become empty (host has read data)
-  52:.\main.c      ****         while(USBFS_IN_BUFFER_EMPTY != USBFS_GetEPAckState(IN_EP_NUM));
+  38:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  39:.\main.c      ****     init();
+  40:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  41:.\main.c      **** 
+  42:.\main.c      ****     USBFS_EnableOutEP(OUT_EP_NUM);
+  43:.\main.c      ****     for(;;)
+  44:.\main.c      ****     {
+  45:.\main.c      ****         buffer[0] = LO8(adc_samp[0]);
+  46:.\main.c      ****         buffer[1] = HI8(adc_samp[0]);
+  47:.\main.c      ****         buffer[2] = LO8(adc_samp[1]);
+  48:.\main.c      ****         buffer[3] = HI8(adc_samp[1]);
+  49:.\main.c      ****         
+  50:.\main.c      ****         //Wait for IN buffer to become empty (host has read data)
+  51:.\main.c      ****         while(USBFS_IN_BUFFER_EMPTY != USBFS_GetEPAckState(IN_EP_NUM));
+  52:.\main.c      ****         
   53:.\main.c      ****         
-  54:.\main.c      ****         
-  55:.\main.c      ****         /* Trigger DMA to copy data into IN endpoint buffer.
-  56:.\main.c      ****         * After data has been copied, IN endpoint is ready to be read by the
-  57:.\main.c      ****         * host.
-  58:.\main.c      ****         */
-  59:.\main.c      ****         #if (USBFS_16BITS_EP_ACCESS_ENABLE)
-  60:.\main.c      ****             USBFS_LoadInEP16(IN_EP_NUM, buffer, length);
-  61:.\main.c      ****         #else
-  62:.\main.c      ****             USBFS_LoadInEP(IN_EP_NUM, buffer, length);
-  63:.\main.c      ****         #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
-  64:.\main.c      ****     }
-  65:.\main.c      **** }
-  66:.\main.c      **** 
-  67:.\main.c      **** void init()
-  68:.\main.c      **** {
-  27              		.loc 1 68 0
+  54:.\main.c      ****         /* Trigger DMA to copy data into IN endpoint buffer.
+  55:.\main.c      ****         * After data has been copied, IN endpoint is ready to be read by the
+  56:.\main.c      ****         * host.
+  57:.\main.c      ****         */
+  58:.\main.c      ****         #if (USBFS_16BITS_EP_ACCESS_ENABLE)
+  59:.\main.c      ****             USBFS_LoadInEP16(IN_EP_NUM, buffer, length);
+  60:.\main.c      ****         #else
+  61:.\main.c      ****             USBFS_LoadInEP(IN_EP_NUM, buffer, length);
+  62:.\main.c      ****         #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
+  63:.\main.c      ****     }
+  64:.\main.c      **** }
+  65:.\main.c      **** 
+  66:.\main.c      **** void init()
+  67:.\main.c      **** {
+  27              		.loc 1 67 0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 0
   30              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -108,80 +107,80 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
   34              		.cfi_offset 4, -12
   35              		.cfi_offset 5, -8
   36              		.cfi_offset 14, -4
-  69:.\main.c      ****     
-  70:.\main.c      ****     /* Variable declarations for RAMBUF */
-  71:.\main.c      ****     /* Move these variable declarations to the top of the function */
-  72:.\main.c      ****     byte RAMBUF_Chan;
-  73:.\main.c      ****     byte RAMBUF_TD[1];
-  74:.\main.c      **** 
-  75:.\main.c      ****     /* DMA Configuration for RAMBUF */
-  76:.\main.c      ****     RAMBUF_Chan = RAMBUF_DmaInitialize(RAMBUF_BYTES_PER_BURST, RAMBUF_REQUEST_PER_BURST, 
-  37              		.loc 1 76 0
+  68:.\main.c      ****     
+  69:.\main.c      ****     /* Variable declarations for RAMBUF */
+  70:.\main.c      ****     /* Move these variable declarations to the top of the function */
+  71:.\main.c      ****     byte RAMBUF_Chan;
+  72:.\main.c      ****     byte RAMBUF_TD[1];
+  73:.\main.c      **** 
+  74:.\main.c      ****     /* DMA Configuration for RAMBUF */
+  75:.\main.c      ****     RAMBUF_Chan = RAMBUF_DmaInitialize(RAMBUF_BYTES_PER_BURST, RAMBUF_REQUEST_PER_BURST, 
+  37              		.loc 1 75 0
   38 0002 0220     		movs	r0, #2
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 3
-
-
   39 0004 0121     		movs	r1, #1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 3
+
+
   40 0006 4FF48042 		mov	r2, #16384
   41 000a 41F6FF73 		movw	r3, #8191
   42 000e FFF7FEFF 		bl	RAMBUF_DmaInitialize
   43              	.LVL0:
   44 0012 0546     		mov	r5, r0
   45              	.LVL1:
-  77:.\main.c      ****         HI16(RAMBUF_SRC_BASE), HI16(RAMBUF_DST_BASE));
-  78:.\main.c      ****     RAMBUF_TD[0] = CyDmaTdAllocate();
-  46              		.loc 1 78 0
+  76:.\main.c      ****         HI16(RAMBUF_SRC_BASE), HI16(RAMBUF_DST_BASE));
+  77:.\main.c      ****     RAMBUF_TD[0] = CyDmaTdAllocate();
+  46              		.loc 1 77 0
   47 0014 FFF7FEFF 		bl	CyDmaTdAllocate
   48              	.LVL2:
   49 0018 0446     		mov	r4, r0
-  79:.\main.c      ****     CyDmaTdSetConfiguration(RAMBUF_TD[0], 2, RAMBUF_TD[0], TD_INC_DST_ADR);
-  50              		.loc 1 79 0
+  78:.\main.c      ****     CyDmaTdSetConfiguration(RAMBUF_TD[0], 2, RAMBUF_TD[0], TD_INC_DST_ADR);
+  50              		.loc 1 78 0
   51 001a 0221     		movs	r1, #2
   52 001c 0246     		mov	r2, r0
   53 001e 0B46     		mov	r3, r1
   54 0020 FFF7FEFF 		bl	CyDmaTdSetConfiguration
   55              	.LVL3:
-  80:.\main.c      ****     CyDmaTdSetAddress(RAMBUF_TD[0], LO16((uint32)POTADC_SAR_WRK0_PTR), LO16((uint32)adc_samp[0]));
-  56              		.loc 1 80 0
+  79:.\main.c      ****     CyDmaTdSetAddress(RAMBUF_TD[0], LO16((uint32)POTADC_SAR_WRK0_PTR), LO16((uint32)adc_samp[0]));
+  56              		.loc 1 79 0
   57 0024 2046     		mov	r0, r4
   58 0026 45F6A031 		movw	r1, #23456
   59 002a 0A4B     		ldr	r3, .L4
   60 002c 1A88     		ldrh	r2, [r3]
   61 002e FFF7FEFF 		bl	CyDmaTdSetAddress
   62              	.LVL4:
-  81:.\main.c      ****     CyDmaChSetInitialTd(RAMBUF_Chan, RAMBUF_TD[0]);
-  63              		.loc 1 81 0
+  80:.\main.c      ****     CyDmaChSetInitialTd(RAMBUF_Chan, RAMBUF_TD[0]);
+  63              		.loc 1 80 0
   64 0032 2846     		mov	r0, r5
   65 0034 2146     		mov	r1, r4
   66 0036 FFF7FEFF 		bl	CyDmaChSetInitialTd
   67              	.LVL5:
-  82:.\main.c      ****     CyDmaChEnable(RAMBUF_Chan, 1);
-  68              		.loc 1 82 0
+  81:.\main.c      ****     CyDmaChEnable(RAMBUF_Chan, 1);
+  68              		.loc 1 81 0
   69 003a 2846     		mov	r0, r5
   70 003c 0121     		movs	r1, #1
   71 003e FFF7FEFF 		bl	CyDmaChEnable
   72              	.LVL6:
-  83:.\main.c      ****     
-  84:.\main.c      ****     USBFS_Start(USBFS_DEVICE, USBFS_5V_OPERATION);
-  73              		.loc 1 84 0
+  82:.\main.c      ****     
+  83:.\main.c      ****     USBFS_Start(USBFS_DEVICE, USBFS_5V_OPERATION);
+  73              		.loc 1 83 0
   74 0042 0020     		movs	r0, #0
   75 0044 0121     		movs	r1, #1
   76 0046 FFF7FEFF 		bl	USBFS_Start
   77              	.LVL7:
   78              	.L2:
-  85:.\main.c      ****     while(0u == USBFS_GetConfiguration()); //wait until we are enumerated by host
-  79              		.loc 1 85 0 discriminator 1
+  84:.\main.c      ****     while(0u == USBFS_GetConfiguration()); //wait until we are enumerated by host
+  79              		.loc 1 84 0 discriminator 1
   80 004a FFF7FEFF 		bl	USBFS_GetConfiguration
   81              	.LVL8:
   82 004e 0028     		cmp	r0, #0
   83 0050 FBD0     		beq	.L2
-  86:.\main.c      **** }
-  84              		.loc 1 86 0
+  85:.\main.c      **** }
+  84              		.loc 1 85 0
   85 0052 38BD     		pop	{r3, r4, r5, pc}
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 4
-
-
   86              	.LVL9:
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 4
+
+
   87              	.L5:
   88              		.align	2
   89              	.L4:
@@ -207,59 +206,59 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  108              		.cfi_offset 3, -8
  109              		.cfi_offset 14, -4
  110              	.LVL10:
-  38:.\main.c      ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  38:.\main.c      ****     init();
  111              		.loc 1 38 0
- 112 0002 FFF7FEFF 		bl	init
- 113              	.LVL11:
-  39:.\main.c      **** 
- 114              		.loc 1 39 0
- 115              	@ 39 ".\main.c" 1
- 116 0006 62B6     		CPSIE   i
- 117              	@ 0 "" 2
-  43:.\main.c      ****     for(;;)
- 118              		.loc 1 43 0
- 119              		.thumb
+ 112              	@ 38 ".\main.c" 1
+ 113 0002 62B6     		CPSIE   i
+ 114              	@ 0 "" 2
+  39:.\main.c      ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+ 115              		.loc 1 39 0
+ 116              		.thumb
+ 117 0004 FFF7FEFF 		bl	init
+ 118              	.LVL11:
+  42:.\main.c      ****     for(;;)
+ 119              		.loc 1 42 0
  120 0008 0220     		movs	r0, #2
  121 000a FFF7FEFF 		bl	USBFS_EnableOutEP
  122              	.LVL12:
  123              	.L8:
-  46:.\main.c      ****         buffer[1] = HI8(adc_samp[0]);
- 124              		.loc 1 46 0
+  45:.\main.c      ****         buffer[1] = HI8(adc_samp[0]);
+ 124              		.loc 1 45 0
  125 000e 0B49     		ldr	r1, .L10
  126 0010 0A68     		ldr	r2, [r1]
  127 0012 0B4B     		ldr	r3, .L10+4
  128 0014 1A70     		strb	r2, [r3]
-  47:.\main.c      ****         buffer[2] = LO8(adc_samp[1]);
- 129              		.loc 1 47 0
+  46:.\main.c      ****         buffer[2] = LO8(adc_samp[1]);
+ 129              		.loc 1 46 0
  130 0016 C2F30722 		ubfx	r2, r2, #8, #8
  131 001a 5A70     		strb	r2, [r3, #1]
-  48:.\main.c      ****         buffer[3] = HI8(adc_samp[1]);
- 132              		.loc 1 48 0
+  47:.\main.c      ****         buffer[3] = HI8(adc_samp[1]);
+ 132              		.loc 1 47 0
  133 001c 4A68     		ldr	r2, [r1, #4]
  134 001e 9A70     		strb	r2, [r3, #2]
-  49:.\main.c      ****         
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 5
+  48:.\main.c      ****         
+ 135              		.loc 1 48 0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 5
 
 
- 135              		.loc 1 49 0
  136 0020 C2F30722 		ubfx	r2, r2, #8, #8
  137 0024 DA70     		strb	r2, [r3, #3]
  138              	.L7:
-  52:.\main.c      ****         
- 139              		.loc 1 52 0 discriminator 1
+  51:.\main.c      ****         
+ 139              		.loc 1 51 0 discriminator 1
  140 0026 0120     		movs	r0, #1
  141 0028 FFF7FEFF 		bl	USBFS_GetEPAckState
  142              	.LVL13:
  143 002c 0128     		cmp	r0, #1
  144 002e FAD1     		bne	.L7
-  62:.\main.c      ****         #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
- 145              		.loc 1 62 0
+  61:.\main.c      ****         #endif /* (USBFS_GEN_16BITS_EP_ACCESS) */
+ 145              		.loc 1 61 0
  146 0030 0349     		ldr	r1, .L10+4
  147 0032 0422     		movs	r2, #4
  148 0034 FFF7FEFF 		bl	USBFS_LoadInEP
  149              	.LVL14:
-  64:.\main.c      **** }
- 150              		.loc 1 64 0
+  63:.\main.c      **** }
+ 150              		.loc 1 63 0
  151 0038 E9E7     		b	.L8
  152              	.L11:
  153 003a 00BF     		.align	2
@@ -298,10 +297,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  185 000c 17010000 		.4byte	.LASF38
  186 0010 01       		.byte	0x1
  187 0011 5B000000 		.4byte	.LASF39
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 6
-
-
  188 0015 F5010000 		.4byte	.LASF40
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 6
+
+
  189 0019 00000000 		.4byte	.Ldebug_ranges0+0
  190 001d 00000000 		.4byte	0
  191 0021 00000000 		.4byte	.Ldebug_line0
@@ -358,10 +357,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  242 0081 05       		.uleb128 0x5
  243 0082 AD020000 		.4byte	.LASF11
  244 0086 04       		.byte	0x4
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 7
-
-
  245 0087 9201     		.2byte	0x192
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 7
+
+
  246 0089 2C000000 		.4byte	0x2c
  247 008d 05       		.uleb128 0x5
  248 008e 09010000 		.4byte	.LASF12
@@ -414,25 +413,25 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  295 00f4 07       		.uleb128 0x7
  296 00f5 39000000 		.4byte	.LASF41
  297 00f9 01       		.byte	0x1
- 298 00fa 43       		.byte	0x43
+ 298 00fa 42       		.byte	0x42
  299 00fb 00000000 		.4byte	.LFB64
  300 00ff 58000000 		.4byte	.LFE64-.LFB64
  301 0103 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 8
-
-
  302 0104 9C       		.byte	0x9c
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 8
+
+
  303 0105 E6010000 		.4byte	0x1e6
  304 0109 08       		.uleb128 0x8
  305 010a EF000000 		.4byte	.LASF22
  306 010e 01       		.byte	0x1
- 307 010f 48       		.byte	0x48
+ 307 010f 47       		.byte	0x47
  308 0110 DE000000 		.4byte	0xde
  309 0114 00000000 		.4byte	.LLST0
  310 0118 09       		.uleb128 0x9
  311 0119 78000000 		.4byte	.LASF42
  312 011d 01       		.byte	0x1
- 313 011e 49       		.byte	0x49
+ 313 011e 48       		.byte	0x48
  314 011f E6010000 		.4byte	0x1e6
  315 0123 0A       		.uleb128 0xa
  316 0124 12000000 		.4byte	.LVL0
@@ -478,10 +477,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  356 0166 52       		.byte	0x52
  357 0167 02       		.uleb128 0x2
  358 0168 74       		.byte	0x74
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 9
-
-
  359 0169 00       		.sleb128 0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 9
+
+
  360 016a 0B       		.uleb128 0xb
  361 016b 01       		.uleb128 0x1
  362 016c 51       		.byte	0x51
@@ -538,10 +537,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  413 01bb 01       		.uleb128 0x1
  414 01bc 31       		.byte	0x31
  415 01bd 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 10
-
-
  416 01be 01       		.uleb128 0x1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 10
+
+
  417 01bf 50       		.byte	0x50
  418 01c0 02       		.uleb128 0x2
  419 01c1 75       		.byte	0x75
@@ -590,7 +589,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  462 0216 E9000000 		.4byte	0xe9
  463 021a 04       		.byte	0x4
  464 021b 0C       		.uleb128 0xc
- 465 021c 06000000 		.4byte	.LVL11
+ 465 021c 08000000 		.4byte	.LVL11
  466 0220 F4000000 		.4byte	0xf4
  467 0224 0A       		.uleb128 0xa
  468 0225 0E000000 		.4byte	.LVL12
@@ -598,10 +597,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  470 022d 37020000 		.4byte	0x237
  471 0231 0B       		.uleb128 0xb
  472 0232 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 11
-
-
  473 0233 50       		.byte	0x50
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 11
+
+
  474 0234 01       		.uleb128 0x1
  475 0235 32       		.byte	0x32
  476 0236 00       		.byte	0
@@ -658,10 +657,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  527 029a A5020000 		.4byte	0x2a5
  528 029e 0E       		.uleb128 0xe
  529 029f D7000000 		.4byte	0xd7
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 12
-
-
  530 02a3 01       		.byte	0x1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 12
+
+
  531 02a4 00       		.byte	0
  532 02a5 13       		.uleb128 0x13
  533 02a6 D5020000 		.4byte	.LASF26
@@ -718,10 +717,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  584 031e 8D000000 		.4byte	0x8d
  585 0322 15       		.uleb128 0x15
  586 0323 8D000000 		.4byte	0x8d
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 13
-
-
  587 0327 00       		.byte	0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 13
+
+
  588 0328 14       		.uleb128 0x14
  589 0329 25000000 		.4byte	.LASF30
  590 032d 07       		.byte	0x7
@@ -778,10 +777,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  641 03a6 00       		.byte	0
  642 03a7 17       		.uleb128 0x17
  643 03a8 8B020000 		.4byte	.LASF37
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 14
-
-
  644 03ac 08       		.byte	0x8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 14
+
+
  645 03ad 3201     		.2byte	0x132
  646 03af C3030000 		.4byte	0x3c3
  647 03b3 15       		.uleb128 0x15
@@ -838,10 +837,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  698 0024 0B       		.uleb128 0xb
  699 0025 3B       		.uleb128 0x3b
  700 0026 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 15
-
-
  701 0027 49       		.uleb128 0x49
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 15
+
+
  702 0028 13       		.uleb128 0x13
  703 0029 00       		.byte	0
  704 002a 00       		.byte	0
@@ -898,10 +897,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  755 005e 01       		.uleb128 0x1
  756 005f 13       		.uleb128 0x13
  757 0060 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 16
-
-
  758 0061 00       		.byte	0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 16
+
+
  759 0062 08       		.uleb128 0x8
  760 0063 34       		.uleb128 0x34
  761 0064 00       		.byte	0
@@ -958,10 +957,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  812 009e 31       		.uleb128 0x31
  813 009f 13       		.uleb128 0x13
  814 00a0 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 17
-
-
  815 00a1 00       		.byte	0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 17
+
+
  816 00a2 0D       		.uleb128 0xd
  817 00a3 01       		.uleb128 0x1
  818 00a4 01       		.byte	0x1
@@ -1018,10 +1017,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  869 00d8 13       		.uleb128 0x13
  870 00d9 1C       		.uleb128 0x1c
  871 00da 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 18
-
-
  872 00db 00       		.byte	0
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 18
+
+
  873 00dc 00       		.byte	0
  874 00dd 11       		.uleb128 0x11
  875 00de 898201   		.uleb128 0x4109
@@ -1078,10 +1077,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  926 0113 3B       		.uleb128 0x3b
  927 0114 0B       		.uleb128 0xb
  928 0115 27       		.uleb128 0x27
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 19
-
-
  929 0116 19       		.uleb128 0x19
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 19
+
+
  930 0117 49       		.uleb128 0x49
  931 0118 13       		.uleb128 0x13
  932 0119 3C       		.uleb128 0x3c
@@ -1138,10 +1137,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  983 014c 18       		.uleb128 0x18
  984 014d 2E       		.uleb128 0x2e
  985 014e 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 20
-
-
  986 014f 3F       		.uleb128 0x3f
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 20
+
+
  987 0150 19       		.uleb128 0x19
  988 0151 03       		.uleb128 0x3
  989 0152 0E       		.uleb128 0xe
@@ -1198,10 +1197,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  1040              		.section	.debug_loc,"",%progbits
  1041              	.Ldebug_loc0:
  1042              	.LLST0:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 21
-
-
  1043 0000 14000000 		.4byte	.LVL1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 21
+
+
  1044 0004 54000000 		.4byte	.LVL9
  1045 0008 0100     		.2byte	0x1
  1046 000a 55       		.byte	0x55
@@ -1258,10 +1257,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  1081      6C546400 
  1082              	.LASF41:
  1083 0039 696E6974 		.ascii	"init\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 22
-
-
  1083      00
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 22
+
+
  1084              	.LASF20:
  1085 003e 62797465 		.ascii	"byte\000"
  1085      00
@@ -1318,10 +1317,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  1107      61626C65 
  1107      4F757445 
  1107      5000
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 23
-
-
  1108              	.LASF15:
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 23
+
+
  1109 00de 646F7562 		.ascii	"double\000"
  1109      6C6500
  1110              	.LASF2:
@@ -1378,10 +1377,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  1129      65642069 
  1130              	.LASF27:
  1131 01e0 52414D42 		.ascii	"RAMBUF_DmaInitialize\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 24
-
-
  1131      55465F44 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 24
+
+
  1131      6D61496E 
  1131      69746961 
  1131      6C697A65 
@@ -1438,10 +1437,10 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 1
  1155              	.LASF4:
  1156 02b3 6C6F6E67 		.ascii	"long int\000"
  1156      20696E74 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccgNaOSb.s 			page 25
-
-
  1156      00
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccIEINo0.s 			page 25
+
+
  1157              	.LASF23:
  1158 02bc 6C656E67 		.ascii	"length\000"
  1158      746800

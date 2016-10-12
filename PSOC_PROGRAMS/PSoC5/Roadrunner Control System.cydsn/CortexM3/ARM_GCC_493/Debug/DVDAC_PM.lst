@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
   29:.\Generated_Source\PSoC5/DVDAC_PM.c **** *  DVDAC_Sleep() API saves the current component state. Then it
   30:.\Generated_Source\PSoC5/DVDAC_PM.c **** *  calls the DVDAC_Stop() function and calls
   31:.\Generated_Source\PSoC5/DVDAC_PM.c **** *  DVDAC_SaveConfig() to save the hardware configuration. Call the
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/DVDAC_PM.c **** *  DVDAC_Sleep() function before calling the CyPmSleep() or the
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
   86:.\Generated_Source\PSoC5/DVDAC_PM.c ****     DVDAC_RestoreConfig();
   87:.\Generated_Source\PSoC5/DVDAC_PM.c **** 
   88:.\Generated_Source\PSoC5/DVDAC_PM.c ****     if(DVDAC_backup.enableState == 1u)
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/DVDAC_PM.c ****     {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
   53              		@ frame_needed = 0, uses_anonymous_args = 0
   54 0000 08B5     		push	{r3, lr}
   55              		.cfi_def_cfa_offset 8
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 4
 
 
   56              		.cfi_offset 3, -8
@@ -187,7 +187,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
   58              		.loc 1 48 0
   59 0002 084B     		ldr	r3, .L7
   60 0004 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-  61 0006 13F0040F 		tst	r3, #4
+  61 0006 13F0080F 		tst	r3, #8
   62 000a 03D0     		beq	.L4
   50:.\Generated_Source\PSoC5/DVDAC_PM.c ****     }
   63              		.loc 1 50 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  124:.\Generated_Source\PSoC5/DVDAC_PM.c **** *  This function restores the component configuration and non-retention
  125:.\Generated_Source\PSoC5/DVDAC_PM.c **** *  registers. This function is called by the DVDAC_Wakeup() function.
  126:.\Generated_Source\PSoC5/DVDAC_PM.c **** *
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 5
 
 
  127:.\Generated_Source\PSoC5/DVDAC_PM.c **** * Parameters:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  135 000c 01D1     		bne	.L11
   90:.\Generated_Source\PSoC5/DVDAC_PM.c ****     }
  136              		.loc 1 90 0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 6
 
 
  137 000e FFF7FEFF 		bl	DVDAC_Enable
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  191 0042 04       		.byte	0x4
  192 0043 05       		.byte	0x5
  193 0044 14020000 		.4byte	.LASF4
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 7
 
 
  194 0048 02       		.uleb128 0x2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  248 00b0 00       		.byte	0
  249 00b1 00       		.byte	0
  250 00b2 08       		.uleb128 0x8
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 8
 
 
  251 00b3 29020000 		.4byte	.LASF14
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  305 0134 4B010000 		.4byte	0x14b
  306 0138 0A       		.uleb128 0xa
  307 0139 06000000 		.4byte	.LVL4
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 9
 
 
  308 013d 04010000 		.4byte	0x104
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  362 0016 0B       		.uleb128 0xb
  363 0017 0B       		.uleb128 0xb
  364 0018 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 10
 
 
  365 0019 0B       		.uleb128 0xb
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  419 004f 3A       		.uleb128 0x3a
  420 0050 0B       		.uleb128 0xb
  421 0051 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 11
 
 
  422 0052 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  476 008b 0B       		.uleb128 0xb
  477 008c 34       		.uleb128 0x34
  478 008d 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 12
 
 
  479 008e 03       		.uleb128 0x3
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  533 0010 00000000 		.4byte	.LFB3
  534 0014 08000000 		.4byte	.LFE3
  535 0018 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 13
 
 
  536 001c 18000000 		.4byte	.LFE1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  560 00b0 73686F72 		.ascii	"short unsigned int\000"
  560      7420756E 
  560      7369676E 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 14
 
 
  560      65642069 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 1
  578      00
  579              	.LASF16:
  580 01d8 44564441 		.ascii	"DVDAC_Sleep\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccpEMMp9.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccD4u272.s 			page 15
 
 
  580      435F536C 
