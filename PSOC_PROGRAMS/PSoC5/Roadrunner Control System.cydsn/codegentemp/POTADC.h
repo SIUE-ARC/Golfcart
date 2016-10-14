@@ -170,7 +170,7 @@ extern volatile int16 POTADC_shift;
 #define POTADC_DEFAULT_REFERENCE      (0u)         /* Default reference */
 #define POTADC_DEFAULT_RANGE          (2u)       /* ADC Input Range selection */
 #define POTADC_CLOCK_FREQUENCY        (1600000u)   /* Clock frequency */
-#define POTADC_NOMINAL_CLOCK_FREQ     (1600000)  /* Nominal Clock Frequency */
+#define POTADC_NOMINAL_CLOCK_FREQ     (1590000)  /* Nominal Clock Frequency */
 #define POTADC_HIGH_POWER_PULSE       (1u)        /* Not zero when clock pulse > 50 ns */
 #define POTADC_IRQ_REMOVE             (0u)                /* Removes internal interrupt */
 

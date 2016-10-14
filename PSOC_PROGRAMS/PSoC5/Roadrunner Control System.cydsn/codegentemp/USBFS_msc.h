@@ -26,7 +26,7 @@
 *    Initial Parameter Constants
 ***************************************/
 
-#define USBFS_HANDLE_MSC_REQUESTS    (0u != (1u))
+#define USBFS_HANDLE_MSC_REQUESTS    (0u != (0u))
 #define USBFS_MSC_LUN_NUMBER         (1u - 1u)
 
 

@@ -1,5 +1,5 @@
 -- Project:   Roadrunner Control System
--- Generated: 10/12/2016 15:37:11
+-- Generated: 10/14/2016 12:17:28
 -- PSoC Creator  3.3 CP3
 
 ENTITY \Roadrunner Control System\ IS
@@ -51,7 +51,7 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL Net_2618 : bit;
     SIGNAL Net_2627 : bit;
     SIGNAL Net_2629 : bit;
-    SIGNAL Net_2674 : bit;
+    SIGNAL Net_2682 : bit;
     SIGNAL Net_27 : bit;
     SIGNAL POTMUX_Decoder_old_id_0 : bit;
     SIGNAL POTMUX_Decoder_one_hot_0 : bit;
@@ -249,12 +249,12 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE lib_model OF \USBFS:Dp(0)\ : LABEL IS "iocell2";
     ATTRIBUTE Location OF \USBFS:Dp(0)\ : LABEL IS "P15[6]";
     ATTRIBUTE lib_model OF DVDACOUT(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF DVDACOUT(0) : LABEL IS "P15[1]";
+    ATTRIBUTE Location OF DVDACOUT(0) : LABEL IS "P0[1]";
     ATTRIBUTE lib_model OF Rx(0) : LABEL IS "iocell_ireg";
     ATTRIBUTE lib_model OF STEERPOT(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF STEERPOT(0) : LABEL IS "P0[2]";
+    ATTRIBUTE Location OF STEERPOT(0) : LABEL IS "P0[3]";
     ATTRIBUTE lib_model OF BRAKEPOT(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF BRAKEPOT(0) : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF BRAKEPOT(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF PWR(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF PWR(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : LABEL IS "macrocell2";
@@ -301,7 +301,7 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE lib_model OF \USBFS:ep1\ : LABEL IS "drqcell2";
     ATTRIBUTE Location OF \USBFS:USB\ : LABEL IS "F(USB,0)";
     ATTRIBUTE lib_model OF \DVDAC:DMA\ : LABEL IS "drqcell3";
-    ATTRIBUTE Location OF \DVDAC:VDAC8:viDAC8\ : LABEL IS "F(VIDAC,3)";
+    ATTRIBUTE Location OF \DVDAC:VDAC8:viDAC8\ : LABEL IS "F(VIDAC,2)";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell5";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell6";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxSts\ : LABEL IS "statusicell5";
@@ -2755,7 +2755,7 @@ BEGIN
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            sof_int => Net_2674,
+            sof_int => Net_2682,
             arb_int => \USBFS:Net_1889\,
             usb_int => \USBFS:Net_1876\,
             ept_int_8 => \USBFS:ep_int_8\,

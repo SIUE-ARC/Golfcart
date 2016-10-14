@@ -68,7 +68,7 @@
 #define USBFS_GEN_16BITS_EP_ACCESS   (1u)
 
 /* Enable Class APIs: MIDI, CDC, MSC. */         
-#define USBFS_ENABLE_CDC_CLASS_API   (0u != (1u))
+#define USBFS_ENABLE_CDC_CLASS_API   (0u != (0u))
 
 /* General parameters */
 #define USBFS_EP_ALLOC_STATIC            (USBFS_EP_MA == USBFS__MA_STATIC)

@@ -27,7 +27,7 @@
 *    Initial Parameter Constants
 ***************************************/
 
-#define USBFS_ENABLE_MIDI_API    (0u != (1u))
+#define USBFS_ENABLE_MIDI_API    (0u != (0u))
 #define USBFS_MIDI_EXT_MODE      (0u)
 
 

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
   30:.\Generated_Source\PSoC5/DVDAC.c **** 
   31:.\Generated_Source\PSoC5/DVDAC.c **** static uint8 DVDAC_dmaChan;
   32:.\Generated_Source\PSoC5/DVDAC.c **** static uint8 DVDAC_dmaTd = CY_DMA_INVALID_TD;
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 2
 
 
   33:.\Generated_Source\PSoC5/DVDAC.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
   87:.\Generated_Source\PSoC5/DVDAC.c **** * Global variables:
   88:.\Generated_Source\PSoC5/DVDAC.c **** *  None
   89:.\Generated_Source\PSoC5/DVDAC.c **** *
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 3
 
 
   90:.\Generated_Source\PSoC5/DVDAC.c **** *******************************************************************************/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  144:.\Generated_Source\PSoC5/DVDAC.c **** }
  145:.\Generated_Source\PSoC5/DVDAC.c **** 
  146:.\Generated_Source\PSoC5/DVDAC.c **** 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 4
 
 
  147:.\Generated_Source\PSoC5/DVDAC.c **** /*******************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  201:.\Generated_Source\PSoC5/DVDAC.c **** *  None
  202:.\Generated_Source\PSoC5/DVDAC.c **** *
  203:.\Generated_Source\PSoC5/DVDAC.c **** * Global variables:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 5
 
 
  204:.\Generated_Source\PSoC5/DVDAC.c **** *  None
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
   28              		@ args = 0, pretend = 0, frame = 0
   29              		@ frame_needed = 0, uses_anonymous_args = 0
   30 0000 70B5     		push	{r4, r5, r6, lr}
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 6
 
 
   31              		.cfi_def_cfa_offset 16
@@ -354,11 +354,11 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
   57              		.loc 1 279 0
   58 002c 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
   59 002e A9B2     		uxth	r1, r5
-  60 0030 45F68332 		movw	r2, #23427
+  60 0030 45F68232 		movw	r2, #23426
   61 0034 FFF7FEFF 		bl	CyDmaTdSetAddress
   62              	.LVL3:
  280:.\Generated_Source\PSoC5/DVDAC.c ****                                 LO16((uint32)DVDAC_ditheredValues),
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 7
 
 
  281:.\Generated_Source\PSoC5/DVDAC.c ****                                 LO16((uint32)DVDAC_VDAC8_Data_PTR));
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  110              		.cfi_endproc
  111              	.LFE0:
  112              		.size	DVDAC_Init, .-DVDAC_Init
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 8
 
 
  113              		.section	.text.DVDAC_Enable,"ax",%progbits
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  162              		.cfi_def_cfa_offset 8
  163              		.cfi_offset 3, -8
  164              		.cfi_offset 14, -4
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 9
 
 
  137:.\Generated_Source\PSoC5/DVDAC.c ****     {
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  171:.\Generated_Source\PSoC5/DVDAC.c **** }
  212              		.loc 1 171 0
  213 000e FFF7FEFF 		bl	DVDAC_VDAC8_Stop
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 10
 
 
  214              	.LVL14:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  262              	.LVL20:
  263              	.L27:
  220:.\Generated_Source\PSoC5/DVDAC.c ****         }
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 11
 
 
  264              		.loc 1 220 0 discriminator 3
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  311 0054 38BD     		pop	{r3, r4, r5, pc}
  312              	.LVL28:
  313              	.L35:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 12
 
 
  314 0056 00BF     		.align	2
@@ -708,20 +708,20 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  355 0006 00000000 		.4byte	.Ldebug_abbrev0
  356 000a 04       		.byte	0x4
  357 000b 01       		.uleb128 0x1
- 358 000c BC010000 		.4byte	.LASF39
+ 358 000c B3010000 		.4byte	.LASF39
  359 0010 01       		.byte	0x1
- 360 0011 93020000 		.4byte	.LASF40
- 361 0015 0B000000 		.4byte	.LASF41
+ 360 0011 8A020000 		.4byte	.LASF40
+ 361 0015 4D000000 		.4byte	.LASF41
  362 0019 00000000 		.4byte	.Ldebug_ranges0+0
  363 001d 00000000 		.4byte	0
  364 0021 00000000 		.4byte	.Ldebug_line0
  365 0025 02       		.uleb128 0x2
  366 0026 01       		.byte	0x1
  367 0027 06       		.byte	0x6
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 13
 
 
- 368 0028 18030000 		.4byte	.LASF0
+ 368 0028 0F030000 		.4byte	.LASF0
  369 002c 02       		.uleb128 0x2
  370 002d 01       		.byte	0x1
  371 002e 08       		.byte	0x8
@@ -729,7 +729,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  373 0033 02       		.uleb128 0x2
  374 0034 02       		.byte	0x2
  375 0035 05       		.byte	0x5
- 376 0036 E2020000 		.4byte	.LASF2
+ 376 0036 D9020000 		.4byte	.LASF2
  377 003a 02       		.uleb128 0x2
  378 003b 02       		.byte	0x2
  379 003c 07       		.byte	0x7
@@ -737,7 +737,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  381 0041 02       		.uleb128 0x2
  382 0042 04       		.byte	0x4
  383 0043 05       		.byte	0x5
- 384 0044 0F030000 		.4byte	.LASF4
+ 384 0044 06030000 		.4byte	.LASF4
  385 0048 02       		.uleb128 0x2
  386 0049 04       		.byte	0x4
  387 004a 07       		.byte	0x7
@@ -745,11 +745,11 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  389 004f 02       		.uleb128 0x2
  390 0050 08       		.byte	0x8
  391 0051 05       		.byte	0x5
- 392 0052 CF020000 		.4byte	.LASF6
+ 392 0052 C6020000 		.4byte	.LASF6
  393 0056 02       		.uleb128 0x2
  394 0057 08       		.byte	0x8
  395 0058 07       		.byte	0x7
- 396 0059 70020000 		.4byte	.LASF7
+ 396 0059 67020000 		.4byte	.LASF7
  397 005d 03       		.uleb128 0x3
  398 005e 04       		.byte	0x4
  399 005f 05       		.byte	0x5
@@ -757,7 +757,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  401 0064 02       		.uleb128 0x2
  402 0065 04       		.byte	0x4
  403 0066 07       		.byte	0x7
- 404 0067 4A020000 		.4byte	.LASF8
+ 404 0067 41020000 		.4byte	.LASF8
  405 006b 04       		.uleb128 0x4
  406 006c 66010000 		.4byte	.LASF9
  407 0070 02       		.byte	0x2
@@ -769,7 +769,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  413 007d 9301     		.2byte	0x193
  414 007f 3A000000 		.4byte	0x3a
  415 0083 04       		.uleb128 0x4
- 416 0084 B5010000 		.4byte	.LASF11
+ 416 0084 AC010000 		.4byte	.LASF11
  417 0088 02       		.byte	0x2
  418 0089 9401     		.2byte	0x194
  419 008b 48000000 		.4byte	0x48
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  422 0091 04       		.byte	0x4
  423 0092 16010000 		.4byte	.LASF12
  424 0096 02       		.uleb128 0x2
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 14
 
 
  425 0097 08       		.byte	0x8
@@ -787,9 +787,9 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  428 009d 02       		.uleb128 0x2
  429 009e 01       		.byte	0x1
  430 009f 08       		.byte	0x8
- 431 00a0 DD020000 		.4byte	.LASF14
+ 431 00a0 D4020000 		.4byte	.LASF14
  432 00a4 04       		.uleb128 0x4
- 433 00a5 AC010000 		.4byte	.LASF15
+ 433 00a5 0B000000 		.4byte	.LASF15
  434 00a9 02       		.byte	0x2
  435 00aa 3402     		.2byte	0x234
  436 00ac 48000000 		.4byte	0x48
@@ -803,9 +803,9 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  444 00c1 02       		.uleb128 0x2
  445 00c2 04       		.byte	0x4
  446 00c3 07       		.byte	0x7
- 447 00c4 C6020000 		.4byte	.LASF17
+ 447 00c4 BD020000 		.4byte	.LASF17
  448 00c8 06       		.uleb128 0x6
- 449 00c9 70000000 		.4byte	.LASF42
+ 449 00c9 14000000 		.4byte	.LASF42
  450 00cd 01       		.byte	0x1
  451 00ce FE       		.byte	0xfe
  452 00cf 00000000 		.4byte	.LFB5
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  479 00fe 01       		.uleb128 0x1
  480 00ff 50       		.byte	0x50
  481 0100 01       		.uleb128 0x1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 15
 
 
  482 0101 31       		.byte	0x31
@@ -870,7 +870,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  508 0133 52       		.byte	0x52
  509 0134 03       		.uleb128 0x3
  510 0135 0A       		.byte	0xa
- 511 0136 835B     		.2byte	0x5b83
+ 511 0136 825B     		.2byte	0x5b82
  512 0138 08       		.uleb128 0x8
  513 0139 01       		.uleb128 0x1
  514 013a 51       		.byte	0x51
@@ -883,7 +883,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  521 0144 2A030000 		.4byte	0x32a
  522 0148 00       		.byte	0
  523 0149 0A       		.uleb128 0xa
- 524 014a B4020000 		.4byte	.LASF18
+ 524 014a AB020000 		.4byte	.LASF18
  525 014e 01       		.byte	0x1
  526 014f 3D       		.byte	0x3d
  527 0150 00000000 		.4byte	.LFB0
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  536 0168 12000000 		.4byte	.LVL6
  537 016c C8000000 		.4byte	0xc8
  538 0170 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 16
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 16
 
 
  539 0171 0A       		.uleb128 0xa
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  593 01f2 09       		.uleb128 0x9
  594 01f3 0E000000 		.4byte	.LVL13
  595 01f7 7A030000 		.4byte	0x37a
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 17
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 17
 
 
  596 01fb 09       		.uleb128 0x9
@@ -966,7 +966,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  598 0200 8F030000 		.4byte	0x38f
  599 0204 00       		.byte	0
  600 0205 0A       		.uleb128 0xa
- 601 0206 61020000 		.4byte	.LASF22
+ 601 0206 58020000 		.4byte	.LASF22
  602 020a 01       		.byte	0x1
  603 020b CF       		.byte	0xcf
  604 020c 00000000 		.4byte	.LFB4
@@ -975,19 +975,19 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  607 0215 9C       		.byte	0x9c
  608 0216 64020000 		.4byte	0x264
  609 021a 0B       		.uleb128 0xb
- 610 021b A3000000 		.4byte	.LASF43
+ 610 021b 47000000 		.4byte	.LASF43
  611 021f 01       		.byte	0x1
  612 0220 CF       		.byte	0xcf
  613 0221 77000000 		.4byte	0x77
  614 0225 00000000 		.4byte	.LLST0
  615 0229 0C       		.uleb128 0xc
- 616 022a 41030000 		.4byte	.LASF23
+ 616 022a 38030000 		.4byte	.LASF23
  617 022e 01       		.byte	0x1
  618 022f D1       		.byte	0xd1
  619 0230 6B000000 		.4byte	0x6b
  620 0234 21000000 		.4byte	.LLST1
  621 0238 0C       		.uleb128 0xc
- 622 0239 57020000 		.4byte	.LASF24
+ 622 0239 4E020000 		.4byte	.LASF24
  623 023d 01       		.byte	0x1
  624 023e D2       		.byte	0xd2
  625 023f 6B000000 		.4byte	0x6b
@@ -1016,9 +1016,9 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  648 0272 0F       		.byte	0xf
  649 0273 00       		.byte	0
  650 0274 11       		.uleb128 0x11
- 651 0275 EC020000 		.4byte	.LASF25
+ 651 0275 E3020000 		.4byte	.LASF25
  652 0279 01       		.byte	0x1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 18
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 18
 
 
  653 027a 19       		.byte	0x19
@@ -1027,7 +1027,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  656 0280 03       		.byte	0x3
  657 0281 04000000 		.4byte	DVDAC_ditheredValues
  658 0285 11       		.uleb128 0x11
- 659 0286 33030000 		.4byte	.LASF26
+ 659 0286 2A030000 		.4byte	.LASF26
  660 028a 01       		.byte	0x1
  661 028b 1F       		.byte	0x1f
  662 028c 6B000000 		.4byte	0x6b
@@ -1035,7 +1035,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  664 0291 03       		.byte	0x3
  665 0292 00000000 		.4byte	DVDAC_dmaChan
  666 0296 11       		.uleb128 0x11
- 667 0297 87020000 		.4byte	.LASF27
+ 667 0297 7E020000 		.4byte	.LASF27
  668 029b 01       		.byte	0x1
  669 029c 20       		.byte	0x20
  670 029d 6B000000 		.4byte	0x6b
@@ -1043,7 +1043,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  672 02a2 03       		.byte	0x3
  673 02a3 00000000 		.4byte	DVDAC_dmaTd
  674 02a7 12       		.uleb128 0x12
- 675 02a8 01030000 		.4byte	.LASF44
+ 675 02a8 F8020000 		.4byte	.LASF44
  676 02ac 01       		.byte	0x1
  677 02ad 1D       		.byte	0x1d
  678 02ae 6B000000 		.4byte	0x6b
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  707 02f2 0B030000 		.4byte	0x30b
  708 02f6 14       		.uleb128 0x14
  709 02f7 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 19
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 19
 
 
  710 02fb 14       		.uleb128 0x14
@@ -1113,7 +1113,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  739 033f 6B000000 		.4byte	0x6b
  740 0343 00       		.byte	0
  741 0344 16       		.uleb128 0x16
- 742 0345 92000000 		.4byte	.LASF33
+ 742 0345 36000000 		.4byte	.LASF33
  743 0349 05       		.byte	0x5
  744 034a 39       		.byte	0x39
  745 034b 13       		.uleb128 0x13
@@ -1128,7 +1128,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  754 0360 6B000000 		.4byte	0x6b
  755 0364 00       		.byte	0
  756 0365 16       		.uleb128 0x16
- 757 0366 4A030000 		.4byte	.LASF34
+ 757 0366 41030000 		.4byte	.LASF34
  758 036a 06       		.byte	0x6
  759 036b 27       		.byte	0x27
  760 036c 16       		.uleb128 0x16
@@ -1136,14 +1136,14 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  762 0371 05       		.byte	0x5
  763 0372 3A       		.byte	0x3a
  764 0373 16       		.uleb128 0x16
- 765 0374 7E000000 		.4byte	.LASF36
+ 765 0374 22000000 		.4byte	.LASF36
  766 0378 06       		.byte	0x6
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 20
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 20
 
 
  767 0379 28       		.byte	0x28
  768 037a 13       		.uleb128 0x13
- 769 037b 24030000 		.4byte	.LASF37
+ 769 037b 1B030000 		.4byte	.LASF37
  770 037f 04       		.byte	0x4
  771 0380 2A       		.byte	0x2a
  772 0381 A4000000 		.4byte	0xa4
@@ -1156,7 +1156,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  779 0394 05       		.byte	0x5
  780 0395 34       		.byte	0x34
  781 0396 17       		.uleb128 0x17
- 782 0397 BF020000 		.4byte	.LASF46
+ 782 0397 B6020000 		.4byte	.LASF46
  783 039b 07       		.byte	0x7
  784 039c 7F       		.byte	0x7f
  785 039d 14       		.uleb128 0x14
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  821 001e 03       		.uleb128 0x3
  822 001f 24       		.uleb128 0x24
  823 0020 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 21
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 21
 
 
  824 0021 0B       		.uleb128 0xb
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  878 005a 11       		.uleb128 0x11
  879 005b 01       		.uleb128 0x1
  880 005c 31       		.uleb128 0x31
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 22
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 22
 
 
  881 005d 13       		.uleb128 0x13
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  935 0099 0B       		.uleb128 0xb
  936 009a 3B       		.uleb128 0x3b
  937 009b 0B       		.uleb128 0xb
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 23
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 23
 
 
  938 009c 49       		.uleb128 0x49
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  992 00d4 10       		.uleb128 0x10
  993 00d5 21       		.uleb128 0x21
  994 00d6 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 24
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 24
 
 
  995 00d7 49       		.uleb128 0x49
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  1049 010d 19       		.uleb128 0x19
  1050 010e 01       		.uleb128 0x1
  1051 010f 13       		.uleb128 0x13
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 25
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 25
 
 
  1052 0110 00       		.byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  1106 0146 3B       		.uleb128 0x3b
  1107 0147 0B       		.uleb128 0xb
  1108 0148 27       		.uleb128 0x27
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 26
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 26
 
 
  1109 0149 19       		.uleb128 0x19
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  1163 0077 00000000 		.4byte	0
  1164              		.section	.debug_aranges,"",%progbits
  1165 0000 44000000 		.4byte	0x44
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 27
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 27
 
 
  1166 0004 0200     		.2byte	0x2
@@ -1608,251 +1608,249 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 1
  1206 0000 44564441 		.ascii	"DVDAC_Stop\000"
  1206      435F5374 
  1206      6F7000
- 1207              	.LASF41:
- 1208 000b 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 1208      73657273 
- 1208      5C427279 
- 1208      616E204F 
- 1208      72616275 
- 1209 0039 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 1209      534F435F 
- 1209      50524F47 
- 1209      52414D53 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 28
+ 1207              	.LASF15:
+ 1208 000b 63797374 		.ascii	"cystatus\000"
+ 1208      61747573 
+ 1208      00
+ 1209              	.LASF42:
+ 1210 0014 44564441 		.ascii	"DVDAC_InitDma\000"
+ 1210      435F496E 
+ 1210      6974446D 
+ 1210      6100
+ 1211              	.LASF36:
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 28
 
 
- 1209      5C50536F 
- 1210 0069 2E637964 		.ascii	".cydsn\000"
- 1210      736E00
- 1211              	.LASF42:
- 1212 0070 44564441 		.ascii	"DVDAC_InitDma\000"
+ 1212 0022 44564441 		.ascii	"DVDAC_IntClock_Stop\000"
  1212      435F496E 
- 1212      6974446D 
- 1212      6100
- 1213              	.LASF36:
- 1214 007e 44564441 		.ascii	"DVDAC_IntClock_Stop\000"
- 1214      435F496E 
- 1214      74436C6F 
- 1214      636B5F53 
- 1214      746F7000 
- 1215              	.LASF33:
- 1216 0092 44564441 		.ascii	"DVDAC_VDAC8_Init\000"
- 1216      435F5644 
- 1216      4143385F 
- 1216      496E6974 
- 1216      00
- 1217              	.LASF43:
- 1218 00a3 76616C75 		.ascii	"value\000"
- 1218      6500
- 1219              	.LASF30:
- 1220 00a9 4379446D 		.ascii	"CyDmaTdSetAddress\000"
- 1220      61546453 
- 1220      65744164 
- 1220      64726573 
- 1220      7300
- 1221              	.LASF28:
- 1222 00bb 44564441 		.ascii	"DVDAC_DMA_DmaInitialize\000"
- 1222      435F444D 
- 1222      415F446D 
- 1222      61496E69 
- 1222      7469616C 
- 1223              	.LASF3:
- 1224 00d3 73686F72 		.ascii	"short unsigned int\000"
- 1224      7420756E 
- 1224      7369676E 
- 1224      65642069 
- 1224      6E7400
- 1225              	.LASF31:
- 1226 00e6 4379446D 		.ascii	"CyDmaChSetInitialTd\000"
- 1226      61436853 
- 1226      6574496E 
- 1226      69746961 
- 1226      6C546400 
- 1227              	.LASF20:
- 1228 00fa 44564441 		.ascii	"DVDAC_Start\000"
- 1228      435F5374 
- 1228      61727400 
- 1229              	.LASF45:
- 1230 0106 4379446D 		.ascii	"CyDmaTdAllocate\000"
- 1230      61546441 
- 1230      6C6C6F63 
- 1230      61746500 
- 1231              	.LASF12:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 29
+ 1212      74436C6F 
+ 1212      636B5F53 
+ 1212      746F7000 
+ 1213              	.LASF33:
+ 1214 0036 44564441 		.ascii	"DVDAC_VDAC8_Init\000"
+ 1214      435F5644 
+ 1214      4143385F 
+ 1214      496E6974 
+ 1214      00
+ 1215              	.LASF43:
+ 1216 0047 76616C75 		.ascii	"value\000"
+ 1216      6500
+ 1217              	.LASF41:
+ 1218 004d 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 1218      73657273 
+ 1218      5C4C4149 
+ 1218      525C446F 
+ 1218      63756D65 
+ 1219 007a 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 1219      52414D53 
+ 1219      5C50536F 
+ 1219      43355C52 
+ 1219      6F616472 
+ 1220              	.LASF30:
+ 1221 00a9 4379446D 		.ascii	"CyDmaTdSetAddress\000"
+ 1221      61546453 
+ 1221      65744164 
+ 1221      64726573 
+ 1221      7300
+ 1222              	.LASF28:
+ 1223 00bb 44564441 		.ascii	"DVDAC_DMA_DmaInitialize\000"
+ 1223      435F444D 
+ 1223      415F446D 
+ 1223      61496E69 
+ 1223      7469616C 
+ 1224              	.LASF3:
+ 1225 00d3 73686F72 		.ascii	"short unsigned int\000"
+ 1225      7420756E 
+ 1225      7369676E 
+ 1225      65642069 
+ 1225      6E7400
+ 1226              	.LASF31:
+ 1227 00e6 4379446D 		.ascii	"CyDmaChSetInitialTd\000"
+ 1227      61436853 
+ 1227      6574496E 
+ 1227      69746961 
+ 1227      6C546400 
+ 1228              	.LASF20:
+ 1229 00fa 44564441 		.ascii	"DVDAC_Start\000"
+ 1229      435F5374 
+ 1229      61727400 
+ 1230              	.LASF45:
+ 1231 0106 4379446D 		.ascii	"CyDmaTdAllocate\000"
+ 1231      61546441 
+ 1231      6C6C6F63 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 29
 
 
- 1232 0116 666C6F61 		.ascii	"float\000"
- 1232      7400
- 1233              	.LASF19:
- 1234 011c 44564441 		.ascii	"DVDAC_Enable\000"
- 1234      435F456E 
- 1234      61626C65 
- 1234      00
- 1235              	.LASF1:
- 1236 0129 756E7369 		.ascii	"unsigned char\000"
- 1236      676E6564 
- 1236      20636861 
- 1236      7200
- 1237              	.LASF16:
- 1238 0137 72656738 		.ascii	"reg8\000"
- 1238      00
- 1239              	.LASF29:
- 1240 013c 4379446D 		.ascii	"CyDmaTdSetConfiguration\000"
- 1240      61546453 
- 1240      6574436F 
- 1240      6E666967 
- 1240      75726174 
- 1241              	.LASF5:
- 1242 0154 6C6F6E67 		.ascii	"long unsigned int\000"
- 1242      20756E73 
- 1242      69676E65 
- 1242      6420696E 
- 1242      7400
- 1243              	.LASF9:
- 1244 0166 75696E74 		.ascii	"uint8\000"
- 1244      3800
- 1245              	.LASF35:
- 1246 016c 44564441 		.ascii	"DVDAC_VDAC8_Enable\000"
- 1246      435F5644 
- 1246      4143385F 
- 1246      456E6162 
- 1246      6C6500
- 1247              	.LASF38:
- 1248 017f 44564441 		.ascii	"DVDAC_VDAC8_Stop\000"
- 1248      435F5644 
- 1248      4143385F 
- 1248      53746F70 
- 1248      00
- 1249              	.LASF13:
- 1250 0190 646F7562 		.ascii	"double\000"
- 1250      6C6500
- 1251              	.LASF32:
- 1252 0197 4379446D 		.ascii	"CyDmaChEnable\000"
- 1252      61436845 
- 1252      6E61626C 
- 1252      6500
- 1253              	.LASF10:
- 1254 01a5 75696E74 		.ascii	"uint16\000"
- 1254      313600
- 1255              	.LASF15:
- 1256 01ac 63797374 		.ascii	"cystatus\000"
- 1256      61747573 
- 1256      00
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 30
+ 1231      61746500 
+ 1232              	.LASF12:
+ 1233 0116 666C6F61 		.ascii	"float\000"
+ 1233      7400
+ 1234              	.LASF19:
+ 1235 011c 44564441 		.ascii	"DVDAC_Enable\000"
+ 1235      435F456E 
+ 1235      61626C65 
+ 1235      00
+ 1236              	.LASF1:
+ 1237 0129 756E7369 		.ascii	"unsigned char\000"
+ 1237      676E6564 
+ 1237      20636861 
+ 1237      7200
+ 1238              	.LASF16:
+ 1239 0137 72656738 		.ascii	"reg8\000"
+ 1239      00
+ 1240              	.LASF29:
+ 1241 013c 4379446D 		.ascii	"CyDmaTdSetConfiguration\000"
+ 1241      61546453 
+ 1241      6574436F 
+ 1241      6E666967 
+ 1241      75726174 
+ 1242              	.LASF5:
+ 1243 0154 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1243      20756E73 
+ 1243      69676E65 
+ 1243      6420696E 
+ 1243      7400
+ 1244              	.LASF9:
+ 1245 0166 75696E74 		.ascii	"uint8\000"
+ 1245      3800
+ 1246              	.LASF35:
+ 1247 016c 44564441 		.ascii	"DVDAC_VDAC8_Enable\000"
+ 1247      435F5644 
+ 1247      4143385F 
+ 1247      456E6162 
+ 1247      6C6500
+ 1248              	.LASF38:
+ 1249 017f 44564441 		.ascii	"DVDAC_VDAC8_Stop\000"
+ 1249      435F5644 
+ 1249      4143385F 
+ 1249      53746F70 
+ 1249      00
+ 1250              	.LASF13:
+ 1251 0190 646F7562 		.ascii	"double\000"
+ 1251      6C6500
+ 1252              	.LASF32:
+ 1253 0197 4379446D 		.ascii	"CyDmaChEnable\000"
+ 1253      61436845 
+ 1253      6E61626C 
+ 1253      6500
+ 1254              	.LASF10:
+ 1255 01a5 75696E74 		.ascii	"uint16\000"
+ 1255      313600
+ 1256              	.LASF11:
+ 1257 01ac 75696E74 		.ascii	"uint32\000"
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 30
 
 
- 1257              	.LASF11:
- 1258 01b5 75696E74 		.ascii	"uint32\000"
- 1258      333200
- 1259              	.LASF39:
- 1260 01bc 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1260      4320342E 
- 1260      392E3320 
- 1260      32303135 
- 1260      30333033 
- 1261 01ef 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1261      20726576 
- 1261      6973696F 
- 1261      6E203232 
- 1261      31323230 
- 1262 0222 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1262      66756E63 
- 1262      74696F6E 
- 1262      2D736563 
- 1262      74696F6E 
- 1263              	.LASF8:
- 1264 024a 756E7369 		.ascii	"unsigned int\000"
- 1264      676E6564 
- 1264      20696E74 
- 1264      00
- 1265              	.LASF24:
- 1266 0257 68696768 		.ascii	"highCount\000"
- 1266      436F756E 
- 1266      7400
- 1267              	.LASF22:
- 1268 0261 44564441 		.ascii	"DVDAC_SetValue\000"
- 1268      435F5365 
- 1268      7456616C 
- 1268      756500
- 1269              	.LASF7:
- 1270 0270 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1270      206C6F6E 
- 1270      6720756E 
- 1270      7369676E 
- 1270      65642069 
- 1271              	.LASF27:
- 1272 0287 44564441 		.ascii	"DVDAC_dmaTd\000"
- 1272      435F646D 
- 1272      61546400 
- 1273              	.LASF40:
- 1274 0293 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\DVDAC.c\000"
- 1274      6E657261 
- 1274      7465645F 
- 1274      536F7572 
- 1274      63655C50 
- 1275              	.LASF18:
- 1276 02b4 44564441 		.ascii	"DVDAC_Init\000"
- 1276      435F496E 
- 1276      697400
- 1277              	.LASF46:
- 1278 02bf 43794861 		.ascii	"CyHalt\000"
- 1278      6C7400
- 1279              	.LASF17:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\cceg3p2F.s 			page 31
+ 1257      333200
+ 1258              	.LASF39:
+ 1259 01b3 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1259      4320342E 
+ 1259      392E3320 
+ 1259      32303135 
+ 1259      30333033 
+ 1260 01e6 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1260      20726576 
+ 1260      6973696F 
+ 1260      6E203232 
+ 1260      31323230 
+ 1261 0219 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1261      66756E63 
+ 1261      74696F6E 
+ 1261      2D736563 
+ 1261      74696F6E 
+ 1262              	.LASF8:
+ 1263 0241 756E7369 		.ascii	"unsigned int\000"
+ 1263      676E6564 
+ 1263      20696E74 
+ 1263      00
+ 1264              	.LASF24:
+ 1265 024e 68696768 		.ascii	"highCount\000"
+ 1265      436F756E 
+ 1265      7400
+ 1266              	.LASF22:
+ 1267 0258 44564441 		.ascii	"DVDAC_SetValue\000"
+ 1267      435F5365 
+ 1267      7456616C 
+ 1267      756500
+ 1268              	.LASF7:
+ 1269 0267 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1269      206C6F6E 
+ 1269      6720756E 
+ 1269      7369676E 
+ 1269      65642069 
+ 1270              	.LASF27:
+ 1271 027e 44564441 		.ascii	"DVDAC_dmaTd\000"
+ 1271      435F646D 
+ 1271      61546400 
+ 1272              	.LASF40:
+ 1273 028a 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\DVDAC.c\000"
+ 1273      6E657261 
+ 1273      7465645F 
+ 1273      536F7572 
+ 1273      63655C50 
+ 1274              	.LASF18:
+ 1275 02ab 44564441 		.ascii	"DVDAC_Init\000"
+ 1275      435F496E 
+ 1275      697400
+ 1276              	.LASF46:
+ 1277 02b6 43794861 		.ascii	"CyHalt\000"
+ 1277      6C7400
+ 1278              	.LASF17:
+ 1279 02bd 73697A65 		.ascii	"sizetype\000"
+ 1279      74797065 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cchE9BuM.s 			page 31
 
 
- 1280 02c6 73697A65 		.ascii	"sizetype\000"
- 1280      74797065 
- 1280      00
- 1281              	.LASF6:
- 1282 02cf 6C6F6E67 		.ascii	"long long int\000"
- 1282      206C6F6E 
- 1282      6720696E 
- 1282      7400
- 1283              	.LASF14:
- 1284 02dd 63686172 		.ascii	"char\000"
- 1284      00
- 1285              	.LASF2:
- 1286 02e2 73686F72 		.ascii	"short int\000"
- 1286      7420696E 
- 1286      7400
- 1287              	.LASF25:
- 1288 02ec 44564441 		.ascii	"DVDAC_ditheredValues\000"
- 1288      435F6469 
- 1288      74686572 
- 1288      65645661 
- 1288      6C756573 
- 1289              	.LASF44:
- 1290 0301 44564441 		.ascii	"DVDAC_initVar\000"
- 1290      435F696E 
- 1290      69745661 
- 1290      7200
- 1291              	.LASF4:
- 1292 030f 6C6F6E67 		.ascii	"long int\000"
- 1292      20696E74 
- 1292      00
- 1293              	.LASF0:
- 1294 0318 7369676E 		.ascii	"signed char\000"
- 1294      65642063 
- 1294      68617200 
- 1295              	.LASF37:
- 1296 0324 4379446D 		.ascii	"CyDmaChDisable\000"
- 1296      61436844 
- 1296      69736162 
- 1296      6C6500
- 1297              	.LASF26:
- 1298 0333 44564441 		.ascii	"DVDAC_dmaChan\000"
- 1298      435F646D 
- 1298      61436861 
- 1298      6E00
- 1299              	.LASF23:
- 1300 0341 6C6F7743 		.ascii	"lowCount\000"
- 1300      6F756E74 
- 1300      00
- 1301              	.LASF34:
- 1302 034a 44564441 		.ascii	"DVDAC_IntClock_Start\000"
- 1302      435F496E 
- 1302      74436C6F 
- 1302      636B5F53 
- 1302      74617274 
- 1303              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1279      00
+ 1280              	.LASF6:
+ 1281 02c6 6C6F6E67 		.ascii	"long long int\000"
+ 1281      206C6F6E 
+ 1281      6720696E 
+ 1281      7400
+ 1282              	.LASF14:
+ 1283 02d4 63686172 		.ascii	"char\000"
+ 1283      00
+ 1284              	.LASF2:
+ 1285 02d9 73686F72 		.ascii	"short int\000"
+ 1285      7420696E 
+ 1285      7400
+ 1286              	.LASF25:
+ 1287 02e3 44564441 		.ascii	"DVDAC_ditheredValues\000"
+ 1287      435F6469 
+ 1287      74686572 
+ 1287      65645661 
+ 1287      6C756573 
+ 1288              	.LASF44:
+ 1289 02f8 44564441 		.ascii	"DVDAC_initVar\000"
+ 1289      435F696E 
+ 1289      69745661 
+ 1289      7200
+ 1290              	.LASF4:
+ 1291 0306 6C6F6E67 		.ascii	"long int\000"
+ 1291      20696E74 
+ 1291      00
+ 1292              	.LASF0:
+ 1293 030f 7369676E 		.ascii	"signed char\000"
+ 1293      65642063 
+ 1293      68617200 
+ 1294              	.LASF37:
+ 1295 031b 4379446D 		.ascii	"CyDmaChDisable\000"
+ 1295      61436844 
+ 1295      69736162 
+ 1295      6C6500
+ 1296              	.LASF26:
+ 1297 032a 44564441 		.ascii	"DVDAC_dmaChan\000"
+ 1297      435F646D 
+ 1297      61436861 
+ 1297      6E00
+ 1298              	.LASF23:
+ 1299 0338 6C6F7743 		.ascii	"lowCount\000"
+ 1299      6F756E74 
+ 1299      00
+ 1300              	.LASF34:
+ 1301 0341 44564441 		.ascii	"DVDAC_IntClock_Start\000"
+ 1301      435F496E 
+ 1301      74436C6F 
+ 1301      636B5F53 
+ 1301      74617274 
+ 1302              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

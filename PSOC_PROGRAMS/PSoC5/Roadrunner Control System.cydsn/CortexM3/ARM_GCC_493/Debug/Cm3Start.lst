@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
   29:.\Generated_Source\PSoC5/Cm3Start.c **** #define CY_NVIC_CFG_CTRL_PTR        ((reg32 *) CYREG_NVIC_CFG_CONTROL)
   30:.\Generated_Source\PSoC5/Cm3Start.c **** #define CY_NVIC_APINT_PRIGROUP_3_5  (0x00000400u)  /* Priority group 3.5 split */
   31:.\Generated_Source\PSoC5/Cm3Start.c **** #define CY_NVIC_APINT_VECTKEY       (0x05FA0000u)  /* This key is required in order to write the NV
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/Cm3Start.c **** #define CY_NVIC_CFG_STACKALIGN      (0x00000200u)  /* This specifies that the exception stack must 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
   86:.\Generated_Source\PSoC5/Cm3Start.c **** *
   87:.\Generated_Source\PSoC5/Cm3Start.c **** * Theory:
   88:.\Generated_Source\PSoC5/Cm3Start.c **** *  Any value other than zero is acceptable.
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/Cm3Start.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  123:.\Generated_Source\PSoC5/Cm3Start.c **** * Function Name: Reset
  124:.\Generated_Source\PSoC5/Cm3Start.c **** ****************************************************************************//**
  125:.\Generated_Source\PSoC5/Cm3Start.c **** *
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 4
 
 
  126:.\Generated_Source\PSoC5/Cm3Start.c **** *  This function handles the reset interrupt for the RVDS/MDK toolchains.
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  180:.\Generated_Source\PSoC5/Cm3Start.c **** 
  181:.\Generated_Source\PSoC5/Cm3Start.c **** /* Application entry point. */
  182:.\Generated_Source\PSoC5/Cm3Start.c **** extern int main(void);
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 5
 
 
  183:.\Generated_Source\PSoC5/Cm3Start.c **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
   62              	.L4:
  222:.\Generated_Source\PSoC5/Cm3Start.c ****     while(1)
  223:.\Generated_Source\PSoC5/Cm3Start.c ****     {
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 6
 
 
  224:.\Generated_Source\PSoC5/Cm3Start.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
   88 0006 1044     		add	r0, r0, r2
   89              	.LVL4:
   90 0008 084B     		ldr	r3, .L10+4
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 7
 
 
   91 000a C31A     		subs	r3, r0, r3
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  268:.\Generated_Source\PSoC5/Cm3Start.c **** * Function Name: Reset
  269:.\Generated_Source\PSoC5/Cm3Start.c **** ****************************************************************************//**
  270:.\Generated_Source\PSoC5/Cm3Start.c **** *
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 8
 
 
  271:.\Generated_Source\PSoC5/Cm3Start.c **** *  This function handles the reset interrupt for the GCC toolchain. This is the
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  315:.\Generated_Source\PSoC5/Cm3Start.c ****     for (regions = __cy_region_num; regions != 0u; regions--)
  140              		.loc 1 315 0
  141 0002 104E     		ldr	r6, .L21
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 9
 
 
  312:.\Generated_Source\PSoC5/Cm3Start.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  179 0022 0022     		movs	r2, #0
  180 0024 03E0     		b	.L16
  181              	.LVL20:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 10
 
 
  182              	.L17:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  216              	.L21:
  217 0044 00000000 		.word	__cy_region_num
  218 0048 00000000 		.word	__cy_regions
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 11
 
 
  219              		.cfi_endproc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  353:.\Generated_Source\PSoC5/Cm3Start.c **** ****************************************************************************//**
  354:.\Generated_Source\PSoC5/Cm3Start.c **** *
  355:.\Generated_Source\PSoC5/Cm3Start.c **** *  This function performs early initializations for the IAR Embedded
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 12
 
 
  356:.\Generated_Source\PSoC5/Cm3Start.c **** *  Workbench IDE. It is executed in the context of a reset interrupt handler
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  410:.\Generated_Source\PSoC5/Cm3Start.c **** #else
  411:.\Generated_Source\PSoC5/Cm3Start.c ****     CY_SECTION(".romvectors")
  412:.\Generated_Source\PSoC5/Cm3Start.c ****     const cyisraddress RomVectors[CY_NUM_ROM_VECTORS] =
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 13
 
 
  413:.\Generated_Source\PSoC5/Cm3Start.c **** #endif  /* defined (__ICCARM__) */
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  449:.\Generated_Source\PSoC5/Cm3Start.c **** 
  450:.\Generated_Source\PSoC5/Cm3Start.c ****     /* Set Ram interrupt vectors to default functions. */
  451:.\Generated_Source\PSoC5/Cm3Start.c ****     for (i = 0u; i < CY_NUM_VECTORS; i++)
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 14
 
 
  281              		.loc 1 451 0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  317              		.loc 1 467 0
  318 003e FFF7FEFF 		bl	cyfitter_cfg
  319              	.LVL32:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 15
 
 
  468:.\Generated_Source\PSoC5/Cm3Start.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  363              		.size	heapPointer.4940, 4
  364              	heapPointer.4940:
  365 0000 00000000 		.word	end
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 16
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 16
 
 
  366              		.section	.noinit,"aw",%progbits
@@ -939,48 +939,48 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  393 0006 00000000 		.4byte	.Ldebug_abbrev0
  394 000a 04       		.byte	0x4
  395 000b 01       		.uleb128 0x1
- 396 000c B0010000 		.4byte	.LASF47
+ 396 000c 4B010000 		.4byte	.LASF47
  397 0010 01       		.byte	0x1
  398 0011 00000000 		.4byte	.LASF48
- 399 0015 24000000 		.4byte	.LASF49
+ 399 0015 10020000 		.4byte	.LASF49
  400 0019 00000000 		.4byte	.Ldebug_ranges0+0
  401 001d 00000000 		.4byte	0
  402 0021 00000000 		.4byte	.Ldebug_line0
  403 0025 02       		.uleb128 0x2
  404 0026 01       		.byte	0x1
  405 0027 06       		.byte	0x6
- 406 0028 FF020000 		.4byte	.LASF0
+ 406 0028 F6020000 		.4byte	.LASF0
  407 002c 02       		.uleb128 0x2
  408 002d 01       		.byte	0x1
  409 002e 08       		.byte	0x8
- 410 002f 0D010000 		.4byte	.LASF1
+ 410 002f A8000000 		.4byte	.LASF1
  411 0033 02       		.uleb128 0x2
  412 0034 02       		.byte	0x2
  413 0035 05       		.byte	0x5
- 414 0036 BE020000 		.4byte	.LASF2
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 17
+ 414 0036 B5020000 		.4byte	.LASF2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 17
 
 
  415 003a 02       		.uleb128 0x2
  416 003b 02       		.byte	0x2
  417 003c 07       		.byte	0x7
- 418 003d C4000000 		.4byte	.LASF3
+ 418 003d 5F000000 		.4byte	.LASF3
  419 0041 02       		.uleb128 0x2
  420 0042 04       		.byte	0x4
  421 0043 05       		.byte	0x5
- 422 0044 E8020000 		.4byte	.LASF4
+ 422 0044 DF020000 		.4byte	.LASF4
  423 0048 02       		.uleb128 0x2
  424 0049 04       		.byte	0x4
  425 004a 07       		.byte	0x7
- 426 004b 32010000 		.4byte	.LASF5
+ 426 004b CD000000 		.4byte	.LASF5
  427 004f 02       		.uleb128 0x2
  428 0050 08       		.byte	0x8
  429 0051 05       		.byte	0x5
- 430 0052 AB020000 		.4byte	.LASF6
+ 430 0052 A2020000 		.4byte	.LASF6
  431 0056 02       		.uleb128 0x2
  432 0057 08       		.byte	0x8
  433 0058 07       		.byte	0x7
- 434 0059 58020000 		.4byte	.LASF7
+ 434 0059 F3010000 		.4byte	.LASF7
  435 005d 03       		.uleb128 0x3
  436 005e 04       		.byte	0x4
  437 005f 05       		.byte	0x5
@@ -988,48 +988,48 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  439 0064 02       		.uleb128 0x2
  440 0065 04       		.byte	0x4
  441 0066 07       		.byte	0x7
- 442 0067 3E020000 		.4byte	.LASF8
+ 442 0067 D9010000 		.4byte	.LASF8
  443 006b 04       		.uleb128 0x4
- 444 006c C8020000 		.4byte	.LASF9
+ 444 006c BF020000 		.4byte	.LASF9
  445 0070 02       		.byte	0x2
  446 0071 9201     		.2byte	0x192
  447 0073 2C000000 		.4byte	0x2c
  448 0077 04       		.uleb128 0x4
- 449 0078 A9010000 		.4byte	.LASF10
+ 449 0078 44010000 		.4byte	.LASF10
  450 007c 02       		.byte	0x2
  451 007d 9401     		.2byte	0x194
  452 007f 48000000 		.4byte	0x48
  453 0083 02       		.uleb128 0x2
  454 0084 04       		.byte	0x4
  455 0085 04       		.byte	0x4
- 456 0086 02010000 		.4byte	.LASF11
+ 456 0086 9D000000 		.4byte	.LASF11
  457 008a 02       		.uleb128 0x2
  458 008b 08       		.byte	0x8
  459 008c 04       		.byte	0x4
- 460 008d 8D010000 		.4byte	.LASF12
+ 460 008d 28010000 		.4byte	.LASF12
  461 0091 02       		.uleb128 0x2
  462 0092 01       		.byte	0x1
  463 0093 08       		.byte	0x8
- 464 0094 B9020000 		.4byte	.LASF13
+ 464 0094 B0020000 		.4byte	.LASF13
  465 0098 04       		.uleb128 0x4
- 466 0099 9D020000 		.4byte	.LASF14
+ 466 0099 94020000 		.4byte	.LASF14
  467 009d 02       		.byte	0x2
  468 009e 3C02     		.2byte	0x23c
  469 00a0 A4000000 		.4byte	0xa4
  470 00a4 05       		.uleb128 0x5
  471 00a5 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 18
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 18
 
 
  472 00a9 04       		.uleb128 0x4
- 473 00aa 89000000 		.4byte	.LASF15
+ 473 00aa 24000000 		.4byte	.LASF15
  474 00ae 02       		.byte	0x2
  475 00af 3E02     		.2byte	0x23e
  476 00b1 B5000000 		.4byte	0xb5
  477 00b5 05       		.uleb128 0x5
  478 00b6 77000000 		.4byte	0x77
  479 00ba 04       		.uleb128 0x4
- 480 00bb 75020000 		.4byte	.LASF16
+ 480 00bb 6C020000 		.4byte	.LASF16
  481 00bf 02       		.byte	0x2
  482 00c0 4E02     		.2byte	0x24e
  483 00c2 C6000000 		.4byte	0xc6
@@ -1038,52 +1038,52 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  486 00c8 CC000000 		.4byte	0xcc
  487 00cc 07       		.uleb128 0x7
  488 00cd 08       		.uleb128 0x8
- 489 00ce 8F000000 		.4byte	.LASF17
+ 489 00ce 2A000000 		.4byte	.LASF17
  490 00d2 03       		.byte	0x3
  491 00d3 D4       		.byte	0xd4
  492 00d4 64000000 		.4byte	0x64
  493 00d8 02       		.uleb128 0x2
  494 00d9 04       		.byte	0x4
  495 00da 07       		.byte	0x7
- 496 00db A2020000 		.4byte	.LASF18
+ 496 00db 99020000 		.4byte	.LASF18
  497 00df 09       		.uleb128 0x9
  498 00e0 04       		.byte	0x4
  499 00e1 0A       		.uleb128 0xa
  500 00e2 91000000 		.4byte	0x91
  501 00e6 08       		.uleb128 0x8
- 502 00e7 8C020000 		.4byte	.LASF19
+ 502 00e7 83020000 		.4byte	.LASF19
  503 00eb 01       		.byte	0x1
  504 00ec BB       		.byte	0xbb
  505 00ed 2C000000 		.4byte	0x2c
  506 00f1 0B       		.uleb128 0xb
- 507 00f2 27030000 		.4byte	.LASF50
+ 507 00f2 1E030000 		.4byte	.LASF50
  508 00f6 10       		.byte	0x10
  509 00f7 01       		.byte	0x1
  510 00f8 BD       		.byte	0xbd
  511 00f9 2E010000 		.4byte	0x12e
  512 00fd 0C       		.uleb128 0xc
- 513 00fe E7000000 		.4byte	.LASF20
+ 513 00fe 82000000 		.4byte	.LASF20
  514 0102 01       		.byte	0x1
  515 0103 BF       		.byte	0xbf
  516 0104 2E010000 		.4byte	0x12e
  517 0108 00       		.byte	0
  518 0109 0C       		.uleb128 0xc
- 519 010a 08010000 		.4byte	.LASF21
+ 519 010a A3000000 		.4byte	.LASF21
  520 010e 01       		.byte	0x1
  521 010f C0       		.byte	0xc0
  522 0110 2E010000 		.4byte	0x12e
  523 0114 04       		.byte	0x4
  524 0115 0C       		.uleb128 0xc
- 525 0116 82020000 		.4byte	.LASF22
+ 525 0116 79020000 		.4byte	.LASF22
  526 011a 01       		.byte	0x1
  527 011b C1       		.byte	0xc1
  528 011c CD000000 		.4byte	0xcd
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 19
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 19
 
 
  529 0120 08       		.byte	0x8
  530 0121 0C       		.uleb128 0xc
- 531 0122 F3000000 		.4byte	.LASF23
+ 531 0122 8E000000 		.4byte	.LASF23
  532 0126 01       		.byte	0x1
  533 0127 C2       		.byte	0xc2
  534 0128 CD000000 		.4byte	0xcd
@@ -1093,7 +1093,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  538 012f 04       		.byte	0x4
  539 0130 E6000000 		.4byte	0xe6
  540 0134 0D       		.uleb128 0xd
- 541 0135 75010000 		.4byte	.LASF51
+ 541 0135 10010000 		.4byte	.LASF51
  542 0139 01       		.byte	0x1
  543 013a 5B       		.byte	0x5b
  544 013b 00000000 		.4byte	.LFB0
@@ -1101,7 +1101,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  546 0143 01       		.uleb128 0x1
  547 0144 9C       		.byte	0x9c
  548 0145 0E       		.uleb128 0xe
- 549 0146 6F010000 		.4byte	.LASF28
+ 549 0146 0A010000 		.4byte	.LASF28
  550 014a 01       		.byte	0x1
  551 014b DB       		.byte	0xdb
  552 014c 00000000 		.4byte	.LFB1
@@ -1110,7 +1110,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  555 0155 9C       		.byte	0x9c
  556 0156 7B010000 		.4byte	0x17b
  557 015a 0F       		.uleb128 0xf
- 558 015b EC000000 		.4byte	.LASF24
+ 558 015b 87000000 		.4byte	.LASF24
  559 015f 01       		.byte	0x1
  560 0160 DB       		.byte	0xdb
  561 0161 5D000000 		.4byte	0x5d
@@ -1128,7 +1128,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  573 0179 00       		.byte	0
  574 017a 00       		.byte	0
  575 017b 12       		.uleb128 0x12
- 576 017c 87010000 		.4byte	.LASF52
+ 576 017c 22010000 		.4byte	.LASF52
  577 0180 01       		.byte	0x1
  578 0181 F4       		.byte	0xf4
  579 0182 DF000000 		.4byte	0xdf
@@ -1138,10 +1138,10 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  583 018f 9C       		.byte	0x9c
  584 0190 D8010000 		.4byte	0x1d8
  585 0194 0F       		.uleb128 0xf
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 20
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 20
 
 
- 586 0195 20030000 		.4byte	.LASF25
+ 586 0195 17030000 		.4byte	.LASF25
  587 0199 01       		.byte	0x1
  588 019a F4       		.byte	0xf4
  589 019b 5D000000 		.4byte	0x5d
@@ -1152,13 +1152,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  594 01a9 F6       		.byte	0xf6
  595 01aa 5D000000 		.4byte	0x5d
  596 01ae 14       		.uleb128 0x14
- 597 01af 1B010000 		.4byte	.LASF26
+ 597 01af B6000000 		.4byte	.LASF26
  598 01b3 01       		.byte	0x1
  599 01b4 F7       		.byte	0xf7
  600 01b5 DF000000 		.4byte	0xdf
  601 01b9 42000000 		.4byte	.LLST2
  602 01bd 15       		.uleb128 0x15
- 603 01be B8000000 		.4byte	.LASF27
+ 603 01be 53000000 		.4byte	.LASF27
  604 01c2 01       		.byte	0x1
  605 01c3 FA       		.byte	0xfa
  606 01c4 DF000000 		.4byte	0xdf
@@ -1170,7 +1170,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  612 01d3 7D030000 		.4byte	0x37d
  613 01d7 00       		.byte	0
  614 01d8 17       		.uleb128 0x17
- 615 01d9 AA000000 		.4byte	.LASF29
+ 615 01d9 45000000 		.4byte	.LASF29
  616 01dd 01       		.byte	0x1
  617 01de 3501     		.2byte	0x135
  618 01e0 00000000 		.4byte	.LFB4
@@ -1179,13 +1179,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  621 01e9 9C       		.byte	0x9c
  622 01ea 6F020000 		.4byte	0x26f
  623 01ee 18       		.uleb128 0x18
- 624 01ef 18030000 		.4byte	.LASF30
+ 624 01ef 0F030000 		.4byte	.LASF30
  625 01f3 01       		.byte	0x1
  626 01f4 3701     		.2byte	0x137
  627 01f6 64000000 		.4byte	0x64
  628 01fa 6D000000 		.4byte	.LLST3
  629 01fe 18       		.uleb128 0x18
- 630 01ff FD000000 		.4byte	.LASF31
+ 630 01ff 98000000 		.4byte	.LASF31
  631 0203 01       		.byte	0x1
  632 0204 3801     		.2byte	0x138
  633 0206 6F020000 		.4byte	0x26f
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  640 021c 73726300 		.ascii	"src\000"
  641 0220 01       		.byte	0x1
  642 0221 3D01     		.2byte	0x13d
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 21
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 21
 
 
  643 0223 7A020000 		.4byte	0x27a
@@ -1210,13 +1210,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  649 0233 7A020000 		.4byte	0x27a
  650 0237 BE000000 		.4byte	.LLST6
  651 023b 18       		.uleb128 0x18
- 652 023c 6F020000 		.4byte	.LASF32
+ 652 023c 0A020000 		.4byte	.LASF32
  653 0240 01       		.byte	0x1
  654 0241 3F01     		.2byte	0x13f
  655 0243 64000000 		.4byte	0x64
  656 0247 D1000000 		.4byte	.LLST7
  657 024b 18       		.uleb128 0x18
- 658 024c B2000000 		.4byte	.LASF33
+ 658 024c 4D000000 		.4byte	.LASF33
  659 0250 01       		.byte	0x1
  660 0251 4001     		.2byte	0x140
  661 0253 64000000 		.4byte	0x64
@@ -1238,7 +1238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  677 027b 04       		.byte	0x4
  678 027c 77000000 		.4byte	0x77
  679 0280 17       		.uleb128 0x17
- 680 0281 69010000 		.4byte	.LASF34
+ 680 0281 04010000 		.4byte	.LASF34
  681 0285 01       		.byte	0x1
  682 0286 1301     		.2byte	0x113
  683 0288 00000000 		.4byte	.LFB3
@@ -1251,14 +1251,14 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  690 029b D8010000 		.4byte	0x1d8
  691 029f 00       		.byte	0
  692 02a0 17       		.uleb128 0x17
- 693 02a1 99010000 		.4byte	.LASF35
+ 693 02a1 34010000 		.4byte	.LASF35
  694 02a5 01       		.byte	0x1
  695 02a6 B801     		.2byte	0x1b8
  696 02a8 00000000 		.4byte	.LFB5
  697 02ac 78000000 		.4byte	.LFE5-.LFB5
  698 02b0 01       		.uleb128 0x1
  699 02b1 9C       		.byte	0x9c
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 22
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 22
 
 
  700 02b2 D7020000 		.4byte	0x2d7
@@ -1276,7 +1276,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  712 02d2 A7030000 		.4byte	0x3a7
  713 02d6 00       		.byte	0
  714 02d7 15       		.uleb128 0x15
- 715 02d8 44010000 		.4byte	.LASF36
+ 715 02d8 DF000000 		.4byte	.LASF36
  716 02dc 01       		.byte	0x1
  717 02dd 3F       		.byte	0x3f
  718 02de 77000000 		.4byte	0x77
@@ -1284,7 +1284,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  720 02e3 03       		.byte	0x3
  721 02e4 00000000 		.4byte	cySysNoInitDataValid
  722 02e8 1B       		.uleb128 0x1b
- 723 02e9 F1020000 		.4byte	.LASF37
+ 723 02e9 E8020000 		.4byte	.LASF37
  724 02ed 04       		.byte	0x4
  725 02ee 2C       		.byte	0x2c
  726 02ef 6B000000 		.4byte	0x6b
@@ -1301,7 +1301,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  737 030c 2F       		.byte	0x2f
  738 030d 00       		.byte	0
  739 030e 1E       		.uleb128 0x1e
- 740 030f 9D000000 		.4byte	.LASF38
+ 740 030f 38000000 		.4byte	.LASF38
  741 0313 01       		.byte	0x1
  742 0314 4D       		.byte	0x4d
  743 0315 FE020000 		.4byte	0x2fe
@@ -1314,17 +1314,17 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  750 0328 1F       		.uleb128 0x1f
  751 0329 00       		.byte	0
  752 032a 1B       		.uleb128 0x1b
- 753 032b 0B030000 		.4byte	.LASF39
+ 753 032b 02030000 		.4byte	.LASF39
  754 032f 01       		.byte	0x1
  755 0330 C5       		.byte	0xc5
  756 0331 35030000 		.4byte	0x335
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 23
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 23
 
 
  757 0335 0A       		.uleb128 0xa
  758 0336 1F030000 		.4byte	0x31f
  759 033a 1B       		.uleb128 0x1b
- 760 033b D7000000 		.4byte	.LASF40
+ 760 033b 72000000 		.4byte	.LASF40
  761 033f 01       		.byte	0x1
  762 0340 C6       		.byte	0xc6
  763 0341 E1000000 		.4byte	0xe1
@@ -1336,7 +1336,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  769 0353 03       		.byte	0x3
  770 0354 00       		.byte	0
  771 0355 20       		.uleb128 0x20
- 772 0356 27010000 		.4byte	.LASF41
+ 772 0356 C2000000 		.4byte	.LASF41
  773 035a 01       		.byte	0x1
  774 035b 9C01     		.2byte	0x19c
  775 035d 67030000 		.4byte	0x367
@@ -1346,7 +1346,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  779 0367 0A       		.uleb128 0xa
  780 0368 45030000 		.4byte	0x345
  781 036c 21       		.uleb128 0x21
- 782 036d 96000000 		.4byte	.LASF53
+ 782 036d 31000000 		.4byte	.LASF53
  783 0371 04       		.byte	0x4
  784 0372 7F       		.byte	0x7f
  785 0373 7D030000 		.4byte	0x37d
@@ -1354,7 +1354,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  787 0378 6B000000 		.4byte	0x6b
  788 037c 00       		.byte	0
  789 037d 23       		.uleb128 0x23
- 790 037e CE020000 		.4byte	.LASF42
+ 790 037e C5020000 		.4byte	.LASF42
  791 0382 05       		.byte	0x5
  792 0383 0F       		.byte	0xf
  793 0384 88030000 		.4byte	0x388
@@ -1362,23 +1362,23 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  795 0389 04       		.byte	0x4
  796 038a 5D000000 		.4byte	0x5d
  797 038e 24       		.uleb128 0x24
- 798 038f D6020000 		.4byte	.LASF44
+ 798 038f CD020000 		.4byte	.LASF44
  799 0393 01       		.byte	0x1
  800 0394 B9       		.byte	0xb9
  801 0395 23       		.uleb128 0x23
- 802 0396 94010000 		.4byte	.LASF43
+ 802 0396 2F010000 		.4byte	.LASF43
  803 039a 01       		.byte	0x1
  804 039b B6       		.byte	0xb6
  805 039c 5D000000 		.4byte	0x5d
  806 03a0 24       		.uleb128 0x24
- 807 03a1 4B020000 		.4byte	.LASF45
+ 807 03a1 E6010000 		.4byte	.LASF45
  808 03a5 06       		.byte	0x6
  809 03a6 16       		.byte	0x16
  810 03a7 24       		.uleb128 0x24
- 811 03a8 59010000 		.4byte	.LASF46
+ 811 03a8 F4000000 		.4byte	.LASF46
  812 03ac 07       		.byte	0x7
  813 03ad 21       		.byte	0x21
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 24
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 24
 
 
  814 03ae 00       		.byte	0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  868 0033 13       		.uleb128 0x13
  869 0034 00       		.byte	0
  870 0035 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 25
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 25
 
 
  871 0036 05       		.uleb128 0x5
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  925 006c 0E       		.uleb128 0xe
  926 006d 0B       		.uleb128 0xb
  927 006e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 26
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 26
 
 
  928 006f 3A       		.uleb128 0x3a
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  982 00a6 0B       		.uleb128 0xb
  983 00a7 3B       		.uleb128 0x3b
  984 00a8 0B       		.uleb128 0xb
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 27
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 27
 
 
  985 00a9 27       		.uleb128 0x27
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1039 00e5 3A       		.uleb128 0x3a
  1040 00e6 0B       		.uleb128 0xb
  1041 00e7 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 28
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 28
 
 
  1042 00e8 0B       		.uleb128 0xb
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1096 011f 3A       		.uleb128 0x3a
  1097 0120 0B       		.uleb128 0xb
  1098 0121 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 29
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 29
 
 
  1099 0122 0B       		.uleb128 0xb
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1153 015b 00       		.byte	0
  1154 015c 00       		.byte	0
  1155 015d 19       		.uleb128 0x19
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 30
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 30
 
 
  1156 015e 0B       		.uleb128 0xb
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1210 0194 49       		.uleb128 0x49
  1211 0195 13       		.uleb128 0x13
  1212 0196 2F       		.uleb128 0x2f
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 31
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 31
 
 
  1213 0197 0B       		.uleb128 0xb
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1267 01cd 19       		.uleb128 0x19
  1268 01ce 3C       		.uleb128 0x3c
  1269 01cf 19       		.uleb128 0x19
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 32
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 32
 
 
  1270 01d0 01       		.uleb128 0x1
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1324 000a 50       		.byte	0x50
  1325 000b 04000000 		.4byte	.LVL1
  1326 000f 0A000000 		.4byte	.LFE1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 33
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 33
 
 
  1327 0013 0400     		.2byte	0x4
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1381 0097 16000000 		.4byte	.LVL16
  1382 009b 0100     		.2byte	0x1
  1383 009d 51       		.byte	0x51
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 34
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 34
 
 
  1384 009e 16000000 		.4byte	.LVL16
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1438 012d 0200     		.2byte	0x2
  1439 012f 30       		.byte	0x30
  1440 0130 9F       		.byte	0x9f
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 35
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 35
 
 
  1441 0131 16000000 		.4byte	.LVL29
@@ -2098,254 +2098,252 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 1
  1489      7465645F 
  1489      536F7572 
  1489      63655C50 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 36
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 36
 
 
- 1490              	.LASF49:
- 1491 0024 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 1491      73657273 
- 1491      5C427279 
- 1491      616E204F 
- 1491      72616275 
- 1492 0052 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 1492      534F435F 
- 1492      50524F47 
- 1492      52414D53 
- 1492      5C50536F 
- 1493 0082 2E637964 		.ascii	".cydsn\000"
- 1493      736E00
- 1494              	.LASF15:
- 1495 0089 72656733 		.ascii	"reg32\000"
- 1495      3200
- 1496              	.LASF17:
- 1497 008f 73697A65 		.ascii	"size_t\000"
- 1497      5F7400
- 1498              	.LASF53:
- 1499 0096 43794861 		.ascii	"CyHalt\000"
- 1499      6C7400
- 1500              	.LASF38:
- 1501 009d 43795261 		.ascii	"CyRamVectors\000"
- 1501      6D566563 
- 1501      746F7273 
- 1501      00
- 1502              	.LASF29:
- 1503 00aa 53746172 		.ascii	"Start_c\000"
- 1503      745F6300 
- 1504              	.LASF33:
- 1505 00b2 636F756E 		.ascii	"count\000"
- 1505      7400
- 1506              	.LASF27:
- 1507 00b8 68656170 		.ascii	"heapPointer\000"
- 1507      506F696E 
- 1507      74657200 
- 1508              	.LASF3:
- 1509 00c4 73686F72 		.ascii	"short unsigned int\000"
- 1509      7420756E 
- 1509      7369676E 
- 1509      65642069 
- 1509      6E7400
- 1510              	.LASF40:
- 1511 00d7 5F5F6379 		.ascii	"__cy_region_num\000"
- 1511      5F726567 
- 1511      696F6E5F 
- 1511      6E756D00 
- 1512              	.LASF20:
- 1513 00e7 696E6974 		.ascii	"init\000"
- 1513      00
- 1514              	.LASF24:
- 1515 00ec 73746174 		.ascii	"status\000"
- 1515      757300
- 1516              	.LASF23:
- 1517 00f3 7A65726F 		.ascii	"zero_size\000"
- 1517      5F73697A 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 37
-
-
- 1517      6500
- 1518              	.LASF31:
- 1519 00fd 72707472 		.ascii	"rptr\000"
+ 1490              	.LASF15:
+ 1491 0024 72656733 		.ascii	"reg32\000"
+ 1491      3200
+ 1492              	.LASF17:
+ 1493 002a 73697A65 		.ascii	"size_t\000"
+ 1493      5F7400
+ 1494              	.LASF53:
+ 1495 0031 43794861 		.ascii	"CyHalt\000"
+ 1495      6C7400
+ 1496              	.LASF38:
+ 1497 0038 43795261 		.ascii	"CyRamVectors\000"
+ 1497      6D566563 
+ 1497      746F7273 
+ 1497      00
+ 1498              	.LASF29:
+ 1499 0045 53746172 		.ascii	"Start_c\000"
+ 1499      745F6300 
+ 1500              	.LASF33:
+ 1501 004d 636F756E 		.ascii	"count\000"
+ 1501      7400
+ 1502              	.LASF27:
+ 1503 0053 68656170 		.ascii	"heapPointer\000"
+ 1503      506F696E 
+ 1503      74657200 
+ 1504              	.LASF3:
+ 1505 005f 73686F72 		.ascii	"short unsigned int\000"
+ 1505      7420756E 
+ 1505      7369676E 
+ 1505      65642069 
+ 1505      6E7400
+ 1506              	.LASF40:
+ 1507 0072 5F5F6379 		.ascii	"__cy_region_num\000"
+ 1507      5F726567 
+ 1507      696F6E5F 
+ 1507      6E756D00 
+ 1508              	.LASF20:
+ 1509 0082 696E6974 		.ascii	"init\000"
+ 1509      00
+ 1510              	.LASF24:
+ 1511 0087 73746174 		.ascii	"status\000"
+ 1511      757300
+ 1512              	.LASF23:
+ 1513 008e 7A65726F 		.ascii	"zero_size\000"
+ 1513      5F73697A 
+ 1513      6500
+ 1514              	.LASF31:
+ 1515 0098 72707472 		.ascii	"rptr\000"
+ 1515      00
+ 1516              	.LASF11:
+ 1517 009d 666C6F61 		.ascii	"float\000"
+ 1517      7400
+ 1518              	.LASF21:
+ 1519 00a3 64617461 		.ascii	"data\000"
  1519      00
- 1520              	.LASF11:
- 1521 0102 666C6F61 		.ascii	"float\000"
- 1521      7400
- 1522              	.LASF21:
- 1523 0108 64617461 		.ascii	"data\000"
- 1523      00
- 1524              	.LASF1:
- 1525 010d 756E7369 		.ascii	"unsigned char\000"
- 1525      676E6564 
- 1525      20636861 
- 1525      7200
- 1526              	.LASF26:
- 1527 011b 72657475 		.ascii	"returnValue\000"
- 1527      726E5661 
- 1527      6C756500 
- 1528              	.LASF41:
- 1529 0127 526F6D56 		.ascii	"RomVectors\000"
- 1529      6563746F 
- 1529      727300
- 1530              	.LASF5:
- 1531 0132 6C6F6E67 		.ascii	"long unsigned int\000"
- 1531      20756E73 
- 1531      69676E65 
- 1531      6420696E 
- 1531      7400
- 1532              	.LASF36:
- 1533 0144 63795379 		.ascii	"cySysNoInitDataValid\000"
- 1533      734E6F49 
- 1533      6E697444 
- 1533      61746156 
- 1533      616C6964 
- 1534              	.LASF46:
- 1535 0159 4379446D 		.ascii	"CyDmacConfigure\000"
- 1535      6163436F 
- 1535      6E666967 
- 1535      75726500 
- 1536              	.LASF34:
- 1537 0169 52657365 		.ascii	"Reset\000"
- 1537      7400
- 1538              	.LASF28:
- 1539 016f 5F657869 		.ascii	"_exit\000"
- 1539      7400
- 1540              	.LASF51:
- 1541 0175 496E7444 		.ascii	"IntDefaultHandler\000"
- 1541      65666175 
- 1541      6C744861 
- 1541      6E646C65 
- 1541      7200
- 1542              	.LASF52:
- 1543 0187 5F736272 		.ascii	"_sbrk\000"
- 1543      6B00
- 1544              	.LASF12:
- 1545 018d 646F7562 		.ascii	"double\000"
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 38
+ 1520              	.LASF1:
+ 1521 00a8 756E7369 		.ascii	"unsigned char\000"
+ 1521      676E6564 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 37
 
 
- 1545      6C6500
- 1546              	.LASF43:
- 1547 0194 6D61696E 		.ascii	"main\000"
- 1547      00
- 1548              	.LASF35:
- 1549 0199 696E6974 		.ascii	"initialize_psoc\000"
- 1549      69616C69 
- 1549      7A655F70 
- 1549      736F6300 
- 1550              	.LASF10:
- 1551 01a9 75696E74 		.ascii	"uint32\000"
- 1551      333200
- 1552              	.LASF47:
- 1553 01b0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1553      4320342E 
- 1553      392E3320 
- 1553      32303135 
- 1553      30333033 
- 1554 01e3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1554      20726576 
- 1554      6973696F 
- 1554      6E203232 
- 1554      31323230 
- 1555 0216 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1555      66756E63 
- 1555      74696F6E 
- 1555      2D736563 
- 1555      74696F6E 
- 1556              	.LASF8:
- 1557 023e 756E7369 		.ascii	"unsigned int\000"
- 1557      676E6564 
- 1557      20696E74 
- 1557      00
- 1558              	.LASF45:
- 1559 024b 63796669 		.ascii	"cyfitter_cfg\000"
- 1559      74746572 
- 1559      5F636667 
- 1559      00
- 1560              	.LASF7:
- 1561 0258 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1561      206C6F6E 
- 1561      6720756E 
- 1561      7369676E 
- 1561      65642069 
- 1562              	.LASF32:
- 1563 026f 6C696D69 		.ascii	"limit\000"
- 1563      7400
- 1564              	.LASF16:
- 1565 0275 63796973 		.ascii	"cyisraddress\000"
- 1565      72616464 
- 1565      72657373 
- 1565      00
- 1566              	.LASF22:
- 1567 0282 696E6974 		.ascii	"init_size\000"
- 1567      5F73697A 
- 1567      6500
- 1568              	.LASF19:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 39
+ 1521      20636861 
+ 1521      7200
+ 1522              	.LASF26:
+ 1523 00b6 72657475 		.ascii	"returnValue\000"
+ 1523      726E5661 
+ 1523      6C756500 
+ 1524              	.LASF41:
+ 1525 00c2 526F6D56 		.ascii	"RomVectors\000"
+ 1525      6563746F 
+ 1525      727300
+ 1526              	.LASF5:
+ 1527 00cd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1527      20756E73 
+ 1527      69676E65 
+ 1527      6420696E 
+ 1527      7400
+ 1528              	.LASF36:
+ 1529 00df 63795379 		.ascii	"cySysNoInitDataValid\000"
+ 1529      734E6F49 
+ 1529      6E697444 
+ 1529      61746156 
+ 1529      616C6964 
+ 1530              	.LASF46:
+ 1531 00f4 4379446D 		.ascii	"CyDmacConfigure\000"
+ 1531      6163436F 
+ 1531      6E666967 
+ 1531      75726500 
+ 1532              	.LASF34:
+ 1533 0104 52657365 		.ascii	"Reset\000"
+ 1533      7400
+ 1534              	.LASF28:
+ 1535 010a 5F657869 		.ascii	"_exit\000"
+ 1535      7400
+ 1536              	.LASF51:
+ 1537 0110 496E7444 		.ascii	"IntDefaultHandler\000"
+ 1537      65666175 
+ 1537      6C744861 
+ 1537      6E646C65 
+ 1537      7200
+ 1538              	.LASF52:
+ 1539 0122 5F736272 		.ascii	"_sbrk\000"
+ 1539      6B00
+ 1540              	.LASF12:
+ 1541 0128 646F7562 		.ascii	"double\000"
+ 1541      6C6500
+ 1542              	.LASF43:
+ 1543 012f 6D61696E 		.ascii	"main\000"
+ 1543      00
+ 1544              	.LASF35:
+ 1545 0134 696E6974 		.ascii	"initialize_psoc\000"
+ 1545      69616C69 
+ 1545      7A655F70 
+ 1545      736F6300 
+ 1546              	.LASF10:
+ 1547 0144 75696E74 		.ascii	"uint32\000"
+ 1547      333200
+ 1548              	.LASF47:
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 38
 
 
- 1569 028c 5F5F6379 		.ascii	"__cy_byte_align8\000"
- 1569      5F627974 
- 1569      655F616C 
- 1569      69676E38 
- 1569      00
- 1570              	.LASF14:
- 1571 029d 72656738 		.ascii	"reg8\000"
- 1571      00
- 1572              	.LASF18:
- 1573 02a2 73697A65 		.ascii	"sizetype\000"
- 1573      74797065 
- 1573      00
- 1574              	.LASF6:
- 1575 02ab 6C6F6E67 		.ascii	"long long int\000"
- 1575      206C6F6E 
- 1575      6720696E 
- 1575      7400
- 1576              	.LASF13:
- 1577 02b9 63686172 		.ascii	"char\000"
- 1577      00
- 1578              	.LASF2:
- 1579 02be 73686F72 		.ascii	"short int\000"
- 1579      7420696E 
- 1579      7400
- 1580              	.LASF9:
- 1581 02c8 75696E74 		.ascii	"uint8\000"
- 1581      3800
- 1582              	.LASF42:
- 1583 02ce 5F5F6572 		.ascii	"__errno\000"
- 1583      726E6F00 
- 1584              	.LASF44:
- 1585 02d6 5F5F6C69 		.ascii	"__libc_init_array\000"
- 1585      62635F69 
- 1585      6E69745F 
- 1585      61727261 
- 1585      7900
- 1586              	.LASF4:
- 1587 02e8 6C6F6E67 		.ascii	"long int\000"
- 1587      20696E74 
- 1587      00
- 1588              	.LASF37:
- 1589 02f1 43795265 		.ascii	"CyResetStatus\000"
- 1589      73657453 
- 1589      74617475 
- 1589      7300
- 1590              	.LASF0:
- 1591 02ff 7369676E 		.ascii	"signed char\000"
- 1591      65642063 
- 1591      68617200 
- 1592              	.LASF39:
- 1593 030b 5F5F6379 		.ascii	"__cy_regions\000"
- 1593      5F726567 
- 1593      696F6E73 
- 1593      00
- 1594              	.LASF30:
- 1595 0318 72656769 		.ascii	"regions\000"
- 1595      6F6E7300 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccCNQnem.s 			page 40
+ 1549 014b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1549      4320342E 
+ 1549      392E3320 
+ 1549      32303135 
+ 1549      30333033 
+ 1550 017e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1550      20726576 
+ 1550      6973696F 
+ 1550      6E203232 
+ 1550      31323230 
+ 1551 01b1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1551      66756E63 
+ 1551      74696F6E 
+ 1551      2D736563 
+ 1551      74696F6E 
+ 1552              	.LASF8:
+ 1553 01d9 756E7369 		.ascii	"unsigned int\000"
+ 1553      676E6564 
+ 1553      20696E74 
+ 1553      00
+ 1554              	.LASF45:
+ 1555 01e6 63796669 		.ascii	"cyfitter_cfg\000"
+ 1555      74746572 
+ 1555      5F636667 
+ 1555      00
+ 1556              	.LASF7:
+ 1557 01f3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1557      206C6F6E 
+ 1557      6720756E 
+ 1557      7369676E 
+ 1557      65642069 
+ 1558              	.LASF32:
+ 1559 020a 6C696D69 		.ascii	"limit\000"
+ 1559      7400
+ 1560              	.LASF49:
+ 1561 0210 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 1561      73657273 
+ 1561      5C4C4149 
+ 1561      525C446F 
+ 1561      63756D65 
+ 1562 023d 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 1562      52414D53 
+ 1562      5C50536F 
+ 1562      43355C52 
+ 1562      6F616472 
+ 1563              	.LASF16:
+ 1564 026c 63796973 		.ascii	"cyisraddress\000"
+ 1564      72616464 
+ 1564      72657373 
+ 1564      00
+ 1565              	.LASF22:
+ 1566 0279 696E6974 		.ascii	"init_size\000"
+ 1566      5F73697A 
+ 1566      6500
+ 1567              	.LASF19:
+ 1568 0283 5F5F6379 		.ascii	"__cy_byte_align8\000"
+ 1568      5F627974 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 39
 
 
- 1596              	.LASF25:
- 1597 0320 6E627974 		.ascii	"nbytes\000"
- 1597      657300
- 1598              	.LASF50:
- 1599 0327 5F5F6379 		.ascii	"__cy_region\000"
- 1599      5F726567 
- 1599      696F6E00 
- 1600              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1568      655F616C 
+ 1568      69676E38 
+ 1568      00
+ 1569              	.LASF14:
+ 1570 0294 72656738 		.ascii	"reg8\000"
+ 1570      00
+ 1571              	.LASF18:
+ 1572 0299 73697A65 		.ascii	"sizetype\000"
+ 1572      74797065 
+ 1572      00
+ 1573              	.LASF6:
+ 1574 02a2 6C6F6E67 		.ascii	"long long int\000"
+ 1574      206C6F6E 
+ 1574      6720696E 
+ 1574      7400
+ 1575              	.LASF13:
+ 1576 02b0 63686172 		.ascii	"char\000"
+ 1576      00
+ 1577              	.LASF2:
+ 1578 02b5 73686F72 		.ascii	"short int\000"
+ 1578      7420696E 
+ 1578      7400
+ 1579              	.LASF9:
+ 1580 02bf 75696E74 		.ascii	"uint8\000"
+ 1580      3800
+ 1581              	.LASF42:
+ 1582 02c5 5F5F6572 		.ascii	"__errno\000"
+ 1582      726E6F00 
+ 1583              	.LASF44:
+ 1584 02cd 5F5F6C69 		.ascii	"__libc_init_array\000"
+ 1584      62635F69 
+ 1584      6E69745F 
+ 1584      61727261 
+ 1584      7900
+ 1585              	.LASF4:
+ 1586 02df 6C6F6E67 		.ascii	"long int\000"
+ 1586      20696E74 
+ 1586      00
+ 1587              	.LASF37:
+ 1588 02e8 43795265 		.ascii	"CyResetStatus\000"
+ 1588      73657453 
+ 1588      74617475 
+ 1588      7300
+ 1589              	.LASF0:
+ 1590 02f6 7369676E 		.ascii	"signed char\000"
+ 1590      65642063 
+ 1590      68617200 
+ 1591              	.LASF39:
+ 1592 0302 5F5F6379 		.ascii	"__cy_regions\000"
+ 1592      5F726567 
+ 1592      696F6E73 
+ 1592      00
+ 1593              	.LASF30:
+ 1594 030f 72656769 		.ascii	"regions\000"
+ 1594      6F6E7300 
+ 1595              	.LASF25:
+ 1596 0317 6E627974 		.ascii	"nbytes\000"
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccK7VGEz.s 			page 40
+
+
+ 1596      657300
+ 1597              	.LASF50:
+ 1598 031e 5F5F6379 		.ascii	"__cy_region\000"
+ 1598      5F726567 
+ 1598      696F6E00 
+ 1599              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

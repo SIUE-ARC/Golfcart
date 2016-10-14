@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
   29:.\Generated_Source\PSoC5/USBFS_pm.c **** * Local data allocation
   30:.\Generated_Source\PSoC5/USBFS_pm.c **** ***************************************/
   31:.\Generated_Source\PSoC5/USBFS_pm.c **** 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/USBFS_pm.c **** static USBFS_BACKUP_STRUCT  USBFS_backup;
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
   63:.\Generated_Source\PSoC5/USBFS_pm.c **** * Function Name: USBFS_SaveConfig
   64:.\Generated_Source\PSoC5/USBFS_pm.c **** ****************************************************************************//**
   65:.\Generated_Source\PSoC5/USBFS_pm.c **** *
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 3
 
 
   66:.\Generated_Source\PSoC5/USBFS_pm.c **** *  Saves the current user configuration.
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
   79 0006 13F0FF0F 		tst	r3, #255
   80 000a 03D0     		beq	.L4
   91:.\Generated_Source\PSoC5/USBFS_pm.c ****     {
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 4
 
 
   92:.\Generated_Source\PSoC5/USBFS_pm.c ****         USBFS_ConfigReg();
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  123:.\Generated_Source\PSoC5/USBFS_pm.c **** void USBFS_Suspend(void) 
  124:.\Generated_Source\PSoC5/USBFS_pm.c **** {
  104              		.loc 1 124 0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 5
 
 
  105              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  150:.\Generated_Source\PSoC5/USBFS_pm.c ****     #else
  151:.\Generated_Source\PSoC5/USBFS_pm.c ****         /* Ensure USB transmit enable is low (USB_USBIO_CR0.ten). - Manual Transmission - Disabled.
  152:.\Generated_Source\PSoC5/USBFS_pm.c ****         USBFS_USBIO_CR0_REG &= (uint8) ~USBFS_USBIO_CR0_TEN;
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 6
 
 
  134              		.loc 1 152 0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  170              		.loc 1 170 0
  171 005e 2B78     		ldrb	r3, [r5]	@ zero_extendqisi2
  172 0060 03F0FE03 		and	r3, r3, #254
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 7
 
 
  173 0064 2B70     		strb	r3, [r5]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  205              		.loc 1 192 0
  206 009c FFF7FEFF 		bl	USBFS_Dp_ClearInterrupt
  207              	.LVL11:
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 8
 
 
  193:.\Generated_Source\PSoC5/USBFS_pm.c ****     CyIntClearPending(USBFS_DP_INTC_VECT_NUM);
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  217:.\Generated_Source\PSoC5/USBFS_pm.c **** *  must be initialized again before making them available to the host.
  218:.\Generated_Source\PSoC5/USBFS_pm.c **** *
  219:.\Generated_Source\PSoC5/USBFS_pm.c **** *
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 9
 
 
  220:.\Generated_Source\PSoC5/USBFS_pm.c **** * \globalvars
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  250:.\Generated_Source\PSoC5/USBFS_pm.c ****             /* Configure arbiter for Manual or Auto DMA operation and clear 
  251:.\Generated_Source\PSoC5/USBFS_pm.c ****             * configuration completion. 
  252:.\Generated_Source\PSoC5/USBFS_pm.c ****             */
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 10
 
 
  253:.\Generated_Source\PSoC5/USBFS_pm.c ****             USBFS_ARB_CFG_REG = USBFS_DEFAULT_ARB_CFG;
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  282 0042 2370     		strb	r3, [r4]
  287:.\Generated_Source\PSoC5/USBFS_pm.c **** 
  288:.\Generated_Source\PSoC5/USBFS_pm.c ****         /* The reference is available ~40us after power restored. */
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 11
 
 
  289:.\Generated_Source\PSoC5/USBFS_pm.c ****         CyDelayUs(USBFS_WAIT_VREF_RESTORE);
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  315 0078 2021     		movs	r1, #32
  316 007a 023A     		subs	r2, r2, #2
  317 007c 1170     		strb	r1, [r2]
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 12
 
 
  311:.\Generated_Source\PSoC5/USBFS_pm.c ****         #endif /* (USBFS_EP_MANAGEMENT_DMA) */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  354              		.cfi_endproc
  355              	.LFE4:
  356              		.size	USBFS_Resume, .-USBFS_Resume
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 13
 
 
  357              		.bss
@@ -742,48 +742,48 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  375 0006 00000000 		.4byte	.Ldebug_abbrev0
  376 000a 04       		.byte	0x4
  377 000b 01       		.uleb128 0x1
- 378 000c 6B010000 		.4byte	.LASF34
+ 378 000c 62010000 		.4byte	.LASF34
  379 0010 01       		.byte	0x1
- 380 0011 90020000 		.4byte	.LASF35
- 381 0015 0E000000 		.4byte	.LASF36
+ 380 0011 87020000 		.4byte	.LASF35
+ 381 0015 22000000 		.4byte	.LASF36
  382 0019 00000000 		.4byte	.Ldebug_ranges0+0
  383 001d 00000000 		.4byte	0
  384 0021 00000000 		.4byte	.Ldebug_line0
  385 0025 02       		.uleb128 0x2
  386 0026 01       		.byte	0x1
  387 0027 06       		.byte	0x6
- 388 0028 EE020000 		.4byte	.LASF0
+ 388 0028 E5020000 		.4byte	.LASF0
  389 002c 02       		.uleb128 0x2
  390 002d 01       		.byte	0x1
  391 002e 08       		.byte	0x8
- 392 002f FA000000 		.4byte	.LASF1
+ 392 002f F1000000 		.4byte	.LASF1
  393 0033 02       		.uleb128 0x2
  394 0034 02       		.byte	0x2
  395 0035 05       		.byte	0x5
- 396 0036 86020000 		.4byte	.LASF2
+ 396 0036 7D020000 		.4byte	.LASF2
  397 003a 02       		.uleb128 0x2
  398 003b 02       		.byte	0x2
  399 003c 07       		.byte	0x7
- 400 003d 87000000 		.4byte	.LASF3
+ 400 003d 7E000000 		.4byte	.LASF3
  401 0041 02       		.uleb128 0x2
  402 0042 04       		.byte	0x4
  403 0043 05       		.byte	0x5
- 404 0044 D9020000 		.4byte	.LASF4
+ 404 0044 D0020000 		.4byte	.LASF4
  405 0048 02       		.uleb128 0x2
  406 0049 04       		.byte	0x4
  407 004a 07       		.byte	0x7
- 408 004b 0D010000 		.4byte	.LASF5
+ 408 004b 04010000 		.4byte	.LASF5
  409 004f 02       		.uleb128 0x2
  410 0050 08       		.byte	0x8
  411 0051 05       		.byte	0x5
- 412 0052 55020000 		.4byte	.LASF6
+ 412 0052 4C020000 		.4byte	.LASF6
  413 0056 02       		.uleb128 0x2
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 14
 
 
  414 0057 08       		.byte	0x8
  415 0058 07       		.byte	0x7
- 416 0059 CF000000 		.4byte	.LASF7
+ 416 0059 C6000000 		.4byte	.LASF7
  417 005d 03       		.uleb128 0x3
  418 005e 04       		.byte	0x4
  419 005f 05       		.byte	0x5
@@ -791,43 +791,43 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  421 0064 02       		.uleb128 0x2
  422 0065 04       		.byte	0x4
  423 0066 07       		.byte	0x7
- 424 0067 10020000 		.4byte	.LASF8
+ 424 0067 07020000 		.4byte	.LASF8
  425 006b 04       		.uleb128 0x4
- 426 006c 1F010000 		.4byte	.LASF9
+ 426 006c 16010000 		.4byte	.LASF9
  427 0070 02       		.byte	0x2
  428 0071 9201     		.2byte	0x192
  429 0073 2C000000 		.4byte	0x2c
  430 0077 04       		.uleb128 0x4
- 431 0078 5D010000 		.4byte	.LASF10
+ 431 0078 54010000 		.4byte	.LASF10
  432 007c 02       		.byte	0x2
  433 007d 9301     		.2byte	0x193
  434 007f 3A000000 		.4byte	0x3a
  435 0083 04       		.uleb128 0x4
- 436 0084 64010000 		.4byte	.LASF11
+ 436 0084 5B010000 		.4byte	.LASF11
  437 0088 02       		.byte	0x2
  438 0089 9401     		.2byte	0x194
  439 008b 48000000 		.4byte	0x48
  440 008f 02       		.uleb128 0x2
  441 0090 04       		.byte	0x4
  442 0091 04       		.byte	0x4
- 443 0092 C9000000 		.4byte	.LASF12
+ 443 0092 C0000000 		.4byte	.LASF12
  444 0096 02       		.uleb128 0x2
  445 0097 08       		.byte	0x8
  446 0098 04       		.byte	0x4
- 447 0099 36010000 		.4byte	.LASF13
+ 447 0099 2D010000 		.4byte	.LASF13
  448 009d 02       		.uleb128 0x2
  449 009e 01       		.byte	0x1
  450 009f 08       		.byte	0x8
- 451 00a0 6D020000 		.4byte	.LASF14
+ 451 00a0 64020000 		.4byte	.LASF14
  452 00a4 04       		.uleb128 0x4
- 453 00a5 08010000 		.4byte	.LASF15
+ 453 00a5 FF000000 		.4byte	.LASF15
  454 00a9 02       		.byte	0x2
  455 00aa 3C02     		.2byte	0x23c
  456 00ac B0000000 		.4byte	0xb0
  457 00b0 05       		.uleb128 0x5
  458 00b1 6B000000 		.4byte	0x6b
  459 00b5 04       		.uleb128 0x4
- 460 00b6 73000000 		.4byte	.LASF16
+ 460 00b6 0E000000 		.4byte	.LASF16
  461 00ba 02       		.byte	0x2
  462 00bb 3E02     		.2byte	0x23e
  463 00bd C1000000 		.4byte	0xc1
@@ -836,9 +836,9 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  466 00c6 02       		.uleb128 0x2
  467 00c7 04       		.byte	0x4
  468 00c8 07       		.byte	0x7
- 469 00c9 4C020000 		.4byte	.LASF17
+ 469 00c9 43020000 		.4byte	.LASF17
  470 00cd 06       		.uleb128 0x6
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 15
 
 
  471 00ce 02       		.byte	0x2
@@ -846,25 +846,25 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  473 00d0 B8       		.byte	0xb8
  474 00d1 EE000000 		.4byte	0xee
  475 00d5 07       		.uleb128 0x7
- 476 00d6 E2020000 		.4byte	.LASF18
+ 476 00d6 D9020000 		.4byte	.LASF18
  477 00da 03       		.byte	0x3
  478 00db BA       		.byte	0xba
  479 00dc 6B000000 		.4byte	0x6b
  480 00e0 00       		.byte	0
  481 00e1 07       		.uleb128 0x7
- 482 00e2 33020000 		.4byte	.LASF19
+ 482 00e2 2A020000 		.4byte	.LASF19
  483 00e6 03       		.byte	0x3
  484 00e7 BB       		.byte	0xbb
  485 00e8 6B000000 		.4byte	0x6b
  486 00ec 01       		.byte	0x1
  487 00ed 00       		.byte	0
  488 00ee 08       		.uleb128 0x8
- 489 00ef 38020000 		.4byte	.LASF20
+ 489 00ef 2F020000 		.4byte	.LASF20
  490 00f3 03       		.byte	0x3
  491 00f4 BF       		.byte	0xbf
  492 00f5 CD000000 		.4byte	0xcd
  493 00f9 09       		.uleb128 0x9
- 494 00fa FA020000 		.4byte	.LASF21
+ 494 00fa F1020000 		.4byte	.LASF21
  495 00fe 01       		.byte	0x1
  496 00ff 2B       		.byte	0x2b
  497 0100 00000000 		.4byte	.LFB0
@@ -877,7 +877,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  504 0113 AE020000 		.4byte	0x2ae
  505 0117 00       		.byte	0
  506 0118 0B       		.uleb128 0xb
- 507 0119 3D010000 		.4byte	.LASF37
+ 507 0119 34010000 		.4byte	.LASF37
  508 011d 01       		.byte	0x1
  509 011e 48       		.byte	0x48
  510 011f 00000000 		.4byte	.LFB1
@@ -885,7 +885,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  512 0127 01       		.uleb128 0x1
  513 0128 9C       		.byte	0x9c
  514 0129 09       		.uleb128 0x9
- 515 012a 72020000 		.4byte	.LASF22
+ 515 012a 69020000 		.4byte	.LASF22
  516 012e 01       		.byte	0x1
  517 012f 58       		.byte	0x58
  518 0130 00000000 		.4byte	.LFB2
@@ -898,13 +898,13 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  525 0143 B9020000 		.4byte	0x2b9
  526 0147 0A       		.uleb128 0xa
  527 0148 14000000 		.4byte	.LVL2
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 16
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 16
 
 
  528 014c C0020000 		.4byte	0x2c0
  529 0150 00       		.byte	0
  530 0151 09       		.uleb128 0x9
- 531 0152 79000000 		.4byte	.LASF23
+ 531 0152 14000000 		.4byte	.LASF23
  532 0156 01       		.byte	0x1
  533 0157 7B       		.byte	0x7b
  534 0158 00000000 		.4byte	.LFB3
@@ -913,7 +913,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  537 0161 9C       		.byte	0x9c
  538 0162 FD010000 		.4byte	0x1fd
  539 0166 0C       		.uleb128 0xc
- 540 0167 25010000 		.4byte	.LASF25
+ 540 0167 1C010000 		.4byte	.LASF25
  541 016b 01       		.byte	0x1
  542 016c 7D       		.byte	0x7d
  543 016d 6B000000 		.4byte	0x6b
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  582 01c4 0E       		.uleb128 0xe
  583 01c5 01       		.uleb128 0x1
  584 01c6 50       		.byte	0x50
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 17
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 17
 
 
  585 01c7 02       		.uleb128 0x2
@@ -992,7 +992,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  613 01f8 AE020000 		.4byte	0x2ae
  614 01fc 00       		.byte	0
  615 01fd 09       		.uleb128 0x9
- 616 01fe CC020000 		.4byte	.LASF24
+ 616 01fe C3020000 		.4byte	.LASF24
  617 0202 01       		.byte	0x1
  618 0203 E3       		.byte	0xe3
  619 0204 00000000 		.4byte	.LFB4
@@ -1001,7 +1001,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  622 020d 9C       		.byte	0x9c
  623 020e 91020000 		.4byte	0x291
  624 0212 0C       		.uleb128 0xc
- 625 0213 25010000 		.4byte	.LASF25
+ 625 0213 1C010000 		.4byte	.LASF25
  626 0217 01       		.byte	0x1
  627 0218 E5       		.byte	0xe5
  628 0219 6B000000 		.4byte	0x6b
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  639 0239 50       		.byte	0x50
  640 023a 02       		.uleb128 0x2
  641 023b 08       		.byte	0x8
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 18
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 18
 
 
  642 023c 28       		.byte	0x28
@@ -1068,7 +1068,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  686 028f 00       		.byte	0
  687 0290 00       		.byte	0
  688 0291 10       		.uleb128 0x10
- 689 0292 AA000000 		.4byte	.LASF26
+ 689 0292 A1000000 		.4byte	.LASF26
  690 0296 01       		.byte	0x1
  691 0297 20       		.byte	0x20
  692 0298 EE000000 		.4byte	0xee
@@ -1076,33 +1076,33 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  694 029d 03       		.byte	0x3
  695 029e 00000000 		.4byte	USBFS_backup
  696 02a2 11       		.uleb128 0x11
- 697 02a3 E6000000 		.4byte	.LASF38
+ 697 02a3 DD000000 		.4byte	.LASF38
  698 02a7 03       		.byte	0x3
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 19
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 19
 
 
  699 02a8 D402     		.2byte	0x2d4
  700 02aa B0000000 		.4byte	0xb0
  701 02ae 12       		.uleb128 0x12
- 702 02af B4020000 		.4byte	.LASF29
+ 702 02af AB020000 		.4byte	.LASF29
  703 02b3 05       		.byte	0x5
  704 02b4 2B       		.byte	0x2b
  705 02b5 6B000000 		.4byte	0x6b
  706 02b9 13       		.uleb128 0x13
- 707 02ba 9A000000 		.4byte	.LASF27
+ 707 02ba 91000000 		.4byte	.LASF27
  708 02be 04       		.byte	0x4
  709 02bf BB       		.byte	0xbb
  710 02c0 13       		.uleb128 0x13
- 711 02c1 B7000000 		.4byte	.LASF28
+ 711 02c1 AE000000 		.4byte	.LASF28
  712 02c5 04       		.byte	0x4
  713 02c6 BC       		.byte	0xbc
  714 02c7 12       		.uleb128 0x12
- 715 02c8 F9010000 		.4byte	.LASF30
+ 715 02c8 F0010000 		.4byte	.LASF30
  716 02cc 06       		.byte	0x6
  717 02cd 7D       		.byte	0x7d
  718 02ce 6B000000 		.4byte	0x6b
  719 02d2 14       		.uleb128 0x14
- 720 02d3 4E010000 		.4byte	.LASF31
+ 720 02d3 45010000 		.4byte	.LASF31
  721 02d7 03       		.byte	0x3
  722 02d8 5701     		.2byte	0x157
  723 02da E4020000 		.4byte	0x2e4
@@ -1110,7 +1110,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  725 02df 6B000000 		.4byte	0x6b
  726 02e3 00       		.byte	0
  727 02e4 16       		.uleb128 0x16
- 728 02e5 63020000 		.4byte	.LASF32
+ 728 02e5 5A020000 		.4byte	.LASF32
  729 02e9 06       		.byte	0x6
  730 02ea 77       		.byte	0x77
  731 02eb F5020000 		.4byte	0x2f5
@@ -1118,7 +1118,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  733 02f0 77000000 		.4byte	0x77
  734 02f4 00       		.byte	0
  735 02f5 16       		.uleb128 0x16
- 736 02f6 1D020000 		.4byte	.LASF33
+ 736 02f6 14020000 		.4byte	.LASF33
  737 02fa 06       		.byte	0x6
  738 02fb 7E       		.byte	0x7e
  739 02fc 06030000 		.4byte	0x306
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  753 0000 01       		.uleb128 0x1
  754 0001 11       		.uleb128 0x11
  755 0002 01       		.byte	0x1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 20
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 20
 
 
  756 0003 25       		.uleb128 0x25
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  810 0039 49       		.uleb128 0x49
  811 003a 13       		.uleb128 0x13
  812 003b 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 21
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 21
 
 
  813 003c 00       		.byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  867 0072 19       		.uleb128 0x19
  868 0073 11       		.uleb128 0x11
  869 0074 01       		.uleb128 0x1
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 22
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 22
 
 
  870 0075 12       		.uleb128 0x12
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  924 00af 17       		.uleb128 0x17
  925 00b0 00       		.byte	0
  926 00b1 00       		.byte	0
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 23
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 23
 
 
  927 00b2 0D       		.uleb128 0xd
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  981 00ef 13       		.uleb128 0x13
  982 00f0 3F       		.uleb128 0x3f
  983 00f1 19       		.uleb128 0x19
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 24
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 24
 
 
  984 00f2 3C       		.uleb128 0x3c
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  1038 0128 19       		.uleb128 0x19
  1039 0129 01       		.uleb128 0x1
  1040 012a 13       		.uleb128 0x13
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 25
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 25
 
 
  1041 012b 00       		.byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  1095 000f 00000000 		.4byte	0
  1096              	.LLST1:
  1097 0013 08000000 		.4byte	.LVL14
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 26
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 26
 
 
  1098 0017 A4000000 		.4byte	.LVL21
@@ -1552,219 +1552,217 @@ ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 1
  1141      6C617943 
  1141      79636C65 
  1141      7300
- 1142              	.LASF36:
- 1143 000e 433A5C55 		.ascii	"C:\\Users\\Bryan Orabutt\\Documents\\GitHub\\Golfca"
- 1143      73657273 
- 1143      5C427279 
- 1143      616E204F 
- 1143      72616275 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 27
+ 1142              	.LASF16:
+ 1143 000e 72656733 		.ascii	"reg32\000"
+ 1143      3200
+ 1144              	.LASF23:
+ 1145 0014 55534246 		.ascii	"USBFS_Suspend\000"
+ 1145      535F5375 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 27
 
 
- 1144 003c 72745C50 		.ascii	"rt\\PSOC_PROGRAMS\\PSoC5\\Roadrunner Control System"
- 1144      534F435F 
- 1144      50524F47 
- 1144      52414D53 
- 1144      5C50536F 
- 1145 006c 2E637964 		.ascii	".cydsn\000"
- 1145      736E00
- 1146              	.LASF16:
- 1147 0073 72656733 		.ascii	"reg32\000"
- 1147      3200
- 1148              	.LASF23:
- 1149 0079 55534246 		.ascii	"USBFS_Suspend\000"
- 1149      535F5375 
- 1149      7370656E 
- 1149      6400
- 1150              	.LASF3:
- 1151 0087 73686F72 		.ascii	"short unsigned int\000"
- 1151      7420756E 
- 1151      7369676E 
- 1151      65642069 
- 1151      6E7400
- 1152              	.LASF27:
- 1153 009a 55534246 		.ascii	"USBFS_ConfigReg\000"
- 1153      535F436F 
- 1153      6E666967 
- 1153      52656700 
- 1154              	.LASF26:
- 1155 00aa 55534246 		.ascii	"USBFS_backup\000"
- 1155      535F6261 
- 1155      636B7570 
- 1155      00
- 1156              	.LASF28:
- 1157 00b7 55534246 		.ascii	"USBFS_EpStateInit\000"
- 1157      535F4570 
- 1157      53746174 
- 1157      65496E69 
- 1157      7400
- 1158              	.LASF12:
- 1159 00c9 666C6F61 		.ascii	"float\000"
- 1159      7400
- 1160              	.LASF7:
- 1161 00cf 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1161      206C6F6E 
- 1161      6720756E 
- 1161      7369676E 
- 1161      65642069 
- 1162              	.LASF38:
- 1163 00e6 55534246 		.ascii	"USBFS_configuration\000"
- 1163      535F636F 
- 1163      6E666967 
- 1163      75726174 
- 1163      696F6E00 
- 1164              	.LASF1:
- 1165 00fa 756E7369 		.ascii	"unsigned char\000"
- 1165      676E6564 
- 1165      20636861 
- 1165      7200
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 28
+ 1145      7370656E 
+ 1145      6400
+ 1146              	.LASF36:
+ 1147 0022 433A5C55 		.ascii	"C:\\Users\\LAIR\\Documents\\GitHub\\Golfcart\\PSOC_"
+ 1147      73657273 
+ 1147      5C4C4149 
+ 1147      525C446F 
+ 1147      63756D65 
+ 1148 004f 50524F47 		.ascii	"PROGRAMS\\PSoC5\\Roadrunner Control System.cydsn\000"
+ 1148      52414D53 
+ 1148      5C50536F 
+ 1148      43355C52 
+ 1148      6F616472 
+ 1149              	.LASF3:
+ 1150 007e 73686F72 		.ascii	"short unsigned int\000"
+ 1150      7420756E 
+ 1150      7369676E 
+ 1150      65642069 
+ 1150      6E7400
+ 1151              	.LASF27:
+ 1152 0091 55534246 		.ascii	"USBFS_ConfigReg\000"
+ 1152      535F436F 
+ 1152      6E666967 
+ 1152      52656700 
+ 1153              	.LASF26:
+ 1154 00a1 55534246 		.ascii	"USBFS_backup\000"
+ 1154      535F6261 
+ 1154      636B7570 
+ 1154      00
+ 1155              	.LASF28:
+ 1156 00ae 55534246 		.ascii	"USBFS_EpStateInit\000"
+ 1156      535F4570 
+ 1156      53746174 
+ 1156      65496E69 
+ 1156      7400
+ 1157              	.LASF12:
+ 1158 00c0 666C6F61 		.ascii	"float\000"
+ 1158      7400
+ 1159              	.LASF7:
+ 1160 00c6 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1160      206C6F6E 
+ 1160      6720756E 
+ 1160      7369676E 
+ 1160      65642069 
+ 1161              	.LASF38:
+ 1162 00dd 55534246 		.ascii	"USBFS_configuration\000"
+ 1162      535F636F 
+ 1162      6E666967 
+ 1162      75726174 
+ 1162      696F6E00 
+ 1163              	.LASF1:
+ 1164 00f1 756E7369 		.ascii	"unsigned char\000"
+ 1164      676E6564 
+ 1164      20636861 
+ 1164      7200
+ 1165              	.LASF15:
+ 1166 00ff 72656738 		.ascii	"reg8\000"
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 28
 
 
- 1166              	.LASF15:
- 1167 0108 72656738 		.ascii	"reg8\000"
- 1167      00
- 1168              	.LASF5:
- 1169 010d 6C6F6E67 		.ascii	"long unsigned int\000"
- 1169      20756E73 
- 1169      69676E65 
- 1169      6420696E 
- 1169      7400
- 1170              	.LASF9:
- 1171 011f 75696E74 		.ascii	"uint8\000"
- 1171      3800
- 1172              	.LASF25:
- 1173 0125 656E6162 		.ascii	"enableInterrupts\000"
- 1173      6C65496E 
- 1173      74657272 
- 1173      75707473 
- 1173      00
- 1174              	.LASF13:
- 1175 0136 646F7562 		.ascii	"double\000"
- 1175      6C6500
- 1176              	.LASF37:
- 1177 013d 55534246 		.ascii	"USBFS_SaveConfig\000"
- 1177      535F5361 
- 1177      7665436F 
- 1177      6E666967 
- 1177      00
- 1178              	.LASF31:
- 1179 014e 55534246 		.ascii	"USBFS_Stop_DMA\000"
- 1179      535F5374 
- 1179      6F705F44 
- 1179      4D4100
- 1180              	.LASF10:
- 1181 015d 75696E74 		.ascii	"uint16\000"
- 1181      313600
- 1182              	.LASF11:
- 1183 0164 75696E74 		.ascii	"uint32\000"
- 1183      333200
- 1184              	.LASF34:
- 1185 016b 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 1185      4320342E 
- 1185      392E3320 
- 1185      32303135 
- 1185      30333033 
- 1186 019e 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 1186      20726576 
- 1186      6973696F 
- 1186      6E203232 
- 1186      31323230 
- 1187 01d1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1187      66756E63 
- 1187      74696F6E 
- 1187      2D736563 
- 1187      74696F6E 
- 1188              	.LASF30:
- 1189 01f9 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1189      74657243 
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 29
+ 1166      00
+ 1167              	.LASF5:
+ 1168 0104 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1168      20756E73 
+ 1168      69676E65 
+ 1168      6420696E 
+ 1168      7400
+ 1169              	.LASF9:
+ 1170 0116 75696E74 		.ascii	"uint8\000"
+ 1170      3800
+ 1171              	.LASF25:
+ 1172 011c 656E6162 		.ascii	"enableInterrupts\000"
+ 1172      6C65496E 
+ 1172      74657272 
+ 1172      75707473 
+ 1172      00
+ 1173              	.LASF13:
+ 1174 012d 646F7562 		.ascii	"double\000"
+ 1174      6C6500
+ 1175              	.LASF37:
+ 1176 0134 55534246 		.ascii	"USBFS_SaveConfig\000"
+ 1176      535F5361 
+ 1176      7665436F 
+ 1176      6E666967 
+ 1176      00
+ 1177              	.LASF31:
+ 1178 0145 55534246 		.ascii	"USBFS_Stop_DMA\000"
+ 1178      535F5374 
+ 1178      6F705F44 
+ 1178      4D4100
+ 1179              	.LASF10:
+ 1180 0154 75696E74 		.ascii	"uint16\000"
+ 1180      313600
+ 1181              	.LASF11:
+ 1182 015b 75696E74 		.ascii	"uint32\000"
+ 1182      333200
+ 1183              	.LASF34:
+ 1184 0162 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1184      4320342E 
+ 1184      392E3320 
+ 1184      32303135 
+ 1184      30333033 
+ 1185 0195 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1185      20726576 
+ 1185      6973696F 
+ 1185      6E203232 
+ 1185      31323230 
+ 1186 01c8 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1186      66756E63 
+ 1186      74696F6E 
+ 1186      2D736563 
+ 1186      74696F6E 
+ 1187              	.LASF30:
+ 1188 01f0 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1188      74657243 
+ 1188      72697469 
+ 1188      63616C53 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 29
 
 
- 1189      72697469 
- 1189      63616C53 
- 1189      65637469 
- 1190              	.LASF8:
- 1191 0210 756E7369 		.ascii	"unsigned int\000"
- 1191      676E6564 
- 1191      20696E74 
- 1191      00
- 1192              	.LASF33:
- 1193 021d 43794578 		.ascii	"CyExitCriticalSection\000"
- 1193      69744372 
- 1193      69746963 
- 1193      616C5365 
- 1193      6374696F 
- 1194              	.LASF19:
- 1195 0233 6D6F6465 		.ascii	"mode\000"
- 1195      00
- 1196              	.LASF20:
- 1197 0238 55534246 		.ascii	"USBFS_BACKUP_STRUCT\000"
- 1197      535F4241 
- 1197      434B5550 
- 1197      5F535452 
- 1197      55435400 
- 1198              	.LASF17:
- 1199 024c 73697A65 		.ascii	"sizetype\000"
- 1199      74797065 
- 1199      00
- 1200              	.LASF6:
- 1201 0255 6C6F6E67 		.ascii	"long long int\000"
- 1201      206C6F6E 
- 1201      6720696E 
- 1201      7400
- 1202              	.LASF32:
- 1203 0263 43794465 		.ascii	"CyDelayUs\000"
- 1203      6C617955 
- 1203      7300
- 1204              	.LASF14:
- 1205 026d 63686172 		.ascii	"char\000"
- 1205      00
- 1206              	.LASF22:
- 1207 0272 55534246 		.ascii	"USBFS_RestoreConfig\000"
- 1207      535F5265 
- 1207      73746F72 
- 1207      65436F6E 
- 1207      66696700 
- 1208              	.LASF2:
- 1209 0286 73686F72 		.ascii	"short int\000"
- 1209      7420696E 
- 1209      7400
- 1210              	.LASF35:
- 1211 0290 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_pm.c\000"
- 1211      6E657261 
- 1211      7465645F 
- 1211      536F7572 
- 1211      63655C50 
- 1212              	.LASF29:
- 1213 02b4 55534246 		.ascii	"USBFS_Dp_ClearInterrupt\000"
-ARM GAS  C:\Users\BRYANO~1\AppData\Local\Temp\ccvXtxSo.s 			page 30
+ 1188      65637469 
+ 1189              	.LASF8:
+ 1190 0207 756E7369 		.ascii	"unsigned int\000"
+ 1190      676E6564 
+ 1190      20696E74 
+ 1190      00
+ 1191              	.LASF33:
+ 1192 0214 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1192      69744372 
+ 1192      69746963 
+ 1192      616C5365 
+ 1192      6374696F 
+ 1193              	.LASF19:
+ 1194 022a 6D6F6465 		.ascii	"mode\000"
+ 1194      00
+ 1195              	.LASF20:
+ 1196 022f 55534246 		.ascii	"USBFS_BACKUP_STRUCT\000"
+ 1196      535F4241 
+ 1196      434B5550 
+ 1196      5F535452 
+ 1196      55435400 
+ 1197              	.LASF17:
+ 1198 0243 73697A65 		.ascii	"sizetype\000"
+ 1198      74797065 
+ 1198      00
+ 1199              	.LASF6:
+ 1200 024c 6C6F6E67 		.ascii	"long long int\000"
+ 1200      206C6F6E 
+ 1200      6720696E 
+ 1200      7400
+ 1201              	.LASF32:
+ 1202 025a 43794465 		.ascii	"CyDelayUs\000"
+ 1202      6C617955 
+ 1202      7300
+ 1203              	.LASF14:
+ 1204 0264 63686172 		.ascii	"char\000"
+ 1204      00
+ 1205              	.LASF22:
+ 1206 0269 55534246 		.ascii	"USBFS_RestoreConfig\000"
+ 1206      535F5265 
+ 1206      73746F72 
+ 1206      65436F6E 
+ 1206      66696700 
+ 1207              	.LASF2:
+ 1208 027d 73686F72 		.ascii	"short int\000"
+ 1208      7420696E 
+ 1208      7400
+ 1209              	.LASF35:
+ 1210 0287 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\USBFS_pm.c\000"
+ 1210      6E657261 
+ 1210      7465645F 
+ 1210      536F7572 
+ 1210      63655C50 
+ 1211              	.LASF29:
+ 1212 02ab 55534246 		.ascii	"USBFS_Dp_ClearInterrupt\000"
+ 1212      535F4470 
+ 1212      5F436C65 
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccuvfjh9.s 			page 30
 
 
- 1213      535F4470 
- 1213      5F436C65 
- 1213      6172496E 
- 1213      74657272 
- 1214              	.LASF24:
- 1215 02cc 55534246 		.ascii	"USBFS_Resume\000"
- 1215      535F5265 
- 1215      73756D65 
- 1215      00
- 1216              	.LASF4:
- 1217 02d9 6C6F6E67 		.ascii	"long int\000"
- 1217      20696E74 
- 1217      00
- 1218              	.LASF18:
- 1219 02e2 656E6162 		.ascii	"enableState\000"
- 1219      6C655374 
- 1219      61746500 
- 1220              	.LASF0:
- 1221 02ee 7369676E 		.ascii	"signed char\000"
- 1221      65642063 
- 1221      68617200 
- 1222              	.LASF21:
- 1223 02fa 55534246 		.ascii	"USBFS_DP_ISR\000"
- 1223      535F4450 
- 1223      5F495352 
- 1223      00
- 1224              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 1212      6172496E 
+ 1212      74657272 
+ 1213              	.LASF24:
+ 1214 02c3 55534246 		.ascii	"USBFS_Resume\000"
+ 1214      535F5265 
+ 1214      73756D65 
+ 1214      00
+ 1215              	.LASF4:
+ 1216 02d0 6C6F6E67 		.ascii	"long int\000"
+ 1216      20696E74 
+ 1216      00
+ 1217              	.LASF18:
+ 1218 02d9 656E6162 		.ascii	"enableState\000"
+ 1218      6C655374 
+ 1218      61746500 
+ 1219              	.LASF0:
+ 1220 02e5 7369676E 		.ascii	"signed char\000"
+ 1220      65642063 
+ 1220      68617200 
+ 1221              	.LASF21:
+ 1222 02f1 55534246 		.ascii	"USBFS_DP_ISR\000"
+ 1222      535F4450 
+ 1222      5F495352 
+ 1222      00
+ 1223              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

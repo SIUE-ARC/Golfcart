@@ -2,7 +2,7 @@
 --	Conversion of Roadrunner Control System.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Oct 12 15:37:09 2016
+--	Fri Oct 14 12:17:26 2016
 --
 
 USE cypress.cypress.all;
@@ -504,7 +504,7 @@ SIGNAL \USBFS:tmpFB_0__Dp_net_0\ : bit;
 TERMINAL \USBFS:Net_1000\ : bit;
 SIGNAL \USBFS:tmpIO_0__Dp_net_0\ : bit;
 TERMINAL \USBFS:tmpSIOVREF__Dp_net_0\ : bit;
-SIGNAL Net_2674 : bit;
+SIGNAL Net_2682 : bit;
 SIGNAL \USBFS:Net_1889\ : bit;
 SIGNAL \USBFS:Net_1876\ : bit;
 SIGNAL \USBFS:ep_int_8\ : bit;
@@ -1992,7 +1992,7 @@ DENCB:cy_psoc3_pins_v1_10
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(dp=>\USBFS:Net_1000\,
 		dm=>\USBFS:Net_597\,
-		sof_int=>Net_2674,
+		sof_int=>Net_2682,
 		arb_int=>\USBFS:Net_1889\,
 		usb_int=>\USBFS:Net_1876\,
 		ept_int=>(\USBFS:ep_int_8\, \USBFS:ep_int_7\, \USBFS:ep_int_6\, \USBFS:ep_int_5\,
