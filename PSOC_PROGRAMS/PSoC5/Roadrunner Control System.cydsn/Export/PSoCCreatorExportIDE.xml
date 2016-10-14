@@ -109,12 +109,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_PM.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_INT.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_BOOT.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC_INT.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RAMBUF_dma.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RAMBUF_dma.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERPOT_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERPOT.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERPOT.h</File>
@@ -155,8 +149,6 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\DVDAC_IntClock.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_IntClock.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\UART_IntClock.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC_IRQ.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC_IRQ.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cycodeshareimport.ld</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cycodeshareexport.ld</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cycodeshareimport.scat</File>
@@ -187,11 +179,29 @@
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cmsis_armcc.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\cmsis_gcc.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\project.h</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC_theACLK.c</File>
-          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\POTADC_theACLK.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PWR_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PWR.c</File>
           <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\PWR.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RAMBUF1_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RAMBUF1_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC_INT.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RAMBUF2_dma.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\RAMBUF2_dma.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC_IRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC_IRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC_theACLK.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\STEERADC_theACLK.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC_IRQ.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC_IRQ.h</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC_theACLK.c</File>
+          <File BuildType="BUILD" Toolchain="">.\Generated_Source\PSoC5\BRAKEADC_theACLK.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\Export\ARM_GCC_Generic">

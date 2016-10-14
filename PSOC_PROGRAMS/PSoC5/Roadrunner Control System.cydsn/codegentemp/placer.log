@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 25 2016 12:55:34
 
-#File Generated:     Oct 14 2016 12:17:28
+#File Generated:     Oct 14 2016 16:16:26
 
 #Purpose:            
 
@@ -45,7 +45,7 @@ Phase 3
 
 Design Statistics after Packing
     Number of Combinational MCs 	:	22
-    Number of Sequential MCs    	:	47
+    Number of Sequential MCs    	:	43
     Number of DPs               	:	6
     Number of Controls          	:	2
     Number of Status            	:	5
@@ -53,7 +53,7 @@ Design Statistics after Packing
     Number of count7cells       	:	0
 
 Device Utilization Summary after Packing
-    Macrocells                  :	69/192
+    Macrocells                  :	65/192
     UDBS                        :	12/24
     IOs                         :	15/72
 
@@ -79,16 +79,18 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 10
-Clock: CyBUS_CLK            | Frequency:  42.6 MHz | Target:  26.5 MHz
+Number of clocks: 12
+Clock: BRAKEADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: BRAKEADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: CyBUS_CLK            | Frequency:  40.7 MHz | Target:  26.5 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  79.5 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  79.5 MHz
 Clock: DVDAC_IntClock       | Frequency: N/A       | Target:   0.3 MHz
 Clock: DVDAC_IntClock(routed) | Frequency: N/A       | Target:   0.3 MHz
-Clock: POTADC_theACLK       | Frequency: N/A       | Target:   1.6 MHz
-Clock: POTADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
 Clock: UART_IntClock        | Frequency:  53.6 MHz | Target:   0.9 MHz
 
 ======================================================================
@@ -101,7 +103,9 @@ Phase 7
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 10
+Number of clocks: 12
+Clock: BRAKEADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: BRAKEADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
 Clock: CyBUS_CLK            | Frequency:  42.6 MHz | Target:  26.5 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
@@ -109,18 +113,18 @@ Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  79.5 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  79.5 MHz
 Clock: DVDAC_IntClock       | Frequency: N/A       | Target:   0.3 MHz
 Clock: DVDAC_IntClock(routed) | Frequency: N/A       | Target:   0.3 MHz
-Clock: POTADC_theACLK       | Frequency: N/A       | Target:   1.6 MHz
-Clock: POTADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
-Clock: UART_IntClock        | Frequency:  54.2 MHz | Target:   0.9 MHz
+Clock: STEERADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: UART_IntClock        | Frequency:  51.9 MHz | Target:   0.9 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.2 (sec)
+D2088: Phase 7, elapsed time : 0.3 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	22
-    Number of Sequential MCs    	:	47
+    Number of Sequential MCs    	:	43
     Number of DPs               	:	6
     Number of Controls          	:	2
     Number of Status            	:	5
@@ -129,7 +133,7 @@ Final Design Statistics
     Number of IOs       	:	15
 
 Device Utilization Summary
-    Macrocells                  :	69/192
+    Macrocells                  :	65/192
     IOs                         :	15/72
 
 
@@ -146,7 +150,9 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 10
+Number of clocks: 12
+Clock: BRAKEADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: BRAKEADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
 Clock: CyBUS_CLK            | Frequency:  42.6 MHz | Target:  28.6 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
@@ -154,9 +160,9 @@ Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  79.5 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  79.5 MHz
 Clock: DVDAC_IntClock       | Frequency: N/A       | Target:   0.3 MHz
 Clock: DVDAC_IntClock(routed) | Frequency: N/A       | Target:   0.3 MHz
-Clock: POTADC_theACLK       | Frequency: N/A       | Target:   1.6 MHz
-Clock: POTADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
-Clock: UART_IntClock        | Frequency:  54.2 MHz | Target:   1.0 MHz
+Clock: STEERADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: UART_IntClock        | Frequency:  51.9 MHz | Target:   1.0 MHz
 
 ======================================================================
                      End of Clock Summary
@@ -175,17 +181,19 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 10
-Clock: CyBUS_CLK            | Frequency:  42.6 MHz | Target:  28.6 MHz
+Number of clocks: 12
+Clock: BRAKEADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: BRAKEADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: CyBUS_CLK            | Frequency:  40.7 MHz | Target:  28.6 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  79.5 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  79.5 MHz
 Clock: DVDAC_IntClock       | Frequency: N/A       | Target:   0.3 MHz
 Clock: DVDAC_IntClock(routed) | Frequency: N/A       | Target:   0.3 MHz
-Clock: POTADC_theACLK       | Frequency: N/A       | Target:   1.6 MHz
-Clock: POTADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
-Clock: UART_IntClock        | Frequency:  49.3 MHz | Target:   1.0 MHz
+Clock: STEERADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: UART_IntClock        | Frequency:  47.8 MHz | Target:   1.0 MHz
 
 ======================================================================
                      End of Clock Summary
@@ -197,7 +205,9 @@ Phase 7
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 10
+Number of clocks: 12
+Clock: BRAKEADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: BRAKEADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
 Clock: CyBUS_CLK            | Frequency:  42.6 MHz | Target:  31.3 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
@@ -205,18 +215,18 @@ Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  79.5 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  79.5 MHz
 Clock: DVDAC_IntClock       | Frequency: N/A       | Target:   0.3 MHz
 Clock: DVDAC_IntClock(routed) | Frequency: N/A       | Target:   0.3 MHz
-Clock: POTADC_theACLK       | Frequency: N/A       | Target:   1.6 MHz
-Clock: POTADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
-Clock: UART_IntClock        | Frequency:  49.3 MHz | Target:   1.1 MHz
+Clock: STEERADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: UART_IntClock        | Frequency:  52.7 MHz | Target:   1.1 MHz
 
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.7 (sec)
+D2088: Phase 7, elapsed time : 0.8 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	22
-    Number of Sequential MCs    	:	47
+    Number of Sequential MCs    	:	43
     Number of DPs               	:	6
     Number of Controls          	:	2
     Number of Status            	:	5
@@ -225,7 +235,7 @@ Final Design Statistics
     Number of IOs       	:	15
 
 Device Utilization Summary
-    Macrocells                  :	69/192
+    Macrocells                  :	65/192
     IOs                         :	15/72
 
 
@@ -242,17 +252,19 @@ analysis after routing.
 ######################################################################
                      Clock Summary 
 ======================================================================
-Number of clocks: 10
-Clock: CyBUS_CLK            | Frequency:  42.6 MHz | Target:  33.3 MHz
+Number of clocks: 12
+Clock: BRAKEADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: BRAKEADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: CyBUS_CLK            | Frequency:  43.7 MHz | Target:  33.3 MHz
 Clock: CyILO                | Frequency: N/A       | Target:   0.1 MHz
 Clock: CyIMO                | Frequency: N/A       | Target:  24.0 MHz
 Clock: CyMASTER_CLK         | Frequency: N/A       | Target:  79.5 MHz
 Clock: CyPLL_OUT            | Frequency: N/A       | Target:  79.5 MHz
 Clock: DVDAC_IntClock       | Frequency: N/A       | Target:   0.3 MHz
 Clock: DVDAC_IntClock(routed) | Frequency: N/A       | Target:   0.3 MHz
-Clock: POTADC_theACLK       | Frequency: N/A       | Target:   1.6 MHz
-Clock: POTADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
-Clock: UART_IntClock        | Frequency:  52.1 MHz | Target:   1.2 MHz
+Clock: STEERADC_theACLK     | Frequency: N/A       | Target:   1.6 MHz
+Clock: STEERADC_theACLK(routed) | Frequency: N/A       | Target:   1.6 MHz
+Clock: UART_IntClock        | Frequency:  49.8 MHz | Target:   1.2 MHz
 
 ======================================================================
                      End of Clock Summary
@@ -263,5 +275,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.7 sec.
+I2076: Total run-time: 1.8 sec.
 

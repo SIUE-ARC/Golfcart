@@ -1,5 +1,5 @@
 -- Project:   Roadrunner Control System
--- Generated: 10/14/2016 12:17:28
+-- Generated: 10/14/2016 16:16:26
 -- PSoC Creator  3.3 CP3
 
 ENTITY \Roadrunner Control System\ IS
@@ -48,14 +48,13 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL Net_22 : bit;
     SIGNAL Net_2585 : bit;
     SIGNAL Net_26 : bit;
-    SIGNAL Net_2618 : bit;
-    SIGNAL Net_2627 : bit;
     SIGNAL Net_2629 : bit;
     SIGNAL Net_2682 : bit;
+    SIGNAL Net_2694 : bit;
+    SIGNAL Net_2697 : bit;
     SIGNAL Net_27 : bit;
-    SIGNAL POTMUX_Decoder_old_id_0 : bit;
-    SIGNAL POTMUX_Decoder_one_hot_0 : bit;
-    SIGNAL POTMUX_Decoder_one_hot_1 : bit;
+    SIGNAL Net_2701 : bit;
+    SIGNAL Net_2706 : bit;
     SIGNAL PWR(0)__PA : bit;
     SIGNAL RLY_COAST(0)__PA : bit;
     SIGNAL RLY_REVERSE(0)__PA : bit;
@@ -64,26 +63,26 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL SENCB(0)__PA : bit;
     SIGNAL STEERPOT(0)__PA : bit;
     SIGNAL Tx(0)__PA : bit;
+    SIGNAL \BRAKEADC:Net_207_0\ : bit;
+    SIGNAL \BRAKEADC:Net_207_10\ : bit;
+    SIGNAL \BRAKEADC:Net_207_11\ : bit;
+    SIGNAL \BRAKEADC:Net_207_1\ : bit;
+    SIGNAL \BRAKEADC:Net_207_2\ : bit;
+    SIGNAL \BRAKEADC:Net_207_3\ : bit;
+    SIGNAL \BRAKEADC:Net_207_4\ : bit;
+    SIGNAL \BRAKEADC:Net_207_5\ : bit;
+    SIGNAL \BRAKEADC:Net_207_6\ : bit;
+    SIGNAL \BRAKEADC:Net_207_7\ : bit;
+    SIGNAL \BRAKEADC:Net_207_8\ : bit;
+    SIGNAL \BRAKEADC:Net_207_9\ : bit;
+    SIGNAL \BRAKEADC:Net_252\ : bit;
+    SIGNAL \BRAKEADC:Net_376\ : bit;
+    ATTRIBUTE global_signal OF \BRAKEADC:Net_376\ : SIGNAL IS true;
+    SIGNAL \BRAKEADC:Net_376_local\ : bit;
     SIGNAL \DVDAC:Net_12\ : bit;
     ATTRIBUTE global_signal OF \DVDAC:Net_12\ : SIGNAL IS true;
     SIGNAL \DVDAC:Net_12_local\ : bit;
     SIGNAL \DVDAC:Net_19\ : bit;
-    SIGNAL \POTADC:Net_207_0\ : bit;
-    SIGNAL \POTADC:Net_207_10\ : bit;
-    SIGNAL \POTADC:Net_207_11\ : bit;
-    SIGNAL \POTADC:Net_207_1\ : bit;
-    SIGNAL \POTADC:Net_207_2\ : bit;
-    SIGNAL \POTADC:Net_207_3\ : bit;
-    SIGNAL \POTADC:Net_207_4\ : bit;
-    SIGNAL \POTADC:Net_207_5\ : bit;
-    SIGNAL \POTADC:Net_207_6\ : bit;
-    SIGNAL \POTADC:Net_207_7\ : bit;
-    SIGNAL \POTADC:Net_207_8\ : bit;
-    SIGNAL \POTADC:Net_207_9\ : bit;
-    SIGNAL \POTADC:Net_252\ : bit;
-    SIGNAL \POTADC:Net_376\ : bit;
-    ATTRIBUTE global_signal OF \POTADC:Net_376\ : SIGNAL IS true;
-    SIGNAL \POTADC:Net_376_local\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:cmp_out_i\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:control_0\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:control_1\ : bit;
@@ -167,6 +166,22 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL \QuadDecSteer:bQuadDec:quad_B_filt\ : bit;
     SIGNAL \QuadDecSteer:bQuadDec:state_0\ : bit;
     SIGNAL \QuadDecSteer:bQuadDec:state_1\ : bit;
+    SIGNAL \STEERADC:Net_207_0\ : bit;
+    SIGNAL \STEERADC:Net_207_10\ : bit;
+    SIGNAL \STEERADC:Net_207_11\ : bit;
+    SIGNAL \STEERADC:Net_207_1\ : bit;
+    SIGNAL \STEERADC:Net_207_2\ : bit;
+    SIGNAL \STEERADC:Net_207_3\ : bit;
+    SIGNAL \STEERADC:Net_207_4\ : bit;
+    SIGNAL \STEERADC:Net_207_5\ : bit;
+    SIGNAL \STEERADC:Net_207_6\ : bit;
+    SIGNAL \STEERADC:Net_207_7\ : bit;
+    SIGNAL \STEERADC:Net_207_8\ : bit;
+    SIGNAL \STEERADC:Net_207_9\ : bit;
+    SIGNAL \STEERADC:Net_252\ : bit;
+    SIGNAL \STEERADC:Net_376\ : bit;
+    ATTRIBUTE global_signal OF \STEERADC:Net_376\ : SIGNAL IS true;
+    SIGNAL \STEERADC:Net_376_local\ : bit;
     SIGNAL \UART:BUART:counter_load_not\ : bit;
     SIGNAL \UART:BUART:tx_bitclk\ : bit;
     SIGNAL \UART:BUART:tx_bitclk_enable_pre\ : bit;
@@ -252,9 +267,9 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE Location OF DVDACOUT(0) : LABEL IS "P0[1]";
     ATTRIBUTE lib_model OF Rx(0) : LABEL IS "iocell_ireg";
     ATTRIBUTE lib_model OF STEERPOT(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF STEERPOT(0) : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF STEERPOT(0) : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF BRAKEPOT(0) : LABEL IS "iocell5";
-    ATTRIBUTE Location OF BRAKEPOT(0) : LABEL IS "P0[7]";
+    ATTRIBUTE Location OF BRAKEPOT(0) : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF PWR(0) : LABEL IS "iocell6";
     ATTRIBUTE Location OF PWR(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : LABEL IS "macrocell2";
@@ -305,8 +320,10 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell5";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell6";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxSts\ : LABEL IS "statusicell5";
-    ATTRIBUTE Location OF \POTADC:ADC_SAR\ : LABEL IS "F(SAR,0)";
-    ATTRIBUTE lib_model OF RAMBUF : LABEL IS "drqcell4";
+    ATTRIBUTE Location OF \STEERADC:ADC_SAR\ : LABEL IS "F(SAR,1)";
+    ATTRIBUTE lib_model OF RAMBUF1 : LABEL IS "drqcell4";
+    ATTRIBUTE Location OF \BRAKEADC:ADC_SAR\ : LABEL IS "F(SAR,0)";
+    ATTRIBUTE lib_model OF RAMBUF2 : LABEL IS "drqcell5";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1251\ : LABEL IS "macrocell32";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell33";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell34";
@@ -341,10 +358,6 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE lib_model OF \UART:BUART:tx_state_0\ : LABEL IS "macrocell63";
     ATTRIBUTE lib_model OF \UART:BUART:tx_state_2\ : LABEL IS "macrocell64";
     ATTRIBUTE lib_model OF \UART:BUART:tx_bitclk\ : LABEL IS "macrocell65";
-    ATTRIBUTE lib_model OF POTMUX_Decoder_old_id_0 : LABEL IS "macrocell66";
-    ATTRIBUTE lib_model OF POTMUX_Decoder_one_hot_0 : LABEL IS "macrocell67";
-    ATTRIBUTE lib_model OF POTMUX_Decoder_one_hot_1 : LABEL IS "macrocell68";
-    ATTRIBUTE lib_model OF Net_2618 : LABEL IS "macrocell69";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -756,12 +769,14 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => \POTADC:Net_376\,
-            dclk_0 => \POTADC:Net_376_local\,
-            dclk_glb_1 => \UART:Net_9\,
-            dclk_1 => \UART:Net_9_local\,
-            dclk_glb_2 => \DVDAC:Net_12\,
-            dclk_2 => \DVDAC:Net_12_local\);
+            dclk_glb_0 => \STEERADC:Net_376\,
+            dclk_0 => \STEERADC:Net_376_local\,
+            dclk_glb_1 => \BRAKEADC:Net_376\,
+            dclk_1 => \BRAKEADC:Net_376_local\,
+            dclk_glb_2 => \UART:Net_9\,
+            dclk_2 => \UART:Net_9_local\,
+            dclk_glb_3 => \DVDAC:Net_12\,
+            dclk_3 => \DVDAC:Net_12_local\);
 
     SENCA:logicalport
         GENERIC MAP(
@@ -1662,7 +1677,6 @@ BEGIN
             pa_out => STEERPOT(0)__PA,
             oe => open,
             in_clock => open,
-            pin_input => POTMUX_Decoder_one_hot_0,
             in_clock_en => '1',
             in_reset => '0',
             out_clock => open,
@@ -1752,7 +1766,6 @@ BEGIN
             pa_out => BRAKEPOT(0)__PA,
             oe => open,
             in_clock => open,
-            pin_input => POTMUX_Decoder_one_hot_1,
             in_clock_en => '1',
             in_reset => '0',
             out_clock => open,
@@ -2932,18 +2945,18 @@ BEGIN
             status_1 => \UART:BUART:tx_fifo_empty\,
             status_0 => \UART:BUART:tx_status_0\);
 
-    \POTADC:IRQ\:interrupt
+    \STEERADC:IRQ\:interrupt
         GENERIC MAP(
             int_type => "10")
         PORT MAP(
             interrupt => Net_2585,
             clock => ClockBlock_BUS_CLK);
 
-    \POTADC:ADC_SAR\:sarcell
+    \STEERADC:ADC_SAR\:sarcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clk_udb => \POTADC:Net_376_local\,
+            clk_udb => \STEERADC:Net_376_local\,
             sof_udb => open,
             vp_ctl_udb_3 => open,
             vp_ctl_udb_2 => open,
@@ -2953,23 +2966,23 @@ BEGIN
             vn_ctl_udb_2 => open,
             vn_ctl_udb_1 => open,
             vn_ctl_udb_0 => open,
-            irq => \POTADC:Net_252\,
-            next => Net_2627,
-            data_out_udb_11 => \POTADC:Net_207_11\,
-            data_out_udb_10 => \POTADC:Net_207_10\,
-            data_out_udb_9 => \POTADC:Net_207_9\,
-            data_out_udb_8 => \POTADC:Net_207_8\,
-            data_out_udb_7 => \POTADC:Net_207_7\,
-            data_out_udb_6 => \POTADC:Net_207_6\,
-            data_out_udb_5 => \POTADC:Net_207_5\,
-            data_out_udb_4 => \POTADC:Net_207_4\,
-            data_out_udb_3 => \POTADC:Net_207_3\,
-            data_out_udb_2 => \POTADC:Net_207_2\,
-            data_out_udb_1 => \POTADC:Net_207_1\,
-            data_out_udb_0 => \POTADC:Net_207_0\,
+            irq => \STEERADC:Net_252\,
+            next => Net_2706,
+            data_out_udb_11 => \STEERADC:Net_207_11\,
+            data_out_udb_10 => \STEERADC:Net_207_10\,
+            data_out_udb_9 => \STEERADC:Net_207_9\,
+            data_out_udb_8 => \STEERADC:Net_207_8\,
+            data_out_udb_7 => \STEERADC:Net_207_7\,
+            data_out_udb_6 => \STEERADC:Net_207_6\,
+            data_out_udb_5 => \STEERADC:Net_207_5\,
+            data_out_udb_4 => \STEERADC:Net_207_4\,
+            data_out_udb_3 => \STEERADC:Net_207_3\,
+            data_out_udb_2 => \STEERADC:Net_207_2\,
+            data_out_udb_1 => \STEERADC:Net_207_1\,
+            data_out_udb_0 => \STEERADC:Net_207_0\,
             eof_udb => Net_2585);
 
-    RAMBUF:drqcell
+    RAMBUF1:drqcell
         GENERIC MAP(
             drq_type => "00",
             num_tds => 0)
@@ -2977,6 +2990,53 @@ BEGIN
             dmareq => Net_2585,
             termin => '0',
             termout => Net_2629,
+            clock => ClockBlock_BUS_CLK);
+
+    \BRAKEADC:IRQ\:interrupt
+        GENERIC MAP(
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_2694,
+            clock => ClockBlock_BUS_CLK);
+
+    \BRAKEADC:ADC_SAR\:sarcell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            clk_udb => \BRAKEADC:Net_376_local\,
+            sof_udb => open,
+            vp_ctl_udb_3 => open,
+            vp_ctl_udb_2 => open,
+            vp_ctl_udb_1 => open,
+            vp_ctl_udb_0 => open,
+            vn_ctl_udb_3 => open,
+            vn_ctl_udb_2 => open,
+            vn_ctl_udb_1 => open,
+            vn_ctl_udb_0 => open,
+            irq => \BRAKEADC:Net_252\,
+            next => Net_2697,
+            data_out_udb_11 => \BRAKEADC:Net_207_11\,
+            data_out_udb_10 => \BRAKEADC:Net_207_10\,
+            data_out_udb_9 => \BRAKEADC:Net_207_9\,
+            data_out_udb_8 => \BRAKEADC:Net_207_8\,
+            data_out_udb_7 => \BRAKEADC:Net_207_7\,
+            data_out_udb_6 => \BRAKEADC:Net_207_6\,
+            data_out_udb_5 => \BRAKEADC:Net_207_5\,
+            data_out_udb_4 => \BRAKEADC:Net_207_4\,
+            data_out_udb_3 => \BRAKEADC:Net_207_3\,
+            data_out_udb_2 => \BRAKEADC:Net_207_2\,
+            data_out_udb_1 => \BRAKEADC:Net_207_1\,
+            data_out_udb_0 => \BRAKEADC:Net_207_0\,
+            eof_udb => Net_2694);
+
+    RAMBUF2:drqcell
+        GENERIC MAP(
+            drq_type => "00",
+            num_tds => 0)
+        PORT MAP(
+            dmareq => Net_2694,
+            termin => '0',
+            termout => Net_2701,
             clock => ClockBlock_BUS_CLK);
 
     \QuadDecSteer:Net_1251\:macrocell
@@ -3428,47 +3488,5 @@ BEGIN
             main_1 => \UART:BUART:tx_state_0\,
             main_2 => \UART:BUART:tx_bitclk_enable_pre\,
             main_3 => \UART:BUART:tx_state_2\);
-
-    POTMUX_Decoder_old_id_0:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => POTMUX_Decoder_old_id_0,
-            clock_0 => ClockBlock_BUS_CLK,
-            main_0 => Net_2618);
-
-    POTMUX_Decoder_one_hot_0:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => POTMUX_Decoder_one_hot_0,
-            clock_0 => ClockBlock_BUS_CLK,
-            main_0 => POTMUX_Decoder_old_id_0,
-            main_1 => Net_2618);
-
-    POTMUX_Decoder_one_hot_1:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0 * main_1)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => POTMUX_Decoder_one_hot_1,
-            clock_0 => ClockBlock_BUS_CLK,
-            main_0 => POTMUX_Decoder_old_id_0,
-            main_1 => Net_2618);
-
-    Net_2618:macrocell
-        GENERIC MAP(
-            eqn_main => "1'b0",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_2618,
-            clk_en => open,
-            clock_0 => Net_2585);
 
 END __DEFAULT__;

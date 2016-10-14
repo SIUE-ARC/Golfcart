@@ -2,7 +2,7 @@
 --	Conversion of Roadrunner Control System.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Oct 14 12:17:26 2016
+--	Fri Oct 14 16:16:24 2016
 --
 
 USE cypress.cypress.all;
@@ -677,13 +677,13 @@ TERMINAL Net_194 : bit;
 TERMINAL Net_195 : bit;
 SIGNAL tmpOE__STEERPOT_net_0 : bit;
 SIGNAL tmpFB_0__STEERPOT_net_0 : bit;
-TERMINAL Net_1918 : bit;
+TERMINAL Net_2530 : bit;
 SIGNAL tmpIO_0__STEERPOT_net_0 : bit;
 TERMINAL tmpSIOVREF__STEERPOT_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__STEERPOT_net_0 : bit;
 SIGNAL tmpOE__BRAKEPOT_net_0 : bit;
 SIGNAL tmpFB_0__BRAKEPOT_net_0 : bit;
-TERMINAL Net_1919 : bit;
+TERMINAL Net_2691 : bit;
 SIGNAL tmpIO_0__BRAKEPOT_net_0 : bit;
 TERMINAL tmpSIOVREF__BRAKEPOT_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__BRAKEPOT_net_0 : bit;
@@ -724,55 +724,82 @@ TERMINAL Net_760 : bit;
 TERMINAL Net_757 : bit;
 TERMINAL Net_580 : bit;
 TERMINAL Net_586 : bit;
-TERMINAL \POTADC:Net_248\ : bit;
+TERMINAL \STEERADC:Net_248\ : bit;
 TERMINAL Net_2626 : bit;
 SIGNAL Net_2585 : bit;
-SIGNAL \POTADC:vp_ctl_0\ : bit;
-SIGNAL \POTADC:vp_ctl_2\ : bit;
-SIGNAL \POTADC:vn_ctl_1\ : bit;
-SIGNAL \POTADC:vn_ctl_3\ : bit;
-SIGNAL \POTADC:vp_ctl_1\ : bit;
-SIGNAL \POTADC:vp_ctl_3\ : bit;
-SIGNAL \POTADC:vn_ctl_0\ : bit;
-SIGNAL \POTADC:vn_ctl_2\ : bit;
-SIGNAL \POTADC:Net_376\ : bit;
-SIGNAL \POTADC:Net_188\ : bit;
-SIGNAL \POTADC:Net_221\ : bit;
-TERMINAL Net_2530 : bit;
-TERMINAL \POTADC:Net_126\ : bit;
-TERMINAL \POTADC:Net_215\ : bit;
-TERMINAL \POTADC:Net_257\ : bit;
-SIGNAL \POTADC:soc\ : bit;
-SIGNAL \POTADC:Net_252\ : bit;
-SIGNAL Net_2627 : bit;
-SIGNAL \POTADC:Net_207_11\ : bit;
-SIGNAL \POTADC:Net_207_10\ : bit;
-SIGNAL \POTADC:Net_207_9\ : bit;
-SIGNAL \POTADC:Net_207_8\ : bit;
-SIGNAL \POTADC:Net_207_7\ : bit;
-SIGNAL \POTADC:Net_207_6\ : bit;
-SIGNAL \POTADC:Net_207_5\ : bit;
-SIGNAL \POTADC:Net_207_4\ : bit;
-SIGNAL \POTADC:Net_207_3\ : bit;
-SIGNAL \POTADC:Net_207_2\ : bit;
-SIGNAL \POTADC:Net_207_1\ : bit;
-SIGNAL \POTADC:Net_207_0\ : bit;
-TERMINAL \POTADC:Net_209\ : bit;
-TERMINAL \POTADC:Net_149\ : bit;
-TERMINAL \POTADC:Net_255\ : bit;
-TERMINAL \POTADC:Net_368\ : bit;
-SIGNAL \POTADC:Net_381\ : bit;
-SIGNAL POTMUX_Decoder_enable : bit;
-SIGNAL POTMUX_Decoder_is_active : bit;
-SIGNAL cmp_vv_vv_MODGEN_1 : bit;
-SIGNAL Net_2619 : bit;
-SIGNAL POTMUX_Decoder_old_id_0 : bit;
-SIGNAL Net_2618 : bit;
-SIGNAL POTMUX_Decoder_one_hot_0 : bit;
-SIGNAL POTMUX_Decoder_one_hot_1 : bit;
+SIGNAL \STEERADC:vp_ctl_0\ : bit;
+SIGNAL \STEERADC:vp_ctl_2\ : bit;
+SIGNAL \STEERADC:vn_ctl_1\ : bit;
+SIGNAL \STEERADC:vn_ctl_3\ : bit;
+SIGNAL \STEERADC:vp_ctl_1\ : bit;
+SIGNAL \STEERADC:vp_ctl_3\ : bit;
+SIGNAL \STEERADC:vn_ctl_0\ : bit;
+SIGNAL \STEERADC:vn_ctl_2\ : bit;
+SIGNAL \STEERADC:Net_376\ : bit;
+SIGNAL \STEERADC:Net_188\ : bit;
+SIGNAL \STEERADC:Net_221\ : bit;
+TERMINAL \STEERADC:Net_126\ : bit;
+TERMINAL \STEERADC:Net_215\ : bit;
+TERMINAL \STEERADC:Net_257\ : bit;
+SIGNAL \STEERADC:soc\ : bit;
+SIGNAL \STEERADC:Net_252\ : bit;
+SIGNAL Net_2706 : bit;
+SIGNAL \STEERADC:Net_207_11\ : bit;
+SIGNAL \STEERADC:Net_207_10\ : bit;
+SIGNAL \STEERADC:Net_207_9\ : bit;
+SIGNAL \STEERADC:Net_207_8\ : bit;
+SIGNAL \STEERADC:Net_207_7\ : bit;
+SIGNAL \STEERADC:Net_207_6\ : bit;
+SIGNAL \STEERADC:Net_207_5\ : bit;
+SIGNAL \STEERADC:Net_207_4\ : bit;
+SIGNAL \STEERADC:Net_207_3\ : bit;
+SIGNAL \STEERADC:Net_207_2\ : bit;
+SIGNAL \STEERADC:Net_207_1\ : bit;
+SIGNAL \STEERADC:Net_207_0\ : bit;
+TERMINAL \STEERADC:Net_209\ : bit;
+TERMINAL \STEERADC:Net_149\ : bit;
+TERMINAL \STEERADC:Net_255\ : bit;
+TERMINAL \STEERADC:Net_368\ : bit;
+SIGNAL \STEERADC:Net_381\ : bit;
 SIGNAL Net_2629 : bit;
-SIGNAL cy_tff_1 : bit;
-SIGNAL Net_2620 : bit;
+TERMINAL Net_2696 : bit;
+TERMINAL \BRAKEADC:Net_248\ : bit;
+SIGNAL Net_2694 : bit;
+SIGNAL \BRAKEADC:vp_ctl_0\ : bit;
+SIGNAL \BRAKEADC:vp_ctl_2\ : bit;
+SIGNAL \BRAKEADC:vn_ctl_1\ : bit;
+SIGNAL \BRAKEADC:vn_ctl_3\ : bit;
+SIGNAL \BRAKEADC:vp_ctl_1\ : bit;
+SIGNAL \BRAKEADC:vp_ctl_3\ : bit;
+SIGNAL \BRAKEADC:vn_ctl_0\ : bit;
+SIGNAL \BRAKEADC:vn_ctl_2\ : bit;
+SIGNAL \BRAKEADC:Net_376\ : bit;
+SIGNAL \BRAKEADC:Net_188\ : bit;
+SIGNAL \BRAKEADC:Net_221\ : bit;
+TERMINAL \BRAKEADC:Net_126\ : bit;
+TERMINAL \BRAKEADC:Net_215\ : bit;
+TERMINAL \BRAKEADC:Net_257\ : bit;
+SIGNAL \BRAKEADC:soc\ : bit;
+SIGNAL \BRAKEADC:Net_252\ : bit;
+SIGNAL Net_2697 : bit;
+SIGNAL \BRAKEADC:Net_207_11\ : bit;
+SIGNAL \BRAKEADC:Net_207_10\ : bit;
+SIGNAL \BRAKEADC:Net_207_9\ : bit;
+SIGNAL \BRAKEADC:Net_207_8\ : bit;
+SIGNAL \BRAKEADC:Net_207_7\ : bit;
+SIGNAL \BRAKEADC:Net_207_6\ : bit;
+SIGNAL \BRAKEADC:Net_207_5\ : bit;
+SIGNAL \BRAKEADC:Net_207_4\ : bit;
+SIGNAL \BRAKEADC:Net_207_3\ : bit;
+SIGNAL \BRAKEADC:Net_207_2\ : bit;
+SIGNAL \BRAKEADC:Net_207_1\ : bit;
+SIGNAL \BRAKEADC:Net_207_0\ : bit;
+TERMINAL \BRAKEADC:Net_209\ : bit;
+TERMINAL \BRAKEADC:Net_149\ : bit;
+TERMINAL \BRAKEADC:Net_255\ : bit;
+TERMINAL \BRAKEADC:Net_368\ : bit;
+SIGNAL \BRAKEADC:Net_381\ : bit;
+SIGNAL Net_2701 : bit;
 SIGNAL tmpOE__PWR_net_0 : bit;
 SIGNAL tmpFB_0__PWR_net_0 : bit;
 SIGNAL tmpIO_0__PWR_net_0 : bit;
@@ -780,42 +807,6 @@ TERMINAL tmpSIOVREF__PWR_net_0 : bit;
 TERMINAL Net_2677 : bit;
 SIGNAL tmpINTERRUPT_0__PWR_net_0 : bit;
 TERMINAL Net_2678 : bit;
-SIGNAL \MODULE_1:g1:a0:newa_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:newb_0\ : bit;
-SIGNAL MODIN1_0 : bit;
-SIGNAL \MODULE_1:g1:a0:dataa_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:datab_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:a_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:b_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:xnor_array_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:aeqb_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:eq_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:eqi_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:aeqb_1\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:albi_1\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:agbi_1\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:lt_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:gt_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:lti_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:gti_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:albi_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:gx:u0:agbi_0\ : bit;
-SIGNAL \MODULE_1:g1:a0:xeq\ : bit;
-SIGNAL \MODULE_1:g1:a0:xneq\ : bit;
-SIGNAL \MODULE_1:g1:a0:xlt\ : bit;
-SIGNAL \MODULE_1:g1:a0:xlte\ : bit;
-SIGNAL \MODULE_1:g1:a0:xgt\ : bit;
-SIGNAL \MODULE_1:g1:a0:xgte\ : bit;
-SIGNAL \MODULE_1:lt\ : bit;
-ATTRIBUTE port_state_att of \MODULE_1:lt\:SIGNAL IS 2;
-SIGNAL \MODULE_1:gt\ : bit;
-ATTRIBUTE port_state_att of \MODULE_1:gt\:SIGNAL IS 2;
-SIGNAL \MODULE_1:gte\ : bit;
-ATTRIBUTE port_state_att of \MODULE_1:gte\:SIGNAL IS 2;
-SIGNAL \MODULE_1:lte\ : bit;
-ATTRIBUTE port_state_att of \MODULE_1:lte\:SIGNAL IS 2;
-SIGNAL \MODULE_1:neq\ : bit;
-ATTRIBUTE port_state_att of \MODULE_1:neq\:SIGNAL IS 2;
 SIGNAL \QuadDecSteer:Net_1251\\D\ : bit;
 SIGNAL \QuadDecSteer:Cnt16:CounterUDB:prevCapture\\D\ : bit;
 SIGNAL \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\\D\ : bit;
@@ -856,10 +847,6 @@ SIGNAL \UART:BUART:tx_bitclk\\D\ : bit;
 SIGNAL \UART:BUART:tx_ctrl_mark_last\\D\ : bit;
 SIGNAL \UART:BUART:tx_mark\\D\ : bit;
 SIGNAL \UART:BUART:tx_parity_bit\\D\ : bit;
-SIGNAL POTMUX_Decoder_old_id_0D : bit;
-SIGNAL POTMUX_Decoder_one_hot_0D : bit;
-SIGNAL POTMUX_Decoder_one_hot_1D : bit;
-SIGNAL cy_tff_1D : bit;
 BEGIN
 
 one <=  ('1') ;
@@ -1058,12 +1045,6 @@ Net_182D <= ((not \UART:BUART:reset_reg\ and \UART:BUART:tx_state_2\)
 \UART:BUART:tx_parity_bit\\D\ <= ((not \UART:BUART:tx_state_0\ and \UART:BUART:txn\ and \UART:BUART:tx_parity_bit\)
 	OR (not \UART:BUART:tx_state_1\ and not \UART:BUART:tx_state_0\ and \UART:BUART:tx_parity_bit\)
 	OR \UART:BUART:tx_parity_bit\);
-
-POTMUX_Decoder_one_hot_0D <= ((not POTMUX_Decoder_old_id_0 and not Net_2618));
-
-POTMUX_Decoder_one_hot_1D <= ((POTMUX_Decoder_old_id_0 and Net_2618));
-
-cy_tff_1D <= (not Net_2618);
 
 \QuadDecSteer:Cnt16:CounterUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
@@ -2537,7 +2518,7 @@ STEERPOT:cy_psoc3_pins_v1_10
 	PORT MAP(oe=>(one),
 		y=>(zero),
 		fb=>(tmpFB_0__STEERPOT_net_0),
-		analog=>Net_1918,
+		analog=>Net_2530,
 		io=>(tmpIO_0__STEERPOT_net_0),
 		siovref=>(tmpSIOVREF__STEERPOT_net_0),
 		annotation=>(open),
@@ -2607,7 +2588,7 @@ BRAKEPOT:cy_psoc3_pins_v1_10
 	PORT MAP(oe=>(one),
 		y=>(zero),
 		fb=>(tmpFB_0__BRAKEPOT_net_0),
-		analog=>Net_1919,
+		analog=>Net_2691,
 		io=>(tmpIO_0__BRAKEPOT_net_0),
 		siovref=>(tmpSIOVREF__BRAKEPOT_net_0),
 		annotation=>(open),
@@ -2880,15 +2861,15 @@ PWR_3:cy_annotation_universal_v1_0
 		port_names=>"T1",
 		width=>1)
 	PORT MAP(connect=>Net_580);
-\POTADC:cy_analog_virtualmux_3_connect\:cy_connect_v1_0
+\STEERADC:cy_analog_virtualmux_3_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
-	PORT MAP(signal1=>\POTADC:Net_248\,
+	PORT MAP(signal1=>\STEERADC:Net_248\,
 		signal2=>Net_2626);
-\POTADC:IRQ\:cy_isr_v1_0
+\STEERADC:IRQ\:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10")
 	PORT MAP(int_signal=>Net_2585);
-\POTADC:theACLK\:cy_clock_v1_0
+\STEERADC:theACLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"5cee9c38-6e32-4f75-bead-c86ed675dc69/696a0979-21fc-4185-bf38-6c79febcde7a",
 		source_clock_id=>"",
@@ -2896,75 +2877,124 @@ PWR_3:cy_annotation_universal_v1_0
 		period=>"625000000",
 		is_direct=>'0',
 		is_digital=>'1')
-	PORT MAP(clock_out=>\POTADC:Net_376\,
+	PORT MAP(clock_out=>\STEERADC:Net_376\,
 		dig_domain_out=>open);
-\POTADC:ADC_SAR\:cy_psoc5_sar_v2_0
+\STEERADC:ADC_SAR\:cy_psoc5_sar_v2_0
 	GENERIC MAP(cy_registers=>"")
 	PORT MAP(vplus=>Net_2530,
-		vminus=>\POTADC:Net_126\,
-		ext_pin=>\POTADC:Net_215\,
-		vrefhi_out=>\POTADC:Net_257\,
-		vref=>\POTADC:Net_248\,
-		clock=>\POTADC:Net_376\,
-		pump_clock=>\POTADC:Net_376\,
+		vminus=>\STEERADC:Net_126\,
+		ext_pin=>\STEERADC:Net_215\,
+		vrefhi_out=>\STEERADC:Net_257\,
+		vref=>\STEERADC:Net_248\,
+		clock=>\STEERADC:Net_376\,
+		pump_clock=>\STEERADC:Net_376\,
 		sof_udb=>zero,
 		clk_udb=>zero,
 		vp_ctl_udb=>(zero, zero, zero, zero),
 		vn_ctl_udb=>(zero, zero, zero, zero),
-		irq=>\POTADC:Net_252\,
-		next_out=>Net_2627,
-		data_out=>(\POTADC:Net_207_11\, \POTADC:Net_207_10\, \POTADC:Net_207_9\, \POTADC:Net_207_8\,
-			\POTADC:Net_207_7\, \POTADC:Net_207_6\, \POTADC:Net_207_5\, \POTADC:Net_207_4\,
-			\POTADC:Net_207_3\, \POTADC:Net_207_2\, \POTADC:Net_207_1\, \POTADC:Net_207_0\),
+		irq=>\STEERADC:Net_252\,
+		next_out=>Net_2706,
+		data_out=>(\STEERADC:Net_207_11\, \STEERADC:Net_207_10\, \STEERADC:Net_207_9\, \STEERADC:Net_207_8\,
+			\STEERADC:Net_207_7\, \STEERADC:Net_207_6\, \STEERADC:Net_207_5\, \STEERADC:Net_207_4\,
+			\STEERADC:Net_207_3\, \STEERADC:Net_207_2\, \STEERADC:Net_207_1\, \STEERADC:Net_207_0\),
 		eof_udb=>Net_2585);
-\POTADC:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
+\STEERADC:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
-	PORT MAP(signal1=>\POTADC:Net_215\,
-		signal2=>\POTADC:Net_209\);
-\POTADC:cy_analog_virtualmux_1_connect\:cy_connect_v1_0
+	PORT MAP(signal1=>\STEERADC:Net_215\,
+		signal2=>\STEERADC:Net_209\);
+\STEERADC:cy_analog_virtualmux_1_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
-	PORT MAP(signal1=>\POTADC:Net_126\,
-		signal2=>\POTADC:Net_149\);
-\POTADC:noconnect\:cy_analog_noconnect_v1_0
-	PORT MAP(noconnect=>\POTADC:Net_209\);
-\POTADC:cy_analog_virtualmux_4_connect\:cy_connect_v1_0
+	PORT MAP(signal1=>\STEERADC:Net_126\,
+		signal2=>\STEERADC:Net_149\);
+\STEERADC:noconnect\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\STEERADC:Net_209\);
+\STEERADC:cy_analog_virtualmux_4_connect\:cy_connect_v1_0
 	GENERIC MAP(sig_width=>1,
 		is_net_join=>'0')
-	PORT MAP(signal1=>\POTADC:Net_257\,
-		signal2=>\POTADC:Net_149\);
-\POTADC:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
-	PORT MAP(noconnect=>\POTADC:Net_255\);
-\POTADC:noconnect_1\:cy_analog_noconnect_v1_0
-	PORT MAP(noconnect=>\POTADC:Net_368\);
-POTMUX:cy_psoc3_amux_v1_0
-	GENERIC MAP(cy_registers=>"",
-		muxin_width=>2,
-		hw_control=>'1',
-		one_active=>'1',
-		init_mux_sel=>"00",
-		api_type=>2,
-		connect_mode=>1)
-	PORT MAP(muxin=>(Net_1919, Net_1918),
-		hw_ctrl_en=>(POTMUX_Decoder_one_hot_1, POTMUX_Decoder_one_hot_0),
-		vout=>Net_2530);
-RAMBUF:cy_dma_v1_0
+	PORT MAP(signal1=>\STEERADC:Net_257\,
+		signal2=>\STEERADC:Net_149\);
+\STEERADC:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\STEERADC:Net_255\);
+\STEERADC:noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\STEERADC:Net_368\);
+RAMBUF1:cy_dma_v1_0
 	GENERIC MAP(drq_type=>"00",
 		num_tds=>0)
 	PORT MAP(drq=>Net_2585,
 		trq=>zero,
 		nrq=>Net_2629);
-Analog_Clock:cy_clock_v1_0
+vRef_2:cy_vref_v1_0
+	GENERIC MAP(guid=>"1285E699-D5F8-4949-8B44-A4CC98CBA2DD",
+		name=>"Vdda",
+		autoenable=>'1',
+		ignoresleep=>'0')
+	PORT MAP(vout=>Net_2696);
+\BRAKEADC:cy_analog_virtualmux_3_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\BRAKEADC:Net_248\,
+		signal2=>Net_2696);
+\BRAKEADC:IRQ\:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10")
+	PORT MAP(int_signal=>Net_2694);
+\BRAKEADC:theACLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
-		id=>"1854a656-47f1-49dd-81cf-e12d65e6167f",
-		source_clock_id=>"75C2148C-3656-4d8a-846D-0CAE99AB6FF7",
+		id=>"acbf8c77-ee5a-4dd7-9acb-4ecc93da5da6/696a0979-21fc-4185-bf38-6c79febcde7a",
+		source_clock_id=>"",
 		divisor=>0,
-		period=>"0",
-		is_direct=>'1',
+		period=>"625000000",
+		is_direct=>'0',
 		is_digital=>'1')
-	PORT MAP(clock_out=>Net_2619,
+	PORT MAP(clock_out=>\BRAKEADC:Net_376\,
 		dig_domain_out=>open);
+\BRAKEADC:ADC_SAR\:cy_psoc5_sar_v2_0
+	GENERIC MAP(cy_registers=>"")
+	PORT MAP(vplus=>Net_2691,
+		vminus=>\BRAKEADC:Net_126\,
+		ext_pin=>\BRAKEADC:Net_215\,
+		vrefhi_out=>\BRAKEADC:Net_257\,
+		vref=>\BRAKEADC:Net_248\,
+		clock=>\BRAKEADC:Net_376\,
+		pump_clock=>\BRAKEADC:Net_376\,
+		sof_udb=>zero,
+		clk_udb=>zero,
+		vp_ctl_udb=>(zero, zero, zero, zero),
+		vn_ctl_udb=>(zero, zero, zero, zero),
+		irq=>\BRAKEADC:Net_252\,
+		next_out=>Net_2697,
+		data_out=>(\BRAKEADC:Net_207_11\, \BRAKEADC:Net_207_10\, \BRAKEADC:Net_207_9\, \BRAKEADC:Net_207_8\,
+			\BRAKEADC:Net_207_7\, \BRAKEADC:Net_207_6\, \BRAKEADC:Net_207_5\, \BRAKEADC:Net_207_4\,
+			\BRAKEADC:Net_207_3\, \BRAKEADC:Net_207_2\, \BRAKEADC:Net_207_1\, \BRAKEADC:Net_207_0\),
+		eof_udb=>Net_2694);
+\BRAKEADC:cy_analog_virtualmux_2_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\BRAKEADC:Net_215\,
+		signal2=>\BRAKEADC:Net_209\);
+\BRAKEADC:cy_analog_virtualmux_1_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\BRAKEADC:Net_126\,
+		signal2=>\BRAKEADC:Net_149\);
+\BRAKEADC:noconnect\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\BRAKEADC:Net_209\);
+\BRAKEADC:cy_analog_virtualmux_4_connect\:cy_connect_v1_0
+	GENERIC MAP(sig_width=>1,
+		is_net_join=>'0')
+	PORT MAP(signal1=>\BRAKEADC:Net_257\,
+		signal2=>\BRAKEADC:Net_149\);
+\BRAKEADC:cy_analog_noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\BRAKEADC:Net_255\);
+\BRAKEADC:noconnect_1\:cy_analog_noconnect_v1_0
+	PORT MAP(noconnect=>\BRAKEADC:Net_368\);
+RAMBUF2:cy_dma_v1_0
+	GENERIC MAP(drq_type=>"00",
+		num_tds=>0)
+	PORT MAP(drq=>Net_2694,
+		trq=>zero,
+		nrq=>Net_2701);
 vRef_1:cy_vref_v1_0
 	GENERIC MAP(guid=>"1285E699-D5F8-4949-8B44-A4CC98CBA2DD",
 		name=>"Vdda",
@@ -3211,21 +3241,5 @@ Net_182:cy_dff
 	PORT MAP(d=>\UART:BUART:tx_parity_bit\\D\,
 		clk=>\UART:BUART:clock_op\,
 		q=>\UART:BUART:tx_parity_bit\);
-POTMUX_Decoder_old_id_0:cy_dff
-	PORT MAP(d=>Net_2618,
-		clk=>Net_2619,
-		q=>POTMUX_Decoder_old_id_0);
-POTMUX_Decoder_one_hot_0:cy_dff
-	PORT MAP(d=>POTMUX_Decoder_one_hot_0D,
-		clk=>Net_2619,
-		q=>POTMUX_Decoder_one_hot_0);
-POTMUX_Decoder_one_hot_1:cy_dff
-	PORT MAP(d=>POTMUX_Decoder_one_hot_1D,
-		clk=>Net_2619,
-		q=>POTMUX_Decoder_one_hot_1);
-cy_tff_1:cy_dff
-	PORT MAP(d=>cy_tff_1D,
-		clk=>Net_2585,
-		q=>Net_2618);
 
 END R_T_L;

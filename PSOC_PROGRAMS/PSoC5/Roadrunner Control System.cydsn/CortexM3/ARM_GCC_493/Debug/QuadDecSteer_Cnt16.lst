@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
   29:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** * 
   30:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** * Parameters:  
   31:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *  void  
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
   86:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****                 QuadDecSteer_Cnt16_CONTROL = ctrl | QuadDecSteer_Cnt16_DEFAULT_CAPTURE_MODE;
   87:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****             #else
   88:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****                 QuadDecSteer_Cnt16_CONTROL = ctrl;
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 3
 
 
   89:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****             #endif /* 0 != QuadDecSteer_Cnt16_CAPTURE_MODE */ 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  143:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** void QuadDecSteer_Cnt16_Enable(void) 
  144:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** {
   27              		.loc 1 144 0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 4
 
 
   28              		.cfi_startproc
@@ -205,7 +205,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
   38              	.L3:
   39              		.align	2
   40              	.L2:
-  41 000c 73640040 		.word	1073767539
+  41 000c 77640040 		.word	1073767543
   42              		.cfi_endproc
   43              	.LFE1:
   44              		.size	QuadDecSteer_Cnt16_Enable, .-QuadDecSteer_Cnt16_Enable
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  174:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *  QuadDecSteer_Cnt16_initVar: Is modified when this function is called for the  
  175:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *   first time. Is used to ensure that initialization happens only once.
  176:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 5
 
 
  177:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *******************************************************************************/
@@ -291,14 +291,14 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
   64              	.L6:
   65              		.align	2
   66              	.L5:
-  67 000c 73640040 		.word	1073767539
+  67 000c 77640040 		.word	1073767543
   68              		.cfi_endproc
   69              	.LFE3:
   70              		.size	QuadDecSteer_Cnt16_Stop, .-QuadDecSteer_Cnt16_Stop
   71              		.section	.text.QuadDecSteer_Cnt16_SetInterruptMode,"ax",%progbits
   72              		.align	2
   73              		.global	QuadDecSteer_Cnt16_SetInterruptMode
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 6
 
 
   74              		.thumb
@@ -346,7 +346,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
   89              	.L9:
   90 0006 00BF     		.align	2
   91              	.L8:
-  92 0008 83640040 		.word	1073767555
+  92 0008 84640040 		.word	1073767556
   93              		.cfi_endproc
   94              	.LFE4:
   95              		.size	QuadDecSteer_Cnt16_SetInterruptMode, .-QuadDecSteer_Cnt16_SetInterruptMode
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  101              		.type	QuadDecSteer_Cnt16_ReadStatusRegister, %function
  102              	QuadDecSteer_Cnt16_ReadStatusRegister:
  103              	.LFB5:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 7
 
 
  240:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** }
@@ -399,7 +399,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  114              	.L12:
  115 0006 00BF     		.align	2
  116              	.L11:
- 117 0008 63640040 		.word	1073767523
+ 117 0008 64640040 		.word	1073767524
  118              		.cfi_endproc
  119              	.LFE5:
  120              		.size	QuadDecSteer_Cnt16_ReadStatusRegister, .-QuadDecSteer_Cnt16_ReadStatusRegister
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  269:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** * Function Name: QuadDecSteer_Cnt16_ReadControlRegister
  270:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** ********************************************************************************
  271:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** * Summary:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 8
 
 
  272:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *   Reads the control register and returns it's state. This function should use
@@ -449,7 +449,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  139              	.L15:
  140 0006 00BF     		.align	2
  141              	.L14:
- 142 0008 73640040 		.word	1073767539
+ 142 0008 77640040 		.word	1073767543
  143              		.cfi_endproc
  144              	.LFE6:
  145              		.size	QuadDecSteer_Cnt16_ReadControlRegister, .-QuadDecSteer_Cnt16_ReadControlRegister
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  301:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *  (uint8) The contents of the control register
  302:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *
  303:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *******************************************************************************/
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 9
 
 
  304:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** void    QuadDecSteer_Cnt16_WriteControlRegister(uint8 control) 
@@ -497,7 +497,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  164              	.L18:
  165 0006 00BF     		.align	2
  166              	.L17:
- 167 0008 73640040 		.word	1073767539
+ 167 0008 77640040 		.word	1073767543
  168              		.cfi_endproc
  169              	.LFE7:
  170              		.size	QuadDecSteer_Cnt16_WriteControlRegister, .-QuadDecSteer_Cnt16_WriteControlRegister
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  183              		@ link register save eliminated.
  184              	.LVL2:
  329:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****     #if(QuadDecSteer_Cnt16_UsingFixedFunction)
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 10
 
 
  330:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****         /* assert if block is already enabled */
@@ -556,7 +556,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  189              	.L21:
  190 0006 00BF     		.align	2
  191              	.L20:
- 192 0008 04680040 		.word	1073768452
+ 192 0008 0C680040 		.word	1073768460
  193              		.cfi_endproc
  194              	.LFE8:
  195              		.size	QuadDecSteer_Cnt16_WriteCounter, .-QuadDecSteer_Cnt16_WriteCounter
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  360:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****     /* Must first do a software capture to be able to read the counter */
  361:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****     /* It is up to the user code to make sure there isn't already captured data in the FIFO */
  362:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****     #if(QuadDecSteer_Cnt16_UsingFixedFunction)
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 11
 
 
  363:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** 		(void)CY_GET_REG16(QuadDecSteer_Cnt16_COUNTER_LSB_PTR);
@@ -625,8 +625,8 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  218              	.L24:
  219              		.align	2
  220              	.L23:
- 221 000c 02640040 		.word	1073767426
- 222 0010 84680040 		.word	1073768580
+ 221 000c 06640040 		.word	1073767430
+ 222 0010 8C680040 		.word	1073768588
  223              		.cfi_endproc
  224              	.LFE9:
  225              		.size	QuadDecSteer_Cnt16_ReadCounter, .-QuadDecSteer_Cnt16_ReadCounter
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  234              		.loc 1 391 0
  235              		.cfi_startproc
  236              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 12
 
 
  237              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -678,7 +678,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  245              	.L27:
  246              		.align	2
  247              	.L26:
- 248 0008 84680040 		.word	1073768580
+ 248 0008 8C680040 		.word	1073768588
  249              		.cfi_endproc
  250              	.LFE10:
  251              		.size	QuadDecSteer_Cnt16_ReadCapture, .-QuadDecSteer_Cnt16_ReadCapture
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  417:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****     #if(QuadDecSteer_Cnt16_UsingFixedFunction)
  418:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****         CY_SET_REG16(QuadDecSteer_Cnt16_PERIOD_LSB_PTR,(uint16)period);
  419:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****     #else
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 13
 
 
  420:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****         CY_SET_REG16(QuadDecSteer_Cnt16_PERIOD_LSB_PTR, period);
@@ -729,7 +729,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  270              	.L30:
  271 0006 00BF     		.align	2
  272              	.L29:
- 273 0008 44680040 		.word	1073768516
+ 273 0008 4C680040 		.word	1073768524
  274              		.cfi_endproc
  275              	.LFE11:
  276              		.size	QuadDecSteer_Cnt16_WritePeriod, .-QuadDecSteer_Cnt16_WritePeriod
@@ -778,12 +778,12 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  294 0004 80B2     		uxth	r0, r0
  295 0006 7047     		bx	lr
  296              	.L33:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 14
 
 
  297              		.align	2
  298              	.L32:
- 299 0008 44680040 		.word	1073768516
+ 299 0008 4C680040 		.word	1073768524
  300              		.cfi_endproc
  301              	.LFE12:
  302              		.size	QuadDecSteer_Cnt16_ReadPeriod, .-QuadDecSteer_Cnt16_ReadPeriod
@@ -834,11 +834,11 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  321              	.L36:
  322 0006 00BF     		.align	2
  323              	.L35:
- 324 0008 64680040 		.word	1073768548
+ 324 0008 6C680040 		.word	1073768556
  325              		.cfi_endproc
  326              	.LFE13:
  327              		.size	QuadDecSteer_Cnt16_WriteCompare, .-QuadDecSteer_Cnt16_WriteCompare
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 15
 
 
  328              		.section	.text.QuadDecSteer_Cnt16_ReadCompare,"ax",%progbits
@@ -884,7 +884,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  347              	.L39:
  348              		.align	2
  349              	.L38:
- 350 0008 64680040 		.word	1073768548
+ 350 0008 6C680040 		.word	1073768556
  351              		.cfi_endproc
  352              	.LFE14:
  353              		.size	QuadDecSteer_Cnt16_ReadCompare, .-QuadDecSteer_Cnt16_ReadCompare
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  361              	.LFB15:
  493:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** 
  494:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 16
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 16
 
 
  495:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** #if (QuadDecSteer_Cnt16_COMPARE_MODE_SOFTWARE)
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  549:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *   This function clears all capture data from the capture FIFO
  550:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *
  551:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** * Parameters:  
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 17
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 17
 
 
  552:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c **** *  void:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  399 0000 08B5     		push	{r3, lr}
  400              		.cfi_def_cfa_offset 8
  401              		.cfi_offset 3, -8
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 18
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 18
 
 
  402              		.cfi_offset 14, -4
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  444 0040 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
  445 0042 43F01003 		orr	r3, r3, #16
  446 0046 1370     		strb	r3, [r2]
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 19
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 19
 
 
  120:.\Generated_Source\PSoC5/QuadDecSteer_Cnt16.c ****             
@@ -1089,8 +1089,8 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  451              	.L47:
  452 004e 00BF     		.align	2
  453              	.L46:
- 454 0050 73640040 		.word	1073767539
- 455 0054 93640040 		.word	1073767571
+ 454 0050 77640040 		.word	1073767543
+ 455 0054 94640040 		.word	1073767572
  456              		.cfi_endproc
  457              	.LFE0:
  458              		.size	QuadDecSteer_Cnt16_Init, .-QuadDecSteer_Cnt16_Init
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  495              		.cfi_endproc
  496              	.LFE2:
  497              		.size	QuadDecSteer_Cnt16_Start, .-QuadDecSteer_Cnt16_Start
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 20
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 20
 
 
  498              		.global	QuadDecSteer_Cnt16_initVar
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  552 0057 08       		.byte	0x8
  553 0058 07       		.byte	0x7
  554 0059 32030000 		.4byte	.LASF7
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 21
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 21
 
 
  555 005d 03       		.uleb128 0x3
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  609 00d0 01       		.uleb128 0x1
  610 00d1 9C       		.byte	0x9c
  611 00d2 06       		.uleb128 0x6
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 22
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 22
 
 
  612 00d3 7D000000 		.4byte	.LASF18
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  666 014e 3001     		.2byte	0x130
  667 0150 6B000000 		.4byte	0x6b
  668 0154 01       		.uleb128 0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 23
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 23
 
 
  669 0155 50       		.byte	0x50
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  723 01cd 09       		.uleb128 0x9
  724 01ce 87010000 		.4byte	.LASF31
  725 01d2 01       		.byte	0x1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 24
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 24
 
 
  726 01d3 B601     		.2byte	0x1b6
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  780 0256 01       		.uleb128 0x1
  781 0257 9C       		.byte	0x9c
  782 0258 F1020000 		.4byte	0x2f1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 25
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 25
 
 
  783 025c 0D       		.uleb128 0xd
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  837 02d6 0F       		.uleb128 0xf
  838 02d7 01       		.uleb128 0x1
  839 02d8 50       		.byte	0x50
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 26
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 26
 
 
  840 02d9 03       		.uleb128 0x3
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  894 0004 0E       		.uleb128 0xe
  895 0005 13       		.uleb128 0x13
  896 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 27
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 27
 
 
  897 0007 03       		.uleb128 0x3
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  951 003d 06       		.uleb128 0x6
  952 003e 2E       		.uleb128 0x2e
  953 003f 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 28
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 28
 
 
  954 0040 3F       		.uleb128 0x3f
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1008 0078 49       		.uleb128 0x49
  1009 0079 13       		.uleb128 0x13
  1010 007a 02       		.uleb128 0x2
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 29
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 29
 
 
  1011 007b 18       		.uleb128 0x18
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1065 00b3 05       		.uleb128 0x5
  1066 00b4 00       		.byte	0
  1067 00b5 03       		.uleb128 0x3
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 30
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 30
 
 
  1068 00b6 0E       		.uleb128 0xe
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1122 00f3 00       		.byte	0
  1123 00f4 10       		.uleb128 0x10
  1124 00f5 34       		.uleb128 0x34
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 31
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 31
 
 
  1125 00f6 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1179 012c 49       		.uleb128 0x49
  1180 012d 13       		.uleb128 0x13
  1181 012e 00       		.byte	0
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 32
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 32
 
 
  1182 012f 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1236 005c 0C000000 		.4byte	.LFE11-.LFB11
  1237 0060 00000000 		.4byte	.LFB12
  1238 0064 0C000000 		.4byte	.LFE12-.LFB12
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 33
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 33
 
 
  1239 0068 00000000 		.4byte	.LFB13
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1289      01010101 
  1290              	.LASF15:
  1291 0000 72656731 		.ascii	"reg16\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 34
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 34
 
 
  1291      3600
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1311              	.LASF26:
  1312 0119 636F756E 		.ascii	"counter\000"
  1312      74657200 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 35
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 35
 
 
  1313              	.LASF39:
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1334      736B00
  1335              	.LASF27:
  1336 01f8 51756164 		.ascii	"QuadDecSteer_Cnt16_ReadCounter\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 36
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 36
 
 
  1336      44656353 
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1354      65642069 
  1355              	.LASF44:
  1356 0349 4379456E 		.ascii	"CyEnterCriticalSection\000"
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 37
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 37
 
 
  1356      74657243 
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 1
  1378      74656572 
  1378      5F436E74 
  1378      31365F69 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccwL16ki.s 			page 38
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\cc8NzJGU.s 			page 38
 
 
  1379              	.LASF0:

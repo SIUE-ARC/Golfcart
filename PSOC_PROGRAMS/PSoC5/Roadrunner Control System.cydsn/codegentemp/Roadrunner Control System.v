@@ -1,6 +1,6 @@
 // ======================================================================
 // Roadrunner Control System.v generated from TopDesign.cysch
-// 10/14/2016 at 12:17
+// 10/14/2016 at 16:16
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1227,7 +1227,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_constant_v1_0\cy_constant_v1_0.v"
 `endif
 
-// ADC_SAR_v3_0(ADC_Clock=1, ADC_Clock_Frequency=1600000, ADC_Input_Range=2, ADC_Power=0, ADC_Reference=0, ADC_Resolution=12, ADC_SampleMode=0, Enable_next_out=true, Ref_Voltage=2.5, Ref_Voltage_mV=2500, rm_int=false, Sample_Precharge=4, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ADC_SAR_v3_0, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=POTADC, CY_INSTANCE_SHORT_NAME=POTADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=POTADC, )
+// ADC_SAR_v3_0(ADC_Clock=1, ADC_Clock_Frequency=1600000, ADC_Input_Range=2, ADC_Power=0, ADC_Reference=0, ADC_Resolution=12, ADC_SampleMode=0, Enable_next_out=true, Ref_Voltage=2.5, Ref_Voltage_mV=2500, rm_int=false, Sample_Precharge=4, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ADC_SAR_v3_0, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=STEERADC, CY_INSTANCE_SHORT_NAME=STEERADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=STEERADC, )
 module ADC_SAR_v3_0_8 (
     vplus,
     vminus,
@@ -1369,32 +1369,6 @@ module ADC_SAR_v3_0_8 (
 
 endmodule
 
-// Component: AMuxHw_v1_50
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxHw_v1_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxHw_v1_50"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\AMuxHw_v1_50\AMuxHw_v1_50.v"
-`endif
-
-// Component: cy_tff_v1_0
-`ifdef CY_BLK_DIR
-`undef CY_BLK_DIR
-`endif
-
-`ifdef WARP
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0\cy_tff_v1_0.v"
-`else
-`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0"
-`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_tff_v1_0\cy_tff_v1_0.v"
-`endif
-
 // Component: cy_vref_v1_70
 `ifdef CY_BLK_DIR
 `undef CY_BLK_DIR
@@ -1408,19 +1382,166 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_vref_v1_70\cy_vref_v1_70.v"
 `endif
 
+// ADC_SAR_v3_0(ADC_Clock=1, ADC_Clock_Frequency=1600000, ADC_Input_Range=2, ADC_Power=0, ADC_Reference=0, ADC_Resolution=12, ADC_SampleMode=0, Enable_next_out=true, Ref_Voltage=2.5, Ref_Voltage_mV=2500, rm_int=false, Sample_Precharge=4, Sample_Rate=100000, Sample_Rate_def=631579, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMPONENT_NAME=ADC_SAR_v3_0, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=BRAKEADC, CY_INSTANCE_SHORT_NAME=BRAKEADC, CY_MAJOR_VERSION=3, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP3, INSTANCE_NAME=BRAKEADC, )
+module ADC_SAR_v3_0_9 (
+    vplus,
+    vminus,
+    soc,
+    eoc,
+    aclk,
+    vdac_ref,
+    eos);
+    inout       vplus;
+    electrical  vplus;
+    inout       vminus;
+    electrical  vminus;
+    input       soc;
+    output      eoc;
+    input       aclk;
+    inout       vdac_ref;
+    electrical  vdac_ref;
+    output      eos;
+
+
+          wire [3:0] vp_ctl;
+          wire [3:0] vn_ctl;
+          wire  Net_381;
+    electrical  Net_255;
+    electrical  Net_267;
+    electrical  Net_210;
+    electrical  Net_209;
+          wire [11:0] Net_207;
+          wire  Net_252;
+          wire  Net_205;
+          wire  Net_378;
+          wire  Net_376;
+    electrical  Net_368;
+    electrical  Net_235;
+    electrical  Net_216;
+    electrical  Net_233;
+          wire  Net_221;
+    electrical  Net_248;
+    electrical  Net_257;
+    electrical  Net_149;
+    electrical  Net_126;
+    electrical  Net_215;
+          wire  Net_188;
+
+	// cy_analog_virtualmux_3 (cy_analog_virtualmux_v1_0)
+	cy_connect_v1_0 cy_analog_virtualmux_3_connect(Net_248, vdac_ref);
+	defparam cy_analog_virtualmux_3_connect.sig_width = 1;
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		IRQ
+		 (.int_signal(eoc));
+
+
+    ZeroTerminal ZeroTerminal_1 (
+        .z(vp_ctl[0]));
+
+    ZeroTerminal ZeroTerminal_2 (
+        .z(vp_ctl[2]));
+
+    ZeroTerminal ZeroTerminal_3 (
+        .z(vn_ctl[1]));
+
+    ZeroTerminal ZeroTerminal_4 (
+        .z(vn_ctl[3]));
+
+    ZeroTerminal ZeroTerminal_5 (
+        .z(vp_ctl[1]));
+
+    ZeroTerminal ZeroTerminal_6 (
+        .z(vp_ctl[3]));
+
+    ZeroTerminal ZeroTerminal_7 (
+        .z(vn_ctl[0]));
+
+    ZeroTerminal ZeroTerminal_8 (
+        .z(vn_ctl[2]));
+
+
+	cy_clock_v1_0
+		#(.id("acbf8c77-ee5a-4dd7-9acb-4ecc93da5da6/696a0979-21fc-4185-bf38-6c79febcde7a"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("625000000"),
+		  .is_direct(0),
+		  .is_digital(1))
+		theACLK
+		 (.clock_out(Net_376));
+
+
+	// Clock_VirtualMux_1 (cy_virtualmux_v1_0)
+	assign Net_188 = Net_221;
+
+    cy_psoc5_sar_v2_0 ADC_SAR (
+        .clock(Net_188),
+        .sof_udb(soc),
+        .clk_udb(),
+        .vp_ctl_udb(vp_ctl[3:0]),
+        .vn_ctl_udb(vn_ctl[3:0]),
+        .vplus(vplus),
+        .vminus(Net_126),
+        .irq(Net_252),
+        .data_out(Net_207[11:0]),
+        .eof_udb(eoc),
+        .pump_clock(Net_188),
+        .ext_pin(Net_215),
+        .vrefhi_out(Net_257),
+        .vref(Net_248),
+        .next_out(eos));
+
+	// cy_analog_virtualmux_2 (cy_analog_virtualmux_v1_0)
+	cy_connect_v1_0 cy_analog_virtualmux_2_connect(Net_215, Net_209);
+	defparam cy_analog_virtualmux_2_connect.sig_width = 1;
+
+	// cy_analog_virtualmux_1 (cy_analog_virtualmux_v1_0)
+	cy_connect_v1_0 cy_analog_virtualmux_1_connect(Net_126, Net_149);
+	defparam cy_analog_virtualmux_1_connect.sig_width = 1;
+
+    cy_analog_noconnect_v1_0 noconnect (
+        .noconnect(Net_209));
+
+	// cy_analog_virtualmux_4 (cy_analog_virtualmux_v1_0)
+	cy_connect_v1_0 cy_analog_virtualmux_4_connect(Net_257, Net_149);
+	defparam cy_analog_virtualmux_4_connect.sig_width = 1;
+
+    cy_analog_noconnect_v1_0 cy_analog_noconnect_1 (
+        .noconnect(Net_255));
+
+    cy_analog_noconnect_v1_0 noconnect_1 (
+        .noconnect(Net_368));
+
+
+    assign Net_221 = Net_376 | Net_381;
+
+    assign Net_381 = 1'h0;
+
+
+
+endmodule
+
 // top
 module top ;
 
     electrical  Net_2678;
-          wire  Net_2663;
-          wire  Net_2620;
+          wire  Net_2701;
+          wire  Net_2700;
+          wire  Net_2697;
+          wire  Net_2695;
+          wire  Net_2693;
+    electrical  Net_2692;
+    electrical  Net_2696;
           wire  Net_2629;
           wire  Net_2628;
-          wire  Net_2627;
+          wire  Net_2706;
     electrical  Net_2626;
-          wire  Net_2625;
-          wire  Net_2624;
-    electrical  Net_2623;
+          wire  Net_2705;
+          wire  Net_2704;
+    electrical  Net_2703;
     electrical  Net_760;
     electrical  Net_759;
     electrical  Net_758;
@@ -1437,6 +1558,8 @@ module top ;
     electrical  Net_748;
     electrical  Net_747;
     electrical  Net_746;
+    electrical  Net_2691;
+    electrical  Net_2530;
     electrical  Net_195;
           wire  Net_162;
           wire  Net_191;
@@ -1460,13 +1583,9 @@ module top ;
           wire  Net_28;
           wire  Net_25;
           wire  Net_23;
-    electrical  Net_2677;
-          wire  Net_2618;
-          wire  Net_2619;
-    electrical  Net_2530;
+          wire  Net_2694;
           wire  Net_2585;
-    electrical  Net_1918;
-    electrical  Net_1919;
+    electrical  Net_2677;
     electrical  Net_585;
     electrical  Net_656;
     electrical  Net_752;
@@ -2152,7 +2271,7 @@ module top ;
 		 (.oe(tmpOE__STEERPOT_net),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__STEERPOT_net[0:0]}),
-		  .analog({Net_1918}),
+		  .analog({Net_2530}),
 		  .io({tmpIO_0__STEERPOT_net[0:0]}),
 		  .siovref(tmpSIOVREF__STEERPOT_net),
 		  .interrupt({tmpINTERRUPT_0__STEERPOT_net[0:0]}),
@@ -2228,7 +2347,7 @@ module top ;
 		 (.oe(tmpOE__BRAKEPOT_net),
 		  .y({1'b0}),
 		  .fb({tmpFB_0__BRAKEPOT_net[0:0]}),
-		  .analog({Net_1919}),
+		  .analog({Net_2691}),
 		  .io({tmpIO_0__BRAKEPOT_net[0:0]}),
 		  .siovref(tmpSIOVREF__BRAKEPOT_net),
 		  .interrupt({tmpINTERRUPT_0__BRAKEPOT_net[0:0]}),
@@ -2578,96 +2697,49 @@ module top ;
     defparam PWR_3.port_names = "T1";
     defparam PWR_3.width = 1;
 
-    ADC_SAR_v3_0_8 POTADC (
+    ADC_SAR_v3_0_8 STEERADC (
         .vplus(Net_2530),
-        .vminus(Net_2623),
+        .vminus(Net_2703),
         .soc(1'b0),
         .eoc(Net_2585),
         .aclk(1'b0),
         .vdac_ref(Net_2626),
-        .eos(Net_2627));
-
-    // -- AMuxHw POTMUX start -- ***
-    
-    // -- AMuxHw Decoder Start--
-    
-    reg [1:0] POTMUX_Decoder_one_hot;
-    reg [0:0] POTMUX_Decoder_old_id;
-    wire  POTMUX_Decoder_is_active;
-    wire  POTMUX_Decoder_enable;
-    
-    assign POTMUX_Decoder_enable = 1'b1;
-    
-    genvar POTMUX_Decoder_i;
-    
-    assign POTMUX_Decoder_is_active = (Net_2618 == POTMUX_Decoder_old_id) && POTMUX_Decoder_enable;
-    
-    always @(posedge Net_2619)
-    begin
-        POTMUX_Decoder_old_id = Net_2618;
-    end
-    
-    generate
-        for (POTMUX_Decoder_i = 0; POTMUX_Decoder_i < 2; POTMUX_Decoder_i = POTMUX_Decoder_i + 1 )
-        begin : POTMUX_OutBit
-            always @(posedge Net_2619)
-            begin
-                POTMUX_Decoder_one_hot[POTMUX_Decoder_i] <= (POTMUX_Decoder_old_id == POTMUX_Decoder_i) && POTMUX_Decoder_is_active;
-            end
-        end
-    endgenerate
-    
-    // -- AMuxHw Decoder End--
-    
-    // -- AMuxHw Primitive A --
-    
-    cy_psoc3_amux_v1_0 #(
-        .muxin_width(2),
-        .hw_control(1),
-        .one_active(1),
-        .init_mux_sel(2'h0),
-        .api_type(2'b10))
-        POTMUX(
-        .muxin({
-            Net_1919,
-            Net_1918
-            }),
-        .hw_ctrl_en(POTMUX_Decoder_one_hot[1:0]),
-        .vout(Net_2530)
-        );
-    
-    // -- AMuxHw POTMUX end -- ***
+        .eos(Net_2706));
 
 
 	cy_dma_v1_0
 		#(.drq_type(2'b00))
-		RAMBUF
+		RAMBUF1
 		 (.drq(Net_2585),
 		  .trq(1'b0),
 		  .nrq(Net_2629));
 
 
-    // -- TFF Start --
-    reg  cy_tff_1;
-    always @(posedge Net_2585)
-    begin
-        cy_tff_1 <= Net_2620^Net_2618;
-    end
-    assign Net_2618 = cy_tff_1;
-    // -- TFF End --
 
-    assign Net_2620 = 1'h1;
+	cy_vref_v1_0
+		#(.autoenable(1),
+		  .guid("1285E699-D5F8-4949-8B44-A4CC98CBA2DD"),
+		  .name("Vdda"))
+		vRef_2
+		 (.vout(Net_2696));
 
 
-	cy_clock_v1_0
-		#(.id("1854a656-47f1-49dd-81cf-e12d65e6167f"),
-		  .source_clock_id("75C2148C-3656-4d8a-846D-0CAE99AB6FF7"),
-		  .divisor(0),
-		  .period("0"),
-		  .is_direct(1),
-		  .is_digital(1))
-		Analog_Clock
-		 (.clock_out(Net_2619));
+    ADC_SAR_v3_0_9 BRAKEADC (
+        .vplus(Net_2691),
+        .vminus(Net_2692),
+        .soc(1'b0),
+        .eoc(Net_2694),
+        .aclk(1'b0),
+        .vdac_ref(Net_2696),
+        .eos(Net_2697));
+
+
+	cy_dma_v1_0
+		#(.drq_type(2'b00))
+		RAMBUF2
+		 (.drq(Net_2694),
+		  .trq(1'b0),
+		  .nrq(Net_2701));
 
 
 

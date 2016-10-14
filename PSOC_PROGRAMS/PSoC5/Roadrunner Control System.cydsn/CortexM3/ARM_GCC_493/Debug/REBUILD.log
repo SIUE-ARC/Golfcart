@@ -1,4 +1,4 @@
---------------- Rebuild Started: 10/14/2016 12:17:21 Project: Roadrunner Control System, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
+--------------- Rebuild Started: 10/14/2016 16:16:19 Project: Roadrunner Control System, Configuration: ARM GCC 4.9-2015-q1-update Debug ---------------
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\main.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\cymetadata.o"
@@ -31,10 +31,6 @@ Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_PM.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_INT.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_BOOT.o"
-Deleting file ".\CortexM3\ARM_GCC_493\Debug\POTADC.o"
-Deleting file ".\CortexM3\ARM_GCC_493\Debug\POTADC_PM.o"
-Deleting file ".\CortexM3\ARM_GCC_493\Debug\POTADC_INT.o"
-Deleting file ".\CortexM3\ARM_GCC_493\Debug\RAMBUF_dma.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\STEERPOT.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\BRAKEPOT.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\RLY_REVERSE.o"
@@ -53,7 +49,6 @@ Deleting file ".\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8_PM.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\DVDAC_IntClock.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\UART_IntClock.o"
-Deleting file ".\CortexM3\ARM_GCC_493\Debug\POTADC_IRQ.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\Cm3Start.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyDmac.o"
@@ -62,8 +57,19 @@ Deleting file ".\CortexM3\ARM_GCC_493\Debug\CyLib.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\cyPm.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\CySpc.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\cyutils.o"
-Deleting file ".\CortexM3\ARM_GCC_493\Debug\POTADC_theACLK.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\PWR.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\STEERADC.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\STEERADC_INT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\STEERADC_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\RAMBUF1_dma.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\BRAKEADC.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\BRAKEADC_INT.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\BRAKEADC_PM.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\RAMBUF2_dma.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\STEERADC_IRQ.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\STEERADC_theACLK.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\BRAKEADC_IRQ.o"
+Deleting file ".\CortexM3\ARM_GCC_493\Debug\BRAKEADC_theACLK.o"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.hex"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.elf"
 Deleting file ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.map"
@@ -82,9 +88,8 @@ Place and Route ...
 Tech mapping ...
 ADD: pft.M0040: information: The following 12 pin(s) will be assigned a location by the fitter: BRAKEPOT(0), DENCA(0), DENCB(0), DVDACOUT(0), ESTOP(0), RLY_COAST(0), RLY_REVERSE(0), Rx(0), SENCA(0), SENCB(0), STEERPOT(0), Tx(0)
 Analog Placement ...
-Log: apr.M0058: The analog placement iterative improvement is 33% done. (App=cydsfit)
-Log: apr.M0058: The analog placement iterative improvement is 57% done. (App=cydsfit)
-Log: apr.M0058: The analog placement iterative improvement is 100% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 38% done. (App=cydsfit)
+Log: apr.M0058: The analog placement iterative improvement is 55% done. (App=cydsfit)
 Analog Routing ...
 Analog Code Generation ...
 Digital Placement ...
@@ -95,6 +100,18 @@ API Generation ...
 Dependency Generation ...
 Clean Temporary Files ...
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/main.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\main.c -o .\CortexM3\ARM_GCC_493\Debug\main.o
+.\main.c: In function 'main':
+.\main.c:45:11: warning: operation on 'j' may be undefined [-Wsequence-point]
+         j = (j == 99) ?  0:j++;
+           ^
+.\main.c:94:39: warning: passing argument 2 of 'USBFS_LoadInEP' from incompatible pointer type
+             USBFS_LoadInEP(IN_EP_NUM, bsample, j);
+                                       ^
+In file included from Generated_Source\PSoC5/project.h:32:0,
+                 from .\main.c:12:
+Generated_Source\PSoC5/USBFS.h:306:8: note: expected 'const uint8 *' but argument is of type 'unsigned int *'
+ void   USBFS_LoadInEP(uint8 epNumber, const uint8 pData[], uint16 length)
+        ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/cyfitter_cfg.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\cyfitter_cfg.c -o .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/cymetadata.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\cymetadata.c -o .\CortexM3\ARM_GCC_493\Debug\cymetadata.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/QuadDecSteer.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\QuadDecSteer.c -o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer.o
@@ -126,10 +143,6 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\P
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/UART_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_PM.c -o .\CortexM3\ARM_GCC_493\Debug\UART_PM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/UART_INT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_INT.c -o .\CortexM3\ARM_GCC_493\Debug\UART_INT.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/UART_BOOT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_BOOT.c -o .\CortexM3\ARM_GCC_493\Debug\UART_BOOT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/POTADC.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\POTADC.c -o .\CortexM3\ARM_GCC_493\Debug\POTADC.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/POTADC_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\POTADC_PM.c -o .\CortexM3\ARM_GCC_493\Debug\POTADC_PM.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/POTADC_INT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\POTADC_INT.c -o .\CortexM3\ARM_GCC_493\Debug\POTADC_INT.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/RAMBUF_dma.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\RAMBUF_dma.c -o .\CortexM3\ARM_GCC_493\Debug\RAMBUF_dma.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/STEERPOT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\STEERPOT.c -o .\CortexM3\ARM_GCC_493\Debug\STEERPOT.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/BRAKEPOT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\BRAKEPOT.c -o .\CortexM3\ARM_GCC_493\Debug\BRAKEPOT.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/RLY_REVERSE.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\RLY_REVERSE.c -o .\CortexM3\ARM_GCC_493\Debug\RLY_REVERSE.o
@@ -148,7 +161,6 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\P
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/DVDAC_VDAC8_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\DVDAC_VDAC8_PM.c -o .\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8_PM.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/DVDAC_IntClock.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\DVDAC_IntClock.c -o .\CortexM3\ARM_GCC_493\Debug\DVDAC_IntClock.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/UART_IntClock.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\UART_IntClock.c -o .\CortexM3\ARM_GCC_493\Debug\UART_IntClock.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/POTADC_IRQ.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\POTADC_IRQ.c -o .\CortexM3\ARM_GCC_493\Debug\POTADC_IRQ.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/Cm3Start.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\Cm3Start.c -o .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o
 arm-none-eabi-as.exe -mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -alh=.\CortexM3\ARM_GCC_493\Debug/CyBootAsmGnu.lst -g -W -o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o .\Generated_Source\PSoC5\CyBootAsmGnu.s
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/CyDmac.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\CyDmac.c -o .\CortexM3\ARM_GCC_493\Debug\CyDmac.o
@@ -157,13 +169,24 @@ arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\P
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/cyPm.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\cyPm.c -o .\CortexM3\ARM_GCC_493\Debug\cyPm.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/CySpc.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\CySpc.c -o .\CortexM3\ARM_GCC_493\Debug\CySpc.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/cyutils.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\cyutils.c -o .\CortexM3\ARM_GCC_493\Debug\cyutils.o
-arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/POTADC_theACLK.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\POTADC_theACLK.c -o .\CortexM3\ARM_GCC_493\Debug\POTADC_theACLK.o
 arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/PWR.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\PWR.c -o .\CortexM3\ARM_GCC_493\Debug\PWR.o
-arm-none-eabi-ar.exe -rs ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a" .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive_PM.o .\CortexM3\ARM_GCC_493\Debug\SENCA.o .\CortexM3\ARM_GCC_493\Debug\SENCB.o .\CortexM3\ARM_GCC_493\Debug\DENCA.o .\CortexM3\ARM_GCC_493\Debug\DENCB.o .\CortexM3\ARM_GCC_493\Debug\USBFS.o .\CortexM3\ARM_GCC_493\Debug\USBFS_audio.o .\CortexM3\ARM_GCC_493\Debug\USBFS_boot.o .\CortexM3\ARM_GCC_493\Debug\USBFS_cdc.o .\CortexM3\ARM_GCC_493\Debug\USBFS_cls.o .\CortexM3\ARM_GCC_493\Debug\USBFS_descr.o .\CortexM3\ARM_GCC_493\Debug\USBFS_drv.o .\CortexM3\ARM_GCC_493\Debug\USBFS_episr.o .\CortexM3\ARM_GCC_493\Debug\USBFS_hid.o .\CortexM3\ARM_GCC_493\Debug\USBFS_pm.o .\CortexM3\ARM_GCC_493\Debug\USBFS_std.o .\CortexM3\ARM_GCC_493\Debug\USBFS_vnd.o .\CortexM3\ARM_GCC_493\Debug\USBFS_midi.o .\CortexM3\ARM_GCC_493\Debug\USBFS_msc.o .\CortexM3\ARM_GCC_493\Debug\DVDAC.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_PM.o .\CortexM3\ARM_GCC_493\Debug\DVDACOUT.o .\CortexM3\ARM_GCC_493\Debug\UART.o .\CortexM3\ARM_GCC_493\Debug\UART_PM.o .\CortexM3\ARM_GCC_493\Debug\UART_INT.o .\CortexM3\ARM_GCC_493\Debug\UART_BOOT.o .\CortexM3\ARM_GCC_493\Debug\POTADC.o .\CortexM3\ARM_GCC_493\Debug\POTADC_PM.o .\CortexM3\ARM_GCC_493\Debug\POTADC_INT.o .\CortexM3\ARM_GCC_493\Debug\RAMBUF_dma.o .\CortexM3\ARM_GCC_493\Debug\STEERPOT.o .\CortexM3\ARM_GCC_493\Debug\BRAKEPOT.o .\CortexM3\ARM_GCC_493\Debug\RLY_REVERSE.o .\CortexM3\ARM_GCC_493\Debug\RLY_COAST.o .\CortexM3\ARM_GCC_493\Debug\ESTOP.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer_Cnt16.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer_Cnt16_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive_Cnt16.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive_Cnt16_PM.o .\CortexM3\ARM_GCC_493\Debug\USBFS_ep2_dma.o .\CortexM3\ARM_GCC_493\Debug\USBFS_ep1_dma.o .\CortexM3\ARM_GCC_493\Debug\USBFS_Dm.o .\CortexM3\ARM_GCC_493\Debug\USBFS_Dp.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_DMA_dma.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8_PM.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_IntClock.o .\CortexM3\ARM_GCC_493\Debug\UART_IntClock.o .\CortexM3\ARM_GCC_493\Debug\POTADC_IRQ.o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o .\CortexM3\ARM_GCC_493\Debug\CyDmac.o .\CortexM3\ARM_GCC_493\Debug\CyFlash.o .\CortexM3\ARM_GCC_493\Debug\CyLib.o .\CortexM3\ARM_GCC_493\Debug\cyPm.o .\CortexM3\ARM_GCC_493\Debug\CySpc.o .\CortexM3\ARM_GCC_493\Debug\cyutils.o .\CortexM3\ARM_GCC_493\Debug\POTADC_theACLK.o .\CortexM3\ARM_GCC_493\Debug\PWR.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/STEERADC.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\STEERADC.c -o .\CortexM3\ARM_GCC_493\Debug\STEERADC.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/STEERADC_INT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\STEERADC_INT.c -o .\CortexM3\ARM_GCC_493\Debug\STEERADC_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/STEERADC_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\STEERADC_PM.c -o .\CortexM3\ARM_GCC_493\Debug\STEERADC_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/RAMBUF1_dma.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\RAMBUF1_dma.c -o .\CortexM3\ARM_GCC_493\Debug\RAMBUF1_dma.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/BRAKEADC.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\BRAKEADC.c -o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/BRAKEADC_INT.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\BRAKEADC_INT.c -o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_INT.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/BRAKEADC_PM.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\BRAKEADC_PM.c -o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_PM.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/RAMBUF2_dma.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\RAMBUF2_dma.c -o .\CortexM3\ARM_GCC_493\Debug\RAMBUF2_dma.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/STEERADC_IRQ.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\STEERADC_IRQ.c -o .\CortexM3\ARM_GCC_493\Debug\STEERADC_IRQ.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/STEERADC_theACLK.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\STEERADC_theACLK.c -o .\CortexM3\ARM_GCC_493\Debug\STEERADC_theACLK.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/BRAKEADC_IRQ.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\BRAKEADC_IRQ.c -o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_IRQ.o
+arm-none-eabi-gcc.exe -mcpu=cortex-m3 -mthumb -Wno-main -I. -IGenerated_Source\PSoC5 -Wa,-alh=.\CortexM3\ARM_GCC_493\Debug/BRAKEADC_theACLK.lst -g -D DEBUG -Wall -ffunction-sections -Og -ffat-lto-objects -c .\Generated_Source\PSoC5\BRAKEADC_theACLK.c -o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_theACLK.o
+arm-none-eabi-ar.exe -rs ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a" .\CortexM3\ARM_GCC_493\Debug\cyfitter_cfg.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive_PM.o .\CortexM3\ARM_GCC_493\Debug\SENCA.o .\CortexM3\ARM_GCC_493\Debug\SENCB.o .\CortexM3\ARM_GCC_493\Debug\DENCA.o .\CortexM3\ARM_GCC_493\Debug\DENCB.o .\CortexM3\ARM_GCC_493\Debug\USBFS.o .\CortexM3\ARM_GCC_493\Debug\USBFS_audio.o .\CortexM3\ARM_GCC_493\Debug\USBFS_boot.o .\CortexM3\ARM_GCC_493\Debug\USBFS_cdc.o .\CortexM3\ARM_GCC_493\Debug\USBFS_cls.o .\CortexM3\ARM_GCC_493\Debug\USBFS_descr.o .\CortexM3\ARM_GCC_493\Debug\USBFS_drv.o .\CortexM3\ARM_GCC_493\Debug\USBFS_episr.o .\CortexM3\ARM_GCC_493\Debug\USBFS_hid.o .\CortexM3\ARM_GCC_493\Debug\USBFS_pm.o .\CortexM3\ARM_GCC_493\Debug\USBFS_std.o .\CortexM3\ARM_GCC_493\Debug\USBFS_vnd.o .\CortexM3\ARM_GCC_493\Debug\USBFS_midi.o .\CortexM3\ARM_GCC_493\Debug\USBFS_msc.o .\CortexM3\ARM_GCC_493\Debug\DVDAC.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_PM.o .\CortexM3\ARM_GCC_493\Debug\DVDACOUT.o .\CortexM3\ARM_GCC_493\Debug\UART.o .\CortexM3\ARM_GCC_493\Debug\UART_PM.o .\CortexM3\ARM_GCC_493\Debug\UART_INT.o .\CortexM3\ARM_GCC_493\Debug\UART_BOOT.o .\CortexM3\ARM_GCC_493\Debug\STEERPOT.o .\CortexM3\ARM_GCC_493\Debug\BRAKEPOT.o .\CortexM3\ARM_GCC_493\Debug\RLY_REVERSE.o .\CortexM3\ARM_GCC_493\Debug\RLY_COAST.o .\CortexM3\ARM_GCC_493\Debug\ESTOP.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer_Cnt16.o .\CortexM3\ARM_GCC_493\Debug\QuadDecSteer_Cnt16_PM.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive_Cnt16.o .\CortexM3\ARM_GCC_493\Debug\QuadDecDrive_Cnt16_PM.o .\CortexM3\ARM_GCC_493\Debug\USBFS_ep2_dma.o .\CortexM3\ARM_GCC_493\Debug\USBFS_ep1_dma.o .\CortexM3\ARM_GCC_493\Debug\USBFS_Dm.o .\CortexM3\ARM_GCC_493\Debug\USBFS_Dp.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_DMA_dma.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_VDAC8_PM.o .\CortexM3\ARM_GCC_493\Debug\DVDAC_IntClock.o .\CortexM3\ARM_GCC_493\Debug\UART_IntClock.o .\CortexM3\ARM_GCC_493\Debug\CyBootAsmGnu.o .\CortexM3\ARM_GCC_493\Debug\CyDmac.o .\CortexM3\ARM_GCC_493\Debug\CyFlash.o .\CortexM3\ARM_GCC_493\Debug\CyLib.o .\CortexM3\ARM_GCC_493\Debug\cyPm.o .\CortexM3\ARM_GCC_493\Debug\CySpc.o .\CortexM3\ARM_GCC_493\Debug\cyutils.o .\CortexM3\ARM_GCC_493\Debug\PWR.o .\CortexM3\ARM_GCC_493\Debug\STEERADC.o .\CortexM3\ARM_GCC_493\Debug\STEERADC_INT.o .\CortexM3\ARM_GCC_493\Debug\STEERADC_PM.o .\CortexM3\ARM_GCC_493\Debug\RAMBUF1_dma.o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC.o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_INT.o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_PM.o .\CortexM3\ARM_GCC_493\Debug\RAMBUF2_dma.o .\CortexM3\ARM_GCC_493\Debug\STEERADC_IRQ.o .\CortexM3\ARM_GCC_493\Debug\STEERADC_theACLK.o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_IRQ.o .\CortexM3\ARM_GCC_493\Debug\BRAKEADC_theACLK.o
 arm-none-eabi-ar.exe: creating .\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.elf" .\CortexM3\ARM_GCC_493\Debug\main.o .\CortexM3\ARM_GCC_493\Debug\cymetadata.o .\CortexM3\ARM_GCC_493\Debug\Cm3Start.o ".\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.a" "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_493\Debug\CyComponentLibrary.a" -mcpu=cortex-m3 -mthumb -g -ffunction-sections -Og -ffat-lto-objects -L Generated_Source\PSoC5 "-Wl,-Map,.\CortexM3\ARM_GCC_493\Debug/Roadrunner Control System.map" -T Generated_Source\PSoC5\cm3gcc.ld -specs=nano.specs -Wl,--gc-sections -Wl,--end-group
 cyelftool.exe -C "C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.elf" --flash_row_size 256 --flash_size 262144
 cyelftool.exe -S "C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\CortexM3\ARM_GCC_493\Debug\Roadrunner Control System.elf"
-Flash used: 8448 of 262144 bytes (3.2 %).
-SRAM used: 2869 of 65536 bytes (4.4 %). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Rebuild Succeeded: 10/14/2016 12:17:44 ---------------
+Flash used: 8960 of 262144 bytes (3.4 %).
+SRAM used: 3685 of 65536 bytes (5.6 %). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Rebuild Succeeded: 10/14/2016 16:16:43 ---------------

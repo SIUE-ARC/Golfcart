@@ -1,5 +1,5 @@
 -- Project:   C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\Roadrunner Control System.cyprj
--- Generated: 10/14/2016 12:17:33
+-- Generated: 10/14/2016 16:16:31
 -- PSoC Creator  3.3 CP3
 
 ENTITY \Roadrunner Control System\ IS
@@ -44,23 +44,18 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL DVDACOUT(0)__PA : bit;
     SIGNAL ESTOP(0)__PA : bit;
     SIGNAL Net_157 : bit;
-    ATTRIBUTE placement_force OF Net_157 : SIGNAL IS "U(3,5,A)2";
+    ATTRIBUTE placement_force OF Net_157 : SIGNAL IS "U(3,2,B)0";
     SIGNAL Net_21 : bit;
     SIGNAL Net_22 : bit;
     SIGNAL Net_2585 : bit;
     SIGNAL Net_26 : bit;
-    SIGNAL Net_2618 : bit;
-    ATTRIBUTE placement_force OF Net_2618 : SIGNAL IS "U(2,3,B)2";
-    SIGNAL Net_2627 : bit;
     SIGNAL Net_2629 : bit;
     SIGNAL Net_2682 : bit;
+    SIGNAL Net_2694 : bit;
+    SIGNAL Net_2697 : bit;
     SIGNAL Net_27 : bit;
-    SIGNAL POTMUX_Decoder_old_id_0 : bit;
-    ATTRIBUTE placement_force OF POTMUX_Decoder_old_id_0 : SIGNAL IS "U(2,2,A)3";
-    SIGNAL POTMUX_Decoder_one_hot_0 : bit;
-    ATTRIBUTE placement_force OF POTMUX_Decoder_one_hot_0 : SIGNAL IS "U(3,4,A)0";
-    SIGNAL POTMUX_Decoder_one_hot_1 : bit;
-    ATTRIBUTE placement_force OF POTMUX_Decoder_one_hot_1 : SIGNAL IS "U(3,4,A)2";
+    SIGNAL Net_2701 : bit;
+    SIGNAL Net_2706 : bit;
     SIGNAL PWR(0)__PA : bit;
     SIGNAL RLY_COAST(0)__PA : bit;
     SIGNAL RLY_REVERSE(0)__PA : bit;
@@ -69,26 +64,26 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL SENCB(0)__PA : bit;
     SIGNAL STEERPOT(0)__PA : bit;
     SIGNAL Tx(0)__PA : bit;
+    SIGNAL \BRAKEADC:Net_207_0\ : bit;
+    SIGNAL \BRAKEADC:Net_207_10\ : bit;
+    SIGNAL \BRAKEADC:Net_207_11\ : bit;
+    SIGNAL \BRAKEADC:Net_207_1\ : bit;
+    SIGNAL \BRAKEADC:Net_207_2\ : bit;
+    SIGNAL \BRAKEADC:Net_207_3\ : bit;
+    SIGNAL \BRAKEADC:Net_207_4\ : bit;
+    SIGNAL \BRAKEADC:Net_207_5\ : bit;
+    SIGNAL \BRAKEADC:Net_207_6\ : bit;
+    SIGNAL \BRAKEADC:Net_207_7\ : bit;
+    SIGNAL \BRAKEADC:Net_207_8\ : bit;
+    SIGNAL \BRAKEADC:Net_207_9\ : bit;
+    SIGNAL \BRAKEADC:Net_252\ : bit;
+    SIGNAL \BRAKEADC:Net_376\ : bit;
+    ATTRIBUTE global_signal OF \BRAKEADC:Net_376\ : SIGNAL IS true;
+    SIGNAL \BRAKEADC:Net_376_local\ : bit;
     SIGNAL \DVDAC:Net_12\ : bit;
     ATTRIBUTE global_signal OF \DVDAC:Net_12\ : SIGNAL IS true;
     SIGNAL \DVDAC:Net_12_local\ : bit;
     SIGNAL \DVDAC:Net_19\ : bit;
-    SIGNAL \POTADC:Net_207_0\ : bit;
-    SIGNAL \POTADC:Net_207_10\ : bit;
-    SIGNAL \POTADC:Net_207_11\ : bit;
-    SIGNAL \POTADC:Net_207_1\ : bit;
-    SIGNAL \POTADC:Net_207_2\ : bit;
-    SIGNAL \POTADC:Net_207_3\ : bit;
-    SIGNAL \POTADC:Net_207_4\ : bit;
-    SIGNAL \POTADC:Net_207_5\ : bit;
-    SIGNAL \POTADC:Net_207_6\ : bit;
-    SIGNAL \POTADC:Net_207_7\ : bit;
-    SIGNAL \POTADC:Net_207_8\ : bit;
-    SIGNAL \POTADC:Net_207_9\ : bit;
-    SIGNAL \POTADC:Net_252\ : bit;
-    SIGNAL \POTADC:Net_376\ : bit;
-    ATTRIBUTE global_signal OF \POTADC:Net_376\ : SIGNAL IS true;
-    SIGNAL \POTADC:Net_376_local\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:cmp_out_i\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:control_0\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:control_1\ : bit;
@@ -99,65 +94,65 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:control_6\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:control_7\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:count_enable\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:count_enable\ : SIGNAL IS "U(3,1,A)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:count_enable\ : SIGNAL IS "U(3,5,B)2";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:count_stored_i\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:count_stored_i\ : SIGNAL IS "U(3,1,A)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:count_stored_i\ : SIGNAL IS "U(3,5,B)3";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:overflow\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:overflow_reg_i\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:overflow_reg_i\ : SIGNAL IS "U(2,1,B)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:overflow_reg_i\ : SIGNAL IS "U(2,4,A)0";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:prevCompare\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:prevCompare\ : SIGNAL IS "U(2,1,A)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:prevCompare\ : SIGNAL IS "U(2,3,A)1";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:reload\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:reload\ : SIGNAL IS "U(2,1,B)3";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:reload\ : SIGNAL IS "U(3,5,B)0";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:status_0\ : SIGNAL IS "U(2,0,B)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:status_0\ : SIGNAL IS "U(2,5,A)3";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:status_1\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:status_2\ : SIGNAL IS "U(2,2,A)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:status_2\ : SIGNAL IS "U(2,4,A)2";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:status_3\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:status_3\ : SIGNAL IS "U(2,0,A)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:status_3\ : SIGNAL IS "U(2,4,A)1";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:status_5\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:status_6\ : bit;
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:underflow_reg_i\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:underflow_reg_i\ : SIGNAL IS "U(3,0,B)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Cnt16:CounterUDB:underflow_reg_i\ : SIGNAL IS "U(3,4,B)3";
     SIGNAL \QuadDecDrive:Net_1203\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1203\ : SIGNAL IS "U(3,1,B)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1203\ : SIGNAL IS "U(3,4,B)0";
     SIGNAL \QuadDecDrive:Net_1203_split\ : bit;
     ATTRIBUTE placement_force OF \QuadDecDrive:Net_1203_split\ : SIGNAL IS "U(3,2,A)0";
     SIGNAL \QuadDecDrive:Net_1251\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1251\ : SIGNAL IS "U(2,2,B)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1251\ : SIGNAL IS "U(3,4,B)1";
     SIGNAL \QuadDecDrive:Net_1251_split\ : bit;
     ATTRIBUTE placement_force OF \QuadDecDrive:Net_1251_split\ : SIGNAL IS "U(3,3,A)0";
     SIGNAL \QuadDecDrive:Net_1260\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1260\ : SIGNAL IS "U(3,1,B)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1260\ : SIGNAL IS "U(3,5,B)1";
     SIGNAL \QuadDecDrive:Net_1275\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1275\ : SIGNAL IS "U(2,0,B)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Net_1275\ : SIGNAL IS "U(2,4,A)3";
     SIGNAL \QuadDecDrive:Net_530\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Net_530\ : SIGNAL IS "U(3,0,A)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Net_530\ : SIGNAL IS "U(2,2,B)3";
     SIGNAL \QuadDecDrive:Net_611\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:Net_611\ : SIGNAL IS "U(3,0,A)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:Net_611\ : SIGNAL IS "U(2,3,A)0";
     SIGNAL \QuadDecDrive:bQuadDec:error\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:error\ : SIGNAL IS "U(2,0,A)3";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:error\ : SIGNAL IS "U(3,1,A)1";
     SIGNAL \QuadDecDrive:bQuadDec:quad_A_delayed_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_delayed_0\ : SIGNAL IS "U(3,0,A)3";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_delayed_0\ : SIGNAL IS "U(3,1,A)0";
     SIGNAL \QuadDecDrive:bQuadDec:quad_A_delayed_1\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_delayed_1\ : SIGNAL IS "U(2,0,B)3";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_delayed_1\ : SIGNAL IS "U(3,0,A)3";
     SIGNAL \QuadDecDrive:bQuadDec:quad_A_delayed_2\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_delayed_2\ : SIGNAL IS "U(2,0,B)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_delayed_2\ : SIGNAL IS "U(3,0,A)2";
     SIGNAL \QuadDecDrive:bQuadDec:quad_A_filt\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_filt\ : SIGNAL IS "U(2,0,A)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_A_filt\ : SIGNAL IS "U(3,0,A)1";
     SIGNAL \QuadDecDrive:bQuadDec:quad_B_delayed_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_delayed_0\ : SIGNAL IS "U(3,0,B)2";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_delayed_0\ : SIGNAL IS "U(2,5,A)0";
     SIGNAL \QuadDecDrive:bQuadDec:quad_B_delayed_1\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_delayed_1\ : SIGNAL IS "U(2,1,A)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_delayed_1\ : SIGNAL IS "U(2,5,B)3";
     SIGNAL \QuadDecDrive:bQuadDec:quad_B_delayed_2\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_delayed_2\ : SIGNAL IS "U(2,1,A)0";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_delayed_2\ : SIGNAL IS "U(2,5,B)2";
     SIGNAL \QuadDecDrive:bQuadDec:quad_B_filt\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_filt\ : SIGNAL IS "U(2,2,B)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:quad_B_filt\ : SIGNAL IS "U(2,5,B)1";
     SIGNAL \QuadDecDrive:bQuadDec:state_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:state_0\ : SIGNAL IS "U(3,1,B)1";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:state_0\ : SIGNAL IS "U(3,0,B)0";
     SIGNAL \QuadDecDrive:bQuadDec:state_1\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:state_1\ : SIGNAL IS "U(3,0,B)3";
+    ATTRIBUTE placement_force OF \QuadDecDrive:bQuadDec:state_1\ : SIGNAL IS "U(3,0,A)0";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:cmp_out_i\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:control_0\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:control_1\ : bit;
@@ -168,87 +163,103 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:control_6\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:control_7\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:count_enable\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:count_enable\ : SIGNAL IS "U(2,4,B)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:count_enable\ : SIGNAL IS "U(2,2,A)2";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:count_stored_i\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:count_stored_i\ : SIGNAL IS "U(2,4,B)1";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:count_stored_i\ : SIGNAL IS "U(2,2,A)3";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:overflow\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : SIGNAL IS "U(2,4,A)2";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : SIGNAL IS "U(3,3,B)1";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:prevCompare\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:prevCompare\ : SIGNAL IS "U(2,4,B)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:prevCompare\ : SIGNAL IS "U(2,2,B)0";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:reload\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : SIGNAL IS "U(2,4,A)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : SIGNAL IS "U(2,2,A)0";
     SIGNAL \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u0.ce0__sig\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:status_0\ : SIGNAL IS "U(2,4,B)2";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:status_0\ : SIGNAL IS "U(2,1,A)2";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:status_1\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:status_2\ : SIGNAL IS "U(2,4,A)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:status_2\ : SIGNAL IS "U(3,3,B)2";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:status_3\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:status_3\ : SIGNAL IS "U(2,5,B)2";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:status_3\ : SIGNAL IS "U(2,3,B)1";
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:status_5\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:status_6\ : bit;
     SIGNAL \QuadDecSteer:Cnt16:CounterUDB:underflow_reg_i\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:underflow_reg_i\ : SIGNAL IS "U(2,3,A)2";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Cnt16:CounterUDB:underflow_reg_i\ : SIGNAL IS "U(2,3,B)0";
     SIGNAL \QuadDecSteer:Net_1203\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1203\ : SIGNAL IS "U(3,4,B)2";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1203\ : SIGNAL IS "U(3,2,B)3";
     SIGNAL \QuadDecSteer:Net_1203_split\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1203_split\ : SIGNAL IS "U(3,3,B)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1203_split\ : SIGNAL IS "U(3,1,B)0";
     SIGNAL \QuadDecSteer:Net_1251\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1251\ : SIGNAL IS "U(2,2,A)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1251\ : SIGNAL IS "U(2,3,B)2";
     SIGNAL \QuadDecSteer:Net_1251_split\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1251_split\ : SIGNAL IS "U(2,3,B)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1251_split\ : SIGNAL IS "U(2,4,B)0";
     SIGNAL \QuadDecSteer:Net_1260\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1260\ : SIGNAL IS "U(3,4,B)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1260\ : SIGNAL IS "U(2,1,B)1";
     SIGNAL \QuadDecSteer:Net_1275\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1275\ : SIGNAL IS "U(2,4,A)1";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_1275\ : SIGNAL IS "U(2,2,A)1";
     SIGNAL \QuadDecSteer:Net_530\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_530\ : SIGNAL IS "U(2,5,B)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_530\ : SIGNAL IS "U(2,2,B)1";
     SIGNAL \QuadDecSteer:Net_611\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:Net_611\ : SIGNAL IS "U(2,5,B)1";
+    ATTRIBUTE placement_force OF \QuadDecSteer:Net_611\ : SIGNAL IS "U(2,1,B)0";
     SIGNAL \QuadDecSteer:bQuadDec:error\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:error\ : SIGNAL IS "U(2,5,B)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:error\ : SIGNAL IS "U(3,4,A)2";
     SIGNAL \QuadDecSteer:bQuadDec:quad_A_delayed_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_delayed_0\ : SIGNAL IS "U(2,2,B)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_delayed_0\ : SIGNAL IS "U(3,3,B)0";
     SIGNAL \QuadDecSteer:bQuadDec:quad_A_delayed_1\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_delayed_1\ : SIGNAL IS "U(2,3,A)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_delayed_1\ : SIGNAL IS "U(3,4,A)0";
     SIGNAL \QuadDecSteer:bQuadDec:quad_A_delayed_2\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_delayed_2\ : SIGNAL IS "U(2,5,A)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_delayed_2\ : SIGNAL IS "U(3,4,B)2";
     SIGNAL \QuadDecSteer:bQuadDec:quad_A_filt\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_filt\ : SIGNAL IS "U(2,3,A)1";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_A_filt\ : SIGNAL IS "U(3,4,A)1";
     SIGNAL \QuadDecSteer:bQuadDec:quad_B_delayed_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_delayed_0\ : SIGNAL IS "U(2,5,A)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_delayed_0\ : SIGNAL IS "U(3,5,A)3";
     SIGNAL \QuadDecSteer:bQuadDec:quad_B_delayed_1\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_delayed_1\ : SIGNAL IS "U(2,5,A)2";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_delayed_1\ : SIGNAL IS "U(3,5,A)2";
     SIGNAL \QuadDecSteer:bQuadDec:quad_B_delayed_2\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_delayed_2\ : SIGNAL IS "U(2,5,A)1";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_delayed_2\ : SIGNAL IS "U(3,5,A)1";
     SIGNAL \QuadDecSteer:bQuadDec:quad_B_filt\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_filt\ : SIGNAL IS "U(2,3,A)0";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:quad_B_filt\ : SIGNAL IS "U(3,5,A)0";
     SIGNAL \QuadDecSteer:bQuadDec:state_0\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:state_0\ : SIGNAL IS "U(3,4,B)1";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:state_0\ : SIGNAL IS "U(3,0,B)1";
     SIGNAL \QuadDecSteer:bQuadDec:state_1\ : bit;
-    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:state_1\ : SIGNAL IS "U(3,1,A)3";
+    ATTRIBUTE placement_force OF \QuadDecSteer:bQuadDec:state_1\ : SIGNAL IS "U(2,3,A)2";
+    SIGNAL \STEERADC:Net_207_0\ : bit;
+    SIGNAL \STEERADC:Net_207_10\ : bit;
+    SIGNAL \STEERADC:Net_207_11\ : bit;
+    SIGNAL \STEERADC:Net_207_1\ : bit;
+    SIGNAL \STEERADC:Net_207_2\ : bit;
+    SIGNAL \STEERADC:Net_207_3\ : bit;
+    SIGNAL \STEERADC:Net_207_4\ : bit;
+    SIGNAL \STEERADC:Net_207_5\ : bit;
+    SIGNAL \STEERADC:Net_207_6\ : bit;
+    SIGNAL \STEERADC:Net_207_7\ : bit;
+    SIGNAL \STEERADC:Net_207_8\ : bit;
+    SIGNAL \STEERADC:Net_207_9\ : bit;
+    SIGNAL \STEERADC:Net_252\ : bit;
+    SIGNAL \STEERADC:Net_376\ : bit;
+    ATTRIBUTE global_signal OF \STEERADC:Net_376\ : SIGNAL IS true;
+    SIGNAL \STEERADC:Net_376_local\ : bit;
     SIGNAL \UART:BUART:counter_load_not\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:counter_load_not\ : SIGNAL IS "U(3,2,B)2";
+    ATTRIBUTE placement_force OF \UART:BUART:counter_load_not\ : SIGNAL IS "U(2,1,A)1";
     SIGNAL \UART:BUART:tx_bitclk\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:tx_bitclk\ : SIGNAL IS "U(3,2,B)1";
+    ATTRIBUTE placement_force OF \UART:BUART:tx_bitclk\ : SIGNAL IS "U(2,0,A)1";
     SIGNAL \UART:BUART:tx_bitclk_enable_pre\ : bit;
     SIGNAL \UART:BUART:tx_counter_dp\ : bit;
     SIGNAL \UART:BUART:tx_fifo_empty\ : bit;
     SIGNAL \UART:BUART:tx_fifo_notfull\ : bit;
     SIGNAL \UART:BUART:tx_shift_out\ : bit;
     SIGNAL \UART:BUART:tx_state_0\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:tx_state_0\ : SIGNAL IS "U(3,5,A)0";
+    ATTRIBUTE placement_force OF \UART:BUART:tx_state_0\ : SIGNAL IS "U(2,0,A)0";
     SIGNAL \UART:BUART:tx_state_1\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:tx_state_1\ : SIGNAL IS "U(3,5,B)1";
+    ATTRIBUTE placement_force OF \UART:BUART:tx_state_1\ : SIGNAL IS "U(2,0,B)1";
     SIGNAL \UART:BUART:tx_state_2\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:tx_state_2\ : SIGNAL IS "U(3,2,B)0";
+    ATTRIBUTE placement_force OF \UART:BUART:tx_state_2\ : SIGNAL IS "U(2,1,A)0";
     SIGNAL \UART:BUART:tx_status_0\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:tx_status_0\ : SIGNAL IS "U(3,5,A)1";
+    ATTRIBUTE placement_force OF \UART:BUART:tx_status_0\ : SIGNAL IS "U(2,0,A)2";
     SIGNAL \UART:BUART:tx_status_2\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:tx_status_2\ : SIGNAL IS "U(3,5,A)3";
+    ATTRIBUTE placement_force OF \UART:BUART:tx_status_2\ : SIGNAL IS "U(2,1,A)3";
     SIGNAL \UART:BUART:txn\ : bit;
-    ATTRIBUTE placement_force OF \UART:BUART:txn\ : SIGNAL IS "U(3,5,B)0";
+    ATTRIBUTE placement_force OF \UART:BUART:txn\ : SIGNAL IS "U(2,0,B)0";
     SIGNAL \UART:Net_9\ : bit;
     ATTRIBUTE udbclken_assigned OF \UART:Net_9\ : SIGNAL IS "True";
     ATTRIBUTE global_signal OF \UART:Net_9\ : SIGNAL IS true;
@@ -316,13 +327,13 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE Location OF \QuadDecDrive:Net_1251_split\ : LABEL IS "U(3,3)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF SENCA(0) : LABEL IS "iocell1";
-    ATTRIBUTE Location OF SENCA(0) : LABEL IS "P12[1]";
+    ATTRIBUTE Location OF SENCA(0) : LABEL IS "P0[7]";
     ATTRIBUTE lib_model OF SENCB(0) : LABEL IS "iocell2";
-    ATTRIBUTE Location OF SENCB(0) : LABEL IS "P0[6]";
+    ATTRIBUTE Location OF SENCB(0) : LABEL IS "P0[5]";
     ATTRIBUTE lib_model OF DENCA(0) : LABEL IS "iocell3";
-    ATTRIBUTE Location OF DENCA(0) : LABEL IS "P3[4]";
+    ATTRIBUTE Location OF DENCA(0) : LABEL IS "P0[6]";
     ATTRIBUTE lib_model OF DENCB(0) : LABEL IS "iocell4";
-    ATTRIBUTE Location OF DENCB(0) : LABEL IS "P3[3]";
+    ATTRIBUTE Location OF DENCB(0) : LABEL IS "P0[2]";
     ATTRIBUTE lib_model OF \USBFS:Dm(0)\ : LABEL IS "iocell5";
     ATTRIBUTE Location OF \USBFS:Dm(0)\ : LABEL IS "P15[7]";
     ATTRIBUTE Location OF \USBFS:Dp\ : LABEL IS "F(PICU,8)";
@@ -331,101 +342,101 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE lib_model OF DVDACOUT(0) : LABEL IS "iocell7";
     ATTRIBUTE Location OF DVDACOUT(0) : LABEL IS "P0[1]";
     ATTRIBUTE lib_model OF Rx(0) : LABEL IS "iocell8";
-    ATTRIBUTE Location OF Rx(0) : LABEL IS "P12[2]";
+    ATTRIBUTE Location OF Rx(0) : LABEL IS "P15[0]";
     ATTRIBUTE lib_model OF Tx(0) : LABEL IS "iocell9";
-    ATTRIBUTE Location OF Tx(0) : LABEL IS "P15[3]";
+    ATTRIBUTE Location OF Tx(0) : LABEL IS "P12[2]";
     ATTRIBUTE lib_model OF STEERPOT(0) : LABEL IS "iocell10";
-    ATTRIBUTE Location OF STEERPOT(0) : LABEL IS "P0[3]";
+    ATTRIBUTE Location OF STEERPOT(0) : LABEL IS "P3[5]";
     ATTRIBUTE lib_model OF BRAKEPOT(0) : LABEL IS "iocell11";
-    ATTRIBUTE Location OF BRAKEPOT(0) : LABEL IS "P0[7]";
+    ATTRIBUTE Location OF BRAKEPOT(0) : LABEL IS "P0[4]";
     ATTRIBUTE lib_model OF RLY_REVERSE(0) : LABEL IS "iocell12";
-    ATTRIBUTE Location OF RLY_REVERSE(0) : LABEL IS "P12[5]";
+    ATTRIBUTE Location OF RLY_REVERSE(0) : LABEL IS "P12[4]";
     ATTRIBUTE lib_model OF RLY_COAST(0) : LABEL IS "iocell13";
-    ATTRIBUTE Location OF RLY_COAST(0) : LABEL IS "P12[6]";
+    ATTRIBUTE Location OF RLY_COAST(0) : LABEL IS "P12[5]";
     ATTRIBUTE lib_model OF ESTOP(0) : LABEL IS "iocell14";
-    ATTRIBUTE Location OF ESTOP(0) : LABEL IS "P12[4]";
+    ATTRIBUTE Location OF ESTOP(0) : LABEL IS "P12[3]";
     ATTRIBUTE lib_model OF PWR(0) : LABEL IS "iocell15";
     ATTRIBUTE Location OF PWR(0) : LABEL IS "P2[1]";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:reload\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:status_0\ : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:status_0\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:status_0\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:status_2\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:status_2\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:status_2\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:status_3\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:status_3\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:status_3\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:count_enable\ : LABEL IS "macrocell6";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:count_enable\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:count_enable\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_530\ : LABEL IS "macrocell7";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_530\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_530\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_611\ : LABEL IS "macrocell8";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_611\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_611\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:reload\ : LABEL IS "macrocell9";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:reload\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:reload\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:status_0\ : LABEL IS "macrocell10";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:status_0\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:status_0\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:status_2\ : LABEL IS "macrocell11";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:status_2\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:status_2\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:status_3\ : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:status_3\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:status_3\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:count_enable\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:count_enable\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:count_enable\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_530\ : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF \QuadDecDrive:Net_530\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Net_530\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_611\ : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF \QuadDecDrive:Net_611\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Net_611\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF Net_157 : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF Net_157 : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF Net_157 : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \UART:BUART:counter_load_not\ : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF \UART:BUART:counter_load_not\ : LABEL IS "U(3,2)";
+    ATTRIBUTE Location OF \UART:BUART:counter_load_not\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART:BUART:tx_status_0\ : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF \UART:BUART:tx_status_0\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \UART:BUART:tx_status_0\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \UART:BUART:tx_status_2\ : LABEL IS "macrocell19";
-    ATTRIBUTE Location OF \UART:BUART:tx_status_2\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \UART:BUART:tx_status_2\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_A_delayed_0\ : LABEL IS "macrocell20";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_delayed_0\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_delayed_0\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_A_delayed_1\ : LABEL IS "macrocell21";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_delayed_1\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_delayed_1\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_A_delayed_2\ : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_delayed_2\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_delayed_2\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_B_delayed_0\ : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_delayed_0\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_delayed_0\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_B_delayed_1\ : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_delayed_1\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_delayed_1\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_B_delayed_2\ : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_delayed_2\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_delayed_2\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:Stsreg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:Stsreg\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:Stsreg\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sCTRLReg:ctrlreg\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "statusicell3";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sSTSReg:stsreg\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u0\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:sC16:counterdp:u1\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_A_delayed_0\ : LABEL IS "macrocell26";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_delayed_0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_delayed_0\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_A_delayed_1\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_delayed_1\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_delayed_1\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_A_delayed_2\ : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_delayed_2\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_delayed_2\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_B_delayed_0\ : LABEL IS "macrocell29";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_delayed_0\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_delayed_0\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_B_delayed_1\ : LABEL IS "macrocell30";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_delayed_1\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_delayed_1\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_B_delayed_2\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_delayed_2\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_delayed_2\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:Stsreg\ : LABEL IS "statusicell4";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:Stsreg\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:Stsreg\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \USBFS:ep2\ : LABEL IS "drqcell1";
     ATTRIBUTE Location OF \USBFS:ep2\ : LABEL IS "[DrqContainer=(0)][DrqId=(1)]";
     ATTRIBUTE lib_model OF \USBFS:ep1\ : LABEL IS "drqcell2";
@@ -433,100 +444,96 @@ ARCHITECTURE __DEFAULT__ OF \Roadrunner Control System\ IS
     ATTRIBUTE Location OF \USBFS:dp_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(12)]";
     ATTRIBUTE Location OF \USBFS:USB\ : LABEL IS "F(USB,0)";
     ATTRIBUTE Location OF \USBFS:ord_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(25)]";
-    ATTRIBUTE Location OF \USBFS:ep_2\ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
-    ATTRIBUTE Location OF \USBFS:ep_1\ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
+    ATTRIBUTE Location OF \USBFS:ep_2\ : LABEL IS "[IntrContainer=(0)][IntrId=(3)]";
+    ATTRIBUTE Location OF \USBFS:ep_1\ : LABEL IS "[IntrContainer=(0)][IntrId=(2)]";
     ATTRIBUTE Location OF \USBFS:ep_0\ : LABEL IS "[IntrContainer=(0)][IntrId=(24)]";
     ATTRIBUTE Location OF \USBFS:bus_reset\ : LABEL IS "[IntrContainer=(0)][IntrId=(23)]";
     ATTRIBUTE Location OF \USBFS:arb_int\ : LABEL IS "[IntrContainer=(0)][IntrId=(22)]";
     ATTRIBUTE lib_model OF \DVDAC:DMA\ : LABEL IS "drqcell3";
-    ATTRIBUTE Location OF \DVDAC:DMA\ : LABEL IS "[DrqContainer=(0)][DrqId=(3)]";
+    ATTRIBUTE Location OF \DVDAC:DMA\ : LABEL IS "[DrqContainer=(0)][DrqId=(4)]";
     ATTRIBUTE Location OF \DVDAC:VDAC8:viDAC8\ : LABEL IS "F(VIDAC,2)";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxShifter:u0\ : LABEL IS "datapathcell5";
-    ATTRIBUTE Location OF \UART:BUART:sTX:TxShifter:u0\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \UART:BUART:sTX:TxShifter:u0\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "datapathcell6";
-    ATTRIBUTE Location OF \UART:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "U(3,2)";
+    ATTRIBUTE Location OF \UART:BUART:sTX:sCLOCK:TxBitClkGen\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \UART:BUART:sTX:TxSts\ : LABEL IS "statusicell5";
-    ATTRIBUTE Location OF \UART:BUART:sTX:TxSts\ : LABEL IS "U(3,3)";
-    ATTRIBUTE Location OF \POTADC:IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
-    ATTRIBUTE Location OF \POTADC:ADC_SAR\ : LABEL IS "F(SAR,0)";
-    ATTRIBUTE lib_model OF RAMBUF : LABEL IS "drqcell4";
-    ATTRIBUTE Location OF RAMBUF : LABEL IS "[DrqContainer=(0)][DrqId=(2)]";
+    ATTRIBUTE Location OF \UART:BUART:sTX:TxSts\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \STEERADC:IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(1)]";
+    ATTRIBUTE Location OF \STEERADC:ADC_SAR\ : LABEL IS "F(SAR,1)";
+    ATTRIBUTE lib_model OF RAMBUF1 : LABEL IS "drqcell4";
+    ATTRIBUTE Location OF RAMBUF1 : LABEL IS "[DrqContainer=(0)][DrqId=(2)]";
+    ATTRIBUTE Location OF \BRAKEADC:IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(0)]";
+    ATTRIBUTE Location OF \BRAKEADC:ADC_SAR\ : LABEL IS "F(SAR,0)";
+    ATTRIBUTE lib_model OF RAMBUF2 : LABEL IS "drqcell5";
+    ATTRIBUTE Location OF RAMBUF2 : LABEL IS "[DrqContainer=(0)][DrqId=(3)]";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1251\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_1251\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_1251\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "U(3,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell34";
     ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1275\ : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_1275\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_1275\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:prevCompare\ : LABEL IS "macrocell36";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:prevCompare\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:prevCompare\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1251_split\ : LABEL IS "macrocell37";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_1251_split\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_1251_split\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "macrocell38";
-    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "U(2,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1203\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_1203\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_1203\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_A_filt\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_filt\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_A_filt\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:quad_B_filt\ : LABEL IS "macrocell41";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_filt\ : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:quad_B_filt\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1260\ : LABEL IS "macrocell42";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_1260\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_1260\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:error\ : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:error\ : LABEL IS "U(2,5)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:error\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:state_1\ : LABEL IS "macrocell44";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:state_1\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:state_1\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:bQuadDec:state_0\ : LABEL IS "macrocell45";
-    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:state_0\ : LABEL IS "U(3,4)";
+    ATTRIBUTE Location OF \QuadDecSteer:bQuadDec:state_0\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_1251\ : LABEL IS "macrocell46";
-    ATTRIBUTE Location OF \QuadDecDrive:Net_1251\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \QuadDecDrive:Net_1251\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "macrocell47";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:overflow_reg_i\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "macrocell48";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "U(3,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:underflow_reg_i\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_1275\ : LABEL IS "macrocell49";
-    ATTRIBUTE Location OF \QuadDecDrive:Net_1275\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:Net_1275\ : LABEL IS "U(2,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:prevCompare\ : LABEL IS "macrocell50";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:prevCompare\ : LABEL IS "U(2,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:prevCompare\ : LABEL IS "U(2,3)";
     ATTRIBUTE lib_model OF \QuadDecSteer:Net_1203_split\ : LABEL IS "macrocell51";
-    ATTRIBUTE Location OF \QuadDecSteer:Net_1203_split\ : LABEL IS "U(3,3)";
+    ATTRIBUTE Location OF \QuadDecSteer:Net_1203_split\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "macrocell52";
-    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Cnt16:CounterUDB:count_stored_i\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_1203\ : LABEL IS "macrocell53";
-    ATTRIBUTE Location OF \QuadDecDrive:Net_1203\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Net_1203\ : LABEL IS "U(3,4)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_A_filt\ : LABEL IS "macrocell54";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_filt\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_A_filt\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:quad_B_filt\ : LABEL IS "macrocell55";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_filt\ : LABEL IS "U(2,2)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:quad_B_filt\ : LABEL IS "U(2,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_1260\ : LABEL IS "macrocell56";
-    ATTRIBUTE Location OF \QuadDecDrive:Net_1260\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:Net_1260\ : LABEL IS "U(3,5)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:error\ : LABEL IS "macrocell57";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:error\ : LABEL IS "U(2,0)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:error\ : LABEL IS "U(3,1)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:state_1\ : LABEL IS "macrocell58";
     ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:state_1\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:bQuadDec:state_0\ : LABEL IS "macrocell59";
-    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:state_0\ : LABEL IS "U(3,1)";
+    ATTRIBUTE Location OF \QuadDecDrive:bQuadDec:state_0\ : LABEL IS "U(3,0)";
     ATTRIBUTE lib_model OF \QuadDecDrive:Net_1203_split\ : LABEL IS "macrocell60";
     ATTRIBUTE Location OF \QuadDecDrive:Net_1203_split\ : LABEL IS "U(3,2)";
     ATTRIBUTE lib_model OF \UART:BUART:txn\ : LABEL IS "macrocell61";
-    ATTRIBUTE Location OF \UART:BUART:txn\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \UART:BUART:txn\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \UART:BUART:tx_state_1\ : LABEL IS "macrocell62";
-    ATTRIBUTE Location OF \UART:BUART:tx_state_1\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \UART:BUART:tx_state_1\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \UART:BUART:tx_state_0\ : LABEL IS "macrocell63";
-    ATTRIBUTE Location OF \UART:BUART:tx_state_0\ : LABEL IS "U(3,5)";
+    ATTRIBUTE Location OF \UART:BUART:tx_state_0\ : LABEL IS "U(2,0)";
     ATTRIBUTE lib_model OF \UART:BUART:tx_state_2\ : LABEL IS "macrocell64";
-    ATTRIBUTE Location OF \UART:BUART:tx_state_2\ : LABEL IS "U(3,2)";
+    ATTRIBUTE Location OF \UART:BUART:tx_state_2\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \UART:BUART:tx_bitclk\ : LABEL IS "macrocell65";
-    ATTRIBUTE Location OF \UART:BUART:tx_bitclk\ : LABEL IS "U(3,2)";
-    ATTRIBUTE lib_model OF POTMUX_Decoder_old_id_0 : LABEL IS "macrocell66";
-    ATTRIBUTE Location OF POTMUX_Decoder_old_id_0 : LABEL IS "U(2,2)";
-    ATTRIBUTE lib_model OF POTMUX_Decoder_one_hot_0 : LABEL IS "macrocell67";
-    ATTRIBUTE Location OF POTMUX_Decoder_one_hot_0 : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF POTMUX_Decoder_one_hot_1 : LABEL IS "macrocell68";
-    ATTRIBUTE Location OF POTMUX_Decoder_one_hot_1 : LABEL IS "U(3,4)";
-    ATTRIBUTE lib_model OF Net_2618 : LABEL IS "macrocell69";
-    ATTRIBUTE Location OF Net_2618 : LABEL IS "U(2,3)";
+    ATTRIBUTE Location OF \UART:BUART:tx_bitclk\ : LABEL IS "U(2,0)";
     COMPONENT clockblockcell
         PORT (
             dclk_0 : OUT std_ulogic;
@@ -919,12 +926,14 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => \POTADC:Net_376\,
-            dclk_0 => \POTADC:Net_376_local\,
-            dclk_glb_1 => \UART:Net_9\,
-            dclk_1 => \UART:Net_9_local\,
-            dclk_glb_2 => \DVDAC:Net_12\,
-            dclk_2 => \DVDAC:Net_12_local\);
+            dclk_glb_0 => \STEERADC:Net_376\,
+            dclk_0 => \STEERADC:Net_376_local\,
+            dclk_glb_1 => \BRAKEADC:Net_376\,
+            dclk_1 => \BRAKEADC:Net_376_local\,
+            dclk_glb_2 => \UART:Net_9\,
+            dclk_2 => \UART:Net_9_local\,
+            dclk_glb_3 => \DVDAC:Net_12\,
+            dclk_3 => \DVDAC:Net_12_local\);
 
     SENCA:logicalport
         GENERIC MAP(
@@ -1825,7 +1834,6 @@ BEGIN
             pa_out => STEERPOT(0)__PA,
             oe => open,
             in_clock => open,
-            pin_input => POTMUX_Decoder_one_hot_0,
             in_clock_en => '1',
             in_reset => '0',
             out_clock => open,
@@ -1915,7 +1923,6 @@ BEGIN
             pa_out => BRAKEPOT(0)__PA,
             oe => open,
             in_clock => open,
-            pin_input => POTMUX_Decoder_one_hot_1,
             in_clock_en => '1',
             in_reset => '0',
             out_clock => open,
@@ -3095,18 +3102,18 @@ BEGIN
             status_1 => \UART:BUART:tx_fifo_empty\,
             status_0 => \UART:BUART:tx_status_0\);
 
-    \POTADC:IRQ\:interrupt
+    \STEERADC:IRQ\:interrupt
         GENERIC MAP(
             int_type => "10")
         PORT MAP(
             interrupt => Net_2585,
             clock => ClockBlock_BUS_CLK);
 
-    \POTADC:ADC_SAR\:sarcell
+    \STEERADC:ADC_SAR\:sarcell
         GENERIC MAP(
             cy_registers => "")
         PORT MAP(
-            clk_udb => \POTADC:Net_376_local\,
+            clk_udb => \STEERADC:Net_376_local\,
             sof_udb => open,
             vp_ctl_udb_3 => open,
             vp_ctl_udb_2 => open,
@@ -3116,23 +3123,23 @@ BEGIN
             vn_ctl_udb_2 => open,
             vn_ctl_udb_1 => open,
             vn_ctl_udb_0 => open,
-            irq => \POTADC:Net_252\,
-            next => Net_2627,
-            data_out_udb_11 => \POTADC:Net_207_11\,
-            data_out_udb_10 => \POTADC:Net_207_10\,
-            data_out_udb_9 => \POTADC:Net_207_9\,
-            data_out_udb_8 => \POTADC:Net_207_8\,
-            data_out_udb_7 => \POTADC:Net_207_7\,
-            data_out_udb_6 => \POTADC:Net_207_6\,
-            data_out_udb_5 => \POTADC:Net_207_5\,
-            data_out_udb_4 => \POTADC:Net_207_4\,
-            data_out_udb_3 => \POTADC:Net_207_3\,
-            data_out_udb_2 => \POTADC:Net_207_2\,
-            data_out_udb_1 => \POTADC:Net_207_1\,
-            data_out_udb_0 => \POTADC:Net_207_0\,
+            irq => \STEERADC:Net_252\,
+            next => Net_2706,
+            data_out_udb_11 => \STEERADC:Net_207_11\,
+            data_out_udb_10 => \STEERADC:Net_207_10\,
+            data_out_udb_9 => \STEERADC:Net_207_9\,
+            data_out_udb_8 => \STEERADC:Net_207_8\,
+            data_out_udb_7 => \STEERADC:Net_207_7\,
+            data_out_udb_6 => \STEERADC:Net_207_6\,
+            data_out_udb_5 => \STEERADC:Net_207_5\,
+            data_out_udb_4 => \STEERADC:Net_207_4\,
+            data_out_udb_3 => \STEERADC:Net_207_3\,
+            data_out_udb_2 => \STEERADC:Net_207_2\,
+            data_out_udb_1 => \STEERADC:Net_207_1\,
+            data_out_udb_0 => \STEERADC:Net_207_0\,
             eof_udb => Net_2585);
 
-    RAMBUF:drqcell
+    RAMBUF1:drqcell
         GENERIC MAP(
             drq_type => "00",
             num_tds => 0)
@@ -3140,6 +3147,53 @@ BEGIN
             dmareq => Net_2585,
             termin => '0',
             termout => Net_2629,
+            clock => ClockBlock_BUS_CLK);
+
+    \BRAKEADC:IRQ\:interrupt
+        GENERIC MAP(
+            int_type => "10")
+        PORT MAP(
+            interrupt => Net_2694,
+            clock => ClockBlock_BUS_CLK);
+
+    \BRAKEADC:ADC_SAR\:sarcell
+        GENERIC MAP(
+            cy_registers => "")
+        PORT MAP(
+            clk_udb => \BRAKEADC:Net_376_local\,
+            sof_udb => open,
+            vp_ctl_udb_3 => open,
+            vp_ctl_udb_2 => open,
+            vp_ctl_udb_1 => open,
+            vp_ctl_udb_0 => open,
+            vn_ctl_udb_3 => open,
+            vn_ctl_udb_2 => open,
+            vn_ctl_udb_1 => open,
+            vn_ctl_udb_0 => open,
+            irq => \BRAKEADC:Net_252\,
+            next => Net_2697,
+            data_out_udb_11 => \BRAKEADC:Net_207_11\,
+            data_out_udb_10 => \BRAKEADC:Net_207_10\,
+            data_out_udb_9 => \BRAKEADC:Net_207_9\,
+            data_out_udb_8 => \BRAKEADC:Net_207_8\,
+            data_out_udb_7 => \BRAKEADC:Net_207_7\,
+            data_out_udb_6 => \BRAKEADC:Net_207_6\,
+            data_out_udb_5 => \BRAKEADC:Net_207_5\,
+            data_out_udb_4 => \BRAKEADC:Net_207_4\,
+            data_out_udb_3 => \BRAKEADC:Net_207_3\,
+            data_out_udb_2 => \BRAKEADC:Net_207_2\,
+            data_out_udb_1 => \BRAKEADC:Net_207_1\,
+            data_out_udb_0 => \BRAKEADC:Net_207_0\,
+            eof_udb => Net_2694);
+
+    RAMBUF2:drqcell
+        GENERIC MAP(
+            drq_type => "00",
+            num_tds => 0)
+        PORT MAP(
+            dmareq => Net_2694,
+            termin => '0',
+            termout => Net_2701,
             clock => ClockBlock_BUS_CLK);
 
     \QuadDecSteer:Net_1251\:macrocell
@@ -3591,47 +3645,5 @@ BEGIN
             main_1 => \UART:BUART:tx_state_0\,
             main_2 => \UART:BUART:tx_bitclk_enable_pre\,
             main_3 => \UART:BUART:tx_state_2\);
-
-    POTMUX_Decoder_old_id_0:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => POTMUX_Decoder_old_id_0,
-            clock_0 => ClockBlock_BUS_CLK,
-            main_0 => Net_2618);
-
-    POTMUX_Decoder_one_hot_0:macrocell
-        GENERIC MAP(
-            eqn_main => "(!main_0 * !main_1)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => POTMUX_Decoder_one_hot_0,
-            clock_0 => ClockBlock_BUS_CLK,
-            main_0 => POTMUX_Decoder_old_id_0,
-            main_1 => Net_2618);
-
-    POTMUX_Decoder_one_hot_1:macrocell
-        GENERIC MAP(
-            eqn_main => "(main_0 * main_1)",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => POTMUX_Decoder_one_hot_1,
-            clock_0 => ClockBlock_BUS_CLK,
-            main_0 => POTMUX_Decoder_old_id_0,
-            main_1 => Net_2618);
-
-    Net_2618:macrocell
-        GENERIC MAP(
-            eqn_main => "1'b0",
-            clk_inv => '0',
-            clken_mode => 1)
-        PORT MAP(
-            q => Net_2618,
-            clk_en => open,
-            clock_0 => Net_2585);
 
 END __DEFAULT__;

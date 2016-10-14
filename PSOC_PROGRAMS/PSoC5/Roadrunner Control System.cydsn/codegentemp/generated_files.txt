@@ -87,12 +87,18 @@
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\ESTOP_aliases.h" value="NONE;ESTOP" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\ESTOP.c" value="ARM_C_FILE;ESTOP" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\ESTOP.h" value="NONE;ESTOP" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC.c" value="ARM_C_FILE;POTADC" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC.h" value="NONE;POTADC" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_INT.c" value="ARM_C_FILE;POTADC" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_PM.c" value="ARM_C_FILE;POTADC" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF_dma.c" value="ARM_C_FILE;RAMBUF" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF_dma.h" value="NONE;RAMBUF" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC.c" value="ARM_C_FILE;STEERADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC.h" value="NONE;STEERADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC_INT.c" value="ARM_C_FILE;STEERADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC_PM.c" value="ARM_C_FILE;STEERADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF1_dma.c" value="ARM_C_FILE;RAMBUF1" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF1_dma.h" value="NONE;RAMBUF1" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC.c" value="ARM_C_FILE;BRAKEADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC.h" value="NONE;BRAKEADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC_INT.c" value="ARM_C_FILE;BRAKEADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC_PM.c" value="ARM_C_FILE;BRAKEADC" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF2_dma.c" value="ARM_C_FILE;RAMBUF2" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\RAMBUF2_dma.h" value="NONE;RAMBUF2" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\PWR_aliases.h" value="NONE;PWR" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\PWR.c" value="ARM_C_FILE;PWR" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\PWR.h" value="NONE;PWR" />
@@ -121,10 +127,14 @@
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\DVDAC_IntClock.h" value="NONE;DVDAC_IntClock" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\UART_IntClock.c" value="ARM_C_FILE;UART_IntClock" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\UART_IntClock.h" value="NONE;UART_IntClock" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_IRQ.c" value="ARM_C_FILE;POTADC_IRQ" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_IRQ.h" value="NONE;POTADC_IRQ" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_theACLK.c" value="ARM_C_FILE;POTADC_theACLK" />
-  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\POTADC_theACLK.h" value="NONE;POTADC_theACLK" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC_IRQ.c" value="ARM_C_FILE;STEERADC_IRQ" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC_IRQ.h" value="NONE;STEERADC_IRQ" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC_theACLK.c" value="ARM_C_FILE;STEERADC_theACLK" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\STEERADC_theACLK.h" value="NONE;STEERADC_theACLK" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC_IRQ.c" value="ARM_C_FILE;BRAKEADC_IRQ" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC_IRQ.h" value="NONE;BRAKEADC_IRQ" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC_theACLK.c" value="ARM_C_FILE;BRAKEADC_theACLK" />
+  <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\BRAKEADC_theACLK.h" value="NONE;BRAKEADC_theACLK" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\cycodeshareimport.ld" value="NONE;" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\cycodeshareexport.ld" value="NONE;" />
   <file name="C:\Users\LAIR\Documents\GitHub\Golfcart\PSOC_PROGRAMS\PSoC5\Roadrunner Control System.cydsn\codegentemp\cycodeshareimport.scat" value="NONE;" />

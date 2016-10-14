@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
   29:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *
   30:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** * Parameters:  
   31:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *  void
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 2
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 2
 
 
   32:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
   53:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** }
   54:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** 
   55:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 3
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 3
 
 
   56:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** /*******************************************************************************
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
   88              		.thumb
   89              		.thumb_func
   90              		.type	QuadDecDrive_Cnt16_Sleep, %function
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 4
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 4
 
 
   91              	QuadDecDrive_Cnt16_Sleep:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  115:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c ****         {
  116:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c ****             /* Counter is disabled */
  117:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c ****             QuadDecDrive_Cnt16_backup.CounterEnableState = 0u;
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 5
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 5
 
 
  112              		.loc 1 117 0
@@ -267,7 +267,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  124              	.L14:
  125              		.align	2
  126              	.L13:
- 127 0024 76650040 		.word	1073767798
+ 127 0024 71640040 		.word	1073767537
  128 0028 00000000 		.word	.LANCHOR0
  129              		.cfi_endproc
  130              	.LFE2:
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  144:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *
  145:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** * Global variables:
  146:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *  QuadDecDrive_Cnt16_backup.enableState:  Is used to restore the enable state of 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 6
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 6
 
 
  147:.\Generated_Source\PSoC5/QuadDecDrive_Cnt16_PM.c **** *  block on wakeup from sleep mode.
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  182 0004 0400     		.2byte	0x4
  183 0006 00000000 		.4byte	.Ldebug_abbrev0
  184 000a 04       		.byte	0x4
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 7
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 7
 
 
  185 000b 01       		.uleb128 0x1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  239 0078 45010000 		.4byte	.LASF10
  240 007c 02       		.byte	0x2
  241 007d 9301     		.2byte	0x193
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 8
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 8
 
 
  242 007f 3A000000 		.4byte	0x3a
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  296 00e9 B1020000 		.4byte	.LASF20
  297 00ed 01       		.byte	0x1
  298 00ee 2A       		.byte	0x2a
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 9
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 9
 
 
  299 00ef 00000000 		.4byte	.LFB0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  353 0176 06000000 		.4byte	.LVL6
  354 017a 10010000 		.4byte	0x110
  355 017e 0A       		.uleb128 0xa
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 10
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 10
 
 
  356 017f 12000000 		.4byte	.LVL7
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  410 0006 0B       		.uleb128 0xb
  411 0007 03       		.uleb128 0x3
  412 0008 0E       		.uleb128 0xe
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 11
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 11
 
 
  413 0009 1B       		.uleb128 0x1b
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  467 003f 01       		.byte	0x1
  468 0040 0B       		.uleb128 0xb
  469 0041 0B       		.uleb128 0xb
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 12
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 12
 
 
  470 0042 3A       		.uleb128 0x3a
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  524 0078 18       		.uleb128 0x18
  525 0079 9742     		.uleb128 0x2117
  526 007b 19       		.uleb128 0x19
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 13
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 13
 
 
  527 007c 01       		.uleb128 0x1
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  581 00b4 3A       		.uleb128 0x3a
  582 00b5 0B       		.uleb128 0xb
  583 00b6 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 14
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 14
 
 
  584 00b7 0B       		.uleb128 0xb
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  638 0000 00000000 		.4byte	.LFB0
  639 0004 18000000 		.4byte	.LFE0
  640 0008 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 15
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 15
 
 
  641 000c 18000000 		.4byte	.LFE1
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  665 00c4 2E5C4765 		.ascii	".\\Generated_Source\\PSoC5\\QuadDecDrive_Cnt16_PM.c"
  665      6E657261 
  665      7465645F 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 16
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 16
 
 
  665      536F7572 
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  688      20696E74 
  688      00
  689              	.LASF26:
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 17
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 17
 
 
  690 01e7 51756164 		.ascii	"QuadDecDrive_Cnt16_WriteCounter\000"
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 1
  710      72697665 
  710      5F436E74 
  710      31365F53 
-ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccTmtJav.s 			page 18
+ARM GAS  C:\Users\LAIR\AppData\Local\Temp\ccSft6Vg.s 			page 18
 
 
  711              	.LASF27:
