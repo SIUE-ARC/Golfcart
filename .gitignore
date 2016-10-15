@@ -3,6 +3,7 @@ roadrunner_ws/build
 roadrunner_ws/devel
 PSOC_PROGRAMS/PSoC5/Roadrunner Control System.cydsn/codegentemp
 PSOC_PROGRAMS/PSoC5/Roadrunner Control System.cydsn/Generated_Source
+PSOC_PROGRAMS/PSoC5/Roadrunner Control System.cydsn/CortexM3
 .DS_Store
 *.cywrk.*
 *.cyprj.*
