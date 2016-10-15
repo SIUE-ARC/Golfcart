@@ -1,3 +1,17 @@
 # Ingore outputs from catkin_make
 roadrunner_ws/build
 roadrunner_ws/devel
+PSOC_PROGRAMS/PSoC5/Roadrunner Control System.cydsn/codegentemp
+PSOC_PROGRAMS/PSoC5/Roadrunner Control System.cydsn/Generated_Source
+.DS_Store
+*.cywrk.*
+*.cyprj.*
+*.cycdx
+*.cyfit
+*.rpt
+*.uvopt
+*.uvproj
+*_timing.html
+*.cydsn/codegentemp
+*.cydsn/DP8051
+*.cydsn/Generated_Source
