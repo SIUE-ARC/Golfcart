@@ -11,6 +11,12 @@
 */
 #include <project.h>
 
+/* Defines for RAMBUF1 */
+#define RAMBUF_BYTES_PER_BURST 2
+#define RAMBUF_REQUEST_PER_BURST 1
+#define RAMBUF_SRC_BASE (CYDEV_PERIPH_BASE)
+#define RAMBUF_DST_BASE (CYDEV_SRAM_BASE)
+/* Defines for USBFS */
 #define USBFS_DEVICE                (0u)
 #define IN_EP_NUM                   (1u)
 #define OUT_EP_NUM                  (2u)
@@ -23,8 +29,9 @@ typedef uint32  word;
 byte obuffer[BUFFER_SIZE];
 byte ibuffer[BUFFER_SIZE];
 
-unsigned int ssample[100];
-unsigned int bsample[100];
+hword ssample[100];
+hword bsample[100];
+
 void init();
 
 int main()
@@ -42,7 +49,7 @@ int main()
     {
         
         //hword sample = POTADC_GetResult16();
-        j = (j == 99) ?  0:j++;
+        j = (j == 99) ?  0:j;
         
         /* Check if configuration is changed. */
         if (0u != USBFS_IsConfigurationChanged())
@@ -77,6 +84,8 @@ int main()
             {
             }
 
+            BRAKEADC_StopConvert();
+            STEERADC_StopConvert();
             i = (i >= BUFFER_SIZE) ? 0:i;
             
             ibuffer[i] = LO8(bsample[j]);
@@ -92,50 +101,39 @@ int main()
         * host.
         */
             USBFS_LoadInEP(IN_EP_NUM, ibuffer, length);
-        }
         
+            BRAKEADC_StartConvert();
+            STEERADC_StartConvert();
+        }
         j++;
     }
 }
 
 void init()
 {
-    /* Defines for RAMBUF1 */
-    #define RAMBUF1_BYTES_PER_BURST 2
-    #define RAMBUF1_REQUEST_PER_BURST 1
-    #define RAMBUF1_SRC_BASE (CYDEV_PERIPH_BASE)
-    #define RAMBUF1_DST_BASE (CYDEV_SRAM_BASE)
-
     /* Variable declarations for RAMBUF1 */
     /* Move these variable declarations to the top of the function */
     uint8 RAMBUF1_Chan;
     uint8 RAMBUF1_TD[1];
-
-    /* DMA Configuration for RAMBUF1 */
-    RAMBUF1_Chan = RAMBUF1_DmaInitialize(RAMBUF1_BYTES_PER_BURST, RAMBUF1_REQUEST_PER_BURST, 
-        HI16(RAMBUF1_SRC_BASE), HI16(RAMBUF1_DST_BASE));
-    RAMBUF1_TD[0] = CyDmaTdAllocate();
-    CyDmaTdSetConfiguration(RAMBUF1_TD[0], 100, RAMBUF1_TD[0], TD_INC_DST_ADR | TD_AUTO_EXEC_NEXT);
-    CyDmaTdSetAddress(RAMBUF1_TD[0], LO16((uint32)STEERADC_SAR_WRK0_PTR), LO16((uint32)ssample));
-    CyDmaChSetInitialTd(RAMBUF1_Chan, RAMBUF1_TD[0]);
-    CyDmaChEnable(RAMBUF1_Chan, 1);
-
-    /* Defines for RAMBUF2 */
-    #define RAMBUF2_BYTES_PER_BURST 2
-    #define RAMBUF2_REQUEST_PER_BURST 1
-    #define RAMBUF2_SRC_BASE (CYDEV_PERIPH_BASE)
-    #define RAMBUF2_DST_BASE (CYDEV_SRAM_BASE)
-
     /* Variable declarations for RAMBUF2 */
     /* Move these variable declarations to the top of the function */
     uint8 RAMBUF2_Chan;
     uint8 RAMBUF2_TD[1];
 
+    /* DMA Configuration for RAMBUF1 */
+    RAMBUF1_Chan = RAMBUF1_DmaInitialize(RAMBUF_BYTES_PER_BURST, RAMBUF_REQUEST_PER_BURST, 
+        HI16(RAMBUF_SRC_BASE), HI16(RAMBUF_DST_BASE));
+    RAMBUF1_TD[0] = CyDmaTdAllocate();
+    CyDmaTdSetConfiguration(RAMBUF1_TD[0], 200, RAMBUF1_TD[0], TD_INC_DST_ADR | TD_AUTO_EXEC_NEXT | RAMBUF1__TD_TERMOUT_EN);
+    CyDmaTdSetAddress(RAMBUF1_TD[0], LO16((uint32)STEERADC_SAR_WRK0_PTR), LO16((uint32)ssample));
+    CyDmaChSetInitialTd(RAMBUF1_Chan, RAMBUF1_TD[0]);
+    CyDmaChEnable(RAMBUF1_Chan, 1);
+    
     /* DMA Configuration for RAMBUF2 */
-    RAMBUF2_Chan = RAMBUF2_DmaInitialize(RAMBUF2_BYTES_PER_BURST, RAMBUF2_REQUEST_PER_BURST, 
-        HI16(RAMBUF2_SRC_BASE), HI16(RAMBUF2_DST_BASE));
+    RAMBUF2_Chan = RAMBUF2_DmaInitialize(RAMBUF_BYTES_PER_BURST, RAMBUF_REQUEST_PER_BURST, 
+        HI16(RAMBUF_SRC_BASE), HI16(RAMBUF_DST_BASE));
     RAMBUF2_TD[0] = CyDmaTdAllocate();
-    CyDmaTdSetConfiguration(RAMBUF2_TD[0], 100, RAMBUF2_TD[0], TD_INC_DST_ADR | TD_AUTO_EXEC_NEXT);
+    CyDmaTdSetConfiguration(RAMBUF2_TD[0], 200, RAMBUF2_TD[0], TD_INC_DST_ADR | TD_AUTO_EXEC_NEXT | RAMBUF2__TD_TERMOUT_EN);
     CyDmaTdSetAddress(RAMBUF2_TD[0], LO16((uint32)BRAKEADC_SAR_WRK0_PTR), LO16((uint32)bsample));
     CyDmaChSetInitialTd(RAMBUF2_Chan, RAMBUF2_TD[0]);
     CyDmaChEnable(RAMBUF2_Chan, 1);
@@ -145,7 +143,12 @@ void init()
     
     STEERADC_Start();
     STEERADC_StartConvert();
+    STEERADC_IRQ_Disable();
     BRAKEADC_Start();
     BRAKEADC_StartConvert();
+    BRAKEADC_IRQ_Disable();
+    
+    RAMBUF1_DONE_Start();
+    RAMBUF2_DONE_Start();
 }
 /* [] END OF FILE */
