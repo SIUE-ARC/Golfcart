@@ -2334,7 +2334,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_COUNTER</name>
           <description>Counter value</description>
-          <addressOffset>0x40006400</addressOffset>
+          <addressOffset>0x40006402</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2343,7 +2343,7 @@
         <register>
           <name>QuadDecDrive_STATUS_REG</name>
           <description>Quadrature Decoder Status Register</description>
-          <addressOffset>0x40006461</addressOffset>
+          <addressOffset>0x40006463</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2394,7 +2394,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_COUNTER</name>
           <description>UDB.A0 - Current Counter Value</description>
-          <addressOffset>0x40006400</addressOffset>
+          <addressOffset>0x40006402</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2403,7 +2403,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_PERIOD</name>
           <description>UDB.D0 - Assigned Period</description>
-          <addressOffset>0x40006420</addressOffset>
+          <addressOffset>0x40006422</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2412,7 +2412,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_COMPARE</name>
           <description>UDB.D1 - Assigned Compare Value</description>
-          <addressOffset>0x40006430</addressOffset>
+          <addressOffset>0x40006432</addressOffset>
           <size>16</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2421,7 +2421,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006471</addressOffset>
+          <addressOffset>0x40006473</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2453,7 +2453,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_STATUS_MASK</name>
           <description>UDB Status bits Interrupt Mask Enable Register</description>
-          <addressOffset>0x40006482</addressOffset>
+          <addressOffset>0x40006480</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2513,7 +2513,7 @@
         <register>
           <name>QuadDecDrive_Cnt16_STATUS_AUX_CTRL</name>
           <description>UDB Auxilliary Control Register</description>
-          <addressOffset>0x40006492</addressOffset>
+          <addressOffset>0x40006490</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2659,7 +2659,7 @@
         <register>
           <name>QuadDecSteer_STATUS_REG</name>
           <description>Quadrature Decoder Status Register</description>
-          <addressOffset>0x40006567</addressOffset>
+          <addressOffset>0x40006467</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2737,7 +2737,7 @@
         <register>
           <name>QuadDecSteer_Cnt16_Control_Reg</name>
           <description>UDB Control Register - Assigned Control Register Value</description>
-          <addressOffset>0x40006474</addressOffset>
+          <addressOffset>0x40006477</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2966,7 +2966,7 @@
         <register>
           <name>TX_UART_TX_DATA</name>
           <description>TX Data Register</description>
-          <addressOffset>0x40006544</addressOffset>
+          <addressOffset>0x40006545</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
@@ -2975,7 +2975,7 @@
         <register>
           <name>TX_UART_TX_STATUS</name>
           <description>TX status register</description>
-          <addressOffset>0x40006564</addressOffset>
+          <addressOffset>0x40006565</addressOffset>
           <size>8</size>
           <access>read-write</access>
           <resetValue>0</resetValue>
