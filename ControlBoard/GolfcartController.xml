@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/zach/GolfcartController/GolfcartController.sch</source>
+    <date>Fri 28 Oct 2016 02:13:26 PM CDT</date>
+    <tool>Eeschema 4.0.3+e1-6302~38~ubuntu16.04.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>GolfcartController.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="B1">
+      <value>PSoC5_Dev1</value>
+      <footprint>PSoC5:PSoC5_Dev</footprint>
+      <libsource lib="GolfcartController-rescue" part="PSoC5_Dev1-RESCUE-GolfcartController"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581380C7</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58138551</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58138719</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>Steer_Enc</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58138798</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813899A</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581389AB</tstamp>
+    </comp>
+    <comp ref="P6">
+      <value>Drive_Enc</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x04</footprint>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581389BB</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>Steer_Pot</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58138C57</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>Brake_Pot</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58138F05</tstamp>
+    </comp>
+    <comp ref="P8">
+      <value>SabertoothSerial</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58138FBC</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>581391FF</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58139D37</tstamp>
+    </comp>
+    <comp ref="P7">
+      <value>Estop</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x03</footprint>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58139F35</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813A3EC</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>Drive_Controller</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813AD28</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>PSU</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813B9D6</tstamp>
+    </comp>
+    <comp ref="P9">
+      <value>Coast_Relay</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813BE9E</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM7mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813C3A4</tstamp>
+    </comp>
+    <comp ref="P10">
+      <value>Coast_Relay</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813C3B3</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>Q_NMOS_GDS</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Neutral123_Vertical</footprint>
+      <libsource lib="device" part="Q_NMOS_GDS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813A5E7</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>Q_NMOS_GDS</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Neutral123_Vertical</footprint>
+      <libsource lib="device" part="Q_NMOS_GDS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5813A67E</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector 01x03</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X03</fp>
+        <fp>Pin_Header_Angled_1X03</fp>
+        <fp>Socket_Strip_Straight_1X03</fp>
+        <fp>Socket_Strip_Angled_1X03</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X04">
+      <description>Connector 01x04</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X04</fp>
+        <fp>Pin_Header_Angled_1X04</fp>
+        <fp>Socket_Strip_Straight_1X04</fp>
+        <fp>Socket_Strip_Angled_1X04</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="GolfcartController-rescue" part="PSoC5_Dev1-RESCUE-GolfcartController">
+      <fields>
+        <field name="Reference">B</field>
+        <field name="Value">PSoC5_Dev1-RESCUE-GolfcartController</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="3.0" type="input"/>
+        <pin num="3" name="3.1" type="input"/>
+        <pin num="4" name="3.2" type="input"/>
+        <pin num="5" name="3.3" type="input"/>
+        <pin num="6" name="3.4" type="input"/>
+        <pin num="7" name="3.5" type="input"/>
+        <pin num="8" name="3.6" type="input"/>
+        <pin num="9" name="3.7" type="input"/>
+        <pin num="10" name="15.0" type="input"/>
+        <pin num="11" name="15.1" type="input"/>
+        <pin num="12" name="15.2" type="input"/>
+        <pin num="13" name="15.3" type="input"/>
+        <pin num="14" name="15.4" type="input"/>
+        <pin num="15" name="15.5" type="input"/>
+        <pin num="16" name="0.0" type="input"/>
+        <pin num="17" name="0.1" type="input"/>
+        <pin num="18" name="0.2" type="input"/>
+        <pin num="19" name="0.3" type="input"/>
+        <pin num="20" name="0.4" type="input"/>
+        <pin num="21" name="0.5" type="input"/>
+        <pin num="22" name="0.6" type="input"/>
+        <pin num="23" name="0.7" type="input"/>
+        <pin num="24" name="RST" type="input"/>
+        <pin num="25" name="GND" type="input"/>
+        <pin num="26" name="VDD_" type="input"/>
+        <pin num="27" name="2.0" type="input"/>
+        <pin num="28" name="2.1" type="input"/>
+        <pin num="29" name="2.2" type="input"/>
+        <pin num="30" name="2.3" type="input"/>
+        <pin num="31" name="2.4" type="input"/>
+        <pin num="32" name="2.5" type="input"/>
+        <pin num="33" name="2.6" type="input"/>
+        <pin num="34" name="2.7" type="input"/>
+        <pin num="35" name="12.7" type="input"/>
+        <pin num="36" name="12.6" type="input"/>
+        <pin num="37" name="12.5" type="input"/>
+        <pin num="38" name="12.4" type="input"/>
+        <pin num="39" name="12.3" type="input"/>
+        <pin num="40" name="12.2" type="input"/>
+        <pin num="41" name="12.1" type="input"/>
+        <pin num="42" name="12.0" type="input"/>
+        <pin num="43" name="1.0" type="input"/>
+        <pin num="44" name="1.1" type="input"/>
+        <pin num="45" name="1.2" type="input"/>
+        <pin num="46" name="1.3" type="input"/>
+        <pin num="47" name="1.4" type="input"/>
+        <pin num="48" name="1.5" type="input"/>
+        <pin num="49" name="1.6" type="input"/>
+        <pin num="50" name="1.7" type="input"/>
+        <pin num="51" name="GND" type="input"/>
+        <pin num="52" name="VDD" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_NMOS_GDS">
+      <description>Transistor N-MOSFET (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_GDS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="GolfcartController-rescue">
+      <uri>/home/zach/GolfcartController/GolfcartController-rescue.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5V">
+      <node ref="P2" pin="3"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R5" pin="1"/>
+      <node ref="P5" pin="4"/>
+      <node ref="R3" pin="1"/>
+      <node ref="B1" pin="26"/>
+      <node ref="R4" pin="1"/>
+      <node ref="B1" pin="52"/>
+      <node ref="R7" pin="1"/>
+      <node ref="P7" pin="3"/>
+      <node ref="P6" pin="4"/>
+      <node ref="P1" pin="3"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="P7" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="P8" pin="2"/>
+      <node ref="P6" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="B1" pin="51"/>
+      <node ref="B1" pin="25"/>
+      <node ref="P5" pin="1"/>
+      <node ref="P4" pin="2"/>
+      <node ref="P1" pin="1"/>
+      <node ref="P2" pin="1"/>
+      <node ref="B1" pin="1"/>
+      <node ref="P3" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="3" name="Net-(P9-Pad1)">
+      <node ref="Q1" pin="3"/>
+      <node ref="P9" pin="1"/>
+    </net>
+    <net code="4" name="DriveSpeed">
+      <node ref="P4" pin="1"/>
+      <node ref="B1" pin="17"/>
+    </net>
+    <net code="5" name="Estop">
+      <node ref="B1" pin="23"/>
+      <node ref="R8" pin="1"/>
+      <node ref="P7" pin="2"/>
+    </net>
+    <net code="6" name="Coast">
+      <node ref="Q1" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="B1" pin="47"/>
+    </net>
+    <net code="7" name="Net-(B1-Pad41)">
+      <node ref="B1" pin="41"/>
+    </net>
+    <net code="8" name="Net-(B1-Pad31)">
+      <node ref="B1" pin="31"/>
+    </net>
+    <net code="9" name="Net-(B1-Pad32)">
+      <node ref="B1" pin="32"/>
+    </net>
+    <net code="10" name="Net-(B1-Pad33)">
+      <node ref="B1" pin="33"/>
+    </net>
+    <net code="11" name="Net-(B1-Pad34)">
+      <node ref="B1" pin="34"/>
+    </net>
+    <net code="12" name="Net-(B1-Pad35)">
+      <node ref="B1" pin="35"/>
+    </net>
+    <net code="13" name="Net-(B1-Pad36)">
+      <node ref="B1" pin="36"/>
+    </net>
+    <net code="14" name="Net-(B1-Pad37)">
+      <node ref="B1" pin="37"/>
+    </net>
+    <net code="15" name="Net-(B1-Pad38)">
+      <node ref="B1" pin="38"/>
+    </net>
+    <net code="16" name="Net-(B1-Pad40)">
+      <node ref="B1" pin="40"/>
+    </net>
+    <net code="17" name="Net-(B1-Pad30)">
+      <node ref="B1" pin="30"/>
+    </net>
+    <net code="18" name="Net-(B1-Pad42)">
+      <node ref="B1" pin="42"/>
+    </net>
+    <net code="19" name="Net-(B1-Pad43)">
+      <node ref="B1" pin="43"/>
+    </net>
+    <net code="20" name="Net-(B1-Pad44)">
+      <node ref="B1" pin="44"/>
+    </net>
+    <net code="21" name="Net-(B1-Pad46)">
+      <node ref="B1" pin="46"/>
+    </net>
+    <net code="22" name="Net-(B1-Pad48)">
+      <node ref="B1" pin="48"/>
+    </net>
+    <net code="23" name="Net-(B1-Pad49)">
+      <node ref="B1" pin="49"/>
+    </net>
+    <net code="24" name="Net-(B1-Pad50)">
+      <node ref="B1" pin="50"/>
+    </net>
+    <net code="25" name="Net-(B1-Pad2)">
+      <node ref="B1" pin="2"/>
+    </net>
+    <net code="26" name="Net-(B1-Pad3)">
+      <node ref="B1" pin="3"/>
+    </net>
+    <net code="27" name="+12V">
+      <node ref="P10" pin="2"/>
+      <node ref="P9" pin="2"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="28" name="Net-(B1-Pad4)">
+      <node ref="B1" pin="4"/>
+    </net>
+    <net code="29" name="Net-(B1-Pad27)">
+      <node ref="B1" pin="27"/>
+    </net>
+    <net code="30" name="Net-(B1-Pad28)">
+      <node ref="B1" pin="28"/>
+    </net>
+    <net code="31" name="Net-(B1-Pad29)">
+      <node ref="B1" pin="29"/>
+    </net>
+    <net code="32" name="Reverse">
+      <node ref="Q2" pin="1"/>
+      <node ref="B1" pin="45"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="33" name="Net-(P10-Pad1)">
+      <node ref="Q2" pin="3"/>
+      <node ref="P10" pin="1"/>
+    </net>
+    <net code="34" name="Net-(B1-Pad19)">
+      <node ref="B1" pin="19"/>
+    </net>
+    <net code="35" name="Net-(B1-Pad5)">
+      <node ref="B1" pin="5"/>
+    </net>
+    <net code="36" name="Net-(B1-Pad8)">
+      <node ref="B1" pin="8"/>
+    </net>
+    <net code="37" name="Net-(B1-Pad9)">
+      <node ref="B1" pin="9"/>
+    </net>
+    <net code="38" name="Net-(B1-Pad11)">
+      <node ref="B1" pin="11"/>
+    </net>
+    <net code="39" name="Net-(B1-Pad12)">
+      <node ref="B1" pin="12"/>
+    </net>
+    <net code="40" name="Net-(B1-Pad14)">
+      <node ref="B1" pin="14"/>
+    </net>
+    <net code="41" name="Net-(B1-Pad15)">
+      <node ref="B1" pin="15"/>
+    </net>
+    <net code="42" name="Net-(B1-Pad16)">
+      <node ref="B1" pin="16"/>
+    </net>
+    <net code="43" name="Net-(B1-Pad18)">
+      <node ref="B1" pin="18"/>
+    </net>
+    <net code="44" name="Net-(B1-Pad21)">
+      <node ref="B1" pin="21"/>
+    </net>
+    <net code="45" name="Net-(B1-Pad24)">
+      <node ref="B1" pin="24"/>
+    </net>
+    <net code="46" name="Tx">
+      <node ref="R7" pin="2"/>
+      <node ref="P8" pin="1"/>
+      <node ref="B1" pin="39"/>
+    </net>
+    <net code="47" name="BrakePot">
+      <node ref="P2" pin="2"/>
+      <node ref="B1" pin="20"/>
+    </net>
+    <net code="48" name="DriveEncA">
+      <node ref="R5" pin="2"/>
+      <node ref="P6" pin="3"/>
+      <node ref="B1" pin="22"/>
+    </net>
+    <net code="49" name="DriveEncB">
+      <node ref="B1" pin="10"/>
+      <node ref="P6" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="50" name="SteerPot">
+      <node ref="B1" pin="7"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="51" name="SteerEncB">
+      <node ref="B1" pin="13"/>
+      <node ref="R4" pin="2"/>
+      <node ref="P5" pin="2"/>
+    </net>
+    <net code="52" name="SteerEncA">
+      <node ref="P5" pin="3"/>
+      <node ref="R3" pin="2"/>
+      <node ref="B1" pin="6"/>
+    </net>
+  </nets>
+</export>
