@@ -48,5 +48,43 @@ void init()
     RAMBUF2_DONE_Start();
 }
 
+void turnToCount(word count)
+{
+    
+}
 
+void turn(int count)
+{
+    
+}
+
+void brake(int pVal)
+{
+    
+}
+
+hword getActuatorPosition()
+{
+    return 0;   
+}
+
+hword getSteerPotPosition()
+{
+    return 0;   
+}
+
+void calibrateSteering()
+{
+    
+}
+
+void updateBrakeCtl(void)
+{
+    
+}
+
+void updateTurnCtl(void)
+{
+    
+}
 /* [] END OF FILE */

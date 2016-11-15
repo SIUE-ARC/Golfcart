@@ -10,7 +10,7 @@
  * ========================================
 */
 #include <project.h>
-#include <roadrunner.h>
+#include "roadrunner.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -36,6 +36,7 @@ int main()
     USBFS_EnableOutEP(OUT_EP_NUM);
     for(;;)
     {
+        argc = 0;
         
         //hword sample = POTADC_GetResult16();
         //j = (j == 99) ?  0:j;
@@ -74,6 +75,7 @@ int main()
                     argv[argc] = &obuffer[i+1];
                 }
             }
+            
             
             command_lookup(argc, argv);
             
@@ -146,24 +148,53 @@ void command_lookup(byte argc, byte** argv)
         case 'D':
         case 'd':
             {
+                byte* buf0 = "Drive encoder: ";
+                byte* buf1;
                 hword count = QuadDecDrive_GetCounter();
-                 
+                itoa(count, buf1, 10); 
+                #ifdef VERBOSE 
+                    strcpy(buf0, buf1);
+                    strcpy(buf0, "\r\n");
+                    strcpy(ibuffer, buf0);
+                #else
+                    strcpy(ibuffer, buf1);
+                #endif
             }
             break;
         case 'I':
         case 'i':
+            UART_WriteTxData((char)BAUD_BYTE);
+            //baudSent = TRUE;
             break;
         case 'T':
         case 't':
+            if(argc > 0)
+                turn(atoi(argv[1]));
+                
+            #ifdef VERBOSE
+                else strcpy(ibuffer, "No value given!\r\n");
+            #endif
             break;
         case 'S':
         case 's':
-            break;
-        case 'U':
-        case 'u':
+            {
+                byte* buf0 = "Steer encoder: ";
+                byte* buf1;
+                hword count = QuadDecSteer_GetCounter();
+                itoa(count, buf1, 10); 
+                #ifdef VERBOSE 
+                    strcpy(buf0, buf1);
+                    strcpy(buf0, "\r\n");
+                    strcpy(ibuffer, buf0);
+                #else
+                    strcpy(ibuffer, buf1);
+                #endif
+            }
             break;
         case 'R':
         case 'r':
+            calibrateSteering();
+            strcpy(ibuffer, "Shaft reset\r\n");
             break;
         
     #ifdef EXTENDED_COMMANDS

@@ -44,6 +44,9 @@
 #define RELEASE 1
 #define APPLY 0
 
+#define TRUE 1
+#define FALSE 0
+
 /******** CODE SECTIONS ********/
 
 #define EXTENDED_COMMANDS
@@ -59,6 +62,19 @@ extern byte ibuffer[BUFFER_SIZE];
 extern hword ssample[100];
 extern hword bsample[100];
 
+// Are currently cached analog reads valid, or should they be reaquired
+extern byte cacheValid;
+
+// Have the motor controllers been initilized
+extern byte baudSent;
+
+// The current count of the quadrature encoder connected to the steering column
+extern int steerCount;
+
+// The current target positions for both motor controllers
+extern int brakeSetpoint;
+extern int steerSetpoint;
+
 void init();
 void command_lookup(byte argc, byte** argv);
 void turnToCount(word count);
@@ -69,8 +85,4 @@ hword getSteerPotPosition();
 void calibrateSteering();
 void updateBrakeCtl(void);
 void updateTurnCtl(void);
-int min(int, int);
-int max(int, int);
-int min(int a, int b) { return a < b ? a : b; }
-int max(int a, int b) { return a > b ? a : b; }
 /* [] END OF FILE */
