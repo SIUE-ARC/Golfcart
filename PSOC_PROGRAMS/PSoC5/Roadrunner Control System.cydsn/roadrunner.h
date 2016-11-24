@@ -91,5 +91,6 @@ void calibrateSteering();
 void updateBrakeCtl();
 void updateTurnCtl();
 void handleUSB(byte estop);int min(int, int);
+int min(int a, int b);
 int max(int, int);
 /* [] END OF FILE */
