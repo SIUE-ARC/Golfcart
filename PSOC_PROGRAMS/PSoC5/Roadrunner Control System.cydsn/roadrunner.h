@@ -49,8 +49,8 @@
 
 /******** CODE SECTIONS ********/
 
-#define EXTENDED_COMMANDS
-#define VERBOSE
+//#define EXTENDED_COMMANDS
+//#define VERBOSE
 #define LCD
 typedef uint8   byte;
 typedef uint16  hword;
@@ -61,6 +61,7 @@ extern byte ibuffer[BUFFER_SIZE];
 
 extern hword ssample[100];
 extern hword bsample[100];
+
 
 // Are currently cached analog reads valid, or should they be reaquired
 extern byte cacheValid;
@@ -75,14 +76,20 @@ extern int steerCount;
 extern int brakeSetpoint;
 extern int steerSetpoint;
 
+extern byte argc;
+extern byte** argv;
+
 void init();
 void command_lookup(byte argc, byte** argv);
-void turnToCount(word count);
-void turn(int count);
+void setControllerSpeed(byte addr, byte speed, byte dir);
+void turn(word count);
 void brake(int pVal);
-hword getActuatorPosition();
-hword getSteerPotPosition();
+void stop();
+hword getSteerPosition();
+hword getBrakePotPosition();
 void calibrateSteering();
-void updateBrakeCtl(void);
-void updateTurnCtl(void);
+void updateBrakeCtl();
+void updateTurnCtl();
+void handleUSB(byte estop);int min(int, int);
+int max(int, int);
 /* [] END OF FILE */
