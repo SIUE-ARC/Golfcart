@@ -6,29 +6,6 @@
 #include "roadrunner.h"
 #include <stdlib.h>
 
-byte obuffer[BUFFER_SIZE];
-byte ibuffer[BUFFER_SIZE];
-
-hword ssample[100];
-hword bsample[100];
-
-
-// Are currently cached analog reads valid, or should they be reaquired
-byte cacheValid = FALSE;
-
-// Have the motor controllers been initilized
-byte baudSent = FALSE;
-
-// The current count of the quadrature encoder connected to the steering column
-int steerCount = 0;
-
-// The current target positions for both motor controllers
-int brakeSetpoint = 0;
-int steerSetpoint = 0;
-
-byte argc = 0;
-byte** argv;
-
 void init()
 {
     /* Variable declarations for RAMBUF1 */
@@ -60,9 +37,6 @@ void init()
     CyDmaChSetInitialTd(RAMBUF2_Chan, RAMBUF2_TD[0]);
     CyDmaChEnable(RAMBUF2_Chan, 1);
     
-    USBFS_Start(USBFS_DEVICE, USBFS_5V_OPERATION);
-    while(0u == USBFS_GetConfiguration()){} //wait until we are enumerated by host
-    
     DVDAC_Start();
     DVDAC_SetValue(0);
     UART_Start();
@@ -77,7 +51,6 @@ void init()
     RAMBUF1_DONE_Start();
     RAMBUF2_DONE_Start();
     
-    USBFS_EnableOutEP(OUT_EP_NUM);
     CyGlobalIntEnable; /* Enable global interrupts. */
 }
 
@@ -151,38 +124,68 @@ void command_lookup(byte argc, byte** argv)
                 hword count = QuadDecSteer_GetCounter();
                 itoa(count, buf1, 10); 
                 #ifdef VERBOSE 
-                    strcpy(buf0, buf1);
+                    strncpy(buf0, buf1, strlen(buf1));
                     strcpy(buf0, "\r\n");
-                    strcpy(ibuffer, buf0);
+                    strncpy(ibuffer, buf0, strlen(buf0));
                 #else
-                    strcpy(ibuffer, buf1);
+                    strncpy(ibuffer, buf1, strlen(buf1));
                 #endif
             }
             break;
         case 'R':
         case 'r':
             calibrateSteering();
-            strcpy(ibuffer, "Shaft reset\r\n");
+            #ifdef VERBOSE
+                strcpy(ibuffer, "Shaft reset\r\n");
+            #endif
             break;
-        
-    #ifdef EXTENDED_COMMANDS
         case 'H':
         case 'h':
+            if(argc > 0)
+                brake(atoi(argv[1]));
+            #ifdef VERBOSE
+                strcpy(ibuffer, "No brake value given!\r\n");
+            #endif
             break;
+    #ifdef EXTENDED_COMMANDS
         case 'E':
         case 'e':
+            #ifdef VERBOSE
+                strcpy(ibuffer, "Turning right\r\n");
+            #endif
+            setControllerSpeed(STEER_CTL, STEER_SPEED, RIGHT);
             break;
         case 'Q':
         case 'q':
+            #ifdef VERBOSE
+                strcpy(ibuffer, "Turning right\r\n");
+            #endif
+            setControllerSpeed(STEER_CTL, STEER_SPEED, LEFT);
             break;
         case 'L':
         case 'l':
+            #ifdef VERBOSE
+                strcpy(ibuffer, "Stopping\r\n");
+            #endif
+            stop();
             break;
         case 'J':
         case 'j':
+            #ifdef VERBOSE
+                strcpy(ibuffer, "Releasing brake\r\n");
+            #endif
+            brake(100);
             break;
         case 'P':
         case 'p':
+            #ifdef VERBOSE
+                byte* buf0 = "Steer pot: ";
+                byte* buf1;
+                strcpy(buf1, getSteerPosition());
+                strcpy(buf1, "\r\n");
+                strcpy(buf0, buf1);
+                strncpy(ibuffer, buf0, strlen(buf0));
+            #endif
             break;
     #endif
     }
@@ -219,14 +222,6 @@ void setControllerSpeed(byte addr, byte speed, byte dir)
         lastValue[addr == BRAKE_CTL ? 1 : 0] = (dir << 7 | speed);
 
         #ifdef VERBOSE
-            UART_CPutString(addr == BRAKE_CTL ? "Brake" : "Turn");
-            if(speed != 0) {
-                UART_CPutString(" controller turning ");
-                UART_CPutString(dir == LEFT ? "left" : "right");
-            } else {
-                UART_CPutString(" controller stopping");
-            }
-            UART_PutCRLF();
         #endif
     }
 }
@@ -239,9 +234,6 @@ void turn(word count)
     steerSetpoint = count;
     
     #ifdef VERBOSE
-        UART_CPutString("Steer setpoint: ");
-        UART_PutSHexInt(count);
-        UART_PutCRLF();
     #endif
 }
 
@@ -253,9 +245,6 @@ void brake(int pVal)
     brakeSetpoint = pVal;
     
     #ifdef VERBOSE
-        UART_CPutString("Brake setpoint: ");
-        UART_PutSHexInt(pVal);
-        UART_PutCRLF();
     #endif 
 }
 
@@ -302,7 +291,7 @@ void calibrateSteering()
     while (abs(getSteerPosition() - STEER_POT_CENTER) > 30)
     {
         #ifdef VERBOSE
-		    UART_PutSHexInt(getSteerPotPosition() - STEER_POT_CENTER);
+		    //UART_PutSHexInt(getSteerPotPosition() - STEER_POT_CENTER);
         #endif
     }
     // We are spinning here, so we need to invalidate the cache ourself
@@ -336,66 +325,6 @@ void updateTurnCtl()
         setControllerSpeed(STEER_CTL, STEER_SPEED, LEFT);
     else
         setControllerSpeed(STEER_CTL, STOP, STOP);
-}
-
-void handleUSB(byte estop)
-{
-    /* Variable declarations for USBFS */
-    hword length;
-    byte i;
-    
-     for(;;)
-    {
-        argc = 0;
-        
-        /* Check if configuration is changed. */
-        if (0u != USBFS_IsConfigurationChanged())
-        {
-            /* Re-enable endpoint when device is configured. */
-            if (0u != USBFS_GetConfiguration())
-            {
-                /* Enable OUT endpoint to receive data from host. */
-                USBFS_EnableOutEP(OUT_EP_NUM);
-            }
-        }
-
-        /* Check if data was received. */
-        if (USBFS_OUT_BUFFER_FULL == USBFS_GetEPState(OUT_EP_NUM))
-        {
-            /* Read number of received data bytes. */
-            length = USBFS_GetEPCount(OUT_EP_NUM);
-
-            /* Trigger DMA to copy data from OUT endpoint buffer. */
-            USBFS_ReadOutEP(OUT_EP_NUM, obuffer, length);
-
-            /* Wait until DMA completes copying data from OUT endpoint buffer. */
-            while (USBFS_OUT_BUFFER_FULL == USBFS_GetEPState(OUT_EP_NUM))
-            {
-            }
-            
-            for(i = 0; i < length; i++)
-            {
-                if(obuffer[i] == ' ')
-                {
-                    argc++;
-                    obuffer[i] = '\0';
-                    argv[argc] = &obuffer[i+1];
-                }
-            }
-            
-            if(!estop) command_lookup(argc, argv);
-            
-            /* Enable OUT endpoint to receive data from host. */
-            USBFS_EnableOutEP(OUT_EP_NUM);
-
-            /* Wait until IN buffer becomes empty (host has read data). */
-            while (USBFS_IN_BUFFER_EMPTY != USBFS_GetEPState(IN_EP_NUM))
-            {
-            }
-            
-            USBFS_LoadInEP(IN_EP_NUM, ibuffer, BUFFER_SIZE);
-        }
-    }
 }
 
 int min(int a, int b) { return a < b ? a : b; }

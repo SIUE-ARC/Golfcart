@@ -50,34 +50,34 @@
 /******** CODE SECTIONS ********/
 
 //#define EXTENDED_COMMANDS
-//#define VERBOSE
+#define VERBOSE
 #define LCD
 typedef uint8   byte;
 typedef uint16  hword;
 typedef uint32  word;
 
-extern byte obuffer[BUFFER_SIZE];
-extern byte ibuffer[BUFFER_SIZE];
+byte obuffer[BUFFER_SIZE];
+byte ibuffer[BUFFER_SIZE];
 
-extern hword ssample[100];
-extern hword bsample[100];
+hword ssample[100];
+hword bsample[100];
 
 
 // Are currently cached analog reads valid, or should they be reaquired
-extern byte cacheValid;
+byte cacheValid;
 
 // Have the motor controllers been initilized
-extern byte baudSent;
+byte baudSent;
 
 // The current count of the quadrature encoder connected to the steering column
-extern int steerCount;
+int steerCount;
 
 // The current target positions for both motor controllers
-extern int brakeSetpoint;
-extern int steerSetpoint;
+int brakeSetpoint;
+int steerSetpoint;
 
-extern byte argc;
-extern byte** argv;
+byte argc;
+byte** argv;
 
 void init();
 void command_lookup(byte argc, byte** argv);
@@ -90,7 +90,6 @@ hword getBrakePotPosition();
 void calibrateSteering();
 void updateBrakeCtl();
 void updateTurnCtl();
-void handleUSB(byte estop);int min(int, int);
 int min(int a, int b);
 int max(int, int);
 /* [] END OF FILE */
